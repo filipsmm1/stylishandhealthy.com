@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO injected by JS below -->
+  <title>Stylish and Healthy</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:url"         content="">
+  <meta property="og:title"       content="">
+  <meta property="og:description" content="">
+  <meta property="og:image"       content="">
+  <meta property="og:site_name"   content="Stylish and Healthy">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image"       content="">
+
+  <!-- Schema.org Article (populated by JS) -->
+  <script id="schema-article" type="application/ld+json">{}</script>
+
+  <!-- Mailchimp popup -->
+  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e33059783dca94dc78ba9c2cf/cd90e839a2776072868d7fd83.js");</script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled">
+    <a href="index.html" class="nav__logo" style="color:var(--black);">Stylish &amp; Healthy</a>
+    <ul class="nav__links">
+      <li><a href="blog.html"        class="nav__link" style="color:var(--black);">BLOG</a></li>
+      <li><a href="shop.html"        class="nav__link" style="color:var(--black);">SHOP</a></li>
+      <li><a href="index.html#about" class="nav__link" style="color:var(--black);">ABOUT</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Open menu">
+      <span style="background:var(--black);"></span>
+      <span style="background:var(--black);"></span>
+      <span style="background:var(--black);"></span>
+    </button>
+  </nav>
+  <div class="nav__overlay">
+    <button class="nav__overlay-close">CLOSE ✕</button>
+    <nav class="nav__overlay-links">
+      <a href="blog.html"        class="nav__overlay-link">Blog</a>
+      <a href="shop.html"        class="nav__overlay-link">Shop</a>
+      <a href="index.html#about" class="nav__overlay-link">About</a>
+    </nav>
+  </div>
+
+  <!-- ARTICLE CONTENT — filled by JS -->
+  <div id="post-root" style="background:var(--cream);">
+    <div style="padding:160px 48px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(13,11,8,0.35);font-style:italic;">
+      Loading post…
+    </div>
+  </div>
+
+  <!-- RELATED — filled by JS -->
+  <section class="related-section" id="related-section" style="display:none;">
+    <div class="container" style="padding-top:0;padding-bottom:0;">
+      <div style="padding:0 0 40px;">
+        <span class="eyebrow" style="font-size:13px;">YOU MIGHT ALSO LIKE</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;" id="related-grid"></div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2 class="newsletter__title">The Weekly Ritual</h2>
+    <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing — straight to your inbox.</p>
+    <div class="newsletter__form">
+      <input type="email" class="newsletter__input" placeholder="your@email.com">
+      <button class="newsletter__btn"><span>JOIN →</span></button>
+    </div>
+    <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bg-text">Stylish &amp; Healthy</div>
+    <div class="footer__inner">
+      <div>
+        <p class="footer__heading">NAVIGATE</p>
+        <ul class="footer__nav-links">
+          <li><a href="blog.html" class="footer__nav-link">BLOG</a></li>
+          <li><a href="shop.html" class="footer__nav-link">SHOP</a></li>
+          <li><a href="index.html#about" class="footer__nav-link">ABOUT</a></li>
+          <li><a href="#" class="footer__nav-link">CONTACT</a></li>
+        </ul>
+      </div>
+      <div id="footer-latest">
+        <p class="footer__heading">LATEST</p>
+      </div>
+      <div>
+        <p class="footer__heading">FOLLOW</p>
+        <ul class="footer__social-links">
+          <li><a href="https://instagram.com/stylishandhealthy" class="footer__social-link" target="_blank">INSTAGRAM</a></li>
+          <li><a href="https://pinterest.com/stylishandhealthy" class="footer__social-link" target="_blank">PINTEREST</a></li>
+          <li><a href="#" class="footer__social-link">YOUTUBE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p class="footer__copy">© 2025 Stylish and Healthy. All rights reserved.</p>
+      <p class="footer__copy">stylishandhealthy.com</p>
+    </div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+
+      if (!slug || typeof POSTS === 'undefined') {
+        document.getElementById('post-root').innerHTML =
+          '<div style="padding:160px 48px;text-align:center;font-family:\'Cormorant Garamond\',serif;font-size:28px;font-style:italic;color:rgba(13,11,8,0.4);">Post not found. <a href="blog.html" style="color:var(--gold);">Back to Blog</a></div>';
+        return;
+      }
+
+      const post = POSTS.find(p => p.slug === slug);
+      if (!post) {
+        document.getElementById('post-root').innerHTML =
+          '<div style="padding:160px 48px;text-align:center;font-family:\'Cormorant Garamond\',serif;font-size:28px;font-style:italic;color:rgba(13,11,8,0.4);">Post not found. <a href="blog.html" style="color:var(--gold);">Back to Blog</a></div>';
+        return;
+      }
+
+      // ── Inject SEO meta tags ──────────────────────────────
+      document.title = post.metaTitle || `${post.title} | Stylish and Healthy`;
+      document.querySelector('meta[name="description"]').content = post.metaDescription || post.excerpt;
+      document.querySelector('meta[name="keywords"]').content = post.keywords || '';
+      const canonical = `https://stylishandhealthy.com/post.html?slug=${post.slug}`;
+      document.querySelector('link[rel="canonical"]').href = canonical;
+
+      ['og:url','twitter:url'].forEach(p => { const el = document.querySelector(`meta[property="${p}"]`); if (el) el.content = canonical; });
+      document.querySelector('meta[property="og:title"]').content   = post.metaTitle || post.title;
+      document.querySelector('meta[property="og:description"]').content = post.metaDescription || post.excerpt;
+      document.querySelector('meta[property="og:image"]').content   = post.image;
+      document.querySelector('meta[name="twitter:title"]').content  = post.metaTitle || post.title;
+      document.querySelector('meta[name="twitter:description"]').content = post.metaDescription || post.excerpt;
+      document.querySelector('meta[name="twitter:image"]').content  = post.image;
+
+      // Article Schema
+      document.getElementById('schema-article').textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post.title,
+        "description": post.metaDescription || post.excerpt,
+        "image": post.image,
+        "datePublished": post.date,
+        "author": { "@type": "Person", "name": post.author || "the Editor" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Stylish and Healthy",
+          "url": "https://stylishandhealthy.com"
+        },
+        "url": canonical,
+        "keywords": post.keywords
+      });
+
+      // ── Render Article ────────────────────────────────────
+      const body = renderContent(post.content);
+
+      document.getElementById('post-root').innerHTML = `
+        <div style="padding-top:64px;">
+          <div class="article-header reveal">
+            <span class="eyebrow">${post.category.toUpperCase()}</span>
+            <h1 class="article-title">${post.title}</h1>
+            <p class="article-meta">By ${post.author || 'the Editor'} &nbsp;·&nbsp; ${post.date} &nbsp;·&nbsp; ${post.readTime}</p>
+          </div>
+          <div class="article-hero-image reveal">
+            <img src="${post.image}" alt="${post.title}">
+          </div>
+        </div>
+        <div class="article-body reveal">
+          ${body}
+          <div class="gold-line" style="margin:48px 0;"></div>
+          <p style="font-family:var(--font-body);font-size:12px;color:rgba(13,11,8,0.4);">
+            Filed under: <a href="blog.html?cat=${post.category}" style="color:var(--gold);font-family:var(--font-accent);letter-spacing:2px;font-size:10px;">${post.category.toUpperCase()}</a>
+          </p>
+        </div>`;
+
+      // ── Related posts ─────────────────────────────────────
+      const related = getRelatedPosts(slug, 3);
+      if (related.length) {
+        document.getElementById('related-section').style.display = '';
+        document.getElementById('related-grid').innerHTML = related.map(p => `
+          <article class="card reveal" onclick="location.href='post.html?slug=${p.slug}'" style="cursor:pointer;">
+            <div class="card__image">
+              <img src="${p.image}" alt="" style="width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(0.9) sepia(0.08);transition:transform 500ms ease-in-out;">
+            </div>
+            <div class="card__body">
+              <span class="card__tag">${p.category.toUpperCase()}</span>
+              <h3 class="card__title">${p.title}</h3>
+            </div>
+          </article>`).join('');
+      }
+
+      // ── Footer latest ─────────────────────────────────────
+      const fl = document.getElementById('footer-latest');
+      fl.innerHTML = '<p class="footer__heading">LATEST</p>' +
+        POSTS.slice(0, 3).map(p => `
+          <a href="post.html?slug=${p.slug}" class="footer__article-link">
+            <p class="footer__article-title">${p.title}</p>
+            <p class="footer__article-date">${p.date}</p>
+          </a>`).join('');
+
+    })();
+  </script>
+</body>
+</html>
