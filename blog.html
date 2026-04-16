@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Stylish and Healthy</title>
+  <meta name="description" content="Skincare, wellness, mindset, and self-care essays for the woman who holds herself to a higher standard.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════════════ -->
+  <nav class="nav scrolled">
+    <a href="index.html" class="nav__logo" style="color:var(--black);">Stylish &amp; Healthy</a>
+    <ul class="nav__links">
+      <li><a href="blog.html"   class="nav__link" style="color:var(--black);">BLOG</a></li>
+      <li><a href="shop.html"   class="nav__link" style="color:var(--black);">SHOP</a></li>
+      <li><a href="index.html#about" class="nav__link" style="color:var(--black);">ABOUT</a></li>
+      <li><a href="#"           class="nav__link" style="color:var(--black);">SEARCH</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Open menu">
+      <span style="background:var(--black);"></span>
+      <span style="background:var(--black);"></span>
+      <span style="background:var(--black);"></span>
+    </button>
+  </nav>
+
+  <div class="nav__overlay">
+    <button class="nav__overlay-close">CLOSE ✕</button>
+    <nav class="nav__overlay-links">
+      <a href="blog.html"       class="nav__overlay-link">Blog</a>
+      <a href="shop.html"       class="nav__overlay-link">Shop</a>
+      <a href="index.html#about" class="nav__overlay-link">About</a>
+      <a href="#"               class="nav__overlay-link">Search</a>
+    </nav>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="page-hero">
+    <p class="page-hero__eyebrow">THE ARCHIVE</p>
+    <h1 class="page-hero__title">Essays &amp; Guides</h1>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FILTER BAR
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+    <button class="filter-btn" data-filter="skincare">SKINCARE</button>
+    <button class="filter-btn" data-filter="wellness">WELLNESS</button>
+    <button class="filter-btn" data-filter="mindset">MINDSET</button>
+    <button class="filter-btn" data-filter="nutrition">NUTRITION</button>
+    <button class="filter-btn" data-filter="self-care">SELF-CARE</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       BLOG GRID
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="blog-page-grid" style="background:var(--cream);">
+    <div style="max-width:1400px;margin:0 auto;padding:64px 48px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px 24px;">
+
+        <article class="card card-article reveal" data-category="skincare">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1556228852-6d35a585d566?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">SKINCARE</span>
+            <h3 class="card__title">The Morning Ritual That Changed Everything About My Skin</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="wellness">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">WELLNESS</span>
+            <h3 class="card__title">How I Rebuilt My Evening Routine From Scratch</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="mindset">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">MINDSET</span>
+            <h3 class="card__title">Discipline Is Just Love With a Morning Alarm</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="nutrition">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">NUTRITION</span>
+            <h3 class="card__title">Eating for Your Skin, Not Your Cravings</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="self-care">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">SELF-CARE</span>
+            <h3 class="card__title">The Ritual of Doing Nothing — and Doing It Well</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="mindset">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">MINDSET</span>
+            <h3 class="card__title">On Standards: Why Low Bars Are the Most Expensive Thing You Own</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="skincare">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">SKINCARE</span>
+            <h3 class="card__title">The Ingredients Your Routine Is Missing</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="wellness">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">WELLNESS</span>
+            <h3 class="card__title">What 30 Days of Intentional Rest Actually Does to Your Body</h3>
+          </div>
+        </article>
+
+        <article class="card card-article reveal" data-category="self-care">
+          <div class="card__image">
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=700&q=80" alt="">
+          </div>
+          <div class="card__body">
+            <span class="card__tag">SELF-CARE</span>
+            <h3 class="card__title">Building a Life That Doesn't Need an Escape From</h3>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NEWSLETTER
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="newsletter">
+    <h2 class="newsletter__title">The Weekly Ritual</h2>
+    <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing — straight to your inbox.</p>
+    <div class="newsletter__form">
+      <input type="email" class="newsletter__input" placeholder="your@email.com">
+      <button class="newsletter__btn"><span>JOIN →</span></button>
+    </div>
+    <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__bg-text">Stylish &amp; Healthy</div>
+    <div class="footer__inner">
+      <div>
+        <p class="footer__heading">NAVIGATE</p>
+        <ul class="footer__nav-links">
+          <li><a href="blog.html" class="footer__nav-link">BLOG</a></li>
+          <li><a href="shop.html" class="footer__nav-link">SHOP</a></li>
+          <li><a href="index.html#about" class="footer__nav-link">ABOUT</a></li>
+          <li><a href="#" class="footer__nav-link">CONTACT</a></li>
+          <li><a href="#" class="footer__nav-link">PRIVACY POLICY</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__heading">LATEST</p>
+        <a href="article.html" class="footer__article-link">
+          <p class="footer__article-title">The Morning Ritual That Changed Everything About My Skin</p>
+          <p class="footer__article-date">April 14, 2025</p>
+        </a>
+        <a href="article.html" class="footer__article-link">
+          <p class="footer__article-title">How I Rebuilt My Evening Routine From Scratch</p>
+          <p class="footer__article-date">April 8, 2025</p>
+        </a>
+      </div>
+      <div>
+        <p class="footer__heading">FOLLOW</p>
+        <ul class="footer__social-links">
+          <li><a href="https://instagram.com/stylishandhealthy" class="footer__social-link" target="_blank">INSTAGRAM</a></li>
+          <li><a href="https://pinterest.com/stylishandhealthy" class="footer__social-link" target="_blank">PINTEREST</a></li>
+          <li><a href="#" class="footer__social-link">YOUTUBE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p class="footer__copy">© 2025 Stylish and Healthy. All rights reserved.</p>
+      <p class="footer__copy">stylishandhealthy.com</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Filter behavior
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card-article');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
