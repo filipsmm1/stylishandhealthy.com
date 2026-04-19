@@ -14,21 +14,21 @@
 
 const POSTS = [
 
-     {
-    slug: "test",
-    title: "test",
-    category: "wellness",
-    date: "April 19, 2026",
-    readTime: "1 min read",
-    author: "the Editor",
-    excerpt: "",
-    image: "",
-    metaTitle: "test | Stylish and Healthy",
-    metaDescription: "",
-    keywords: "",
-    content: `[h2]test[/h2]
+    {
+  slug: "test",
+  title: "test",
+  category: "wellness",
+  date: "April 19, 2026",
+  readTime: "1 min read",
+  author: "the Editor",
+  excerpt: "This is a test post.",
+  image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=900&q=80",
+  metaTitle: "test | Stylish and Healthy",
+  metaDescription: "test",
+  keywords: "",
+  content: `[h2]test[/h2]
 loll`
-  },
+},
 
   {
     slug: "morning-ritual-changed-my-skin",
