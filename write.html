@@ -3,6 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Password gate — runs before anything renders -->
+  <script>
+    (function() {
+      const CORRECT = 'vcRU8Pf4';
+      const SESSION_KEY = 'sah_write_auth';
+      if (sessionStorage.getItem(SESSION_KEY) !== '1') {
+        document.addEventListener('DOMContentLoaded', function() {
+          document.body.style.display = 'none';
+          const pw = prompt('Enter password to access the editor:');
+          if (pw === CORRECT) {
+            sessionStorage.setItem(SESSION_KEY, '1');
+            document.body.style.display = '';
+          } else {
+            document.body.innerHTML = '<div style="height:100vh;display:flex;align-items:center;justify-content:center;font-family:serif;font-size:22px;color:#0D0B08;background:#F5EFE0;font-style:italic;">Access denied. <a href="index.html" style="color:#C9A263;margin-left:12px;">← Back</a></div>';
+            document.body.style.display = '';
+          }
+        });
+      }
+    })();
+  </script>
   <title>Write a Post — Stylish and Healthy</title>
   <!-- Mailchimp -->
   <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e33059783dca94dc78ba9c2cf/cd90e839a2776072868d7fd83.js");</script>
