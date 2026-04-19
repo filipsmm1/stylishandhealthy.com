@@ -1,118 +1,113 @@
-/* ============================================================
-   STYLISH AND HEALTHY — Main JavaScript
-   ============================================================ */
+document.addEventListener('DOMContentLoaded', function() {
 
-document.addEventListener('DOMContentLoaded', () => {
-
-  /* ── Sticky Nav ──────────────────────────────────────────── */
-  const nav = document.querySelector('.nav');
+  // Sticky nav
+  var nav = document.querySelector('.nav');
   if (nav) {
-    const onScroll = () => {
+    window.addEventListener('scroll', function() {
       if (window.scrollY > 40) {
         nav.classList.add('scrolled');
       } else {
         nav.classList.remove('scrolled');
       }
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    });
+    if (window.scrollY > 40) nav.classList.add('scrolled');
   }
 
-  /* ── Mobile Nav Overlay ──────────────────────────────────── */
-  const hamburger = document.querySelector('.nav__hamburger');
-  const overlay   = document.querySelector('.nav__overlay');
-  const closeBtn  = document.querySelector('.nav__overlay-close');
-
+  // Mobile nav
+  var hamburger = document.querySelector('.nav__hamburger');
+  var overlay = document.querySelector('.nav__overlay');
+  var closeBtn = document.querySelector('.nav__overlay-close');
   if (hamburger && overlay) {
-    hamburger.addEventListener('click', () => overlay.classList.add('open'));
-    closeBtn?.addEventListener('click', () => overlay.classList.remove('open'));
-    // Close on link click
-    overlay.querySelectorAll('.nav__overlay-link').forEach(link => {
-      link.addEventListener('click', () => overlay.classList.remove('open'));
-    });
+    hamburger.addEventListener('click', function() { overlay.classList.add('open'); });
+    if (closeBtn) closeBtn.addEventListener('click', function() { overlay.classList.remove('open'); });
+    var overlayLinks = overlay.querySelectorAll('.nav__overlay-link');
+    for (var i = 0; i < overlayLinks.length; i++) {
+      overlayLinks[i].addEventListener('click', function() { overlay.classList.remove('open'); });
+    }
   }
 
-  /* ── Scroll Reveal ───────────────────────────────────────── */
-  const reveals = document.querySelectorAll('.reveal');
-  if (reveals.length) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
+  // Scroll reveal
+  var reveals = document.querySelectorAll('.reveal');
+  if (reveals.length && window.IntersectionObserver) {
+    var revealObs = new IntersectionObserver(function(entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          entries[i].target.classList.add('visible');
+          revealObs.unobserve(entries[i].target);
         }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-    reveals.forEach((el, i) => {
-      el.style.transitionDelay = `${(i % 4) * 80}ms`;
-      revealObserver.observe(el);
-    });
+      }
+    }, { threshold: 0.08 });
+    for (var i = 0; i < reveals.length; i++) {
+      revealObs.observe(reveals[i]);
+    }
+  } else {
+    for (var i = 0; i < reveals.length; i++) {
+      reveals[i].classList.add('visible');
+    }
   }
 
-  /* ── Gold Line Animation ─────────────────────────────────── */
-  const goldLines = document.querySelectorAll('.gold-line, .manifesto__line-top, .manifesto__line-bottom');
-  if (goldLines.length) {
-    const lineObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-          lineObserver.unobserve(entry.target);
+  // Gold lines
+  var lines = document.querySelectorAll('.gold-line, .manifesto__line-top, .manifesto__line-bottom');
+  if (lines.length && window.IntersectionObserver) {
+    var lineObs = new IntersectionObserver(function(entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          entries[i].target.classList.add('animate');
+          lineObs.unobserve(entries[i].target);
         }
-      });
+      }
     }, { threshold: 0.5 });
-    goldLines.forEach(line => lineObserver.observe(line));
+    for (var i = 0; i < lines.length; i++) {
+      lineObs.observe(lines[i]);
+    }
   }
 
-  /* ── Mailchimp Newsletter Form (AJAX) ───────────────────── */
-  const mcForm = document.getElementById('mc-embedded-subscribe-form');
+  // Mailchimp newsletter form
+  var mcForm = document.getElementById('mc-embedded-subscribe-form');
   if (mcForm) {
     mcForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      const emailInput = mcForm.querySelector('input[name="EMAIL"]');
-      const responseEl = document.getElementById('mc-form-response');
-      const btn = mcForm.querySelector('button[type="submit"]');
+      var emailInput = mcForm.querySelector('input[name="EMAIL"]');
+      var responseEl = document.getElementById('mc-form-response');
+      var btn = mcForm.querySelector('button[type="submit"]');
+      var btnSpan = btn ? btn.querySelector('span') : null;
 
       if (!emailInput || !emailInput.value.trim()) {
         if (responseEl) { responseEl.textContent = 'Please enter your email address.'; responseEl.style.color = '#D4A090'; }
         return;
       }
 
-      // Disable button while submitting
-      if (btn) { btn.disabled = true; btn.querySelector('span').textContent = 'JOINING...'; }
+      if (btn) btn.disabled = true;
+      if (btnSpan) btnSpan.textContent = 'JOINING...';
 
-      // Mailchimp requires JSONP — swap /post for /post-json and add c= callback
-      const action = mcForm.action
-        .replace('/post?', '/post-json?')
-        .replace('/post-json?', '/post-json?')
-        + '&c=mailchimpCallback';
+      var action = mcForm.action.replace('/post?', '/post-json?') + '&c=mcCallback';
+      var params = new URLSearchParams(new FormData(mcForm)).toString();
+      var script = document.createElement('script');
+      script.src = action + '&' + params;
 
-      const params = new URLSearchParams(new FormData(mcForm));
-      const script = document.createElement('script');
-      script.src = action + '&' + params.toString();
-
-      window.mailchimpCallback = function(data) {
+      var timer = setTimeout(function() {
         script.remove();
-        delete window.mailchimpCallback;
-        if (btn) { btn.disabled = false; btn.querySelector('span').textContent = 'JOIN →'; }
-        if (data.result === 'success') {
-          if (responseEl) { responseEl.textContent = '✓ You\'re in. Welcome to the ritual.'; responseEl.style.color = '#C9A263'; }
-          emailInput.value = '';
-        } else {
-          // Strip Mailchimp's HTML tags from error message
-          const msg = data.msg ? data.msg.replace(/<[^>]*>/g, '') : 'Something went wrong. Please try again.';
-          if (responseEl) { responseEl.textContent = msg.includes('already subscribed') ? 'You\'re already subscribed.' : msg; responseEl.style.color = '#D4A090'; }
-        }
-      };
-
-      // Timeout fallback
-      const timeout = setTimeout(() => {
-        script.remove();
-        if (btn) { btn.disabled = false; btn.querySelector('span').textContent = 'JOIN →'; }
+        if (btn) btn.disabled = false;
+        if (btnSpan) btnSpan.textContent = 'JOIN →';
         if (responseEl) { responseEl.textContent = 'Request timed out. Please try again.'; responseEl.style.color = '#D4A090'; }
       }, 8000);
 
-      script.onload = () => clearTimeout(timeout);
+      window.mcCallback = function(data) {
+        clearTimeout(timer);
+        script.remove();
+        delete window.mcCallback;
+        if (btn) btn.disabled = false;
+        if (btnSpan) btnSpan.textContent = 'JOIN →';
+        if (data.result === 'success') {
+          if (responseEl) { responseEl.textContent = 'You are in. Welcome to the ritual.'; responseEl.style.color = '#C9A263'; }
+          if (emailInput) emailInput.value = '';
+        } else {
+          var msg = data.msg ? data.msg.replace(/<[^>]*>/g, '') : 'Something went wrong. Please try again.';
+          if (msg.indexOf('already subscribed') > -1) msg = 'You are already subscribed.';
+          if (responseEl) { responseEl.textContent = msg; responseEl.style.color = '#D4A090'; }
+        }
+      };
+
       document.head.appendChild(script);
     });
   }
