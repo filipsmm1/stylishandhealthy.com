@@ -168,11 +168,26 @@
   <section class="newsletter">
     <h2 class="newsletter__title">The Weekly Ritual</h2>
     <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing — straight to your inbox.</p>
-    <div class="newsletter__form">
-      <input type="email" class="newsletter__input" placeholder="your@email.com">
-      <button class="newsletter__btn"><span>JOIN →</span></button>
-    </div>
-    <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
+    <form
+      action="https://wordpress.us11.list-manage.com/subscribe/post?u=e33059783dca94dc78ba9c2cf&amp;id=640e1de445&amp;f_id=00c68ce0f0"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      target="_blank"
+      novalidate
+      style="width:100%;"
+    >
+      <div class="newsletter__form">
+        <input type="email" name="EMAIL" class="newsletter__input" placeholder="your@email.com" required>
+        <button type="submit" name="subscribe" class="newsletter__btn"><span>JOIN →</span></button>
+      </div>
+      <!-- Mailchimp anti-bot honeypot — do not remove -->
+      <div aria-hidden="true" style="position:absolute;left:-5000px;">
+        <input type="text" name="b_e33059783dca94dc78ba9c2cf_640e1de445" tabindex="-1" value="">
+      </div>
+      <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
+      <div id="mc-form-response" style="margin-top:12px;font-family:var(--font-body);font-size:13px;color:var(--cream);min-height:20px;text-align:center;"></div>
+    </form>
   </section>
 
   <!-- FOOTER -->
