@@ -14,6 +14,22 @@
 
 const POSTS = [
 
+     {
+    slug: "test",
+    title: "test",
+    category: "wellness",
+    date: "April 19, 2026",
+    readTime: "1 min read",
+    author: "the Editor",
+    excerpt: "",
+    image: "",
+    metaTitle: "test | Stylish and Healthy",
+    metaDescription: "",
+    keywords: "",
+    content: `[h2]test[/h2]
+loll`
+  },
+
   {
     slug: "morning-ritual-changed-my-skin",
     title: "The Morning Ritual That Changed Everything About My Skin",
