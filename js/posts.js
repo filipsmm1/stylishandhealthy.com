@@ -1,5 +1,159 @@
 var POSTS = [];
 
+// ─── NEW HIGH-SEO POSTS ───────────────────────────────────────────────────────
+
+POSTS.push({
+  slug: "skincare-routine-order-correct",
+  title: "The Correct Order to Apply Skincare Products (Most People Get This Wrong)",
+  category: "skincare",
+  date: "April 20, 2025",
+  readTime: "8 min read",
+  author: "the Editor",
+  excerpt: "Layering skincare in the wrong order means the products you are paying for are barely absorbing. Here is the exact sequence — and the science behind why it matters.",
+  image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900&q=80",
+  metaTitle: "Correct Order to Apply Skincare Products | Stylish and Healthy",
+  metaDescription: "Most women layer their skincare in the wrong order, which means products barely absorb. Here is the correct sequence for morning and evening, explained clearly.",
+  keywords: "skincare routine order, how to layer skincare, skincare steps order, morning skincare routine order, evening skincare routine order",
+  content: "[h2]Why Order Actually Matters[/h2]\n\nSkincare is not just about what you use. It is about what actually reaches your skin. Apply a heavy moisturizer before your serum and you have just built a wall in front of the active ingredient you paid good money for.\n\nThe rule is simple: thinnest to thickest. Water-based before oil-based. But there are nuances within that rule that most people miss.\n\n[quote]The most expensive serum in the world does nothing if you bury it under three other products first.[/quote]\n\n[h2]The Morning Sequence[/h2]\n\nStep one is a gentle cleanser — something that removes overnight oil without stripping the skin barrier. Step two is toner if you use one, applied while the skin is still slightly damp. Step three is your vitamin C serum, which needs to go on clean skin before any moisturizer to work properly. Step four is eye cream, patted lightly with the ring finger. Step five is moisturizer. Step six — non-negotiable — is SPF.\n\n[h3]The SPF Rule[/h3]\n\nSPF goes last in the morning. Always. If you are using a chemical sunscreen, it needs direct contact with the skin to activate. If you apply moisturizer or serum over it, you are reducing its efficacy. SPF is not a moisturizer topper. It is a final protective layer.\n\n[h2]The Evening Sequence[/h2]\n\nEvening is where real repair happens. Start with double cleansing if you wore SPF or makeup — an oil cleanser first, then a water-based one. Then toner. Then your actives: retinol or AHA or BHA, never all three in one night. Then serum. Then a richer moisturizer than your morning one. Then face oil if you use one, pressed gently on top.\n\n[h3]What Not to Mix[/h3]\n\nRetinol and vitamin C do not go together in the same routine. Retinol and AHA do not go together either — the combination will irritate most skin types. Niacinamide and vitamin C have been debated, but at normal skincare concentrations they are generally fine together.\n\n[h2]The Bottom Line[/h2]\n\nYou do not need more products. You need to use the ones you have in the right order. Give each layer thirty seconds to absorb before the next. That is it. That is the thing nobody tells you."
+});
+
+POSTS.push({
+  slug: "how-to-get-clear-skin",
+  title: "How to Actually Get Clear Skin — Without Buying More Products",
+  category: "skincare",
+  date: "April 18, 2025",
+  readTime: "9 min read",
+  author: "the Editor",
+  excerpt: "Clear skin is not a product problem. It is a habits problem. I broke out consistently for years until I stopped buying solutions and started changing behaviours.",
+  image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=900&q=80",
+  metaTitle: "How to Get Clear Skin Naturally | Stylish and Healthy",
+  metaDescription: "Clear skin is not about finding the right product. It is about stopping the habits that are breaking your skin out in the first place. Here is what actually works.",
+  keywords: "how to get clear skin, clear skin tips, how to clear skin naturally, get rid of breakouts, clear skin routine",
+  content: "[h2]The Real Cause of Most Breakouts[/h2]\n\nMost persistent breakouts are not a sign that you need a new serum. They are a sign that something in your daily life is inflaming your skin from the inside out — or that something in your routine is the problem.\n\nI spent two years buying solutions before I realised I needed to stop doing something, not start doing something.\n\n[quote]Breakouts are information. They are your skin telling you something is wrong — not asking you to buy something new.[/quote]\n\n[h2]The Habits That Were Breaking Me Out[/h2]\n\nDirty pillowcase. I changed mine every two weeks. The research suggests every two to three days if you are acne-prone. That single change reduced my breakouts noticeably within a month.\n\nTouching my face. The average person touches their face several hundred times a day without realising. Bacteria transfers. Every time.\n\nOver-cleansing. I was washing my face three times a day because I thought more cleaning meant cleaner skin. It does not. It strips the skin barrier, which triggers more oil production, which causes more breakouts. Twice a day is the maximum. Once for dry or sensitive skin.\n\n[h3]The Diet Factor[/h3]\n\nHigh glycaemic foods spike insulin, which triggers oil production. Dairy, for a significant portion of people, is inflammatory for the skin. I cut both for thirty days and the difference was real.\n\n[h2]What Actually Helps[/h2]\n\nNiacinamide at five percent or above is the most evidence-backed ingredient for acne-prone skin. It regulates sebum, reduces redness, and strengthens the barrier. Salicylic acid for active breakouts — it is oil-soluble and penetrates the pore. Zinc supplements, if your diet is low in zinc, have shown real results in studies on acne.\n\n[h2]The Patience Problem[/h2]\n\nSkin turns over every twenty-eight days. Any change you make — product or habit — needs at least eight weeks of consistency before you can judge whether it is working. Most people abandon things after two weeks. That is why nothing ever works for them."
+});
+
+POSTS.push({
+  slug: "glow-up-guide-real",
+  title: "The Real Glow Up Guide: What Actually Changes When You Commit to Yourself",
+  category: "wellness",
+  date: "April 16, 2025",
+  readTime: "7 min read",
+  author: "the Editor",
+  excerpt: "A glow up is not a new haircut or a gym membership in January. It is a slow, deliberate decision to stop tolerating the version of yourself you have outgrown.",
+  image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=900&q=80",
+  metaTitle: "The Real Glow Up Guide | Stylish and Healthy",
+  metaDescription: "A real glow up is not aesthetic. It is a decision. Here is what actually changes when you commit to becoming the best version of yourself.",
+  keywords: "glow up guide, how to glow up, glow up tips, glow up transformation, how to improve yourself",
+  content: "[h2]What a Glow Up Actually Is[/h2]\n\nThe internet has turned the glow up into an aesthetic event. Before and after photos. New clothes, new hair, new body. That is not what I am talking about.\n\nA real glow up is quieter and more permanent. It is the moment you decide that the life you have been tolerating is not good enough — and you mean it this time.\n\n[quote]You cannot glow up while staying comfortable in the life that is keeping you small.[/quote]\n\n[h2]Phase One — The Audit[/h2]\n\nBefore anything changes externally, something has to change internally. I call it the honest audit. You sit down and you write, without editing yourself, the answer to this question: what version of my life am I embarrassed to admit I have settled for?\n\nThe things that come up — the relationship you know is wrong, the sleep schedule you keep meaning to fix, the skin you keep neglecting, the body you keep promising you will take care of — that list is your glow up roadmap.\n\n[h2]Phase Two — The Boring Work[/h2]\n\nThe glow up happens in the unglamorous middle. The 6am alarms nobody sees. The water instead of wine on a Tuesday. The skincare routine done properly even when you are exhausted. The walks. The early nights. The saying no to things that drain you.\n\n[h3]The Physical Foundations[/h3]\n\nSleep is the most underrated beauty treatment in existence. Seven to nine hours of quality sleep does more for your skin, your weight, your mood, and your clarity than almost any other single variable. If I had to choose between a perfect skincare routine on five hours of sleep or a basic routine on eight hours, I would choose the sleep every time.\n\n[h2]What Actually Changes[/h2]\n\nSix months in: your skin is different because your habits are different. Your posture has shifted because you have been moving consistently. You carry yourself differently because you have been keeping promises to yourself. That is the glow. It is not something you apply. It is something you earn."
+});
+
+POSTS.push({
+  slug: "retinol-beginners-guide",
+  title: "Retinol for Beginners: How to Start Without Destroying Your Skin",
+  category: "skincare",
+  date: "April 14, 2025",
+  readTime: "8 min read",
+  author: "the Editor",
+  excerpt: "Retinol is the most proven anti-ageing ingredient in skincare. It is also the most misused. Here is exactly how to start — and how to avoid the mistakes that put most people off it forever.",
+  image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=900&q=80",
+  metaTitle: "Retinol for Beginners Guide | Stylish and Healthy",
+  metaDescription: "How to start retinol without the irritation, peeling, and purging that puts most beginners off. A complete guide from someone who got it wrong first.",
+  keywords: "retinol for beginners, how to use retinol, retinol guide, starting retinol, retinol tips, retinol routine",
+  content: "[h2]Why Retinol Is Worth It[/h2]\n\nRetinol is a form of vitamin A. It is one of only a handful of skincare ingredients with decades of peer-reviewed research behind it. It accelerates cell turnover, stimulates collagen production, fades hyperpigmentation, and reduces the appearance of fine lines. It is not hype.\n\nBut the way most people start it almost guarantees failure.\n\n[quote]The mistake is not starting retinol. The mistake is starting too fast and giving up when your skin reacts.[/quote]\n\n[h2]The Sandwich Method[/h2]\n\nFor beginners, I always recommend the sandwich method. Apply your moisturiser first. Then a small amount — a pea-sized amount for the entire face — of retinol. Then moisturiser again on top. This buffers the retinol and significantly reduces irritation while your skin adjusts.\n\n[h3]Starting Concentration[/h3]\n\nBegin at 0.025% or 0.05%. Not 0.5%, not 1%. Those percentages are for skin that has been using retinol for at least a year. Starting too high is the number one reason people quit.\n\n[h2]The Schedule[/h2]\n\nWeek one and two: one night per week. Week three and four: two nights per week. Month two: every other night. Month three onwards: every night if your skin tolerates it.\n\nThis feels slow. It is slow. It works.\n\n[h3]What to Expect[/h3]\n\nSome dryness and mild flaking in the first few weeks is normal. Severe redness, burning, or peeling is a sign you have started too fast or are using too high a concentration. Purging — new pimples appearing in the first four to six weeks — is normal and temporary. Breakouts that start after three months are not purging. They are a reaction.\n\n[h2]What Not to Use With Retinol[/h2]\n\nDo not use retinol on the same night as AHA or BHA exfoliants. Do not use it with vitamin C in your evening routine. Do not use it near your eyes without building up very slowly. Always use SPF the morning after retinol — it increases sun sensitivity."
+});
+
+POSTS.push({
+  slug: "morning-routine-5am-productive",
+  title: "What a 5am Morning Routine Actually Does to Your Life After 30 Days",
+  category: "wellness",
+  date: "April 12, 2025",
+  readTime: "6 min read",
+  author: "the Editor",
+  excerpt: "I spent 30 days waking up at 5am not because productivity content told me to — but because I wanted to find out if the quiet really changes something. It does.",
+  image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&q=80",
+  metaTitle: "5am Morning Routine: What Actually Happens After 30 Days | Stylish and Healthy",
+  metaDescription: "I tried a 5am morning routine for 30 days and tracked what changed. Not the productivity-content version — the honest version.",
+  keywords: "5am morning routine, early morning routine, wake up at 5am, morning routine benefits, productive morning routine",
+  content: "[h2]Why I Did It[/h2]\n\nI did not start waking up at 5am because a podcast told me successful people do. I did it because I kept ending every day feeling like I had never had a moment that was mine. By the time I finished working, dealing with everything that needed dealing with, and wound down enough to be present — it was midnight and I was already behind on sleep.\n\nThe 5am experiment was about finding hours that belonged to nobody but me.\n\n[quote]The 5am alarm is not about productivity. It is about sovereignty. An hour that is entirely yours before the world starts asking things of you.[/quote]\n\n[h2]The First Week[/h2]\n\nHard. I am not going to pretend otherwise. The first three days I sat in my kitchen feeling sorry for myself and mostly just made coffee. The fourth day I started reading instead of scrolling. By day seven, something had shifted. The silence at 5am is a different quality of silence. It is not the silence of everyone being asleep around you. It is the silence of the world not having started yet.\n\n[h2]What Changed by Day 30[/h2]\n\nMy skin improved — because I was sleeping earlier to make the alarm sustainable, which meant consistent seven-plus-hour nights. My anxiety was lower in the mornings because I had already had time to myself before the day started demanding things. My skincare routine went from rushed to actual. I was not applying SPF in the car anymore.\n\n[h3]The Unexpected Thing[/h3]\n\nThe hours after 5am are extraordinarily productive — not because of some neurological magic, but because there are no notifications yet. Nobody is emailing you. Nobody needs anything. The clarity is situational, not mystical. But it is real.\n\n[h2]Is It For Everyone[/h2]\n\nNo. If you are naturally a night person and your life functions well that way, I am not here to tell you to override your biology for a trend. But if you are someone who ends every day feeling like you never had a moment that was yours — the morning is where you take it back."
+});
+
+POSTS.push({
+  slug: "sunscreen-everyday-why",
+  title: "Why I Wear SPF Every Single Day — Even in Winter, Even Indoors",
+  category: "skincare",
+  date: "April 10, 2025",
+  readTime: "5 min read",
+  author: "the Editor",
+  excerpt: "SPF is not a summer product. UV damage is cumulative, and it is happening to your skin on cloudy days, through windows, and in winter. Here is why daily SPF changed my skin more than any serum.",
+  image: "https://images.unsplash.com/photo-1523688471150-efdd09f533b5?w=900&q=80",
+  metaTitle: "Why You Should Wear SPF Every Day | Stylish and Healthy",
+  metaDescription: "SPF every day — not just summer. Here is the science behind why daily sunscreen is the single most effective anti-ageing step in any skincare routine.",
+  keywords: "SPF every day, sunscreen daily, why wear sunscreen everyday, SPF indoors, best daily sunscreen, sunscreen routine",
+  content: "[h2]The Cumulative Damage Myth[/h2]\n\nMost people think sun damage means sunburn. It does not. The UV radiation that ages your skin — UVA — does not burn you. You cannot feel it. It passes through clouds, through glass, and it penetrates deeper into the skin than the UV that burns you.\n\nBy the time you can see sun damage on your skin as dark spots, texture, or premature lines, that damage accumulated over years of unprotected daily exposure.\n\n[quote]The best anti-ageing product ever made costs under twenty pounds and most women do not wear it consistently. It is SPF.[/quote]\n\n[h2]The Indoor Argument[/h2]\n\nUVA passes through standard window glass. If you sit near a window at work, in a car, or at home, you are receiving UV exposure. Drivers consistently show more UV damage on the side of their face closest to the window. This is documented in dermatology literature, not wellness content.\n\n[h2]How to Make It a Non-Negotiable[/h2]\n\nThe reason most people skip SPF is texture. They find one that pills under makeup, or feels heavy, or leaves a white cast. The solution is finding the right formula, not skipping it altogether. Korean and Japanese SPF formulations are generally far lighter than European ones. Mineral SPFs have improved dramatically. There is a version for every skin type.\n\n[h3]My Current Approach[/h3]\n\nI use a separate SPF as the last step of my morning routine, applied after moisturiser. Not a moisturiser-SPF hybrid — the SPF concentration in most combined products is not high enough, and most people do not apply nearly enough of them to get the stated protection. A dedicated SPF30 minimum, applied generously, every morning.\n\n[h2]The Result[/h2]\n\nTwo years of consistent daily SPF has done more for my skin tone, texture, and the appearance of my existing hyperpigmentation than any brightening serum. It does not reverse damage. But it stops the accumulation — and that turns out to be everything."
+});
+
+POSTS.push({
+  slug: "feminine-energy-what-it-means",
+  title: "Feminine Energy Is Not About Being Soft — It Is About Being Sovereign",
+  category: "mindset",
+  date: "April 7, 2025",
+  readTime: "6 min read",
+  author: "the Editor",
+  excerpt: "The internet version of feminine energy is bubble baths and passive waiting. That is not what I mean. True feminine energy is a kind of power most women have been talked out of claiming.",
+  image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=900&q=80",
+  metaTitle: "What Feminine Energy Really Means | Stylish and Healthy",
+  metaDescription: "Feminine energy is not about being passive or soft. It is about knowing your worth, moving from a place of fullness, and refusing to shrink. Here is what it actually looks like.",
+  keywords: "feminine energy, what is feminine energy, feminine energy tips, how to be more feminine, femininity, feminine power",
+  content: "[h2]What The Internet Gets Wrong[/h2]\n\nEvery time I see feminine energy content online it involves pink aesthetics, letting men lead, and speaking softly. That is not feminine energy. That is a performance of a very specific, very narrow, very convenient version of womanhood.\n\nFeminine energy, as I understand and live it, is about fullness. It is about being so rooted in yourself that you do not need external validation to feel like you are enough.\n\n[quote]A woman in her feminine energy is not waiting to be chosen. She is busy becoming someone who is genuinely worth choosing.[/quote]\n\n[h2]The Sovereignty Piece[/h2]\n\nSovereignty means you are the authority of your own life. You make decisions based on what aligns with your values, not based on what will make you most likeable, most acceptable, least threatening.\n\nThat is not softness. It requires enormous strength. But it is a different kind of strength than the masculine model — it is not force, it is groundedness.\n\n[h2]What It Looks Like in Practice[/h2]\n\nIt looks like taking care of yourself not because you want to be attractive to someone else, but because you respect yourself. It looks like dressing beautifully for a Tuesday with no plans, because you are worth the effort. It looks like clear standards — for how you spend your time, who you spend it with, what you allow in your environment.\n\n[h3]On Softness[/h3]\n\nThere is nothing wrong with softness. Softness can be a form of strength when it comes from security rather than fear. The difference is that a woman in her power chooses to be soft. She is not soft because she does not know how to be anything else.\n\n[h2]The Work[/h2]\n\nBecoming this woman is not a vibe shift. It is unglamorous internal work. It is the therapy session, the boundaries you set even when it costs you something, the standards you hold even when it would be easier to lower them. The aesthetics come after — and they come naturally, because how you feel changes how you move."
+});
+
+POSTS.push({
+  slug: "self-care-routine-not-luxury",
+  title: "Self-Care Is Not a Luxury. The Refusal to Practise It Is What Costs You.",
+  category: "self-care",
+  date: "April 4, 2025",
+  readTime: "5 min read",
+  author: "the Editor",
+  excerpt: "The women who are most depleted are also the ones who feel most guilty about taking care of themselves. That is not a coincidence. That is the trap.",
+  image: "https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=900&q=80",
+  metaTitle: "Self-Care Is Not a Luxury | Stylish and Healthy",
+  metaDescription: "The guilt around self-care is the trap. Here is why taking care of yourself is not indulgence — and what it actually costs you to refuse.",
+  keywords: "self care routine, self care tips, self care importance, how to practise self care, self care for women",
+  content: "[h2]The Guilt Is Designed[/h2]\n\nThe discomfort women feel about taking time for themselves is not an accident of personality. It is a conditioned response. I have been rewarded for selflessness and penalised — socially, relationally — for prioritising my own needs. The guilt you feel when you take an hour for yourself is not wisdom. It is conditioning.\n\n[quote]You cannot give what you do not have. Depletion is not virtue. It is just depletion.[/quote]\n\n[h2]What Refusing Self-Care Actually Costs[/h2]\n\nChronically elevated cortisol from never resting — more breakouts, disrupted sleep, weight gain, accelerated ageing. The skin shows stress before almost any other organ. The women who look exhausted are often simply not resting. Not because they cannot. Because they will not allow themselves to.\n\n[h2]A Practical Minimum[/h2]\n\nI am not talking about spa days and expensive skincare. I am talking about the minimum viable self-care that keeps a person functional and dignified. Eight hours of sleep as a non-negotiable. A proper morning routine where you are not eating breakfast in the car. One hour per week that belongs entirely to you with no obligations attached.\n\n[h3]On the Word Routine[/h3]\n\nRoutine sounds boring. That is intentional on my part. The goal is not to make self-care exciting. It is to make it so embedded in your daily life that skipping it feels as strange as not brushing your teeth. The glamour comes from the results — not the process.\n\n[h2]Start Small, Mean It[/h2]\n\nPick one thing. One thing you will do every single day that is purely for you. Not productive, not for anyone else, not optimised for any outcome other than how you feel. A walk. Skincare done slowly. Ten minutes of reading before bed instead of scrolling. Do that one thing with real intention for thirty days. Then add another."
+});
+
+POSTS.push({
+  slug: "niacinamide-benefits-skin",
+  title: "Why Niacinamide Is the One Skincare Ingredient I Will Never Stop Using",
+  category: "skincare",
+  date: "March 31, 2025",
+  readTime: "6 min read",
+  author: "the Editor",
+  excerpt: "Niacinamide is not trendy. It has been in dermatology research for decades. It works for every skin type, it layers with almost everything, and it quietly solves problems most people spend hundreds on serums trying to fix.",
+  image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80",
+  metaTitle: "Niacinamide Benefits for Skin | Stylish and Healthy",
+  metaDescription: "Niacinamide works for every skin type. Here is what it actually does, what concentration to use, and why it belongs in almost everyone's routine.",
+  keywords: "niacinamide benefits, what does niacinamide do, niacinamide for skin, niacinamide routine, best niacinamide serum",
+  content: "[h2]What Niacinamide Actually Is[/h2]\n\nNiacinamide is vitamin B3. It is water-soluble, stable in formulations, and has more peer-reviewed research behind it than almost any other cosmetic skincare ingredient. It is not a trend. It has been studied in dermatology since the 1970s.\n\n[h2]What It Does[/h2]\n\nIt regulates sebum production — which is why it works for both oily and dry skin. Oily skin produces less oil. Dry skin retains moisture better because of the improved barrier function. It reduces the appearance of enlarged pores by regulating the oil that stretches them. It fades hyperpigmentation by inhibiting the transfer of melanin to skin cells. It reduces redness and inflammation. It strengthens the skin barrier, making the skin more resilient to irritants.\n\n[quote]Niacinamide does not do one thing beautifully. It does six things quietly. That is why I trust it.[/quote]\n\n[h3]What Concentration to Use[/h3]\n\nFive percent is the sweet spot for most people — effective without the flushing that some people experience at ten percent. If you have sensitive skin, start at two percent. If your skin tolerates five percent well after a month, you can move to ten for more pronounced pore and sebum effects.\n\n[h2]How I Use It[/h2]\n\nI apply niacinamide as my first serum in both my morning and evening routines — after cleansing, before heavier serums and moisturiser. It layers well with almost everything. The only combination worth being careful with is very high-concentration niacinamide alongside direct vitamin C, though at standard skincare concentrations most people experience no issue.\n\n[h2]Who It Is For[/h2]\n\nEvery skin type. Genuinely. If I could add one ingredient to everyone's routine, it would be niacinamide. It is affordable, widely available, stable, and effective. It is the closest thing to a universal skincare recommendation I will ever make."
+});
+
+POSTS.push({
+  slug: "building-discipline-as-woman",
+  title: "How I Built Real Discipline as a Woman in a World Designed to Distract You",
+  category: "mindset",
+  date: "March 28, 2025",
+  readTime: "7 min read",
+  author: "the Editor",
+  excerpt: "Discipline is not a personality trait. It is a system. Most women are trying to run on willpower — which is a resource that depletes. Here is what replaced it for me.",
+  image: "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=900&q=80",
+  metaTitle: "How to Build Real Discipline as a Woman | Stylish and Healthy",
+  metaDescription: "Discipline is not about willpower. It is about designing a life where the right choice is also the easy choice. Here is how I built it from scratch.",
+  keywords: "how to build discipline, discipline for women, self discipline tips, how to be more disciplined, discipline habits",
+  content: "[h2]The Willpower Lie[/h2]\n\nEvery piece of productivity advice aimed at women assumes that what we need is more willpower. More motivation. A better mindset. More commitment.\n\nThat is not the problem. The problem is that willpower is a finite daily resource, and most of us are spending it on decisions that do not need to cost anything — because we have not designed our environment to make the right choice the default.\n\n[quote]You do not need more willpower. You need a better system. Willpower runs out. Systems do not.[/quote]\n\n[h2]Environment Design First[/h2]\n\nBefore I changed any behaviour, I changed what I could see. The book went on the bedside table, the phone went out of the bedroom. The skincare went next to the sink in the order I use it. The gym bag went by the door the night before. None of these things required willpower in the morning. The decision had already been made.\n\nFriction matters more than motivation. Make the thing you want to do easier to do than the thing you do not want to do.\n\n[h3]The Identity Shift[/h3]\n\nThe deeper change was in how I described myself — even internally. I stopped saying I was trying to build a routine and started saying I was someone who had a routine. It sounds like a semantic game. It is not. Identity-based behaviour is far more durable than goal-based behaviour because the goal ends. The identity does not.\n\n[h2]The Role of Rest[/h2]\n\nDisordered sleep undermines every discipline effort. Consistently. Studies on self-regulation show that sleep-deprived people have significantly less capacity for the kind of decisions that require long-term thinking. If your discipline is failing, before you interrogate your character, ask how you are sleeping.\n\n[h2]What It Looks Like Now[/h2]\n\nI do not struggle to do my routine. I do not motivate myself to do my skincare or eat well or move. The behaviours are embedded enough that skipping them requires active decision. That is the goal. Not white-knuckling your way through every day. Building a life where the things that are good for you are simply what you do."
+});
+
+// ─── ORIGINAL POSTS ───────────────────────────────────────────────────────────
+
 POSTS.push({
   slug: "morning-ritual-changed-my-skin",
   title: "The Morning Ritual That Changed Everything About My Skin",
@@ -7,7 +161,7 @@ POSTS.push({
   date: "April 14, 2025",
   readTime: "6 min read",
   author: "the Editor",
-  excerpt: "It's not about a ten-step routine or a cabinet full of serums. It's about understanding what your skin is actually asking for — and having the discipline to give it exactly that, consistently.",
+  excerpt: "It is not about a ten-step routine or a cabinet full of serums. It is about understanding what your skin is actually asking for — and having the discipline to give it exactly that, consistently.",
   image: "https://images.unsplash.com/photo-1556228852-6d35a585d566?w=900&q=80",
   metaTitle: "The Morning Ritual That Changed Everything About My Skin | Stylish and Healthy",
   metaDescription: "A simple, intentional skincare morning ritual built around consistency, not products.",
@@ -22,7 +176,7 @@ POSTS.push({
   date: "April 8, 2025",
   readTime: "5 min read",
   author: "the Editor",
-  excerpt: "Most evening routines are graveyard shifts — things we do mechanically, half-asleep, without intention. Here is how I designed mine with the same care I give my mornings.",
+  excerpt: "Most evening routines are graveyard shifts — things I do mechanically, half-asleep, without intention. Here is how I designed mine with the same care I give my mornings.",
   image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=900&q=80",
   metaTitle: "How to Rebuild Your Evening Routine From Scratch | Stylish and Healthy",
   metaDescription: "Stop treating your evening like an afterthought. A guide to building a night routine that actually prepares you for the next day.",
@@ -37,12 +191,12 @@ POSTS.push({
   date: "April 1, 2025",
   readTime: "4 min read",
   author: "the Editor",
-  excerpt: "We have made discipline sound punishing. But the discipline that actually works comes from caring deeply about who you are becoming.",
+  excerpt: "I have made discipline sound punishing for years. But the discipline that actually works comes from caring deeply about who you are becoming.",
   image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&q=80",
   metaTitle: "Discipline Is Just Love With a Morning Alarm | Stylish and Healthy",
   metaDescription: "Real discipline is not about punishment or willpower. It is about caring enough about your future self to show up for her consistently.",
   keywords: "self discipline, mindset, wellness mindset, personal growth",
-  content: "We have a discipline problem, and the problem is how we have defined it.\n\nThe fitness industry turned discipline into punishment. The productivity world made it synonymous with suffering.\n\n[quote]The woman who takes care of herself is not punishing herself. She is honoring herself.[/quote]\n\n[h2]The Reframe[/h2]\n\nDiscipline in its truest form is just a very specific kind of love. It is the love you have for your future self — clear-eyed enough to make choices today that she will thank you for.\n\n[h2]The Alarm[/h2]\n\nThe morning alarm is the most honest test of your relationship with yourself. It asks: do you mean it?"
+  content: "I have a discipline problem, and the problem is how I defined it for years.\n\nThe fitness industry turned discipline into punishment. The productivity world made it synonymous with suffering.\n\n[quote]The woman who takes care of herself is not punishing herself. She is honoring herself.[/quote]\n\n[h2]The Reframe[/h2]\n\nDiscipline in its truest form is just a very specific kind of love. It is the love you have for your future self — clear-eyed enough to make choices today that she will thank you for.\n\n[h2]The Alarm[/h2]\n\nThe morning alarm is the most honest test of your relationship with yourself. It asks: do you mean it?"
 });
 
 POSTS.push({
@@ -67,13 +221,15 @@ POSTS.push({
   date: "March 17, 2025",
   readTime: "5 min read",
   author: "the Editor",
-  excerpt: "Rest has been colonized by productivity culture. True rest — the kind that actually restores you — is a skill most of us have completely lost.",
+  excerpt: "Rest has been colonised by productivity culture. True rest — the kind that actually restores you — is a skill I had completely lost.",
   image: "https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=900&q=80",
   metaTitle: "The Ritual of Doing Nothing — and Doing It Well | Stylish and Healthy",
   metaDescription: "True rest is not the absence of activity. It is a practice.",
   keywords: "rest and recovery, self-care rest, how to rest properly, slow living",
-  content: "We have forgotten how to rest.\n\nNot how to sleep — I mean real rest. The kind that happens in the awake hours. The deliberate, protected, unhurried time that is not recovering from anything or preparing for anything.\n\n[quote]If your rest feels like a strategy, it is not rest.[/quote]\n\n[h2]What Real Rest Actually Feels Like[/h2]\n\nReal rest is a little uncomfortable if you are out of practice. It is the absence of a goal. You sit in the light coming through the window and you do not work on anything.\n\n[h3]The Practice[/h3]\n\nTwenty minutes a day. No phone, no podcast, no television. Just the radical act of being present without an agenda.\n\n[h2]On Guilt[/h2]\n\nThe guilt you feel when you are not being productive is not a character trait. It is conditioning. You are allowed to simply be."
+  content: "I had forgotten how to rest.\n\nNot how to sleep — I mean real rest. The kind that happens in the awake hours. The deliberate, protected, unhurried time that is not recovering from anything or preparing for anything.\n\n[quote]If your rest feels like a strategy, it is not rest.[/quote]\n\n[h2]What Real Rest Actually Feels Like[/h2]\n\nReal rest is a little uncomfortable if you are out of practice. It is the absence of a goal. You sit in the light coming through the window and you do not work on anything.\n\n[h3]The Practice[/h3]\n\nTwenty minutes a day. No phone, no podcast, no television. Just the radical act of being present without an agenda.\n\n[h2]On Guilt[/h2]\n\nThe guilt you feel when you are not being productive is not a character trait. It is conditioning. You are allowed to simply be."
 });
+
+// ─── UTILITY FUNCTIONS ────────────────────────────────────────────────────────
 
 function getRelatedPosts(currentSlug, count) {
   count = count || 3;
