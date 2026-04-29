@@ -3,1053 +3,409 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stylish and Healthy — Skincare, Wellness &amp; Self-Care</title>
-  <meta name="description" content="Refined skincare, wellness, and self-care for the woman who holds herself to a higher standard.">
-  <link rel="canonical" href="https://stylishandhealthy.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Stylish and Healthy — Skincare, Wellness &amp; Self-Care">
-  <meta property="og:description" content="Refined skincare, wellness, and self-care for the woman who holds herself to a higher standard.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&q=80">
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e33059783dca94dc78ba9c2cf/cd90e839a2776072868d7fd83.js");</script>
-
+  <title>Stylish & Healthy — Skincare, Wellness & Self-Care</title>
+  <meta name="description" content="A lifestyle brand for women who choose themselves. Wellness tips, style guides, and daily habits.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    /* ════════════════════════════════════════════════════════
-       ENHANCED HOMEPAGE STYLES
-    ════════════════════════════════════════════════════════ */
-
-    /* ── Marquee ticker ── */
-    .ticker {
-      background: var(--black);
-      padding: 10px 0;
-      overflow: hidden;
-      white-space: nowrap;
+    :root {
+      --blush:      #FAF4EF;
+      --blush-mid:  #F2E8DF;
+      --rose:       #E8B4B8;
+      --rose-deep:  #C9888E;
+      --sage:       #7A9E7E;
+      --sage-light: #A8C5AB;
+      --sage-pale:  #EAF1EB;
+      --espresso:   #3B2A1A;
+      --parchment:  #F0E8DC;
+      --white-soft: #FDFAF7;
+      --text-mid:   #6B5040;
+      --text-light: #A08070;
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-sub:     'Cormorant Garamond', Georgia, serif;
+      --ff-body:    'DM Sans', sans-serif;
+      --radius-card: 16px;
+      --radius-pill: 9999px;
+      --shadow-card: 0 4px 24px rgba(59,42,26,0.08);
+      --shadow-hover: 0 12px 40px rgba(59,42,26,0.14);
+      --tr: 0.32s ease;
     }
-    .ticker__inner {
-      display: inline-flex;
-      animation: ticker-scroll 28s linear infinite;
-      gap: 0;
-    }
-    .ticker__track {
-      display: inline-flex;
-      gap: 0;
-    }
-    .ticker__item {
-      font-family: var(--font-accent);
-      font-size: 11px;
-      letter-spacing: 3px;
-      color: rgba(245,239,224,0.55);
-      padding: 0 32px;
-    }
-    .ticker__dot {
-      color: var(--gold);
-      padding: 0 8px;
-    }
-    @keyframes ticker-scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* ── Hero ── */
-    .hero {
-      position: relative;
-      height: 100vh;
-      min-height: 700px;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-      padding-bottom: 80px;
-    }
-    .hero__bg {
-      position: absolute;
-      inset: 0;
-      background: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1800&q=85') center/cover no-repeat;
-    }
-    .hero__overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        160deg,
-        rgba(13,11,8,0.08) 0%,
-        rgba(13,11,8,0.35) 50%,
-        rgba(13,11,8,0.7) 100%
-      );
-    }
-    .hero__content {
-      position: relative;
-      z-index: 2;
-      padding: 0 64px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: flex-end;
-      width: 100%;
-      gap: 48px;
-    }
-    .hero__left {}
-    .hero__eyebrow {
-      font-family: var(--font-accent);
-      font-size: 11px;
-      letter-spacing: 4px;
-      color: var(--gold);
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .hero__eyebrow::after {
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--blush); color: var(--espresso); font-family: var(--ff-body); line-height: 1.7; overflow-x: hidden; }
+    body::after {
       content: '';
-      display: block;
-      width: 40px;
-      height: 1px;
-      background: var(--gold);
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.030; pointer-events: none; z-index: 9999;
     }
-    .hero__title {
-      font-family: var(--font-display);
-      font-size: clamp(60px, 8vw, 112px);
-      line-height: 0.95;
-      color: #fff;
-      font-weight: 400;
-      margin-bottom: 32px;
-      letter-spacing: -0.01em;
-    }
-    .hero__title em {
-      font-style: italic;
-      color: rgba(255,255,255,0.82);
-    }
-    .hero__cta-row {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-    }
-    .hero__cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-body);
-      font-size: 13px;
-      letter-spacing: 0.03em;
-      color: rgba(255,255,255,0.9);
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 14px 28px;
-      backdrop-filter: blur(8px);
-      transition: all 300ms ease;
-    }
-    .hero__cta:hover {
-      background: var(--gold);
-      border-color: var(--gold);
-      gap: 16px;
-      color: #fff;
-    }
-    .hero__cta-text {
-      font-family: var(--font-body);
-      font-size: 12px;
-      color: rgba(255,255,255,0.5);
-    }
-    .hero__right {
-      text-align: right;
-    }
-    .hero__stat {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin-bottom: 24px;
-    }
-    .hero__stat-num {
-      font-family: var(--font-display);
-      font-size: 44px;
-      color: #fff;
-      font-weight: 300;
-      line-height: 1;
-    }
-    .hero__stat-label {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 3px;
-      color: rgba(255,255,255,0.45);
-    }
-    .hero__scroll {
-      position: absolute;
-      bottom: 32px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      color: rgba(255,255,255,0.4);
-      font-family: var(--font-accent);
-      font-size: 9px;
-      letter-spacing: 3px;
-      z-index: 3;
-    }
-    .hero__scroll-line {
-      width: 1px;
-      height: 48px;
-      background: linear-gradient(to bottom, rgba(201,162,99,0.8), transparent);
-      animation: scroll-line 2s ease-in-out infinite;
-    }
-    @keyframes scroll-line {
-      0%, 100% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-      50% { opacity: 0.4; transform: scaleY(0.5); transform-origin: top; }
-    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
 
-    /* ── Intro strip ── */
-    .intro-strip {
-      background: var(--ivory);
-      padding: 64px 64px;
-      display: flex;
-      align-items: center;
-      gap: 80px;
-      border-bottom: 1px solid rgba(201,162,99,0.18);
-    }
-    .intro-strip__tagline {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: clamp(22px, 2.5vw, 32px);
-      color: var(--black);
-      font-weight: 300;
-      line-height: 1.4;
-      max-width: 620px;
-      flex-shrink: 0;
-    }
-    .intro-strip__pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .pill {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 2.5px;
-      color: rgba(13,11,8,0.5);
-      border: 1px solid rgba(201,162,99,0.4);
-      padding: 7px 18px;
-      transition: all 250ms ease;
-      cursor: default;
-    }
-    .pill:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-      background: rgba(201,162,99,0.06);
-    }
-
-    /* ── Featured Article (reimagined) ── */
-    .featured {
-      padding: 100px 0;
-      background: var(--cream);
-    }
-    .featured__inner {
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      height: 64px;
+      background: rgba(253,250,247,0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(122,158,126,0.15);
       display: grid;
-      grid-template-columns: 55fr 45fr;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 64px;
-      gap: 64px;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
+      padding: 0 48px;
+      transition: box-shadow var(--tr);
     }
-    .featured__image-wrap {
-      position: relative;
-      aspect-ratio: 4/5;
-      overflow: hidden;
-    }
-    .featured__image-label {
-      position: absolute;
-      top: 28px;
-      left: -1px;
-      background: var(--gold);
-      padding: 6px 16px;
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 3px;
-      color: #fff;
-      z-index: 2;
-    }
-    .featured__image-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: contrast(1.05) saturate(0.88) sepia(0.06);
-      transition: transform 600ms ease;
-    }
-    .featured__image-wrap:hover img { transform: scale(1.04); }
+    .nav.scrolled { box-shadow: 0 2px 20px rgba(59,42,26,0.07); }
+    .nav__left  { display: flex; gap: 32px; }
+    .nav__right { display: flex; justify-content: flex-end; align-items: center; gap: 24px; }
+    .nav__link  { font-family: var(--ff-body); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-mid); transition: color var(--tr); }
+    .nav__link:hover { color: var(--sage); }
+    .nav__logo  { font-family: var(--ff-display); font-size: 22px; font-style: italic; color: var(--sage); text-align: center; }
+    .nav__cta   { background: var(--rose); color: #fff; font-family: var(--ff-body); font-size: 12px; font-weight: 500; padding: 9px 20px; border-radius: var(--radius-pill); transition: background var(--tr), transform var(--tr); white-space: nowrap; }
+    .nav__cta:hover { background: var(--rose-deep); transform: translateY(-1px); }
+    .nav__hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav__hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text-mid); border-radius: 2px; }
+    .nav__overlay { position: fixed; inset: 0; background: var(--white-soft); z-index: 300; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; opacity: 0; pointer-events: none; transition: opacity 0.35s ease; }
+    .nav__overlay.open { opacity: 1; pointer-events: all; }
+    .nav__overlay-link { font-family: var(--ff-display); font-size: 44px; font-style: italic; color: var(--espresso); transition: color 0.2s; }
+    .nav__overlay-link:hover { color: var(--sage); }
+    .nav__overlay-close { position: absolute; top: 22px; right: 40px; background: none; border: none; font-size: 12px; letter-spacing: 0.1em; color: var(--text-light); cursor: pointer; text-transform: uppercase; font-family: var(--ff-body); }
 
-    .featured__meta { padding: 20px 0; }
-    .featured__overline {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 28px;
-    }
-    .featured__overline-line {
-      width: 40px;
-      height: 1px;
-      background: var(--gold);
-    }
-    .featured__overline-text {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 4px;
-      color: var(--gold);
-    }
-    .featured__title {
-      font-family: var(--font-display);
-      font-size: clamp(32px, 3.5vw, 52px);
-      line-height: 1.1;
-      color: var(--black);
-      font-weight: 400;
-      margin-bottom: 24px;
-    }
-    .featured__title em { font-style: italic; color: rgba(13,11,8,0.65); }
-    .featured__excerpt {
-      font-family: var(--font-body);
-      font-size: 15px;
-      line-height: 1.9;
-      color: rgba(13,11,8,0.65);
-      margin-bottom: 20px;
-      border-left: 2px solid rgba(201,162,99,0.35);
-      padding-left: 20px;
-    }
-    .featured__byline {
-      font-family: var(--font-body);
-      font-size: 11px;
-      color: rgba(13,11,8,0.4);
-      margin-bottom: 36px;
-      letter-spacing: 0.02em;
-    }
-    .btn-editorial {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-accent);
-      font-size: 12px;
-      letter-spacing: 3px;
-      color: var(--black);
-      border-bottom: 1px solid var(--gold);
-      padding-bottom: 6px;
-      transition: all 280ms ease;
-    }
-    .btn-editorial:hover {
-      color: var(--gold);
-      gap: 18px;
-    }
-
-    /* ── Manifesto (enhanced) ── */
-    .manifesto {
-      background: var(--black);
-      padding: 120px 64px;
-      position: relative;
-      overflow: hidden;
-    }
-    .manifesto__ghost {
-      position: absolute;
-      bottom: -60px;
-      right: -40px;
-      font-family: var(--font-display);
-      font-size: clamp(180px, 22vw, 320px);
-      color: #fff;
-      opacity: 0.03;
-      pointer-events: none;
-      user-select: none;
-      font-weight: 600;
-      line-height: 1;
-      white-space: nowrap;
-    }
-    .manifesto__inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 80px;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-    .manifesto__label-col {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .manifesto__label {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 4px;
-      color: var(--gold);
-    }
-    .manifesto__label-line {
-      width: 1px;
-      height: 80px;
-      background: linear-gradient(to bottom, var(--gold), transparent);
-    }
-    .manifesto__quote {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: clamp(26px, 3.5vw, 48px);
-      line-height: 1.3;
-      color: #fff;
-      font-weight: 300;
-    }
-    .manifesto__quote em {
-      color: var(--gold);
-      font-style: normal;
-    }
-
-    /* ── Blog grid (improved cards) ── */
-    .blog-section {
-      padding: 100px 0;
-      background: var(--cream);
-    }
-    .blog-section__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 56px;
-    }
-    .section-title {
-      font-family: var(--font-display);
-      font-size: clamp(28px, 3vw, 40px);
-      font-weight: 400;
-      color: var(--black);
-    }
-    .section-title em { font-style: italic; }
-
-    /* Card upgrade */
-    .card {
-      background: transparent;
-      cursor: pointer;
-    }
-    .card__image {
-      overflow: hidden;
-      position: relative;
-    }
-    .card__image-inner {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: contrast(1.05) saturate(0.88) sepia(0.06);
-      transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
-      display: block;
-    }
-    .card:hover .card__image-inner { transform: scale(1.06); }
-    .card__body { padding: 22px 0 0; }
-    .card__category {
-      font-family: var(--font-accent);
-      font-size: 9px;
-      letter-spacing: 3px;
-      color: var(--gold);
-      margin-bottom: 10px;
-      display: block;
-    }
-    .card__title {
-      font-family: var(--font-display);
-      font-size: clamp(18px, 1.8vw, 24px);
-      line-height: 1.2;
-      color: var(--black);
-      font-weight: 400;
-      margin-bottom: 8px;
-      transition: color 280ms ease;
-    }
-    .card:hover .card__title { color: rgba(13,11,8,0.55); }
-    .card__meta {
-      font-family: var(--font-body);
-      font-size: 11px;
-      color: rgba(13,11,8,0.35);
-    }
-    .card__read {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--font-accent);
-      font-size: 9px;
-      letter-spacing: 2px;
-      color: var(--gold);
-      margin-top: 12px;
-      transition: gap 250ms ease;
-    }
-    .card:hover .card__read { gap: 12px; }
-
-    /* Blog grid layout */
-    .blog-grid-new {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 40px 24px;
-    }
-    .card--hero { grid-column: span 6; }
-    .card--hero .card__image { aspect-ratio: 3/2; }
-    .card--hero .card__title { font-size: clamp(24px, 2.5vw, 36px); }
-    .card--side { grid-column: span 6; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-content: start; }
-    .card--side .card-item { }
-    .card--side .card-item .card__image { aspect-ratio: 4/3; }
-    .card--small { grid-column: span 4; }
-    .card--small .card__image { aspect-ratio: 5/4; }
-
-    /* ── Values / pillars section ── */
-    .pillars {
-      background: var(--ivory);
-      padding: 100px 64px;
-      border-top: 1px solid rgba(201,162,99,0.15);
-      border-bottom: 1px solid rgba(201,162,99,0.15);
-    }
-    .pillars__header {
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      padding-top: 64px;
+      background: var(--blush);
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      max-width: 1272px;
-      margin: 0 auto 64px;
-      align-items: end;
-    }
-    .pillars__header-title {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 4vw, 56px);
-      font-weight: 400;
-      line-height: 1.1;
-      color: var(--black);
-    }
-    .pillars__header-title em { font-style: italic; color: rgba(13,11,8,0.45); }
-    .pillars__header-sub {
-      font-family: var(--font-body);
-      font-size: 15px;
-      line-height: 1.85;
-      color: rgba(13,11,8,0.6);
-    }
-    .pillars__grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: rgba(201,162,99,0.15);
-      max-width: 1272px;
-      margin: 0 auto;
-    }
-    .pillar {
-      background: var(--ivory);
-      padding: 48px 32px;
-      transition: background 300ms ease;
-    }
-    .pillar:hover { background: var(--cream); }
-    .pillar__num {
-      font-family: var(--font-display);
-      font-size: 48px;
-      color: rgba(201,162,99,0.25);
-      font-weight: 300;
-      line-height: 1;
-      margin-bottom: 20px;
-    }
-    .pillar__name {
-      font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 400;
-      color: var(--black);
-      margin-bottom: 12px;
-    }
-    .pillar__desc {
-      font-family: var(--font-body);
-      font-size: 13px;
-      line-height: 1.8;
-      color: rgba(13,11,8,0.55);
-    }
-
-    /* ── Products section (improved) ── */
-    .products-section {
-      background: var(--cream);
-      padding: 100px 0;
-    }
-    .products-section__header {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 64px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 56px;
-    }
-    .products-scroll {
-      overflow-x: auto;
-      padding: 0 64px 16px;
-      display: flex;
-      gap: 24px;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-    }
-    .products-scroll::-webkit-scrollbar { display: none; }
-    .product-card-new {
-      min-width: 320px;
-      background: var(--ivory);
-      flex-shrink: 0;
-      cursor: pointer;
-      position: relative;
+      align-items: center;
       overflow: hidden;
-      transition: transform 300ms ease;
-    }
-    .product-card-new:hover { transform: translateY(-4px); }
-    .product-card-new__image {
-      aspect-ratio: 3/4;
-      overflow: hidden;
-    }
-    .product-card-new__image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: contrast(1.05) saturate(0.88) sepia(0.06);
-      transition: transform 600ms ease;
-    }
-    .product-card-new:hover .product-card-new__image img { transform: scale(1.04); }
-    .product-card-new__body {
-      padding: 24px;
-    }
-    .product-card-new__name {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 400;
-      color: var(--black);
-      margin-bottom: 6px;
-    }
-    .product-card-new__desc {
-      font-family: var(--font-body);
-      font-size: 12px;
-      color: rgba(13,11,8,0.5);
-      margin-bottom: 16px;
-    }
-    .product-card-new__footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .product-card-new__price {
-      font-family: var(--font-accent);
-      font-size: 18px;
-      color: var(--gold);
-      letter-spacing: 1px;
-    }
-    .product-card-new__link {
-      font-family: var(--font-accent);
-      font-size: 9px;
-      letter-spacing: 2px;
-      color: var(--black);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: gap 250ms ease, color 250ms ease;
-    }
-    .product-card-new:hover .product-card-new__link { gap: 10px; color: var(--gold); }
-
-    /* ── About strip (improved) ── */
-    .about-strip {
-      background: var(--black);
-      padding: 100px 64px;
-    }
-    .about-strip__inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-    .about-strip__image-wrap {
       position: relative;
     }
-    .about-strip__image {
-      width: 100%;
-      aspect-ratio: 3/4;
-      object-fit: cover;
-      filter: grayscale(100%) contrast(1.1);
-    }
-    .about-strip__image-accent {
+    .hero::before {
+      content: '';
       position: absolute;
-      bottom: -16px;
-      right: -16px;
-      width: 80%;
-      height: 80%;
-      border: 1.5px solid rgba(201,162,99,0.4);
+      top: 8%; right: -10%;
+      width: 580px; height: 580px;
+      border-radius: 50%;
+      background: rgba(168,197,171,0.13);
       pointer-events: none;
     }
-    .about-strip__eyebrow {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 4px;
-      color: var(--gold);
-      margin-bottom: 24px;
-      display: block;
-    }
-    .about-strip__copy {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: clamp(20px, 2.2vw, 28px);
-      line-height: 1.65;
-      color: rgba(245,239,224,0.85);
-      font-weight: 300;
-      margin-bottom: 32px;
-    }
-    .about-strip__copy em {
-      color: var(--gold);
-      font-style: normal;
-    }
-    .btn-ghost-gold {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-accent);
-      font-size: 11px;
-      letter-spacing: 3px;
-      color: var(--gold);
-      border: 1px solid rgba(201,162,99,0.4);
-      padding: 12px 24px;
-      transition: all 280ms ease;
-    }
-    .btn-ghost-gold:hover {
-      background: var(--gold);
-      border-color: var(--gold);
-      color: #fff;
-      gap: 16px;
-    }
+    /* Leaf TL */
+    .leaf-tl { position: absolute; top: 68px; left: -16px; width: 160px; opacity: 0.55; pointer-events: none; z-index: 1; }
+    /* Leaf BR */
+    .leaf-br { position: absolute; bottom: -10px; right: 42%; width: 140px; opacity: 0.4; pointer-events: none; transform: rotate(170deg); }
 
-    /* ── Newsletter (improved) ── */
-    .newsletter {
-      background: var(--ivory);
-      padding: 120px 64px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+    .hero__text {
+      padding: 72px 56px 72px 80px;
+      position: relative; z-index: 2;
     }
-    .newsletter__bg-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: var(--font-display);
-      font-size: clamp(100px, 14vw, 200px);
-      color: var(--black);
-      opacity: 0.03;
-      pointer-events: none;
-      white-space: nowrap;
-      font-weight: 600;
-      user-select: none;
-    }
-    .newsletter__eyebrow {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 4px;
-      color: var(--gold);
-      margin-bottom: 20px;
-    }
-    .newsletter__title {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: clamp(36px, 4.5vw, 60px);
-      color: var(--black);
-      font-weight: 400;
-      margin-bottom: 16px;
-      position: relative;
-    }
-    .newsletter__sub {
-      font-family: var(--font-body);
-      font-size: 14px;
-      color: rgba(13,11,8,0.55);
-      margin-bottom: 48px;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.7;
-      position: relative;
-    }
-    .newsletter__form {
-      display: flex;
-      max-width: 460px;
-      margin: 0 auto 16px;
-      position: relative;
-    }
-    .newsletter__input {
-      flex: 1;
-      background: var(--cream);
-      border: 1px solid rgba(201,162,99,0.35);
-      border-right: none;
-      padding: 16px 24px;
-      font-family: var(--font-body);
-      font-size: 14px;
-      color: var(--black);
-      outline: none;
-      transition: border-color 250ms ease;
-    }
-    .newsletter__input:focus { border-color: var(--gold); }
-    .newsletter__btn {
-      background: var(--gold);
-      border: 1px solid var(--gold);
-      padding: 16px 28px;
-      font-family: var(--font-accent);
-      font-size: 12px;
-      letter-spacing: 2px;
-      color: #fff;
-      cursor: pointer;
-      transition: background 280ms ease;
-      position: relative;
-      overflow: hidden;
-    }
-    .newsletter__btn:hover { background: var(--black); border-color: var(--black); }
-    .newsletter__fine {
-      font-family: var(--font-body);
-      font-size: 11px;
-      color: rgba(13,11,8,0.3);
-      position: relative;
-    }
-
-    /* ── Footer (improved) ── */
-    .footer {
-      background: var(--black);
-      padding: 80px 0 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .footer__top {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 64px 64px;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 64px;
-    }
-    .footer__brand {}
-    .footer__brand-name {
-      font-family: var(--font-display);
-      font-size: 26px;
-      font-weight: 500;
-      color: rgba(245,239,224,0.9);
-      margin-bottom: 16px;
-    }
-    .footer__brand-desc {
-      font-family: var(--font-body);
-      font-size: 13px;
-      line-height: 1.8;
-      color: rgba(245,239,224,0.4);
+    .hero__eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--ff-body); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--sage); background: var(--sage-pale);
+      padding: 6px 16px; border-radius: var(--radius-pill);
       margin-bottom: 28px;
-      max-width: 280px;
+      opacity: 0; animation: fade-up 0.65s 0.1s forwards;
     }
-    .footer__social-row {
-      display: flex;
-      gap: 16px;
+    .hero__headline {
+      font-family: var(--ff-display);
+      font-size: clamp(52px, 5.5vw, 80px);
+      font-weight: 700; line-height: 1.0;
+      color: var(--espresso); margin-bottom: 18px;
+      opacity: 0; animation: fade-up 0.65s 0.25s forwards;
     }
-    .footer__social-icon {
-      width: 36px;
-      height: 36px;
-      border: 1px solid rgba(201,162,99,0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-accent);
-      font-size: 9px;
-      letter-spacing: 1px;
-      color: rgba(245,239,224,0.4);
-      transition: all 250ms ease;
+    .hero__tagline {
+      font-family: var(--ff-sub);
+      font-size: clamp(17px, 1.8vw, 21px);
+      font-style: italic; color: var(--rose-deep);
+      margin-bottom: 18px;
+      opacity: 0; animation: fade-up 0.65s 0.4s forwards;
     }
-    .footer__social-icon:hover {
-      border-color: var(--gold);
-      color: var(--gold);
+    .hero__desc {
+      font-size: 15px; color: var(--text-mid); line-height: 1.75;
+      max-width: 400px; margin-bottom: 36px;
+      opacity: 0; animation: fade-up 0.65s 0.55s forwards;
     }
-    .footer__col-title {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 3px;
-      color: var(--gold);
-      margin-bottom: 24px;
+    .hero__btns {
+      display: flex; flex-direction: column; gap: 12px; align-items: flex-start;
+      opacity: 0; animation: fade-up 0.65s 0.7s forwards;
     }
-    .footer__link {
-      display: block;
-      font-family: var(--font-body);
-      font-size: 13px;
-      color: rgba(245,239,224,0.45);
-      margin-bottom: 12px;
-      transition: color 250ms ease;
+    .btn-sage {
+      background: var(--sage); color: #fff;
+      font-family: var(--ff-body); font-size: 14px; font-weight: 500;
+      padding: 14px 30px; border-radius: var(--radius-pill);
+      border: 2px solid var(--sage); cursor: pointer;
+      transition: all var(--tr); display: inline-flex; align-items: center; gap: 8px;
     }
-    .footer__link:hover { color: rgba(245,239,224,0.85); }
-    .footer__article-item {
-      margin-bottom: 20px;
+    .btn-sage:hover { background: transparent; color: var(--sage); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent; color: var(--espresso);
+      font-family: var(--ff-body); font-size: 14px; font-weight: 500;
+      padding: 14px 30px; border-radius: var(--radius-pill);
+      border: 2px solid rgba(59,42,26,0.2); cursor: pointer;
+      transition: all var(--tr); display: inline-flex; align-items: center; gap: 8px;
     }
-    .footer__article-title {
-      font-family: var(--font-display);
-      font-size: 14px;
-      color: rgba(245,239,224,0.6);
-      line-height: 1.4;
-      margin-bottom: 4px;
-      transition: color 250ms ease;
+    .btn-outline:hover { border-color: var(--espresso); transform: translateY(-2px); }
+
+    /* floating sparkles */
+    .spark {
+      position: absolute; font-size: 16px; color: var(--rose);
+      animation: float-spark 3.5s ease-in-out infinite; pointer-events: none;
     }
-    .footer__article-item:hover .footer__article-title { color: var(--gold); }
-    .footer__article-date {
-      font-family: var(--font-body);
-      font-size: 10px;
-      color: rgba(245,239,224,0.25);
+    .spark:nth-child(1) { top: 24%; left: 28%; animation-delay: 0s; }
+    .spark:nth-child(2) { top: 58%; left: 6%;  animation-delay: 0.9s; }
+    .spark:nth-child(3) { top: 78%; left: 44%; animation-delay: 1.8s; }
+    .spark:nth-child(4) { top: 14%; left: 52%; animation-delay: 2.5s; }
+    @keyframes float-spark {
+      0%,100% { transform: translateY(0) scale(1); opacity: 0.65; }
+      50%      { transform: translateY(-10px) scale(1.2); opacity: 1; }
     }
-    .footer__bottom {
-      border-top: 1px solid rgba(201,162,99,0.12);
-      padding: 20px 64px;
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+
+    /* ── HERO COLLAGE ── */
+    .hero__collage {
+      position: relative; display: flex; align-items: center;
+      justify-content: center; min-height: 580px; z-index: 2;
+      opacity: 0; animation: fade-in 0.9s 0.85s forwards;
     }
-    .footer__copy {
-      font-family: var(--font-body);
-      font-size: 11px;
-      color: rgba(245,239,224,0.2);
-    }
-    .footer__bg-word {
+    .hero__blob {
       position: absolute;
-      bottom: -30px;
-      right: -20px;
-      font-family: var(--font-display);
-      font-size: clamp(80px, 12vw, 180px);
-      color: #fff;
-      opacity: 0.025;
-      pointer-events: none;
-      user-select: none;
-      font-weight: 600;
-      white-space: nowrap;
+      width: 400px; height: 400px;
+      background: var(--rose); opacity: 0.17;
+      border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+      animation: morph 9s ease-in-out infinite;
     }
+    @keyframes morph {
+      0%,100% { border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; }
+      33%      { border-radius: 30% 70% 40% 60% / 60% 30% 70% 40%; }
+      66%      { border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%; }
+    }
+    /* Book mockup card */
+    .hero__book-card {
+      position: relative; z-index: 3;
+      width: 250px;
+      background: linear-gradient(145deg, #FAF4EF 0%, #F0E8DC 100%);
+      border-radius: 10px;
+      padding: 28px 22px 24px;
+      box-shadow: 0 24px 60px rgba(59,42,26,0.22);
+      text-align: center;
+      transform: rotate(-4deg);
+      transition: transform 0.4s ease;
+    }
+    .hero__book-card:hover { transform: rotate(-1.5deg) translateY(-8px); }
+    .hero__book-card__label { font-size: 8px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); margin-bottom: 8px; }
+    .hero__book-card__title { font-family: var(--ff-display); font-size: 20px; font-weight: 500; color: var(--espresso); line-height: 1.2; margin-bottom: 6px; }
+    .hero__book-card__title em { font-size: 17px; color: var(--rose-deep); }
+    .hero__book-card__img-area { width: 100%; height: 110px; background: linear-gradient(160deg, var(--sage-pale), var(--blush)); border-radius: 8px; margin: 12px 0; display: flex; align-items: center; justify-content: center; font-size: 38px; }
+    .hero__book-card__sub { font-size: 9px; color: var(--text-light); }
 
-    /* ── Scroll reveal ── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 700ms ease, transform 700ms ease;
+    /* floating photo tiles */
+    .hero__photo {
+      position: absolute; border-radius: 12px; overflow: hidden;
+      filter: drop-shadow(0 10px 24px rgba(59,42,26,0.16)); z-index: 4;
     }
-    .reveal.visible { opacity: 1; transform: none; }
-    .reveal-delay-1 { transition-delay: 100ms; }
-    .reveal-delay-2 { transition-delay: 200ms; }
-    .reveal-delay-3 { transition-delay: 300ms; }
-    .reveal-delay-4 { transition-delay: 400ms; }
+    .hero__photo img { width:100%; height:100%; object-fit:cover; }
+    .hero__photo--1 { width: 130px; height: 130px; top: 6%; left: 4%; transform: rotate(3.5deg); }
+    .hero__photo--2 { width: 115px; height: 145px; bottom: 8%; right: 4%; transform: rotate(-5deg); }
 
-    /* ── NAV updates ── */
-    .nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      height: 68px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 64px;
-      transition: background 400ms ease, box-shadow 400ms ease, backdrop-filter 400ms ease;
+    /* sprig SVGs */
+    .hero__sprig { position: absolute; pointer-events: none; z-index: 5; }
+    .hero__sprig--1 { top: 2%; right: 2%; width: 80px; opacity: 0.55; }
+    .hero__sprig--2 { bottom: 2%; left: 2%; width: 72px; opacity: 0.45; transform: rotate(175deg); }
+
+    /* ── WAVE ── */
+    .wave { display: block; width: 100%; overflow: hidden; line-height: 0; }
+    .wave svg { display: block; width: 100%; }
+
+    /* ── ABOUT STRIP ── */
+    .about-strip { background: var(--sage); padding: 0 80px 64px; }
+    .about-strip__grid { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); }
+    .about-strip__item { text-align: center; padding: 52px 32px 36px; position: relative; }
+    .about-strip__item + .about-strip__item::before { content: ''; position: absolute; left:0; top:28%; bottom:28%; width:1px; background: rgba(255,255,255,0.18); }
+    .about-strip__icon { font-size: 26px; margin-bottom: 12px; }
+    .about-strip__name { font-family: var(--ff-body); font-size: 11px; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: rgba(255,255,255,0.95); margin-bottom: 8px; }
+    .about-strip__desc { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+
+    /* ── BLOG SECTION ── */
+    .blog-section { background: var(--white-soft); padding: 96px 0; }
+    .section-header { text-align: center; margin-bottom: 52px; padding: 0 24px; }
+    .section-title { font-family: var(--ff-display); font-size: clamp(30px,4vw,46px); font-weight: 400; color: var(--espresso); margin-bottom: 8px; }
+    .section-sub   { font-family: var(--ff-sub); font-size: clamp(15px,2vw,19px); font-style: italic; color: var(--rose-deep); }
+    .section-divider { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 14px; color: var(--sage); font-size: 16px; }
+    .section-divider::before, .section-divider::after { content: ''; display: block; width: 44px; height: 1px; background: rgba(122,158,126,0.35); }
+
+    .blog-grid {
+      max-width: 1200px; margin: 0 auto; padding: 0 48px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 26px;
     }
-    .nav.scrolled {
-      background: rgba(245,239,224,0.95);
-      backdrop-filter: blur(12px);
-      box-shadow: 0 1px 0 rgba(13,11,8,0.06);
-    }
-    .nav__logo {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-      color: rgba(245,239,224,0.95);
-      transition: color 400ms ease;
-    }
-    .nav.scrolled .nav__logo { color: var(--black); }
-    .nav__links { display: flex; gap: 40px; align-items: center; }
-    .nav__link {
-      font-family: var(--font-accent);
-      font-size: 11px;
-      letter-spacing: 2.5px;
-      color: rgba(245,239,224,0.8);
-      position: relative;
-      transition: color 300ms ease;
-    }
-    .nav.scrolled .nav__link { color: rgba(13,11,8,0.7); }
-    .nav__link:hover { color: var(--gold) !important; }
-    .nav__cta {
-      font-family: var(--font-accent);
-      font-size: 10px;
-      letter-spacing: 2px;
-      color: var(--gold);
-      border: 1px solid rgba(201,162,99,0.5);
-      padding: 8px 18px;
-      transition: all 250ms ease;
-    }
-    .nav__cta:hover {
-      background: var(--gold);
-      color: #fff;
-      border-color: var(--gold);
-    }
-    .nav.scrolled .nav__cta { border-color: rgba(201,162,99,0.7); }
-    .nav__hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
+    .post-card {
+      background: var(--parchment);
+      border-radius: var(--radius-card);
+      overflow: hidden;
       cursor: pointer;
-      background: none;
-      border: none;
-      padding: 4px;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--tr), box-shadow var(--tr), border-left-color var(--tr);
+      border-left: 3px solid transparent;
+      display: flex; flex-direction: column;
     }
-    .nav__hamburger span {
-      display: block;
-      width: 24px;
-      height: 1px;
-      background: var(--cream);
-      transition: background 300ms ease;
-    }
-    .nav.scrolled .nav__hamburger span { background: var(--black); }
-    .nav__overlay {
-      position: fixed; inset: 0;
-      background: var(--black);
-      z-index: 200;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 500ms ease;
-    }
-    .nav__overlay.open { opacity: 1; pointer-events: all; }
-    .nav__overlay-links { display: flex; flex-direction: column; align-items: center; gap: 20px; }
-    .nav__overlay-link {
-      font-family: var(--font-display);
-      font-size: clamp(40px, 8vw, 72px);
-      color: var(--cream);
-      font-weight: 400;
-      transition: color 250ms ease;
-    }
-    .nav__overlay-link:hover { color: var(--gold); }
-    .nav__overlay-close {
-      position: absolute; top: 24px; right: 64px;
-      background: none; border: none;
-      color: rgba(245,239,224,0.4);
-      font-family: var(--font-accent);
-      font-size: 12px; letter-spacing: 3px;
-      cursor: pointer;
-    }
+    .post-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-left-color: var(--sage); }
+    .post-card--tall { grid-row: span 2; }
+    .post-card--tall .post-card__img { aspect-ratio: 3/4; }
+    .post-card--wide { grid-column: span 2; }
+    .post-card--wide .post-card__img { aspect-ratio: 21/9; }
+    .post-card__img { width: 100%; aspect-ratio: 4/3; overflow: hidden; flex-shrink: 0; }
+    .post-card__img img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; filter:saturate(0.9) contrast(1.03); display:block; }
+    .post-card:hover .post-card__img img { transform: scale(1.06); }
+    .post-card__body { padding: 20px 22px 24px; flex:1; display:flex; flex-direction:column; }
+    .post-card__cat { display:inline-block; font-size:9px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; background:var(--sage-pale); color:var(--sage); padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:10px; }
+    .post-card__title { font-family:var(--ff-display); font-size:clamp(16px,1.7vw,21px); font-weight:500; line-height:1.25; color:var(--espresso); margin-bottom:10px; }
+    .post-card__desc { font-size:13px; color:var(--text-light); line-height:1.65; flex:1; margin-bottom:14px; }
+    .post-card__footer { display:flex; align-items:center; justify-content:space-between; margin-top:auto; }
+    .post-card__date { font-size:10px; color:var(--text-light); }
+    .post-card__read { font-size:12px; font-weight:500; color:var(--rose-deep); display:inline-flex; align-items:center; gap:5px; transition:gap var(--tr),color var(--tr); }
+    .post-card:hover .post-card__read { gap:9px; color:var(--sage); }
+    .blog-section__footer { text-align:center; margin-top:44px; }
 
-    /* ── Responsive ── */
+    /* ── FREEBIE ── */
+    .freebie { position:relative; overflow:hidden; padding:96px 48px; }
+    .freebie__bg { position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1400&q=80') center/cover; }
+    .freebie__overlay { position:absolute; inset:0; background:rgba(250,244,239,0.91); }
+    .freebie__inner { position:relative; z-index:2; max-width:860px; margin:0 auto; display:grid; grid-template-columns:auto 1fr; gap:64px; align-items:center; }
+    .freebie__book-card {
+      width: 200px; flex-shrink: 0;
+      background: linear-gradient(145deg,#FAF4EF,#F0E8DC);
+      border-radius: 10px; padding: 24px 18px;
+      box-shadow: 0 20px 48px rgba(59,42,26,0.2);
+      text-align: center; transform: rotate(-3deg);
+      transition: transform 0.4s ease;
+    }
+    .freebie__book-card:hover { transform: rotate(-1deg) translateY(-6px); }
+    .freebie__eyebrow { font-size:10px; font-weight:500; letter-spacing:0.17em; text-transform:uppercase; color:var(--rose-deep); margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+    .freebie__eyebrow::before { content:''; display:block; width:22px; height:1px; background:var(--rose-deep); }
+    .freebie__title { font-family:var(--ff-display); font-size:clamp(26px,3.2vw,42px); font-weight:500; color:var(--espresso); line-height:1.15; margin-bottom:8px; }
+    .freebie__sub { font-family:var(--ff-sub); font-size:19px; font-style:italic; color:var(--rose-deep); margin-bottom:26px; }
+    .freebie__form { display:flex; max-width:430px; }
+    .freebie__input { flex:1; padding:13px 20px; border:1.5px solid rgba(232,180,184,0.55); border-right:none; border-radius:var(--radius-pill) 0 0 var(--radius-pill); font-family:var(--ff-body); font-size:14px; color:var(--espresso); background:rgba(255,255,255,0.82); outline:none; }
+    .freebie__input::placeholder { color:var(--text-light); }
+    .freebie__input:focus { border-color:var(--rose); }
+    .freebie__btn { padding:13px 22px; background:var(--sage); color:#fff; font-family:var(--ff-body); font-size:13px; font-weight:500; border:none; border-radius:0 var(--radius-pill) var(--radius-pill) 0; cursor:pointer; transition:background var(--tr); white-space:nowrap; }
+    .freebie__btn:hover { background:#5d8060; }
+
+    /* ── TICKER ── */
+    .ticker-section { background:var(--parchment); padding:26px 0; overflow:hidden; }
+    .ticker-track { display:flex; animation:ticker 32s linear infinite; white-space:nowrap; }
+    .ticker-item { flex-shrink:0; font-family:var(--ff-sub); font-style:italic; font-size:16px; color:var(--espresso); padding:0 38px; }
+    .ticker-sep  { flex-shrink:0; color:var(--rose); font-size:16px; padding:0 2px; }
+    @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    /* ── SHOP ── */
+    .shop-section { background:var(--espresso); padding:96px 0; position:relative; overflow:hidden; }
+    .shop-leaf { position:absolute; opacity:0.055; pointer-events:none; }
+    .shop-leaf--l { left:-36px; bottom:-16px; width:260px; }
+    .shop-leaf--r { right:-36px; top:-16px; width:240px; transform:rotate(180deg); }
+    .shop-section .section-title { color:#fff; }
+    .shop-section .section-sub   { color:rgba(232,180,184,0.88); }
+    .shop-section .section-divider { color:rgba(232,180,184,0.5); }
+    .shop-section .section-divider::before, .shop-section .section-divider::after { background:rgba(232,180,184,0.22); }
+    .shop-grid { max-width:960px; margin:0 auto; padding:0 48px; display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .shop-card { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.09); border-radius:var(--radius-card); overflow:hidden; cursor:pointer; transition:all var(--tr); position:relative; }
+    .shop-card::after { content:''; position:absolute; inset:0; background:rgba(232,180,184,0.07); opacity:0; transition:opacity var(--tr); border-radius:var(--radius-card); pointer-events:none; }
+    .shop-card:hover { transform:translateY(-5px); border-color:rgba(232,180,184,0.3); }
+    .shop-card:hover::after { opacity:1; }
+    .shop-card__img { width:100%; aspect-ratio:3/4; overflow:hidden; background:rgba(255,255,255,0.04); display:flex; align-items:center; justify-content:center; }
+    .shop-card__mockup { width:82%; height:82%; background:linear-gradient(145deg,#FAF4EF,#F0E8DC); border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:16px; text-align:center; }
+    .shop-card__mockup-label { font-size:7px; letter-spacing:0.13em; text-transform:uppercase; color:var(--sage); margin-bottom:6px; }
+    .shop-card__mockup-title { font-family:var(--ff-display); font-size:16px; font-weight:500; color:var(--espresso); line-height:1.2; margin-bottom:6px; }
+    .shop-card__mockup-icon { font-size:30px; margin:4px 0; }
+    .shop-card__body { padding:18px 20px 22px; }
+    .shop-card__name { font-family:var(--ff-display); font-size:17px; font-weight:500; color:rgba(255,255,255,0.9); margin-bottom:5px; line-height:1.2; }
+    .shop-card__desc { font-size:11px; color:rgba(255,255,255,0.4); margin-bottom:14px; }
+    .shop-card__footer { display:flex; align-items:center; justify-content:space-between; }
+    .shop-card__price { font-family:var(--ff-display); font-size:19px; color:var(--rose); }
+    .shop-card__btn { font-size:11px; font-weight:500; color:#fff; background:transparent; border:1px solid rgba(232,180,184,0.45); padding:7px 15px; border-radius:var(--radius-pill); cursor:pointer; transition:all var(--tr); }
+    .shop-card__btn:hover { background:var(--rose); border-color:var(--rose); }
+    .shop-section__footer { text-align:center; margin-top:44px; }
+    .btn-rose-outline { display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--rose); font-family:var(--ff-body); font-size:14px; font-weight:500; padding:13px 28px; border-radius:var(--radius-pill); border:2px solid var(--rose-deep); cursor:pointer; transition:all var(--tr); }
+    .btn-rose-outline:hover { background:var(--rose); color:#fff; transform:translateY(-2px); }
+
+    /* ── INSTAGRAM ── */
+    .instagram-section { background:var(--blush); padding:80px 0; }
+    .instagram-handle { font-family:var(--ff-display); font-size:clamp(26px,3.5vw,40px); font-style:italic; color:var(--espresso); display:flex; align-items:center; justify-content:center; gap:10px; }
+    .ig-follow { display:block; text-align:center; margin-top:8px; font-size:13px; font-weight:500; color:var(--sage); letter-spacing:0.05em; transition:color var(--tr); }
+    .ig-follow:hover { color:var(--sage-light); }
+    .ig-grid { max-width:1060px; margin:36px auto 0; padding:0 48px; display:grid; grid-template-columns:repeat(6,1fr); gap:10px; }
+    .ig-cell { aspect-ratio:1; overflow:hidden; border-radius:10px; position:relative; cursor:pointer; }
+    .ig-cell img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease; filter:saturate(0.9); display:block; }
+    .ig-cell::after { content:'♡'; position:absolute; inset:0; background:rgba(122,158,126,0.72); display:flex; align-items:center; justify-content:center; color:#fff; font-size:26px; opacity:0; transition:opacity var(--tr); }
+    .ig-cell:hover img { transform:scale(1.08); }
+    .ig-cell:hover::after { opacity:1; }
+
+    /* ── FOOTER ── */
+    .footer { background:var(--parchment); border-top:1px solid rgba(122,158,126,0.13); padding:72px 80px 0; }
+    .footer__inner { max-width:1060px; margin:0 auto; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:56px; padding-bottom:52px; }
+    .footer__logo { font-family:var(--ff-display); font-size:26px; font-style:italic; color:var(--sage); margin-bottom:10px; }
+    .footer__tagline { font-size:13px; color:var(--text-light); line-height:1.7; margin-bottom:22px; max-width:250px; }
+    .footer__socials { display:flex; gap:10px; }
+    .footer__social { width:34px; height:34px; border-radius:50%; border:1.5px solid rgba(122,158,126,0.3); display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--sage); transition:all var(--tr); }
+    .footer__social:hover { background:var(--sage); color:#fff; border-color:var(--sage); }
+    .footer__col-title { font-size:10px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; color:var(--sage); margin-bottom:18px; }
+    .footer__link { display:block; font-size:13px; color:var(--text-mid); margin-bottom:10px; transition:color var(--tr); }
+    .footer__link:hover { color:var(--sage); }
+    .footer__nl-sub { font-size:13px; color:var(--text-light); margin-bottom:14px; line-height:1.6; }
+    .footer__form { display:flex; }
+    .footer__input { flex:1; padding:10px 14px; border:1.5px solid rgba(122,158,126,0.28); border-right:none; border-radius:var(--radius-pill) 0 0 var(--radius-pill); font-family:var(--ff-body); font-size:13px; color:var(--espresso); background:#fff; outline:none; }
+    .footer__input::placeholder { color:var(--text-light); }
+    .footer__input:focus { border-color:var(--sage); }
+    .footer__sub-btn { padding:10px 16px; background:var(--sage); color:#fff; border:none; border-radius:0 var(--radius-pill) var(--radius-pill) 0; font-family:var(--ff-body); font-size:12px; font-weight:500; cursor:pointer; transition:background var(--tr); }
+    .footer__sub-btn:hover { background:#5d8060; }
+    .footer__bottom { border-top:1px solid rgba(122,158,126,0.12); padding:18px 0; text-align:center; font-size:11px; color:var(--text-light); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fade-up  { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:none} }
+    @keyframes fade-in  { from{opacity:0} to{opacity:1} }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .d1 { transition-delay:0.08s; }
+    .d2 { transition-delay:0.16s; }
+    .d3 { transition-delay:0.24s; }
+    .d4 { transition-delay:0.32s; }
+
+    /* ── RESPONSIVE ── */
     @media (max-width: 1100px) {
-      .featured__inner { grid-template-columns: 1fr; }
-      .featured__image-wrap { aspect-ratio: 16/10; }
-      .manifesto__inner { grid-template-columns: 1fr; gap: 32px; }
-      .pillars__grid { grid-template-columns: 1fr 1fr; }
-      .pillars__header { grid-template-columns: 1fr; gap: 24px; }
-      .footer__top { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .blog-grid { grid-template-columns:1fr 1fr; padding:0 28px; }
+      .post-card--tall { grid-row:span 1; }
+      .post-card--tall .post-card__img { aspect-ratio:4/3; }
+      .post-card--wide { grid-column:span 2; }
+      .shop-grid { grid-template-columns:1fr 1fr; }
+      .ig-grid { grid-template-columns:repeat(3,1fr); }
     }
-    @media (max-width: 768px) {
-      .nav { padding: 0 24px; }
-      .nav__links { display: none; }
-      .nav__hamburger { display: flex; }
-      .nav__overlay-close { right: 24px; }
-      .hero__content { padding: 0 24px; grid-template-columns: 1fr; }
-      .hero__right { display: none; }
-      .intro-strip { flex-direction: column; gap: 32px; padding: 48px 24px; }
-      .featured__inner { padding: 0 24px; }
-      .manifesto { padding: 80px 24px; }
-      .pillars { padding: 80px 24px; }
-      .pillars__grid { grid-template-columns: 1fr; }
-      .products-scroll { padding: 0 24px 16px; }
-      .about-strip { padding: 80px 24px; }
-      .about-strip__inner { grid-template-columns: 1fr; gap: 40px; }
-      .about-strip__image-wrap { max-width: 280px; }
-      .newsletter { padding: 80px 24px; }
-      .newsletter__form { flex-direction: column; }
-      .footer__top { grid-template-columns: 1fr; padding: 0 24px 48px; }
-      .footer__bottom { padding: 20px 24px; flex-direction: column; gap: 8px; }
+    @media (max-width: 860px) {
+      .hero { grid-template-columns:1fr; min-height:auto; }
+      .hero__text { padding:52px 28px 36px; }
+      .hero__collage { min-height:360px; }
+      .nav { padding:0 20px; grid-template-columns:1fr auto; }
+      .nav__left, .nav__cta { display:none; }
+      .nav__hamburger { display:flex; }
+      .nav__logo { text-align:left; }
+      .about-strip { padding:0 20px 48px; }
+      .about-strip__grid { grid-template-columns:1fr; }
+      .about-strip__item + .about-strip__item::before { display:none; }
+      .freebie { padding:64px 24px; }
+      .freebie__inner { grid-template-columns:1fr; gap:36px; text-align:center; }
+      .freebie__book-card { margin:0 auto; }
+      .freebie__eyebrow { justify-content:center; }
+      .freebie__form { max-width:100%; }
+      .footer { padding:52px 28px 0; }
+      .footer__inner { grid-template-columns:1fr; gap:36px; }
+      .ig-grid { grid-template-columns:repeat(3,1fr); padding:0 20px; }
+    }
+    @media (max-width: 580px) {
+      .blog-grid { grid-template-columns:1fr; padding:0 18px; }
+      .post-card--wide { grid-column:span 1; }
+      .shop-grid { grid-template-columns:1fr; padding:0 20px; }
     }
   </style>
 </head>
@@ -1057,456 +413,393 @@
 
   <!-- ══ NAV ══ -->
   <nav class="nav" id="main-nav">
+    <div class="nav__left">
+      <a href="/blog"   class="nav__link">Blog</a>
+      <a href="/guides" class="nav__link">Guides</a>
+    </div>
     <a href="/" class="nav__logo">Stylish &amp; Healthy</a>
-    <ul class="nav__links">
-      <li><a href="/blog" class="nav__link">BLOG</a></li>
-      <li><a href="/shop" class="nav__link">SHOP</a></li>
-      <li><a href="#about" class="nav__link">ABOUT</a></li>
-      <li><a href="/blog" class="nav__cta">START READING</a></li>
-    </ul>
-    <button class="nav__hamburger" aria-label="Open menu" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav__right">
+      <a href="/shop"  class="nav__link">Shop</a>
+      <a href="/about" class="nav__link">About</a>
+      <a href="/guides/color-guide" class="nav__cta">Free Color Guide →</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
-
   <div class="nav__overlay" id="nav-overlay">
     <button class="nav__overlay-close" id="nav-close">CLOSE ✕</button>
-    <nav class="nav__overlay-links">
-      <a href="/blog" class="nav__overlay-link">Blog</a>
-      <a href="/shop" class="nav__overlay-link">Shop</a>
-      <a href="#about" class="nav__overlay-link">About</a>
-    </nav>
-  </div>
-
-  <!-- ══ TICKER ══ -->
-  <div class="ticker" style="margin-top:68px;">
-    <div class="ticker__inner">
-      <div class="ticker__track">
-        <span class="ticker__item">SKINCARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">WELLNESS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">SELF-CARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MINDSET</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">NUTRITION</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MORNING RITUALS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">STYLISH & HEALTHY</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">SKINCARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">WELLNESS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">SELF-CARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MINDSET</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">NUTRITION</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MORNING RITUALS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">STYLISH & HEALTHY</span><span class="ticker__dot">✦</span>
-      </div>
-      <div class="ticker__track" aria-hidden="true">
-        <span class="ticker__item">SKINCARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">WELLNESS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">SELF-CARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MINDSET</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">NUTRITION</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MORNING RITUALS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">STYLISH & HEALTHY</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">SKINCARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">WELLNESS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">SELF-CARE</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MINDSET</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">NUTRITION</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">MORNING RITUALS</span><span class="ticker__dot">✦</span>
-        <span class="ticker__item">STYLISH & HEALTHY</span><span class="ticker__dot">✦</span>
-      </div>
-    </div>
+    <a href="/blog"            class="nav__overlay-link">Blog</a>
+    <a href="/guides"          class="nav__overlay-link">Guides</a>
+    <a href="/shop"            class="nav__overlay-link">Shop</a>
+    <a href="/about"           class="nav__overlay-link">About</a>
   </div>
 
   <!-- ══ HERO ══ -->
   <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <div class="hero__left">
-        <p class="hero__eyebrow">THE STANDARD</p>
-        <h1 class="hero__title">Your Skin.<br><em>Your Mind.</em><br>Your Life.</h1>
-        <div class="hero__cta-row">
-          <a href="/blog" class="hero__cta">Read the Latest &nbsp;→</a>
-          <span class="hero__cta-text">Skincare · Wellness · Self-Care</span>
-        </div>
-      </div>
-      <div class="hero__right">
-        <div class="hero__stat">
-          <span class="hero__stat-num">15+</span>
-          <span class="hero__stat-label">Essays &amp; Guides</span>
-        </div>
-        <div class="hero__stat">
-          <span class="hero__stat-num">6</span>
-          <span class="hero__stat-label">Digital Products</span>
-        </div>
+    <!-- corner leaf decorations -->
+    <svg class="leaf-tl" viewBox="0 0 180 320" fill="none">
+      <path d="M36 310 Q56 190 100 110 Q130 55 170 15" stroke="#7A9E7E" stroke-width="1.4" fill="none" opacity="0.6"/>
+      <ellipse cx="115" cy="75"  rx="26" ry="12" fill="#A8C5AB" opacity="0.4" transform="rotate(-32 115 75)"/>
+      <ellipse cx="85"  cy="160" rx="22" ry="10" fill="#A8C5AB" opacity="0.35" transform="rotate(-52 85 160)"/>
+      <ellipse cx="62"  cy="240" rx="18" ry="8"  fill="#A8C5AB" opacity="0.28" transform="rotate(-64 62 240)"/>
+    </svg>
+    <svg class="leaf-br" viewBox="0 0 180 320" fill="none">
+      <path d="M36 310 Q56 190 100 110 Q130 55 170 15" stroke="#7A9E7E" stroke-width="1.4" fill="none" opacity="0.45"/>
+      <ellipse cx="115" cy="75"  rx="26" ry="12" fill="#A8C5AB" opacity="0.32" transform="rotate(-32 115 75)"/>
+      <ellipse cx="85"  cy="160" rx="22" ry="10" fill="#A8C5AB" opacity="0.28" transform="rotate(-52 85 160)"/>
+    </svg>
+
+    <!-- Text side -->
+    <div class="hero__text">
+      <!-- floating sparkles -->
+      <span class="spark" style="z-index:1">✦</span>
+      <span class="spark" style="z-index:1">✦</span>
+      <span class="spark" style="z-index:1">✦</span>
+      <span class="spark" style="z-index:1">✦</span>
+
+      <div class="hero__eyebrow">✦ A lifestyle brand for women</div>
+
+      <h1 class="hero__headline">
+        Stylish.<br>Healthy.<br>Intentional.
+      </h1>
+
+      <p class="hero__tagline">a lifestyle brand for women who choose themselves</p>
+
+      <p class="hero__desc">Wellness tips, style guides, and daily habits to help you show up as your best self — every single day.</p>
+
+      <div class="hero__btns">
+        <a href="/guides/color-guide" class="btn-sage">🌿 Get the Free Guide</a>
+        <a href="/blog"               class="btn-outline">Explore the Blog</a>
       </div>
     </div>
-    <div class="hero__scroll">
-      <span>SCROLL</span>
-      <div class="hero__scroll-line"></div>
+
+    <!-- Collage side -->
+    <div class="hero__collage">
+      <div class="hero__blob"></div>
+
+      <div class="hero__photo hero__photo--1">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=320&q=80" alt="">
+      </div>
+
+      <!-- book card mockup -->
+      <div class="hero__book-card">
+        <p class="hero__book-card__label">Stylish &amp; Healthy</p>
+        <p class="hero__book-card__title">Your Color<br>Guide<br><em>for Fashion</em></p>
+        <div class="hero__book-card__img-area">👗</div>
+        <p class="hero__book-card__sub">Find the colors that bring out your best</p>
+      </div>
+
+      <div class="hero__photo hero__photo--2">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=320&q=80" alt="">
+      </div>
+
+      <!-- sprig SVGs -->
+      <svg class="hero__sprig hero__sprig--1" viewBox="0 0 100 160" fill="none">
+        <path d="M50 155 Q50 80 50 20" stroke="#7A9E7E" stroke-width="1.4" fill="none"/>
+        <ellipse cx="34" cy="60"  rx="17" ry="8" fill="#A8C5AB" opacity="0.6" transform="rotate(-40 34 60)"/>
+        <ellipse cx="66" cy="92"  rx="17" ry="8" fill="#A8C5AB" opacity="0.6" transform="rotate(40 66 92)"/>
+        <ellipse cx="36" cy="124" rx="14" ry="6" fill="#A8C5AB" opacity="0.5" transform="rotate(-36 36 124)"/>
+      </svg>
+      <svg class="hero__sprig hero__sprig--2" viewBox="0 0 100 160" fill="none">
+        <path d="M50 5 Q50 80 50 148" stroke="#7A9E7E" stroke-width="1.4" fill="none"/>
+        <ellipse cx="34" cy="60"  rx="15" ry="7" fill="#A8C5AB" opacity="0.5" transform="rotate(-40 34 60)"/>
+        <ellipse cx="66" cy="92"  rx="15" ry="7" fill="#A8C5AB" opacity="0.5" transform="rotate(40 66 92)"/>
+      </svg>
     </div>
   </section>
 
-  <!-- ══ INTRO STRIP ══ -->
-  <div class="intro-strip">
-    <p class="intro-strip__tagline">For the woman who refuses to settle — for her skin, her mornings, or her life.</p>
-    <div class="intro-strip__pills">
-      <span class="pill">SKINCARE</span>
-      <span class="pill">WELLNESS</span>
-      <span class="pill">MINDSET</span>
-      <span class="pill">NUTRITION</span>
-      <span class="pill">SELF-CARE</span>
-      <span class="pill">RITUALS</span>
-    </div>
+  <!-- wave → sage -->
+  <div class="wave">
+    <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C360,56 1080,56 1440,0 L1440,56 L0,56 Z" fill="#7A9E7E"/>
+    </svg>
   </div>
 
-  <!-- ══ FEATURED ══ -->
-  <section class="featured">
-    <div class="featured__inner">
-      <div class="featured__image-wrap reveal">
-        <span class="featured__image-label">EDITOR'S PICK</span>
-        <img src="https://images.unsplash.com/photo-1556228852-6d35a585d566?w=900&q=80" alt="Morning Ritual">
+  <!-- ══ ABOUT STRIP ══ -->
+  <section class="about-strip">
+    <div class="about-strip__grid">
+      <div class="about-strip__item reveal">
+        <div class="about-strip__icon">🌿</div>
+        <p class="about-strip__name">Wellness</p>
+        <p class="about-strip__desc">Simple habits and routines<br>for a healthier, happier you.</p>
       </div>
-      <div class="featured__meta reveal reveal-delay-2">
-        <div class="featured__overline">
-          <span class="featured__overline-line"></span>
-          <span class="featured__overline-text">SKINCARE · 6 MIN READ</span>
-        </div>
-        <h2 class="featured__title">The Morning Ritual That Changed <em>Everything</em> About My Skin</h2>
-        <p class="featured__excerpt">It is not about a ten-step routine or a cabinet full of serums. It is about understanding what your skin is actually asking for — and having the discipline to give it exactly that, consistently.</p>
-        <p class="featured__byline">By the Editor &nbsp;·&nbsp; April 14, 2025</p>
-        <a href="/blog/morning-ritual-changed-my-skin" class="btn-editorial">Continue Reading →</a>
+      <div class="about-strip__item reveal d2">
+        <div class="about-strip__icon">👗</div>
+        <p class="about-strip__name">Style</p>
+        <p class="about-strip__desc">Timeless style tips to help<br>you feel confident daily.</p>
+      </div>
+      <div class="about-strip__item reveal d4">
+        <div class="about-strip__icon">✨</div>
+        <p class="about-strip__name">Mindset</p>
+        <p class="about-strip__desc">Mindset shifts and motivation<br>to help you grow from within.</p>
       </div>
     </div>
   </section>
 
-  <!-- ══ MANIFESTO ══ -->
-  <section class="manifesto">
-    <div class="manifesto__ghost">ritual</div>
-    <div class="manifesto__inner">
-      <div class="manifesto__label-col reveal">
-        <span class="manifesto__label">THE PHILOSOPHY</span>
-        <div class="manifesto__label-line"></div>
-      </div>
-      <blockquote class="manifesto__quote reveal reveal-delay-2">
-        "The most radical act of self-care is deciding you're <em>worth</em> the effort — then showing up for yourself, every single day, without exception."
-      </blockquote>
-    </div>
-  </section>
+  <!-- wave → white-soft -->
+  <div class="wave" style="background:var(--sage);">
+    <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,56 C360,0 1080,0 1440,56 L1440,56 L0,56 Z" fill="#FDFAF7"/>
+    </svg>
+  </div>
 
-  <!-- ══ BLOG GRID ══ -->
+  <!-- ══ BLOG SECTION ══ -->
   <section class="blog-section">
-    <div style="max-width:1400px;margin:0 auto;padding:0 64px;">
-      <div class="blog-section__header">
-        <h2 class="section-title">Latest <em>Reads</em></h2>
-        <a href="/blog" class="btn-editorial" style="font-size:11px;">View All →</a>
+    <div class="section-header reveal">
+      <h2 class="section-title">Latest from the Blog <span style="color:var(--rose);font-size:0.6em;vertical-align:middle;">✦</span></h2>
+      <p class="section-sub">hand-picked reads for your growth</p>
+      <div class="section-divider">♡</div>
+    </div>
+
+    <div class="blog-grid" id="blog-grid">
+      <!-- populated by JS -->
+      <div style="grid-column:1/-1;text-align:center;padding:48px;font-family:var(--ff-sub);font-style:italic;color:var(--text-light);font-size:18px;">Loading posts…</div>
+    </div>
+
+    <div class="blog-section__footer reveal">
+      <a href="/blog" class="btn-outline" style="display:inline-flex;">View All Articles →</a>
+    </div>
+  </section>
+
+  <!-- wave → freebie -->
+  <div class="wave" style="background:var(--white-soft);">
+    <svg viewBox="0 0 1440 44" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,44 960,44 1440,0 L1440,44 L0,44 Z" fill="#FAF4EF"/>
+    </svg>
+  </div>
+
+  <!-- ══ FREEBIE ══ -->
+  <section class="freebie">
+    <div class="freebie__bg"></div>
+    <div class="freebie__overlay"></div>
+    <div class="freebie__inner">
+      <div class="freebie__book-card reveal">
+        <p style="font-size:8px;letter-spacing:0.13em;text-transform:uppercase;color:var(--sage);margin-bottom:6px;">Stylish &amp; Healthy</p>
+        <p style="font-family:var(--ff-display);font-size:18px;font-weight:500;color:var(--espresso);line-height:1.2;margin-bottom:6px;">Your Color<br>Guide <em style="font-size:15px;color:var(--rose-deep);">for Fashion</em></p>
+        <div style="width:100%;height:90px;background:linear-gradient(160deg,var(--sage-pale),var(--blush));border-radius:6px;margin:10px 0;display:flex;align-items:center;justify-content:center;font-size:34px;">👗</div>
+        <p style="font-size:9px;color:var(--text-light);">Find the colors that bring out your best</p>
       </div>
-      <div class="blog-grid-new" id="blog-grid-dynamic">
-        <!-- filled by posts.js -->
+      <div class="reveal d2">
+        <p class="freebie__eyebrow">Free Download</p>
+        <h2 class="freebie__title">Your Color Guide<br>for Fashion</h2>
+        <p class="freebie__sub">Find the colors that bring out your best</p>
+        <form class="freebie__form" onsubmit="return false;">
+          <input type="email" class="freebie__input" placeholder="Enter your email address">
+          <button type="submit" class="freebie__btn">Get It Free</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- ══ PILLARS ══ -->
-  <section class="pillars">
-    <div class="pillars__header">
-      <h2 class="pillars__header-title">Built on <em>four</em><br>simple foundations.</h2>
-      <p class="pillars__header-sub">Everything here — the articles, the products, the philosophy — comes back to these four things. Not trends. Not quick fixes. Foundations.</p>
-    </div>
-    <div class="pillars__grid">
-      <div class="pillar reveal">
-        <div class="pillar__num">01</div>
-        <h3 class="pillar__name">Skin</h3>
-        <p class="pillar__desc">Your skin is a reflection of everything — your sleep, your stress, your consistency. We treat it with intention, not panic.</p>
-      </div>
-      <div class="pillar reveal reveal-delay-1">
-        <div class="pillar__num">02</div>
-        <h3 class="pillar__name">Mind</h3>
-        <p class="pillar__desc">Discipline is love with a morning alarm. The mindset work is the hardest and the most important.</p>
-      </div>
-      <div class="pillar reveal reveal-delay-2">
-        <div class="pillar__num">03</div>
-        <h3 class="pillar__name">Body</h3>
-        <p class="pillar__desc">What you eat, how you move, how you sleep — these are not afterthoughts. They are the foundation of everything visible.</p>
-      </div>
-      <div class="pillar reveal reveal-delay-3">
-        <div class="pillar__num">04</div>
-        <h3 class="pillar__name">Life</h3>
-        <p class="pillar__desc">The routines, the rituals, the standards you hold for yourself. A beautiful life is built in the ordinary moments.</p>
-      </div>
+  <!-- ══ TICKER ══ -->
+  <section class="ticker-section">
+    <div class="ticker-track">
+      <span class="ticker-item">"This account changed how I do my mornings."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"The color guide is literally life-changing."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"Finally a wellness page that doesn't feel preachy."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"So much value in every post."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"My morning routine is completely transformed."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"This account changed how I do my mornings."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"The color guide is literally life-changing."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"Finally a wellness page that doesn't feel preachy."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"So much value in every post."</span><span class="ticker-sep">♡</span>
+      <span class="ticker-item">"My morning routine is completely transformed."</span><span class="ticker-sep">♡</span>
     </div>
   </section>
 
-  <!-- ══ PRODUCTS ══ -->
-  <section class="products-section">
-    <div class="products-section__header">
-      <div>
-        <p style="font-family:var(--font-accent);font-size:10px;letter-spacing:4px;color:var(--gold);margin-bottom:8px;">THE DIGITAL EDIT</p>
-        <h2 class="section-title">Tools for the life<br><em>you're building.</em></h2>
-      </div>
-      <a href="/shop" class="btn-editorial" style="font-size:11px;">Browse All →</a>
+  <!-- ══ SHOP ══ -->
+  <section class="shop-section">
+    <svg class="shop-leaf shop-leaf--l" viewBox="0 0 260 380" fill="none">
+      <path d="M55 370 Q75 230 135 132 Q175 66 248 18" stroke="#A8C5AB" stroke-width="2" fill="none"/>
+      <ellipse cx="160" cy="86"  rx="36" ry="17" fill="#7A9E7E" transform="rotate(-30 160 86)"/>
+      <ellipse cx="122" cy="194" rx="30" ry="14" fill="#7A9E7E" transform="rotate(-50 122 194)"/>
+      <ellipse cx="92"  cy="292" rx="25" ry="11" fill="#7A9E7E" transform="rotate(-64 92 292)"/>
+    </svg>
+    <svg class="shop-leaf shop-leaf--r" viewBox="0 0 260 380" fill="none">
+      <path d="M55 370 Q75 230 135 132 Q175 66 248 18" stroke="#A8C5AB" stroke-width="2" fill="none"/>
+      <ellipse cx="160" cy="86"  rx="36" ry="17" fill="#7A9E7E" transform="rotate(-30 160 86)"/>
+      <ellipse cx="122" cy="194" rx="30" ry="14" fill="#7A9E7E" transform="rotate(-50 122 194)"/>
+    </svg>
+
+    <div class="section-header reveal">
+      <h2 class="section-title">Guides Made for You <span style="color:var(--rose);font-size:0.6em;vertical-align:middle;">✦</span></h2>
+      <p class="section-sub">beautifully designed, actually useful</p>
+      <div class="section-divider">♡</div>
     </div>
-    <div class="products-scroll">
-      <div class="product-card-new reveal" onclick="location.href='/shop/skincare-guide'">
-        <div class="product-card-new__image">
-          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80" alt="Skincare Guide">
+
+    <div class="shop-grid">
+      <div class="shop-card reveal" onclick="location.href='/shop/color-guide'">
+        <div class="shop-card__img">
+          <div class="shop-card__mockup">
+            <p class="shop-card__mockup-label">Stylish &amp; Healthy</p>
+            <p class="shop-card__mockup-title">Color Guide<br>for Fashion</p>
+            <div class="shop-card__mockup-icon">👗</div>
+          </div>
         </div>
-        <div class="product-card-new__body">
-          <h3 class="product-card-new__name">The Complete Skincare Guide</h3>
-          <p class="product-card-new__desc">28-page PDF with skin type quiz, AM/PM routines, ingredient glossary.</p>
-          <div class="product-card-new__footer">
-            <span class="product-card-new__price">$14</span>
-            <span class="product-card-new__link">Get It →</span>
+        <div class="shop-card__body">
+          <h3 class="shop-card__name">Color Guide for Fashion</h3>
+          <p class="shop-card__desc">Find your colors. Love your looks.</p>
+          <div class="shop-card__footer">
+            <span class="shop-card__price">$27</span>
+            <button class="shop-card__btn">Shop Now</button>
           </div>
         </div>
       </div>
-      <div class="product-card-new reveal reveal-delay-1" onclick="location.href='/shop/morning-planner'">
-        <div class="product-card-new__image">
-          <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600&q=80" alt="Morning Planner">
+
+      <div class="shop-card reveal d2" onclick="location.href='/shop/morning-routine'">
+        <div class="shop-card__img">
+          <div class="shop-card__mockup" style="background:linear-gradient(145deg,#EAF1EB,#F5EFE6);">
+            <p class="shop-card__mockup-label">Stylish &amp; Healthy</p>
+            <p class="shop-card__mockup-title">Morning Routine<br>Guide</p>
+            <div class="shop-card__mockup-icon">🌅</div>
+          </div>
         </div>
-        <div class="product-card-new__body">
-          <h3 class="product-card-new__name">Morning Ritual Planner</h3>
-          <p class="product-card-new__desc">90 days of intentional mornings, designed beautifully.</p>
-          <div class="product-card-new__footer">
-            <span class="product-card-new__price">$9</span>
-            <span class="product-card-new__link">Get It →</span>
+        <div class="shop-card__body">
+          <h3 class="shop-card__name">The Morning Routine Guide</h3>
+          <p class="shop-card__desc">Build better mornings, every day.</p>
+          <div class="shop-card__footer">
+            <span class="shop-card__price">$19</span>
+            <button class="shop-card__btn">Shop Now</button>
           </div>
         </div>
       </div>
-      <div class="product-card-new reveal reveal-delay-2" onclick="location.href='/shop/wellness-journal'">
-        <div class="product-card-new__image">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Wellness Journal">
+
+      <div class="shop-card reveal d4" onclick="location.href='/shop/self-care'">
+        <div class="shop-card__img">
+          <div class="shop-card__mockup" style="background:linear-gradient(145deg,#FDF0F0,#FAF4EF);">
+            <p class="shop-card__mockup-label">Stylish &amp; Healthy</p>
+            <p class="shop-card__mockup-title">Self Care<br>Playbook</p>
+            <div class="shop-card__mockup-icon">🌸</div>
+          </div>
         </div>
-        <div class="product-card-new__body">
-          <h3 class="product-card-new__name">Wellness Reflection Journal</h3>
-          <p class="product-card-new__desc">Weekly prompts for the woman building a better version of herself.</p>
-          <div class="product-card-new__footer">
-            <span class="product-card-new__price">$12</span>
-            <span class="product-card-new__link">Get It →</span>
+        <div class="shop-card__body">
+          <h3 class="shop-card__name">The Self Care Playbook</h3>
+          <p class="shop-card__desc">Simple practices for a softer life.</p>
+          <div class="shop-card__footer">
+            <span class="shop-card__price">$24</span>
+            <button class="shop-card__btn">Shop Now</button>
           </div>
         </div>
       </div>
-      <div class="product-card-new reveal reveal-delay-3" onclick="location.href='/shop/habit-blueprint'">
-        <div class="product-card-new__image">
-          <img src="https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=600&q=80" alt="Habit Blueprint">
-        </div>
-        <div class="product-card-new__body">
-          <h3 class="product-card-new__name">The Habit Blueprint</h3>
-          <p class="product-card-new__desc">Design habits that stick — without the toxic productivity framing.</p>
-          <div class="product-card-new__footer">
-            <span class="product-card-new__price">$16</span>
-            <span class="product-card-new__link">Get It →</span>
-          </div>
-        </div>
-      </div>
+    </div>
+
+    <div class="shop-section__footer reveal">
+      <a href="/shop" class="btn-rose-outline">Shop All Guides →</a>
     </div>
   </section>
 
-  <!-- ══ ABOUT ══ -->
-  <section class="about-strip" id="about">
-    <div class="about-strip__inner">
-      <div class="about-strip__image-wrap reveal">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&q=80" alt="About Stylish and Healthy" class="about-strip__image">
-        <div class="about-strip__image-accent"></div>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <span class="about-strip__eyebrow">WHO WE ARE</span>
-        <p class="about-strip__copy">
-          This is not a wellness blog. It is a <em>standard</em>. Stylish and Healthy exists for the woman who refuses to settle — for her skin, her mind, her mornings, or her life. We write about the things worth knowing and the habits worth keeping.
-        </p>
-        <a href="#" class="btn-ghost-gold">Read Our Story →</a>
-      </div>
+  <!-- ══ INSTAGRAM ══ -->
+  <section class="instagram-section">
+    <div class="section-header reveal">
+      <p class="instagram-handle"><span style="font-size:22px;color:var(--rose);">✦</span>&nbsp;@stylishandhealthy&nbsp;<span style="font-size:22px;color:var(--rose);">✦</span></p>
+      <a href="https://instagram.com/stylishandhealthie" target="_blank" class="ig-follow">Follow on Instagram →</a>
     </div>
-  </section>
-
-  <!-- ══ NEWSLETTER ══ -->
-  <section class="newsletter">
-    <div class="newsletter__bg-text">ritual</div>
-    <p class="newsletter__eyebrow">JOIN THE COMMUNITY</p>
-    <h2 class="newsletter__title">The Weekly Ritual</h2>
-    <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing — straight to your inbox. No spam, ever.</p>
-    <form
-      action="https://wordpress.us11.list-manage.com/subscribe/post?u=e33059783dca94dc78ba9c2cf&amp;id=640e1de445&amp;f_id=00c68ce0f0"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      target="_blank"
-      novalidate
-    >
-      <div class="newsletter__form">
-        <input type="email" name="EMAIL" class="newsletter__input" placeholder="your@email.com" required>
-        <button type="submit" name="subscribe" class="newsletter__btn">JOIN →</button>
-      </div>
-      <div aria-hidden="true" style="position:absolute;left:-5000px;">
-        <input type="text" name="b_e33059783dca94dc78ba9c2cf_640e1de445" tabindex="-1" value="">
-      </div>
-      <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
-      <div id="mc-form-response" style="margin-top:12px;font-family:var(--font-body);font-size:13px;color:var(--gold);min-height:20px;text-align:center;"></div>
-    </form>
+    <div class="ig-grid">
+      <div class="ig-cell reveal">    <img src="https://images.unsplash.com/photo-1556228852-6d35a585d566?w=300&q=80" alt="" loading="lazy"></div>
+      <div class="ig-cell reveal d1"> <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=300&q=80" alt="" loading="lazy"></div>
+      <div class="ig-cell reveal d2"> <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=300&q=80" alt="" loading="lazy"></div>
+      <div class="ig-cell reveal d3"> <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=80" alt="" loading="lazy"></div>
+      <div class="ig-cell reveal d4"> <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&q=80" alt="" loading="lazy"></div>
+      <div class="ig-cell reveal d4"> <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=300&q=80" alt="" loading="lazy"></div>
+    </div>
   </section>
 
   <!-- ══ FOOTER ══ -->
   <footer class="footer">
-    <div class="footer__bg-word">S&amp;H</div>
-    <div class="footer__top">
-      <div class="footer__brand">
-        <p class="footer__brand-name">Stylish &amp; Healthy</p>
-        <p class="footer__brand-desc">Refined skincare, wellness, and self-care for the woman who holds herself to a higher standard.</p>
-        <div class="footer__social-row">
-          <a href="https://instagram.com/stylishandhealthie" class="footer__social-icon" target="_blank">IG</a>
-          <a href="https://pinterest.com/stylishandhealthy" class="footer__social-icon" target="_blank">PIN</a>
-          <a href="#" class="footer__social-icon">YT</a>
+    <div class="footer__inner">
+      <div>
+        <p class="footer__logo">Stylish &amp; Healthy</p>
+        <p class="footer__tagline">A lifestyle brand for women who choose themselves. Wellness, style, and mindset for an intentional life.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/stylishandhealthie" class="footer__social" target="_blank">IG</a>
+          <a href="https://pinterest.com/stylishandhealthy"  class="footer__social" target="_blank">📌</a>
+          <a href="#" class="footer__social">TT</a>
+          <a href="#" class="footer__social">YT</a>
         </div>
       </div>
       <div>
-        <p class="footer__col-title">NAVIGATE</p>
-        <a href="/blog" class="footer__link">Blog</a>
-        <a href="/shop" class="footer__link">Shop</a>
-        <a href="#about" class="footer__link">About</a>
-        <a href="#" class="footer__link">Contact</a>
-        <a href="#" class="footer__link">Privacy Policy</a>
-      </div>
-      <div id="footer-latest">
-        <p class="footer__col-title">LATEST</p>
+        <p class="footer__col-title">Quick Links</p>
+        <a href="/blog"    class="footer__link">Blog</a>
+        <a href="/guides"  class="footer__link">Guides</a>
+        <a href="/shop"    class="footer__link">Shop</a>
+        <a href="/about"   class="footer__link">About</a>
+        <a href="#"        class="footer__link">Contact</a>
+        <a href="#"        class="footer__link">Privacy</a>
       </div>
       <div>
-        <p class="footer__col-title">FROM THE SHOP</p>
-        <a href="/shop/skincare-guide" class="footer__link">The Complete Skincare Guide</a>
-        <a href="/shop/morning-planner" class="footer__link">Morning Ritual Planner</a>
-        <a href="/shop/wellness-journal" class="footer__link">Wellness Reflection Journal</a>
-        <a href="/shop/habit-blueprint" class="footer__link">The Habit Blueprint</a>
+        <p class="footer__col-title">Join the Community</p>
+        <p class="footer__nl-sub">Get weekly tips, inspiration, and exclusive guides straight to your inbox.</p>
+        <form class="footer__form" onsubmit="return false;">
+          <input type="email" class="footer__input" placeholder="Your email address">
+          <button type="submit" class="footer__sub-btn">Subscribe</button>
+        </form>
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2025 Stylish and Healthy. All rights reserved.</p>
-      <p class="footer__copy">stylishandhealthy.com</p>
+      © 2026 Stylish &amp; Healthy · Made with ♡ · stylishandhealthy.com
     </div>
   </footer>
 
-  <script src="js/posts.js"></script>
-  <script src="js/main.js"></script>
+  <!-- posts.js fallback + logic -->
+  <script src="js/posts.js" onerror="window.POSTS_MISSING=true;"></script>
   <script>
-    // ── Nav scroll ──────────────────────────────────────────
-    const nav = document.getElementById('main-nav');
-    const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 40); };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-
-    // ── Mobile nav ──────────────────────────────────────────
-    document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-overlay').classList.add('open'));
-    document.getElementById('nav-close').addEventListener('click', () => document.getElementById('nav-overlay').classList.remove('open'));
-
-    // ── Scroll reveal ───────────────────────────────────────
-    const reveals = document.querySelectorAll('.reveal');
-    if (window.IntersectionObserver) {
-      const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
-      }, { threshold: 0.08 });
-      reveals.forEach(el => obs.observe(el));
-    } else {
-      reveals.forEach(el => el.classList.add('visible'));
+    // Fallback post data if posts.js isn't loaded
+    if (typeof POSTS === 'undefined') {
+      var POSTS = [
+        { slug:'best-korean-skincare-products', title:'7 Best Korean Skincare Products That Are Genuinely Worth the Hype', category:'skincare', date:'April 25, 2025', readTime:'10 min read', excerpt:'I have tested a lot of K-beauty products. Most are fine. These seven are the ones I actually keep repurchasing.', image:'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700&q=80' },
+        { slug:'morning-routine-5am-productive', title:'What a 5am Morning Routine Actually Does to Your Life After 30 Days', category:'wellness', date:'April 12, 2025', readTime:'6 min read', excerpt:'I spent 30 days waking up at 5am to find out if the quiet really changes something. It does.', image:'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=700&q=80' },
+        { slug:'glow-up-guide-real', title:'The Real Glow Up Guide: What Actually Changes When You Commit to Yourself', category:'wellness', date:'April 16, 2025', readTime:'7 min read', excerpt:'A glow up is a slow, deliberate decision to stop tolerating the version of yourself you have outgrown.', image:'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=700&q=80' },
+        { slug:'retinol-beginners-guide', title:'Retinol for Beginners: How to Start Without Destroying Your Skin', category:'skincare', date:'April 14, 2025', readTime:'8 min read', excerpt:'Retinol is the most proven anti-ageing ingredient in skincare. It is also the most misused.', image:'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=700&q=80' },
+        { slug:'feminine-energy-what-it-means', title:'Feminine Energy Is Not About Being Soft — It Is About Being Sovereign', category:'mindset', date:'April 7, 2025', readTime:'6 min read', excerpt:'The internet version of feminine energy is bubble baths and passive waiting. That is not what I mean.', image:'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=700&q=80' }
+      ];
     }
 
-    // ── Blog grid from posts.js ─────────────────────────────
+    // Build blog grid
     (function() {
-      const grid = document.getElementById('blog-grid-dynamic');
-      if (!grid || typeof POSTS === 'undefined') return;
-      const recent = POSTS.slice(0, 5);
-      if (!recent.length) return;
+      const grid = document.getElementById('blog-grid');
+      if (!grid || !POSTS.length) return;
+      const catLabel = { skincare:'Skincare', wellness:'Wellness', mindset:'Mindset', nutrition:'Nutrition', 'self-care':'Self-Care' };
+      const posts = POSTS.slice(0, 5);
 
-      const imgStyle = 'width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(0.88) sepia(0.06);display:block;';
-
-      function cardHTML(p, cls, customImage) {
-        const href = `/blog/${p.slug}`;
-        return `<article class="card ${cls || ''} reveal" onclick="location.href='${href}'" style="cursor:pointer;">
-          <div class="card__image" style="overflow:hidden;${customImage ? 'aspect-ratio:'+customImage : ''}">
-            <img class="card__image-inner" src="${p.image}" alt="" style="${imgStyle}">
-          </div>
-          <div class="card__body">
-            <span class="card__category">${p.category.toUpperCase()}</span>
-            <h3 class="card__title">${p.title}</h3>
-            <p class="card__meta">${p.date} · ${p.readTime}</p>
-            <span class="card__read">READ →</span>
+      grid.innerHTML = posts.map((p, i) => {
+        const tall = i === 0 ? 'post-card--tall' : '';
+        const wide = i === 3 ? 'post-card--wide' : '';
+        const delay = ['','d1','d2','d3','d4'][i] || '';
+        return `<article class="post-card ${tall} ${wide} reveal ${delay}" onclick="location.href='/blog/${p.slug}'" style="cursor:pointer;">
+          <div class="post-card__img"><img src="${p.image}" alt="${p.title}" loading="lazy"></div>
+          <div class="post-card__body">
+            <span class="post-card__cat">${(catLabel[p.category]||p.category).toUpperCase()}</span>
+            <h3 class="post-card__title">${p.title}</h3>
+            <p class="post-card__desc">${p.excerpt}</p>
+            <div class="post-card__footer">
+              <span class="post-card__date">${p.date} · ${p.readTime}</span>
+              <span class="post-card__read">Read more →</span>
+            </div>
           </div>
         </article>`;
-      }
-
-      let html = cardHTML(recent[0], 'card--hero', '3/2');
-
-      if (recent.length >= 3) {
-        html += `<div class="card--side" style="grid-column:span 6;">`;
-        html += cardHTML(recent[1], '', '4/3');
-        html += cardHTML(recent[2], '', '4/3');
-        html += `</div>`;
-      }
-
-      for (let i = 3; i < Math.min(recent.length, 6); i++) {
-        html += cardHTML(recent[i], 'card--small', '5/4');
-      }
-
-      grid.innerHTML = html;
-
-      // Re-observe new cards
-      if (window.IntersectionObserver) {
-        const obs2 = new IntersectionObserver(entries => {
-          entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs2.unobserve(e.target); } });
-        }, { threshold: 0.08 });
-        grid.querySelectorAll('.reveal').forEach(el => obs2.observe(el));
-      } else {
-        grid.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
-      }
+      }).join('');
+      initReveal();
     })();
 
-    // ── Footer latest ───────────────────────────────────────
-    (function() {
-      const fl = document.getElementById('footer-latest');
-      if (!fl || typeof POSTS === 'undefined') return;
-      let html = '<p class="footer__col-title">LATEST</p>';
-      POSTS.slice(0, 3).forEach(p => {
-        html += `<a href="/blog/${p.slug}" class="footer__article-item" style="display:block;text-decoration:none;">
-          <p class="footer__article-title">${p.title}</p>
-          <p class="footer__article-date">${p.date}</p>
-        </a>`;
-      });
-      fl.innerHTML = html;
-    })();
+    // Nav scroll
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive:true });
 
-    // ── Newsletter ──────────────────────────────────────────
-    const mcForm = document.getElementById('mc-embedded-subscribe-form');
-    if (mcForm) {
-      mcForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const emailInput = mcForm.querySelector('input[name="EMAIL"]');
-        const responseEl = document.getElementById('mc-form-response');
-        const btn = mcForm.querySelector('button[type="submit"]');
-        if (!emailInput?.value.trim()) {
-          if (responseEl) { responseEl.textContent = 'Please enter your email.'; responseEl.style.color = '#D4A090'; }
-          return;
-        }
-        if (btn) btn.textContent = 'JOINING...';
-        const action = mcForm.action.replace('/post?', '/post-json?') + '&c=mcCallback';
-        const params = new URLSearchParams(new FormData(mcForm)).toString();
-        const script = document.createElement('script');
-        script.src = action + '&' + params;
-        const timer = setTimeout(() => {
-          script.remove();
-          if (btn) btn.textContent = 'JOIN →';
-          if (responseEl) { responseEl.textContent = 'Request timed out.'; responseEl.style.color = '#D4A090'; }
-        }, 8000);
-        window.mcCallback = (data) => {
-          clearTimeout(timer); script.remove(); delete window.mcCallback;
-          if (btn) btn.textContent = 'JOIN →';
-          if (data.result === 'success') {
-            if (responseEl) { responseEl.textContent = 'You\'re in. Welcome to the ritual.'; responseEl.style.color = '#C9A263'; }
-            if (emailInput) emailInput.value = '';
-          } else {
-            let msg = (data.msg || 'Something went wrong.').replace(/<[^>]*>/g, '');
-            if (msg.includes('already subscribed')) msg = 'You\'re already subscribed.';
-            if (responseEl) { responseEl.textContent = msg; responseEl.style.color = '#D4A090'; }
-          }
-        };
-        document.head.appendChild(script);
-      });
+    // Mobile nav
+    document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-overlay').classList.add('open'));
+    document.getElementById('nav-close').addEventListener('click',  () => document.getElementById('nav-overlay').classList.remove('open'));
+
+    // Scroll reveal
+    function initReveal() {
+      const els = document.querySelectorAll('.reveal:not(.visible)');
+      if (!window.IntersectionObserver) { els.forEach(e => e.classList.add('visible')); return; }
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.07 });
+      els.forEach(el => obs.observe(el));
     }
+    initReveal();
   </script>
 </body>
 </html>
