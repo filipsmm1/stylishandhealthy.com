@@ -3,235 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO injected by JS below -->
-  <title>Stylish and Healthy</title>
+  <title>Stylish &amp; Healthy</title>
   <meta name="description" content="">
-  <meta name="keywords" content="">
-  <link rel="canonical" href="">
-
-  <!-- Open Graph -->
-  <meta property="og:type"        content="article">
-  <meta property="og:url"         content="">
-  <meta property="og:title"       content="">
-  <meta property="og:description" content="">
-  <meta property="og:image"       content="">
-  <meta property="og:site_name"   content="Stylish and Healthy">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image"       content="">
-
-  <!-- Schema.org Article (populated by JS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <script id="schema-article" type="application/ld+json">{}</script>
+  <style>
+    :root {
+      --blush:      #FAF4EF;
+      --rose:       #E8B4B8;
+      --rose-deep:  #C9888E;
+      --sage:       #7A9E7E;
+      --sage-light: #A8C5AB;
+      --sage-pale:  #EAF1EB;
+      --espresso:   #3B2A1A;
+      --parchment:  #F0E8DC;
+      --white-soft: #FDFAF7;
+      --text-mid:   #6B5040;
+      --text-light: #A08070;
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-sub:     'Cormorant Garamond', Georgia, serif;
+      --ff-body:    'DM Sans', sans-serif;
+      --radius-card: 16px;
+      --radius-pill: 9999px;
+      --shadow-card: 0 4px 24px rgba(59,42,26,0.08);
+      --shadow-hover: 0 12px 40px rgba(59,42,26,0.14);
+      --tr: 0.32s ease;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--blush); color: var(--espresso); font-family: var(--ff-body); line-height: 1.7; overflow-x: hidden; }
+    body::after { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); opacity:0.028; pointer-events:none; z-index:9999; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
 
-  <!-- Mailchimp popup -->
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e33059783dca94dc78ba9c2cf/cd90e839a2776072868d7fd83.js");</script>
+    /* ── PROGRESS BAR ── */
+    .progress-bar { position:fixed; top:64px; left:0; height:2px; background:var(--rose-deep); width:0%; z-index:190; transition:width 80ms linear; }
 
-  <link rel="stylesheet" href="css/style.css">
+    /* ── NAV ── */
+    .nav { position:fixed; top:0; left:0; right:0; z-index:200; height:64px; background:rgba(253,250,247,0.96); backdrop-filter:blur(14px); border-bottom:1px solid rgba(122,158,126,0.15); display:grid; grid-template-columns:1fr auto 1fr; align-items:center; padding:0 48px; }
+    .nav__left  { display:flex; gap:32px; }
+    .nav__right { display:flex; justify-content:flex-end; align-items:center; gap:24px; }
+    .nav__link  { font-family:var(--ff-body); font-size:11px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-mid); transition:color var(--tr); }
+    .nav__link:hover { color:var(--sage); }
+    .nav__logo  { font-family:var(--ff-display); font-size:22px; font-style:italic; color:var(--sage); text-align:center; }
+    .nav__cta   { background:var(--rose); color:#fff; font-family:var(--ff-body); font-size:12px; font-weight:500; padding:9px 20px; border-radius:var(--radius-pill); transition:background var(--tr),transform var(--tr); white-space:nowrap; }
+    .nav__cta:hover { background:var(--rose-deep); transform:translateY(-1px); }
+    .nav__hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; }
+    .nav__hamburger span { display:block; width:22px; height:1.5px; background:var(--text-mid); border-radius:2px; }
+    .nav__overlay { position:fixed; inset:0; background:var(--white-soft); z-index:300; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; opacity:0; pointer-events:none; transition:opacity 0.35s ease; }
+    .nav__overlay.open { opacity:1; pointer-events:all; }
+    .nav__overlay-link { font-family:var(--ff-display); font-size:44px; font-style:italic; color:var(--espresso); transition:color 0.2s; }
+    .nav__overlay-link:hover { color:var(--sage); }
+    .nav__overlay-close { position:absolute; top:22px; right:40px; background:none; border:none; font-size:12px; letter-spacing:0.1em; color:var(--text-light); cursor:pointer; text-transform:uppercase; font-family:var(--ff-body); }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb {
+      padding: 84px 80px 0;
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--ff-body); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light);
+    }
+    .breadcrumb a { color: var(--text-light); transition: color var(--tr); }
+    .breadcrumb a:hover { color: var(--sage); }
+    .breadcrumb__sep { color: var(--rose); }
+
+    /* ── ARTICLE HEADER ── */
+    .article-header {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 80px 0;
+      text-align: center;
+    }
+    .article-header__cat {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-family: var(--ff-body); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--rose-deep); margin-bottom: 22px;
+    }
+    .article-header__cat::before,
+    .article-header__cat::after { content: ''; display: block; width: 28px; height: 1px; background: var(--rose-deep); opacity: 0.6; }
+    .article-title {
+      font-family: var(--ff-display);
+      font-size: clamp(28px, 4vw, 52px);
+      font-weight: 500; line-height: 1.1;
+      color: var(--espresso); margin-bottom: 22px;
+    }
+    .article-meta {
+      display: flex; align-items: center; justify-content: center;
+      gap: 14px; flex-wrap: wrap;
+      font-size: 11px; color: var(--text-light); margin-bottom: 44px;
+    }
+    .article-meta__sep { color: var(--rose); }
+
+    /* ── HERO IMAGE ── */
+    .article-hero {
+      max-width: 1000px; margin: 0 auto; padding: 0 80px;
+    }
+    .article-hero__img {
+      width: 100%; aspect-ratio: 16/9; overflow: hidden;
+      border-radius: var(--radius-card);
+    }
+    .article-hero__img img { width:100%; height:100%; object-fit:cover; filter:saturate(0.9) contrast(1.03); display:block; }
+
+    /* ── ARTICLE BODY ── */
+    .article-body {
+      max-width: 680px; margin: 52px auto 80px; padding: 0 48px;
+    }
+    .article-body p { font-size: 16px; line-height: 1.95; color: var(--text-mid); margin-bottom: 26px; }
+    .article-body h2 { font-family: var(--ff-display); font-size: clamp(22px, 2.6vw, 32px); font-weight: 500; color: var(--espresso); margin: 56px 0 18px; line-height: 1.15; }
+    .article-body h3 { font-family: var(--ff-sub); font-size: clamp(17px, 1.9vw, 22px); font-style: italic; color: var(--espresso); margin: 36px 0 12px; }
+    .article-body blockquote.pull-quote {
+      font-family: var(--ff-sub); font-style: italic;
+      font-size: clamp(18px, 2.2vw, 26px); line-height: 1.5;
+      color: var(--espresso); font-weight: 300;
+      border-left: 3px solid var(--rose);
+      padding: 16px 0 16px 28px;
+      margin: 44px 0 44px -20px;
+    }
+
+    /* gold / rose divider */
+    .article-divider { width: 80px; height: 2px; background: linear-gradient(to right, var(--rose), transparent); margin: 40px 0; border-radius: 2px; }
+
+    /* share row */
+    .share-row { display:flex; align-items:center; gap:16px; padding-top:28px; border-top:1px solid rgba(240,232,220,0.9); margin-top:40px; flex-wrap:wrap; }
+    .share-label { font-size:10px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; color:var(--text-light); }
+    .share-btn { font-family:var(--ff-body); font-size:11px; font-weight:500; color:var(--text-mid); background:none; border:1.5px solid rgba(122,158,126,0.3); padding:7px 16px; border-radius:var(--radius-pill); cursor:pointer; transition:all var(--tr); }
+    .share-btn:hover { border-color:var(--sage); color:var(--sage); }
+
+    /* ── RELATED ── */
+    .related-section { background: var(--parchment); padding: 72px 80px; }
+    .related-header { display:flex; align-items:center; gap:16px; margin-bottom:40px; }
+    .related-header__eyebrow { font-family:var(--ff-body); font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage); white-space:nowrap; }
+    .related-header__line { flex:1; height:1px; background:rgba(122,158,126,0.22); }
+    .related-grid { max-width:1060px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+    .related-card { cursor:pointer; }
+    .related-card__img { aspect-ratio:4/3; overflow:hidden; border-radius:var(--radius-card); margin-bottom:14px; }
+    .related-card__img img { width:100%; height:100%; object-fit:cover; filter:saturate(0.9) contrast(1.03); transition:transform 0.5s ease; display:block; }
+    .related-card:hover .related-card__img img { transform:scale(1.05); }
+    .related-card__cat { display:inline-block; font-size:9px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; background:var(--sage-pale); color:var(--sage); padding:4px 10px; border-radius:var(--radius-pill); margin-bottom:8px; }
+    .related-card__title { font-family:var(--ff-display); font-size:clamp(15px,1.5vw,19px); font-weight:500; line-height:1.25; color:var(--espresso); transition:color var(--tr); }
+    .related-card:hover .related-card__title { color:var(--rose-deep); }
+
+    /* ── NEWSLETTER ── */
+    .newsletter { background:var(--sage); padding:80px 80px; text-align:center; }
+    .newsletter__eyebrow { font-size:10px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.7); margin-bottom:12px; }
+    .newsletter__title { font-family:var(--ff-display); font-size:clamp(28px,3.5vw,44px); font-weight:400; color:#fff; margin-bottom:8px; }
+    .newsletter__sub { font-family:var(--ff-sub); font-size:18px; font-style:italic; color:rgba(255,255,255,0.75); margin-bottom:36px; }
+    .newsletter__form { display:flex; justify-content:center; max-width:420px; margin:0 auto 10px; }
+    .newsletter__input { flex:1; padding:13px 20px; border:1.5px solid rgba(255,255,255,0.3); border-right:none; border-radius:var(--radius-pill) 0 0 var(--radius-pill); font-family:var(--ff-body); font-size:13px; color:#fff; background:rgba(255,255,255,0.12); outline:none; }
+    .newsletter__input::placeholder { color:rgba(255,255,255,0.45); }
+    .newsletter__input:focus { border-color:rgba(255,255,255,0.65); }
+    .newsletter__btn { padding:13px 22px; background:#fff; color:var(--sage); font-family:var(--ff-body); font-size:13px; font-weight:500; border:none; border-radius:0 var(--radius-pill) var(--radius-pill) 0; cursor:pointer; white-space:nowrap; transition:background var(--tr); }
+    .newsletter__btn:hover { background:var(--sage-pale); }
+    .newsletter__fine { font-size:11px; color:rgba(255,255,255,0.4); }
+
+    /* ── FOOTER ── */
+    .footer { background:var(--parchment); border-top:1px solid rgba(122,158,126,0.12); padding:64px 80px 0; }
+    .footer__inner { max-width:1060px; margin:0 auto; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:56px; padding-bottom:48px; }
+    .footer__logo { font-family:var(--ff-display); font-size:24px; font-style:italic; color:var(--sage); margin-bottom:10px; }
+    .footer__tagline { font-size:13px; color:var(--text-light); line-height:1.7; margin-bottom:20px; max-width:240px; }
+    .footer__socials { display:flex; gap:10px; }
+    .footer__social { width:34px; height:34px; border-radius:50%; border:1.5px solid rgba(122,158,126,0.28); display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--sage); transition:all var(--tr); }
+    .footer__social:hover { background:var(--sage); color:#fff; border-color:var(--sage); }
+    .footer__col-title { font-size:10px; font-weight:500; letter-spacing:0.13em; text-transform:uppercase; color:var(--sage); margin-bottom:16px; }
+    .footer__link { display:block; font-size:13px; color:var(--text-mid); margin-bottom:9px; transition:color var(--tr); }
+    .footer__link:hover { color:var(--sage); }
+    .footer__article-item { margin-bottom:14px; cursor:pointer; }
+    .footer__article-title { font-family:var(--ff-display); font-size:13px; color:var(--text-mid); line-height:1.35; margin-bottom:2px; transition:color var(--tr); }
+    .footer__article-item:hover .footer__article-title { color:var(--sage); }
+    .footer__article-date { font-size:10px; color:var(--text-light); }
+    .footer__bottom { border-top:1px solid rgba(122,158,126,0.11); padding:18px 0; text-align:center; font-size:11px; color:var(--text-light); }
+
+    /* ── REVEAL ── */
+    .reveal { opacity:0; transform:translateY(16px); transition:opacity 0.6s ease,transform 0.6s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .d1{transition-delay:0.08s} .d2{transition-delay:0.16s} .d3{transition-delay:0.24s}
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:860px){
+      .nav{padding:0 20px;grid-template-columns:1fr auto;}
+      .nav__left,.nav__cta{display:none;}
+      .nav__hamburger{display:flex;}
+      .nav__logo{text-align:left;}
+      .nav__overlay-close{right:24px;}
+      .breadcrumb{padding:80px 24px 0;}
+      .article-header{padding:36px 24px 0;}
+      .article-hero{padding:0 24px;}
+      .article-body{padding:0 24px;}
+      .article-body blockquote.pull-quote{margin-left:0;font-size:18px;}
+      .related-section{padding:56px 24px;}
+      .related-grid{grid-template-columns:1fr 1fr;}
+      .newsletter{padding:64px 24px;}
+      .newsletter__form{flex-direction:column;max-width:320px;}
+      .newsletter__input{border-right:1.5px solid rgba(255,255,255,0.3);border-radius:var(--radius-pill);margin-bottom:10px;}
+      .newsletter__btn{border-radius:var(--radius-pill);}
+      .footer{padding:48px 24px 0;}
+      .footer__inner{grid-template-columns:1fr;gap:32px;}
+      .footer__bottom{padding:18px 0;}
+    }
+    @media(max-width:560px){
+      .related-grid{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
 
+  <div class="progress-bar" id="progress-bar"></div>
+
   <!-- NAV -->
-  <nav class="nav scrolled">
-    <a href="index.html" class="nav__logo" style="color:var(--black);">Stylish &amp; Healthy</a>
-    <ul class="nav__links">
-      <li><a href="blog.html"        class="nav__link" style="color:var(--black);">BLOG</a></li>
-      <li><a href="shop.html"        class="nav__link" style="color:var(--black);">SHOP</a></li>
-      <li><a href="index.html#about" class="nav__link" style="color:var(--black);">ABOUT</a></li>
-    </ul>
-    <button class="nav__hamburger" aria-label="Open menu">
-      <span style="background:var(--black);"></span>
-      <span style="background:var(--black);"></span>
-      <span style="background:var(--black);"></span>
-    </button>
-  </nav>
-  <div class="nav__overlay">
-    <button class="nav__overlay-close">CLOSE ✕</button>
-    <nav class="nav__overlay-links">
-      <a href="blog.html"        class="nav__overlay-link">Blog</a>
-      <a href="shop.html"        class="nav__overlay-link">Shop</a>
-      <a href="index.html#about" class="nav__overlay-link">About</a>
-    </nav>
-  </div>
-
-  <!-- ARTICLE CONTENT — filled by JS -->
-  <div id="post-root" style="background:var(--cream);">
-    <div style="padding:160px 48px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(13,11,8,0.35);font-style:italic;">
-      Loading post…
+  <nav class="nav">
+    <div class="nav__left">
+      <a href="/blog"   class="nav__link">Blog</a>
+      <a href="/guides" class="nav__link">Guides</a>
     </div>
+    <a href="/" class="nav__logo">Stylish &amp; Healthy</a>
+    <div class="nav__right">
+      <a href="/shop"  class="nav__link">Shop</a>
+      <a href="/about" class="nav__link">About</a>
+      <a href="/guides/color-guide" class="nav__cta">Free Color Guide →</a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay" id="nav-overlay">
+    <button class="nav__overlay-close" id="nav-close">CLOSE ✕</button>
+    <a href="/blog"   class="nav__overlay-link">Blog</a>
+    <a href="/guides" class="nav__overlay-link">Guides</a>
+    <a href="/shop"   class="nav__overlay-link">Shop</a>
+    <a href="/about"  class="nav__overlay-link">About</a>
   </div>
 
-  <!-- RELATED — filled by JS -->
+  <!-- POST ROOT -->
+  <div id="post-root">
+    <div style="padding:180px 48px;text-align:center;font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--text-light);font-style:italic;">Loading…</div>
+  </div>
+
+  <!-- RELATED -->
   <section class="related-section" id="related-section" style="display:none;">
-    <div class="container" style="padding-top:0;padding-bottom:0;">
-      <div style="padding:0 0 40px;">
-        <span class="eyebrow" style="font-size:13px;">YOU MIGHT ALSO LIKE</span>
+    <div style="max-width:1060px;margin:0 auto;">
+      <div class="related-header">
+        <span class="related-header__eyebrow">You might also like</span>
+        <div class="related-header__line"></div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;" id="related-grid"></div>
+      <div class="related-grid" id="related-grid"></div>
     </div>
   </section>
 
   <!-- NEWSLETTER -->
   <section class="newsletter">
+    <p class="newsletter__eyebrow">Join the Community</p>
     <h2 class="newsletter__title">The Weekly Ritual</h2>
-    <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing — straight to your inbox.</p>
-    <form
-      action="https://wordpress.us11.list-manage.com/subscribe/post?u=e33059783dca94dc78ba9c2cf&amp;id=640e1de445&amp;f_id=00c68ce0f0"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      target="_blank"
-      novalidate
-      style="width:100%;"
-    >
-      <div class="newsletter__form">
-        <input type="email" name="EMAIL" class="newsletter__input" placeholder="your@email.com" required>
-        <button type="submit" name="subscribe" class="newsletter__btn"><span>JOIN →</span></button>
-      </div>
-      <!-- Mailchimp anti-bot honeypot — do not remove -->
-      <div aria-hidden="true" style="position:absolute;left:-5000px;">
-        <input type="text" name="b_e33059783dca94dc78ba9c2cf_640e1de445" tabindex="-1" value="">
-      </div>
-      <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
-      <div id="mc-form-response" style="margin-top:12px;font-family:var(--font-body);font-size:13px;color:var(--cream);min-height:20px;text-align:center;"></div>
+    <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing</p>
+    <form class="newsletter__form" onsubmit="return false;">
+      <input type="email" class="newsletter__input" placeholder="your@email.com">
+      <button type="submit" class="newsletter__btn">Join →</button>
     </form>
+    <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer__bg-text">Stylish &amp; Healthy</div>
     <div class="footer__inner">
       <div>
-        <p class="footer__heading">NAVIGATE</p>
-        <ul class="footer__nav-links">
-          <li><a href="blog.html" class="footer__nav-link">BLOG</a></li>
-          <li><a href="shop.html" class="footer__nav-link">SHOP</a></li>
-          <li><a href="index.html#about" class="footer__nav-link">ABOUT</a></li>
-          <li><a href="#" class="footer__nav-link">CONTACT</a></li>
-        </ul>
-      </div>
-      <div id="footer-latest">
-        <p class="footer__heading">LATEST</p>
+        <p class="footer__logo">Stylish &amp; Healthy</p>
+        <p class="footer__tagline">A lifestyle brand for women who choose themselves.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/stylishandhealthie" class="footer__social" target="_blank">IG</a>
+          <a href="https://pinterest.com/stylishandhealthy"  class="footer__social" target="_blank">📌</a>
+          <a href="#" class="footer__social">TT</a>
+          <a href="#" class="footer__social">YT</a>
+        </div>
       </div>
       <div>
-        <p class="footer__heading">FOLLOW</p>
-        <ul class="footer__social-links">
-          <li><a href="https://instagram.com/stylishandhealthie" class="footer__social-link" target="_blank">INSTAGRAM</a></li>
-          <li><a href="https://pinterest.com/stylishandhealthy" class="footer__social-link" target="_blank">PINTEREST</a></li>
-          <li><a href="#" class="footer__social-link">YOUTUBE</a></li>
-        </ul>
+        <p class="footer__col-title">Navigate</p>
+        <a href="/blog"   class="footer__link">Blog</a>
+        <a href="/guides" class="footer__link">Guides</a>
+        <a href="/shop"   class="footer__link">Shop</a>
+        <a href="/about"  class="footer__link">About</a>
+        <a href="#"       class="footer__link">Contact</a>
+      </div>
+      <div id="footer-latest">
+        <p class="footer__col-title">Latest</p>
       </div>
     </div>
-    <div class="footer__bottom container">
-      <p class="footer__copy">© 2025 Stylish and Healthy. All rights reserved.</p>
-      <p class="footer__copy">stylishandhealthy.com</p>
+    <div class="footer__bottom">
+      © 2026 Stylish &amp; Healthy · Made with ♡ · stylishandhealthy.com
     </div>
   </footer>
 
   <script src="js/posts.js"></script>
-  <script src="js/main.js"></script>
   <script>
+    // Fallback posts
+    if (typeof POSTS === 'undefined') {
+      var POSTS = [
+        { slug:'best-korean-skincare-products', title:'7 Best Korean Skincare Products That Are Genuinely Worth the Hype', category:'skincare', date:'April 25, 2025', readTime:'10 min read', excerpt:'I have tested a lot of K-beauty products. Most are fine. These seven are the ones I actually keep repurchasing.', image:'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=900&q=80', content:'[h2]First, Why Korean Skincare?[/h2]\n\nKorean skincare philosophy is built around prevention and maintenance, not correction. The idea is that if you consistently care for your skin barrier, hydrate properly, and protect from UV damage, you end up with skin that does not need a lot of correcting later.\n\n[quote]Good skincare is not about using the most expensive products. It is about using the right ones, consistently.[/quote]\n\n[h2]1. COSRX Advanced Snail 96 Mucin Power Essence[/h2]\n\nThis is the one that converts every skeptic. Snail secretion filtrate contains hyaluronic acid, glycoproteins, and allantoin — and it repairs the skin barrier, reduces redness, and gives skin that specific dewy bounce.\n\n[h2]2. Beauty of Joseon Relief Sun SPF50+[/h2]\n\nIf you only buy one thing from this list, make it this sunscreen. Rated SPF50+ PA++++, zero white cast, no stickiness. It actually changed how I feel about wearing SPF.\n\n[h2]3. Anua Heartleaf 77% Soothing Toner[/h2]\n\nAt 77% heartleaf concentration, this toner delivers serious anti-inflammatory treatment in the lightest, most watery texture imaginable. A complete game changer for sensitive skin.' },
+        { slug:'morning-routine-5am-productive', title:'What a 5am Morning Routine Actually Does to Your Life After 30 Days', category:'wellness', date:'April 12, 2025', readTime:'6 min read', excerpt:'I spent 30 days waking up at 5am to find out if the quiet really changes something. It does.', image:'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&q=80', content:'[h2]Why I Did It[/h2]\n\nI did not start waking up at 5am because a podcast told me successful people do. I did it because I kept ending every day feeling like I had never had a moment that was mine.\n\n[quote]The 5am alarm is not about productivity. It is about sovereignty. An hour that is entirely yours before the world starts asking things of you.[/quote]\n\n[h2]The First Week[/h2]\n\nHard. The first three days I sat in my kitchen feeling sorry for myself and mostly just made coffee. By day seven, something had shifted. The silence at 5am is a different quality of silence.\n\n[h2]What Changed by Day 30[/h2]\n\nMy skin improved because I was sleeping earlier. My anxiety was lower in the mornings because I had already had time to myself. My skincare routine went from rushed to actual.' },
+        { slug:'glow-up-guide-real', title:'The Real Glow Up Guide: What Actually Changes When You Commit to Yourself', category:'wellness', date:'April 16, 2025', readTime:'7 min read', excerpt:'A glow up is a slow, deliberate decision to stop tolerating the version of yourself you have outgrown.', image:'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=900&q=80', content:'[h2]What a Glow Up Actually Is[/h2]\n\nThe internet has turned the glow up into an aesthetic event. Before and after photos. New clothes, new hair, new body. That is not what I am talking about.\n\n[quote]You cannot glow up while staying comfortable in the life that is keeping you small.[/quote]\n\n[h2]Phase One — The Audit[/h2]\n\nBefore anything changes externally, something has to change internally. Sit down and write, without editing yourself: what version of my life am I embarrassed to admit I have settled for?\n\n[h2]Phase Two — The Boring Work[/h2]\n\nThe glow up happens in the unglamorous middle. The 6am alarms nobody sees. The water instead of wine on a Tuesday. The skincare routine done properly even when you are exhausted.' }
+      ];
+      if (typeof getRelatedPosts === 'undefined') {
+        window.getRelatedPosts = function(slug, n) {
+          return POSTS.filter(p => p.slug !== slug).slice(0, n || 3);
+        };
+      }
+      if (typeof renderContent === 'undefined') {
+        window.renderContent = function(raw) {
+          const html = raw
+            .replace(/\[quote\]([\s\S]*?)\[\/quote\]/g, '<blockquote class="pull-quote">$1</blockquote>')
+            .replace(/\[h2\](.*?)\[\/h2\]/g, '<h2>$1</h2>')
+            .replace(/\[h3\](.*?)\[\/h3\]/g, '<h3>$1</h3>');
+          return html.split('\n\n').map(b => {
+            b = b.trim(); if (!b) return '';
+            if (/^<(h2|h3|blockquote)/.test(b)) return b;
+            return `<p>${b}</p>`;
+          }).join('\n');
+        };
+      }
+    }
+
+    // Reading progress
+    window.addEventListener('scroll', () => {
+      const d = document.documentElement.scrollHeight - window.innerHeight;
+      document.getElementById('progress-bar').style.width = (d > 0 ? window.scrollY / d * 100 : 0) + '%';
+    }, { passive: true });
+
+    // Nav
+    document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-overlay').classList.add('open'));
+    document.getElementById('nav-close').addEventListener('click',  () => document.getElementById('nav-overlay').classList.remove('open'));
+
+    // Reveal
+    function initReveal() {
+      const els = document.querySelectorAll('.reveal:not(.visible)');
+      if (!window.IntersectionObserver) { els.forEach(e => e.classList.add('visible')); return; }
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.07 });
+      els.forEach(el => obs.observe(el));
+    }
+
+    const catLabel = { skincare:'Skincare', wellness:'Wellness', mindset:'Mindset', nutrition:'Nutrition', 'self-care':'Self-Care' };
+
     (function() {
       const params = new URLSearchParams(window.location.search);
       const slug = params.get('slug');
 
-      if (!slug || typeof POSTS === 'undefined') {
-        document.getElementById('post-root').innerHTML =
-          '<div style="padding:160px 48px;text-align:center;font-family:\'Cormorant Garamond\',serif;font-size:28px;font-style:italic;color:rgba(13,11,8,0.4);">Post not found. <a href="blog.html" style="color:var(--gold);">Back to Blog</a></div>';
-        return;
-      }
-
+      if (!slug || typeof POSTS === 'undefined') { showNotFound(); return; }
       const post = POSTS.find(p => p.slug === slug);
-      if (!post) {
-        document.getElementById('post-root').innerHTML =
-          '<div style="padding:160px 48px;text-align:center;font-family:\'Cormorant Garamond\',serif;font-size:28px;font-style:italic;color:rgba(13,11,8,0.4);">Post not found. <a href="blog.html" style="color:var(--gold);">Back to Blog</a></div>';
-        return;
-      }
+      if (!post) { showNotFound(); return; }
 
-      // ── Inject SEO meta tags ──────────────────────────────
-      document.title = post.metaTitle || `${post.title} | Stylish and Healthy`;
-      document.querySelector('meta[name="description"]').content = post.metaDescription || post.excerpt;
-      document.querySelector('meta[name="keywords"]').content = post.keywords || '';
-      const canonical = `https://stylishandhealthy.com/post.html?slug=${post.slug}`;
-      document.querySelector('link[rel="canonical"]').href = canonical;
-
-      ['og:url','twitter:url'].forEach(p => { const el = document.querySelector(`meta[property="${p}"]`); if (el) el.content = canonical; });
-      document.querySelector('meta[property="og:title"]').content   = post.metaTitle || post.title;
-      document.querySelector('meta[property="og:description"]').content = post.metaDescription || post.excerpt;
-      document.querySelector('meta[property="og:image"]').content   = post.image;
-      document.querySelector('meta[name="twitter:title"]').content  = post.metaTitle || post.title;
-      document.querySelector('meta[name="twitter:description"]').content = post.metaDescription || post.excerpt;
-      document.querySelector('meta[name="twitter:image"]').content  = post.image;
-
-      // Article Schema
+      // SEO
+      document.title = `${post.title} | Stylish & Healthy`;
+      document.querySelector('meta[name="description"]').content = post.excerpt || '';
       document.getElementById('schema-article').textContent = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": post.title,
-        "description": post.metaDescription || post.excerpt,
-        "image": post.image,
-        "datePublished": post.date,
-        "author": { "@type": "Person", "name": post.author || "the Editor" },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Stylish and Healthy",
-          "url": "https://stylishandhealthy.com"
-        },
-        "url": canonical,
-        "keywords": post.keywords
+        "@context":"https://schema.org","@type":"Article",
+        "headline":post.title,"image":post.image,"datePublished":post.date,
+        "author":{"@type":"Person","name":post.author||"the Editor"},
+        "publisher":{"@type":"Organization","name":"Stylish & Healthy","url":"https://stylishandhealthy.com"}
       });
 
-      // ── Render Article ────────────────────────────────────
-      const body = renderContent(post.content);
+      // Body
+      const bodyHtml = typeof renderContent === 'function' ? renderContent(post.content || '') : `<p>${post.excerpt}</p>`;
 
       document.getElementById('post-root').innerHTML = `
-        <div style="padding-top:64px;">
-          <div class="article-header reveal">
-            <span class="eyebrow">${post.category.toUpperCase()}</span>
-            <h1 class="article-title">${post.title}</h1>
-            <p class="article-meta">By ${post.author || 'the Editor'} &nbsp;·&nbsp; ${post.date} &nbsp;·&nbsp; ${post.readTime}</p>
+        <div class="breadcrumb reveal">
+          <a href="/">Home</a>
+          <span class="breadcrumb__sep">✦</span>
+          <a href="/blog">Blog</a>
+          <span class="breadcrumb__sep">✦</span>
+          <span>${catLabel[post.category]||post.category}</span>
+        </div>
+
+        <div class="article-header reveal">
+          <div class="article-header__cat">${(catLabel[post.category]||post.category).toUpperCase()}</div>
+          <h1 class="article-title">${post.title}</h1>
+          <div class="article-meta">
+            <span>By ${post.author||'the Editor'}</span>
+            <span class="article-meta__sep">✦</span>
+            <span>${post.date}</span>
+            <span class="article-meta__sep">✦</span>
+            <span>${post.readTime}</span>
           </div>
-          <div class="article-hero-image reveal">
+        </div>
+
+        <div class="article-hero reveal">
+          <div class="article-hero__img">
             <img src="${post.image}" alt="${post.title}">
           </div>
         </div>
+
         <div class="article-body reveal">
-          ${body}
-          <div class="gold-line" style="margin:48px 0;"></div>
-          <p style="font-family:var(--font-body);font-size:12px;color:rgba(13,11,8,0.4);">
-            Filed under: <a href="blog.html?cat=${post.category}" style="color:var(--gold);font-family:var(--font-accent);letter-spacing:2px;font-size:10px;">${post.category.toUpperCase()}</a>
-          </p>
+          ${bodyHtml}
+          <div class="article-divider"></div>
+          <div class="share-row">
+            <span class="share-label">Share</span>
+            <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href).then(()=>{this.textContent='Copied ✓';setTimeout(()=>this.textContent='Copy link',2000)})">Copy link</button>
+            <a href="https://pinterest.com/pin/create/button/?url=${encodeURIComponent(window.location.href)}&media=${encodeURIComponent(post.image)}&description=${encodeURIComponent(post.title)}" target="_blank" class="share-btn">Pinterest</a>
+          </div>
         </div>`;
 
-      // ── Related posts ─────────────────────────────────────
-      const related = getRelatedPosts(slug, 3);
+      // Related
+      const related = typeof getRelatedPosts === 'function' ? getRelatedPosts(slug, 3) : POSTS.filter(p => p.slug !== slug).slice(0, 3);
       if (related.length) {
         document.getElementById('related-section').style.display = '';
         document.getElementById('related-grid').innerHTML = related.map(p => `
-          <article class="card reveal" onclick="location.href='post.html?slug=${p.slug}'" style="cursor:pointer;">
-            <div class="card__image">
-              <img src="${p.image}" alt="" style="width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(0.9) sepia(0.08);transition:transform 500ms ease-in-out;">
-            </div>
-            <div class="card__body">
-              <span class="card__tag">${p.category.toUpperCase()}</span>
-              <h3 class="card__title">${p.title}</h3>
-            </div>
-          </article>`).join('');
+          <div class="related-card reveal" onclick="location.href='/blog/${p.slug}'">
+            <div class="related-card__img"><img src="${p.image}" alt="${p.title}" loading="lazy"></div>
+            <span class="related-card__cat">${(catLabel[p.category]||p.category).toUpperCase()}</span>
+            <h3 class="related-card__title">${p.title}</h3>
+          </div>`).join('');
       }
 
-      // ── Footer latest ─────────────────────────────────────
+      // Footer latest
       const fl = document.getElementById('footer-latest');
-      fl.innerHTML = '<p class="footer__heading">LATEST</p>' +
-        POSTS.slice(0, 3).map(p => `
-          <a href="post.html?slug=${p.slug}" class="footer__article-link">
+      fl.innerHTML = '<p class="footer__col-title">Latest</p>' +
+        POSTS.slice(0, 4).map(p => `
+          <div class="footer__article-item" onclick="location.href='/blog/${p.slug}'">
             <p class="footer__article-title">${p.title}</p>
             <p class="footer__article-date">${p.date}</p>
-          </a>`).join('');
+          </div>`).join('');
 
+      initReveal();
     })();
+
+    function showNotFound() {
+      document.getElementById('post-root').innerHTML = `
+        <div style="padding:180px 48px;text-align:center;">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:28px;font-style:italic;color:var(--text-light);margin-bottom:20px;">Post not found.</p>
+          <a href="/blog" style="font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;color:var(--sage);border-bottom:1px solid var(--sage);padding-bottom:2px;">← Back to Blog</a>
+        </div>`;
+    }
   </script>
 </body>
 </html>
