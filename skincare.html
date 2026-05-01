@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skincare Recs -- Stylishandhealthy.</title>
+  <meta name="description" content="Products worth every penny. Research-backed skincare recommendations with ingredient science." />
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .skc-intro { background: var(--cream); }
+    .skc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 52px; }
+    .skc-sticky { position: sticky; top: 96px; }
+    .ing-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+    .itab { font-family: var(--body); font-size: .74rem; font-weight: 600; padding: 7px 15px; border-radius: 100px; border: 1.5px solid rgba(85,107,62,.2); color: var(--green-dk); background: transparent; cursor: none; transition: background .2s, border-color .2s, color .2s; }
+    .itab.on, .itab:hover { background: var(--green); border-color: var(--green); color: var(--cream); }
+    .trust-box { background: var(--cream-warm); border-radius: 22px 28px 18px 24px / 24px 18px 28px 22px; padding: 30px; border: 1px solid rgba(58,42,34,.07); }
+    .skc-cards { display: flex; flex-direction: column; gap: 14px; }
+    .skc { background: var(--cream-warm); border-radius: 22px 16px 20px 18px / 18px 22px 16px 20px; padding: 24px; border: 1px solid rgba(58,42,34,.07); display: grid; grid-template-columns: 62px 1fr; gap: 18px; align-items: start; transition: transform .2s var(--ease), box-shadow .2s; cursor: none; }
+    .skc:hover { transform: translateX(5px); box-shadow: 0 10px 30px rgba(85,107,62,.09); }
+    .skc-num { width: 62px; height: 62px; border-radius: 14px; background: var(--pink); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 1.55rem; font-weight: 400; color: var(--green-dk); flex-shrink: 0; }
+    .skc.feat .skc-num { background: var(--green); color: var(--cream); }
+    .skc-ctag { font-family: var(--body); font-size: .65rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--pink-deep); margin-bottom: 3px; }
+    .skc h3 { font-family: var(--display); font-size: 1.12rem; font-weight: 400; color: var(--green-dk); margin-bottom: 4px; }
+    .skc p { font-size: .83rem; color: var(--brown-lt); line-height: 1.65; }
+    .skc-lnk { display: inline-flex; align-items: center; gap: 5px; font-family: var(--body); font-size: .77rem; font-weight: 600; color: var(--green); margin-top: 9px; border-bottom: 1px solid rgba(85,107,62,.22); transition: border-color .2s, gap .15s var(--easeb); }
+    .skc-lnk:hover { border-color: var(--green); gap: 9px; }
+    @media(max-width:860px) { .skc-grid{grid-template-columns:1fr} .skc-sticky{position:static} }
+  </style>
+</head>
+<body>
+
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo_main.png" alt="S&H" /></a>
+  <ul>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="doodle" style="width:115px;top:20%;right:9%;opacity:.25;transform:rotate(-8deg)"><img src="heart1.png" alt="" /></div>
+  <div class="sl">Skincare recs</div>
+  <h1>Products worth <em>every penny.</em></h1>
+  <p>Tested, researched, and actually recommended. No paid placements without disclosure. Trust is our core brand asset.</p>
+</div>
+
+<section class="sec skc-intro" style="position:relative;overflow:hidden">
+  <div class="doodle" style="width:95px;top:5%;right:5%;opacity:.35;transform:rotate(15deg)"><img src="heart2.png" alt="" /></div>
+
+  <div class="skc-grid">
+    <div class="skc-sticky rv">
+      <div class="ing-tabs">
+        <button class="itab on">All</button>
+        <button class="itab">Acne-prone</button>
+        <button class="itab">Dry skin</button>
+        <button class="itab">Anti-aging</button>
+        <button class="itab">Sensitive</button>
+      </div>
+      <div class="trust-box">
+        <div class="sl" style="margin-bottom:10px">Why trust us?</div>
+        <p class="sp" style="font-size:.88rem;max-width:none;color:var(--brown-lt)">Every recommendation is based on ingredient research, dermatology literature, and real testing. Affiliate links are always disclosed. We never recommend what we would not use ourselves.</p>
+        <a href="subscribe.html" class="btn btn-f" style="margin-top:22px;display:inline-flex">Weekly deepdive</a>
+      </div>
+    </div>
+
+    <div class="skc-cards rv d1">
+      <div class="empty-state" style="text-align:left;padding:0">
+        <div class="empty-icon">🧴</div>
+        <h3 style="text-align:left">Nothing <em>here yet</em></h3>
+        <p style="text-align:left;margin:0 0 24px">Skincare recommendations are being researched and written. Subscribe to be the first to read them.</p>
+        <a href="subscribe.html" class="btn btn-f">Get notified</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nw-strip">
+  <div class="doodle" style="width:105px;bottom:15%;right:7%;opacity:.3;transform:rotate(7deg)"><img src="heart3.png" alt="" /></div>
+  <div class="nw-strip-inner rv">
+    <div class="sl">Weekly skincare deepdive</div>
+    <h2>Get the science delivered to your <em>inbox.</em></h2>
+    <p>Every week: one ingredient decoded, one routine tip, one product recommendation. Research-first, beautifully written.</p>
+    <form class="nw-form" onsubmit="handleNwSub(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Subscribe free</button>
+    </form>
+    <p class="nw-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo"><img src="logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
+      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
+    </div>
+    <div class="ft-col"><h4>Shop</h4><a href="shop.html">All products</a><a href="shop.html">Sticker Packs</a><a href="shop.html">Digital Downloads</a><a href="shop.html">Clothing</a></div>
+    <div class="ft-col"><h4>Explore</h4><a href="blog.html">Blog</a><a href="skincare.html">Skincare Recs</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a><a href="journal.html">Free Journal</a></div>
+    <div class="ft-col"><h4>Info</h4><a href="about.html">Our mission</a><a href="terms.html">Terms of service</a><a href="privacy.html">Privacy policy</a><a href="affiliate.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+  document.querySelectorAll('.itab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.itab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+  }));
+</script>
+</body>
+</html>

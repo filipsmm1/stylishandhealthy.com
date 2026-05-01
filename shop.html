@@ -1,213 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Digital Edit — Skincare & Wellness Digital Products | Stylish and Healthy</title>
-  <!-- Primary SEO -->
-  <meta name="keywords" content="skincare guide PDF, wellness planner, self-care digital products, morning ritual planner">
-  <meta name="author" content="Stylish and Healthy">
-  <link rel="canonical" href="https://stylishandhealthy.com/shop.html">
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stylishandhealthy.com/shop.html">
-  <meta property="og:title" content="The Digital Edit — Skincare & Wellness Digital Products | Stylish and Healthy">
-  <meta property="og:description" content="Digital tools for the life you are building. Skincare guides, wellness planners, and self-care journals.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1200&q=80">
-  <meta property="og:site_name" content="Stylish and Healthy">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Digital Edit — Skincare & Wellness Digital Products | Stylish and Healthy">
-  <meta name="twitter:description" content="Digital tools for the life you are building. Skincare guides, wellness planners, and self-care journals.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1200&q=80">
-  <!-- Mailchimp popup -->
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e33059783dca94dc78ba9c2cf/cd90e839a2776072868d7fd83.js");</script>
-  <meta name="description" content="Digital tools for the life you're building. Guides, planners, and journals from Stylish and Healthy.">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop -- Stylishandhealthy.</title>
+  <meta name="description" content="Stickers, digital downloads, clothing, and accessories from Stylishandhealthy." />
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .shop-tabs { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; }
+    .tab { font-family: var(--body); font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 8px 20px; border-radius: 100px; border: 1.5px solid rgba(85,107,62,.2); color: var(--green-dk); background: transparent; cursor: none; transition: background .2s, border-color .2s, color .2s; }
+    .tab.on, .tab:hover { background: var(--green); border-color: var(--green); color: var(--cream); }
+    .shop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .sc { background: var(--cream); border-radius: 24px; overflow: hidden; transition: transform .25s var(--ease), box-shadow .25s; cursor: none; border: 1px solid rgba(58,42,34,.07); }
+    .sc:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(85,107,62,.13); }
+    .sc.wide { grid-column: span 2; }
+    .sc-thumb { height: 200px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .sc.wide .sc-thumb { height: 220px; }
+    .sc-badge { position: absolute; top: 13px; left: 13px; background: rgba(247,241,232,.92); color: var(--green-dk); font-family: var(--body); font-size: .63rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 11px; border-radius: 100px; }
+    .sc-body { padding: 18px 20px 22px; }
+    .sc-cat { font-family: var(--body); font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--pink-deep); margin-bottom: 5px; display: block; }
+    .sc-name { font-family: var(--display); font-size: 1.15rem; font-weight: 400; color: var(--green-dk); margin-bottom: 6px; line-height: 1.25; }
+    .sc-desc { font-size: .82rem; color: var(--brown-lt); line-height: 1.6; margin-bottom: 14px; }
+    .sc-foot { display: flex; align-items: center; justify-content: space-between; }
+    .sc-price { font-family: var(--display); font-size: 1.15rem; color: var(--green-dk); }
+    .sc-price small { font-family: var(--body); font-size: .68rem; color: var(--brown-lt); }
+    .sc-btn { background: var(--green); color: var(--cream); font-family: var(--body); font-size: .74rem; font-weight: 700; padding: 8px 17px; border-radius: 100px; border: 0; cursor: none; transition: background .2s, transform .15s var(--easeb); }
+    .sc-btn:hover { background: var(--green-dk); transform: scale(1.06); }
+    @media(max-width:860px) { .shop-grid{grid-template-columns:repeat(2,1fr)} .sc.wide{grid-column:span 2} }
+    @media(max-width:560px) { .shop-grid{grid-template-columns:1fr} .sc.wide{grid-column:span 1} }
+  </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav scrolled">
-    <a href="index.html" class="nav__logo" style="color:var(--black);">Stylish &amp; Healthy</a>
-    <ul class="nav__links">
-      <li><a href="blog.html"        class="nav__link" style="color:var(--black);">BLOG</a></li>
-      <li><a href="shop.html"        class="nav__link" style="color:var(--black);">SHOP</a></li>
-      <li><a href="index.html#about" class="nav__link" style="color:var(--black);">ABOUT</a></li>
-      <li><a href="#"                class="nav__link" style="color:var(--black);">SEARCH</a></li>
-    </ul>
-    <button class="nav__hamburger" aria-label="Open menu">
-      <span style="background:var(--black);"></span>
-      <span style="background:var(--black);"></span>
-      <span style="background:var(--black);"></span>
-    </button>
-  </nav>
-  <div class="nav__overlay">
-    <button class="nav__overlay-close">CLOSE ✕</button>
-    <nav class="nav__overlay-links">
-      <a href="blog.html"        class="nav__overlay-link">Blog</a>
-      <a href="shop.html"        class="nav__overlay-link">Shop</a>
-      <a href="index.html#about" class="nav__overlay-link">About</a>
-    </nav>
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo_main.png" alt="S&H" /></a>
+  <ul>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="doodle" style="width:120px;top:18%;right:10%;opacity:.25;transform:rotate(8deg)"><img src="heart1.png" alt="" /></div>
+  <div class="sl">The shop</div>
+  <h1>Stickers, downloads,<br>clothing <em>and more.</em></h1>
+  <p>Everything you need to make your routines feel beautiful -- from aesthetic sticker packs to digital planners and soft merch.</p>
+</div>
+
+<section class="sec" style="background:var(--pink);position:relative;overflow:hidden">
+  <div class="doodle" style="width:100px;top:5%;right:6%;transform:rotate(10deg);opacity:.4"><img src="heart2.png" alt="" /></div>
+
+  <div class="shop-tabs rv">
+    <button class="tab on">All</button>
+    <button class="tab">Stickers</button>
+    <button class="tab">Digital</button>
+    <button class="tab">Clothing</button>
+    <button class="tab">Accessories</button>
   </div>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <p class="page-hero__eyebrow">CURATED FOR YOU</p>
-    <h1 class="page-hero__title" style="font-style:normal;">The Digital Edit</h1>
+  <div class="empty-state rv d1">
+    <div class="empty-icon">🛍️</div>
+    <h3>Nothing <em>here yet</em></h3>
+    <p>Products are coming soon. Join the newsletter to be the first to know when the shop goes live.</p>
+    <a href="subscribe.html" class="btn btn-f">Get notified</a>
   </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════════
-       PRODUCTS FULL GRID
-  ═══════════════════════════════════════════════════════════ -->
-  <section class="digital-edit ghost-section" style="background:var(--cream);">
-    <div class="ghost-text">GROWTH</div>
-    <div class="container" style="padding-top:80px; padding-bottom:80px;">
-      <p class="digital-edit__sub reveal" style="margin-bottom:56px;">Tools for the life you're building.</p>
-
-      <div class="products-grid">
-
-        <a href="product.html" class="product-card reveal" style="display:block;text-decoration:none;">
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=80" alt="Skincare Routine Guide">
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">The Complete Skincare Routine Guide</h3>
-            <p class="product-card__desc">Build a routine that actually works for your skin type.</p>
-            <p class="product-card__price">$14</p>
-            <span class="product-card__link">Get It →</span>
-          </div>
-        </a>
-
-        <a href="product.html" class="product-card reveal" style="display:block;text-decoration:none;">
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600&q=80" alt="Morning Ritual Planner">
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">Morning Ritual Planner</h3>
-            <p class="product-card__desc">90 days of intentional mornings, designed beautifully.</p>
-            <p class="product-card__price">$9</p>
-            <span class="product-card__link">Get It →</span>
-          </div>
-        </a>
-
-        <a href="product.html" class="product-card reveal" style="display:block;text-decoration:none;">
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Wellness Journal">
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">Wellness Reflection Journal</h3>
-            <p class="product-card__desc">Weekly prompts for the woman building a better version of herself.</p>
-            <p class="product-card__price">$12</p>
-            <span class="product-card__link">Get It →</span>
-          </div>
-        </a>
-
-        <a href="product.html" class="product-card reveal" style="display:block;text-decoration:none;">
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80" alt="Ingredient Guide">
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">Skincare Ingredient Bible</h3>
-            <p class="product-card__desc">Know exactly what you're putting on your face and why.</p>
-            <p class="product-card__price">$11</p>
-            <span class="product-card__link">Get It →</span>
-          </div>
-        </a>
-
-        <a href="product.html" class="product-card reveal" style="display:block;text-decoration:none;">
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80" alt="Self-Care Audit">
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">The Self-Care Audit</h3>
-            <p class="product-card__desc">A 30-question workbook for diagnosing what your life actually needs.</p>
-            <p class="product-card__price">$7</p>
-            <span class="product-card__link">Get It →</span>
-          </div>
-        </a>
-
-        <a href="product.html" class="product-card reveal" style="display:block;text-decoration:none;">
-          <div class="product-card__image">
-            <img src="https://images.unsplash.com/photo-1520206183501-b80df61043c2?w=600&q=80" alt="Habit Blueprint">
-          </div>
-          <div class="product-card__body">
-            <h3 class="product-card__name">The Habit Blueprint</h3>
-            <p class="product-card__desc">Design habits that actually stick, without the toxic productivity framing.</p>
-            <p class="product-card__price">$16</p>
-            <span class="product-card__link">Get It →</span>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSLETTER -->
-  <section class="newsletter">
-    <h2 class="newsletter__title">The Weekly Ritual</h2>
-    <p class="newsletter__sub">Skincare notes, wellness habits, and the things worth knowing — straight to your inbox.</p>
-    <form
-      action="https://wordpress.us11.list-manage.com/subscribe/post?u=e33059783dca94dc78ba9c2cf&amp;id=640e1de445&amp;f_id=00c68ce0f0"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      target="_blank"
-      novalidate
-      style="width:100%;"
-    >
-      <div class="newsletter__form">
-        <input type="email" name="EMAIL" class="newsletter__input" placeholder="your@email.com" required>
-        <button type="submit" name="subscribe" class="newsletter__btn"><span>JOIN →</span></button>
-      </div>
-      <!-- Mailchimp anti-bot honeypot — do not remove -->
-      <div aria-hidden="true" style="position:absolute;left:-5000px;">
-        <input type="text" name="b_e33059783dca94dc78ba9c2cf_640e1de445" tabindex="-1" value="">
-      </div>
-      <p class="newsletter__fine">No spam. Just the good stuff. Unsubscribe anytime.</p>
-      <div id="mc-form-response" style="margin-top:12px;font-family:var(--font-body);font-size:13px;color:var(--cream);min-height:20px;text-align:center;"></div>
+<section class="nw-strip">
+  <div class="doodle" style="width:110px;bottom:12%;right:7%;opacity:.3;transform:rotate(-5deg)"><img src="heart3.png" alt="" /></div>
+  <div class="nw-strip-inner rv">
+    <div class="sl">Be first to shop</div>
+    <h2>New drops, straight to your <em>inbox.</em></h2>
+    <p>Be the first to know when new products land. Subscribers get early access and exclusive discounts.</p>
+    <form class="nw-form" onsubmit="handleNwSub(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Join free</button>
     </form>
-  </section>
+    <p class="nw-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__bg-text">Stylish &amp; Healthy</div>
-    <div class="footer__inner">
-      <div>
-        <p class="footer__heading">NAVIGATE</p>
-        <ul class="footer__nav-links">
-          <li><a href="blog.html" class="footer__nav-link">BLOG</a></li>
-          <li><a href="shop.html" class="footer__nav-link">SHOP</a></li>
-          <li><a href="index.html#about" class="footer__nav-link">ABOUT</a></li>
-          <li><a href="#" class="footer__nav-link">CONTACT</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer__heading">LATEST</p>
-        <a href="article.html" class="footer__article-link">
-          <p class="footer__article-title">The Morning Ritual That Changed Everything About My Skin</p>
-          <p class="footer__article-date">April 14, 2025</p>
-        </a>
-        <a href="article.html" class="footer__article-link">
-          <p class="footer__article-title">How I Rebuilt My Evening Routine From Scratch</p>
-          <p class="footer__article-date">April 8, 2025</p>
-        </a>
-      </div>
-      <div>
-        <p class="footer__heading">FOLLOW</p>
-        <ul class="footer__social-links">
-          <li><a href="https://instagram.com/stylishandhealthie" class="footer__social-link" target="_blank">INSTAGRAM</a></li>
-          <li><a href="https://pinterest.com/stylishandhealthy" class="footer__social-link" target="_blank">PINTEREST</a></li>
-          <li><a href="#" class="footer__social-link">YOUTUBE</a></li>
-        </ul>
-      </div>
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo"><img src="logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
+      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
     </div>
-    <div class="footer__bottom container">
-      <p class="footer__copy">© 2025 Stylish and Healthy. All rights reserved.</p>
-      <p class="footer__copy">stylishandhealthy.com</p>
-    </div>
-  </footer>
+    <div class="ft-col"><h4>Shop</h4><a href="shop.html">All products</a><a href="shop.html">Sticker Packs</a><a href="shop.html">Digital Downloads</a><a href="shop.html">Clothing</a></div>
+    <div class="ft-col"><h4>Explore</h4><a href="blog.html">Blog</a><a href="skincare.html">Skincare Recs</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a><a href="journal.html">Free Journal</a></div>
+    <div class="ft-col"><h4>Info</h4><a href="about.html">Our mission</a><a href="terms.html">Terms of service</a><a href="privacy.html">Privacy policy</a><a href="affiliate.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+</footer>
 
-  <script src="js/main.js"></script>
+<script src="shared.js"></script>
+<script>
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+  }));
+</script>
 </body>
 </html>

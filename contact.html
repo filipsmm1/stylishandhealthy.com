@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact -- Stylishandhealthy.</title>
+  <meta name="description" content="Get in touch with Stylishandhealthy." />
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .contact-form-wrap { background: var(--cream-warm); border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px; padding: 40px; border: 1px solid rgba(58,42,34,.07); }
+    .form-field { margin-bottom: 18px; }
+    .form-label { font-family: var(--body); font-size: .8rem; font-weight: 600; color: var(--green-dk); display: block; margin-bottom: 7px; letter-spacing: .03em; }
+    .form-input, .form-textarea { width: 100%; border: 1.5px solid rgba(85,107,62,.15); background: var(--cream); font-family: var(--body); font-size: .95rem; color: var(--brown); padding: 13px 18px; border-radius: 14px; outline: none; transition: border-color .2s; }
+    .form-input:focus, .form-textarea:focus { border-color: var(--green); }
+    .form-textarea { resize: vertical; min-height: 140px; }
+    .form-input::placeholder, .form-textarea::placeholder { color: var(--brown-lt); }
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+    .ci-card { background: var(--cream-warm); border-radius: 18px; padding: 24px; border: 1px solid rgba(58,42,34,.07); }
+    .ci-label { font-family: var(--body); font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--green-lt); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    .ci-label::before { content: ''; width: 16px; height: 1px; background: var(--green-lt); flex-shrink: 0; }
+    .ci-val { font-family: var(--display); font-size: 1.1rem; color: var(--green-dk); }
+    .ci-sub { font-size: .83rem; color: var(--brown-lt); margin-top: 4px; line-height: 1.5; }
+    @media(max-width:860px) { .contact-grid{grid-template-columns:1fr;gap:44px} }
+  </style>
+</head>
+<body>
+
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo_main.png" alt="S&H" /></a>
+  <ul>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="doodle" style="width:115px;top:20%;right:9%;opacity:.25;transform:rotate(8deg)"><img src="heart1.png" alt="" /></div>
+  <div class="sl">Say hello</div>
+  <h1>Get in <em>touch.</em></h1>
+  <p>Questions, sponsorships, recommendations, product questions, literature requests, or support issues -- we would love to hear from you.</p>
+</div>
+
+<section class="sec" style="background:var(--cream);position:relative;overflow:hidden">
+  <div class="doodle" style="width:90px;bottom:8%;right:5%;opacity:.35;transform:rotate(-10deg)"><img src="heart2.png" alt="" /></div>
+
+  <div class="contact-grid">
+    <div class="rv">
+      <div class="sl">Send a message</div>
+      <h2 class="sh" style="margin-bottom:28px">We read <em>everything.</em></h2>
+      <div class="contact-form-wrap">
+        <form onsubmit="handleContactMail(event)">
+          <div class="form-field">
+            <label class="form-label">Name</label>
+            <input class="form-input" name="name" type="text" placeholder="First name" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label">Email address</label>
+            <input class="form-input" name="email" type="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label">Subject</label>
+            <select class="form-select" name="subject" required>
+              <option value="Paid promotion">Paid promotion</option>
+              <option value="Recommendations">Recommendations</option>
+              <option value="Complaint">Complaint</option>
+              <option value="Website or order problem">Website or order problem</option>
+              <option value="Sponsorships">Sponsorships</option>
+              <option value="Question about a product">Question about a product</option>
+              <option value="Request full PDF literature">Request full PDF literature</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" name="message" placeholder="Your message here..." required></textarea>
+          </div>
+          <button class="btn btn-f" type="submit" style="width:100%;justify-content:center">Send message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact-info rv d2">
+      <div class="sl">Other ways to reach us</div>
+      <div class="ci-card">
+        <div class="ci-label">Email</div>
+        <div class="ci-val">contact@stylishandhealthy.com</div>
+        <div class="ci-sub">We reply within 24 hours.</div>
+      </div>
+      <div class="ci-card">
+        <div class="ci-label">Sponsorships</div>
+        <div class="ci-val">Open to sponsorships</div>
+        <div class="ci-sub">For paid promotions, product features, brand partnerships, and sponsored content, please use contact@stylishandhealthy.com.</div>
+      </div>
+      <div class="ci-card">
+        <div class="ci-label">Social media</div>
+        <div class="ci-val">@stylishandhealthie</div>
+        <div class="ci-sub">Instagram: stylishandhealthie. Pinterest: stylishandhealthy. TikTok: stylish.and.healthy.</div>
+      </div>
+      <div class="ci-card">
+        <div class="ci-label">Response time</div>
+        <div class="ci-val">Within 24 hours</div>
+        <div class="ci-sub">We are a small team. We appreciate your patience and reply to every message.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo"><img src="logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
+      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
+    </div>
+    <div class="ft-col"><h4>Shop</h4><a href="shop.html">All products</a><a href="shop.html">Sticker Packs</a><a href="shop.html">Digital Downloads</a><a href="shop.html">Clothing</a></div>
+    <div class="ft-col"><h4>Explore</h4><a href="blog.html">Blog</a><a href="skincare.html">Skincare Recs</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a><a href="journal.html">Free Journal</a></div>
+    <div class="ft-col"><h4>Info</h4><a href="about.html">Our mission</a><a href="terms.html">Terms of service</a><a href="privacy.html">Privacy policy</a><a href="affiliate.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

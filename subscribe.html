@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe -- Stylishandhealthy.</title>
+  <meta name="description" content="Weekly skincare deepdives, wellness tips, and exclusive downloads. Research-first, beautifully written." />
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .sub-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .subc { border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px; padding: 34px 30px; border: 1px solid rgba(85,107,62,.15); background: var(--cream); transition: border-color .25s, background .25s, transform .25s var(--ease); cursor: none; }
+    .subc:hover { border-color: rgba(85,107,62,.3); background: rgba(85,107,62,.03); transform: translateY(-4px); }
+    .subc.feat { background: var(--green-dk); border-color: var(--green-dk); }
+    .subc.feat:hover { background: var(--green); border-color: var(--green); }
+    .sub-badge { font-family: var(--body); font-size: .63rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; background: rgba(85,107,62,.1); color: var(--green-dk); display: inline-block; margin-bottom: 20px; }
+    .subc.feat .sub-badge { background: rgba(247,241,232,.15); color: var(--cream); }
+    .sub-name { font-family: var(--display); font-size: 1.45rem; font-weight: 400; color: var(--green-dk); margin-bottom: 5px; }
+    .subc.feat .sub-name { color: var(--cream); }
+    .sub-price { font-family: var(--display); font-size: 2.7rem; font-weight: 300; color: var(--green-dk); line-height: 1; margin-bottom: 3px; }
+    .subc.feat .sub-price { color: var(--pink-mid); }
+    .sub-period { font-size: .79rem; color: var(--brown-lt); margin-bottom: 22px; }
+    .subc.feat .sub-period { color: rgba(247,241,232,.5); }
+    .sub-perks { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
+    .sub-perk { font-size: .87rem; color: var(--brown-lt); display: flex; align-items: center; gap: 9px; }
+    .subc.feat .sub-perk { color: rgba(247,241,232,.7); }
+    .sub-perk::before { content: '•'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+    .subc.feat .sub-perk::before { color: var(--green-lt); }
+    .sub-cta { width: 100%; background: var(--green); color: var(--cream); font-family: var(--body); font-size: .87rem; font-weight: 600; padding: 13px; border-radius: 100px; border: 0; cursor: none; transition: background .2s; }
+    .sub-cta:hover { background: var(--green-dk); }
+    .subc.feat .sub-cta { background: var(--pink); color: var(--green-dk); }
+    .subc.feat:hover .sub-cta { background: var(--pink-mid); }
+    @media(max-width:860px) { .sub-grid{grid-template-columns:1fr;max-width:440px} }
+  </style>
+</head>
+<body>
+
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo_main.png" alt="S&H" /></a>
+  <ul>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="doodle" style="width:120px;top:22%;right:8%;opacity:.25;transform:rotate(6deg)"><img src="heart1.png" alt="" /></div>
+  <div class="sl">Weekly skincare deepdive</div>
+  <h1>Get the science <em>delivered.</em></h1>
+  <p>Every week: one ingredient decoded, one routine tip, one product recommendation, and one habit worth trying. Research-first, beautifully written.</p>
+</div>
+
+<section class="sec" style="background:var(--cream-warm);position:relative;overflow:hidden">
+  <div class="doodle" style="width:100px;top:4%;right:5%;opacity:.35;transform:rotate(-10deg)"><img src="heart2.png" alt="" /></div>
+
+  <div class="rv" style="margin-bottom:52px">
+    <div class="sl">Choose your plan</div>
+    <h2 class="sh">Simple, honest <em>pricing.</em></h2>
+    <p class="sp" style="margin-top:12px">Start free, upgrade whenever it makes sense. Cancel anytime -- no pressure.</p>
+  </div>
+
+  <div class="sub-grid">
+    <div class="subc rv d1">
+      <div class="sub-badge">Free forever</div>
+      <div class="sub-name">Starter</div>
+      <div class="sub-price">$0</div>
+      <div class="sub-period">/ forever free</div>
+      <div class="sub-perks">
+        <div class="sub-perk">Monthly skincare roundup</div>
+        <div class="sub-perk">Free resources and downloads</div>
+        <div class="sub-perk">Blog posts and recommendations</div>
+        <div class="sub-perk">Community access</div>
+      </div>
+      <button class="sub-cta">Join free</button>
+    </div>
+    <div class="subc feat rv d2">
+      <div class="sub-badge">Most popular</div>
+      <div class="sub-name">Deepdive</div>
+      <div class="sub-price">$6</div>
+      <div class="sub-period">/ month -- cancel anytime</div>
+      <div class="sub-perks">
+        <div class="sub-perk">Weekly ingredient deepdive</div>
+        <div class="sub-perk">Full routine guides</div>
+        <div class="sub-perk">Product database access</div>
+        <div class="sub-perk">Exclusive PDF downloads</div>
+        <div class="sub-perk">Reader Q and A answers</div>
+      </div>
+      <button class="sub-cta">Start for $6</button>
+    </div>
+    <div class="subc rv d3">
+      <div class="sub-badge">Premium</div>
+      <div class="sub-name">Full Access</div>
+      <div class="sub-price">$12</div>
+      <div class="sub-period">/ month -- cancel anytime</div>
+      <div class="sub-perks">
+        <div class="sub-perk">Everything in Deepdive</div>
+        <div class="sub-perk">Personal routine review</div>
+        <div class="sub-perk">Early shop access and discounts</div>
+        <div class="sub-perk">Exclusive sticker drops</div>
+        <div class="sub-perk">Monthly live Q and A session</div>
+      </div>
+      <button class="sub-cta">Get full access</button>
+    </div>
+  </div>
+</section>
+
+<section class="nw-strip">
+  <div class="doodle" style="width:110px;bottom:14%;right:7%;opacity:.3;transform:rotate(-6deg)"><img src="heart3.png" alt="" /></div>
+  <div class="nw-strip-inner rv">
+    <div class="sl">Not ready to subscribe?</div>
+    <h2>Join the free community <em>first.</em></h2>
+    <p>Drop your email for the free newsletter -- skincare tips, wellness reads, and exclusive downloads. No card needed.</p>
+    <form class="nw-form" onsubmit="handleNwSub(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Join free</button>
+    </form>
+    <p class="nw-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo"><img src="logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
+      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
+    </div>
+    <div class="ft-col"><h4>Shop</h4><a href="shop.html">All products</a><a href="shop.html">Sticker Packs</a><a href="shop.html">Digital Downloads</a><a href="shop.html">Clothing</a></div>
+    <div class="ft-col"><h4>Explore</h4><a href="blog.html">Blog</a><a href="skincare.html">Skincare Recs</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a><a href="journal.html">Free Journal</a></div>
+    <div class="ft-col"><h4>Info</h4><a href="about.html">Our mission</a><a href="terms.html">Terms of service</a><a href="privacy.html">Privacy policy</a><a href="affiliate.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The 279 Day Journal — Free Download | Stylishandhealthy.</title>
+  <meta name="description" content="Get the 279 Day Journal free. 279 days of guided prompts, habit tracking, and wellness check-ins. Yours when you join the community." />
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pink:       #F8D6DE;
+      --pink-mid:   #F3AFC0;
+      --pink-deep:  #E8899A;
+      --green:      #556B3E;
+      --green-dk:   #3D4F2D;
+      --green-lt:   #A8B99A;
+      --cream:      #F7F1E8;
+      --cream-warm: #EDE4D5;
+      --brown:      #3A2A22;
+      --brown-lt:   #6B5045;
+      --display: 'Playfair Display', Georgia, serif;
+      --hand: 'Dancing Script', cursive;
+      --hand2: 'Indie Flower', cursive;
+      --bubble: 'DynaPuff', cursive;
+      --body:  'DM Sans', sans-serif;
+      --ease:  cubic-bezier(0.22,1,0.36,1);
+      --easeb: cubic-bezier(0.34,1.56,0.64,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--body);background:var(--cream);color:var(--brown);overflow-x:hidden;cursor:none}
+    ::selection{background:var(--pink);color:var(--green-dk)}
+    a{text-decoration:none;color:inherit}
+    #cdot,#cring{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
+    #cdot{width:7px;height:7px;background:var(--green);transition:transform .1s,background .2s}
+    #cring{display:none}
+        body.ch #cdot{background:var(--pink-deep);transform:translate(-50%,-50%) scale(1.45)}
+
+    /* WORDMARK BAR */
+    .wordmark-bar{background:var(--pink);text-align:center;padding:18px 0 16px}
+    .wordmark-bar img{height:clamp(72px,10vw,140px);width:auto;max-width:min(96vw,980px);display:inline-block;vertical-align:middle}
+
+    /* NAV */
+    nav{position:sticky;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:66px;background:rgba(247,241,232,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(85,107,62,.1)}
+    .nav-logo{display:flex;align-items:center;gap:10px}
+    .nav-logo img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+    nav ul{list-style:none;display:flex;gap:34px;align-items:center}
+    nav ul li a{font-family:var(--body);font-size:.79rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--green-dk);transition:color .2s}
+    nav ul li a:hover{color:var(--green)}
+    .npill{background:var(--green);color:var(--cream)!important;padding:9px 22px;border-radius:100px;font-size:.77rem!important;letter-spacing:.05em!important;transition:background .2s,transform .15s var(--easeb)!important}
+    .npill:hover{background:var(--green-dk)!important;transform:scale(1.04)!important}
+
+    /* HERO SPLIT */
+    .journal-hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;position:relative;overflow:hidden;background:var(--cream)}
+    .journal-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(85,107,62,.055) .55px,transparent .55px);background-size:22px 22px;pointer-events:none}
+
+    /* animated blob bg */
+    .hero-blob{position:absolute;width:700px;height:700px;right:-150px;top:-100px;background:radial-gradient(circle at 40% 40%,var(--pink) 0%,transparent 70%);opacity:.45;animation:blobmove 16s ease-in-out infinite;pointer-events:none}
+    .hero-blob2{position:absolute;width:400px;height:400px;left:-80px;bottom:-80px;background:radial-gradient(circle at 60% 60%,var(--green-lt) 0%,transparent 70%);opacity:.2;animation:blobmove2 20s ease-in-out infinite;pointer-events:none}
+    @keyframes blobmove{0%,100%{transform:scale(1) translateY(0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%}50%{transform:scale(1.07) translateY(-20px);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%}}
+    @keyframes blobmove2{0%,100%{transform:scale(1) translateX(0)}50%{transform:scale(1.1) translateX(20px)}}
+
+    .jh-left{padding:100px 60px 100px 80px;position:relative;z-index:2}
+    .free-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:var(--cream);font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 18px;border-radius:100px;margin-bottom:28px;box-shadow:0 4px 18px rgba(85,107,62,.22)}
+    .free-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--pink-mid);display:inline-block;animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
+
+    .jh-title{font-family:var(--display);font-size:clamp(3rem,5.2vw,5.2rem);font-weight:400;line-height:1.04;letter-spacing:-.02em;color:var(--green-dk);margin-bottom:8px}
+    .jh-title em{font-style:italic;color:var(--green)}
+    .jh-subtitle{font-family:var(--hand);font-size:clamp(1.5rem,2.4vw,2rem);color:var(--pink-deep);margin-bottom:24px;display:block}
+    .jh-desc{font-size:1rem;line-height:1.8;color:var(--brown-lt);max-width:440px;margin-bottom:36px}
+
+    /* EMAIL FORM */
+    .email-form-wrap{background:var(--cream);border:1.5px solid rgba(85,107,62,.14);border-radius:24px;padding:32px;box-shadow:0 16px 52px rgba(85,107,62,.12);max-width:460px}
+    .email-form-wrap h3{font-family:var(--display);font-size:1.4rem;font-weight:400;color:var(--green-dk);margin-bottom:4px}
+    .email-form-wrap p{font-size:.85rem;color:var(--brown-lt);margin-bottom:20px;line-height:1.6}
+    .form-row{display:flex;flex-direction:column;gap:10px}
+    .form-input{width:100%;border:1.5px solid rgba(85,107,62,.15);background:var(--cream-warm);font-family:var(--body);font-size:.95rem;color:var(--brown);padding:13px 18px;border-radius:14px;outline:none;transition:border-color .2s,background .2s}
+    .form-input:focus{border-color:var(--green);background:var(--cream)}
+    .form-input::placeholder{color:var(--brown-lt)}
+    .form-submit{width:100%;background:var(--green);color:var(--cream);font-family:var(--body);font-size:1rem;font-weight:700;padding:15px;border-radius:14px;border:0;cursor:none;transition:background .2s,transform .15s var(--easeb);box-shadow:0 8px 26px rgba(85,107,62,.22);position:relative;overflow:hidden}
+    .form-submit:hover{background:var(--green-dk);transform:translateY(-2px);box-shadow:0 14px 36px rgba(85,107,62,.3)}
+    .form-note{font-size:.74rem;color:var(--brown-lt);text-align:center;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:5px}
+    .form-note::before{content:'•';color:var(--green);font-weight:700}
+
+    /* SUCCESS STATE */
+    .success-msg{display:none;text-align:center;padding:20px 0}
+    .success-msg h3{font-family:var(--display);font-size:1.8rem;color:var(--green-dk);margin-bottom:8px}
+    .success-msg h3 em{font-style:italic;color:var(--green)}
+    .success-msg p{font-size:.9rem;color:var(--brown-lt);line-height:1.7}
+    .success-check{font-size:3rem;margin-bottom:12px;display:block}
+
+    /* RIGHT: VIDEO + FEATURES */
+    .jh-right{padding:80px 80px 80px 40px;position:relative;z-index:2;display:flex;flex-direction:column;gap:28px;align-items:flex-start}
+
+    .video-container{width:100%;max-width:500px;border-radius:24px 18px 28px 20px / 20px 28px 18px 24px;overflow:hidden;box-shadow:0 30px 80px rgba(58,42,34,.18);position:relative;background:var(--green-dk)}
+    .video-container video{width:100%;height:auto;display:block;border-radius:inherit}
+    .video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:none;background:rgba(58,42,34,.2);transition:background .25s;border-radius:inherit}
+    .video-overlay:hover{background:rgba(58,42,34,.05)}
+    .play-btn{width:68px;height:68px;border-radius:50%;background:rgba(247,241,232,.92);display:flex;align-items:center;justify-content:center;transition:transform .2s var(--easeb),box-shadow .2s;box-shadow:0 8px 30px rgba(58,42,34,.22)}
+    .video-overlay:hover .play-btn{transform:scale(1.08);box-shadow:0 12px 40px rgba(58,42,34,.3)}
+    .play-icon{width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:22px solid var(--green-dk);margin-left:4px}
+    .video-label{position:absolute;bottom:16px;left:16px;background:rgba(247,241,232,.92);color:var(--green-dk);font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px}
+
+    /* DOODLES */
+    .doodle{position:absolute;pointer-events:none;user-select:none}
+    .doodle img{width:100%;height:100%;object-fit:contain}
+
+    /* FEATURES STRIP */
+    .features{display:flex;flex-wrap:wrap;gap:12px;max-width:500px}
+    .feat-pill{display:flex;align-items:center;gap:8px;background:var(--cream-warm);border:1px solid rgba(85,107,62,.12);border-radius:100px;padding:9px 16px;font-size:.83rem;color:var(--brown);font-weight:500;transition:background .2s,border-color .2s}
+    .feat-pill:hover{background:var(--pink);border-color:var(--pink-mid)}
+    .feat-pill-check{width:18px;height:18px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.6rem;color:var(--cream);font-weight:700}
+
+    /* WHAT'S INSIDE */
+    .inside-section{background:var(--green-dk);padding:96px 80px;position:relative;overflow:hidden}
+    .inside-section::before{content:'';position:absolute;width:500px;height:500px;right:-150px;top:-150px;border-radius:50%;background:rgba(247,241,232,.03);pointer-events:none}
+    .inside-sl{font-family:var(--body);font-size:.69rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green-lt);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+    .inside-sl::before{content:'';width:26px;height:1px;background:var(--green-lt);flex-shrink:0}
+    .inside-sh{font-family:var(--display);font-size:clamp(1.9rem,3.2vw,3rem);font-weight:400;color:var(--cream);margin-bottom:12px;line-height:1.1}
+    .inside-sh em{font-style:italic;color:var(--pink-mid)}
+    .inside-sub{font-size:1rem;color:rgba(247,241,232,.55);max-width:520px;line-height:1.8;margin-bottom:60px}
+    .inside-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .inside-card{background:rgba(247,241,232,.04);border:1px solid rgba(247,241,232,.09);border-radius:22px 16px 24px 18px / 18px 24px 16px 22px;padding:30px 26px;transition:background .2s,transform .2s var(--ease)}
+    .inside-card:hover{background:rgba(247,241,232,.07);transform:translateY(-4px)}
+    .inside-num{font-family:var(--display);font-size:3.5rem;font-weight:300;color:rgba(248,214,222,.15);line-height:1;margin-bottom:12px}
+    .inside-title{font-family:var(--display);font-size:1.25rem;font-weight:400;color:var(--cream);margin-bottom:8px}
+    .inside-title em{font-style:italic;color:var(--pink-mid)}
+    .inside-desc{font-size:.86rem;color:rgba(247,241,232,.52);line-height:1.75}
+
+    /* PREVIEW SPREADS */
+    .preview-section{background:var(--cream-warm);padding:96px 80px}
+    .preview-sh{font-family:var(--display);font-size:clamp(1.7rem,2.8vw,2.6rem);font-weight:400;color:var(--green-dk);margin-bottom:10px;line-height:1.15}
+    .preview-sh em{font-style:italic;color:var(--pink-deep)}
+    .preview-sub{font-size:.95rem;color:var(--brown-lt);max-width:500px;line-height:1.7;margin-bottom:52px}
+    .spreads{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .spread{border-radius:22px 16px 26px 18px / 18px 26px 16px 22px;overflow:hidden;box-shadow:0 16px 44px rgba(58,42,34,.1);background:var(--cream);aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;gap:16px;border:1px solid rgba(58,42,34,.06);transition:transform .25s var(--ease)}
+    .spread:hover{transform:translateY(-6px)}
+    .spread-num{font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(85,107,62,.12);line-height:1}
+    .spread-title{font-family:var(--display);font-size:1.1rem;font-weight:400;color:var(--green-dk);text-align:center}
+    .spread-title em{font-style:italic;color:var(--pink-deep)}
+    .spread-lines{width:80%;display:flex;flex-direction:column;gap:8px;margin-top:4px}
+    .spread-line{height:1px;background:rgba(58,42,34,.1);border-radius:100px}
+    .spread-line.short{width:60%}
+    .spread-line.med{width:80%}
+    .spread-pill{background:var(--pink);color:var(--green-dk);font-family:var(--body);font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:100px;margin-top:8px}
+
+    /* SOCIAL PROOF */
+    .proof-section{background:var(--pink);padding:80px}
+    .proof-inner{max-width:800px;margin:0 auto;text-align:center}
+    .proof-quote{font-family:var(--display);font-style:italic;font-size:clamp(1.5rem,2.6vw,2.4rem);font-weight:400;color:var(--green-dk);line-height:1.4;margin-bottom:28px}
+    .proof-author{font-size:.85rem;color:var(--brown-lt);display:flex;align-items:center;justify-content:center;gap:10px}
+    .proof-av{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;font-style:italic;color:var(--cream)}
+
+    /* BOTTOM CTA */
+    .bottom-cta{background:var(--green-dk);padding:96px 80px;text-align:center;position:relative;overflow:hidden}
+    .bottom-cta::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(247,241,232,.04) .5px,transparent .5px);background-size:24px 24px;pointer-events:none}
+    .bc-sh{font-family:var(--display);font-size:clamp(2rem,3.8vw,3.6rem);font-weight:400;color:var(--cream);line-height:1.1;margin-bottom:14px}
+    .bc-sh em{font-style:italic;color:var(--pink-mid)}
+    .bc-hand{font-family:var(--hand);font-size:clamp(1.6rem,2.6vw,2.2rem);color:var(--pink-mid);display:block;margin-bottom:28px}
+    .bc-form{display:flex;gap:10px;max-width:480px;margin:0 auto;padding:7px;background:rgba(247,241,232,.07);border:1.5px solid rgba(247,241,232,.15);border-radius:100px}
+    .bc-form input{flex:1;border:0;background:transparent;font-family:var(--body);font-size:.95rem;color:var(--cream);padding:10px 18px;outline:none;min-width:0}
+    .bc-form input::placeholder{color:rgba(247,241,232,.38)}
+    .bc-note{font-size:.78rem;color:rgba(247,241,232,.35);margin-top:16px}
+
+    /* FOOTER */
+    .jfooter{background:var(--brown);padding:36px 80px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .jfooter-logo{display:flex;align-items:center;gap:10px}
+    .jfooter-logo img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+    .jfooter-logo span{font-family:var(--display);font-size:1.1rem;color:var(--cream)}
+    .jfooter p{font-size:.78rem;color:rgba(247,241,232,.28)}
+
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-size:.9rem;font-weight:600;border-radius:100px;transition:background .2s,transform .18s var(--easeb),box-shadow .2s;cursor:none;border:0}
+    .btn-f{background:var(--green);color:var(--cream);padding:14px 32px;box-shadow:0 8px 26px rgba(85,107,62,.22)}
+    .btn-f:hover{background:var(--green-dk);transform:translateY(-2px)}
+    .btn-o{background:transparent;color:var(--green-dk);padding:13px 28px;border:1.5px solid rgba(85,107,62,.28)}
+    .btn-o:hover{border-color:var(--green);background:rgba(85,107,62,.05)}
+    .btn-wh{background:rgba(247,241,232,.95);color:var(--green-dk);padding:14px 36px;font-size:1rem;box-shadow:0 8px 26px rgba(58,42,34,.22)}
+    .btn-wh:hover{background:var(--cream);transform:translateY(-2px)}
+
+    @keyframes blobmorph{0%,100%{border-radius:60% 40% 70% 30% / 50% 60% 40% 70%}33%{border-radius:40% 60% 30% 70% / 60% 40% 70% 30%}66%{border-radius:70% 30% 50% 50% / 30% 70% 50% 60%}}
+
+    @media(max-width:860px){.journal-hero{grid-template-columns:1fr}.jh-right{display:none}.jh-left{padding:80px 32px}.inside-grid,.spreads{grid-template-columns:1fr}.inside-section,.preview-section,.proof-section,.bottom-cta{padding:72px 32px}.proof-section{padding:60px 32px}nav{padding:0 24px}nav ul{display:none}body{cursor:auto}#cdot,#cring{display:none}}
+  </style>
+</head>
+<body>
+
+<div id="cdot"></div>
+
+<!-- WORDMARK BAR -->
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo_main.png" alt="S&H" />
+  </a>
+  <ul>
+    <li><a href="index.html#categories">Topics</a></li>
+    <li><a href="index.html#shop">Shop</a></li>
+    <li><a href="index.html#skincare">Skincare</a></li>
+    <li><a href="index.html#blog">Blog</a></li>
+    <li><a href="index.html" class="npill">Back to home</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="journal-hero">
+  <div class="hero-blob"></div>
+  <div class="hero-blob2"></div>
+
+  <!-- doodle hearts -->
+  <div class="doodle" style="width:90px;top:12%;right:46%;transform:rotate(12deg);opacity:.4"><img src="heart1.png" alt=""/></div>
+  <div class="doodle" style="width:55px;bottom:15%;left:5%;transform:rotate(-8deg);opacity:.35"><img src="heart2.png" alt=""/></div>
+
+  <div class="jh-left">
+    <div class="free-badge"><div class="dot"></div> Completely free — yours today</div>
+    <h1 class="jh-title">The <em>279 Day</em><br>Journal</h1>
+    <span class="jh-subtitle">Your softness, structured.</span>
+    <p class="jh-desc">279 days of guided self-reflection, habit tracking, wellness check-ins, and daily prompts — beautifully designed to help you grow with intention. Enter your email and it's yours instantly.</p>
+
+    <div class="email-form-wrap" id="formWrap">
+      <h3>Get your free copy</h3>
+      <p>Delivered instantly to your inbox. No spam — just your journal and occasional wellness content.</p>
+      <form class="form-row" id="journalForm" onsubmit="handleJournalSub(event)">
+        <input class="form-input" type="text" placeholder="First name" required />
+        <input class="form-input" type="email" placeholder="your@email.com" required />
+        <button class="form-submit" type="submit" id="submitBtn">
+          Send me the journal — it's free
+        </button>
+      </form>
+      <p class="form-note">No spam, ever. Unsubscribe anytime.</p>
+    </div>
+    <div class="success-msg" id="successMsg">
+      <span class="success-check">•</span>
+      <h3>You're <em>in!</em></h3>
+      <p>Check your inbox — your 279 Day Journal is on its way. Welcome to the community.</p>
+    </div>
+  </div>
+
+  <div class="jh-right">
+    <!-- VIDEO -->
+    <div class="video-container" id="videoWrap">
+      <video id="journalVideo" loop muted playsinline poster="">
+        <!-- Replace src with your actual video file, e.g., journal_video.mp4 -->
+        <source src="journal_video.mp4" type="video/mp4" />
+      </video>
+      <!-- Placeholder shown if no video -->
+      <div id="videoPlaceholder" style="height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;text-align:center">
+        <div style="font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(247,241,232,.2);line-height:1">279</div>
+        <div style="font-family:var(--display);font-size:1.4rem;color:var(--cream);font-style:italic">Days of beautiful<br>self-reflection</div>
+        <div style="font-size:.8rem;color:rgba(247,241,232,.4)">Add a valid journal_video.mp4 file to show it here</div>
+      </div>
+      <div class="video-overlay" id="videoOverlay" onclick="toggleVideo()">
+        <div class="play-btn" id="playBtn"><div class="play-icon"></div></div>
+      </div>
+      <div class="video-label">Journal preview</div>
+    </div>
+
+    <!-- FEATURE PILLS -->
+    <div class="features">
+      <div class="feat-pill"><div class="feat-pill-check">•</div> 279 daily pages</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Habit tracker</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Wellness check-ins</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Guided prompts</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Monthly reviews</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Beautifully designed</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INSIDE -->
+<section class="inside-section">
+  <div class="doodle" style="width:70px;top:6%;right:6%;opacity:.25;transform:rotate(8deg)"><img src="heart3.png" alt=""/></div>
+  <div class="inside-sl">What's inside</div>
+  <h2 class="inside-sh">Everything you need to<br>grow <em>beautifully.</em></h2>
+  <p class="inside-sub">The 279 Day Journal isn't just a diary. It's a structured self-improvement system wrapped in the softest, most intentional design — built for girls who want real progress that feels good.</p>
+  <div class="inside-grid">
+    <div class="inside-card">
+      <div class="inside-num">01</div>
+      <div class="inside-title"><em>Daily</em> Pages</div>
+      <p class="inside-desc">Each of 279 days has its own spread: a morning intention, an evening reflection, a gratitude line, and a one-line habit tracker. Simple. Consistent. Beautiful.</p>
+    </div>
+    <div class="inside-card">
+      <div class="inside-num">02</div>
+      <div class="inside-title"><em>Habit</em> Tracker</div>
+      <p class="inside-desc">A monthly visual habit grid so you can see your progress at a glance. Track up to 10 habits — skincare, water, movement, sleep, journaling, or whatever your goals are.</p>
+    </div>
+    <div class="inside-card">
+      <div class="inside-num">03</div>
+      <div class="inside-title"><em>Wellness</em> Check-ins</div>
+      <p class="inside-desc">Weekly mini-reviews where you rate your mood, sleep, hydration, and self-care. Gentle accountability, not pressure — just a quiet check-in with yourself.</p>
+    </div>
+    <div class="inside-card">
+      <div class="inside-num">04</div>
+      <div class="inside-title"><em>Guided</em> Prompts</div>
+      <p class="inside-desc">279 unique prompts — no repeats. Ranging from light reflection ("what made me smile today") to deeper thinking ("what belief is holding me back this month").</p>
+    </div>
+    <div class="inside-card">
+      <div class="inside-num">05</div>
+      <div class="inside-title"><em>Monthly</em> Reviews</div>
+      <p class="inside-desc">At the end of each month: a two-page spread to review wins, lessons, what you want more of, and intentions for the next month. Growth you can actually see.</p>
+    </div>
+    <div class="inside-card">
+      <div class="inside-num">06</div>
+      <div class="inside-title"><em>Designed</em> to feel good</div>
+      <p class="inside-desc">Warm cream pages, elegant typography, soft pink accents. The 279 Day Journal is designed to be something you want to open — not something that feels like homework.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPREADS PREVIEW -->
+<section class="preview-section">
+  <div class="inside-sl">Inside the journal</div>
+  <h2 class="preview-sh">Three hundred pages of<br><em>intentional living.</em></h2>
+  <p class="preview-sub">Here's a glimpse of what you'll find inside. Every spread is crafted to make the ritual feel like a treat, not a task.</p>
+  <div class="spreads">
+    <div class="spread">
+      <div class="spread-num">279</div>
+      <div class="spread-title"><em>Daily</em> Reflection Page</div>
+      <div class="spread-lines">
+        <div class="spread-line"></div>
+        <div class="spread-line short"></div>
+        <div class="spread-line med"></div>
+        <div class="spread-line"></div>
+        <div class="spread-line short"></div>
+      </div>
+      <div class="spread-pill">Daily</div>
+    </div>
+    <div class="spread">
+      <div class="spread-num">12</div>
+      <div class="spread-title"><em>Monthly</em> Review Spread</div>
+      <div class="spread-lines">
+        <div class="spread-line"></div>
+        <div class="spread-line med"></div>
+        <div class="spread-line short"></div>
+        <div class="spread-line"></div>
+        <div class="spread-line med"></div>
+      </div>
+      <div class="spread-pill">Monthly</div>
+    </div>
+    <div class="spread">
+      <div class="spread-num">52</div>
+      <div class="spread-title"><em>Weekly</em> Wellness Check-in</div>
+      <div class="spread-lines">
+        <div class="spread-line short"></div>
+        <div class="spread-line"></div>
+        <div class="spread-line med"></div>
+        <div class="spread-line short"></div>
+        <div class="spread-line"></div>
+      </div>
+      <div class="spread-pill">Weekly</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="proof-section">
+  <div class="doodle" style="width:80px;bottom:8%;right:8%;opacity:.35;transform:rotate(-6deg)"><img src="heart1.png" alt=""/></div>
+  <div class="proof-inner">
+    <div style="font-size:1.5rem;margin-bottom:16px;letter-spacing:2px;color:#B8763A">★ ★ ★ ★ ★</div>
+    <div class="proof-quote">"I've tried so many journals and this is the first one I've actually kept up with for more than two weeks. It doesn't feel like a chore — it genuinely feels like self-care."</div>
+    <div class="proof-author">
+      <div class="proof-av">S</div>
+      <div>
+        <div style="font-family:var(--body);font-weight:600;color:var(--green-dk)">Sofia M.</div>
+        <div style="font-size:.74rem;color:var(--brown-lt)">@sofiamornings</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <div class="doodle" style="width:100px;top:8%;left:6%;opacity:.2;transform:rotate(-10deg)"><img src="heart2.png" alt=""/></div>
+  <h2 class="bc-sh">Get the <em>279 Day Journal</em></h2>
+  <span class="bc-hand">It's completely free.</span>
+  <form class="bc-form" id="bottomForm" onsubmit="handleBottomSub(event)">
+    <input type="email" placeholder="your@email.com" required />
+    <button type="submit" class="btn btn-wh" id="bottomBtn">Get it free</button>
+  </form>
+  <p class="bc-note">No spam. Unsubscribe anytime. Just your free journal.</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="jfooter">
+  <div class="jfooter-logo">
+    <img src="logo_main.png" alt="S&H" />
+    <span>Stylishandhealthy.</span>
+  </div>
+  <p>© 2026 Stylishandhealthy. All rights reserved.</p>
+  <a href="index.html" style="font-size:.83rem;color:rgba(247,241,232,.4);transition:color .2s" onmouseenter="this.style.color='#F3AFC0'" onmouseleave="this.style.color='rgba(247,241,232,.4)'">Back to home</a>
+</footer>
+
+<script>
+  const cdot = document.getElementById('cdot');
+  if (cdot) {
+    document.addEventListener('mousemove', e => {
+      cdot.style.left = e.clientX + 'px';
+      cdot.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('a,button,input,.feat-pill,.inside-card,.spread').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('ch'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('ch'));
+    });
+  }
+
+  const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';ro.unobserve(e.target)}}),{threshold:.1});
+  document.querySelectorAll('.inside-card,.spread,.feat-pill').forEach((el,i)=>{
+    el.style.opacity='0';el.style.transform='translateY(20px)';
+    el.style.transition=`opacity .6s ease ${i*.06}s, transform .6s ease ${i*.06}s`;
+    ro.observe(el);
+  });
+
+  let playing = false;
+  const video = document.getElementById('journalVideo');
+  const overlay = document.getElementById('videoOverlay');
+  const playBtn = document.getElementById('playBtn');
+  const placeholder = document.getElementById('videoPlaceholder');
+
+  if (video) {
+    video.addEventListener('loadeddata', () => { placeholder.style.display = 'none'; video.style.display = 'block'; });
+    video.addEventListener('error', () => { video.style.display = 'none'; overlay.style.display = 'none'; placeholder.style.display = 'flex'; });
+  }
+
+  function toggleVideo() {
+    if (!video || video.error || video.readyState === 0) return;
+    if (playing) {
+      video.pause();
+      playing = false;
+      overlay.style.opacity = '1';
+      playBtn.innerHTML = '<div class="play-icon"></div>';
+    } else {
+      placeholder.style.display = 'none';
+      video.play().then(() => {
+        playing = true;
+        overlay.style.opacity = '0';
+        playBtn.innerHTML = '';
+      }).catch(() => {
+        video.style.display = 'none';
+        overlay.style.display = 'none';
+        placeholder.style.display = 'flex';
+      });
+    }
+  }
+  // Form handlers
+  function handleJournalSub(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Sending...';
+    btn.style.background = 'var(--green-lt)';
+    setTimeout(() => {
+      document.getElementById('formWrap').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+    }, 1200);
+  }
+
+  function handleBottomSub(e) {
+    e.preventDefault();
+    const btn = document.getElementById('bottomBtn');
+    btn.textContent = "You're in!";
+    btn.style.background = 'var(--green-lt)';
+    setTimeout(() => {
+      btn.textContent = 'Get it free';
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  }
+</script>
+</body>
+</html>
