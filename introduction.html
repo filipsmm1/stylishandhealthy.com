@@ -1,11 +1,249 @@
-<article class="blog-post introduction-post">
-  <header class="post-header">
-    <p class="post-eyebrow">Introduction</p>
-    <h1>Welcome to Stylishandhealthy.</h1>
-    <p class="post-subtitle">Pretty routines. Smarter choices. Science first.</p>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction: What We Stand For -- Stylishandhealthy.</title>
+  <meta name="description" content="An introduction to Stylishandhealthy, what we stand for, and our promise to put science, honesty, and transparency first." />
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 
-  <section class="post-body">
+  <style>
+    .article-hero {
+      background: var(--cream);
+      padding: 100px 80px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .article-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(85,107,62,.06) .55px, transparent .55px);
+      background-size: 22px 22px;
+      pointer-events: none;
+    }
+
+    .article-hero-inner {
+      max-width: 850px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .article-eyebrow {
+      font-family: var(--body);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--green);
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 18px;
+      border: 1px solid rgba(85,107,62,.22);
+      border-radius: 100px;
+      background: rgba(85,107,62,.05);
+    }
+
+    .article-hero h1 {
+      font-family: var(--display);
+      font-size: clamp(3rem, 6vw, 5.6rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--green-dk);
+      margin-bottom: 18px;
+    }
+
+    .article-hero h1 em {
+      color: var(--pink-deep);
+      font-style: italic;
+    }
+
+    .article-subtitle {
+      font-family: var(--hand);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: var(--pink-deep);
+      margin-bottom: 24px;
+    }
+
+    .article-meta {
+      font-size: .82rem;
+      color: var(--brown-lt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .meta-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--pink-deep);
+    }
+
+    .article-wrap {
+      background: var(--cream);
+      padding: 30px 24px 90px;
+    }
+
+    .article-card {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--cream-warm);
+      border: 1px solid rgba(58,42,34,.07);
+      border-radius: 32px 24px 36px 26px / 26px 36px 24px 32px;
+      padding: clamp(30px, 6vw, 64px);
+      box-shadow: 0 24px 70px rgba(85,107,62,.08);
+    }
+
+    .article-card p {
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--brown-lt);
+      margin-bottom: 20px;
+    }
+
+    .article-card h2 {
+      font-family: var(--display);
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      font-weight: 400;
+      color: var(--green-dk);
+      margin: 46px 0 16px;
+      line-height: 1.2;
+    }
+
+    .article-card h2 em {
+      font-style: italic;
+      color: var(--pink-deep);
+    }
+
+    .toc {
+      background: var(--cream);
+      border: 1px solid rgba(85,107,62,.12);
+      border-radius: 22px;
+      padding: 28px;
+      margin: 36px 0 44px;
+    }
+
+    .toc h2 {
+      margin-top: 0;
+      font-size: 1.55rem;
+    }
+
+    .toc ol {
+      margin-left: 20px;
+      color: var(--brown-lt);
+      line-height: 2;
+      font-size: .95rem;
+    }
+
+    .pull-quote {
+      margin: 42px 0;
+      padding: 34px;
+      background: var(--green-dk);
+      color: var(--cream);
+      border-radius: 28px 18px 30px 22px / 22px 30px 18px 28px;
+      text-align: center;
+    }
+
+    .pull-quote p {
+      color: var(--cream);
+      font-family: var(--display);
+      font-size: clamp(1.7rem, 3vw, 2.6rem);
+      line-height: 1.25;
+      margin: 0;
+    }
+
+    .pull-quote span {
+      display: block;
+      margin-top: 12px;
+      font-size: .85rem;
+      color: rgba(247,241,232,.65);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .promise-box {
+      background: var(--pink);
+      border-radius: 24px;
+      padding: 30px;
+      margin: 36px 0;
+      border: 1px solid rgba(232,137,154,.18);
+    }
+
+    .promise-box p {
+      color: var(--green-dk);
+      margin-bottom: 0;
+      font-size: 1.05rem;
+    }
+
+    .signature {
+      margin-top: 48px;
+      font-family: var(--hand);
+      font-size: 2rem;
+      color: var(--green-dk);
+      line-height: 1.4;
+    }
+
+    @media(max-width: 760px) {
+      .article-hero {
+        padding: 80px 24px 44px;
+      }
+
+      .article-card {
+        border-radius: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="logo_main.png" alt="S&H" /></a>
+  <ul>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<header class="article-hero">
+  <div class="article-hero-inner rv">
+    <div class="article-eyebrow">Introduction</div>
+    <h1>What We <em>Stand For.</em></h1>
+    <div class="article-subtitle">Beauty backed by science.</div>
+
+    <div class="article-meta">
+      <span>Stylishandhealthy</span>
+      <span class="meta-dot"></span>
+      <span>5 min read</span>
+      <span class="meta-dot"></span>
+      <span>Science first</span>
+    </div>
+  </div>
+</header>
+
+<main class="article-wrap">
+  <article class="article-card rv d1">
+
     <p>
       Welcome to Stylishandhealthy, a space built for women who love beauty, wellness,
       skincare, and self improvement, but also want honesty.
@@ -23,21 +261,24 @@
     </p>
 
     <p>
-      We believe beauty should feel good, but it should also make sense.
-      We believe confidence should be built on knowledge, not confusion.
-      Most importantly, we believe science deserves a louder voice.
+      We believe beauty should feel good, but it should also make sense. We believe confidence
+      should be built on knowledge, not confusion. Most importantly, we believe science deserves
+      a louder voice.
     </p>
 
-    <h2>Table of Contents</h2>
-    <ol>
-      <li>What We Stand For</li>
-      <li>Honesty Before Hype</li>
-      <li>Calling Out Bad Products</li>
-      <li>Science Over Marketing</li>
-      <li>Why This Matters</li>
-    </ol>
+    <section class="toc">
+      <h2>Table of <em>Contents.</em></h2>
+      <ol>
+        <li>What We Stand For</li>
+        <li>Honesty Before Hype</li>
+        <li>Calling Out Bad Products</li>
+        <li>Science Over Marketing</li>
+        <li>Why This Matters</li>
+      </ol>
+    </section>
 
-    <h2>1. What We Stand For</h2>
+    <h2>1. What We <em>Stand For.</em></h2>
+
     <p>
       Stylishandhealthy stands for transparency, research, and real recommendations.
       We are not here to sell you a fantasy. We are here to help you make better choices.
@@ -45,29 +286,35 @@
 
     <p>
       Every product we talk about will be analysed carefully. Ingredients, formulation,
-      effectiveness, long term impact, and whether the claims actually make sense.
-      If it is good, we will say it is good.
-      If it is bad, we will say it is bad.
-      No filters.
+      effectiveness, long term impact, and whether the claims actually make sense all matter.
+      If it is good, we will say it is good. If it is bad, we will say it is bad. No filters.
     </p>
 
-    <h2>2. Honesty Before Hype</h2>
+    <div class="pull-quote">
+      <p>Beauty backed by science.</p>
+      <span>Our promise</span>
+    </div>
+
+    <h2>2. Honesty <em>Before Hype.</em></h2>
+
+    <div class="promise-box">
+      <p>
+        If we ever promote a product, you will know. No hiding. No lying.
+      </p>
+    </div>
+
     <p>
-      If we ever promote a product, you will know.
-      No hiding. No lying.
+      Sponsored content should never feel like a trap. Trust matters more than temporary profit,
+      and we will never trade honesty for that.
     </p>
 
     <p>
-      Sponsored content should never feel like a trap.
-      Trust matters more than temporary profit, and we will never trade honesty for that.
-    </p>
-
-    <p>
-      We are also open to sponsorships, but only when the product aligns with our standards,
+      We are open to sponsorships, but only when the product aligns with our standards,
       values, and community.
     </p>
 
-    <h2>3. Calling Out Bad Products</h2>
+    <h2>3. Calling Out <em>Bad Products.</em></h2>
+
     <p>
       One of the biggest problems online is influencers promoting products that are genuinely
       bad for you. Sometimes it is poor formulation. Sometimes it is misleading claims.
@@ -79,40 +326,30 @@
     </p>
 
     <p>
-      Not every expensive product is effective.
-      Not every trending product is safe.
+      Not every expensive product is effective. Not every trending product is safe.
       Not every viral recommendation deserves your money.
     </p>
 
-    <h2>4. Science Over Marketing</h2>
+    <h2>4. Science <em>Over Marketing.</em></h2>
+
     <p>
       Let’s focus on science a little more.
     </p>
 
     <p>
-      That is the heart of everything here.
+      That is the heart of everything here. We look at ingredients, evidence, formulation
+      quality, and realistic results instead of perfect packaging and influencer scripts.
     </p>
 
     <p>
-      We look at ingredients, evidence, formulation quality, and realistic results instead
-      of perfect packaging and influencer scripts.
+      Beauty should not be based on misinformation. It should be based on understanding.
     </p>
 
-    <p>
-      Beauty should not be based on misinformation.
-      It should be based on understanding.
-    </p>
+    <h2>5. Why This <em>Matters.</em></h2>
 
     <p>
-      Our catchphrase is simple:
-      <strong>Beauty backed by science.</strong>
-    </p>
-
-    <h2>5. Why This Matters</h2>
-    <p>
-      Women deserve better than being treated like easy customers.
-      You deserve clear answers, honest recommendations, and a place where your trust is
-      respected.
+      Women deserve better than being treated like easy customers. You deserve clear answers,
+      honest recommendations, and a place where your trust is respected.
     </p>
 
     <p>
@@ -123,9 +360,67 @@
       This is only the beginning, and we are glad you are here.
     </p>
 
-    <p class="post-signature">
-      With love,<br>
+    <p class="signature">
+      With love,<br />
       Stylishandhealthy
     </p>
-  </section>
-</article>
+
+  </article>
+</main>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo">
+        <img src="logo_main.png" alt="S&H" />
+        <span>Stylishandhealthy<em>.</em></span>
+      </div>
+      <p class="ft-p">
+        Pretty routines. Smarter choices. A soft corner of the internet for beauty,
+        wellness, and self-improvement.
+      </p>
+      <div class="ft-socs">
+        <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
+        <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
+        <a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a>
+        <a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a>
+      </div>
+    </div>
+
+    <div class="ft-col">
+      <h4>Shop</h4>
+      <a href="shop.html">All products</a>
+      <a href="shop.html">Sticker Packs</a>
+      <a href="shop.html">Digital Downloads</a>
+      <a href="shop.html">Clothing</a>
+    </div>
+
+    <div class="ft-col">
+      <h4>Explore</h4>
+      <a href="blog.html">Blog</a>
+      <a href="skincare.html">Skincare Recs</a>
+      <a href="subscribe.html">Subscribe</a>
+      <a href="about.html">About</a>
+      <a href="journal.html">Free Journal</a>
+    </div>
+
+    <div class="ft-col">
+      <h4>Info</h4>
+      <a href="about.html">Our mission</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="affiliate.html">Affiliate disclosure</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="ft-bot">
+    <p>2026 Stylishandhealthy. All rights reserved.</p>
+    <span>Pretty routines. Smarter choices.</span>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+
+</body>
+</html>
