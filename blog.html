@@ -1,117 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog -- Stylishandhealthy.</title>
-  <meta name="description" content="Reads that make you better. Skincare science, wellness habits, and self-growth content." />
-  <link rel="icon" type="image/png" href="logo_main.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .blog-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 48px; }
-    .bftab { font-family: var(--body); font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 8px 20px; border-radius: 100px; border: 1.5px solid rgba(85,107,62,.2); color: var(--green-dk); background: transparent; cursor: none; transition: background .2s, border-color .2s, color .2s; }
-    .bftab.on, .bftab:hover { background: var(--green); border-color: var(--green); color: var(--cream); }
-    .blog-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 18px; }
-    .bc { border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px; overflow: hidden; background: var(--cream-warm); border: 1px solid rgba(58,42,34,.06); transition: transform .25s var(--ease), box-shadow .25s; cursor: none; }
-    .bc:hover { transform: translateY(-5px); box-shadow: 0 16px 42px rgba(85,107,62,.1); }
-    .bc-img { height: 195px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-    .bc.feat .bc-img { height: 272px; }
-    .bc-cat { position: absolute; bottom: 13px; left: 13px; font-family: var(--body); font-size: .63rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; background: rgba(247,241,232,.92); color: var(--green-dk); padding: 5px 11px; border-radius: 100px; }
-    .bc-body { padding: 20px 22px 24px; }
-    .bc-title { font-family: var(--display); font-size: 1.08rem; font-weight: 400; color: var(--green-dk); line-height: 1.35; margin-bottom: 7px; }
-    .bc.feat .bc-title { font-size: 1.5rem; }
-    .bc-meta { font-size: .74rem; color: var(--brown-lt); display: flex; align-items: center; gap: 7px; }
-    .bc-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--pink-deep); flex-shrink: 0; }
-    .bc-rd { display: inline-flex; align-items: center; gap: 5px; font-family: var(--body); font-size: .77rem; font-weight: 600; color: var(--green); margin-top: 13px; transition: gap .15s var(--easeb); }
-    .bc:hover .bc-rd { gap: 9px; }
-    @media(max-width:860px) { .blog-grid { grid-template-columns: 1fr; } }
-  </style>
-</head>
-<body>
-
-<div id="cdot"></div>
-
-<div class="wordmark-bar">
-  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+<div class="blog-filters rv">
+  <button class="bftab on">All</button>
+  <button class="bftab">Skincare</button>
+  <button class="bftab">Wellness</button>
+  <button class="bftab">Journaling</button>
+  <button class="bftab">Self-growth</button>
+  <button class="bftab">Lifestyle</button>
 </div>
 
-<nav>
-  <a href="index.html" class="nav-logo"><img src="logo_main.png" alt="S&H" /></a>
-  <ul>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="skincare.html">Skincare</a></li>
-    <li><a href="subscribe.html">Subscribe</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="journal.html" class="npill">Free Journal</a></li>
-  </ul>
-</nav>
+<div class="blog-grid rv">
 
-<div class="page-hero">
-  <div class="page-hero-blob"></div>
-  <div class="doodle" style="width:120px;top:20%;right:8%;opacity:.25;transform:rotate(10deg)"><img src="heart1.png" alt="" /></div>
-  <div class="sl">From the blog</div>
-  <h1>Reads that make you <em>better.</em></h1>
-  <p>Skincare science, wellness habits, and self-growth -- researched and written to actually be useful.</p>
-</div>
-
-<section class="sec" style="background:var(--cream);position:relative;overflow:hidden">
-  <div class="doodle" style="width:90px;top:6%;right:4%;opacity:.35;transform:rotate(-12deg)"><img src="heart2.png" alt="" /></div>
-
-  <div class="blog-filters rv">
-    <button class="bftab on">All</button>
-    <button class="bftab">Skincare</button>
-    <button class="bftab">Wellness</button>
-    <button class="bftab">Journaling</button>
-    <button class="bftab">Self-growth</button>
-    <button class="bftab">Lifestyle</button>
-  </div>
-
-  <div class="empty-state rv d1">
-    <div class="empty-icon">✍️</div>
-    <h3>Nothing <em>here yet</em></h3>
-    <p>Posts are on their way. Subscribe below to be the first to know when new content goes live.</p>
-    <a href="subscribe.html" class="btn btn-f">Get notified</a>
-  </div>
-</section>
-
-<section class="nw-strip">
-  <div class="doodle" style="width:100px;bottom:12%;right:6%;opacity:.3;transform:rotate(6deg)"><img src="heart3.png" alt="" /></div>
-  <div class="nw-strip-inner rv">
-    <div class="sl">Never miss a post</div>
-    <h2>Get new posts delivered to your <em>inbox.</em></h2>
-    <p>Weekly skincare deepdives, wellness reads, and journal prompts. No spam, ever.</p>
-    <form class="nw-form" onsubmit="handleNwSub(event)">
-      <input type="email" placeholder="your@email.com" required />
-      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Subscribe free</button>
-    </form>
-    <p class="nw-note">No spam. Unsubscribe anytime.</p>
-  </div>
-</section>
-
-<footer>
-  <div class="ft-top">
-    <div>
-      <div class="ft-logo"><img src="logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
-      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
-      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
+  <a href="introduction.html" class="bc feat">
+    <div class="bc-img">
+      <div class="bc-cat">Featured</div>
+      <img 
+        src="youtube_banner.png" 
+        alt="Introduction to Stylishandhealthy"
+        style="width:100%; height:100%; object-fit:cover;"
+      >
     </div>
-    <div class="ft-col"><h4>Shop</h4><a href="shop.html">All products</a><a href="shop.html">Sticker Packs</a><a href="shop.html">Digital Downloads</a><a href="shop.html">Clothing</a></div>
-    <div class="ft-col"><h4>Explore</h4><a href="blog.html">Blog</a><a href="skincare.html">Skincare Recs</a><a href="subscribe.html">Subscribe</a><a href="about.html">About</a><a href="journal.html">Free Journal</a></div>
-    <div class="ft-col"><h4>Info</h4><a href="about.html">Our mission</a><a href="terms.html">Terms of service</a><a href="privacy.html">Privacy policy</a><a href="affiliate.html">Affiliate disclosure</a><a href="contact.html">Contact</a></div>
-  </div>
-  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
-</footer>
 
-<script src="shared.js"></script>
-<script>
-  document.querySelectorAll('.bftab').forEach(t => t.addEventListener('click', () => {
-    document.querySelectorAll('.bftab').forEach(x => x.classList.remove('on'));
-    t.classList.add('on');
-  }));
-</script>
-</body>
-</html>
+    <div class="bc-body">
+      <h2 class="bc-title">
+        Introduction: What We Stand For
+      </h2>
+
+      <div class="bc-meta">
+        <span>Stylishandhealthy</span>
+        <div class="bc-dot"></div>
+        <span>5 min read</span>
+      </div>
+
+      <p style="
+        margin-top:14px;
+        line-height:1.7;
+        color:var(--brown-lt);
+        font-size:.88rem;
+      ">
+        Beauty backed by science. Transparency, honest recommendations,
+        debunking bad products, and stopping misinformation in skincare,
+        beauty, and wellness.
+      </p>
+
+      <span class="bc-rd">
+        Read article →
+      </span>
+    </div>
+  </a>
+
+  <div class="bc">
+    <div class="bc-img">
+      <div class="bc-cat">Coming Soon</div>
+    </div>
+
+    <div class="bc-body">
+      <h3 class="bc-title">
+        Best Ingredients for Acne-Prone Skin
+      </h3>
+
+      <div class="bc-meta">
+        <span>Skincare</span>
+        <div class="bc-dot"></div>
+        <span>Coming soon</span>
+      </div>
+
+      <span class="bc-rd">
+        Coming soon
+      </span>
+    </div>
+  </div>
+
+  <div class="bc">
+    <div class="bc-img">
+      <div class="bc-cat">Coming Soon</div>
+    </div>
+
+    <div class="bc-body">
+      <h3 class="bc-title">
+        Wellness Habits That Actually Help
+      </h3>
+
+      <div class="bc-meta">
+        <span>Wellness</span>
+        <div class="bc-dot"></div>
+        <span>Coming soon</span>
+      </div>
+
+      <span class="bc-rd">
+        Coming soon
+      </span>
+    </div>
+  </div>
+
+</div>
