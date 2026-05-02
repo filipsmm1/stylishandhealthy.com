@@ -42,9 +42,9 @@ body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) sc
   background: var(--pink) !important;
   text-align: center !important;
   padding: 0 !important;
-  height: 22px !important;
-  min-height: 22px !important;
-  max-height: 22px !important;
+  height: 24px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -55,8 +55,9 @@ body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) sc
 }
 
 .wordmark-bar img {
-  height: 28px !important;
+  height: 42px !important;
   width: auto !important;
+  max-width: none !important;
   display: block !important;
   margin: 0 auto !important;
 }
