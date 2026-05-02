@@ -6,12 +6,10 @@
   <meta name="p:domain_verify" content="d52c5a761a8aff55499412bf4194b9c0" />
   <title>Free Wellness Planner — Stylishandhealthy</title>
   <meta name="description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
-
-  <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
+  <link rel="icon" type="image/png" href="assets/images/logo_main.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-
   <style>
     :root {
       --pink:       #F8D6DE;
@@ -32,21 +30,21 @@
       --ease:  cubic-bezier(0.22,1,0.36,1);
       --easeb: cubic-bezier(0.34,1.56,0.64,1);
     }
-
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{font-family:var(--body);background:var(--cream);color:var(--brown);overflow-x:hidden;cursor:none}
     ::selection{background:var(--pink);color:var(--green-dk)}
     a{text-decoration:none;color:inherit}
-
     #cdot,#cring{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
     #cdot{width:7px;height:7px;background:var(--green);transition:transform .1s,background .2s}
     #cring{display:none}
-    body.ch #cdot{background:var(--pink-deep);transform:translate(-50%,-50%) scale(1.45)}
+        body.ch #cdot{background:var(--pink-deep);transform:translate(-50%,-50%) scale(1.45)}
 
+    /* WORDMARK BAR */
     .wordmark-bar{background:var(--pink);text-align:center;padding:18px 0 16px}
     .wordmark-bar img{height:clamp(72px,10vw,140px);width:auto;max-width:min(96vw,980px);display:inline-block;vertical-align:middle}
 
+    /* NAV */
     nav{position:sticky;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 56px;height:66px;background:rgba(247,241,232,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(85,107,62,.1)}
     .nav-logo{display:flex;align-items:center;gap:10px}
     .nav-logo img{width:42px;height:42px;border-radius:50%;object-fit:cover}
@@ -56,36 +54,27 @@
     .npill{background:var(--green);color:var(--cream)!important;padding:9px 22px;border-radius:100px;font-size:.77rem!important;letter-spacing:.05em!important;transition:background .2s,transform .15s var(--easeb)!important}
     .npill:hover{background:var(--green-dk)!important;transform:scale(1.04)!important}
 
+    /* HERO SPLIT */
     .journal-hero{min-height:92vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;position:relative;overflow:hidden;background:var(--cream)}
     .journal-hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(85,107,62,.055) .55px,transparent .55px);background-size:22px 22px;pointer-events:none}
 
+    /* animated blob bg */
     .hero-blob{position:absolute;width:700px;height:700px;right:-150px;top:-100px;background:radial-gradient(circle at 40% 40%,var(--pink) 0%,transparent 70%);opacity:.45;animation:blobmove 16s ease-in-out infinite;pointer-events:none}
     .hero-blob2{position:absolute;width:400px;height:400px;left:-80px;bottom:-80px;background:radial-gradient(circle at 60% 60%,var(--green-lt) 0%,transparent 70%);opacity:.2;animation:blobmove2 20s ease-in-out infinite;pointer-events:none}
-
-    @keyframes blobmove{
-      0%,100%{transform:scale(1) translateY(0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%}
-      50%{transform:scale(1.07) translateY(-20px);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%}
-    }
-
-    @keyframes blobmove2{
-      0%,100%{transform:scale(1) translateX(0)}
-      50%{transform:scale(1.1) translateX(20px)}
-    }
+    @keyframes blobmove{0%,100%{transform:scale(1) translateY(0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%}50%{transform:scale(1.07) translateY(-20px);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%}}
+    @keyframes blobmove2{0%,100%{transform:scale(1) translateX(0)}50%{transform:scale(1.1) translateX(20px)}}
 
     .jh-left{padding:100px 60px 100px 80px;position:relative;z-index:2}
     .free-badge{display:inline-flex;align-items:center;gap:8px;background:var(--green);color:var(--cream);font-family:var(--body);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 18px;border-radius:100px;margin-bottom:28px;box-shadow:0 4px 18px rgba(85,107,62,.22)}
     .free-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--pink-mid);display:inline-block;animation:pulse 2s ease-in-out infinite}
-
-    @keyframes pulse{
-      0%,100%{opacity:1;transform:scale(1)}
-      50%{opacity:.6;transform:scale(1.3)}
-    }
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
 
     .jh-title{font-family:var(--display);font-size:clamp(3rem,5.2vw,5.2rem);font-weight:400;line-height:1.04;letter-spacing:-.02em;color:var(--green-dk);margin-bottom:8px}
     .jh-title em{font-style:italic;color:var(--green)}
     .jh-subtitle{font-family:var(--hand);font-size:clamp(1.5rem,2.4vw,2rem);color:var(--pink-deep);margin-bottom:24px;display:block}
     .jh-desc{font-size:1rem;line-height:1.8;color:var(--brown-lt);max-width:440px;margin-bottom:36px}
 
+    /* EMAIL FORM */
     .email-form-wrap{background:var(--cream);border:1.5px solid rgba(85,107,62,.14);border-radius:24px;padding:32px;box-shadow:0 16px 52px rgba(85,107,62,.12);max-width:460px}
     .email-form-wrap h3{font-family:var(--display);font-size:1.4rem;font-weight:400;color:var(--green-dk);margin-bottom:4px}
     .email-form-wrap p{font-size:.85rem;color:var(--brown-lt);margin-bottom:20px;line-height:1.6}
@@ -98,17 +87,19 @@
     .form-note{font-size:.74rem;color:var(--brown-lt);text-align:center;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:5px}
     .form-note::before{content:'•';color:var(--green);font-weight:700}
 
+    /* SUCCESS STATE */
     .success-msg{display:none;text-align:center;padding:20px 0}
     .success-msg h3{font-family:var(--display);font-size:1.8rem;color:var(--green-dk);margin-bottom:8px}
     .success-msg h3 em{font-style:italic;color:var(--green)}
     .success-msg p{font-size:.9rem;color:var(--brown-lt);line-height:1.7}
     .success-check{font-size:3rem;margin-bottom:12px;display:block}
 
+    /* RIGHT: VIDEO + FEATURES */
     .jh-right{padding:80px 80px 80px 40px;position:relative;z-index:2;display:flex;flex-direction:column;gap:28px;align-items:flex-start}
 
     .video-container{width:100%;max-width:500px;border-radius:24px 18px 28px 20px / 20px 28px 18px 24px;overflow:hidden;box-shadow:0 20px 48px rgba(58,42,34,.14);position:relative;background:var(--green-dk);contain:layout paint}
     .video-container video{width:100%;height:auto;display:block;border-radius:inherit;transform:translateZ(0)}
-    .video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:none;background:rgba(58,42,34,.2);transition:background .25s,opacity .25s;border-radius:inherit}
+    .video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:none;background:rgba(58,42,34,.2);transition:background .25s;border-radius:inherit}
     .video-overlay:hover{background:rgba(58,42,34,.05)}
     .play-btn{width:68px;height:68px;border-radius:50%;background:rgba(247,241,232,.92);display:flex;align-items:center;justify-content:center;transition:transform .2s var(--easeb),box-shadow .2s;box-shadow:0 8px 30px rgba(58,42,34,.22)}
     .video-overlay:hover .play-btn{transform:scale(1.08);box-shadow:0 12px 40px rgba(58,42,34,.3)}
@@ -120,14 +111,17 @@
     .video-container:fullscreen video{width:100%;height:100%;object-fit:contain;border-radius:0}
     .video-container:fullscreen .video-label{display:none}
 
+    /* DOODLES */
     .doodle{position:absolute;pointer-events:none;user-select:none}
     .doodle img{width:100%;height:100%;object-fit:contain}
 
+    /* FEATURES STRIP */
     .features{display:flex;flex-wrap:wrap;gap:12px;max-width:500px}
     .feat-pill{display:flex;align-items:center;gap:8px;background:var(--cream-warm);border:1px solid rgba(85,107,62,.12);border-radius:100px;padding:9px 16px;font-size:.83rem;color:var(--brown);font-weight:500;transition:background .2s,border-color .2s}
     .feat-pill:hover{background:var(--pink);border-color:var(--pink-mid)}
     .feat-pill-check{width:18px;height:18px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.6rem;color:var(--cream);font-weight:700}
 
+    /* WHAT'S INSIDE */
     .inside-section{background:var(--green-dk);padding:96px 80px;position:relative;overflow:hidden}
     .inside-section::before{content:'';position:absolute;width:500px;height:500px;right:-150px;top:-150px;border-radius:50%;background:rgba(247,241,232,.03);pointer-events:none}
     .inside-sl{font-family:var(--body);font-size:.69rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--green-lt);margin-bottom:14px;display:flex;align-items:center;gap:10px}
@@ -143,6 +137,7 @@
     .inside-title em{font-style:italic;color:var(--pink-mid)}
     .inside-desc{font-size:.86rem;color:rgba(247,241,232,.52);line-height:1.75}
 
+    /* PREVIEW SPREADS */
     .preview-section{background:var(--cream-warm);padding:96px 80px}
     .preview-sh{font-family:var(--display);font-size:clamp(1.7rem,2.8vw,2.6rem);font-weight:400;color:var(--green-dk);margin-bottom:10px;line-height:1.15}
     .preview-sh em{font-style:italic;color:var(--pink-deep)}
@@ -159,12 +154,14 @@
     .spread-line.med{width:80%}
     .spread-pill{background:var(--pink);color:var(--green-dk);font-family:var(--body);font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:100px;margin-top:8px}
 
+    /* SOCIAL PROOF */
     .proof-section{background:var(--pink);padding:80px}
     .proof-inner{max-width:800px;margin:0 auto;text-align:center}
     .proof-quote{font-family:var(--display);font-style:italic;font-size:clamp(1.5rem,2.6vw,2.4rem);font-weight:400;color:var(--green-dk);line-height:1.4;margin-bottom:28px}
     .proof-author{font-size:.85rem;color:var(--brown-lt);display:flex;align-items:center;justify-content:center;gap:10px}
     .proof-av{width:38px;height:38px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;font-style:italic;color:var(--cream)}
 
+    /* BOTTOM CTA */
     .bottom-cta{background:var(--green-dk);padding:96px 80px;text-align:center;position:relative;overflow:hidden}
     .bottom-cta::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(247,241,232,.04) .5px,transparent .5px);background-size:24px 24px;pointer-events:none}
     .bc-sh{font-family:var(--display);font-size:clamp(2rem,3.8vw,3.6rem);font-weight:400;color:var(--cream);line-height:1.1;margin-bottom:14px}
@@ -175,6 +172,7 @@
     .bc-form input::placeholder{color:rgba(247,241,232,.38)}
     .bc-note{font-size:.78rem;color:rgba(247,241,232,.35);margin-top:16px}
 
+    /* FOOTER */
     .jfooter{background:var(--brown);padding:36px 80px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
     .jfooter-logo{display:flex;align-items:center;gap:10px}
     .jfooter-logo img{width:32px;height:32px;border-radius:50%;object-fit:cover}
@@ -189,103 +187,88 @@
     .btn-wh{background:rgba(247,241,232,.95);color:var(--green-dk);padding:14px 36px;font-size:1rem;box-shadow:0 8px 26px rgba(58,42,34,.22)}
     .btn-wh:hover{background:var(--cream);transform:translateY(-2px)}
 
+    @keyframes blobmorph{0%,100%{border-radius:60% 40% 70% 30% / 50% 60% 40% 70%}33%{border-radius:40% 60% 30% 70% / 60% 40% 70% 30%}66%{border-radius:70% 30% 50% 50% / 30% 70% 50% 60%}}
+
+
     @media (prefers-reduced-motion: reduce){
       *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
     }
-
-    @media(max-width:860px){
-      .journal-hero{grid-template-columns:1fr}
-      .jh-right{display:none}
-      .jh-left{padding:80px 32px}
-      .inside-grid,.spreads{grid-template-columns:1fr}
-      .inside-section,.preview-section,.proof-section,.bottom-cta{padding:72px 32px}
-      .proof-section{padding:60px 32px}
-      nav{padding:0 24px}
-      nav ul{display:none}
-      body{cursor:auto}
-      #cdot,#cring{display:none}
-    }
+    @media(max-width:860px){.journal-hero{grid-template-columns:1fr}.jh-right{display:none}.jh-left{padding:80px 32px}.inside-grid,.spreads{grid-template-columns:1fr}.inside-section,.preview-section,.proof-section,.bottom-cta{padding:72px 32px}.proof-section{padding:60px 32px}nav{padding:0 24px}nav ul{display:none}body{cursor:auto}#cdot,#cring{display:none}}
   </style>
 
+  <!-- SEO: Canonical -->
   <link rel="canonical" href="https://www.stylishandhealthy.com/journal" />
 
+  <!-- SEO: Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Free Wellness Planner — Stylishandhealthy" />
   <meta property="og:description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
   <meta property="og:url" content="https://www.stylishandhealthy.com/journal" />
-  <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+  <meta property="og:image" content="https://www.stylishandhealthy.com/youtube_banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Stylishandhealthy" />
 
+  <!-- SEO: Twitter/X Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Free Wellness Planner — Stylishandhealthy" />
   <meta name="twitter:description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
-  <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+  <meta name="twitter:image" content="https://www.stylishandhealthy.com/youtube_banner.png" />
 
+  <!-- SEO: Pinterest -->
   <meta name="pinterest:description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
-  <meta name="pinterest:media" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+  <meta name="pinterest:media" content="https://www.stylishandhealthy.com/youtube_banner.png" />
 </head>
-
 <body>
 
 <div id="cdot"></div>
 
+<!-- WORDMARK BAR -->
 <div class="wordmark-bar">
-  <img src="/assets/images/youtube_banner.png" alt="Stylishandhealthy." />
+  <img src="assets/images/youtube_banner.png" alt="Stylishandhealthy." />
 </div>
 
+<!-- NAV -->
 <nav>
-  <a href="/" class="nav-logo">
-    <img src="/assets/images/logo_main.png" alt="S&H" />
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo_main.png" alt="S&H" />
   </a>
   <ul>
     <li><a href="index.html#categories">Topics</a></li>
     <li><a href="index.html#shop">Shop</a></li>
     <li><a href="index.html#skincare">Skincare</a></li>
     <li><a href="index.html#blog">Blog</a></li>
-    <li><a href="/" class="npill">Back to home</a></li>
+    <li><a href="index.html" class="npill">Back to home</a></li>
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="journal-hero">
   <div class="hero-blob"></div>
   <div class="hero-blob2"></div>
 
-  <div class="doodle" style="width:90px;top:12%;right:46%;transform:rotate(12deg);opacity:.4">
-    <img src="/assets/images/heart1.png" alt="" />
-  </div>
-
-  <div class="doodle" style="width:55px;bottom:15%;left:5%;transform:rotate(-8deg);opacity:.35">
-    <img src="/assets/images/heart2.png" alt="" />
-  </div>
+  <!-- doodle hearts -->
+  <div class="doodle" style="width:90px;top:12%;right:46%;transform:rotate(12deg);opacity:.4"><img src="assets/images/heart1.png" alt=""/></div>
+  <div class="doodle" style="width:55px;bottom:15%;left:5%;transform:rotate(-8deg);opacity:.35"><img src="assets/images/heart2.png" alt=""/></div>
 
   <div class="jh-left">
-    <div class="free-badge">
-      <div class="dot"></div>
-      Completely free — yours today
-    </div>
-
+    <div class="free-badge"><div class="dot"></div> Completely free — yours today</div>
     <h1 class="jh-title">The <em>Wellness</em><br>Planner</h1>
     <span class="jh-subtitle">Your routines, beautifully planned.</span>
-
-    <p class="jh-desc">
-      A soft, structured wellness planner for routines, habits, goals, check-ins, and intentional living — beautifully designed to help you stay consistent. Enter your name and email, then download it instantly.
-    </p>
+    <p class="jh-desc">A soft, structured wellness planner for routines, habits, goals, check-ins, and intentional living — beautifully designed to help you stay consistent. Enter your name and email, then download it instantly.</p>
 
     <div class="email-form-wrap" id="formWrap">
       <h3>Get your free planner</h3>
       <p>Instant download after you enter your details. No spam — just your planner and occasional wellness content.</p>
-
       <form class="form-row" id="journalForm" onsubmit="handleJournalSub(event)">
         <input class="form-input" type="text" placeholder="First name" required />
         <input class="form-input" type="email" placeholder="your@email.com" required />
-        <button class="form-submit" type="submit" id="submitBtn">Download planner</button>
+        <button class="form-submit" type="submit" id="submitBtn">
+          Download planner
+        </button>
       </form>
-
       <p class="form-note">No spam, ever. Unsubscribe anytime.</p>
     </div>
-
     <div class="success-msg" id="successMsg">
       <span class="success-check">•</span>
       <h3>Download <em>started!</em></h3>
@@ -294,29 +277,25 @@
   </div>
 
   <div class="jh-right">
+    <!-- VIDEO -->
     <div class="video-container" id="videoWrap">
-      <video id="journalVideo" muted playsinline controls preload="metadata">
-        <source src="./assets/video/journal_video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+      <video id="journalVideo" muted playsinline controls preload="metadata" poster="">
+        <source src="assets/video/journal_video.mp4" type="video/mp4" />
       </video>
-
-      <div id="videoPlaceholder" style="height:340px;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;text-align:center">
-        <div style="font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(247,241,232,.2);line-height:1">VIDEO</div>
-        <div style="font-family:var(--display);font-size:1.4rem;color:var(--cream);font-style:italic">Planner preview<br>could not load</div>
-        <div style="font-size:.8rem;color:rgba(247,241,232,.4)">Check assets/video/journal_video.mp4</div>
+      <!-- Placeholder shown if no video -->
+      <div id="videoPlaceholder" style="height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;text-align:center">
+        <div style="font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(247,241,232,.2);line-height:1">PDF</div>
+        <div style="font-family:var(--display);font-size:1.4rem;color:var(--cream);font-style:italic">Your beautiful<br>wellness planner</div>
+        <div style="font-size:.8rem;color:rgba(247,241,232,.4)">Add /assets/video/journal_video.mp4 to show it here</div>
       </div>
-
-      <div class="video-overlay" id="videoOverlay">
-        <div class="play-btn" id="playBtn">
-          <div class="play-icon"></div>
-        </div>
+      <div class="video-overlay" id="videoOverlay" onclick="toggleVideo()">
+        <div class="play-btn" id="playBtn"><div class="play-icon"></div></div>
       </div>
-
       <div class="video-label">Planner preview</div>
-
       <button type="button" class="fullscreen-btn" id="fullscreenBtn" aria-label="Make video full screen" title="Full screen">⛶</button>
     </div>
 
+    <!-- FEATURE PILLS -->
     <div class="features">
       <div class="feat-pill"><div class="feat-pill-check">•</div> Planner pages</div>
       <div class="feat-pill"><div class="feat-pill-check">•</div> Habit tracker</div>
@@ -328,49 +307,38 @@
   </div>
 </section>
 
+<!-- WHAT'S INSIDE -->
 <section class="inside-section">
-  <div class="doodle" style="width:70px;top:6%;right:6%;opacity:.25;transform:rotate(8deg)">
-    <img src="/assets/images/heart3.png" alt="" />
-  </div>
-
+  <div class="doodle" style="width:70px;top:6%;right:6%;opacity:.25;transform:rotate(8deg)"><img src="assets/images/heart3.png" alt=""/></div>
   <div class="inside-sl">What's inside</div>
   <h2 class="inside-sh">Everything you need to<br>grow <em>beautifully.</em></h2>
-
-  <p class="inside-sub">
-    This Wellness Planner is a soft, structured planning system wrapped in intentional design — built for girls who want real routines, better habits, and progress that feels good.
-  </p>
-
+  <p class="inside-sub">This Wellness Planner is a soft, structured planning system wrapped in intentional design — built for girls who want real routines, better habits, and progress that feels good.</p>
   <div class="inside-grid">
     <div class="inside-card">
       <div class="inside-num">01</div>
       <div class="inside-title"><em>Daily</em> Pages</div>
       <p class="inside-desc">Plan your days with space for priorities, routines, wellness notes, and gentle reflections. Simple. Consistent. Beautiful.</p>
     </div>
-
     <div class="inside-card">
       <div class="inside-num">02</div>
       <div class="inside-title"><em>Habit</em> Tracker</div>
       <p class="inside-desc">A monthly visual habit grid so you can see your progress at a glance. Track up to 10 habits — skincare, water, movement, sleep, journaling, or whatever your goals are.</p>
     </div>
-
     <div class="inside-card">
       <div class="inside-num">03</div>
       <div class="inside-title"><em>Wellness</em> Check-ins</div>
       <p class="inside-desc">Weekly mini-reviews where you rate your mood, sleep, hydration, and self-care. Gentle accountability, not pressure — just a quiet check-in with yourself.</p>
     </div>
-
     <div class="inside-card">
       <div class="inside-num">04</div>
       <div class="inside-title"><em>Guided</em> Prompts</div>
       <p class="inside-desc">Soft planning prompts to help you set goals, reset your routines, and stay connected to what matters most.</p>
     </div>
-
     <div class="inside-card">
       <div class="inside-num">05</div>
       <div class="inside-title"><em>Monthly</em> Reviews</div>
       <p class="inside-desc">At the end of each month: a two-page spread to review wins, lessons, what you want more of, and intentions for the next month. Growth you can actually see.</p>
     </div>
-
     <div class="inside-card">
       <div class="inside-num">06</div>
       <div class="inside-title"><em>Designed</em> to feel good</div>
@@ -379,11 +347,11 @@
   </div>
 </section>
 
+<!-- SPREADS PREVIEW -->
 <section class="preview-section">
   <div class="inside-sl">Inside the journal</div>
   <h2 class="preview-sh">Pages made for<br><em>intentional living.</em></h2>
   <p class="preview-sub">Here's a glimpse of what you'll find inside. Every page is crafted to make planning feel like a treat, not a task.</p>
-
   <div class="spreads">
     <div class="spread">
       <div class="spread-num">PDF</div>
@@ -397,7 +365,6 @@
       </div>
       <div class="spread-pill">Daily</div>
     </div>
-
     <div class="spread">
       <div class="spread-num">12</div>
       <div class="spread-title"><em>Monthly</em> Review Spread</div>
@@ -410,7 +377,6 @@
       </div>
       <div class="spread-pill">Monthly</div>
     </div>
-
     <div class="spread">
       <div class="spread-num">52</div>
       <div class="spread-title"><em>Weekly</em> Wellness Check-in</div>
@@ -426,15 +392,12 @@
   </div>
 </section>
 
+<!-- SOCIAL PROOF -->
 <section class="proof-section">
-  <div class="doodle" style="width:80px;bottom:8%;right:8%;opacity:.35;transform:rotate(-6deg)">
-    <img src="/assets/images/heart1.png" alt="" />
-  </div>
-
+  <div class="doodle" style="width:80px;bottom:8%;right:8%;opacity:.35;transform:rotate(-6deg)"><img src="assets/images/heart1.png" alt=""/></div>
   <div class="proof-inner">
     <div style="font-size:1.5rem;margin-bottom:16px;letter-spacing:2px;color:#B8763A">★ ★ ★ ★ ★</div>
     <div class="proof-quote">"I've tried so many journals and this is the first one I've actually kept up with for more than two weeks. It doesn't feel like a chore — it genuinely feels like self-care."</div>
-
     <div class="proof-author">
       <div class="proof-av">S</div>
       <div>
@@ -445,82 +408,68 @@
   </div>
 </section>
 
+<!-- BOTTOM CTA -->
 <section class="bottom-cta">
-  <div class="doodle" style="width:100px;top:8%;left:6%;opacity:.2;transform:rotate(-10deg)">
-    <img src="/assets/images/heart2.png" alt="" />
-  </div>
-
+  <div class="doodle" style="width:100px;top:8%;left:6%;opacity:.2;transform:rotate(-10deg)"><img src="assets/images/heart2.png" alt=""/></div>
   <h2 class="bc-sh">Get the <em>Wellness Planner</em></h2>
   <span class="bc-hand">It's completely free.</span>
-
   <form class="bc-form" id="bottomForm" onsubmit="handleBottomSub(event)">
     <input type="email" placeholder="your@email.com" required />
     <button type="submit" class="btn btn-wh" id="bottomBtn">Download planner</button>
   </form>
-
   <p class="bc-note">No spam. Unsubscribe anytime. Just your free planner.</p>
 </section>
 
+<!-- FOOTER -->
 <footer class="jfooter">
   <div class="jfooter-logo">
-    <img src="/assets/images/logo_main.png" alt="S&H" />
+    <img src="assets/images/logo_main.png" alt="S&H" />
     <span>Stylishandhealthy.</span>
   </div>
-
   <p>© 2026 Stylishandhealthy. All rights reserved.</p>
-
-  <a href="/" style="font-size:.83rem;color:rgba(247,241,232,.4);transition:color .2s" onmouseenter="this.style.color='#F3AFC0'" onmouseleave="this.style.color='rgba(247,241,232,.4)'">Back to home</a>
+  <a href="index.html" style="font-size:.83rem;color:rgba(247,241,232,.4);transition:color .2s" onmouseenter="this.style.color='#F3AFC0'" onmouseleave="this.style.color='rgba(247,241,232,.4)'">Back to home</a>
 </footer>
 
 <script>
   const DOWNLOAD_URL = 'https://drive.google.com/uc?export=download&id=1GNftxj11_5lQRlspUldTTKPGJnbHGeDP';
 
   const cdot = document.getElementById('cdot');
-
   if (cdot && window.matchMedia('(pointer:fine)').matches) {
     let mouseX = 0;
     let mouseY = 0;
     let cursorTicking = false;
 
-    document.addEventListener('mousemove', function (e) {
+    document.addEventListener('mousemove', e => {
       mouseX = e.clientX;
       mouseY = e.clientY;
 
       if (!cursorTicking) {
-        window.requestAnimationFrame(function () {
-          cdot.style.transform = 'translate3d(' + mouseX + 'px, ' + mouseY + 'px, 0) translate(-50%, -50%)';
+        window.requestAnimationFrame(() => {
+          cdot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
           cursorTicking = false;
         });
-
         cursorTicking = true;
       }
     }, { passive: true });
 
-    document.querySelectorAll('a,button,input,.feat-pill,.inside-card,.spread').forEach(function (el) {
-      el.addEventListener('mouseenter', function () {
-        document.body.classList.add('ch');
-      });
-
-      el.addEventListener('mouseleave', function () {
-        document.body.classList.remove('ch');
-      });
+    document.querySelectorAll('a,button,input,.feat-pill,.inside-card,.spread').forEach(el => {
+      el.addEventListener('mouseenter', () => document.body.classList.add('ch'));
+      el.addEventListener('mouseleave', () => document.body.classList.remove('ch'));
     });
   }
 
-  const ro = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        ro.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+  const ro = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      ro.unobserve(entry.target);
+    }
+  }), { threshold: .1 });
 
-  document.querySelectorAll('.inside-card,.spread,.feat-pill').forEach(function (el, i) {
+  document.querySelectorAll('.inside-card,.spread,.feat-pill').forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity .6s ease ' + (i * 0.06) + 's, transform .6s ease ' + (i * 0.06) + 's';
+    el.style.transition = `opacity .6s ease ${i * .06}s, transform .6s ease ${i * .06}s`;
     ro.observe(el);
   });
 
@@ -535,147 +484,55 @@
 
   if (video) {
     video.controls = true;
-    video.muted = true;
-    video.playsInline = true;
-    video.preload = 'metadata';
 
-    video.style.display = 'block';
-
-    if (placeholder) {
-      placeholder.style.display = 'none';
-    }
-
-    if (overlay) {
-      overlay.style.display = 'flex';
-      overlay.style.opacity = '1';
-      overlay.style.pointerEvents = 'auto';
-    }
-
-    video.addEventListener('loadedmetadata', function () {
+    video.addEventListener('loadeddata', () => {
+      if (placeholder) placeholder.style.display = 'none';
       video.style.display = 'block';
-
-      if (placeholder) {
-        placeholder.style.display = 'none';
-      }
-
-      if (overlay) {
-        overlay.style.display = 'flex';
-        overlay.style.opacity = '1';
-        overlay.style.pointerEvents = 'auto';
-      }
-
-      console.log('Video metadata loaded.');
     });
 
-    video.addEventListener('canplay', function () {
-      video.style.display = 'block';
-
-      if (placeholder) {
-        placeholder.style.display = 'none';
-      }
-
-      console.log('Video can play.');
-    });
-
-    video.addEventListener('error', function () {
+    video.addEventListener('error', () => {
       video.style.display = 'none';
-
-      if (overlay) {
-        overlay.style.display = 'none';
-      }
-
-      if (placeholder) {
-        placeholder.style.display = 'flex';
-      }
-
-      console.log('Video failed to load.');
-      console.log('Expected file path: ./assets/video/journal_video.mp4');
-      console.log('Your GitHub repo must contain: assets/video/journal_video.mp4');
-      console.log('Video error:', video.error);
+      if (overlay) overlay.style.display = 'none';
+      if (placeholder) placeholder.style.display = 'flex';
     });
 
-    video.addEventListener('pause', function () {
+    video.addEventListener('pause', () => {
       playing = false;
-
-      if (overlay && !video.error) {
-        overlay.style.display = 'flex';
-        overlay.style.opacity = '1';
-        overlay.style.pointerEvents = 'auto';
-      }
-
-      if (playBtn) {
-        playBtn.innerHTML = '<div class="play-icon"></div>';
-      }
+      if (overlay) overlay.style.opacity = '1';
+      if (playBtn) playBtn.innerHTML = '<div class="play-icon"></div>';
     });
 
-    video.addEventListener('play', function () {
+    video.addEventListener('play', () => {
       playing = true;
-
-      if (overlay) {
-        overlay.style.opacity = '0';
-        overlay.style.pointerEvents = 'none';
-      }
-
-      if (playBtn) {
-        playBtn.innerHTML = '';
-      }
+      if (overlay) overlay.style.opacity = '0';
+      if (playBtn) playBtn.innerHTML = '';
     });
   }
 
   function toggleVideo() {
-    if (!video || video.error) {
-      return;
-    }
+    if (!video || video.error || video.readyState === 0) return;
 
     if (playing) {
       video.pause();
     } else {
-      if (placeholder) {
-        placeholder.style.display = 'none';
-      }
-
-      video.style.display = 'block';
-
-      video.play().catch(function (error) {
-        console.log('Video play failed:', error);
-
+      if (placeholder) placeholder.style.display = 'none';
+      video.play().catch(() => {
         video.style.display = 'none';
-
-        if (overlay) {
-          overlay.style.display = 'none';
-        }
-
-        if (placeholder) {
-          placeholder.style.display = 'flex';
-        }
+        if (overlay) overlay.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'flex';
       });
     }
   }
 
-  if (overlay) {
-    overlay.addEventListener('click', toggleVideo);
-  }
-
   function toggleFullscreen(event) {
-    event.preventDefault();
     event.stopPropagation();
-
-    if (!videoWrap) {
-      return;
-    }
+    if (!videoWrap) return;
 
     if (!document.fullscreenElement) {
-      if (videoWrap.requestFullscreen) {
-        videoWrap.requestFullscreen();
-      }
-
-      if (video && !video.error) {
-        video.play().catch(function () {});
-      }
+      videoWrap.requestFullscreen?.();
+      if (video && video.readyState > 0) video.play().catch(() => {});
     } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
+      document.exitFullscreen?.();
     }
   }
 
@@ -684,6 +541,8 @@
   }
 
   function startPlannerDownload() {
+    // Opening the Google Drive direct-download link in a new tab is the most reliable
+    // way to trigger downloads from Drive without the browser blocking it.
     window.open(DOWNLOAD_URL, '_blank', 'noopener');
   }
 
@@ -692,59 +551,37 @@
 
     const form = e.target;
     const btn = document.getElementById('submitBtn');
-    const formWrap = document.getElementById('formWrap');
-    const successMsg = document.getElementById('successMsg');
 
-    if (btn) {
-      btn.textContent = 'Download';
-      btn.disabled = true;
-      btn.style.background = 'var(--green-lt)';
-    }
+    btn.textContent = 'Download';
+    btn.disabled = true;
+    btn.style.background = 'var(--green-lt)';
 
     startPlannerDownload();
 
-    setTimeout(function () {
-      if (formWrap) {
-        formWrap.style.display = 'none';
-      }
-
-      if (successMsg) {
-        successMsg.style.display = 'block';
-      }
-
-      if (form) {
-        form.reset();
-      }
+    setTimeout(() => {
+      document.getElementById('formWrap').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+      form.reset();
     }, 700);
   }
 
   function handleBottomSub(e) {
     e.preventDefault();
 
-    const form = e.target;
     const btn = document.getElementById('bottomBtn');
-
-    if (btn) {
-      btn.textContent = 'Download';
-      btn.disabled = true;
-      btn.style.background = 'var(--green-lt)';
-    }
+    btn.textContent = 'Download';
+    btn.disabled = true;
+    btn.style.background = 'var(--green-lt)';
 
     startPlannerDownload();
 
-    setTimeout(function () {
-      if (btn) {
-        btn.textContent = 'Download planner';
-        btn.disabled = false;
-        btn.style.background = '';
-      }
-
-      if (form) {
-        form.reset();
-      }
+    setTimeout(() => {
+      btn.textContent = 'Download planner';
+      btn.disabled = false;
+      btn.style.background = '';
+      e.target.reset();
     }, 2500);
   }
 </script>
-
 </body>
 </html>
