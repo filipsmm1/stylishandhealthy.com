@@ -33,13 +33,29 @@ img { max-width: 100%; }
 
 /* ---- CURSOR ---- */
 #cdot, #cring { position: fixed; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); }
-#cdot { width: 9px; height: 9px; background: var(--green); transition: transform .12s var(--easeb), background .2s; }
+#cdot { width: 7px; height: 7px; background: var(--green); transition: transform .1s, background .2s; }
 #cring { display: none; }
 body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) scale(1.45); }
 
 /* ---- WORDMARK BAR ---- */
-.wordmark-bar { background: var(--pink); text-align: center; padding: 18px 0 16px; position: relative; z-index: 201; }
-.wordmark-bar img { height: clamp(72px, 10vw, 140px); width: auto; max-width: min(96vw, 980px); display: inline-block; vertical-align: middle; }
+.wordmark-bar {
+  background: var(--pink);
+  text-align: center;
+  padding: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 201;
+  overflow: hidden;
+}
+
+.wordmark-bar img {
+  height: 28px;
+  width: auto;
+  display: block;
+}
 
 /* ---- NAV ---- */
 nav { position: sticky; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; height: 66px; background: rgba(247,241,232,.96); backdrop-filter: blur(16px); box-shadow: 0 1px 0 rgba(85,107,62,.1); }
@@ -101,7 +117,7 @@ footer { background: var(--brown); padding: 68px 80px 38px; }
 /* ---- BLOB MORPH ---- */
 @keyframes blobmorph { 0%,100%{border-radius:60% 40% 70% 30% / 50% 60% 40% 70%} 33%{border-radius:40% 60% 30% 70% / 60% 40% 70% 30%} 66%{border-radius:70% 30% 50% 50% / 30% 70% 50% 60%} }
 
-/* ---- PAGE HERO (inner pages) ---- */
+/* ---- PAGE HERO INNER PAGES ---- */
 .page-hero { background: var(--green-dk); padding: 96px 80px 80px; position: relative; overflow: hidden; }
 .page-hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(247,241,232,.04) .5px, transparent .5px); background-size: 24px 24px; pointer-events: none; }
 .page-hero-blob { position: absolute; width: 500px; height: 500px; right: -100px; top: -100px; background: radial-gradient(circle at 40% 40%, rgba(248,214,222,.12) 0%, transparent 70%); border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; animation: blobmorph 16s ease-in-out infinite; pointer-events: none; }
@@ -139,17 +155,6 @@ footer { background: var(--brown); padding: 68px 80px 38px; }
 .nw-form input::placeholder { color: rgba(247,241,232,.35); }
 .nw-note { font-size: .77rem; color: rgba(247,241,232,.3); margin-top: 14px; }
 
-
-/* ---- DYNAMIC REVEAL ANIMATIONS ---- */
-.rv, .sec > *, .page-hero > *, .bc, .sc, .skc, .subc, .tc, .post-card, .ci-card, .value-card, .mst, .ast, .inside-card, .spread { opacity: 0; transform: translateY(34px) scale(.985); transition: opacity .75s var(--ease), transform .75s var(--ease), box-shadow .25s, background .25s, border-color .25s; }
-.rv.in, .sec > .in, .page-hero > .in, .bc.in, .sc.in, .skc.in, .subc.in, .tc.in, .post-card.in, .ci-card.in, .value-card.in, .mst.in, .ast.in, .inside-card.in, .spread.in { opacity: 1; transform: translateY(0) scale(1); }
-.d2 { transition-delay: .12s; }
-.d3 { transition-delay: .22s; }
-.d4 { transition-delay: .32s; }
-.form-select { width: 100%; border: 1.5px solid rgba(85,107,62,.15); background: var(--cream); font-family: var(--body); font-size: .95rem; color: var(--brown); padding: 13px 18px; border-radius: 14px; outline: none; transition: border-color .2s; }
-.form-select:focus { border-color: var(--green); }
-@media (prefers-reduced-motion: reduce) { .rv, .sec > *, .page-hero > *, .bc, .sc, .skc, .subc, .tc, .post-card, .ci-card, .value-card, .mst, .ast, .inside-card, .spread { opacity: 1; transform: none; transition: none; } }
-
 /* ---- RESPONSIVE ---- */
 @media(max-width: 860px) {
   nav { padding: 0 24px; }
@@ -162,6 +167,7 @@ footer { background: var(--brown); padding: 68px 80px 38px; }
   .ft-top { grid-template-columns: 1fr 1fr; gap: 32px; }
   .nw-strip { padding: 56px 32px; }
 }
+
 @media(max-width: 560px) {
   .ft-top { grid-template-columns: 1fr; }
 }
