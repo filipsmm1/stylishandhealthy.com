@@ -48,14 +48,17 @@ body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) sc
   position: relative !important;
   z-index: 201 !important;
   overflow: visible !important;
+  line-height: 0 !important;
 }
 
+.wordmark-bar img,
 .wordmark-bar .wordmark-img {
+  height: 46px !important;
   width: auto !important;
-  height: 30px !important;
   max-width: none !important;
   max-height: none !important;
   display: block !important;
+  object-fit: contain !important;
 
   position: absolute !important;
   left: 50% !important;
