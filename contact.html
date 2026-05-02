@@ -1,37 +1,72 @@
-<form action="https://formspree.io/f/xgodvqwl" method="POST" class="contact-form">
+<form action="https://formspree.io/f/xgodvqwl" method="POST" class="contact-form-wrap">
 
   <div class="form-field">
-    <label class="form-label" for="name">Name</label>
-    <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+    <label class="form-label" for="name">Full Name</label>
+    <input
+      class="form-input"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your full name"
+      required
+    >
   </div>
 
   <div class="form-field">
-    <label class="form-label" for="email">Email</label>
-    <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+    <label class="form-label" for="email">Email Address</label>
+    <input
+      class="form-input"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="your@email.com"
+      required
+    >
   </div>
 
   <div class="form-field">
     <label class="form-label" for="subject">Subject</label>
-    <select class="form-input" id="subject" name="subject" required>
+    <select
+      class="form-input"
+      id="subject"
+      name="subject"
+      required
+    >
       <option value="">Choose a subject</option>
-      <option value="Paid promotion">Paid promotion</option>
-      <option value="Sponsorship">Sponsorship</option>
-      <option value="Product recommendation">Product recommendation</option>
-      <option value="Complaint">Complaint</option>
-      <option value="Website problem">Website problem</option>
-      <option value="Question about a product">Question about a product</option>
-      <option value="Request full PDF literature">Request full PDF literature</option>
-      <option value="Other">Other</option>
+      <option>Paid Promotion</option>
+      <option>Sponsorship</option>
+      <option>Product Recommendation</option>
+      <option>Complaint</option>
+      <option>Website Problem</option>
+      <option>Question About a Product</option>
+      <option>Request Full PDF Literature</option>
+      <option>Other</option>
     </select>
   </div>
 
   <div class="form-field">
     <label class="form-label" for="message">Message</label>
-    <textarea class="form-textarea" id="message" name="message" placeholder="Write your message here..." required></textarea>
+    <textarea
+      class="form-textarea"
+      id="message"
+      name="message"
+      placeholder="Write your message here..."
+      required
+    ></textarea>
   </div>
 
-  <input type="hidden" name="_subject" value="New message from Stylishandhealthy website">
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Stylishandhealthy Contact Form Submission"
+  >
 
-  <button type="submit" class="btn btn-f">Send message</button>
+  <button
+    type="submit"
+    class="btn btn-f"
+    style="width:100%; margin-top:10px;"
+  >
+    Send Message
+  </button>
 
 </form>
