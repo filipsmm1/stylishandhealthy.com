@@ -39,34 +39,22 @@ body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) sc
 
 /* ---- WORDMARK BAR ---- */
 .wordmark-bar {
-  background: var(--pink) !important;
-  height: 24px !important;
-  min-height: 24px !important;
-  max-height: 24px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  position: relative !important;
-  z-index: 201 !important;
-  overflow: visible !important;
-  line-height: 0 !important;
+  background: var(--pink);
+  text-align: center;
+  padding: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 201;
+  overflow: hidden;
 }
 
-.wordmark-bar img,
-.wordmark-bar .wordmark-img {
-  height: 46px !important;
-  width: auto !important;
-  max-width: none !important;
-  max-height: none !important;
-  display: block !important;
-  object-fit: contain !important;
-
-  position: absolute !important;
-  left: 50% !important;
-  top: 50% !important;
-  transform: translate(-50%, -50%) !important;
-
-  z-index: 202 !important;
-  pointer-events: none !important;
+.wordmark-bar img {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 /* ---- NAV ---- */
