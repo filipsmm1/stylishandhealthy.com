@@ -78,6 +78,48 @@
       color: var(--brown-lt);
     }
 
+    .form-status {
+      display: none;
+      text-align: center;
+      padding: 34px 10px;
+    }
+
+    .form-status h3 {
+      font-family: var(--display);
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: var(--green-dk);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .form-status h3 em {
+      font-style: italic;
+      color: var(--pink-deep);
+    }
+
+    .form-status p {
+      font-size: .95rem;
+      color: var(--brown-lt);
+      line-height: 1.7;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .form-status-badge {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--pink);
+      color: var(--green-dk);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-family: var(--display);
+      font-size: 1.5rem;
+    }
+
     .contact-info {
       display: flex;
       flex-direction: column;
@@ -216,79 +258,104 @@
   <div class="contact-grid">
 
     <form
+      id="contact-form"
       action="https://formspree.io/f/xgodvqwl"
       method="POST"
       class="contact-form-wrap rv"
     >
 
-      <div class="form-field">
-        <label class="form-label" for="name">Full Name</label>
-        <input
-          class="form-input"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your full name"
-          required
-        />
-      </div>
+      <div class="form-content">
 
-      <div class="form-field">
-        <label class="form-label" for="email">Email Address</label>
-        <input
-          class="form-input"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="your@email.com"
-          required
-        />
-      </div>
+        <div class="form-field">
+          <label class="form-label" for="name">Full Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            required
+          />
+        </div>
 
-      <div class="form-field">
-        <label class="form-label" for="subject">Subject</label>
-        <select
-          class="form-select"
-          id="subject"
-          name="subject"
-          required
+        <div class="form-field">
+          <label class="form-label" for="email">Email Address</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="subject">Subject</label>
+          <select
+            class="form-select"
+            id="subject"
+            name="subject"
+            required
+          >
+            <option value="">Choose a subject</option>
+            <option value="Paid Promotion">Paid Promotion</option>
+            <option value="Sponsorship">Sponsorship</option>
+            <option value="Product Recommendation">Product Recommendation</option>
+            <option value="Complaint">Complaint</option>
+            <option value="Website Problem">Website Problem</option>
+            <option value="Question About a Product">Question About a Product</option>
+            <option value="Request Full PDF Literature">Request Full PDF Literature</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="message">Message</label>
+          <textarea
+            class="form-textarea"
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Stylishandhealthy Contact Form Submission"
+        />
+
+        <button
+          type="submit"
+          class="btn btn-f"
+          style="width:100%;margin-top:10px"
         >
-          <option value="">Choose a subject</option>
-          <option value="Paid Promotion">Paid Promotion</option>
-          <option value="Sponsorship">Sponsorship</option>
-          <option value="Product Recommendation">Product Recommendation</option>
-          <option value="Complaint">Complaint</option>
-          <option value="Website Problem">Website Problem</option>
-          <option value="Question About a Product">Question About a Product</option>
-          <option value="Request Full PDF Literature">Request Full PDF Literature</option>
-          <option value="Other">Other</option>
-        </select>
+          Send Message
+        </button>
+
       </div>
 
-      <div class="form-field">
-        <label class="form-label" for="message">Message</label>
-        <textarea
-          class="form-textarea"
-          id="message"
-          name="message"
-          placeholder="Write your message here..."
-          required
-        ></textarea>
+      <div id="contact-success" class="form-status">
+        <div class="form-status-badge">✓</div>
+
+        <h3>Thank you for <em>contacting us.</em></h3>
+
+        <p>
+          Your message has been sent successfully. We will get back to you within 24 hours.
+        </p>
       </div>
 
-      <input
-        type="hidden"
-        name="_subject"
-        value="New Stylishandhealthy Contact Form Submission"
-      />
+      <div id="contact-error" class="form-status">
+        <div class="form-status-badge">!</div>
 
-      <button
-        type="submit"
-        class="btn btn-f"
-        style="width:100%;margin-top:10px"
-      >
-        Send Message
-      </button>
+        <h3>Something went <em>wrong.</em></h3>
+
+        <p>
+          Please try again or email us directly at contact@stylishandhealthy.com.
+        </p>
+      </div>
 
     </form>
 
@@ -405,6 +472,58 @@
 </footer>
 
 <script src="shared.js"></script>
+
+<script>
+  const contactForm = document.getElementById("contact-form");
+  const contactSuccess = document.getElementById("contact-success");
+  const contactError = document.getElementById("contact-error");
+  const formContent = contactForm ? contactForm.querySelector(".form-content") : null;
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector("button[type='submit']");
+      const originalButtonText = submitButton.textContent;
+
+      contactSuccess.style.display = "none";
+      contactError.style.display = "none";
+
+      submitButton.textContent = "Sending...";
+      submitButton.disabled = true;
+
+      const formData = new FormData(contactForm);
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        if (response.ok) {
+          contactForm.reset();
+
+          if (formContent) {
+            formContent.style.display = "none";
+          }
+
+          contactSuccess.style.display = "block";
+        } else {
+          submitButton.textContent = originalButtonText;
+          submitButton.disabled = false;
+          contactError.style.display = "block";
+        }
+      } catch (error) {
+        submitButton.textContent = originalButtonText;
+        submitButton.disabled = false;
+        contactError.style.display = "block";
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
