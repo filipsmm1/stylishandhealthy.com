@@ -40,7 +40,6 @@ body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) sc
 /* ---- WORDMARK BAR ---- */
 .wordmark-bar {
   background: var(--pink) !important;
-  text-align: center !important;
   padding: 0 !important;
   height: 24px !important;
   min-height: 24px !important;
@@ -54,12 +53,17 @@ body.ch #cdot { background: var(--pink-deep); transform: translate(-50%,-50%) sc
   line-height: 0 !important;
 }
 
-.wordmark-bar img {
-  height: 42px !important;
+.wordmark-bar img,
+body .wordmark-bar img {
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: none !important;
   width: auto !important;
   max-width: none !important;
   display: block !important;
-  margin: 0 auto !important;
+  object-fit: contain !important;
+  transform: scale(1.45) !important;
+  transform-origin: center center !important;
 }
 
 /* ---- NAV ---- */
