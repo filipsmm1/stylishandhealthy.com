@@ -1,72 +1,410 @@
-<form action="https://formspree.io/f/xgodvqwl" method="POST" class="contact-form-wrap">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div class="form-field">
-    <label class="form-label" for="name">Full Name</label>
-    <input
-      class="form-input"
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Your full name"
-      required
+  <title>Contact -- Stylishandhealthy.</title>
+  <meta name="description" content="Contact Stylishandhealthy for questions, product recommendations, sponsorships, problems, and general enquiries." />
+
+  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-form-wrap {
+      background: var(--cream-warm);
+      border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px;
+      padding: 40px;
+      border: 1px solid rgba(58,42,34,.07);
+      box-shadow: 0 22px 60px rgba(85,107,62,.08);
+    }
+
+    .form-field {
+      margin-bottom: 18px;
+    }
+
+    .form-label {
+      font-family: var(--body);
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--green-dk);
+      display: block;
+      margin-bottom: 7px;
+      letter-spacing: .03em;
+    }
+
+    .form-input,
+    .form-textarea,
+    .form-select {
+      width: 100%;
+      border: 1.5px solid rgba(85,107,62,.15);
+      background: var(--cream);
+      font-family: var(--body);
+      font-size: .95rem;
+      color: var(--brown);
+      padding: 13px 18px;
+      border-radius: 14px;
+      outline: none;
+      transition: border-color .2s, background .2s, box-shadow .2s;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus,
+    .form-select:focus {
+      border-color: var(--green);
+      background: #fffaf2;
+      box-shadow: 0 0 0 4px rgba(85,107,62,.08);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+      color: var(--brown-lt);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ci-card {
+      background: var(--cream-warm);
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid rgba(58,42,34,.07);
+      transition: transform .25s var(--ease), box-shadow .25s;
+    }
+
+    .ci-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(85,107,62,.08);
+    }
+
+    .ci-label {
+      font-family: var(--body);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--green-lt);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .ci-label::before {
+      content: "";
+      width: 16px;
+      height: 1px;
+      background: var(--green-lt);
+      flex-shrink: 0;
+    }
+
+    .ci-val {
+      font-family: var(--display);
+      font-size: 1.15rem;
+      color: var(--green-dk);
+      line-height: 1.35;
+    }
+
+    .ci-val a {
+      color: var(--green-dk);
+      border-bottom: 1px solid rgba(85,107,62,.25);
+    }
+
+    .ci-sub {
+      font-size: .83rem;
+      color: var(--brown-lt);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .contact-note {
+      background: var(--pink);
+      border-radius: 22px;
+      padding: 24px;
+      border: 1px solid rgba(232,137,154,.18);
+      margin-top: 24px;
+    }
+
+    .contact-note h3 {
+      font-family: var(--display);
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--green-dk);
+      margin-bottom: 8px;
+    }
+
+    .contact-note p {
+      font-size: .9rem;
+      color: var(--brown-lt);
+      line-height: 1.7;
+    }
+
+    @media(max-width:860px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 44px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo_main.png" alt="S&H" />
+  </a>
+
+  <ul>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="journal.html" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+
+  <div class="doodle" style="width:115px;top:18%;right:8%;opacity:.25;transform:rotate(10deg)">
+    <img src="heart1.png" alt="" />
+  </div>
+
+  <div class="sl">Contact</div>
+
+  <h1>Let’s get in <em>touch.</em></h1>
+
+  <p>
+    Questions, product requests, sponsorships, problems, recommendations, or feedback.
+    Send us a message and we will respond within 24 hours.
+  </p>
+</div>
+
+<section class="sec" style="background:var(--cream);position:relative;overflow:hidden">
+  <div class="doodle" style="width:90px;top:8%;left:5%;opacity:.3;transform:rotate(-12deg)">
+    <img src="heart2.png" alt="" />
+  </div>
+
+  <div class="contact-grid">
+
+    <form
+      action="https://formspree.io/f/xgodvqwl"
+      method="POST"
+      class="contact-form-wrap rv"
     >
+
+      <div class="form-field">
+        <label class="form-label" for="name">Full Name</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="email">Email Address</label>
+        <input
+          class="form-input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="subject">Subject</label>
+        <select
+          class="form-select"
+          id="subject"
+          name="subject"
+          required
+        >
+          <option value="">Choose a subject</option>
+          <option value="Paid Promotion">Paid Promotion</option>
+          <option value="Sponsorship">Sponsorship</option>
+          <option value="Product Recommendation">Product Recommendation</option>
+          <option value="Complaint">Complaint</option>
+          <option value="Website Problem">Website Problem</option>
+          <option value="Question About a Product">Question About a Product</option>
+          <option value="Request Full PDF Literature">Request Full PDF Literature</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label class="form-label" for="message">Message</label>
+        <textarea
+          class="form-textarea"
+          id="message"
+          name="message"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+      </div>
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Stylishandhealthy Contact Form Submission"
+      />
+
+      <button
+        type="submit"
+        class="btn btn-f"
+        style="width:100%;margin-top:10px"
+      >
+        Send Message
+      </button>
+
+    </form>
+
+    <div class="contact-info rv d2">
+
+      <div class="ci-card">
+        <div class="ci-label">Email</div>
+        <div class="ci-val">
+          <a href="mailto:contact@stylishandhealthy.com">
+            contact@stylishandhealthy.com
+          </a>
+        </div>
+        <div class="ci-sub">
+          One email for all questions, feedback, problems, recommendations, and sponsorships.
+        </div>
+      </div>
+
+      <div class="ci-card">
+        <div class="ci-label">Response Time</div>
+        <div class="ci-val">Within 24 hours</div>
+        <div class="ci-sub">
+          We try to respond as quickly as possible.
+        </div>
+      </div>
+
+      <div class="ci-card">
+        <div class="ci-label">Sponsorships</div>
+        <div class="ci-val">Open to sponsorships</div>
+        <div class="ci-sub">
+          We are open to sponsorships when the product aligns with our standards, values, and audience.
+        </div>
+      </div>
+
+      <div class="ci-card">
+        <div class="ci-label">Socials</div>
+        <div class="ci-val">
+          Instagram, Pinterest, and TikTok
+        </div>
+        <div class="ci-sub">
+          Instagram: stylishandhealthie<br />
+          Pinterest: stylishandhealthy<br />
+          TikTok: stylish.and.healthy
+        </div>
+      </div>
+
+      <div class="contact-note">
+        <h3>Before you send</h3>
+        <p>
+          If your message is about a product, please include the product name, brand,
+          and what you want us to check. We can look at ingredients, claims,
+          marketing, or whether it is worth recommending.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+
+    <div>
+      <div class="ft-logo">
+        <img src="logo_main.png" alt="S&H" />
+        <span>Stylishandhealthy<em>.</em></span>
+      </div>
+
+      <p class="ft-p">
+        Pretty routines. Smarter choices. A soft corner of the internet for beauty,
+        wellness, and self-improvement.
+      </p>
+
+      <div class="ft-socs">
+        <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
+        <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
+        <a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a>
+        <a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a>
+      </div>
+    </div>
+
+    <div class="ft-col">
+      <h4>Shop</h4>
+      <a href="shop.html">All products</a>
+      <a href="shop.html">Sticker Packs</a>
+      <a href="shop.html">Digital Downloads</a>
+      <a href="shop.html">Clothing</a>
+    </div>
+
+    <div class="ft-col">
+      <h4>Explore</h4>
+      <a href="blog.html">Blog</a>
+      <a href="skincare.html">Skincare Recs</a>
+      <a href="subscribe.html">Subscribe</a>
+      <a href="about.html">About</a>
+      <a href="journal.html">Free Journal</a>
+    </div>
+
+    <div class="ft-col">
+      <h4>Info</h4>
+      <a href="about.html">Our mission</a>
+      <a href="terms.html">Terms of service</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="affiliate.html">Affiliate disclosure</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
   </div>
 
-  <div class="form-field">
-    <label class="form-label" for="email">Email Address</label>
-    <input
-      class="form-input"
-      type="email"
-      id="email"
-      name="email"
-      placeholder="your@email.com"
-      required
-    >
+  <div class="ft-bot">
+    <p>2026 Stylishandhealthy. All rights reserved.</p>
+    <span>Pretty routines. Smarter choices.</span>
   </div>
+</footer>
 
-  <div class="form-field">
-    <label class="form-label" for="subject">Subject</label>
-    <select
-      class="form-input"
-      id="subject"
-      name="subject"
-      required
-    >
-      <option value="">Choose a subject</option>
-      <option>Paid Promotion</option>
-      <option>Sponsorship</option>
-      <option>Product Recommendation</option>
-      <option>Complaint</option>
-      <option>Website Problem</option>
-      <option>Question About a Product</option>
-      <option>Request Full PDF Literature</option>
-      <option>Other</option>
-    </select>
-  </div>
+<script src="shared.js"></script>
 
-  <div class="form-field">
-    <label class="form-label" for="message">Message</label>
-    <textarea
-      class="form-textarea"
-      id="message"
-      name="message"
-      placeholder="Write your message here..."
-      required
-    ></textarea>
-  </div>
-
-  <input
-    type="hidden"
-    name="_subject"
-    value="New Stylishandhealthy Contact Form Submission"
-  >
-
-  <button
-    type="submit"
-    class="btn btn-f"
-    style="width:100%; margin-top:10px;"
-  >
-    Send Message
-  </button>
-
-</form>
+</body>
+</html>
