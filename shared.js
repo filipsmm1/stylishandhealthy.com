@@ -46,12 +46,19 @@ function handleContactMail(e) {
   window.location.href = `mailto:contact@stylishandhealthy.com?subject=${subject}&body=${body}`;
 }
 
-// Active nav link
+// Active nav link — works with clean URL slugs (/blog, /about, etc.)
 (function() {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
+  const segments = window.location.pathname.replace(/\/$/, '').split('/');
+  const slug = segments[segments.length - 1] || '';  // '' = homepage
+
   document.querySelectorAll('nav ul li a').forEach(a => {
     const href = a.getAttribute('href');
-    if (href === path || (path === '' && href === 'index.html')) {
+    // Normalise href: strip leading slash and trailing slash
+    const hSlug = href.replace(/^\//, '').replace(/\/$/, '').replace(/\.html$/, '');
+    // Homepage match
+    if (slug === '' && (hSlug === '' || hSlug === 'index')) {
+      a.classList.add('active');
+    } else if (slug && slug === hSlug) {
       a.classList.add('active');
     }
   });
