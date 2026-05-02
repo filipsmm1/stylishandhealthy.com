@@ -279,20 +279,16 @@
   <div class="jh-right">
     <!-- VIDEO -->
     <div class="video-container" id="videoWrap">
-      <video id="journalVideo" muted playsinline controls preload="metadata" poster="">
-        <source src="assets/video/journal_video.mp4" type="video/mp4" />
-      </video>
-      <!-- Placeholder shown if no video -->
-      <div id="videoPlaceholder" style="height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;text-align:center">
-        <div style="font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(247,241,232,.2);line-height:1">PDF</div>
-        <div style="font-family:var(--display);font-size:1.4rem;color:var(--cream);font-style:italic">Your beautiful<br>wellness planner</div>
-        <div style="font-size:.8rem;color:rgba(247,241,232,.4)">Add /assets/video/journal_video.mp4 to show it here</div>
-      </div>
-      <div class="video-overlay" id="videoOverlay" onclick="toggleVideo()">
-        <div class="play-btn" id="playBtn"><div class="play-icon"></div></div>
-      </div>
+      <iframe
+        id="journalVideo"
+        src="https://www.youtube.com/embed/3AItGa62Hn4?rel=0&modestbranding=1"
+        title="Planner preview"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="width:100%;aspect-ratio:16/9;display:block;border-radius:inherit"
+      ></iframe>
       <div class="video-label">Planner preview</div>
-      <button type="button" class="fullscreen-btn" id="fullscreenBtn" aria-label="Make video full screen" title="Full screen">⛶</button>
     </div>
 
     <!-- FEATURE PILLS -->
@@ -353,41 +349,17 @@
   <h2 class="preview-sh">Pages made for<br><em>intentional living.</em></h2>
   <p class="preview-sub">Here's a glimpse of what you'll find inside. Every page is crafted to make planning feel like a treat, not a task.</p>
   <div class="spreads">
-    <div class="spread">
-      <div class="spread-num">PDF</div>
-      <div class="spread-title"><em>Daily</em> Reflection Page</div>
-      <div class="spread-lines">
-        <div class="spread-line"></div>
-        <div class="spread-line short"></div>
-        <div class="spread-line med"></div>
-        <div class="spread-line"></div>
-        <div class="spread-line short"></div>
-      </div>
-      <div class="spread-pill">Daily</div>
+    <div class="spread" style="padding:0;justify-content:flex-start;gap:0">
+      <img src="assets/images/journal_cover.png" alt="Journal Cover" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" />
+      <div class="spread-pill" style="position:absolute;bottom:16px;left:50%;transform:translateX(-50%)">Cover</div>
     </div>
-    <div class="spread">
-      <div class="spread-num">12</div>
-      <div class="spread-title"><em>Monthly</em> Review Spread</div>
-      <div class="spread-lines">
-        <div class="spread-line"></div>
-        <div class="spread-line med"></div>
-        <div class="spread-line short"></div>
-        <div class="spread-line"></div>
-        <div class="spread-line med"></div>
-      </div>
-      <div class="spread-pill">Monthly</div>
+    <div class="spread" style="padding:0;justify-content:flex-start;gap:0;position:relative">
+      <img src="assets/images/journal_monthly_overview.png" alt="Monthly Overview & Habit Tracker" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" />
+      <div class="spread-pill" style="position:absolute;bottom:16px;left:50%;transform:translateX(-50%)">Monthly</div>
     </div>
-    <div class="spread">
-      <div class="spread-num">52</div>
-      <div class="spread-title"><em>Weekly</em> Wellness Check-in</div>
-      <div class="spread-lines">
-        <div class="spread-line short"></div>
-        <div class="spread-line"></div>
-        <div class="spread-line med"></div>
-        <div class="spread-line short"></div>
-        <div class="spread-line"></div>
-      </div>
-      <div class="spread-pill">Weekly</div>
+    <div class="spread" style="padding:0;justify-content:flex-start;gap:0;position:relative">
+      <img src="assets/images/journal_intentions.png" alt="Monthly Intentions & Reflection" style="width:100%;height:100%;object-fit:cover;border-radius:inherit" />
+      <div class="spread-pill" style="position:absolute;bottom:16px;left:50%;transform:translateX(-50%)">Intentions</div>
     </div>
   </div>
 </section>
@@ -473,72 +445,6 @@
     ro.observe(el);
   });
 
-  const video = document.getElementById('journalVideo');
-  const videoWrap = document.getElementById('videoWrap');
-  const overlay = document.getElementById('videoOverlay');
-  const playBtn = document.getElementById('playBtn');
-  const placeholder = document.getElementById('videoPlaceholder');
-  const fullscreenBtn = document.getElementById('fullscreenBtn');
-
-  let playing = false;
-
-  if (video) {
-    video.controls = true;
-
-    video.addEventListener('loadeddata', () => {
-      if (placeholder) placeholder.style.display = 'none';
-      video.style.display = 'block';
-    });
-
-    video.addEventListener('error', () => {
-      video.style.display = 'none';
-      if (overlay) overlay.style.display = 'none';
-      if (placeholder) placeholder.style.display = 'flex';
-    });
-
-    video.addEventListener('pause', () => {
-      playing = false;
-      if (overlay) overlay.style.opacity = '1';
-      if (playBtn) playBtn.innerHTML = '<div class="play-icon"></div>';
-    });
-
-    video.addEventListener('play', () => {
-      playing = true;
-      if (overlay) overlay.style.opacity = '0';
-      if (playBtn) playBtn.innerHTML = '';
-    });
-  }
-
-  function toggleVideo() {
-    if (!video || video.error || video.readyState === 0) return;
-
-    if (playing) {
-      video.pause();
-    } else {
-      if (placeholder) placeholder.style.display = 'none';
-      video.play().catch(() => {
-        video.style.display = 'none';
-        if (overlay) overlay.style.display = 'none';
-        if (placeholder) placeholder.style.display = 'flex';
-      });
-    }
-  }
-
-  function toggleFullscreen(event) {
-    event.stopPropagation();
-    if (!videoWrap) return;
-
-    if (!document.fullscreenElement) {
-      videoWrap.requestFullscreen?.();
-      if (video && video.readyState > 0) video.play().catch(() => {});
-    } else {
-      document.exitFullscreen?.();
-    }
-  }
-
-  if (fullscreenBtn) {
-    fullscreenBtn.addEventListener('click', toggleFullscreen);
-  }
 
   function startPlannerDownload() {
     // Opening the Google Drive direct-download link in a new tab is the most reliable
