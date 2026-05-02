@@ -9,7 +9,7 @@
 
   <meta name="description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
 
-  <link rel="icon" type="image/png" href="logo_main.png" />
+  <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -18,7 +18,7 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <style>
     .blog-filters {
@@ -63,6 +63,9 @@
       border: 1px solid rgba(58,42,34,.06);
       transition: transform .25s var(--ease), box-shadow .25s;
       cursor: none;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .bc:hover {
@@ -77,6 +80,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      background: var(--pink);
     }
 
     .bc.feat .bc-img {
@@ -122,6 +126,7 @@
       display: flex;
       align-items: center;
       gap: 7px;
+      flex-wrap: wrap;
     }
 
     .bc-dot {
@@ -148,6 +153,18 @@
       gap: 9px;
     }
 
+    /* Safety fix:
+       Your site uses .rv reveal animations in shared.js.
+       If that script fails or the observer does not trigger, content can stay invisible
+       until zooming/resizing forces a reflow. These blog sections should always show. */
+    .blog-filters,
+    .blog-grid,
+    .nw-strip-inner {
+      opacity: 1 !important;
+      transform: none !important;
+      visibility: visible !important;
+    }
+
     @media(max-width:860px) {
       .blog-grid {
         grid-template-columns: 1fr;
@@ -163,7 +180,7 @@
   <meta property="og:title" content="Skincare & Wellness Blog — Stylishandhealthy" />
   <meta property="og:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
   <meta property="og:url" content="https://www.stylishandhealthy.com/blog" />
-  <meta property="og:image" content="https://www.stylishandhealthy.com/youtube_banner.png" />
+  <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Stylishandhealthy" />
@@ -172,11 +189,12 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Skincare & Wellness Blog — Stylishandhealthy" />
   <meta name="twitter:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
-  <meta name="twitter:image" content="https://www.stylishandhealthy.com/youtube_banner.png" />
+  <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
 
   <!-- SEO: Pinterest -->
   <meta name="pinterest:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
-  <meta name="pinterest:media" content="https://www.stylishandhealthy.com/youtube_banner.png" />
+  <meta name="pinterest:media" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -189,9 +207,31 @@
       "name": "Stylishandhealthy",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.stylishandhealthy.com/logo_main.png"
+        "url": "https://www.stylishandhealthy.com/assets/images/logo_main.png"
       }
-    }
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Introduction: What We Stand For",
+        "url": "https://www.stylishandhealthy.com/blog/introduction",
+        "description": "Beauty backed by science. Transparency, honest recommendations, debunking bad products, and stopping misinformation in skincare, beauty, and wellness.",
+        "author": {
+          "@type": "Organization",
+          "name": "Stylishandhealthy"
+        }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "The Truth About Salicylic Acid 2%",
+        "url": "https://www.stylishandhealthy.com/blog/salicylic-acid-2",
+        "description": "A science-backed guide to salicylic acid 2% for acne, blackheads, oily skin, and sensitive skin. Learn which formula to choose and how to use it without wrecking your barrier.",
+        "author": {
+          "@type": "Organization",
+          "name": "Stylishandhealthy"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -201,12 +241,12 @@
 <div id="cdot"></div>
 
 <div class="wordmark-bar">
-  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+  <img src="/assets/images/youtube_banner.png" alt="Stylishandhealthy." />
 </div>
 
 <nav>
   <a href="/" class="nav-logo">
-    <img src="logo_main.png" alt="S&H" />
+    <img src="/assets/images/logo_main.png" alt="S&H" />
   </a>
 
   <ul>
@@ -226,7 +266,7 @@
     class="doodle"
     style="width:120px;top:20%;right:8%;opacity:.25;transform:rotate(10deg)"
   >
-    <img src="heart1.png" alt="" />
+    <img src="/assets/images/heart1.png" alt="" />
   </div>
 
   <div class="sl">From the blog</div>
@@ -249,10 +289,10 @@
     class="doodle"
     style="width:90px;top:6%;right:4%;opacity:.35;transform:rotate(-12deg)"
   >
-    <img src="heart2.png" alt="" />
+    <img src="/assets/images/heart2.png" alt="" />
   </div>
 
-  <div class="blog-filters rv">
+  <div class="blog-filters">
     <button class="bftab on">All</button>
     <button class="bftab">Skincare</button>
     <button class="bftab">Wellness</button>
@@ -261,14 +301,14 @@
     <button class="bftab">Lifestyle</button>
   </div>
 
-  <div class="blog-grid rv">
+  <div class="blog-grid">
 
     <a href="/blog/introduction" class="bc feat">
       <div class="bc-img">
         <div class="bc-cat">Featured</div>
 
         <img
-          src="youtube_banner.png"
+          src="/assets/images/youtube_banner.png"
           alt="Introduction to Stylishandhealthy"
           style="width:100%; height:100%; object-fit:cover;"
         />
@@ -296,6 +336,46 @@
           Beauty backed by science. Transparency, honest recommendations,
           debunking bad products, and stopping misinformation in skincare,
           beauty, and wellness.
+        </p>
+
+        <span class="bc-rd">
+          Read article →
+        </span>
+      </div>
+    </a>
+
+    <a href="/blog/salicylic-acid-2" class="bc">
+      <div class="bc-img">
+        <div class="bc-cat">Skincare</div>
+
+        <img
+          src="/assets/images/youtube_banner.png"
+          alt="The Truth About Salicylic Acid 2%"
+          style="width:100%; height:100%; object-fit:cover;"
+        />
+      </div>
+
+      <div class="bc-body">
+        <h3 class="bc-title">
+          The Truth About Salicylic Acid 2%
+        </h3>
+
+        <div class="bc-meta">
+          <span>Skincare Science</span>
+          <div class="bc-dot"></div>
+          <span>12 min read</span>
+        </div>
+
+        <p
+          style="
+            margin-top:14px;
+            line-height:1.7;
+            color:var(--brown-lt);
+            font-size:.88rem;
+          "
+        >
+          What the research says, which formula to choose, and how to use
+          salicylic acid without damaging your skin barrier.
         </p>
 
         <span class="bc-rd">
@@ -356,10 +436,10 @@
     class="doodle"
     style="width:100px;bottom:12%;right:6%;opacity:.3;transform:rotate(6deg)"
   >
-    <img src="heart3.png" alt="" />
+    <img src="/assets/images/heart3.png" alt="" />
   </div>
 
-  <div class="nw-strip-inner rv">
+  <div class="nw-strip-inner">
     <div class="sl">Never miss a post</div>
 
     <h2>
@@ -398,7 +478,7 @@
 
     <div>
       <div class="ft-logo">
-        <img src="logo_main.png" alt="S&H" />
+        <img src="/assets/images/logo_main.png" alt="S&H" />
         <span>Stylishandhealthy<em>.</em></span>
       </div>
 
@@ -478,7 +558,7 @@
   </div>
 </footer>
 
-<script src="shared.js"></script>
+<script src="/assets/js/shared.js"></script>
 
 <script>
   document.querySelectorAll(".bftab").forEach(t =>

@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="p:domain_verify" content="d52c5a761a8aff55499412bf4194b9c0" />
-  <title>Free Wellness Journal — Stylishandhealthy</title>
-  <meta name="description" content="Download your free wellness and skincare journal from Stylishandhealthy. Track habits, routines, and progress — beautifully designed and completely free." />
-  <link rel="icon" type="image/png" href="logo_main.png" />
+  <title>Free Wellness Planner — Stylishandhealthy</title>
+  <meta name="description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
+  <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
@@ -97,14 +97,19 @@
     /* RIGHT: VIDEO + FEATURES */
     .jh-right{padding:80px 80px 80px 40px;position:relative;z-index:2;display:flex;flex-direction:column;gap:28px;align-items:flex-start}
 
-    .video-container{width:100%;max-width:500px;border-radius:24px 18px 28px 20px / 20px 28px 18px 24px;overflow:hidden;box-shadow:0 30px 80px rgba(58,42,34,.18);position:relative;background:var(--green-dk)}
-    .video-container video{width:100%;height:auto;display:block;border-radius:inherit}
+    .video-container{width:100%;max-width:500px;border-radius:24px 18px 28px 20px / 20px 28px 18px 24px;overflow:hidden;box-shadow:0 20px 48px rgba(58,42,34,.14);position:relative;background:var(--green-dk);contain:layout paint}
+    .video-container video{width:100%;height:auto;display:block;border-radius:inherit;transform:translateZ(0)}
     .video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;cursor:none;background:rgba(58,42,34,.2);transition:background .25s;border-radius:inherit}
     .video-overlay:hover{background:rgba(58,42,34,.05)}
     .play-btn{width:68px;height:68px;border-radius:50%;background:rgba(247,241,232,.92);display:flex;align-items:center;justify-content:center;transition:transform .2s var(--easeb),box-shadow .2s;box-shadow:0 8px 30px rgba(58,42,34,.22)}
     .video-overlay:hover .play-btn{transform:scale(1.08);box-shadow:0 12px 40px rgba(58,42,34,.3)}
     .play-icon{width:0;height:0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:22px solid var(--green-dk);margin-left:4px}
     .video-label{position:absolute;bottom:16px;left:16px;background:rgba(247,241,232,.92);color:var(--green-dk);font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px}
+    .fullscreen-btn{position:absolute;right:16px;bottom:16px;width:38px;height:38px;border:0;border-radius:50%;background:rgba(247,241,232,.92);color:var(--green-dk);font-family:var(--body);font-size:1rem;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:none;z-index:4;transition:transform .2s var(--easeb),background .2s}
+    .fullscreen-btn:hover{transform:scale(1.08);background:var(--cream)}
+    .video-container:fullscreen{max-width:none;width:100vw;height:100vh;border-radius:0;background:#000;display:flex;align-items:center;justify-content:center}
+    .video-container:fullscreen video{width:100%;height:100%;object-fit:contain;border-radius:0}
+    .video-container:fullscreen .video-label{display:none}
 
     /* DOODLES */
     .doodle{position:absolute;pointer-events:none;user-select:none}
@@ -184,6 +189,10 @@
 
     @keyframes blobmorph{0%,100%{border-radius:60% 40% 70% 30% / 50% 60% 40% 70%}33%{border-radius:40% 60% 30% 70% / 60% 40% 70% 30%}66%{border-radius:70% 30% 50% 50% / 30% 70% 50% 60%}}
 
+
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    }
     @media(max-width:860px){.journal-hero{grid-template-columns:1fr}.jh-right{display:none}.jh-left{padding:80px 32px}.inside-grid,.spreads{grid-template-columns:1fr}.inside-section,.preview-section,.proof-section,.bottom-cta{padding:72px 32px}.proof-section{padding:60px 32px}nav{padding:0 24px}nav ul{display:none}body{cursor:auto}#cdot,#cring{display:none}}
   </style>
 
@@ -192,8 +201,8 @@
 
   <!-- SEO: Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Free Wellness Journal — Stylishandhealthy" />
-  <meta property="og:description" content="Download your free wellness and skincare journal from Stylishandhealthy. Track habits, routines, and progress — beautifully designed and completely free." />
+  <meta property="og:title" content="Free Wellness Planner — Stylishandhealthy" />
+  <meta property="og:description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
   <meta property="og:url" content="https://www.stylishandhealthy.com/journal" />
   <meta property="og:image" content="https://www.stylishandhealthy.com/youtube_banner.png" />
   <meta property="og:image:width" content="1200" />
@@ -202,12 +211,12 @@
 
   <!-- SEO: Twitter/X Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Free Wellness Journal — Stylishandhealthy" />
-  <meta name="twitter:description" content="Download your free wellness and skincare journal from Stylishandhealthy. Track habits, routines, and progress — beautifully designed and completely free." />
+  <meta name="twitter:title" content="Free Wellness Planner — Stylishandhealthy" />
+  <meta name="twitter:description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
   <meta name="twitter:image" content="https://www.stylishandhealthy.com/youtube_banner.png" />
 
   <!-- SEO: Pinterest -->
-  <meta name="pinterest:description" content="Download your free wellness and skincare journal from Stylishandhealthy. Track habits, routines, and progress — beautifully designed and completely free." />
+  <meta name="pinterest:description" content="Download your free wellness planner from Stylishandhealthy. Plan your routines, habits, goals, and wellness progress — beautifully designed and completely free." />
   <meta name="pinterest:media" content="https://www.stylishandhealthy.com/youtube_banner.png" />
 </head>
 <body>
@@ -216,13 +225,13 @@
 
 <!-- WORDMARK BAR -->
 <div class="wordmark-bar">
-  <img src="youtube_banner.png" alt="Stylishandhealthy." />
+  <img src="/assets/images/youtube_banner.png" alt="Stylishandhealthy." />
 </div>
 
 <!-- NAV -->
 <nav>
   <a href="/" class="nav-logo">
-    <img src="logo_main.png" alt="S&H" />
+    <img src="/assets/images/logo_main.png" alt="S&H" />
   </a>
   <ul>
     <li><a href="index.html#categories">Topics</a></li>
@@ -239,59 +248,59 @@
   <div class="hero-blob2"></div>
 
   <!-- doodle hearts -->
-  <div class="doodle" style="width:90px;top:12%;right:46%;transform:rotate(12deg);opacity:.4"><img src="heart1.png" alt=""/></div>
-  <div class="doodle" style="width:55px;bottom:15%;left:5%;transform:rotate(-8deg);opacity:.35"><img src="heart2.png" alt=""/></div>
+  <div class="doodle" style="width:90px;top:12%;right:46%;transform:rotate(12deg);opacity:.4"><img src="/assets/images/heart1.png" alt=""/></div>
+  <div class="doodle" style="width:55px;bottom:15%;left:5%;transform:rotate(-8deg);opacity:.35"><img src="/assets/images/heart2.png" alt=""/></div>
 
   <div class="jh-left">
     <div class="free-badge"><div class="dot"></div> Completely free — yours today</div>
-    <h1 class="jh-title">The <em>279 Day</em><br>Journal</h1>
-    <span class="jh-subtitle">Your softness, structured.</span>
-    <p class="jh-desc">279 days of guided self-reflection, habit tracking, wellness check-ins, and daily prompts — beautifully designed to help you grow with intention. Enter your email and it's yours instantly.</p>
+    <h1 class="jh-title">The <em>Wellness</em><br>Planner</h1>
+    <span class="jh-subtitle">Your routines, beautifully planned.</span>
+    <p class="jh-desc">A soft, structured wellness planner for routines, habits, goals, check-ins, and intentional living — beautifully designed to help you stay consistent. Enter your name and email, then download it instantly.</p>
 
     <div class="email-form-wrap" id="formWrap">
-      <h3>Get your free copy</h3>
-      <p>Delivered instantly to your inbox. No spam — just your journal and occasional wellness content.</p>
+      <h3>Get your free planner</h3>
+      <p>Instant download after you enter your details. No spam — just your planner and occasional wellness content.</p>
       <form class="form-row" id="journalForm" onsubmit="handleJournalSub(event)">
         <input class="form-input" type="text" placeholder="First name" required />
         <input class="form-input" type="email" placeholder="your@email.com" required />
         <button class="form-submit" type="submit" id="submitBtn">
-          Send me the journal — it's free
+          Download planner
         </button>
       </form>
       <p class="form-note">No spam, ever. Unsubscribe anytime.</p>
     </div>
     <div class="success-msg" id="successMsg">
       <span class="success-check">•</span>
-      <h3>You're <em>in!</em></h3>
-      <p>Check your inbox — your 279 Day Journal is on its way. Welcome to the community.</p>
+      <h3>Download <em>started!</em></h3>
+      <p>Your planner download should start automatically. If it does not, click the download button again.</p>
     </div>
   </div>
 
   <div class="jh-right">
     <!-- VIDEO -->
     <div class="video-container" id="videoWrap">
-      <video id="journalVideo" loop muted playsinline poster="">
-        <!-- Replace src with your actual video file, e.g., journal_video.mp4 -->
-        <source src="journal_video.mp4" type="video/mp4" />
+      <video id="journalVideo" muted playsinline controls preload="metadata" poster="">
+        <source src="/assets/video/journal_video.mp4" type="video/mp4" />
       </video>
       <!-- Placeholder shown if no video -->
       <div id="videoPlaceholder" style="height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;text-align:center">
-        <div style="font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(247,241,232,.2);line-height:1">279</div>
-        <div style="font-family:var(--display);font-size:1.4rem;color:var(--cream);font-style:italic">Days of beautiful<br>self-reflection</div>
-        <div style="font-size:.8rem;color:rgba(247,241,232,.4)">Add a valid journal_video.mp4 file to show it here</div>
+        <div style="font-family:var(--display);font-size:4rem;font-weight:300;color:rgba(247,241,232,.2);line-height:1">PDF</div>
+        <div style="font-family:var(--display);font-size:1.4rem;color:var(--cream);font-style:italic">Your beautiful<br>wellness planner</div>
+        <div style="font-size:.8rem;color:rgba(247,241,232,.4)">Add /assets/video/journal_video.mp4 to show it here</div>
       </div>
       <div class="video-overlay" id="videoOverlay" onclick="toggleVideo()">
         <div class="play-btn" id="playBtn"><div class="play-icon"></div></div>
       </div>
-      <div class="video-label">Journal preview</div>
+      <div class="video-label">Planner preview</div>
+      <button type="button" class="fullscreen-btn" id="fullscreenBtn" aria-label="Make video full screen" title="Full screen">⛶</button>
     </div>
 
     <!-- FEATURE PILLS -->
     <div class="features">
-      <div class="feat-pill"><div class="feat-pill-check">•</div> 279 daily pages</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Planner pages</div>
       <div class="feat-pill"><div class="feat-pill-check">•</div> Habit tracker</div>
       <div class="feat-pill"><div class="feat-pill-check">•</div> Wellness check-ins</div>
-      <div class="feat-pill"><div class="feat-pill-check">•</div> Guided prompts</div>
+      <div class="feat-pill"><div class="feat-pill-check">•</div> Goal prompts</div>
       <div class="feat-pill"><div class="feat-pill-check">•</div> Monthly reviews</div>
       <div class="feat-pill"><div class="feat-pill-check">•</div> Beautifully designed</div>
     </div>
@@ -300,15 +309,15 @@
 
 <!-- WHAT'S INSIDE -->
 <section class="inside-section">
-  <div class="doodle" style="width:70px;top:6%;right:6%;opacity:.25;transform:rotate(8deg)"><img src="heart3.png" alt=""/></div>
+  <div class="doodle" style="width:70px;top:6%;right:6%;opacity:.25;transform:rotate(8deg)"><img src="/assets/images/heart3.png" alt=""/></div>
   <div class="inside-sl">What's inside</div>
   <h2 class="inside-sh">Everything you need to<br>grow <em>beautifully.</em></h2>
-  <p class="inside-sub">The 279 Day Journal isn't just a diary. It's a structured self-improvement system wrapped in the softest, most intentional design — built for girls who want real progress that feels good.</p>
+  <p class="inside-sub">This Wellness Planner is a soft, structured planning system wrapped in intentional design — built for girls who want real routines, better habits, and progress that feels good.</p>
   <div class="inside-grid">
     <div class="inside-card">
       <div class="inside-num">01</div>
       <div class="inside-title"><em>Daily</em> Pages</div>
-      <p class="inside-desc">Each of 279 days has its own spread: a morning intention, an evening reflection, a gratitude line, and a one-line habit tracker. Simple. Consistent. Beautiful.</p>
+      <p class="inside-desc">Plan your days with space for priorities, routines, wellness notes, and gentle reflections. Simple. Consistent. Beautiful.</p>
     </div>
     <div class="inside-card">
       <div class="inside-num">02</div>
@@ -323,7 +332,7 @@
     <div class="inside-card">
       <div class="inside-num">04</div>
       <div class="inside-title"><em>Guided</em> Prompts</div>
-      <p class="inside-desc">279 unique prompts — no repeats. Ranging from light reflection ("what made me smile today") to deeper thinking ("what belief is holding me back this month").</p>
+      <p class="inside-desc">Soft planning prompts to help you set goals, reset your routines, and stay connected to what matters most.</p>
     </div>
     <div class="inside-card">
       <div class="inside-num">05</div>
@@ -333,7 +342,7 @@
     <div class="inside-card">
       <div class="inside-num">06</div>
       <div class="inside-title"><em>Designed</em> to feel good</div>
-      <p class="inside-desc">Warm cream pages, elegant typography, soft pink accents. The 279 Day Journal is designed to be something you want to open — not something that feels like homework.</p>
+      <p class="inside-desc">Warm cream pages, elegant typography, soft pink accents. The Wellness Planner is designed to be something you want to open — not something that feels like homework.</p>
     </div>
   </div>
 </section>
@@ -341,11 +350,11 @@
 <!-- SPREADS PREVIEW -->
 <section class="preview-section">
   <div class="inside-sl">Inside the journal</div>
-  <h2 class="preview-sh">Three hundred pages of<br><em>intentional living.</em></h2>
-  <p class="preview-sub">Here's a glimpse of what you'll find inside. Every spread is crafted to make the ritual feel like a treat, not a task.</p>
+  <h2 class="preview-sh">Pages made for<br><em>intentional living.</em></h2>
+  <p class="preview-sub">Here's a glimpse of what you'll find inside. Every page is crafted to make planning feel like a treat, not a task.</p>
   <div class="spreads">
     <div class="spread">
-      <div class="spread-num">279</div>
+      <div class="spread-num">PDF</div>
       <div class="spread-title"><em>Daily</em> Reflection Page</div>
       <div class="spread-lines">
         <div class="spread-line"></div>
@@ -385,7 +394,7 @@
 
 <!-- SOCIAL PROOF -->
 <section class="proof-section">
-  <div class="doodle" style="width:80px;bottom:8%;right:8%;opacity:.35;transform:rotate(-6deg)"><img src="heart1.png" alt=""/></div>
+  <div class="doodle" style="width:80px;bottom:8%;right:8%;opacity:.35;transform:rotate(-6deg)"><img src="/assets/images/heart1.png" alt=""/></div>
   <div class="proof-inner">
     <div style="font-size:1.5rem;margin-bottom:16px;letter-spacing:2px;color:#B8763A">★ ★ ★ ★ ★</div>
     <div class="proof-quote">"I've tried so many journals and this is the first one I've actually kept up with for more than two weeks. It doesn't feel like a chore — it genuinely feels like self-care."</div>
@@ -401,20 +410,20 @@
 
 <!-- BOTTOM CTA -->
 <section class="bottom-cta">
-  <div class="doodle" style="width:100px;top:8%;left:6%;opacity:.2;transform:rotate(-10deg)"><img src="heart2.png" alt=""/></div>
-  <h2 class="bc-sh">Get the <em>279 Day Journal</em></h2>
+  <div class="doodle" style="width:100px;top:8%;left:6%;opacity:.2;transform:rotate(-10deg)"><img src="/assets/images/heart2.png" alt=""/></div>
+  <h2 class="bc-sh">Get the <em>Wellness Planner</em></h2>
   <span class="bc-hand">It's completely free.</span>
   <form class="bc-form" id="bottomForm" onsubmit="handleBottomSub(event)">
     <input type="email" placeholder="your@email.com" required />
-    <button type="submit" class="btn btn-wh" id="bottomBtn">Get it free</button>
+    <button type="submit" class="btn btn-wh" id="bottomBtn">Download planner</button>
   </form>
-  <p class="bc-note">No spam. Unsubscribe anytime. Just your free journal.</p>
+  <p class="bc-note">No spam. Unsubscribe anytime. Just your free planner.</p>
 </section>
 
 <!-- FOOTER -->
 <footer class="jfooter">
   <div class="jfooter-logo">
-    <img src="logo_main.png" alt="S&H" />
+    <img src="/assets/images/logo_main.png" alt="S&H" />
     <span>Stylishandhealthy.</span>
   </div>
   <p>© 2026 Stylishandhealthy. All rights reserved.</p>
@@ -422,78 +431,156 @@
 </footer>
 
 <script>
+  const DOWNLOAD_URL = 'https://drive.google.com/uc?export=download&id=1GNftxj11_5lQRlspUldTTKPGJnbHGeDP';
+
   const cdot = document.getElementById('cdot');
-  if (cdot) {
+  if (cdot && window.matchMedia('(pointer:fine)').matches) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let cursorTicking = false;
+
     document.addEventListener('mousemove', e => {
-      cdot.style.left = e.clientX + 'px';
-      cdot.style.top = e.clientY + 'px';
-    });
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      if (!cursorTicking) {
+        window.requestAnimationFrame(() => {
+          cdot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+          cursorTicking = false;
+        });
+        cursorTicking = true;
+      }
+    }, { passive: true });
+
     document.querySelectorAll('a,button,input,.feat-pill,.inside-card,.spread').forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('ch'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('ch'));
     });
   }
 
-  const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';ro.unobserve(e.target)}}),{threshold:.1});
-  document.querySelectorAll('.inside-card,.spread,.feat-pill').forEach((el,i)=>{
-    el.style.opacity='0';el.style.transform='translateY(20px)';
-    el.style.transition=`opacity .6s ease ${i*.06}s, transform .6s ease ${i*.06}s`;
+  const ro = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      ro.unobserve(entry.target);
+    }
+  }), { threshold: .1 });
+
+  document.querySelectorAll('.inside-card,.spread,.feat-pill').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = `opacity .6s ease ${i * .06}s, transform .6s ease ${i * .06}s`;
     ro.observe(el);
   });
 
-  let playing = false;
   const video = document.getElementById('journalVideo');
+  const videoWrap = document.getElementById('videoWrap');
   const overlay = document.getElementById('videoOverlay');
   const playBtn = document.getElementById('playBtn');
   const placeholder = document.getElementById('videoPlaceholder');
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+  let playing = false;
 
   if (video) {
-    video.addEventListener('loadeddata', () => { placeholder.style.display = 'none'; video.style.display = 'block'; });
-    video.addEventListener('error', () => { video.style.display = 'none'; overlay.style.display = 'none'; placeholder.style.display = 'flex'; });
+    video.controls = true;
+
+    video.addEventListener('loadeddata', () => {
+      if (placeholder) placeholder.style.display = 'none';
+      video.style.display = 'block';
+    });
+
+    video.addEventListener('error', () => {
+      video.style.display = 'none';
+      if (overlay) overlay.style.display = 'none';
+      if (placeholder) placeholder.style.display = 'flex';
+    });
+
+    video.addEventListener('pause', () => {
+      playing = false;
+      if (overlay) overlay.style.opacity = '1';
+      if (playBtn) playBtn.innerHTML = '<div class="play-icon"></div>';
+    });
+
+    video.addEventListener('play', () => {
+      playing = true;
+      if (overlay) overlay.style.opacity = '0';
+      if (playBtn) playBtn.innerHTML = '';
+    });
   }
 
   function toggleVideo() {
     if (!video || video.error || video.readyState === 0) return;
+
     if (playing) {
       video.pause();
-      playing = false;
-      overlay.style.opacity = '1';
-      playBtn.innerHTML = '<div class="play-icon"></div>';
     } else {
-      placeholder.style.display = 'none';
-      video.play().then(() => {
-        playing = true;
-        overlay.style.opacity = '0';
-        playBtn.innerHTML = '';
-      }).catch(() => {
+      if (placeholder) placeholder.style.display = 'none';
+      video.play().catch(() => {
         video.style.display = 'none';
-        overlay.style.display = 'none';
-        placeholder.style.display = 'flex';
+        if (overlay) overlay.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'flex';
       });
     }
   }
-  // Form handlers
+
+  function toggleFullscreen(event) {
+    event.stopPropagation();
+    if (!videoWrap) return;
+
+    if (!document.fullscreenElement) {
+      videoWrap.requestFullscreen?.();
+      if (video && video.readyState > 0) video.play().catch(() => {});
+    } else {
+      document.exitFullscreen?.();
+    }
+  }
+
+  if (fullscreenBtn) {
+    fullscreenBtn.addEventListener('click', toggleFullscreen);
+  }
+
+  function startPlannerDownload() {
+    // Opening the Google Drive direct-download link in a new tab is the most reliable
+    // way to trigger downloads from Drive without the browser blocking it.
+    window.open(DOWNLOAD_URL, '_blank', 'noopener');
+  }
+
   function handleJournalSub(e) {
     e.preventDefault();
+
+    const form = e.target;
     const btn = document.getElementById('submitBtn');
-    btn.textContent = 'Sending...';
+
+    btn.textContent = 'Download';
+    btn.disabled = true;
     btn.style.background = 'var(--green-lt)';
+
+    startPlannerDownload();
+
     setTimeout(() => {
       document.getElementById('formWrap').style.display = 'none';
       document.getElementById('successMsg').style.display = 'block';
-    }, 1200);
+      form.reset();
+    }, 700);
   }
 
   function handleBottomSub(e) {
     e.preventDefault();
+
     const btn = document.getElementById('bottomBtn');
-    btn.textContent = "You're in!";
+    btn.textContent = 'Download';
+    btn.disabled = true;
     btn.style.background = 'var(--green-lt)';
+
+    startPlannerDownload();
+
     setTimeout(() => {
-      btn.textContent = 'Get it free';
+      btn.textContent = 'Download planner';
+      btn.disabled = false;
       btn.style.background = '';
       e.target.reset();
-    }, 3000);
+    }, 2500);
   }
 </script>
 </body>
