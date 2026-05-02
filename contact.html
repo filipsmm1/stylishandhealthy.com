@@ -259,9 +259,8 @@
 
     <form
       id="contact-form"
-      action="https://formspree.io/f/xgodvqwl"
-      method="POST"
       class="contact-form-wrap rv"
+      onsubmit="sendContact(event)"
     >
 
       <div class="form-content">
@@ -474,54 +473,46 @@
 <script src="shared.js"></script>
 
 <script>
-  const contactForm = document.getElementById("contact-form");
-  const contactSuccess = document.getElementById("contact-success");
-  const contactError = document.getElementById("contact-error");
-  const formContent = contactForm ? contactForm.querySelector(".form-content") : null;
+  async function sendContact(event) {
+    event.preventDefault();
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", async function(event) {
-      event.preventDefault();
+    const form = document.getElementById("contact-form");
+    const formContent = form.querySelector(".form-content");
+    const successMessage = document.getElementById("contact-success");
+    const errorMessage = document.getElementById("contact-error");
+    const submitButton = form.querySelector("button[type='submit']");
 
-      const submitButton = contactForm.querySelector("button[type='submit']");
-      const originalButtonText = submitButton.textContent;
+    successMessage.style.display = "none";
+    errorMessage.style.display = "none";
 
-      contactSuccess.style.display = "none";
-      contactError.style.display = "none";
+    submitButton.textContent = "Sending...";
+    submitButton.disabled = true;
 
-      submitButton.textContent = "Sending...";
-      submitButton.disabled = true;
+    const formData = new FormData(form);
 
-      const formData = new FormData(contactForm);
-
-      try {
-        const response = await fetch(contactForm.action, {
-          method: "POST",
-          body: formData,
-          headers: {
-            "Accept": "application/json"
-          }
-        });
-
-        if (response.ok) {
-          contactForm.reset();
-
-          if (formContent) {
-            formContent.style.display = "none";
-          }
-
-          contactSuccess.style.display = "block";
-        } else {
-          submitButton.textContent = originalButtonText;
-          submitButton.disabled = false;
-          contactError.style.display = "block";
+    try {
+      const response = await fetch("https://formspree.io/f/xgodvqwl", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
         }
-      } catch (error) {
-        submitButton.textContent = originalButtonText;
+      });
+
+      if (response.ok) {
+        form.reset();
+        formContent.style.display = "none";
+        successMessage.style.display = "block";
+      } else {
+        submitButton.textContent = "Send Message";
         submitButton.disabled = false;
-        contactError.style.display = "block";
+        errorMessage.style.display = "block";
       }
-    });
+    } catch (error) {
+      submitButton.textContent = "Send Message";
+      submitButton.disabled = false;
+      errorMessage.style.display = "block";
+    }
   }
 </script>
 
