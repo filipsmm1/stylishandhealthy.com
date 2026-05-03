@@ -78,7 +78,6 @@
       background: rgba(247,241,232,.04);
       pointer-events: none;
     }
-    /* Both journal strip and about use the same 2-col grid */
     .js-inner,
     .about-inner {
       display: grid;
@@ -92,7 +91,6 @@
     .js-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,241,232,.1); border: 1px solid rgba(247,241,232,.2); border-radius: 100px; padding: 7px 18px; margin-bottom: 16px; }
     .js-badge span { font-family: var(--hand2); font-size: .95rem; color: var(--pink-mid); }
 
-    /* Slideshow — fills the left column */
     .js-slideshow { margin-top: 28px; width: 100%; position: relative; }
     .js-slides { position: relative; width: 100%; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.45); background: var(--green); }
     .js-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; will-change: opacity; }
@@ -102,7 +100,6 @@
     .js-dot.active { background: var(--pink-mid); transform: scale(1.3); }
     .js-cta { margin-top: 24px; }
 
-    /* ---- ABOUT — seamless continuation of dark green ---- */
     #about { background: var(--green-dk); padding: 0 80px 96px; position: relative; overflow: hidden; }
     .ast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
     .ast { background: rgba(247,241,232,.04); border: 1px solid rgba(247,241,232,.07); padding: 34px 26px; transition: background .2s; }
@@ -153,7 +150,7 @@
     .tc-name { font-family: var(--body); font-size: .83rem; font-weight: 600; color: var(--green-dk); }
     .tc-handle { font-size: .73rem; color: var(--brown-lt); }
 
-    /* ---- PINTEREST (moved to bottom) ---- */
+    /* ---- PINTEREST ---- */
     .pinterest-strip {
       background: var(--cream-warm);
       padding: 72px 80px;
@@ -250,6 +247,7 @@
   {"@context":"https://schema.org","@type":"WebSite","name":"Stylishandhealthy","url":"https://www.stylishandhealthy.com","description":"Research-backed skincare, wellness habits, and self-improvement content that actually makes sense.","potentialAction":{"@type":"SearchAction","target":"https://www.stylishandhealthy.com/blog?q={search_term_string}","query-input":"required name=search_term_string"}}
   </script>
 </head>
+
 <body>
 
 <div id="cdot"></div>
@@ -275,17 +273,24 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-shape"></div>
-  <div class="doodle" style="width:130px;top:18%;right:8%;transform:rotate(12deg)"><img src="/assets/images/heart1.png" alt="" /></div>
-  <div class="doodle" style="width:80px;bottom:22%;left:6%;transform:rotate(-8deg);opacity:.35"><img src="/assets/images/heart2.png" alt="" /></div>
+  <div class="doodle" style="width:130px;top:18%;right:8%;transform:rotate(12deg)">
+    <img src="/assets/images/heart1.png" alt="" />
+  </div>
+  <div class="doodle" style="width:80px;bottom:22%;left:6%;transform:rotate(-8deg);opacity:.35">
+    <img src="/assets/images/heart2.png" alt="" />
+  </div>
+
   <div class="hero-left">
     <div class="eyebrow">Wellness - Skincare - Style - Self-Growth</div>
     <h1 class="h1">Pretty <em>routines.</em><br>Smarter choices.</h1>
     <span class="h1-sub">Where soft aesthetics meet real science.</span>
     <p class="hero-p">Research-backed skincare, wellness habits, and self-improvement content designed to feel as beautiful as it is useful. No trends. No pressure. Just real, gentle progress.</p>
+
     <div class="hero-actions">
       <a href="/shop" class="btn btn-f">Explore the shop</a>
       <a href="/subscribe" class="btn btn-o">Weekly skincare deepdive</a>
     </div>
+
     <div class="hero-proof">
       <div class="pavs">
         <div class="pav pa1">S</div>
@@ -295,6 +300,7 @@
       <p class="proof-t">Trusted by 10,000+ who want beauty and wellness to feel real.</p>
     </div>
   </div>
+
   <div class="hero-right">
     <div class="hcards">
       <div class="hc hc1">
@@ -321,7 +327,7 @@
   </div>
 </div>
 
-<!-- BRAND AD — autoplays, 16:9, right after ticker -->
+<!-- BRAND AD -->
 <section id="brand-ad" aria-label="About Stylish and Healthy">
   <iframe
     src="/assets/video/brand_ad.html"
@@ -332,11 +338,15 @@
   ></iframe>
 </section>
 
-<!-- JOURNAL STRIP -->
+<!-- JOURNAL STRIP / WELLNESS PLANNER -->
 <div class="journal-strip">
-  <div class="doodle" style="width:100px;bottom:10%;right:5%;opacity:.4;transform:rotate(-4deg)"><img src="/assets/images/heart3.png" alt="" /></div>
+  <div class="doodle" style="width:100px;bottom:10%;right:5%;opacity:.4;transform:rotate(-4deg)">
+    <img src="/assets/images/heart3.png" alt="" />
+  </div>
+
   <div class="js-inner">
-    <!-- LEFT: slideshow -->
+
+    <!-- LEFT: slideshow + button only -->
     <div>
       <div class="js-slideshow" id="jsSlideshow">
         <div class="js-slides">
@@ -344,51 +354,88 @@
           <img src="/assets/images/journal_monthly_overview.png" alt="Monthly overview" class="js-slide" />
           <img src="/assets/images/journal_intentions.png" alt="Intentions page" class="js-slide" />
         </div>
+
         <div class="js-dots">
           <span class="js-dot active"></span>
           <span class="js-dot"></span>
           <span class="js-dot"></span>
         </div>
       </div>
-    </div>
-    <!-- RIGHT: text + button -->
-    <div style="display:flex;flex-direction:column;justify-content:center;">
-      <div class="js-badge"><span>completely free -- just your email</span></div>
-      <h3 style="font-family:var(--display);font-size:2.2rem;font-weight:400;color:var(--cream);margin-bottom:8px;line-height:1.15;">Get the <em style="font-style:italic;color:var(--pink-mid)">2026 Wellness Planner</em> — Free</h3>
-      <p style="font-size:.95rem;color:rgba(247,241,232,.58);line-height:1.7;margin-bottom:0;">Daily pages, habit tracker, monthly reviews, wellness check-ins, and guided prompts — beautifully designed and yours instantly.</p>
-      <div style="margin-top:28px;">
+
+      <div style="margin-top:24px;text-align:center;">
         <a href="/journal" class="btn btn-f" style="font-size:1rem;padding:16px 36px;white-space:nowrap">Get it →</a>
       </div>
     </div>
+
+    <!-- RIGHT: all text + squares + feature boxes -->
+    <div class="about-copy rv d2" style="display:flex;flex-direction:column;justify-content:center;">
+      <div class="js-badge">
+        <span>completely free — just your email</span>
+      </div>
+
+      <div class="sl">The 2026 Wellness Planner</div>
+
+      <h2 class="sh">Your routines, <em>beautifully</em> planned.</h2>
+
+      <p style="margin-top:18px">
+        A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, wellness check-ins, and guided prompts, wrapped in a design you'll actually want to open.
+      </p>
+
+      <div class="ast-grid rv" style="margin-top:30px;">
+        <div class="ast">
+          <div class="ast-n">6</div>
+          <div class="ast-l">Sections inside</div>
+        </div>
+
+        <div class="ast">
+          <div class="ast-n">100%</div>
+          <div class="ast-l">Free — no card needed</div>
+        </div>
+
+        <div class="ast">
+          <div class="ast-n">✦</div>
+          <div class="ast-l">Beautifully designed</div>
+        </div>
+
+        <div class="ast">
+          <div class="ast-n">∞</div>
+          <div class="ast-l">Days of guided planning</div>
+        </div>
+      </div>
+
+      <div class="aps">
+        <div class="ap">
+          <div>
+            <div class="ap-t">Daily pages</div>
+            <div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div>
+          </div>
+        </div>
+
+        <div class="ap">
+          <div>
+            <div class="ap-t">Habit tracker</div>
+            <div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div>
+          </div>
+        </div>
+
+        <div class="ap">
+          <div>
+            <div class="ap-t">Monthly reviews</div>
+            <div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- ABOUT — stats LEFT, copy RIGHT -->
-<section id="about">
-  <div class="doodle" style="width:110px;top:10%;right:5%;opacity:.25;transform:rotate(8deg)"><img src="/assets/images/heart1.png" alt="" /></div>
-  <div class="about-inner">
-    <div class="ast-grid rv">
-      <div class="ast"><div class="ast-n">6</div><div class="ast-l">Sections inside</div></div>
-      <div class="ast"><div class="ast-n">100%</div><div class="ast-l">Free — no card needed</div></div>
-      <div class="ast"><div class="ast-n">✦</div><div class="ast-l">Beautifully designed</div></div>
-      <div class="ast"><div class="ast-n">∞</div><div class="ast-l">Days of guided planning</div></div>
-    </div>
-    <div class="about-copy rv d2">
-      <div class="sl">The 2026 Wellness Planner</div>
-      <h2 class="sh">Your routines, <em>beautifully</em> planned.</h2>
-      <p style="margin-top:18px">A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, and wellness check-ins, wrapped in a design you'll actually want to open.</p>
-      <div class="aps">
-        <div class="ap"><div><div class="ap-t">Daily pages</div><div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div></div></div>
-        <div class="ap"><div><div class="ap-t">Habit tracker</div><div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div></div></div>
-        <div class="ap"><div><div class="ap-t">Monthly reviews</div><div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CATEGORIES -->
 <section id="categories" class="sec">
-  <div class="doodle" style="width:85px;top:8%;right:10%;transform:rotate(-15deg);opacity:.4"><img src="/assets/images/heart2.png" alt="" /></div>
+  <div class="doodle" style="width:85px;top:8%;right:10%;transform:rotate(-15deg);opacity:.4">
+    <img src="/assets/images/heart2.png" alt="" />
+  </div>
+
   <div class="cats-hdr rv">
     <div>
       <div class="sl">What we cover</div>
@@ -396,6 +443,7 @@
     </div>
     <a href="/subscribe" class="btn btn-o">Join for free</a>
   </div>
+
   <div class="cats-grid">
     <div class="cat tall dark rv">
       <div class="cat-label">Deep dives</div>
@@ -403,24 +451,28 @@
       <div class="cat-desc">Ingredient breakdowns, routine guides, and the science behind serums, acids, and moisturisers -- explained simply.</div>
       <a href="/skincare" class="cat-arr">Read</a>
     </div>
+
     <div class="cat rv d1">
       <div class="cat-label">Wellness</div>
       <div class="cat-title">Habits and Health</div>
       <div class="cat-desc">Sleep, hydration, movement, and mindset -- proven by science, brought to you simply.</div>
       <a href="/blog" class="cat-arr">Explore</a>
     </div>
+
     <div class="cat rv d2">
       <div class="cat-label">Self-growth</div>
       <div class="cat-title">Journaling and Mindset</div>
       <div class="cat-desc">Prompts, frameworks, and reflections to help you think clearly and grow with intention.</div>
       <a href="/blog" class="cat-arr">Read</a>
     </div>
+
     <div class="cat pink-bg rv d1">
       <div class="cat-label">Organisation</div>
       <div class="cat-title">Systems and Planning</div>
       <div class="cat-desc">Digital planners, habit trackers, and routine builders that make life feel calm and structured.</div>
       <a href="/shop" class="cat-arr">Explore</a>
     </div>
+
     <div class="cat rv d2">
       <div class="cat-label">Aesthetic</div>
       <div class="cat-title">Lifestyle and Routines</div>
@@ -432,7 +484,10 @@
 
 <!-- TESTIMONIALS -->
 <section id="testimonials">
-  <div class="doodle" style="width:150px;top:10%;left:5%;opacity:.25;transform:rotate(-8deg)"><img src="/assets/images/heart1.png" alt="" /></div>
+  <div class="doodle" style="width:150px;top:10%;left:5%;opacity:.25;transform:rotate(-8deg)">
+    <img src="/assets/images/heart1.png" alt="" />
+  </div>
+
   <div class="sl rv">Reviews</div>
   <h2 class="sh rv d2">No reviews <em>yet.</em></h2>
   <p class="sp rv d3" style="max-width:560px">Reviews will appear here once customers and readers start sharing their experiences.</p>
@@ -443,17 +498,20 @@
   <div class="sl rv">Latest posts</div>
   <h2 class="sh rv d2">A few things we are sharing <em>right now.</em></h2>
   <p class="sp rv d3">Follow along for beauty, wellness, product finds, and soft self-improvement content.</p>
+
   <div class="post-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px">
     <a class="post-card rv" href="https://www.instagram.com/stylishandhealthie" target="_blank" rel="noopener" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block">
       <div class="sl" style="margin-bottom:16px">Instagram</div>
       <h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Outfit, skincare, and routine inspiration</h3>
       <p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">@stylishandhealthie</p>
     </a>
+
     <a class="post-card rv d2" href="https://www.pinterest.com/stylishandhealthy" target="_blank" rel="noopener" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block">
       <div class="sl" style="margin-bottom:16px">Pinterest</div>
       <h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Boards for routines, beauty, and lifestyle</h3>
       <p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">stylishandhealthy</p>
     </a>
+
     <a class="post-card rv d3" href="https://www.tiktok.com/@stylish.and.healthy" target="_blank" rel="noopener" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block">
       <div class="sl" style="margin-bottom:16px">TikTok</div>
       <h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Quick tips, product finds, and daily motivation</h3>
@@ -462,7 +520,7 @@
   </div>
 </section>
 
-<!-- PINTEREST STRIP (moved to bottom, before newsletter) -->
+<!-- PINTEREST STRIP -->
 <section class="pinterest-strip" aria-labelledby="pinterest-title">
   <div class="pin-strip-head">
     <div>
@@ -472,6 +530,7 @@
     </div>
     <a href="https://www.pinterest.com/stylishandhealthy" class="pin-follow" target="_blank" rel="noopener">Follow on Pinterest &rarr;</a>
   </div>
+
   <div class="pin-widget-wrap">
     <a
       data-pin-do="embedUser"
@@ -485,15 +544,20 @@
 
 <!-- NEWSLETTER -->
 <section class="nw-strip">
-  <div class="doodle" style="width:120px;bottom:15%;right:8%;opacity:.3;transform:rotate(5deg)"><img src="/assets/images/heart3.png" alt="" /></div>
+  <div class="doodle" style="width:120px;bottom:15%;right:8%;opacity:.3;transform:rotate(5deg)">
+    <img src="/assets/images/heart3.png" alt="" />
+  </div>
+
   <div class="nw-strip-inner rv">
     <div class="sl">Join the community</div>
     <h2>Pretty routines, delivered to your <em>inbox.</em></h2>
     <p>Free skincare guides, wellness tips, and exclusive downloads. No spam, ever.</p>
+
     <form class="nw-form" onsubmit="handleNwSub(event)">
       <input type="email" placeholder="your@email.com" required />
       <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Join free</button>
     </form>
+
     <p class="nw-note">No spam. Unsubscribe anytime.</p>
   </div>
 </section>
@@ -505,9 +569,17 @@
         <img src="/assets/images/logo_main.png" alt="S&H" />
         <span>Stylishandhealthy<em>.</em></span>
       </div>
+
       <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
-      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
+
+      <div class="ft-socs">
+        <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
+        <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
+        <a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a>
+        <a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a>
+      </div>
     </div>
+
     <div class="ft-col">
       <h4>Shop</h4>
       <a href="/shop">All products</a>
@@ -516,6 +588,7 @@
       <a href="/shop">Clothing</a>
       <a href="/shop">Accessories</a>
     </div>
+
     <div class="ft-col">
       <h4>Explore</h4>
       <a href="/blog">Blog</a>
@@ -524,6 +597,7 @@
       <a href="/about">About</a>
       <a href="/journal">Free Journal</a>
     </div>
+
     <div class="ft-col">
       <h4>Info</h4>
       <a href="/about">Our mission</a>
@@ -533,6 +607,7 @@
       <a href="/contact">Contact</a>
     </div>
   </div>
+
   <div class="ft-bot">
     <p>2026 Stylishandhealthy. All rights reserved.</p>
     <span>Pretty routines. Smarter choices.</span>
@@ -541,23 +616,31 @@
 
 <script src="/assets/js/shared.js"></script>
 <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+
 <script>
 // Planner slideshow
 (function() {
   const slides = document.querySelectorAll('.js-slide');
   const dots   = document.querySelectorAll('.js-dot');
   if (!slides.length) return;
+
   let cur = 0;
+
   function go(n) {
     slides[cur].classList.remove('active');
     dots[cur].classList.remove('active');
+
     cur = (n + slides.length) % slides.length;
+
     slides[cur].classList.add('active');
     dots[cur].classList.add('active');
   }
+
   dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
+
   setInterval(() => go(cur + 1), 3200);
 })();
 </script>
+
 </body>
 </html>
