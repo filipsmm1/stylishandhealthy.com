@@ -37,7 +37,16 @@
     @media(max-width:860px) { .sub-grid{grid-template-columns:1fr;max-width:440px} }
   </style>
 
-  <!-- SEO: Canonical -->
+  <!-- Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <style>
+    .stripe-loading { display:none; position:fixed; inset:0; z-index:9999; background:rgba(247,241,232,.85); backdrop-filter:blur(8px); align-items:center; justify-content:center; flex-direction:column; gap:16px; }
+    .stripe-loading.show { display:flex; }
+    .stripe-spinner { width:44px; height:44px; border:3px solid rgba(85,107,62,.2); border-top-color:var(--green); border-radius:50%; animation:spin .7s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .stripe-loading p { font-family:var(--body); font-size:.9rem; color:var(--green-dk); }
+    .sub-cta:disabled { opacity:.6; cursor:not-allowed; transform:none !important; }
+  </style>
   <link rel="canonical" href="https://www.stylishandhealthy.com/subscribe" />
 
   <!-- SEO: Open Graph -->
@@ -170,6 +179,90 @@
   <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
 </footer>
 
+<div class="stripe-loading" id="stripeLoader">
+  <div class="stripe-spinner"></div>
+  <p>Redirecting to secure checkout…</p>
+</div>
+
 <script src="/assets/js/shared.js"></script>
+<script>
+(function() {
+  const STRIPE_PK = 'pk_live_51RAcM8GBf9GhZ05NpBkiWT251qkeuGyVPNkL95NIxzrt3OnYISzsFYZSMiNEg1ldEbMFDV25WyHCKuXXJp0TCTk200jRRRaf7r';
+
+  // Map plan labels to Stripe price IDs — replace these with your real price IDs from Stripe dashboard
+  // You need to create Products & Prices in your Stripe dashboard and paste the price_xxx IDs below
+  const PLANS = {
+    'starter':    null,           // free plan — just newsletter signup
+    'deepdive':   'PRICE_ID_DEEPDIVE',   // $6/mo — replace with your price_xxx ID
+    'fullaccess': 'PRICE_ID_FULLACCESS', // $12/mo — replace with your price_xxx ID
+  };
+
+  const stripe = Stripe(STRIPE_PK);
+  const loader = document.getElementById('stripeLoader');
+
+  function showLoader() { loader.classList.add('show'); }
+
+  async function startCheckout(priceId, btn) {
+    btn.disabled = true;
+    const origText = btn.textContent;
+    btn.textContent = 'Redirecting…';
+    showLoader();
+
+    try {
+      const { error } = await stripe.redirectToCheckout({
+        lineItems: [{ price: priceId, quantity: 1 }],
+        mode: 'subscription',
+        successUrl: window.location.origin + '/subscribe?success=1',
+        cancelUrl: window.location.href,
+      });
+      if (error) {
+        alert('Something went wrong: ' + error.message);
+        loader.classList.remove('show');
+        btn.disabled = false;
+        btn.textContent = origText;
+      }
+    } catch(e) {
+      alert('Could not connect to checkout. Please try again.');
+      loader.classList.remove('show');
+      btn.disabled = false;
+      btn.textContent = origText;
+    }
+  }
+
+  // Wire up buttons
+  document.querySelectorAll('.sub-cta').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const card = btn.closest('.subc');
+      const badge = card.querySelector('.sub-badge');
+      const tier = badge ? badge.textContent.trim().toLowerCase() : '';
+
+      if (tier.includes('free') || tier.includes('starter')) {
+        // Free plan — scroll to newsletter form
+        document.querySelector('.nw-strip').scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+
+      const planKey = tier.includes('popular') || tier.includes('deepdive') ? 'deepdive' : 'fullaccess';
+      const priceId = PLANS[planKey];
+
+      if (!priceId || priceId.startsWith('PRICE_ID')) {
+        alert('Checkout is being set up. Please check back soon, or contact us at contact@stylishandhealthy.com');
+        return;
+      }
+
+      await startCheckout(priceId, btn);
+    });
+  });
+
+  // Show success message if redirected back after payment
+  if (new URLSearchParams(window.location.search).get('success') === '1') {
+    const banner = document.createElement('div');
+    banner.style.cssText = 'position:fixed;top:80px;left:50%;transform:translateX(-50%);background:var(--green);color:var(--cream);font-family:var(--body);font-size:.92rem;font-weight:600;padding:14px 28px;border-radius:100px;z-index:9998;box-shadow:0 10px 30px rgba(85,107,62,.25);';
+    banner.textContent = '🎉 Welcome! Your subscription is active.';
+    document.body.appendChild(banner);
+    setTimeout(() => banner.remove(), 6000);
+  }
+})();
+</script>
 </body>
 </html>
