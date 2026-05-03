@@ -303,7 +303,7 @@
 
   <div class="blog-grid">
 
-    <a href="/blog/introduction" class="bc feat">
+    <a href="/blog/introduction" class="bc feat" data-category="all">
       <div class="bc-img">
         <div class="bc-cat">Featured</div>
 
@@ -344,7 +344,7 @@
       </div>
     </a>
 
-    <a href="/blog/salicylic-acid-2" class="bc">
+    <a href="/blog/salicylic-acid-2" class="bc" data-category="skincare">
       <div class="bc-img">
         <div class="bc-cat">Skincare</div>
 
@@ -384,7 +384,7 @@
       </div>
     </a>
 
-    <div class="bc">
+    <div class="bc" data-category="skincare">
       <div class="bc-img">
         <div class="bc-cat">Coming Soon</div>
       </div>
@@ -406,7 +406,7 @@
       </div>
     </div>
 
-    <div class="bc">
+    <div class="bc" data-category="wellness">
       <div class="bc-img">
         <div class="bc-cat">Coming Soon</div>
       </div>
@@ -561,12 +561,21 @@
 <script src="/assets/js/shared.js"></script>
 
 <script>
-  document.querySelectorAll(".bftab").forEach(t =>
-    t.addEventListener("click", () => {
-      document.querySelectorAll(".bftab")
-        .forEach(x => x.classList.remove("on"));
+  const tabs = document.querySelectorAll(".bftab");
+  const cards = document.querySelectorAll(".blog-grid .bc, .blog-grid a.bc");
 
+  tabs.forEach(t =>
+    t.addEventListener("click", () => {
+      tabs.forEach(x => x.classList.remove("on"));
       t.classList.add("on");
+
+      const filter = t.textContent.trim().toLowerCase();
+
+      cards.forEach(card => {
+        const cat = (card.dataset.category || "all").toLowerCase();
+        const show = filter === "all" || cat === filter;
+        card.style.display = show ? "" : "none";
+      });
     })
   );
 </script>
