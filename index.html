@@ -69,6 +69,15 @@
     .js-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,241,232,.1); border: 1px solid rgba(247,241,232,.2); border-radius: 100px; padding: 7px 18px; margin-bottom: 16px; }
     .js-badge span { font-family: var(--hand2); font-size: .95rem; color: var(--pink-mid); }
 
+    /* Slideshow */
+    .js-slideshow { margin-top: 24px; width: 200px; position: relative; }
+    .js-slides { position: relative; width: 200px; height: 266px; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.32); }
+    .js-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .6s var(--ease); border-radius: 16px; }
+    .js-slide.active { opacity: 1; }
+    .js-dots { display: flex; gap: 6px; justify-content: center; margin-top: 12px; }
+    .js-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(247,241,232,.25); transition: background .3s, transform .3s; cursor: none; }
+    .js-dot.active { background: var(--pink-mid); transform: scale(1.3); }
+
     /* ---- ABOUT ---- */
     #about { background: var(--green-dk); padding: 96px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; overflow: hidden; }
     .ast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
@@ -303,13 +312,20 @@
   <div class="js-left">
     <div class="js-badge"><span>completely free -- just your email</span></div>
     <h3>Get the <em>2026 Wellness Planner</em> — Free</h3>
-    <p>A beautifully designed wellness planner with daily pages, habit tracking, monthly reviews, and guided prompts. Yours free when you join the community.</p>
+    <p>Daily pages, habit tracker, monthly reviews, wellness check-ins, and guided prompts — beautifully designed and yours instantly.</p>
 
-    <!-- mini preview of journal pages -->
-    <div style="display:flex;gap:10px;margin-top:22px;margin-bottom:8px;">
-      <img src="/assets/images/journal_cover.png" alt="Planner cover" style="width:72px;height:96px;object-fit:cover;border-radius:10px;box-shadow:0 8px 20px rgba(58,42,34,.18);" />
-      <img src="/assets/images/journal_monthly_overview.png" alt="Monthly overview" style="width:72px;height:96px;object-fit:cover;border-radius:10px;box-shadow:0 8px 20px rgba(58,42,34,.18);" />
-      <img src="/assets/images/journal_intentions.png" alt="Intentions page" style="width:72px;height:96px;object-fit:cover;border-radius:10px;box-shadow:0 8px 20px rgba(58,42,34,.18);" />
+    <!-- SLIDESHOW -->
+    <div class="js-slideshow" id="jsSlideshow">
+      <div class="js-slides">
+        <img src="/assets/images/journal_cover.png" alt="Planner cover" class="js-slide active" />
+        <img src="/assets/images/journal_monthly_overview.png" alt="Monthly overview" class="js-slide" />
+        <img src="/assets/images/journal_intentions.png" alt="Intentions page" class="js-slide" />
+      </div>
+      <div class="js-dots">
+        <span class="js-dot active"></span>
+        <span class="js-dot"></span>
+        <span class="js-dot"></span>
+      </div>
     </div>
   </div>
   <div class="js-right">
@@ -317,25 +333,25 @@
   </div>
 </div>
 
-<!-- ABOUT -->
+<!-- ABOUT — planner stats only -->
 <section id="about">
   <div class="doodle" style="width:110px;top:10%;right:5%;opacity:.25;transform:rotate(8deg)"><img src="/assets/images/heart1.png" alt="" /></div>
   <div class="ast-grid rv">
-    <div class="ast"><div class="ast-n">500k+</div><div class="ast-l">Women reached monthly</div></div>
-    <div class="ast"><div class="ast-n">50+</div><div class="ast-l">Free resources</div></div>
-    <div class="ast"><div class="ast-n">100%</div><div class="ast-l">Research-backed</div></div>
-    <div class="ast"><div class="ast-n">0</div><div class="ast-l">Fake guru energy</div></div>
+    <div class="ast"><div class="ast-n">6</div><div class="ast-l">Sections inside</div></div>
+    <div class="ast"><div class="ast-n">100%</div><div class="ast-l">Free — no card needed</div></div>
+    <div class="ast"><div class="ast-n">✦</div><div class="ast-l">Beautifully designed</div></div>
+    <div class="ast"><div class="ast-n">∞</div><div class="ast-l">Days of guided planning</div></div>
   </div>
   <div class="about-copy rv d2">
-    <div class="sl">Who we are</div>
-    <h2 class="sh">Wellness that feels as <em>beautiful</em> as it should.</h2>
-    <p style="margin-top:18px">We believe self-improvement should never feel overwhelming, clinical, or fake. Stylishandhealthy is your soft corner of the internet -- where real science meets beautiful aesthetics, and good habits feel genuinely enjoyable.</p>
-    <p>Every recommendation is backed by research, every design is intentional, and nothing here is designed to make you feel behind.</p>
+    <div class="sl">The 2026 Wellness Planner</div>
+    <h2 class="sh">Your routines, <em>beautifully</em> planned.</h2>
+    <p style="margin-top:18px">A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, and wellness check-ins, wrapped in a design you'll actually want to open.</p>
     <div class="aps">
-      <div class="ap"><div><div class="ap-t">Research first, trends never</div><div class="ap-s">We decode ingredients, habits, and routines -- no hype, no filler.</div></div></div>
-      <div class="ap"><div><div class="ap-t">Beauty without pressure</div><div class="ap-s">Progress without guilt. Routines that fit your real life.</div></div></div>
-      <div class="ap"><div><div class="ap-t">Soft discipline. Real results.</div><div class="ap-s">Small consistent habits compound into beautiful transformations.</div></div></div>
+      <div class="ap"><div><div class="ap-t">Daily pages</div><div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div></div></div>
+      <div class="ap"><div><div class="ap-t">Habit tracker</div><div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div></div></div>
+      <div class="ap"><div><div class="ap-t">Monthly reviews</div><div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div></div></div>
     </div>
+    <a href="/journal" class="btn btn-f" style="margin-top:28px;display:inline-flex">Get it free →</a>
   </div>
 </section>
 
@@ -494,5 +510,23 @@
 
 <script src="/assets/js/shared.js"></script>
 <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+<script>
+// Planner slideshow
+(function() {
+  const slides = document.querySelectorAll('.js-slide');
+  const dots   = document.querySelectorAll('.js-dot');
+  if (!slides.length) return;
+  let cur = 0;
+  function go(n) {
+    slides[cur].classList.remove('active');
+    dots[cur].classList.remove('active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('active');
+    dots[cur].classList.add('active');
+  }
+  dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
+  setInterval(() => go(cur + 1), 3200);
+})();
+</script>
 </body>
 </html>
