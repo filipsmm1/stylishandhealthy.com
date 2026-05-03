@@ -1029,6 +1029,9 @@ document.getElementById('start-ov').addEventListener('click',start);
 document.getElementById('replay').addEventListener('click',()=>{
   resetAll();T(()=>{buildPB();start();},100);
 });
+document.getElementById('c6b').addEventListener('click',()=>{
+  window.top.location.href='/blog';
+});
 
 // ── SCALE TO FILL VIEWPORT ──
 (function(){
