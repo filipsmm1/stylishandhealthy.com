@@ -24,7 +24,7 @@
 
 html,body{
   width:100%;height:100%;
-  background:#111;
+  background:transparent;
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
   font-family:var(--sans);
@@ -1035,7 +1035,9 @@ document.getElementById('replay').addEventListener('click',()=>{
   const cv=document.getElementById('cv');
   const W=960,H=540;
   function scale(){
-    const s=Math.min(window.innerWidth/W, window.innerHeight/H);
+    const vw=document.documentElement.clientWidth||window.innerWidth;
+    const vh=document.documentElement.clientHeight||window.innerHeight;
+    const s=Math.min(vw/W, vh/H);
     cv.style.transform='scale('+s+')';
   }
   scale();
