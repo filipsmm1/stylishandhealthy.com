@@ -78,37 +78,29 @@
       background: rgba(247,241,232,.04);
       pointer-events: none;
     }
-    .js-inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 80px;
-      align-items: center;
-    }
+    .js-inner { display: block; }
     .js-left h3 { font-family: var(--display); font-size: 2.2rem; font-weight: 400; color: var(--cream); margin-bottom: 8px; }
     .js-left h3 em { font-style: italic; color: var(--pink-mid); }
     .js-left p { font-size: .95rem; color: rgba(247,241,232,.58); max-width: 480px; line-height: 1.7; }
     .js-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,241,232,.1); border: 1px solid rgba(247,241,232,.2); border-radius: 100px; padding: 7px 18px; margin-bottom: 16px; }
     .js-badge span { font-family: var(--hand2); font-size: .95rem; color: var(--pink-mid); }
 
-    /* Slideshow — no flicker, properly sized */
-    .js-slideshow { margin-top: 28px; width: 260px; position: relative; }
-    .js-slides { position: relative; width: 260px; height: 346px; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.45); background: var(--green); }
+    /* Slideshow — bigger, no flicker */
+    .js-slideshow { margin-top: 28px; width: 340px; position: relative; }
+    .js-slides { position: relative; width: 340px; height: 453px; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.45); background: var(--green); }
     .js-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; will-change: opacity; }
     .js-slide.active { opacity: 1; }
     .js-dots { display: flex; gap: 6px; justify-content: center; margin-top: 12px; }
     .js-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(247,241,232,.25); transition: background .3s, transform .3s; cursor: pointer; }
     .js-dot.active { background: var(--pink-mid); transform: scale(1.3); }
 
-    /* Journal strip right — CTA vertically centered */
-    .js-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    /* Button below slideshow on the left */
+    .js-cta { margin-top: 28px; }
 
     /* ---- ABOUT — seamless continuation of dark green ---- */
-    #about { background: var(--green-dk); padding: 80px 80px 96px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; position: relative; overflow: hidden; }
-    .ast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    #about { background: var(--green-dk); padding: 64px 80px 96px; position: relative; overflow: hidden; }
+    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .ast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-bottom: 0; }
     .ast { background: rgba(247,241,232,.04); border: 1px solid rgba(247,241,232,.07); padding: 34px 26px; transition: background .2s; }
     .ast:hover { background: rgba(247,241,232,.07); }
     .ast-n { font-family: var(--display); font-size: 3rem; font-weight: 300; color: var(--pink); line-height: 1; margin-bottom: 5px; }
@@ -227,8 +219,8 @@
       .tg{grid-template-columns:1fr}
       #testimonials{padding:60px 32px}
       .journal-strip{padding:60px 32px 0}
-      .js-inner{grid-template-columns:1fr;gap:32px}
-      .js-right{justify-content:flex-start;padding-bottom:40px}
+      #about{padding:60px 32px}
+      .about-inner{grid-template-columns:1fr;gap:32px}
       .pinterest-strip{padding:60px 32px}
       .pin-strip-head{flex-direction:column;align-items:flex-start;}
     }
@@ -358,9 +350,10 @@
           <span class="js-dot"></span>
         </div>
       </div>
-    </div>
-    <div class="js-right">
-      <a href="/journal" class="btn btn-f" style="font-size:1rem;padding:16px 36px;white-space:nowrap">Get it →</a>
+
+      <div class="js-cta">
+        <a href="/journal" class="btn btn-f" style="font-size:1rem;padding:16px 36px;white-space:nowrap">Get it →</a>
+      </div>
     </div>
   </div>
 </div>
@@ -368,20 +361,22 @@
 <!-- ABOUT — planner stats only -->
 <section id="about">
   <div class="doodle" style="width:110px;top:10%;right:5%;opacity:.25;transform:rotate(8deg)"><img src="/assets/images/heart1.png" alt="" /></div>
-  <div class="ast-grid rv">
-    <div class="ast"><div class="ast-n">6</div><div class="ast-l">Sections inside</div></div>
-    <div class="ast"><div class="ast-n">100%</div><div class="ast-l">Free — no card needed</div></div>
-    <div class="ast"><div class="ast-n">✦</div><div class="ast-l">Beautifully designed</div></div>
-    <div class="ast"><div class="ast-n">∞</div><div class="ast-l">Days of guided planning</div></div>
-  </div>
-  <div class="about-copy rv d2">
-    <div class="sl">The 2026 Wellness Planner</div>
-    <h2 class="sh">Your routines, <em>beautifully</em> planned.</h2>
-    <p style="margin-top:18px">A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, and wellness check-ins, wrapped in a design you'll actually want to open.</p>
-    <div class="aps">
-      <div class="ap"><div><div class="ap-t">Daily pages</div><div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div></div></div>
-      <div class="ap"><div><div class="ap-t">Habit tracker</div><div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div></div></div>
-      <div class="ap"><div><div class="ap-t">Monthly reviews</div><div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div></div></div>
+  <div class="about-inner">
+    <div class="ast-grid rv">
+      <div class="ast"><div class="ast-n">6</div><div class="ast-l">Sections inside</div></div>
+      <div class="ast"><div class="ast-n">100%</div><div class="ast-l">Free — no card needed</div></div>
+      <div class="ast"><div class="ast-n">✦</div><div class="ast-l">Beautifully designed</div></div>
+      <div class="ast"><div class="ast-n">∞</div><div class="ast-l">Days of guided planning</div></div>
+    </div>
+    <div class="about-copy rv d2">
+      <div class="sl">The 2026 Wellness Planner</div>
+      <h2 class="sh">Your routines, <em>beautifully</em> planned.</h2>
+      <p style="margin-top:18px">A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, and wellness check-ins, wrapped in a design you'll actually want to open.</p>
+      <div class="aps">
+        <div class="ap"><div><div class="ap-t">Daily pages</div><div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div></div></div>
+        <div class="ap"><div><div class="ap-t">Habit tracker</div><div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div></div></div>
+        <div class="ap"><div><div class="ap-t">Monthly reviews</div><div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div></div></div>
+      </div>
     </div>
   </div>
 </section>
