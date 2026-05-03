@@ -105,7 +105,7 @@
 
     <div class="skc-cards rv d1">
 
-      <a class="skc feat" href="https://www.amazon.com/Ordinary-Salicylic-Solution-Acne-Fighting-Blemish-Prone/dp/B0DN6NWMKK?crid=15GB2YY5WYKL0&dib=eyJ2IjoiMSJ9.vOX32uHzL8LcAibGDXFXr_pLuzUbKKs1-MSg2tP-bfd2-vYLlHCKZTFT4ABP48D7gIwhz7qnbwCWnvIZvl8F-C_EhJX5T1j0giuliVUVRTl2TThTP1tov8-NFEJ2V_31s9fCmPzg-goJNoQh9th5rIhWbpCrtQleqwnHth4mRZ9d5H2C9TkU85V_nhS7sl6syJnzVw-o3hOnlnb07uf4Xmxlj5gInBPn9uav38B0u8-wV1SMD5Z7SVeXLbBYYstPlcOAnBNPuGo3KSgM8btsX4YJD7jiizfygogAX19m46s.LzOUXAvTGsvr5xmDy8ljmJVD93o0jpoFys91Sq7gavQ&dib_tag=se&keywords=salicylic%2Bacid%2Bordinary&qid=1777838075&sprefix=salicylic%2Bacid%2Caps%2C276&sr=8-1&th=1&linkCode=ll2&tag=stylishandh0d-20&linkId=1eadf96e9e174bd46a0ddd0f07b26633&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored" style="display:grid;grid-template-columns:140px 1fr;gap:0;align-items:stretch;text-decoration:none;color:inherit;border-radius:22px;overflow:hidden;background:var(--cream-warm);border:1px solid rgba(58,42,34,.07);transition:transform .2s var(--ease),box-shadow .2s;cursor:none;">
+      <a class="skc feat" data-category="acne-prone" href="https://www.amazon.com/Ordinary-Salicylic-Solution-Acne-Fighting-Blemish-Prone/dp/B0DN6NWMKK?crid=15GB2YY5WYKL0&dib=eyJ2IjoiMSJ9.vOX32uHzL8LcAibGDXFXr_pLuzUbKKs1-MSg2tP-bfd2-vYLlHCKZTFT4ABP48D7gIwhz7qnbwCWnvIZvl8F-C_EhJX5T1j0giuliVUVRTl2TThTP1tov8-NFEJ2V_31s9fCmPzg-goJNoQh9th5rIhWbpCrtQleqwnHth4mRZ9d5H2C9TkU85V_nhS7sl6syJnzVw-o3hOnlnb07uf4Xmxlj5gInBPn9uav38B0u8-wV1SMD5Z7SVeXLbBYYstPlcOAnBNPuGo3KSgM8btsX4YJD7jiizfygogAX19m46s.LzOUXAvTGsvr5xmDy8ljmJVD93o0jpoFys91Sq7gavQ&dib_tag=se&keywords=salicylic%2Bacid%2Bordinary&qid=1777838075&sprefix=salicylic%2Bacid%2Caps%2C276&sr=8-1&th=1&linkCode=ll2&tag=stylishandh0d-20&linkId=1eadf96e9e174bd46a0ddd0f07b26633&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored" style="display:grid;grid-template-columns:140px 1fr;gap:0;align-items:stretch;text-decoration:none;color:inherit;border-radius:22px;overflow:hidden;background:var(--cream-warm);border:1px solid rgba(58,42,34,.07);transition:transform .2s var(--ease),box-shadow .2s;cursor:none;">
         <div style="background:var(--cream);display:flex;align-items:center;justify-content:center;padding:20px;border-right:1px solid rgba(58,42,34,.07);">
           <img src="https://m.media-amazon.com/images/I/51V6a1-c3jL._SL1240_.jpg" alt="The Ordinary Salicylic Acid 2% Solution" style="width:100px;height:130px;object-fit:contain;display:block;" />
         </div>
@@ -121,7 +121,7 @@
         </div>
       </a>
 
-      <div class="skc" style="opacity:.55;pointer-events:none;">
+      <div class="skc" data-category="all" style="opacity:.55;pointer-events:none;">
         <div class="skc-num">+</div>
         <div>
           <div class="skc-ctag">Coming soon</div>
@@ -168,6 +168,12 @@
   document.querySelectorAll('.itab').forEach(t => t.addEventListener('click', () => {
     document.querySelectorAll('.itab').forEach(x => x.classList.remove('on'));
     t.classList.add('on');
+
+    const filter = t.textContent.trim().toLowerCase().replace(/[^a-z-]/g, '');
+    document.querySelectorAll('.skc-cards [data-category]').forEach(card => {
+      const cat = (card.dataset.category || '').toLowerCase();
+      card.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+    });
   }));
 </script>
 </body>
