@@ -30,6 +30,7 @@
     .skc-lnk { display: inline-flex; align-items: center; gap: 5px; font-family: var(--body); font-size: .77rem; font-weight: 600; color: var(--green); margin-top: 9px; border-bottom: 1px solid rgba(85,107,62,.22); transition: border-color .2s, gap .15s var(--easeb); }
     .skc-lnk:hover { border-color: var(--green); gap: 9px; }
     @media(max-width:860px) { .skc-grid{grid-template-columns:1fr} .skc-sticky{position:static} }
+    .skc-cards a.skc:hover { transform: translateX(5px); box-shadow: 0 10px 30px rgba(85,107,62,.09); }
   </style>
 
   <!-- SEO: Canonical -->
@@ -103,12 +104,33 @@
     </div>
 
     <div class="skc-cards rv d1">
-      <div class="empty-state" style="text-align:left;padding:0">
-        <div class="empty-icon">🧴</div>
-        <h3 style="text-align:left">Nothing <em>here yet</em></h3>
-        <p style="text-align:left;margin:0 0 24px">Skincare recommendations are being researched and written. Subscribe to be the first to read them.</p>
-        <a href="/subscribe" class="btn btn-f">Get notified</a>
+
+      <a class="skc feat" href="https://www.amazon.com/Ordinary-Salicylic-Solution-Acne-Fighting-Blemish-Prone/dp/B0DN6NWMKK?crid=15GB2YY5WYKL0&dib=eyJ2IjoiMSJ9.vOX32uHzL8LcAibGDXFXr_pLuzUbKKs1-MSg2tP-bfd2-vYLlHCKZTFT4ABP48D7gIwhz7qnbwCWnvIZvl8F-C_EhJX5T1j0giuliVUVRTl2TThTP1tov8-NFEJ2V_31s9fCmPzg-goJNoQh9th5rIhWbpCrtQleqwnHth4mRZ9d5H2C9TkU85V_nhS7sl6syJnzVw-o3hOnlnb07uf4Xmxlj5gInBPn9uav38B0u8-wV1SMD5Z7SVeXLbBYYstPlcOAnBNPuGo3KSgM8btsX4YJD7jiizfygogAX19m46s.LzOUXAvTGsvr5xmDy8ljmJVD93o0jpoFys91Sq7gavQ&dib_tag=se&keywords=salicylic%2Bacid%2Bordinary&qid=1777838075&sprefix=salicylic%2Bacid%2Caps%2C276&sr=8-1&th=1&linkCode=ll2&tag=stylishandh0d-20&linkId=1eadf96e9e174bd46a0ddd0f07b26633&language=en_US&ref_=as_li_ss_tl" target="_blank" rel="noopener sponsored" style="display:grid;grid-template-columns:140px 1fr;gap:0;align-items:stretch;text-decoration:none;color:inherit;border-radius:22px;overflow:hidden;background:var(--cream-warm);border:1px solid rgba(58,42,34,.07);transition:transform .2s var(--ease),box-shadow .2s;cursor:none;">
+        <div style="background:var(--cream);display:flex;align-items:center;justify-content:center;padding:20px;border-right:1px solid rgba(58,42,34,.07);">
+          <img src="https://m.media-amazon.com/images/I/51V6a1-c3jL._SL1240_.jpg" alt="The Ordinary Salicylic Acid 2% Solution" style="width:100px;height:130px;object-fit:contain;display:block;" />
+        </div>
+        <div style="padding:24px;">
+          <div class="skc-ctag">Skincare · Acne-Prone</div>
+          <h3>The Ordinary — Salicylic Acid 2% Solution</h3>
+          <p>A research-backed BHA exfoliant that clears clogged pores, targets blemishes, and smooths skin texture without stripping your barrier. One of the most studied and most effective actives for acne-prone skin at a genuinely accessible price.</p>
+          <div style="display:flex;align-items:center;gap:10px;margin-top:12px;flex-wrap:wrap;">
+            <span style="display:inline-flex;align-items:center;gap:5px;background:var(--pink);color:var(--green-dk);font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:5px 12px;border-radius:100px;">Editor's pick</span>
+            <span style="font-size:.72rem;color:var(--brown-lt);">Affiliate link — always disclosed</span>
+          </div>
+          <span class="skc-lnk" style="margin-top:14px;">Shop on Amazon →</span>
+        </div>
+      </a>
+
+      <div class="skc" style="opacity:.55;pointer-events:none;">
+        <div class="skc-num">+</div>
+        <div>
+          <div class="skc-ctag">Coming soon</div>
+          <h3>More recommendations</h3>
+          <p>More research-backed picks are being reviewed and written. Subscribe to be the first to read them.</p>
+          <a href="/subscribe" class="skc-lnk" style="pointer-events:all;opacity:1">Get notified →</a>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
