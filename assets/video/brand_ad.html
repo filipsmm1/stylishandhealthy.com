@@ -36,11 +36,7 @@ html,body{
   position:relative;overflow:hidden;
   background:var(--cream);
   flex-shrink:0;
-}
-
-/* scale to fit viewport */
-@media(max-width:980px){
-  #cv{transform-origin:top center;transform:scale(0.6);}
+  transform-origin:center center;
 }
 
 /* ── ALL SCENES STACK ── */
@@ -1033,6 +1029,18 @@ document.getElementById('start-ov').addEventListener('click',start);
 document.getElementById('replay').addEventListener('click',()=>{
   resetAll();T(()=>{buildPB();start();},100);
 });
+
+// ── SCALE TO FILL VIEWPORT ──
+(function(){
+  const cv=document.getElementById('cv');
+  const W=960,H=540;
+  function scale(){
+    const s=Math.min(window.innerWidth/W, window.innerHeight/H);
+    cv.style.transform='scale('+s+')';
+  }
+  scale();
+  window.addEventListener('resize',scale);
+})();
 </script>
 </body>
 </html>
