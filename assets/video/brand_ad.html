@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Stylish & Healthy</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@200;300;400;500&family=Baloo+2:wght@500;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --pink:    #F8D6DE;
+  --green:   #556B3E;
+  --sage:    #A8B99A;
+  --cream:   #F7F1E8;
+  --espresso:#3A2A22;
+  --accent:  #F3AFC0;
+  --ice:     #DCECF0;
+  --w:       #FEFEFE;
+  --serif:   'Cormorant Garamond',Georgia,serif;
+  --round:   'Baloo 2',sans-serif;
+  --sans:    'DM Sans',sans-serif;
+}
+
+html,body{
+  width:100%;height:100%;
+  background:#111;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  font-family:var(--sans);
+}
+
+/* 16:9 widescreen canvas */
+#cv{
+  width:960px;height:540px;
+  position:relative;overflow:hidden;
+  background:var(--cream);
+  flex-shrink:0;
+}
+
+/* scale to fit viewport */
+@media(max-width:980px){
+  #cv{transform-origin:top center;transform:scale(0.6);}
+}
+
+/* ── ALL SCENES STACK ── */
+.sc{
+  position:absolute;inset:0;
+  opacity:0;pointer-events:none;
+  will-change:opacity;
+}
+.sc.active{pointer-events:auto;}
+
+/* ── PROGRESS BAR ── */
+#prog{
+  position:absolute;top:0;left:0;right:0;
+  height:2px;z-index:900;
+  display:flex;gap:3px;padding:0 16px;
+  pointer-events:none;
+}
+.ps{flex:1;height:2px;border-radius:1px;background:rgba(255,255,255,.18);}
+.pf{height:100%;width:0%;border-radius:1px;background:rgba(255,255,255,.75);}
+
+/* ================================================================
+   SCENE 0  — OPENING TITLE  (split: cream left / green right)
+================================================================ */
+#s0{display:flex;}
+
+.s0-left{
+  width:50%;height:100%;
+  background:var(--cream);
+  display:flex;flex-direction:column;
+  align-items:flex-start;justify-content:center;
+  padding:0 64px;position:relative;overflow:hidden;
+}
+.s0-right{
+  width:50%;height:100%;
+  background:var(--green);
+  display:flex;flex-direction:column;
+  align-items:flex-end;justify-content:center;
+  padding:0 64px;position:relative;overflow:hidden;
+  clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+}
+
+/* diagonal divider overlay */
+.s0-diag{
+  position:absolute;top:0;left:0;
+  width:100%;height:100%;
+  pointer-events:none;z-index:10;
+}
+
+.s0-eyebrow{
+  font-family:var(--sans);font-size:10px;letter-spacing:5px;
+  text-transform:uppercase;color:var(--sage);
+  margin-bottom:16px;
+}
+.s0-head{
+  font-family:var(--serif);font-size:56px;font-weight:300;
+  color:var(--espresso);line-height:1.05;
+}
+.s0-head em{font-style:italic;color:var(--green);}
+
+.s0-r-head{
+  font-family:var(--serif);font-size:36px;font-weight:300;font-style:italic;
+  color:rgba(255,255,255,.85);text-align:right;line-height:1.3;
+}
+.s0-r-sub{
+  font-family:var(--sans);font-size:11px;font-weight:300;
+  letter-spacing:2px;text-transform:uppercase;
+  color:rgba(255,255,255,.4);margin-top:12px;text-align:right;
+}
+
+/* thin accent line */
+.s0-line{
+  width:0;height:1px;background:var(--accent);
+  margin:18px 0;transition:width .9s .3s ease;
+}
+.s0-line.in{width:60px;}
+
+/* large watermark text */
+.s0-wm{
+  position:absolute;bottom:-20px;left:-10px;
+  font-family:var(--serif);font-size:160px;font-weight:600;font-style:italic;
+  color:var(--accent);opacity:.06;white-space:nowrap;pointer-events:none;
+  line-height:1;
+}
+
+/* deco heart SVG */
+.deco-heart{
+  position:absolute;top:32px;right:32px;opacity:0;
+  transition:opacity .6s .8s;
+}
+.deco-heart.in{opacity:.22;}
+
+/* ================================================================
+   SCENE 1  — PHONE ZOOM  (pink bg, phone slides up from bottom)
+================================================================ */
+#s1{background:var(--pink);display:flex;align-items:center;justify-content:center;gap:80px;}
+
+/* Large text left of phone */
+.s1-text{
+  display:flex;flex-direction:column;gap:10px;
+  max-width:260px;
+  opacity:0;transform:translateX(-30px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+.s1-text.in{opacity:1;transform:translateX(0);}
+.s1-t1{
+  font-family:var(--serif);font-size:38px;font-weight:300;font-style:italic;
+  color:var(--espresso);line-height:1.1;
+}
+.s1-t2{
+  font-family:var(--sans);font-size:11px;font-weight:300;
+  letter-spacing:2px;text-transform:uppercase;color:var(--sage);
+}
+.s1-arr{
+  font-size:22px;color:var(--accent);margin-top:4px;
+  animation:arrowPulse 1.2s ease-in-out infinite;
+}
+@keyframes arrowPulse{0%,100%{transform:translateX(0);}50%{transform:translateX(8px);}}
+
+/* Phone */
+.phone{
+  width:200px;height:400px;
+  background:#1c1c1e;border-radius:38px;
+  border:2.5px solid #2e2e2e;
+  position:relative;overflow:hidden;
+  box-shadow:0 40px 80px rgba(58,42,34,.35),0 0 0 .5px rgba(255,255,255,.05);
+  transform:translateY(280px) scale(.9);opacity:0;
+  transition:transform .9s cubic-bezier(.15,.85,.25,1),opacity .6s ease;
+}
+.phone.in{transform:translateY(0) scale(1);opacity:1;}
+
+.pscreen{
+  position:absolute;inset:3.5px;border-radius:34px;
+  background:#fff;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.statusbar{
+  height:22px;background:#fff;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 14px;flex-shrink:0;position:relative;
+}
+.sb-time{font-size:9px;font-weight:600;color:#111;font-family:var(--sans);}
+.notch{
+  position:absolute;top:3px;left:50%;transform:translateX(-50%);
+  width:50px;height:13px;background:#1c1c1e;
+  border-radius:0 0 9px 9px;
+}
+.ghd{
+  padding:6px 10px 2px;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.glogo{font-size:15px;font-weight:600;letter-spacing:-.3px;font-family:var(--sans);}
+.gb{color:#4285F4}.gl{color:#EA4335}.go1{color:#FBBC05}
+.go2{color:#4285F4}.gg{color:#34A853}.ge{color:#EA4335}
+
+.sbwrap{padding:2px 8px;flex-shrink:0;}
+.sbox{
+  width:100%;height:30px;border:1.5px solid #e8e8e8;border-radius:15px;
+  display:flex;align-items:center;padding:0 9px;gap:5px;
+  font-family:var(--sans);font-size:10px;color:#111;background:#fff;
+}
+.sico{font-size:9px;color:#bbb;flex-shrink:0;}
+#stext{flex:1;white-space:nowrap;overflow:hidden;font-size:10px;}
+.cblink{
+  display:inline-block;width:1px;height:10px;
+  background:#111;margin-left:1px;vertical-align:middle;
+  animation:blink .7s steps(2) infinite;
+}
+@keyframes blink{50%{opacity:0}}
+
+.res{flex:1;padding:3px 8px;overflow:hidden;}
+.ri{
+  padding:4px 0;border-bottom:.5px solid #f5f5f5;
+  opacity:0;transform:translateY(5px);
+  transition:opacity .3s ease,transform .3s ease;
+}
+.ri.in{opacity:1;transform:translateY(0);}
+.ri-url{font-size:7.5px;color:#3a843a;font-family:var(--sans);}
+.ri-t{font-size:9px;color:#1a0dab;font-weight:500;line-height:1.25;font-family:var(--sans);}
+.ri-s{font-size:7.5px;color:#555;line-height:1.35;margin-top:1px;font-family:var(--sans);}
+.ri-s .warn{color:#c0392b;font-weight:600;}
+
+/* deco blobs */
+.blob{
+  position:absolute;border-radius:50%;
+  background:var(--accent);filter:blur(55px);
+  opacity:.2;pointer-events:none;
+}
+
+/* ================================================================
+   SCENE 2  — FAKE REVIEW WALL  (white bg, 2-col grid, slow zoom)
+================================================================ */
+#s2{background:#fafafa;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+
+.s2-top{
+  font-family:var(--sans);font-size:9px;letter-spacing:4px;
+  text-transform:uppercase;color:#c0392b;
+  margin-bottom:20px;opacity:0;transition:opacity .5s;
+}
+.s2-top.in{opacity:1;}
+
+.fgrid{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;
+  width:820px;
+  transform-origin:center center;
+}
+
+.fcard{
+  background:#fff;border:1px solid #f0f0f0;
+  border-radius:14px;padding:14px 16px;
+  opacity:0;transform:translateY(14px);
+  transition:opacity .4s ease,transform .4s ease;
+  box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+.fcard.in{opacity:1;transform:translateY(0);}
+.fc-stars{font-size:11px;color:#F5A623;margin-bottom:5px;}
+.fc-text{font-size:11px;color:#333;line-height:1.5;font-family:var(--sans);}
+.fc-bot{display:flex;align-items:center;justify-content:space-between;margin-top:8px;}
+.fc-name{font-size:9px;color:#ccc;font-family:var(--sans);}
+.fc-tag{
+  font-size:8px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;
+  background:rgba(192,57,43,.1);color:#c0392b;
+  border-radius:4px;padding:2px 7px;font-family:var(--sans);
+}
+
+/* ================================================================
+   SCENE 3  — PROBLEM STATEMENT  (split diagonal, red left)
+================================================================ */
+#s3{display:flex;overflow:hidden;}
+
+.s3-left{
+  width:42%;height:100%;
+  background:#1a0806;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  position:relative;
+  clip-path:polygon(0 0,100% 0,88% 100%,0 100%);
+  z-index:2;
+}
+.s3-right{
+  flex:1;height:100%;
+  background:var(--cream);
+  display:flex;flex-direction:column;
+  justify-content:center;padding:0 60px 0 80px;
+}
+
+/* animated NO circle */
+.no-svg{width:140px;height:140px;}
+.no-circle{
+  fill:none;stroke:#e74c3c;stroke-width:4.5;stroke-linecap:round;
+  stroke-dasharray:502;stroke-dashoffset:502;
+}
+.no-line{
+  stroke:#e74c3c;stroke-width:4.5;stroke-linecap:round;
+  stroke-dasharray:226;stroke-dashoffset:226;
+}
+.draw-c{animation:drawC .65s .1s cubic-bezier(.4,0,.2,1) forwards;}
+.draw-l{animation:drawL .4s .6s cubic-bezier(.4,0,.2,1) forwards;}
+@keyframes drawC{to{stroke-dashoffset:0}}
+@keyframes drawL{to{stroke-dashoffset:0}}
+
+.s3-no-label{
+  font-family:var(--sans);font-size:9px;letter-spacing:3px;
+  text-transform:uppercase;color:rgba(255,255,255,.3);
+  margin-top:16px;
+}
+
+.s3-stat{
+  font-family:var(--serif);font-size:72px;font-weight:300;
+  color:var(--espresso);line-height:1;
+}
+.s3-stat em{font-style:italic;color:#e74c3c;}
+.s3-desc{
+  font-family:var(--sans);font-size:14px;font-weight:300;
+  color:var(--sage);margin-top:12px;line-height:1.6;max-width:320px;
+}
+.s3-pill{
+  margin-top:20px;display:inline-flex;align-items:center;gap:8px;
+  background:rgba(231,76,60,.08);border:1px solid rgba(231,76,60,.2);
+  border-radius:30px;padding:8px 18px;
+}
+.s3-pill span{
+  font-family:var(--sans);font-size:10px;font-weight:500;
+  color:#c0392b;letter-spacing:1px;text-transform:uppercase;
+}
+
+/* ================================================================
+   SCENE 4  — BRAND REVEAL  (full cream, centred luxury)
+================================================================ */
+#s4{background:var(--cream);display:flex;align-items:center;justify-content:center;}
+
+/* petal ring deco */
+.petal-ring{
+  position:absolute;width:420px;height:420px;
+  border-radius:50%;
+  border:1px solid rgba(243,175,192,.25);
+  pointer-events:none;
+  animation:spinRing 18s linear infinite;
+}
+.petal-ring-2{
+  width:520px;height:520px;
+  border:1px solid rgba(168,185,154,.12);
+  animation:spinRing 28s linear infinite reverse;
+}
+@keyframes spinRing{to{transform:rotate(360deg);}}
+
+.brand-center{
+  position:relative;z-index:2;
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;
+}
+.b4-eye{
+  font-family:var(--sans);font-size:9px;letter-spacing:5px;
+  text-transform:uppercase;color:var(--sage);margin-bottom:18px;
+}
+.b4-sh{
+  font-family:var(--serif);font-size:86px;font-weight:300;
+  color:var(--espresso);line-height:.9;letter-spacing:-2px;
+}
+.b4-amp{
+  font-family:var(--serif);font-size:54px;font-style:italic;
+  color:var(--accent);display:block;margin:.1em 0;line-height:1;
+}
+.b4-he{color:var(--green);}
+
+/* needle thread SVG */
+.needle-svg{margin:22px 0 18px;opacity:0;transition:opacity .8s .4s;}
+.needle-svg.in{opacity:1;}
+
+.b4-tagline{
+  font-family:var(--serif);font-size:18px;font-weight:300;font-style:italic;
+  color:var(--espresso);opacity:.7;
+}
+.b4-pill{
+  margin-top:24px;
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--green);border-radius:30px;padding:10px 24px;
+}
+.b4-pill span{
+  font-family:var(--sans);font-size:10px;font-weight:500;
+  color:#fff;letter-spacing:2px;text-transform:uppercase;
+}
+
+/* ================================================================
+   SCENE 5  — TRUST PILLARS  (3 columns, pink bg)
+================================================================ */
+#s5{background:var(--pink);display:flex;align-items:center;justify-content:center;flex-direction:column;}
+
+.s5-head{
+  font-family:var(--serif);font-size:28px;font-weight:300;font-style:italic;
+  color:var(--espresso);margin-bottom:36px;text-align:center;
+}
+
+.pillars{display:flex;gap:2px;width:100%;height:300px;align-items:stretch;}
+
+.pillar{
+  flex:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:32px 28px;text-align:center;
+  position:relative;overflow:hidden;
+  opacity:0;transform:translateY(24px);
+  transition:opacity .6s ease,transform .6s ease;
+}
+.pillar.in{opacity:1;transform:translateY(0);}
+.p1{background:rgba(255,255,255,.5);}
+.p2{background:rgba(255,255,255,.3);}
+.p3{background:rgba(255,255,255,.5);}
+
+.pillar-num{
+  font-family:var(--serif);font-size:52px;font-weight:300;
+  color:var(--accent);line-height:1;margin-bottom:8px;
+  position:relative;z-index:1;
+}
+.pillar-head{
+  font-family:var(--serif);font-size:22px;font-weight:300;font-style:italic;
+  color:var(--espresso);line-height:1.3;margin-bottom:8px;
+  position:relative;z-index:1;
+}
+.pillar-sub{
+  font-family:var(--sans);font-size:10px;font-weight:300;
+  color:var(--sage);letter-spacing:1px;text-transform:uppercase;
+  position:relative;z-index:1;
+}
+.pillar-line{
+  position:absolute;bottom:0;left:0;right:0;
+  height:2px;background:var(--accent);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .6s .4s ease;
+}
+.pillar.in .pillar-line{transform:scaleX(1);}
+
+/* vertical dividers */
+.pdiv{width:1px;background:rgba(243,175,192,.3);flex-shrink:0;}
+
+/* ================================================================
+   SCENE 6  — CTA  (dark matcha, full width)
+================================================================ */
+#s6{
+  background:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+
+/* big watermark */
+.s6-wm{
+  position:absolute;
+  font-family:var(--serif);font-size:220px;font-weight:600;font-style:italic;
+  color:rgba(255,255,255,.04);white-space:nowrap;
+  pointer-events:none;z-index:0;
+  top:50%;transform:translateY(-50%);
+}
+
+/* radial glow */
+.s6-glow{
+  position:absolute;
+  width:600px;height:600px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(168,185,154,.18) 0%,transparent 70%);
+  pointer-events:none;z-index:0;
+}
+
+.cta-wrap{
+  position:relative;z-index:2;
+  display:flex;align-items:center;justify-content:space-between;
+  width:820px;
+}
+
+.cta-left{
+  display:flex;flex-direction:column;gap:0;
+}
+.cta-eye{
+  font-family:var(--sans);font-size:9px;letter-spacing:5px;
+  text-transform:uppercase;color:rgba(255,255,255,.35);
+  margin-bottom:16px;
+}
+.cta-mark{
+  font-family:var(--serif);font-size:68px;font-weight:300;
+  color:#fff;line-height:.95;letter-spacing:-1px;
+}
+.cta-mark em{font-style:italic;color:var(--accent);}
+.cta-rule{
+  width:0;height:1px;
+  background:rgba(255,255,255,.25);
+  margin:20px 0;transition:width .8s .5s ease;
+}
+.cta-rule.in{width:90px;}
+.cta-copy{
+  font-family:var(--serif);font-size:16px;font-weight:300;font-style:italic;
+  color:rgba(255,255,255,.7);line-height:1.7;max-width:300px;
+}
+
+.cta-right{
+  display:flex;flex-direction:column;align-items:flex-end;gap:20px;
+}
+.cta-url{
+  font-family:var(--round);font-size:20px;font-weight:500;
+  color:var(--accent);letter-spacing:.3px;
+}
+.cta-btn{
+  background:#fff;border-radius:50px;border:none;
+  padding:16px 36px;cursor:pointer;
+  font-family:var(--sans);font-size:12px;font-weight:500;
+  color:var(--green);letter-spacing:2px;text-transform:uppercase;
+}
+.cta-year{
+  font-family:var(--sans);font-size:10px;font-weight:200;
+  color:rgba(255,255,255,.25);letter-spacing:3px;
+  text-transform:uppercase;margin-top:4px;text-align:right;
+}
+
+/* ── SHARED ANIMATION CLASSES ── */
+.fade-up{
+  opacity:0;transform:translateY(18px);
+  transition:opacity .6s cubic-bezier(.25,.8,.25,1),
+             transform .6s cubic-bezier(.25,.8,.25,1);
+}
+.fade-up.in{opacity:1;transform:translateY(0);}
+.fade-in{opacity:0;transition:opacity .6s ease;}
+.fade-in.in{opacity:1;}
+
+/* ── START OVERLAY ── */
+#start-ov{
+  position:absolute;inset:0;z-index:800;
+  background:rgba(247,241,232,.93);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:18px;
+  cursor:pointer;
+}
+.start-ring{
+  width:72px;height:72px;border-radius:50%;
+  border:1.5px solid var(--green);
+  display:flex;align-items:center;justify-content:center;
+  animation:pls 2s ease-in-out infinite;
+}
+@keyframes pls{
+  0%,100%{box-shadow:0 0 0 0 rgba(85,107,62,.2);}
+  50%{box-shadow:0 0 0 18px rgba(85,107,62,0);}
+}
+.start-play{font-size:20px;color:var(--green);margin-left:5px;}
+.start-lbl{
+  font-family:var(--sans);font-size:10px;letter-spacing:4px;
+  text-transform:uppercase;color:var(--sage);
+}
+
+/* ── REPLAY ── */
+#replay{
+  position:absolute;bottom:22px;right:22px;z-index:700;
+  font-family:var(--sans);font-size:9px;letter-spacing:2px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.6);
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:30px;padding:8px 20px;
+  cursor:pointer;opacity:0;pointer-events:none;
+  transition:opacity .4s;
+}
+#replay.in{opacity:1;pointer-events:auto;}
+</style>
+</head>
+<body>
+<div id="cv">
+
+  <!-- PROGRESS -->
+  <div id="prog"></div>
+
+  <!-- ============================
+       S0: OPENING TITLE
+  ============================ -->
+  <div class="sc" id="s0">
+    <div class="s0-left">
+      <div class="s0-wm">S&H</div>
+      <!-- deco heart -->
+      <svg class="deco-heart fade-in" id="dh" width="48" height="48" viewBox="0 0 48 48" style="position:absolute;top:28px;right:28px;">
+        <path d="M24 40 C24 40 6 28 6 16 C6 10 11 6 17 8 C20 9 22 11 24 14 C26 11 28 9 31 8 C37 6 42 10 42 16 C42 28 24 40 24 40Z" fill="none" stroke="#F3AFC0" stroke-width="1.2"/>
+      </svg>
+      <div class="s0-eyebrow fade-up" id="s0-ey">for women who choose wisely</div>
+      <div class="s0-head fade-up" id="s0-h" style="transition-delay:.15s">
+        Tired of<br><em>fake reviews</em><br>ruining your choices?
+      </div>
+      <div class="s0-line" id="s0-ln"></div>
+    </div>
+    <div class="s0-right">
+      <div class="s0-r-head fade-up" id="s0-rh" style="transition-delay:.35s">
+        Women deserve<br>the truth.
+      </div>
+      <div class="s0-r-sub fade-in" id="s0-rs" style="transition-delay:.6s">We built something better.</div>
+    </div>
+  </div>
+
+  <!-- ============================
+       S1: PHONE ZOOM
+  ============================ -->
+  <div class="sc" id="s1">
+    <div class="blob" style="width:300px;height:300px;top:-80px;left:-60px;"></div>
+    <div class="blob" style="width:200px;height:200px;bottom:-50px;right:-40px;opacity:.12;"></div>
+
+    <div class="s1-text" id="s1txt">
+      <div class="s1-t1">In 2026,<br>the search<br>is rigged.</div>
+      <div class="s1-t2">Paid ads everywhere</div>
+      <div class="s1-arr">&#8594;</div>
+    </div>
+
+    <div class="phone" id="phone">
+      <div class="pscreen">
+        <div class="statusbar">
+          <span class="sb-time">9:41</span>
+          <div class="notch"></div>
+          <span class="sb-time">&#9679;&#9679;&#9679;</span>
+        </div>
+        <div class="ghd">
+          <span class="glogo">
+            <span class="gb">G</span><span class="gl">o</span><span class="go1">o</span><span class="go2">g</span><span class="gg">l</span><span class="ge">e</span>
+          </span>
+        </div>
+        <div class="sbwrap">
+          <div class="sbox">
+            <span class="sico">&#128269;</span>
+            <span id="stext"><span class="cblink"></span></span>
+          </div>
+        </div>
+        <div class="res" id="res">
+          <div class="ri" id="ri1">
+            <div class="ri-url">ad &middot; glowskinco.com</div>
+            <div class="ri-t">Best serum 2026 -- 50,000 five-star reviews</div>
+            <div class="ri-s">Clinically proven in <span class="warn">24 hours...</span></div>
+          </div>
+          <div class="ri" id="ri2">
+            <div class="ri-url">ad &middot; beautyshop.net</div>
+            <div class="ri-t">No.1 moisturiser -- trusted by millions</div>
+            <div class="ri-s">Amazing results -- <span class="warn">paid partnership.</span></div>
+          </div>
+          <div class="ri" id="ri3">
+            <div class="ri-url">ad &middot; miracrecream.co</div>
+            <div class="ri-t">Zero side effects -- dermatologist approved</div>
+            <div class="ri-s"><span class="warn">Sponsored. Unverified.</span> Not independently tested.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+       S2: FAKE REVIEW WALL
+  ============================ -->
+  <div class="sc" id="s2">
+    <div class="s2-top" id="s2top">What you think are real reviews...</div>
+    <div class="fgrid" id="fgrid">
+      <div class="fcard" id="fc1">
+        <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="fc-text">"Changed my skin overnight! I will never use anything else. Buy it NOW!"</div>
+        <div class="fc-bot">
+          <span class="fc-name">sarah_glow_official</span>
+          <span class="fc-tag">paid promo</span>
+        </div>
+      </div>
+      <div class="fcard" id="fc2">
+        <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="fc-text">"No breakouts, no side effects. Perfect for every skin type. Doctor recommended!"</div>
+        <div class="fc-bot">
+          <span class="fc-name">wellnessqueen99x</span>
+          <span class="fc-tag">bot account</span>
+        </div>
+      </div>
+      <div class="fcard" id="fc3">
+        <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="fc-text">"I was sceptical but WOW. Miracle results in just 3 days. Absolutely amazing!"</div>
+        <div class="fc-bot">
+          <span class="fc-name">real_user_48820</span>
+          <span class="fc-tag">incentivised</span>
+        </div>
+      </div>
+      <div class="fcard" id="fc4">
+        <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="fc-text">"My dermatologist told me this is the best product in 2026. Life-changing!"</div>
+        <div class="fc-bot">
+          <span class="fc-name">skinsolved_promo</span>
+          <span class="fc-tag">unverified</span>
+        </div>
+      </div>
+      <div class="fcard" id="fc5">
+        <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="fc-text">"Cleared my acne in one week. Worth every penny. Everyone needs to try this!"</div>
+        <div class="fc-bot">
+          <span class="fc-name">glowup_partner22</span>
+          <span class="fc-tag">paid promo</span>
+        </div>
+      </div>
+      <div class="fcard" id="fc6">
+        <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="fc-text">"100% natural, zero chemicals, perfect for sensitive skin. Trust the reviews!"</div>
+        <div class="fc-bot">
+          <span class="fc-name">user_7738291</span>
+          <span class="fc-tag">bot account</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+       S3: PROBLEM STATEMENT
+  ============================ -->
+  <div class="sc" id="s3">
+    <div class="s3-left">
+      <svg class="no-svg" viewBox="0 0 140 140">
+        <circle class="no-circle" id="nc" cx="70" cy="70" r="55"/>
+        <line class="no-line" id="nl" x1="28" y1="28" x2="112" y2="112"/>
+      </svg>
+      <div class="s3-no-label fade-in" id="s3nl">Fake. Paid. Unverified.</div>
+    </div>
+    <div class="s3-right">
+      <div class="s3-stat fade-up" id="s3st">
+        <em>82%</em>
+      </div>
+      <div class="s3-desc fade-up" id="s3de" style="transition-delay:.2s">
+        of online beauty reviews in 2026 are either paid partnerships, incentivised, or generated by bots. You have been buying on false information.
+      </div>
+      <div class="s3-pill fade-up" id="s3pi" style="transition-delay:.4s">
+        <span>Women deserve better</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+       S4: BRAND REVEAL
+  ============================ -->
+  <div class="sc" id="s4">
+    <div class="petal-ring"></div>
+    <div class="petal-ring petal-ring-2"></div>
+    <div class="brand-center">
+      <div class="b4-eye fade-up" id="b4e">Introducing</div>
+      <div class="b4-sh fade-up" id="b4s" style="transition-delay:.15s">
+        Stylish<span class="b4-amp">&amp;</span><span class="b4-he">Healthy</span>
+      </div>
+      <!-- needle + thread SVG -->
+      <svg class="needle-svg" id="b4n" width="140" height="22" viewBox="0 0 140 22">
+        <path d="M6 11 Q35 2 70 11 Q105 20 134 11" stroke="var(--sage)" stroke-width="1.2" fill="none" stroke-dasharray="4 3"/>
+        <circle cx="6" cy="11" r="4.5" fill="none" stroke="var(--green)" stroke-width="1.2"/>
+        <circle cx="5.5" cy="10.5" r="1" fill="var(--green)"/>
+        <line x1="134" y1="11" x2="140" y2="8" stroke="var(--green)" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      <div class="b4-tagline fade-up" id="b4t" style="transition-delay:.45s">Pretty routines. Smarter choices.</div>
+      <div class="b4-pill fade-up" id="b4p" style="transition-delay:.65s">
+        <span>&#10003;&nbsp;&nbsp;100% Verified Reviews</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+       S5: THREE PILLARS
+  ============================ -->
+  <div class="sc" id="s5">
+    <div class="s5-head fade-up" id="s5h">What makes us different</div>
+    <div class="pillars">
+      <div class="pillar p1" id="p1">
+        <div class="pillar-num">01</div>
+        <div class="pillar-head">Every review<br>is verified.</div>
+        <div class="pillar-sub">No bots. No paid posts.</div>
+        <div class="pillar-line"></div>
+      </div>
+      <div class="pdiv"></div>
+      <div class="pillar p2" id="p2">
+        <div class="pillar-num">02</div>
+        <div class="pillar-head">Research-backed.<br>Not trend-chasing.</div>
+        <div class="pillar-sub">Beauty with structure.</div>
+        <div class="pillar-line"></div>
+      </div>
+      <div class="pdiv"></div>
+      <div class="pillar p3" id="p3">
+        <div class="pillar-num">03</div>
+        <div class="pillar-head">A safe space<br>for real women.</div>
+        <div class="pillar-sub">Trust is everything.</div>
+        <div class="pillar-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+       S6: CTA
+  ============================ -->
+  <div class="sc" id="s6">
+    <div class="s6-wm">S&H</div>
+    <div class="s6-glow"></div>
+    <div class="cta-wrap">
+      <div class="cta-left">
+        <div class="cta-eye fade-up" id="c6e">Your new favourite destination</div>
+        <div class="cta-mark fade-up" id="c6m" style="transition-delay:.15s">
+          Stylish<br><em>&amp; Healthy</em>
+        </div>
+        <div class="cta-rule" id="c6r"></div>
+        <div class="cta-copy fade-up" id="c6c" style="transition-delay:.55s">
+          Honest reviews. Beautiful wellness.<br>Real results, every single time.
+        </div>
+      </div>
+      <div class="cta-right">
+        <div class="cta-url fade-up" id="c6u" style="transition-delay:.7s">stylishandhealthy.com</div>
+        <button class="cta-btn fade-up" id="c6b" style="transition-delay:.9s">Explore Now</button>
+        <div class="cta-year fade-in" id="c6y" style="transition-delay:1.1s">Est. 2026</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REPLAY -->
+  <button id="replay">&#8635; Watch again</button>
+
+  <!-- START -->
+  <div id="start-ov">
+    <div class="start-ring"><span class="start-play">&#9654;</span></div>
+    <div class="start-lbl">Tap to play</div>
+  </div>
+
+</div>
+
+<script>
+const SCENES=[
+  {id:'s0',dur:2800,trans:900},
+  {id:'s1',dur:3800,trans:800},
+  {id:'s2',dur:2600,trans:800},
+  {id:'s3',dur:2800,trans:900},
+  {id:'s4',dur:3000,trans:900},
+  {id:'s5',dur:3000,trans:800},
+  {id:'s6',dur:5000,trans:700},
+];
+
+let cur=-1, timers=[];
+const T=(fn,ms)=>{const id=setTimeout(fn,ms);timers.push(id);return id;};
+const clearAll=()=>{timers.forEach(clearTimeout);timers=[];};
+
+// ── PROGRESS BAR ──
+function buildPB(){
+  const el=document.getElementById('prog');
+  el.innerHTML='';
+  SCENES.forEach((_,i)=>{
+    const s=document.createElement('div');s.className='ps';
+    const f=document.createElement('div');f.className='pf';f.id='pf'+i;
+    s.appendChild(f);el.appendChild(s);
+  });
+}
+function animPB(i,dur){
+  const el=document.getElementById('pf'+i);
+  if(!el)return;
+  el.style.transition='none';el.style.width='0%';
+  void el.offsetWidth;
+  el.style.transition=`width ${dur}ms linear`;
+  el.style.width='100%';
+}
+
+// ── CROSSFADE (no flash, pure opacity) ──
+function crossfade(from,to,dur,cb){
+  const toEl=document.getElementById(SCENES[to].id);
+  const fromEl=from>=0?document.getElementById(SCENES[from].id):null;
+  toEl.style.transition='none';
+  toEl.style.opacity='0';
+  toEl.classList.add('active');
+  void toEl.offsetWidth;
+  toEl.style.transition=`opacity ${dur}ms cubic-bezier(.4,0,.2,1)`;
+  toEl.style.opacity='1';
+  if(fromEl){
+    fromEl.style.transition=`opacity ${dur}ms cubic-bezier(.4,0,.2,1)`;
+    fromEl.style.opacity='0';
+    T(()=>{fromEl.classList.remove('active');fromEl.style.opacity='0';},dur+60);
+  }
+  if(cb) T(cb,dur);
+}
+
+// ── RUN SCENE ──
+function runScene(idx){
+  cur=idx;
+  animPB(idx,SCENES[idx].dur);
+  [scene0,scene1,scene2,scene3,scene4,scene5,scene6][idx]();
+  if(idx<SCENES.length-1){
+    T(()=>crossfade(idx,idx+1,SCENES[idx].trans,()=>{resetDOM(idx);runScene(idx+1);}),SCENES[idx].dur);
+  } else {
+    T(()=>document.getElementById('replay').classList.add('in'),SCENES[idx].dur+300);
+  }
+}
+
+// ── SHOW HELPER ──
+function show(id,delay=0){
+  T(()=>{
+    const el=document.getElementById(id);
+    if(!el)return;
+    el.classList.add('in');
+    el.style.opacity=''; // let class handle it
+  },delay);
+}
+
+// ── SCENE FUNCTIONS ──
+function scene0(){
+  show('s0-ey',80);
+  show('s0-h',220);
+  T(()=>document.getElementById('s0-ln').classList.add('in'),400);
+  show('dh',600);
+  show('s0-rh',350);
+  show('s0-rs',620);
+}
+
+function scene1(){
+  T(()=>document.getElementById('phone').classList.add('in'),100);
+  T(()=>document.getElementById('s1txt').classList.add('in'),200);
+  const w='best face serum 2026';
+  let i=0;const el=document.getElementById('stext');
+  function tn(){
+    if(i<w.length){
+      el.innerHTML=w.slice(0,++i)+'<span class="cblink"></span>';
+      T(tn,60+Math.random()*50);
+    } else {
+      T(()=>{
+        ['ri1','ri2','ri3'].forEach((id,j)=>T(()=>document.getElementById(id).classList.add('in'),j*220));
+      },350);
+    }
+  }
+  T(tn,800);
+}
+
+function scene2(){
+  show('s2top',80);
+  ['fc1','fc2','fc3','fc4','fc5','fc6'].forEach((id,i)=>{
+    T(()=>document.getElementById(id).classList.add('in'),160+i*110);
+  });
+  // slow cinematic zoom
+  T(()=>{
+    const g=document.getElementById('fgrid');
+    g.style.transition='transform 1.6s cubic-bezier(.25,.8,.25,1)';
+    g.style.transform='scale(1.12)';
+  },900);
+}
+
+function scene3(){
+  T(()=>{
+    document.getElementById('nc').classList.add('draw-c');
+    document.getElementById('nl').classList.add('draw-l');
+  },100);
+  show('s3nl',800);
+  show('s3st',600);
+  show('s3de',800);
+  show('s3pi',1000);
+}
+
+function scene4(){
+  show('b4e',60);
+  show('b4s',200);
+  T(()=>document.getElementById('b4n').classList.add('in'),500);
+  show('b4t',520);
+  show('b4p',720);
+}
+
+function scene5(){
+  show('s5h',80);
+  T(()=>document.getElementById('p1').classList.add('in'),400);
+  T(()=>document.getElementById('p2').classList.add('in'),600);
+  T(()=>document.getElementById('p3').classList.add('in'),800);
+}
+
+function scene6(){
+  show('c6e',60);
+  show('c6m',200);
+  T(()=>document.getElementById('c6r').classList.add('in'),500);
+  show('c6c',600);
+  show('c6u',750);
+  show('c6b',950);
+  show('c6y',1150);
+}
+
+// ── RESET DOM ──
+function resetDOM(idx){
+  const resets={
+    0:()=>{
+      ['s0-ey','s0-h','s0-rs','dh'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+      document.getElementById('s0-rh').classList.remove('in');
+      document.getElementById('s0-ln').classList.remove('in');
+    },
+    1:()=>{
+      document.getElementById('phone').classList.remove('in');
+      document.getElementById('s1txt').classList.remove('in');
+      document.getElementById('stext').innerHTML='<span class="cblink"></span>';
+      ['ri1','ri2','ri3'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+    },
+    2:()=>{
+      document.getElementById('s2top').classList.remove('in');
+      ['fc1','fc2','fc3','fc4','fc5','fc6'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+      const g=document.getElementById('fgrid');g.style.transition='none';g.style.transform='none';
+    },
+    3:()=>{
+      document.getElementById('nc').classList.remove('draw-c');
+      document.getElementById('nl').classList.remove('draw-l');
+      ['s3nl','s3st','s3de','s3pi'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+    },
+    4:()=>{
+      ['b4e','b4s','b4t','b4p'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+      document.getElementById('b4n').classList.remove('in');
+    },
+    5:()=>{
+      document.getElementById('s5h').classList.remove('in');
+      ['p1','p2','p3'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+    },
+    6:()=>{
+      ['c6e','c6m','c6c','c6u','c6b','c6y'].forEach(id=>{const e=document.getElementById(id);if(e)e.classList.remove('in');});
+      document.getElementById('c6r').classList.remove('in');
+    },
+  };
+  if(resets[idx]) resets[idx]();
+}
+
+// ── FULL RESET ──
+function resetAll(){
+  clearAll();
+  SCENES.forEach((_,i)=>{
+    const el=document.getElementById(SCENES[i].id);
+    el.style.transition='none';el.style.opacity='0';el.classList.remove('active');
+    resetDOM(i);
+  });
+  document.querySelectorAll('.pf').forEach(el=>{el.style.transition='none';el.style.width='0%';});
+  document.getElementById('replay').classList.remove('in');
+  cur=-1;
+}
+
+// ── START ──
+function start(){
+  document.getElementById('start-ov').style.display='none';
+  buildPB();
+  const first=document.getElementById(SCENES[0].id);
+  first.classList.add('active');
+  first.style.transition='none';first.style.opacity='0';
+  void first.offsetWidth;
+  first.style.transition='opacity .8s ease';
+  first.style.opacity='1';
+  T(()=>runScene(0),60);
+}
+
+document.getElementById('start-ov').addEventListener('click',start);
+document.getElementById('replay').addEventListener('click',()=>{
+  resetAll();T(()=>{buildPB();start();},100);
+});
+</script>
+</body>
+</html>
