@@ -113,8 +113,8 @@
         <h3 class="sc-name">My Journal — Digital PDF</h3>
         <p class="sc-desc">A soft, printable 20-page journal PDF with daily check-ins, brain-dump pages, mood, energy, sleep, gratitude, habits, and notes.</p>
         <div class="sc-foot">
-          <div class="sc-price">$5 <small>PDF</small></div>
-          <a class="sc-btn paid-product" href="#" data-product="journal1" aria-label="Buy My Journal digital PDF for five dollars">Buy now</a>
+          <div class="sc-price">€5 <small>PDF</small></div>
+          <a class="sc-btn" href="https://buy.stripe.com/fZucN61Ktecmf1o8PhbjW00" target="_blank" rel="noopener" aria-label="Buy My Journal digital PDF for five euros">Buy now</a>
         </div>
       </div>
     </article>
@@ -192,13 +192,6 @@
 
       if (empty) empty.style.display = visibleCount ? 'none' : 'block';
     }));
-
-    document.querySelectorAll('.paid-product').forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.preventDefault();
-        alert('Checkout for this $5 download is ready to connect. Add your Stripe, Gumroad, Payhip, or Etsy product link for My Journal, then replace this button link.');
-      });
-    });
   })();
 </script>
 </body>
