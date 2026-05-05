@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="p:domain_verify" content="d52c5a761a8aff55499412bf4194b9c0" />
+  <title>Shop — Stickers, Digital Downloads & Wellness Merch</title>
+  <meta name="description" content="Aesthetic sticker packs, digital planners, and soft merch from Stylishandhealthy. Everything to make your routines feel beautiful." />
+  <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>
+    .shop-tabs { display: flex; gap: 8px; margin-bottom: 40px; flex-wrap: wrap; }
+    .tab { font-family: var(--body); font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 8px 20px; border-radius: 100px; border: 1.5px solid rgba(85,107,62,.2); color: var(--green-dk); background: transparent; cursor: none; transition: background .2s, border-color .2s, color .2s; }
+    .tab.on, .tab:hover { background: var(--green); border-color: var(--green); color: var(--cream); }
+    .shop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .sc { background: var(--cream); border-radius: 24px; overflow: hidden; transition: transform .25s var(--ease), box-shadow .25s; cursor: none; border: 1px solid rgba(58,42,34,.07); }
+    .sc:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(85,107,62,.13); }
+    .sc.wide { grid-column: span 2; }
+    .sc-thumb { height: 200px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+    .sc.wide .sc-thumb { height: 220px; }
+    .sc-badge { position: absolute; top: 13px; left: 13px; background: rgba(247,241,232,.92); color: var(--green-dk); font-family: var(--body); font-size: .63rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 11px; border-radius: 100px; }
+    .sc-body { padding: 18px 20px 22px; }
+    .sc-cat { font-family: var(--body); font-size: .66rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--pink-deep); margin-bottom: 5px; display: block; }
+    .sc-name { font-family: var(--display); font-size: 1.15rem; font-weight: 400; color: var(--green-dk); margin-bottom: 6px; line-height: 1.25; }
+    .sc-desc { font-size: .82rem; color: var(--brown-lt); line-height: 1.6; margin-bottom: 14px; }
+    .sc-foot { display: flex; align-items: center; justify-content: space-between; }
+    .sc-price { font-family: var(--display); font-size: 1.15rem; color: var(--green-dk); }
+    .sc-price small { font-family: var(--body); font-size: .68rem; color: var(--brown-lt); }
+    .sc-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sc-thumb.fit img { object-fit: contain; padding: 18px; background: var(--cream-warm); }
+    .sc-btn { display: inline-flex; align-items: center; justify-content: center; background: var(--green); color: var(--cream); font-family: var(--body); font-size: .74rem; font-weight: 700; padding: 8px 17px; border-radius: 100px; border: 0; cursor: none; transition: background .2s, transform .15s var(--easeb); }
+    .sc-btn:hover { background: var(--green-dk); transform: scale(1.06); }
+    .shop-empty-message { display: none; grid-column: 1 / -1; text-align: center; background: rgba(247,241,232,.72); border: 1px solid rgba(85,107,62,.14); border-radius: 24px; padding: 42px 22px; color: var(--brown-lt); }
+    .shop-empty-message h3 { font-family: var(--display); font-size: 1.55rem; font-weight: 400; color: var(--green-dk); margin-bottom: 8px; }
+    .shop-empty-message h3 em { font-style: italic; color: var(--pink-deep); }
+    @media(max-width:860px) { .shop-grid{grid-template-columns:repeat(2,1fr)} .sc.wide{grid-column:span 2} }
+    @media(max-width:560px) { .shop-grid{grid-template-columns:1fr} .sc.wide{grid-column:span 1} }
+  </style>
+
+  <!-- SEO: Canonical -->
+  <link rel="canonical" href="https://www.stylishandhealthy.com/shop" />
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shop — Stickers, Digital Downloads & Wellness Merch" />
+  <meta property="og:description" content="Aesthetic sticker packs, digital planners, and soft merch from Stylishandhealthy. Everything to make your routines feel beautiful." />
+  <meta property="og:url" content="https://www.stylishandhealthy.com/shop" />
+  <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Stylishandhealthy" />
+
+  <!-- SEO: Twitter/X Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shop — Stickers, Digital Downloads & Wellness Merch" />
+  <meta name="twitter:description" content="Aesthetic sticker packs, digital planners, and soft merch from Stylishandhealthy. Everything to make your routines feel beautiful." />
+  <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+
+  <!-- SEO: Pinterest -->
+  <meta name="pinterest:description" content="Aesthetic sticker packs, digital planners, and soft merch from Stylishandhealthy. Everything to make your routines feel beautiful." />
+  <meta name="pinterest:media" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
+</head>
+<body>
+
+<div id="cdot"></div>
+
+<div class="wordmark-bar">
+  <img src="/assets/images/youtube_banner.png" alt="Stylishandhealthy." />
+</div>
+
+<nav>
+  <a href="/" class="nav-logo"><img src="/assets/images/logo_main.png" alt="S&H" /></a>
+  <ul>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/skincare">Skincare</a></li>
+    <li><a href="/subscribe">Subscribe</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/journal" class="npill">Free Journal</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-blob"></div>
+  <div class="doodle" style="width:120px;top:18%;right:10%;opacity:.25;transform:rotate(8deg)"><img src="/assets/images/heart1.png" alt="" /></div>
+  <div class="sl">The shop</div>
+  <h1>Stickers, downloads,<br>clothing <em>and more.</em></h1>
+  <p>Everything you need to make your routines feel beautiful -- from aesthetic sticker packs to digital planners and soft merch.</p>
+</div>
+
+<section class="sec" style="background:var(--pink);position:relative;overflow:hidden">
+  <div class="doodle" style="width:100px;top:5%;right:6%;transform:rotate(10deg);opacity:.4"><img src="/assets/images/heart2.png" alt="" /></div>
+
+  <div class="shop-tabs rv">
+    <button class="tab on">All</button>
+    <button class="tab">Stickers</button>
+    <button class="tab">Digital</button>
+    <button class="tab">Clothing</button>
+    <button class="tab">Accessories</button>
+  </div>
+
+  <div class="shop-grid rv d1" id="shopGrid">
+    <article class="sc wide" data-cat="digital">
+      <div class="sc-thumb fit">
+        <img src="/assets/images/journal1.png" alt="My Journal digital printable journal preview" loading="lazy" />
+        <span class="sc-badge">Digital Download</span>
+      </div>
+      <div class="sc-body">
+        <span class="sc-cat">Digital</span>
+        <h3 class="sc-name">My Journal — Digital PDF</h3>
+        <p class="sc-desc">A soft, printable 20-page journal PDF with daily check-ins, brain-dump pages, mood, energy, sleep, gratitude, habits, and notes.</p>
+        <div class="sc-foot">
+          <div class="sc-price">$5 <small>PDF</small></div>
+          <a class="sc-btn paid-product" href="#" data-product="journal1" aria-label="Buy My Journal digital PDF for five dollars">Buy now</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="sc" data-cat="digital">
+      <div class="sc-thumb fit">
+        <img src="/assets/images/printable1.png" alt="Brain Dump printable preview" loading="lazy" />
+        <span class="sc-badge">Free</span>
+      </div>
+      <div class="sc-body">
+        <span class="sc-cat">Digital</span>
+        <h3 class="sc-name">Brain Dump Printable</h3>
+        <p class="sc-desc">A free print download to clear your mind, organize your thoughts, and sort everything into priorities, must-dos, later, and notes.</p>
+        <div class="sc-foot">
+          <div class="sc-price">Free <small>PNG</small></div>
+          <a class="sc-btn" href="/assets/images/printable1.png" download>Download</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="shop-empty-message" id="shopEmpty">
+      <h3>More <em>coming soon</em></h3>
+      <p>This category is still being filled. Check the Digital tab for the journal and free printable.</p>
+    </div>
+  </div>
+</section>
+
+<section class="nw-strip">
+  <div class="doodle" style="width:110px;bottom:12%;right:7%;opacity:.3;transform:rotate(-5deg)"><img src="/assets/images/heart3.png" alt="" /></div>
+  <div class="nw-strip-inner rv">
+    <div class="sl">Be first to shop</div>
+    <h2>New drops, straight to your <em>inbox.</em></h2>
+    <p>Be the first to know when new products land. Subscribers get early access and exclusive discounts.</p>
+    <form class="nw-form" onsubmit="handleNwSub(event)">
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Join free</button>
+    </form>
+    <p class="nw-note">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo"><img src="/assets/images/logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
+      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
+    </div>
+    <div class="ft-col"><h4>Shop</h4><a href="/shop">All products</a><a href="/shop">Sticker Packs</a><a href="/shop">Digital Downloads</a><a href="/shop">Clothing</a></div>
+    <div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/subscribe">Subscribe</a><a href="/about">About</a><a href="/journal">Free Journal</a></div>
+    <div class="ft-col"><h4>Info</h4><a href="/about">Our mission</a><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/affiliate">Affiliate disclosure</a><a href="/contact">Contact</a></div>
+  </div>
+  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+</footer>
+
+<script src="/assets/js/shared.js"></script>
+<script>
+  (function() {
+    const tabs = document.querySelectorAll('.tab');
+    const cards = document.querySelectorAll('.sc[data-cat]');
+    const empty = document.getElementById('shopEmpty');
+
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      const category = tab.textContent.trim().toLowerCase();
+      let visibleCount = 0;
+
+      tabs.forEach(x => x.classList.remove('on'));
+      tab.classList.add('on');
+
+      cards.forEach(card => {
+        const show = category === 'all' || card.dataset.cat === category;
+        card.style.display = show ? '' : 'none';
+        if (show) visibleCount += 1;
+      });
+
+      if (empty) empty.style.display = visibleCount ? 'none' : 'block';
+    }));
+
+    document.querySelectorAll('.paid-product').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        alert('Checkout for this $5 download is ready to connect. Add your Stripe, Gumroad, Payhip, or Etsy product link for My Journal, then replace this button link.');
+      });
+    });
+  })();
+</script>
+</body>
+</html>
