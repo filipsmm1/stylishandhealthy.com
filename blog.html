@@ -7,7 +7,7 @@
 
   <title>Skincare & Wellness Blog — Stylishandhealthy</title>
 
-  <meta name="description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
+  <meta name="description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
 
   <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -153,10 +153,7 @@
       gap: 9px;
     }
 
-    /* Safety fix:
-       Your site uses .rv reveal animations in shared.js.
-       If that script fails or the observer does not trigger, content can stay invisible
-       until zooming/resizing forces a reflow. These blog sections should always show. */
+    /* Safety fix */
     .blog-filters,
     .blog-grid,
     .nw-strip-inner {
@@ -172,27 +169,23 @@
     }
   </style>
 
-  <!-- SEO: Canonical -->
   <link rel="canonical" href="https://www.stylishandhealthy.com/blog" />
 
-  <!-- SEO: Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Skincare & Wellness Blog — Stylishandhealthy" />
-  <meta property="og:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
+  <meta property="og:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
   <meta property="og:url" content="https://www.stylishandhealthy.com/blog" />
   <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Stylishandhealthy" />
 
-  <!-- SEO: Twitter/X Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Skincare & Wellness Blog — Stylishandhealthy" />
-  <meta name="twitter:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
+  <meta name="twitter:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
   <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
 
-  <!-- SEO: Pinterest -->
-  <meta name="pinterest:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler." />
+  <meta name="pinterest:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
   <meta name="pinterest:media" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
 
   <script type="application/ld+json">
@@ -201,7 +194,7 @@
     "@type": "Blog",
     "name": "Stylishandhealthy Blog",
     "url": "https://www.stylishandhealthy.com/blog",
-    "description": "Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful — no trends, no filler.",
+    "description": "Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler.",
     "publisher": {
       "@type": "Organization",
       "name": "Stylishandhealthy",
@@ -226,6 +219,16 @@
         "headline": "The Truth About Salicylic Acid 2%",
         "url": "https://www.stylishandhealthy.com/blog/salicylic-acid-2",
         "description": "A science-backed guide to salicylic acid 2% for acne, blackheads, oily skin, and sensitive skin. Learn which formula to choose and how to use it without wrecking your barrier.",
+        "author": {
+          "@type": "Organization",
+          "name": "Stylishandhealthy"
+        }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Eqqual Berry Vitamin Illuminating Serum: An Honest Ingredient Breakdown",
+        "url": "https://www.stylishandhealthy.com/blog/eqqual-berry-serum",
+        "description": "We read the full INCI list, checked the brand claims against published science, and gave an honest verdict. Is it actually a vitamin C serum?",
         "author": {
           "@type": "Organization",
           "name": "Stylishandhealthy"
@@ -303,106 +306,95 @@
 
   <div class="blog-grid">
 
+    <!-- Featured -->
     <a href="/blog/introduction" class="bc feat" data-category="all">
       <div class="bc-img">
         <div class="bc-cat">Featured</div>
-
         <img
           src="/assets/images/introduction.png"
           alt="Introduction to Stylishandhealthy"
           style="width:100%; height:100%; object-fit:cover;"
         />
       </div>
-
       <div class="bc-body">
-        <h2 class="bc-title">
-          Introduction: What We Stand For
-        </h2>
-
+        <h2 class="bc-title">Introduction: What We Stand For</h2>
         <div class="bc-meta">
           <span>Stylishandhealthy</span>
           <div class="bc-dot"></div>
           <span>5 min read</span>
         </div>
-
-        <p
-          style="
-            margin-top:14px;
-            line-height:1.7;
-            color:var(--brown-lt);
-            font-size:.88rem;
-          "
-        >
+        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
           Beauty backed by science. Transparency, honest recommendations,
           debunking bad products, and stopping misinformation in skincare,
           beauty, and wellness.
         </p>
-
-        <span class="bc-rd">
-          Read article →
-        </span>
+        <span class="bc-rd">Read article →</span>
       </div>
     </a>
 
+    <!-- Salicylic Acid -->
     <a href="/blog/salicylic-acid-2" class="bc" data-category="skincare">
       <div class="bc-img">
         <div class="bc-cat">Skincare</div>
-
         <img
           src="/assets/images/salycilictheordinary.png"
           alt="The Truth About Salicylic Acid 2%"
           style="width:100%; height:100%; object-fit:cover;"
         />
       </div>
-
       <div class="bc-body">
-        <h3 class="bc-title">
-          The Truth About Salicylic Acid 2%
-        </h3>
-
+        <h3 class="bc-title">The Truth About Salicylic Acid 2%</h3>
         <div class="bc-meta">
           <span>Skincare Science</span>
           <div class="bc-dot"></div>
           <span>12 min read</span>
         </div>
-
-        <p
-          style="
-            margin-top:14px;
-            line-height:1.7;
-            color:var(--brown-lt);
-            font-size:.88rem;
-          "
-        >
+        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
           What the research says, which formula to choose, and how to use
           salicylic acid without damaging your skin barrier.
         </p>
-
-        <span class="bc-rd">
-          Read article →
-        </span>
+        <span class="bc-rd">Read article →</span>
       </div>
     </a>
 
+    <!-- Eqqual Berry - NEW -->
+    <a href="/blog/eqqual-berry-serum" class="bc" data-category="skincare">
+      <div class="bc-img">
+        <div class="bc-cat">Skincare</div>
+        <img
+          src="/assets/images/eqqual_banner.png"
+          alt="Eqqual Berry Vitamin Illuminating Serum review"
+          style="width:100%; height:100%; object-fit:cover;"
+        />
+      </div>
+      <div class="bc-body">
+        <h3 class="bc-title">Eqqual Berry Serum: Honest Ingredient Breakdown</h3>
+        <div class="bc-meta">
+          <span>Product Analysis</span>
+          <div class="bc-dot"></div>
+          <span>10 min read</span>
+        </div>
+        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
+          We read the full INCI list, checked every claim against published
+          science, and gave an honest verdict. Is it actually a vitamin C serum?
+        </p>
+        <span class="bc-rd">Read article →</span>
+      </div>
+    </a>
+
+    <!-- Coming soon cards -->
     <div class="bc" data-category="skincare">
       <div class="bc-img">
         <div class="bc-cat">Coming Soon</div>
       </div>
-
       <div class="bc-body">
-        <h3 class="bc-title">
-          Best Ingredients for Acne-Prone Skin
-        </h3>
-
+        <h3 class="bc-title">Best Ingredients for Acne-Prone Skin</h3>
         <div class="bc-meta">
           <span>Skincare</span>
           <div class="bc-dot"></div>
           <span>Coming soon</span>
         </div>
-
-        <span class="bc-rd">
-          Coming soon
-        </span>
+        <span class="bc-rd">Coming soon</span>
       </div>
     </div>
 
@@ -410,21 +402,14 @@
       <div class="bc-img">
         <div class="bc-cat">Coming Soon</div>
       </div>
-
       <div class="bc-body">
-        <h3 class="bc-title">
-          Wellness Habits That Actually Help
-        </h3>
-
+        <h3 class="bc-title">Wellness Habits That Actually Help</h3>
         <div class="bc-meta">
           <span>Wellness</span>
           <div class="bc-dot"></div>
           <span>Coming soon</span>
         </div>
-
-        <span class="bc-rd">
-          Coming soon
-        </span>
+        <span class="bc-rd">Coming soon</span>
       </div>
     </div>
 
@@ -452,24 +437,13 @@
     </p>
 
     <form class="nw-form" onsubmit="handleNwSub(event)">
-      <input
-        type="email"
-        placeholder="your@email.com"
-        required
-      />
-
-      <button
-        type="submit"
-        class="btn btn-wh"
-        style="padding:11px 26px;font-size:.87rem"
-      >
+      <input type="email" placeholder="your@email.com" required />
+      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">
         Subscribe free
       </button>
     </form>
 
-    <p class="nw-note">
-      No spam. Unsubscribe anytime.
-    </p>
+    <p class="nw-note">No spam. Unsubscribe anytime.</p>
   </div>
 </section>
 
@@ -488,39 +462,10 @@
       </p>
 
       <div class="ft-socs">
-        <a
-          href="https://www.pinterest.com/stylishandhealthy"
-          class="ft-s"
-          target="_blank"
-          rel="noopener"
-        >
-          P
-        </a>
-
-        <a
-          href="https://www.instagram.com/stylishandhealthie"
-          class="ft-s"
-          target="_blank"
-          rel="noopener"
-        >
-          I
-        </a>
-
-        <a
-          href="https://www.tiktok.com/@stylish.and.healthy"
-          class="ft-s"
-          target="_blank"
-          rel="noopener"
-        >
-          T
-        </a>
-
-        <a
-          href="mailto:contact@stylishandhealthy.com"
-          class="ft-s"
-        >
-          M
-        </a>
+        <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
+        <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
+        <a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a>
+        <a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a>
       </div>
     </div>
 
