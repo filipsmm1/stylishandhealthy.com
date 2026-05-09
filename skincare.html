@@ -142,7 +142,7 @@
     <h2>Get the science delivered to your <em>inbox.</em></h2>
     <p>Every week: one ingredient decoded, one routine tip, one product recommendation. Research-first, beautifully written.</p>
     <form class="nw-form" onsubmit="handleNwSub(event)">
-      <input type="email" placeholder="your@email.com" required />
+      <input type="email" name="EMAIL" placeholder="your@email.com" required />
       <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Subscribe free</button>
     </form>
     <p class="nw-note">No spam. Unsubscribe anytime.</p>
@@ -160,7 +160,7 @@
     <div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/subscribe">Subscribe</a><a href="/about">About</a><a href="/journal">Free Journal</a></div>
     <div class="ft-col"><h4>Info</h4><a href="/about">Our mission</a><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/affiliate">Affiliate disclosure</a><a href="/contact">Contact</a></div>
   </div>
-  <div class="ft-bot"><p>2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+  <div class="ft-bot"><p>&copy; 2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
 </footer>
 
 <script src="/assets/js/shared.js"></script>
@@ -170,10 +170,26 @@
     t.classList.add('on');
 
     const filter = t.textContent.trim().toLowerCase().replace(/[^a-z-]/g, '');
-    document.querySelectorAll('.skc-cards [data-category]').forEach(card => {
-      const cat = (card.dataset.category || '').toLowerCase();
-      card.style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+    const cards  = document.querySelectorAll('.skc-cards [data-category]');
+    let visible  = 0;
+
+    cards.forEach(card => {
+      const cat  = (card.dataset.category || '').toLowerCase();
+      const show = (filter === 'all' || cat === filter);
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
     });
+
+    // Show/hide empty state
+    let empty = document.getElementById('skc-empty');
+    if (!empty) {
+      empty = document.createElement('div');
+      empty.id = 'skc-empty';
+      empty.style.cssText = 'padding:40px 0;text-align:left;';
+      empty.innerHTML = '<p style="font-family:var(--display);font-size:1.3rem;font-weight:400;color:var(--green-dk);margin-bottom:8px">More picks <em style=\'font-style:italic;color:var(--pink-deep)\'>coming soon.</em></p><p style="font-size:.88rem;color:var(--brown-lt);line-height:1.7;max-width:380px">We\'re still reviewing and writing up recommendations for this category. Subscribe to be first to know.</p><a href="/subscribe" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:var(--body);font-size:.82rem;font-weight:600;color:var(--green);border-bottom:1px solid rgba(85,107,62,.22)">Get notified →</a>';
+      document.querySelector('.skc-cards').appendChild(empty);
+    }
+    empty.style.display = (visible === 0) ? 'block' : 'none';
   }));
 </script>
 </body>

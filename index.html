@@ -45,52 +45,18 @@
     .hc1 .hc-name{color:var(--cream)} .hc2 .hc-name{color:var(--green-dk)} .hc3 .hc-name{color:var(--brown)}
 
     /* ---- AD SECTION ---- */
-    #brand-ad {
-      padding: 0;
-      width: 100%;
-      background: var(--cream);
-      line-height: 0;
-      font-size: 0;
-    }
-    #brand-ad iframe {
-      display: block;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: none;
-      background: transparent;
-    }
+    #brand-ad { padding: 0; width: 100%; background: var(--cream); line-height: 0; font-size: 0; }
+    #brand-ad iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: none; background: transparent; }
 
     /* ---- JOURNAL STRIP + ABOUT — unified dark green block ---- */
-    .journal-strip {
-      background: var(--green-dk);
-      padding: 72px 80px 0;
-      position: relative;
-      overflow: hidden;
-    }
-    .journal-strip::before {
-      content: '';
-      position: absolute;
-      right: -60px;
-      top: -60px;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: rgba(247,241,232,.04);
-      pointer-events: none;
-    }
-    .js-inner,
-    .about-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
+    .journal-strip { background: var(--green-dk); padding: 72px 80px 0; position: relative; overflow: hidden; }
+    .journal-strip::before { content: ''; position: absolute; right: -60px; top: -60px; width: 300px; height: 300px; border-radius: 50%; background: rgba(247,241,232,.04); pointer-events: none; }
+    .js-inner, .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
     .js-left h3 { font-family: var(--display); font-size: 2.2rem; font-weight: 400; color: var(--cream); margin-bottom: 8px; }
     .js-left h3 em { font-style: italic; color: var(--pink-mid); }
     .js-left p { font-size: .95rem; color: rgba(247,241,232,.58); max-width: 480px; line-height: 1.7; }
     .js-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,241,232,.1); border: 1px solid rgba(247,241,232,.2); border-radius: 100px; padding: 7px 18px; margin-bottom: 16px; }
     .js-badge span { font-family: var(--hand2); font-size: .95rem; color: var(--pink-mid); }
-
     .js-slideshow { margin-top: 28px; width: 100%; position: relative; }
     .js-slides { position: relative; width: 100%; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.45); background: var(--green); }
     .js-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; will-change: opacity; }
@@ -99,7 +65,6 @@
     .js-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(247,241,232,.25); transition: background .3s, transform .3s; cursor: pointer; }
     .js-dot.active { background: var(--pink-mid); transform: scale(1.3); }
     .js-cta { margin-top: 24px; }
-
     #about { background: var(--green-dk); padding: 0 80px 96px; position: relative; overflow: hidden; }
     .ast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
     .ast { background: rgba(247,241,232,.04); border: 1px solid rgba(247,241,232,.07); padding: 34px 26px; transition: background .2s; }
@@ -138,87 +103,21 @@
     .cat.dark::before { background: rgba(255,255,255,.06); }
     .cat.pink-bg::before { background: rgba(255,255,255,.3); }
 
-    /* ---- TESTIMONIALS MINI ---- */
-    #testimonials { background: var(--pink); padding: 108px 80px; position: relative; overflow: hidden; }
-    .tg { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-top: 52px; }
-    .tc { background: var(--cream); border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px; padding: 30px; border: 1px solid rgba(58,42,34,.06); transition: transform .25s var(--ease), box-shadow .25s; cursor: none; }
-    .tc:hover { transform: translateY(-4px); box-shadow: 0 15px 38px rgba(85,107,62,.1); }
-    .tc-stars { color: #B8763A; letter-spacing: 2px; font-size: .84rem; margin-bottom: 15px; }
-    .tc-q { font-family: var(--display); font-style: italic; font-size: 1.04rem; font-weight: 400; color: var(--green-dk); line-height: 1.72; margin-bottom: 20px; }
-    .tc-auth { display: flex; align-items: center; gap: 11px; }
-    .tc-av { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 1rem; font-style: italic; color: var(--cream); }
-    .tc-name { font-family: var(--body); font-size: .83rem; font-weight: 600; color: var(--green-dk); }
-    .tc-handle { font-size: .73rem; color: var(--brown-lt); }
-
     /* ---- PINTEREST ---- */
-    .pinterest-strip {
-      background: var(--cream-warm);
-      padding: 72px 80px;
-      position: relative;
-      overflow: hidden;
-    }
-    .pin-strip-head {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      margin-bottom: 36px;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .pin-strip-head h2 {
-      font-family: var(--display);
-      font-size: 2rem;
-      font-weight: 400;
-      color: var(--green-dk);
-      margin-bottom: 8px;
-    }
-    .pin-strip-head p {
-      font-size: .9rem;
-      color: var(--brown-lt);
-      max-width: 420px;
-      line-height: 1.6;
-    }
-    .pin-eyebrow {
-      font-family: var(--body);
-      font-size: .68rem;
-      font-weight: 600;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--green);
-      display: block;
-      margin-bottom: 10px;
-    }
-    .pin-follow {
-      font-family: var(--body);
-      font-size: .85rem;
-      font-weight: 600;
-      color: var(--green);
-      text-decoration: none;
-      white-space: nowrap;
-      border: 1px solid rgba(85,107,62,.25);
-      border-radius: 100px;
-      padding: 10px 22px;
-      transition: background .2s;
-    }
+    .pinterest-strip { background: var(--cream-warm); padding: 72px 80px; position: relative; overflow: hidden; }
+    .pin-strip-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 36px; gap: 24px; flex-wrap: wrap; }
+    .pin-strip-head h2 { font-family: var(--display); font-size: 2rem; font-weight: 400; color: var(--green-dk); margin-bottom: 8px; }
+    .pin-strip-head p { font-size: .9rem; color: var(--brown-lt); max-width: 420px; line-height: 1.6; }
+    .pin-eyebrow { font-family: var(--body); font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 10px; }
+    .pin-follow { font-family: var(--body); font-size: .85rem; font-weight: 600; color: var(--green); text-decoration: none; white-space: nowrap; border: 1px solid rgba(85,107,62,.25); border-radius: 100px; padding: 10px 22px; transition: background .2s; }
     .pin-follow:hover { background: rgba(85,107,62,.06); }
-    .pin-widget-wrap {
-      width: 100%;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-    }
-    .pin-widget-wrap > a {
-      display: block;
-      width: 100% !important;
-      max-width: 100% !important;
-    }
+    .pin-widget-wrap { width: 100%; overflow: hidden; display: flex; justify-content: center; }
+    .pin-widget-wrap > a { display: block; width: 100% !important; max-width: 100% !important; }
 
     @media(max-width:860px) {
       #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:96px 32px 80px}
       #about{grid-template-columns:1fr;padding:80px 32px;gap:44px}
       .cats-grid{grid-template-columns:1fr 1fr} .cat.tall{grid-row:span 1;min-height:auto}
-      .tg{grid-template-columns:1fr}
-      #testimonials{padding:60px 32px}
       .journal-strip{padding:60px 32px 0}
       #about{padding:0 32px 80px}
       .js-inner,.about-inner{grid-template-columns:1fr;gap:32px}
@@ -345,8 +244,6 @@
   </div>
 
   <div class="js-inner">
-
-    <!-- LEFT: slideshow only -->
     <div>
       <div class="js-slideshow" id="jsSlideshow">
         <div class="js-slides">
@@ -354,7 +251,6 @@
           <img src="/assets/images/journal_monthly_overview.png" alt="Monthly overview" class="js-slide" />
           <img src="/assets/images/journal_intentions.png" alt="Intentions page" class="js-slide" />
         </div>
-
         <div class="js-dots">
           <span class="js-dot active"></span>
           <span class="js-dot"></span>
@@ -363,70 +259,28 @@
       </div>
     </div>
 
-    <!-- RIGHT: all text + button + squares + feature boxes -->
     <div class="about-copy rv d2" style="display:flex;flex-direction:column;justify-content:center;">
       <div class="js-badge">
         <span>completely free — just your email</span>
       </div>
-
       <div class="sl">The 2026 Wellness Planner</div>
-
       <h2 class="sh">Your routines, <em>beautifully</em> planned.</h2>
-
-      <p style="margin-top:18px">
-        A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, wellness check-ins, and guided prompts, wrapped in a design you'll actually want to open.
-      </p>
-
+      <p style="margin-top:18px">A soft, structured planner built for intentional living — daily pages, habit tracking, monthly reviews, wellness check-ins, and guided prompts, wrapped in a design you'll actually want to open.</p>
       <div style="margin-top:8px;margin-bottom:28px;">
         <a href="/journal" class="btn btn-f" style="font-size:1rem;padding:16px 36px;white-space:nowrap">Get it →</a>
       </div>
-
       <div class="ast-grid rv" style="margin-top:0;">
-        <div class="ast">
-          <div class="ast-n">6</div>
-          <div class="ast-l">Sections inside</div>
-        </div>
-
-        <div class="ast">
-          <div class="ast-n">100%</div>
-          <div class="ast-l">Free — no card needed</div>
-        </div>
-
-        <div class="ast">
-          <div class="ast-n">✦</div>
-          <div class="ast-l">Beautifully designed</div>
-        </div>
-
-        <div class="ast">
-          <div class="ast-n">∞</div>
-          <div class="ast-l">Days of guided planning</div>
-        </div>
+        <div class="ast"><div class="ast-n">6</div><div class="ast-l">Sections inside</div></div>
+        <div class="ast"><div class="ast-n">100%</div><div class="ast-l">Free — no card needed</div></div>
+        <div class="ast"><div class="ast-n">✦</div><div class="ast-l">Beautifully designed</div></div>
+        <div class="ast"><div class="ast-n">∞</div><div class="ast-l">Days of guided planning</div></div>
       </div>
-
       <div class="aps">
-        <div class="ap">
-          <div>
-            <div class="ap-t">Daily pages</div>
-            <div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div>
-          </div>
-        </div>
-
-        <div class="ap">
-          <div>
-            <div class="ap-t">Habit tracker</div>
-            <div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div>
-          </div>
-        </div>
-
-        <div class="ap">
-          <div>
-            <div class="ap-t">Monthly reviews</div>
-            <div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div>
-          </div>
-        </div>
+        <div class="ap"><div><div class="ap-t">Daily pages</div><div class="ap-s">Space for priorities, routines, wellness notes, and gentle reflections.</div></div></div>
+        <div class="ap"><div><div class="ap-t">Habit tracker</div><div class="ap-s">Visual monthly grid — track up to 10 habits at a glance.</div></div></div>
+        <div class="ap"><div><div class="ap-t">Monthly reviews</div><div class="ap-s">Reflect on wins, lessons, and intentions at the end of every month.</div></div></div>
       </div>
     </div>
-
   </div>
 </div>
 
@@ -451,28 +305,24 @@
       <div class="cat-desc">Ingredient breakdowns, routine guides, and the science behind serums, acids, and moisturisers -- explained simply.</div>
       <a href="/skincare" class="cat-arr">Read</a>
     </div>
-
     <div class="cat rv d1">
       <div class="cat-label">Wellness</div>
       <div class="cat-title">Habits and Health</div>
       <div class="cat-desc">Sleep, hydration, movement, and mindset -- proven by science, brought to you simply.</div>
       <a href="/blog" class="cat-arr">Explore</a>
     </div>
-
     <div class="cat rv d2">
       <div class="cat-label">Self-growth</div>
       <div class="cat-title">Journaling and Mindset</div>
       <div class="cat-desc">Prompts, frameworks, and reflections to help you think clearly and grow with intention.</div>
       <a href="/blog" class="cat-arr">Read</a>
     </div>
-
     <div class="cat pink-bg rv d1">
       <div class="cat-label">Organisation</div>
       <div class="cat-title">Systems and Planning</div>
       <div class="cat-desc">Digital planners, habit trackers, and routine builders that make life feel calm and structured.</div>
       <a href="/shop" class="cat-arr">Explore</a>
     </div>
-
     <div class="cat rv d2">
       <div class="cat-label">Aesthetic</div>
       <div class="cat-title">Lifestyle and Routines</div>
@@ -480,17 +330,6 @@
       <a href="/blog" class="cat-arr">Read</a>
     </div>
   </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section id="testimonials">
-  <div class="doodle" style="width:150px;top:10%;left:5%;opacity:.25;transform:rotate(-8deg)">
-    <img src="/assets/images/heart1.png" alt="" />
-  </div>
-
-  <div class="sl rv">Reviews</div>
-  <h2 class="sh rv d2">No reviews <em>yet.</em></h2>
-  <p class="sp rv d3" style="max-width:560px">Reviews will appear here once customers and readers start sharing their experiences.</p>
 </section>
 
 <!-- SOCIAL POSTS -->
@@ -505,13 +344,11 @@
       <h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Outfit, skincare, and routine inspiration</h3>
       <p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">@stylishandhealthie</p>
     </a>
-
     <a class="post-card rv d2" href="https://www.pinterest.com/stylishandhealthy" target="_blank" rel="noopener" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block">
       <div class="sl" style="margin-bottom:16px">Pinterest</div>
       <h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Boards for routines, beauty, and lifestyle</h3>
       <p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">stylishandhealthy</p>
     </a>
-
     <a class="post-card rv d3" href="https://www.tiktok.com/@stylish.and.healthy" target="_blank" rel="noopener" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block">
       <div class="sl" style="margin-bottom:16px">TikTok</div>
       <h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Quick tips, product finds, and daily motivation</h3>
@@ -530,7 +367,6 @@
     </div>
     <a href="https://www.pinterest.com/stylishandhealthy" class="pin-follow" target="_blank" rel="noopener">Follow on Pinterest &rarr;</a>
   </div>
-
   <div class="pin-widget-wrap">
     <a
       data-pin-do="embedUser"
@@ -547,17 +383,14 @@
   <div class="doodle" style="width:120px;bottom:15%;right:8%;opacity:.3;transform:rotate(5deg)">
     <img src="/assets/images/heart3.png" alt="" />
   </div>
-
   <div class="nw-strip-inner rv">
     <div class="sl">Join the community</div>
     <h2>Pretty routines, delivered to your <em>inbox.</em></h2>
     <p>Free skincare guides, wellness tips, and exclusive downloads. No spam, ever.</p>
-
     <form class="nw-form" onsubmit="handleNwSub(event)">
-      <input type="email" placeholder="your@email.com" required />
+      <input type="email" name="EMAIL" placeholder="your@email.com" required />
       <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">Join free</button>
     </form>
-
     <p class="nw-note">No spam. Unsubscribe anytime.</p>
   </div>
 </section>
@@ -569,9 +402,7 @@
         <img src="/assets/images/logo_main.png" alt="S&H" />
         <span>Stylishandhealthy<em>.</em></span>
       </div>
-
       <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
-
       <div class="ft-socs">
         <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
         <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
@@ -579,7 +410,6 @@
         <a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a>
       </div>
     </div>
-
     <div class="ft-col">
       <h4>Shop</h4>
       <a href="/shop">All products</a>
@@ -588,7 +418,6 @@
       <a href="/shop">Clothing</a>
       <a href="/shop">Accessories</a>
     </div>
-
     <div class="ft-col">
       <h4>Explore</h4>
       <a href="/blog">Blog</a>
@@ -597,7 +426,6 @@
       <a href="/about">About</a>
       <a href="/journal">Free Journal</a>
     </div>
-
     <div class="ft-col">
       <h4>Info</h4>
       <a href="/about">Our mission</a>
@@ -607,37 +435,28 @@
       <a href="/contact">Contact</a>
     </div>
   </div>
-
   <div class="ft-bot">
-    <p>2026 Stylishandhealthy. All rights reserved.</p>
+    <p>&copy; 2026 Stylishandhealthy. All rights reserved.</p>
     <span>Pretty routines. Smarter choices.</span>
   </div>
 </footer>
 
 <script src="/assets/js/shared.js"></script>
 <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
-
 <script>
-// Planner slideshow
 (function() {
   const slides = document.querySelectorAll('.js-slide');
   const dots   = document.querySelectorAll('.js-dot');
   if (!slides.length) return;
-
   let cur = 0;
-
   function go(n) {
     slides[cur].classList.remove('active');
     dots[cur].classList.remove('active');
-
     cur = (n + slides.length) % slides.length;
-
     slides[cur].classList.add('active');
     dots[cur].classList.add('active');
   }
-
   dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
-
   setInterval(() => go(cur + 1), 3200);
 })();
 </script>
