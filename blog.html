@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="p:domain_verify" content="d52c5a761a8aff55499412bf4194b9c0" />
 
-  <title>Skincare & Wellness Blog — Stylishandhealthy</title>
+  <title>Skincare & Wellness Blog - Stylishandhealthy</title>
 
   <meta name="description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
 
@@ -21,6 +21,55 @@
   <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <style>
+
+    .blog-tools {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .blog-search {
+      flex: 1 1 260px;
+      border: 1.5px solid rgba(85,107,62,.2);
+      border-radius: 999px;
+      background: var(--cream-warm);
+      color: var(--green-dk);
+      font-family: var(--body);
+      font-size: .9rem;
+      padding: 12px 18px;
+      outline: none;
+      cursor: text;
+    }
+
+    .blog-search::placeholder {
+      color: rgba(58,42,34,.48);
+    }
+
+    .blog-sort {
+      border: 1.5px solid rgba(85,107,62,.2);
+      border-radius: 999px;
+      background: var(--cream-warm);
+      color: var(--green-dk);
+      font-family: var(--body);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 12px 18px;
+      outline: none;
+    }
+
+    .blog-empty {
+      display: none;
+      margin-top: 26px;
+      color: var(--brown-lt);
+      font-family: var(--body);
+      font-size: .95rem;
+    }
+
     .blog-filters {
       display: flex;
       gap: 8px;
@@ -172,7 +221,7 @@
   <link rel="canonical" href="https://www.stylishandhealthy.com/blog" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Skincare & Wellness Blog — Stylishandhealthy" />
+  <meta property="og:title" content="Skincare & Wellness Blog - Stylishandhealthy" />
   <meta property="og:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
   <meta property="og:url" content="https://www.stylishandhealthy.com/blog" />
   <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
@@ -181,7 +230,7 @@
   <meta property="og:site_name" content="Stylishandhealthy" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Skincare & Wellness Blog — Stylishandhealthy" />
+  <meta name="twitter:title" content="Skincare & Wellness Blog - Stylishandhealthy" />
   <meta name="twitter:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
   <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
 
@@ -234,9 +283,21 @@
           "name": "Stylishandhealthy"
         }
       }
+,
+      {
+        "@type": "BlogPosting",
+        "headline": "Beauty of Joseon Relief Sun Rice + Probiotics: Honest Ingredient Breakdown",
+        "url": "https://www.stylishandhealthy.com/blog/beauty-of-joseon-relief-sun",
+        "description": "A friendly, science-backed ingredient breakdown of Beauty of Joseon Relief Sun Rice + Probiotics SPF50+ PA++++, including UV filters, rice extract, niacinamide, skin type fit, and routine tips.",
+        "datePublished": "2026-05-16",
+        "author": {
+          "@type": "Organization",
+          "name": "Stylishandhealthy"
+        }
+      }
     ]
   }
-  </script>
+  </script>_PLACEHOLDER
 </head>
 
 <body>
@@ -295,6 +356,22 @@
     <img src="/assets/images/heart2.png" alt="" />
   </div>
 
+
+  <div class="blog-tools" aria-label="Blog search and sorting">
+    <input
+      type="search"
+      id="blogSearch"
+      class="blog-search"
+      placeholder="Search articles, ingredients, routines..."
+      aria-label="Search blog articles"
+    />
+    <select id="blogSort" class="blog-sort" aria-label="Sort blog articles">
+      <option value="recent" selected>Recent first</option>
+      <option value="oldest">Oldest first</option>
+      <option value="az">A to Z</option>
+    </select>
+  </div>
+
   <div class="blog-filters">
     <button class="bftab on">All</button>
     <button class="bftab">Skincare</button>
@@ -307,7 +384,7 @@
   <div class="blog-grid">
 
     <!-- Featured -->
-    <a href="/blog/introduction" class="bc feat" data-category="all">
+    <a href="/blog/introduction" class="bc feat" data-category="all" data-date="2026-04-01" data-title="Introduction What We Stand For" data-search="introduction mission beauty science transparency skincare wellness">
       <div class="bc-img">
         <div class="bc-cat">Featured</div>
         <img
@@ -333,7 +410,7 @@
     </a>
 
     <!-- Salicylic Acid -->
-    <a href="/blog/salicylic-acid-2" class="bc" data-category="skincare">
+    <a href="/blog/salicylic-acid-2" class="bc" data-category="skincare" data-date="2026-05-02" data-title="The Truth About Salicylic Acid 2%" data-search="salicylic acid bha acne blackheads oily skin exfoliation barrier the ordinary">
       <div class="bc-img">
         <div class="bc-cat">Skincare</div>
         <img
@@ -358,7 +435,7 @@
     </a>
 
     <!-- Eqqual Berry - NEW -->
-    <a href="/blog/eqqual-berry-serum" class="bc" data-category="skincare">
+    <a href="/blog/eqqual-berry-serum" class="bc" data-category="skincare" data-date="2026-05-07" data-title="Eqqual Berry Serum Honest Ingredient Breakdown" data-search="eqqual berry serum niacinamide arbutin vitamin c brightening pigmentation ingredient breakdown">
       <div class="bc-img">
         <div class="bc-cat">Skincare</div>
         <img
@@ -383,7 +460,7 @@
     </a>
 
     <!-- Coming soon cards -->
-    <div class="bc" data-category="skincare">
+    <div class="bc" data-category="skincare" data-date="2026-01-01" data-title="Coming Soon" data-search="coming soon">
       <div class="bc-img">
         <div class="bc-cat">Coming Soon</div>
       </div>
@@ -398,7 +475,7 @@
       </div>
     </div>
 
-    <div class="bc" data-category="wellness">
+    <div class="bc" data-category="wellness" data-date="2026-01-01" data-title="Coming Soon" data-search="coming soon">
       <div class="bc-img">
         <div class="bc-cat">Coming Soon</div>
       </div>
@@ -507,22 +584,81 @@
 
 <script>
   const tabs = document.querySelectorAll(".bftab");
-  const cards = document.querySelectorAll(".blog-grid .bc, .blog-grid a.bc");
+  const grid = document.querySelector(".blog-grid");
+  const cards = Array.from(document.querySelectorAll(".blog-grid .bc"));
+  const searchInput = document.getElementById("blogSearch");
+  const sortSelect = document.getElementById("blogSort");
+  const emptyState = document.getElementById("blogEmpty");
 
-  tabs.forEach(t =>
-    t.addEventListener("click", () => {
+  let activeFilter = "all";
+
+  function normalizeText(value) {
+    return (value || "").toString().toLowerCase().trim();
+  }
+
+  function sortCards() {
+    const mode = sortSelect ? sortSelect.value : "recent";
+    const sorted = cards.slice().sort((a, b) => {
+      const dateA = new Date(a.dataset.date || "1970-01-01").getTime();
+      const dateB = new Date(b.dataset.date || "1970-01-01").getTime();
+      const titleA = normalizeText(a.dataset.title || a.textContent);
+      const titleB = normalizeText(b.dataset.title || b.textContent);
+
+      if (mode === "oldest") return dateA - dateB;
+      if (mode === "az") return titleA.localeCompare(titleB);
+      return dateB - dateA;
+    });
+
+    sorted.forEach(card => grid.appendChild(card));
+  }
+
+  function applyFilters() {
+    const query = normalizeText(searchInput ? searchInput.value : "");
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cat = normalizeText(card.dataset.category || "all");
+      const haystack = normalizeText([
+        card.dataset.title,
+        card.dataset.search,
+        card.textContent
+      ].join(" "));
+
+      const categoryMatch = activeFilter === "all" || cat === activeFilter;
+      const searchMatch = !query || haystack.includes(query);
+      const show = categoryMatch && searchMatch;
+
+      card.style.display = show ? "" : "none";
+      if (show) visibleCount += 1;
+    });
+
+    if (emptyState) {
+      emptyState.style.display = visibleCount ? "none" : "block";
+    }
+  }
+
+  tabs.forEach(tab =>
+    tab.addEventListener("click", () => {
       tabs.forEach(x => x.classList.remove("on"));
-      t.classList.add("on");
-
-      const filter = t.textContent.trim().toLowerCase();
-
-      cards.forEach(card => {
-        const cat = (card.dataset.category || "all").toLowerCase();
-        const show = filter === "all" || cat === filter;
-        card.style.display = show ? "" : "none";
-      });
+      tab.classList.add("on");
+      activeFilter = normalizeText(tab.textContent);
+      applyFilters();
     })
   );
+
+  if (searchInput) {
+    searchInput.addEventListener("input", applyFilters);
+  }
+
+  if (sortSelect) {
+    sortSelect.addEventListener("change", () => {
+      sortCards();
+      applyFilters();
+    });
+  }
+
+  sortCards();
+  applyFilters();
 </script>
 
 </body>
