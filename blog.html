@@ -104,6 +104,19 @@
       grid-template-columns: 1.5fr 1fr 1fr;
       gap: 18px;
     }
+    .blog-grid .bc {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none;
+    }
+
+    .blog-grid .bc-img img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
 
     .bc {
       border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px;
@@ -297,7 +310,7 @@
       }
     ]
   }
-  </script>_PLACEHOLDER
+  </script>
 </head>
 
 <body>
@@ -383,8 +396,32 @@
 
   <div class="blog-grid">
 
+    <!-- Beauty of Joseon Relief Sun -->
+    <a href="/blog/beauty-of-joseon-relief-sun" class="bc feat" data-category="skincare" data-date="2026-05-16" data-title="Beauty of Joseon Relief Sun Rice Probiotics Honest Ingredient Breakdown" data-search="beauty of joseon relief sun rice probiotics spf50 sunscreen korean sunscreen niacinamide rice extract uv filters sensitive skin">
+      <div class="bc-img">
+        <div class="bc-cat">Skincare</div>
+        <img
+          src="/assets/images/blogcardbeautyof.png"
+          alt="Beauty of Joseon Relief Sun Rice + Probiotics review"
+          style="width:100%; height:100%; object-fit:cover;"
+        />
+      </div>
+      <div class="bc-body">
+        <h3 class="bc-title">Beauty of Joseon Relief Sun: Honest Ingredient Breakdown</h3>
+        <div class="bc-meta">
+          <span>Product Analysis</span>
+          <div class="bc-dot"></div>
+          <span>11 min read</span>
+        </div>
+        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
+          A friendly science-backed review of the viral Rice + Probiotics SPF50+ PA++++ sunscreen, from UV filters to skin type fit.
+        </p>
+        <span class="bc-rd">Read article →</span>
+      </div>
+    </a>
+
     <!-- Featured -->
-    <a href="/blog/introduction" class="bc feat" data-category="all" data-date="2026-04-01" data-title="Introduction What We Stand For" data-search="introduction mission beauty science transparency skincare wellness">
+    <a href="/blog/introduction" class="bc" data-category="all" data-date="2026-04-01" data-title="Introduction What We Stand For" data-search="introduction mission beauty science transparency skincare wellness">
       <div class="bc-img">
         <div class="bc-cat">Featured</div>
         <img
@@ -408,6 +445,7 @@
         <span class="bc-rd">Read article →</span>
       </div>
     </a>
+
 
     <!-- Salicylic Acid -->
     <a href="/blog/salicylic-acid-2" class="bc" data-category="skincare" data-date="2026-05-02" data-title="The Truth About Salicylic Acid 2%" data-search="salicylic acid bha acne blackheads oily skin exfoliation barrier the ordinary">
@@ -624,7 +662,8 @@
         card.textContent
       ].join(" "));
 
-      const categoryMatch = activeFilter === "all" || cat === activeFilter;
+      const categories = cat.split(/\s+/).filter(Boolean);
+      const categoryMatch = activeFilter === "all" || categories.includes(activeFilter);
       const searchMatch = !query || haystack.includes(query);
       const show = categoryMatch && searchMatch;
 
