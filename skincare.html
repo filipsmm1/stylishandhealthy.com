@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <style>
     .skc-intro { background: var(--cream); }
@@ -29,8 +29,20 @@
     .skc p { font-size: .83rem; color: var(--brown-lt); line-height: 1.65; }
     .skc-lnk { display: inline-flex; align-items: center; gap: 5px; font-family: var(--body); font-size: .77rem; font-weight: 600; color: var(--green); margin-top: 9px; border-bottom: 1px solid rgba(85,107,62,.22); transition: border-color .2s, gap .15s var(--easeb); }
     .skc-lnk:hover { border-color: var(--green); gap: 9px; }
+    @media(max-width:1024px) { .skc-grid{gap:40px} }
     @media(max-width:860px) { .skc-grid{grid-template-columns:1fr} .skc-sticky{position:static} }
     .skc-cards a.skc:hover { transform: translateX(5px); box-shadow: 0 10px 30px rgba(85,107,62,.09); }
+    @media(max-width:560px) {
+      .skc-cards a[style*="grid-template-columns:140px"] {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .skc-cards a[style*="grid-template-columns:140px"] > div:first-child {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(58,42,34,.07);
+        padding: 20px;
+      }
+    }
   </style>
 
   <!-- SEO: Canonical -->
@@ -153,14 +165,14 @@
   <div class="ft-top">
     <div>
       <div class="ft-logo"><img src="/assets/images/logo_main.png" alt="S&H" /><span>Stylishandhealthy<em>.</em></span></div>
-      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
       <div class="ft-socs"><a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a><a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a><a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a><a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a></div>
     </div>
     <div class="ft-col"><h4>Shop</h4><a href="/shop">All products</a><a href="/shop">Sticker Packs</a><a href="/shop">Digital Downloads</a><a href="/shop">Clothing</a></div>
     <div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/subscribe">Subscribe</a><a href="/about">About</a><a href="/journal">Free Journal</a></div>
     <div class="ft-col"><h4>Info</h4><a href="/about">Our mission</a><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/affiliate">Affiliate disclosure</a><a href="/contact">Contact</a></div>
   </div>
-  <div class="ft-bot"><p>&copy; 2026 Stylishandhealthy. All rights reserved.</p><span>Pretty routines. Smarter choices.</span></div>
+  <div class="ft-bot"><p>&copy; 2026 Stylishandhealthy. All rights reserved.</p><span>Hot girls read the research.</span></div>
 </footer>
 
 <script src="/assets/js/shared.js"></script>

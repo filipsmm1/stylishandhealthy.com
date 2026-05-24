@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="p:domain_verify" content="d52c5a761a8aff55499412bf4194b9c0" />
-  <title>Stylishandhealthy — Science-Backed Skincare, Wellness & Beauty</title>
-  <meta name="description" content="Research-backed skincare, wellness habits, and self-improvement content that actually makes sense. No hype, no fake gurus — just real science, beautifully delivered." />
+  <title>Stylishandhealthy — Hot Girls Read the Research</title>
+  <meta name="description" content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Research-backed skincare, realistic wellness habits, style inspiration, and gentle self-growth content that actually helps. Pretty, useful, and never preachy." />
   <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Indie+Flower&family=Dancing+Script:wght@400;500;600;700&family=DynaPuff:wght@400;500;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <style>
     /* ---- HERO ---- */
     #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: var(--cream); position: relative; overflow: hidden; }
     #hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(85,107,62,.065) .55px, transparent .55px); background-size: 22px 22px; pointer-events: none; }
-    .hero-shape { position: absolute; right: -100px; top: -60px; width: 680px; height: 680px; border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; background: radial-gradient(circle at 40% 40%, var(--pink) 0%, var(--cream) 68%); opacity: .5; animation: hshape 14s ease-in-out infinite; }
-    @keyframes hshape { 0%,100%{transform:scale(1) translateY(0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%} 50%{transform:scale(1.06) translateY(-18px);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%} }
+    .hero-shape { position: absolute; right: -100px; top: -60px; width: 680px; height: 680px; border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; background: radial-gradient(circle at 40% 40%, var(--pink) 0%, var(--cream) 68%); opacity: .5; animation: hshape 14s ease-in-out infinite; will-change: transform; pointer-events: none; }
+    @keyframes hshape { 0%,100%{transform:scale(1) translate3d(0,0,0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%} 50%{transform:scale(1.06) translate3d(0,-18px,0);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%} }
     .hero-left { padding: 100px 68px 100px 80px; position: relative; z-index: 2; }
     .eyebrow { font-family: var(--body); font-size: .71rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--green); display: inline-block; margin-bottom: 22px; padding: 6px 16px; border: 1px solid rgba(85,107,62,.2); border-radius: 100px; background: rgba(85,107,62,.05); }
     .h1 { font-family: var(--display); font-size: clamp(3.2rem,5.8vw,5.8rem); font-weight: 400; line-height: 1.05; letter-spacing: -.02em; color: var(--green-dk); margin-bottom: 10px; }
@@ -33,12 +33,12 @@
     .hero-right { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; padding: 80px 80px 80px 0; }
     .hcards { position: relative; width: 350px; height: 400px; }
     .hc { position: absolute; border-radius: 22px; padding: 28px; box-shadow: 0 26px 52px rgba(58,42,34,.15); }
-    .hc1 { width: 270px; height: 320px; background: var(--green-dk); top: 0; left: 0; transform: rotate(-5deg); animation: hcf1 9s ease-in-out infinite; display: flex; flex-direction: column; justify-content: flex-end; }
-    .hc2 { width: 252px; height: 288px; background: var(--pink); top: 42px; left: 66px; transform: rotate(3deg); animation: hcf2 11s ease-in-out infinite .8s; display: flex; flex-direction: column; justify-content: flex-end; }
-    .hc3 { width: 234px; height: 252px; background: var(--cream-warm); border: 1px solid rgba(58,42,34,.07); top: 84px; left: 34px; transform: rotate(-.5deg); animation: hcf3 10s ease-in-out infinite .4s; display: flex; flex-direction: column; justify-content: flex-end; }
-    @keyframes hcf1 { 0%,100%{transform:rotate(-5deg) translateY(0)} 50%{transform:rotate(-5deg) translateY(-13px)} }
-    @keyframes hcf2 { 0%,100%{transform:rotate(3deg) translateY(0)} 50%{transform:rotate(3deg) translateY(-9px)} }
-    @keyframes hcf3 { 0%,100%{transform:rotate(-.5deg) translateY(0)} 50%{transform:rotate(-.5deg) translateY(-17px)} }
+    .hc1 { width: 270px; height: 320px; background: var(--green-dk); top: 0; left: 0; transform: rotate(-5deg); animation: hcf1 9s ease-in-out infinite; display: flex; flex-direction: column; justify-content: flex-end; will-change: transform; }
+    .hc2 { width: 252px; height: 288px; background: var(--pink); top: 42px; left: 66px; transform: rotate(3deg); animation: hcf2 11s ease-in-out infinite .8s; display: flex; flex-direction: column; justify-content: flex-end; will-change: transform; }
+    .hc3 { width: 234px; height: 252px; background: var(--cream-warm); border: 1px solid rgba(58,42,34,.07); top: 84px; left: 34px; transform: rotate(-.5deg); animation: hcf3 10s ease-in-out infinite .4s; display: flex; flex-direction: column; justify-content: flex-end; will-change: transform; }
+    @keyframes hcf1 { 0%,100%{transform:rotate(-5deg) translate3d(0,0,0)} 50%{transform:rotate(-5deg) translate3d(0,-13px,0)} }
+    @keyframes hcf2 { 0%,100%{transform:rotate(3deg) translate3d(0,0,0)} 50%{transform:rotate(3deg) translate3d(0,-9px,0)} }
+    @keyframes hcf3 { 0%,100%{transform:rotate(-.5deg) translate3d(0,0,0)} 50%{transform:rotate(-.5deg) translate3d(0,-17px,0)} }
     .hc-tag { font-family: var(--body); font-size: .65rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 5px; }
     .hc1 .hc-tag{color:rgba(247,241,232,.4)} .hc2 .hc-tag{color:rgba(85,107,62,.6)} .hc3 .hc-tag{color:var(--brown-lt)}
     .hc-name { font-family: var(--display); font-size: 1.35rem; font-weight: 400; line-height: 1.2; }
@@ -56,7 +56,7 @@
     .js-left h3 em { font-style: italic; color: var(--pink-mid); }
     .js-left p { font-size: .95rem; color: rgba(247,241,232,.58); max-width: 480px; line-height: 1.7; }
     .js-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,241,232,.1); border: 1px solid rgba(247,241,232,.2); border-radius: 100px; padding: 7px 18px; margin-bottom: 16px; }
-    .js-badge span { font-family: var(--hand2); font-size: .95rem; color: var(--pink-mid); }
+    .js-badge span { font-family: var(--hand); font-size: .9rem; color: var(--pink-mid); }
     .js-slideshow { margin-top: 28px; width: 100%; position: relative; }
     .js-slides { position: relative; width: 100%; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.45); background: var(--green); }
     .js-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .7s ease; will-change: opacity; }
@@ -99,7 +99,7 @@
     .cat-desc { font-size: .85rem; color: var(--brown-lt); line-height: 1.65; }
     .cat-arr { display: inline-flex; align-items: center; gap: 6px; font-family: var(--body); font-size: .79rem; font-weight: 600; color: var(--green); margin-top: 16px; transition: gap .18s var(--easeb); }
     .cat:hover .cat-arr { gap: 11px; }
-    .cat::before { content: ''; position: absolute; width: 160px; height: 160px; background: rgba(255,255,255,.25); border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; top: -30px; right: -30px; pointer-events: none; animation: blobmorph 14s ease-in-out infinite; }
+    .cat::before { content: ''; position: absolute; width: 160px; height: 160px; background: rgba(255,255,255,.25); border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; top: -30px; right: -30px; pointer-events: none; }
     .cat.dark::before { background: rgba(255,255,255,.06); }
     .cat.pink-bg::before { background: rgba(255,255,255,.3); }
 
@@ -114,33 +114,41 @@
     .pin-widget-wrap { width: 100%; overflow: hidden; display: flex; justify-content: center; }
     .pin-widget-wrap > a { display: block; width: 100% !important; max-width: 100% !important; }
 
+    @media(max-width:1024px) {
+      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:88px 48px 80px}
+    }
     @media(max-width:860px) {
-      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:96px 32px 80px}
-      #about{grid-template-columns:1fr;padding:80px 32px;gap:44px}
+      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:72px 24px 60px}
+      #about{grid-template-columns:1fr;padding:80px 24px;gap:44px}
       .cats-grid{grid-template-columns:1fr 1fr} .cat.tall{grid-row:span 1;min-height:auto}
-      .journal-strip{padding:60px 32px 0}
-      #about{padding:0 32px 80px}
+      .journal-strip{padding:56px 24px 0}
+      #about{padding:0 24px 72px}
       .js-inner,.about-inner{grid-template-columns:1fr;gap:32px}
-      .pinterest-strip{padding:60px 32px}
+      .pinterest-strip{padding:52px 0}
       .pin-strip-head{flex-direction:column;align-items:flex-start;}
     }
-    @media(max-width:560px) { .cats-grid{grid-template-columns:1fr} .ast-grid{grid-template-columns:1fr} }
+    @media(max-width:560px) {
+      .cats-grid{grid-template-columns:1fr} .ast-grid{grid-template-columns:1fr 1fr}
+      .hero-actions{flex-direction:column;align-items:flex-start}
+      .hero-actions .btn{width:100%;justify-content:center}
+      .hero-left{padding:60px 20px 52px}
+    }
   </style>
 
   <link rel="canonical" href="https://www.stylishandhealthy.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Stylishandhealthy — Science-Backed Skincare, Wellness & Beauty" />
-  <meta property="og:description" content="Research-backed skincare, wellness habits, and self-improvement content that actually makes sense. No hype, no fake gurus — just real science, beautifully delivered." />
+  <meta property="og:title" content="Stylishandhealthy — Hot Girls Read the Research" />
+  <meta property="og:description" content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Pretty, useful, and never preachy." />
   <meta property="og:url" content="https://www.stylishandhealthy.com/" />
   <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="Stylishandhealthy" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Stylishandhealthy — Science-Backed Skincare, Wellness & Beauty" />
-  <meta name="twitter:description" content="Research-backed skincare, wellness habits, and self-improvement content that actually makes sense. No hype, no fake gurus — just real science, beautifully delivered." />
+  <meta name="twitter:title" content="Stylishandhealthy — Hot Girls Read the Research" />
+  <meta name="twitter:description" content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Pretty, useful, and never preachy." />
   <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
-  <meta name="pinterest:description" content="Research-backed skincare, wellness habits, and self-improvement content that actually makes sense. No hype, no fake gurus — just real science, beautifully delivered." />
+  <meta name="pinterest:description" content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Pretty, useful, and never preachy." />
   <meta name="pinterest:media" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"Stylishandhealthy","url":"https://www.stylishandhealthy.com","description":"Research-backed skincare, wellness habits, and self-improvement content that actually makes sense.","potentialAction":{"@type":"SearchAction","target":"https://www.stylishandhealthy.com/blog?q={search_term_string}","query-input":"required name=search_term_string"}}
@@ -181,9 +189,9 @@
 
   <div class="hero-left">
     <div class="eyebrow">Wellness - Skincare - Style - Self-Growth</div>
-    <h1 class="h1">Pretty <em>routines.</em><br>Smarter choices.</h1>
-    <span class="h1-sub">Where soft aesthetics meet real science.</span>
-    <p class="hero-p">Research-backed skincare, wellness habits, and self-improvement content designed to feel as beautiful as it is useful. No trends. No pressure. Just real, gentle progress.</p>
+    <h1 class="h1">Hot girls read<br><em>the research.</em></h1>
+    <span class="h1-sub">Look good. Feel good. Don't fall for nonsense.</span>
+    <p class="hero-p">Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or "that girl" rule online. Research-backed, realistic, and never preachy.</p>
 
     <div class="hero-actions">
       <a href="/shop" class="btn btn-f">Explore the shop</a>
@@ -221,8 +229,8 @@
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-t">
-    <span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Aesthetic stickers</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Pretty routines</span><span class="ti">Smarter choices</span>
-    <span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Aesthetic stickers</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Pretty routines</span><span class="ti">Smarter choices</span>
+    <span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Aesthetic stickers</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
+    <span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Aesthetic stickers</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
   </div>
 </div>
 
@@ -367,7 +375,7 @@
     </div>
     <a href="https://www.pinterest.com/stylishandhealthy" class="pin-follow" target="_blank" rel="noopener">Follow on Pinterest &rarr;</a>
   </div>
-  <div class="pin-widget-wrap">
+  <div class="pin-widget-wrap" style="min-height:440px">
     <a
       data-pin-do="embedUser"
       data-pin-board-width="1100"
@@ -385,7 +393,7 @@
   </div>
   <div class="nw-strip-inner rv">
     <div class="sl">Join the community</div>
-    <h2>Pretty routines, delivered to your <em>inbox.</em></h2>
+    <h2>Hot girls read the research. Delivered to your <em>inbox.</em></h2>
     <p>Free skincare guides, wellness tips, and exclusive downloads. No spam, ever.</p>
     <form class="nw-form" onsubmit="handleNwSub(event)">
       <input type="email" name="EMAIL" placeholder="your@email.com" required />
@@ -402,7 +410,7 @@
         <img src="/assets/images/logo_main.png" alt="S&H" />
         <span>Stylishandhealthy<em>.</em></span>
       </div>
-      <p class="ft-p">Pretty routines. Smarter choices. A soft corner of the internet for beauty, wellness, and self-improvement.</p>
+      <p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
       <div class="ft-socs">
         <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
         <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
@@ -437,7 +445,7 @@
   </div>
   <div class="ft-bot">
     <p>&copy; 2026 Stylishandhealthy. All rights reserved.</p>
-    <span>Pretty routines. Smarter choices.</span>
+    <span>Hot girls read the research.</span>
   </div>
 </footer>
 
