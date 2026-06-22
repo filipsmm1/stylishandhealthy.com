@@ -656,3 +656,164 @@ body.nav-open {
     border-width: 2px;
   }
 }
+
+/* =========================================================
+   MOBILE NAVIGATION — COMPACT PHONE DROPDOWN
+   Replaces the previous full-screen menu with a small sheet.
+   ========================================================= */
+
+@media (max-width: 860px) {
+  body.nav-open {
+    overflow: auto !important;
+    touch-action: auto !important;
+  }
+
+  body.nav-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 190;
+    background: rgba(58, 42, 34, .30);
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  nav {
+    isolation: isolate;
+    overflow: visible;
+  }
+
+  nav .nav-burger {
+    position: relative;
+    z-index: 204;
+    border: 1px solid rgba(85, 107, 62, .12);
+    background: var(--cream-warm);
+    box-shadow: 0 6px 18px rgba(58, 42, 34, .06);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  nav .nav-burger:active {
+    transform: scale(.96);
+  }
+
+  nav ul#primary-navigation {
+    display: flex !important;
+    position: absolute !important;
+    inset: auto max(12px, env(safe-area-inset-right)) auto auto !important;
+    top: calc(100% + 10px) !important;
+    width: min(330px, calc(100vw - 24px)) !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: calc(100dvh - 120px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 4px !important;
+    padding: 10px !important;
+    margin: 0 !important;
+    z-index: 203 !important;
+    border: 1px solid rgba(85, 107, 62, .14);
+    border-radius: 22px;
+    background: rgba(247, 241, 232, .99);
+    box-shadow:
+      0 24px 70px rgba(58, 42, 34, .24),
+      0 4px 14px rgba(58, 42, 34, .08);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px) scale(.98);
+    transform-origin: top right;
+    transition:
+      opacity .18s ease,
+      transform .22s var(--ease),
+      visibility 0s linear .22s;
+  }
+
+  nav ul#primary-navigation.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    transition-delay: 0s;
+  }
+
+  nav ul#primary-navigation li,
+  nav ul#primary-navigation li a {
+    width: 100% !important;
+  }
+
+  nav ul#primary-navigation li {
+    margin: 0 !important;
+  }
+
+  nav ul#primary-navigation li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    min-height: 48px !important;
+    padding: 12px 16px !important;
+    border-radius: 14px !important;
+    color: var(--green-dk) !important;
+    font-size: .93rem !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    letter-spacing: .055em !important;
+    text-align: left !important;
+    background: transparent !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  nav ul#primary-navigation li a:not(.npill):hover,
+  nav ul#primary-navigation li a:not(.npill):focus-visible,
+  nav ul#primary-navigation li a:not(.npill):active {
+    background: rgba(85, 107, 62, .075) !important;
+  }
+
+  nav ul#primary-navigation .npill {
+    justify-content: center !important;
+    margin-top: 5px !important;
+    min-height: 50px !important;
+    padding: 13px 18px !important;
+    border-radius: 14px !important;
+    background: var(--green) !important;
+    color: var(--cream) !important;
+    font-size: .9rem !important;
+    box-shadow: none !important;
+  }
+
+  nav ul#primary-navigation .npill:hover,
+  nav ul#primary-navigation .npill:focus-visible,
+  nav ul#primary-navigation .npill:active {
+    background: var(--green-dk) !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  nav ul#primary-navigation {
+    right: max(8px, env(safe-area-inset-right)) !important;
+    width: calc(100vw - 16px) !important;
+    border-radius: 19px;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 500px) {
+  nav ul#primary-navigation {
+    max-height: calc(100dvh - 82px) !important;
+    top: calc(100% + 6px) !important;
+  }
+
+  nav ul#primary-navigation li a {
+    min-height: 42px !important;
+    padding-block: 9px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (max-width: 860px) {
+  nav ul#primary-navigation {
+    transition: none !important;
+  }
+}

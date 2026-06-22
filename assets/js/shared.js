@@ -55,7 +55,7 @@ const mobileNavQuery = window.matchMedia('(max-width: 860px)');
   items.forEach(item => observer.observe(item));
 })();
 
-// Accessible mobile hamburger navigation with focus management.
+// Accessible compact mobile navigation.
 (function initMobileNavigation() {
   const nav = document.querySelector('nav');
   const menu = nav?.querySelector('ul');
@@ -76,69 +76,70 @@ const mobileNavQuery = window.matchMedia('(max-width: 860px)');
   burger.setAttribute('aria-controls', menu.id);
   burger.setAttribute('aria-expanded', 'false');
   burger.setAttribute('aria-label', 'Open menu');
+  if (mobileNavQuery.matches) menu.setAttribute('aria-hidden', 'true');
+  else menu.removeAttribute('aria-hidden');
 
-  let lastFocused = null;
+  const isOpen = () => menu.classList.contains('open');
 
-  const getFocusable = () => Array.from(menu.querySelectorAll(
-    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-  )).filter(element => !element.hidden && element.getClientRects().length);
-
-  const closeMenu = ({ restoreFocus = true } = {}) => {
+  const closeMenu = ({ restoreFocus = false } = {}) => {
+    if (!isOpen()) return;
     menu.classList.remove('open');
     burger.classList.remove('open');
     burger.setAttribute('aria-expanded', 'false');
     burger.setAttribute('aria-label', 'Open menu');
+    if (mobileNavQuery.matches) menu.setAttribute('aria-hidden', 'true');
+    else menu.removeAttribute('aria-hidden');
     document.body.classList.remove('nav-open');
-    if (restoreFocus && lastFocused instanceof HTMLElement) lastFocused.focus();
+
+    if (restoreFocus) burger.focus();
   };
 
   const openMenu = () => {
-    lastFocused = document.activeElement;
     menu.classList.add('open');
     burger.classList.add('open');
     burger.setAttribute('aria-expanded', 'true');
     burger.setAttribute('aria-label', 'Close menu');
+    menu.setAttribute('aria-hidden', 'false');
     document.body.classList.add('nav-open');
-    requestAnimationFrame(() => getFocusable()[0]?.focus());
   };
 
-  burger.addEventListener('click', () => {
-    if (menu.classList.contains('open')) closeMenu();
-    else openMenu();
+  burger.addEventListener('click', event => {
+    event.stopPropagation();
+    isOpen() ? closeMenu() : openMenu();
   });
 
   menu.addEventListener('click', event => {
-    if (event.target.closest('a')) closeMenu({ restoreFocus: false });
+    if (event.target.closest('a')) closeMenu();
+  });
+
+  document.addEventListener('pointerdown', event => {
+    if (!isOpen()) return;
+    if (!nav.contains(event.target)) closeMenu();
   });
 
   document.addEventListener('keydown', event => {
-    if (!menu.classList.contains('open')) return;
+    if (!isOpen()) return;
 
     if (event.key === 'Escape') {
       event.preventDefault();
-      closeMenu();
-      return;
-    }
-
-    if (event.key !== 'Tab') return;
-    const focusable = getFocusable();
-    if (!focusable.length) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
+      closeMenu({ restoreFocus: true });
     }
   });
 
   const handleViewportChange = event => {
-    if (!event.matches) closeMenu({ restoreFocus: false });
+    if (!event.matches) {
+      closeMenu();
+      menu.removeAttribute('aria-hidden');
+    } else if (!isOpen()) {
+      menu.setAttribute('aria-hidden', 'true');
+    }
   };
-  mobileNavQuery.addEventListener?.('change', handleViewportChange);
+
+  if (typeof mobileNavQuery.addEventListener === 'function') {
+    mobileNavQuery.addEventListener('change', handleViewportChange);
+  } else if (typeof mobileNavQuery.addListener === 'function') {
+    mobileNavQuery.addListener(handleViewportChange);
+  }
 })();
 
 // Keep filter-button state available to assistive technology.
