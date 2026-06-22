@@ -1,26 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="p:domain_verify" content="d52c5a761a8aff55499412bf4194b9c0" />
-
-  <title>Skincare & Wellness Blog - Stylishandhealthy</title>
-
-  <meta name="description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
-
-  <link rel="icon" type="image/png" href="/assets/images/logo_main.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Dancing+Script:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
-    rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
+<title>Skincare &amp; Wellness Blog - Stylishandhealthy</title>
+<meta content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." name="description"/>
+<link href="/assets/images/logo_main.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/css/styles.css" rel="stylesheet"/>
+<style>
 
     .blog-tools {
       display: flex;
@@ -230,27 +221,23 @@
       }
     }
   </style>
+<link href="https://www.stylishandhealthy.com/blog" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Skincare &amp; Wellness Blog - Stylishandhealthy" property="og:title"/>
+<meta content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." property="og:description"/>
+<meta content="https://www.stylishandhealthy.com/blog" property="og:url"/>
+<meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Stylishandhealthy" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Skincare &amp; Wellness Blog - Stylishandhealthy" name="twitter:title"/>
+<meta content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." name="twitter:description"/>
+<meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" name="twitter:image"/>
+<meta content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." name="pinterest:description"/>
+<meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" name="pinterest:media"/>
+<script type="application/ld+json">
 
-  <link rel="canonical" href="https://www.stylishandhealthy.com/blog" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Skincare & Wellness Blog - Stylishandhealthy" />
-  <meta property="og:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
-  <meta property="og:url" content="https://www.stylishandhealthy.com/blog" />
-  <meta property="og:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="Stylishandhealthy" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Skincare & Wellness Blog - Stylishandhealthy" />
-  <meta name="twitter:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
-  <meta name="twitter:image" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
-
-  <meta name="pinterest:description" content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." />
-  <meta name="pinterest:media" content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" />
-
-  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -407,504 +394,402 @@
       }
     ]
   }
-  </script>
-</head>
+  
+</script>
+<style data-device-fixes="true">
 
-<body>
+/* Blog device fixes */
+.blog-grid { grid-template-columns: 1.35fr 1fr 1fr; }
+@media(max-width:1100px) {
+  .blog-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .blog-grid .bc.feat { grid-column: span 2; }
+}
+@media(max-width:860px) {
+  .blog-tools { align-items: stretch; }
+  .blog-search, .blog-sort { width:100%; flex:1 1 100%; min-height:48px; }
+  .blog-filters { margin-bottom:32px; }
+  .blog-grid .bc.feat { grid-column: auto; }
+  .bc-img, .bc.feat .bc-img { height: clamp(190px, 54vw, 300px); }
+}
+@media(max-width:560px) {
+  .blog-filters { gap:10px; }
+  .bftab { flex:1 1 calc(50% - 10px); padding-inline:12px; }
+  .bc-body { padding:18px 18px 22px; }
+}
 
+</style></head>
+<body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
-
 <div class="wordmark-bar">
-  <img src="/assets/images/youtube_banner.png" alt="Stylishandhealthy." />
+<img alt="Stylishandhealthy." decoding="async" src="/assets/images/youtube_banner.png"/>
 </div>
-
-<nav>
-  <a href="/" class="nav-logo">
-    <img src="/assets/images/logo_main.png" alt="S&H" />
-  </a>
-
-  <ul>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/shop">Shop</a></li>
-    <li><a href="/skincare">Skincare</a></li>
-    <li><a href="/subscribe">Subscribe</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/journal" class="npill">Free Journal</a></li>
-  </ul>
-</nav>
-
+<nav aria-label="Primary navigation">
+<a aria-label="Stylishandhealthy home" class="nav-logo" href="/">
+<img alt="S&amp;H" decoding="async" src="/assets/images/logo_main.png"/>
+</a>
+<ul id="primary-navigation">
+<li><a href="/blog">Blog</a></li>
+<li><a href="/shop">Shop</a></li>
+<li><a href="/skincare">Skincare</a></li>
+<li><a href="/subscribe">Subscribe</a></li>
+<li><a href="/about">About</a></li>
+<li><a class="npill" href="/journal">Free Journal</a></li>
+</ul>
+</nav><main id="main-content">
 <div class="page-hero">
-  <div class="page-hero-blob"></div>
-
-  <div
-    class="doodle"
-    style="width:120px;top:20%;right:8%;opacity:.25;transform:rotate(10deg)"
-  >
-    <img src="/assets/images/heart1.png" alt="" />
-  </div>
-
-  <div class="sl">From the blog</div>
-
-  <h1>
+<div class="page-hero-blob"></div>
+<div class="doodle" style="width:120px;top:20%;right:8%;opacity:.25;transform:rotate(10deg)">
+<img alt="" aria-hidden="true" decoding="async" src="/assets/images/heart1.png"/>
+</div>
+<div class="sl">From the blog</div>
+<h1>
     Reads that make you <em>better.</em>
-  </h1>
-
-  <p>
+</h1>
+<p>
     Skincare science, wellness habits, and self-growth researched and written
     to actually be useful.
   </p>
 </div>
-
-<section
-  class="sec"
-  style="background:var(--cream);position:relative;overflow:hidden"
->
-  <div
-    class="doodle"
-    style="width:90px;top:6%;right:4%;opacity:.35;transform:rotate(-12deg)"
-  >
-    <img src="/assets/images/heart2.png" alt="" />
-  </div>
-
-
-  <div class="blog-tools" aria-label="Blog search and sorting">
-    <input
-      type="search"
-      id="blogSearch"
-      class="blog-search"
-      placeholder="Search articles, ingredients, routines..."
-      aria-label="Search blog articles"
-    />
-    <select id="blogSort" class="blog-sort" aria-label="Sort blog articles">
-      <option value="recent" selected>Recent first</option>
-      <option value="oldest">Oldest first</option>
-      <option value="az">A to Z</option>
-    </select>
-  </div>
-
-  <div class="blog-filters">
-    <button class="bftab on">All</button>
-    <button class="bftab">Skincare</button>
-    <button class="bftab">Wellness</button>
-    <button class="bftab">Journaling</button>
-    <button class="bftab">Self-growth</button>
-    <button class="bftab">Lifestyle</button>
-  </div>
-
-  <div class="blog-grid">
-
-
-    <!-- Why Does My Moisturizer Burn? - FEATURED (newest) -->
-    <a href="/blog/why-does-my-moisturizer-burn" class="bc feat" data-category="skincare" data-date="2026-06-21" data-title="Why Does My Moisturizer Burn 7 Causes and What to Do" data-search="why does moisturizer burn moisturizer stings burning skincare damaged skin barrier irritated skin allergic contact dermatitis irritant contact dermatitis fragrance allergy retinoid burn acids vitamin c salicylic acid sensitive skin redness itching swelling patch testing barrier repair">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare Science</div>
-        <img
-          src="/assets/images/moisturizer_burn_banner.png"
-          alt="Healthy and damaged skin barrier showing why moisturizer can burn"
-          loading="eager"
-          decoding="async"
-          width="1200"
-          height="630"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Why Your Moisturizer Burns: 7 Causes + What to Do</h3>
-        <div class="bc-meta">
-          <span>Skincare Science</span>
-          <div class="bc-dot"></div>
-          <span>15 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">A basic moisturizer should not keep burning. Learn how to tell barrier damage from irritation or allergy, which ingredients commonly sting, and what to do when skincare suddenly hurts.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Damaged Skin Barrier -->
-    <a href="/blog/damaged-skin-barrier" class="bc" data-category="skincare" data-date="2026-06-20" data-title="Damaged Skin Barrier 9 Signs You Overdid Your Skincare Routine" data-search="damaged skin barrier skin barrier repair over exfoliated skin over exfoliation burning after skincare stinging moisturizer tight peeling redness sensitive skin retinol irritation acids benzoyl peroxide repair routine ceramides petrolatum glycerin panthenol niacinamide">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare Science</div>
-        <img
-          src="/assets/images/damaged_skin_barrier_banner.png"
-          alt="Damaged skin barrier signs and repair routine"
-          loading="eager"
-          decoding="async"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Damaged Skin Barrier? 9 Signs You Overdid Your Routine</h3>
-        <div class="bc-meta">
-          <span>Skincare Science</span>
-          <div class="bc-dot"></div>
-          <span>19 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Burning moisturizer, tight skin, peeling, redness, and sudden sensitivity? This is the science-backed guide to what barrier damage actually means and how to calm your routine without panic.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Glute Activation -->
-    <a href="/blog/are-glute-activation-exercises-overrated" class="bc" data-category="wellness" data-date="2026-06-12" data-title="Are Glute Activation Exercises Overrated for Women" data-search="glute activation exercises overrated women clamshells mini band hip thrust squat EMG glute growth progressive overload glutes build glutes women fitness myths">
-      <div class="bc-img">
-        <div class="bc-cat">Wellness Science</div>
-        <img
-          src="/assets/images/glute_activation_banner.png"
-          alt="Are glute activation exercises overrated for women"
-          loading="eager"
-          decoding="async"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Are Glute Activation Exercises Overrated for Women?</h3>
-        <div class="bc-meta">
-          <span>Wellness Science</span>
-          <div class="bc-dot"></div>
-          <span>14 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Mini-bands before every squat. Clamshells, hip circles, donkey kicks. The ritual is everywhere. But does the science actually back it up? We read the research so you do not have to.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Glycolic Acid 7% Review -->
-    <a href="/blog/the-ordinary-glycolic-acid-7-review" class="bc" data-category="skincare" data-date="2026-06-07" data-title="The Ordinary Glycolic Acid 7% Review Is It Worth the Hype" data-search="the ordinary glycolic acid 7% review AHA exfoliant toner texture dark spots acne glow dullness rough skin body keratosis pilaris KP ingrown hairs chemical exfoliant alpha hydroxy acid">
-      <div class="bc-img">
-        <div class="bc-cat">Product Review</div>
-        <img
-          src="/assets/images/glycolic_acid_7_banner.png"
-          alt="The Ordinary Glycolic Acid 7% Exfoliating Toner review"
-          loading="eager"
-          decoding="async"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">The Ordinary Glycolic Acid 7%: Is It Worth the Hype?</h3>
-        <div class="bc-meta">
-          <span>Skincare Science</span>
-          <div class="bc-dot"></div>
-          <span>16 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">We checked every ingredient, every hype claim, and every cited study behind the most viral toner on the internet. Here is the honest verdict on what it actually does and where the science stops.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Moisturizers for Oily Acne Skin -->
-    <a href="/blog/best-moisturizers-oily-acne-prone-skin" class="bc" data-category="skincare" data-date="2026-06-04" data-title="Best Moisturizers for Oily Acne-Prone Clog-Prone Skin" data-search="best moisturizer oily skin acne prone non comedogenic oil free fragrance free La Roche-Posay Toleriane CeraVe PM Geek Gorgeous Hydration Station The Ordinary NMF Sebamed Clear Face Gel blackheads clog prone sensitive">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare Science</div>
-        <img
-          src="/assets/images/moisturizers_oily_acne_banner.png"
-          alt="Best moisturizers for oily acne-prone skin"
-          loading="eager"
-          decoding="async"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Best Moisturizers for Oily, Acne-Prone Skin (2026)</h3>
-        <div class="bc-meta">
-          <span>Skincare Science</span>
-          <div class="bc-dot"></div>
-          <span>18 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">We screened 20 moisturizers against a strict no-fragrance, no-oil, non-comedogenic filter built for oily, acne-prone, blackhead-prone skin. Only 5 passed. Full ingredient breakdowns, scores, and the 15 we rejected.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- SPF Guide -->
-    <a href="/blog/spf-guide" class="bc" data-category="skincare" data-date="2026-05-31" data-title="The Evidence-Based SPF Guide for Face and Body" data-search="SPF sunscreen UVA UVB broad spectrum how much sunscreen reapplication indoors daily SPF mineral chemical SPF 50 PA rating water resistant photoaging skin cancer">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare Science</div>
-        <img
-          src="/assets/images/spf_guide_banner.png"
-          alt="The Evidence-Based SPF Guide for Face and Body"
-          loading="eager"
-          decoding="async"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">The Evidence-Based SPF Guide for Face and Body</h3>
-        <div class="bc-meta">
-          <span>Skincare Science</span>
-          <div class="bc-dot"></div>
-          <span>15 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">How much sunscreen you actually need, when to reapply, whether indoors counts, and what SPF numbers really mean. Everything backed by real research, no fear-based marketing.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Women's Fitness Myths -->
-    <a href="/blog/womens-fitness-myths" class="bc" data-category="wellness" data-date="2026-05-24" data-title="10 Women's Fitness Myths Debunked by Science" data-search="fitness myths women lifting weights bulky cardio spot reduction metabolism starvation mode rest days fasted cardio scale weight sweating stretching">
-      <div class="bc-img">
-        <div class="bc-cat">Wellness</div>
-        <img
-          src="/assets/images/fitnessmythsbanner.png"
-          alt="10 Women's Fitness Myths Debunked by Science"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">10 Women's Fitness Myths Debunked by Science</h3>
-        <div class="bc-meta">
-          <span>Evidence-Based Fitness</span>
-          <div class="bc-dot"></div>
-          <span>18 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Will lifting make you bulky? Is endless cardio the only way to lose fat? We ran 10 of the most common fitness myths through the actual research.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Garnier Vitamin C Sorbet Cream -->
-    <a href="/blog/garnier-vitamin-c-sorbet-cream" class="bc" data-category="skincare" data-date="2026-05-20" data-title="Garnier Vitamin C Sorbet Cream Honest Ingredient Breakdown" data-search="garnier vitamin c sorbet cream niacinamide ascorbyl glucoside brightening moisturiser budget skincare alcohol fragrance sensitive skin">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare</div>
-        <img src="/assets/images/garniervitcbanner.png" alt="Garnier Vitamin C Fresh and Bright Hydrating Sorbet Cream review" style="width:100%; height:100%; object-fit:cover;" />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Garnier Vitamin C Sorbet Cream: Honest Ingredient Breakdown</h3>
-        <div class="bc-meta">
-          <span>Product Analysis</span>
-          <div class="bc-dot"></div>
-          <span>13 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Budget brightening or just a good-smelling jar? We checked every ingredient against published science.</p>
-        <span class="bc-rd">Read article &rarr;</span>
-      </div>
-    </a>
-
-    <!-- Beauty of Joseon Relief Sun -->
-    <a href="/blog/beauty-of-joseon-relief-sun" class="bc" data-category="skincare" data-date="2026-05-16" data-title="Beauty of Joseon Relief Sun Rice Probiotics Honest Ingredient Breakdown" data-search="beauty of joseon relief sun rice probiotics spf50 sunscreen korean sunscreen niacinamide rice extract uv filters sensitive skin">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare</div>
-        <img
-          src="/assets/images/blogcardbeautyof.png"
-          alt="Beauty of Joseon Relief Sun Rice + Probiotics review"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Beauty of Joseon Relief Sun: Honest Ingredient Breakdown</h3>
-        <div class="bc-meta">
-          <span>Product Analysis</span>
-          <div class="bc-dot"></div>
-          <span>11 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
+<section class="sec" style="background:var(--cream);position:relative;overflow:hidden">
+<div class="doodle" style="width:90px;top:6%;right:4%;opacity:.35;transform:rotate(-12deg)">
+<img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart2.png"/>
+</div>
+<div aria-label="Blog search and sorting" class="blog-tools">
+<input aria-label="Search blog articles" class="blog-search" id="blogSearch" placeholder="Search articles, ingredients, routines..." type="search"/>
+<select aria-label="Sort blog articles" class="blog-sort" id="blogSort">
+<option selected="" value="recent">Recent first</option>
+<option value="oldest">Oldest first</option>
+<option value="az">A to Z</option>
+</select>
+</div>
+<div aria-label="Filter blog posts" class="blog-filters" role="group">
+<button aria-pressed="true" class="bftab on" type="button">All</button>
+<button aria-pressed="false" class="bftab" type="button">Skincare</button>
+<button aria-pressed="false" class="bftab" type="button">Wellness</button>
+<button aria-pressed="false" class="bftab" type="button">Journaling</button>
+<button aria-pressed="false" class="bftab" type="button">Self-growth</button>
+<button aria-pressed="false" class="bftab" type="button">Lifestyle</button>
+</div>
+<div class="blog-grid">
+<!-- Why Does My Moisturizer Burn? - FEATURED (newest) -->
+<a class="bc feat" data-category="skincare" data-date="2026-06-21" data-search="why does moisturizer burn moisturizer stings burning skincare damaged skin barrier irritated skin allergic contact dermatitis irritant contact dermatitis fragrance allergy retinoid burn acids vitamin c salicylic acid sensitive skin redness itching swelling patch testing barrier repair" data-title="Why Does My Moisturizer Burn 7 Causes and What to Do" href="/blog/why-does-my-moisturizer-burn">
+<div class="bc-img">
+<div class="bc-cat">Skincare Science</div>
+<img alt="Healthy and damaged skin barrier showing why moisturizer can burn" decoding="async" height="630" loading="eager" src="/assets/images/moisturizer_burn_banner.png" style="width:100%; height:100%; object-fit:cover;" width="1200"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Why Your Moisturizer Burns: 7 Causes + What to Do</h3>
+<div class="bc-meta">
+<span>Skincare Science</span>
+<div class="bc-dot"></div>
+<span>15 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">A basic moisturizer should not keep burning. Learn how to tell barrier damage from irritation or allergy, which ingredients commonly sting, and what to do when skincare suddenly hurts.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Damaged Skin Barrier -->
+<a class="bc" data-category="skincare" data-date="2026-06-20" data-search="damaged skin barrier skin barrier repair over exfoliated skin over exfoliation burning after skincare stinging moisturizer tight peeling redness sensitive skin retinol irritation acids benzoyl peroxide repair routine ceramides petrolatum glycerin panthenol niacinamide" data-title="Damaged Skin Barrier 9 Signs You Overdid Your Skincare Routine" href="/blog/damaged-skin-barrier">
+<div class="bc-img">
+<div class="bc-cat">Skincare Science</div>
+<img alt="Damaged skin barrier signs and repair routine" decoding="async" loading="eager" src="/assets/images/damaged_skin_barrier_banner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Damaged Skin Barrier? 9 Signs You Overdid Your Routine</h3>
+<div class="bc-meta">
+<span>Skincare Science</span>
+<div class="bc-dot"></div>
+<span>19 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Burning moisturizer, tight skin, peeling, redness, and sudden sensitivity? This is the science-backed guide to what barrier damage actually means and how to calm your routine without panic.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Glute Activation -->
+<a class="bc" data-category="wellness" data-date="2026-06-12" data-search="glute activation exercises overrated women clamshells mini band hip thrust squat EMG glute growth progressive overload glutes build glutes women fitness myths" data-title="Are Glute Activation Exercises Overrated for Women" href="/blog/are-glute-activation-exercises-overrated">
+<div class="bc-img">
+<div class="bc-cat">Wellness Science</div>
+<img alt="Are glute activation exercises overrated for women" decoding="async" loading="eager" src="/assets/images/glute_activation_banner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Are Glute Activation Exercises Overrated for Women?</h3>
+<div class="bc-meta">
+<span>Wellness Science</span>
+<div class="bc-dot"></div>
+<span>14 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Mini-bands before every squat. Clamshells, hip circles, donkey kicks. The ritual is everywhere. But does the science actually back it up? We read the research so you do not have to.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Glycolic Acid 7% Review -->
+<a class="bc" data-category="skincare" data-date="2026-06-07" data-search="the ordinary glycolic acid 7% review AHA exfoliant toner texture dark spots acne glow dullness rough skin body keratosis pilaris KP ingrown hairs chemical exfoliant alpha hydroxy acid" data-title="The Ordinary Glycolic Acid 7% Review Is It Worth the Hype" href="/blog/the-ordinary-glycolic-acid-7-review">
+<div class="bc-img">
+<div class="bc-cat">Product Review</div>
+<img alt="The Ordinary Glycolic Acid 7% Exfoliating Toner review" decoding="async" loading="eager" src="/assets/images/glycolic_acid_7_banner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">The Ordinary Glycolic Acid 7%: Is It Worth the Hype?</h3>
+<div class="bc-meta">
+<span>Skincare Science</span>
+<div class="bc-dot"></div>
+<span>16 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">We checked every ingredient, every hype claim, and every cited study behind the most viral toner on the internet. Here is the honest verdict on what it actually does and where the science stops.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Moisturizers for Oily Acne Skin -->
+<a class="bc" data-category="skincare" data-date="2026-06-04" data-search="best moisturizer oily skin acne prone non comedogenic oil free fragrance free La Roche-Posay Toleriane CeraVe PM Geek Gorgeous Hydration Station The Ordinary NMF Sebamed Clear Face Gel blackheads clog prone sensitive" data-title="Best Moisturizers for Oily Acne-Prone Clog-Prone Skin" href="/blog/best-moisturizers-oily-acne-prone-skin">
+<div class="bc-img">
+<div class="bc-cat">Skincare Science</div>
+<img alt="Best moisturizers for oily acne-prone skin" decoding="async" loading="eager" src="/assets/images/moisturizers_oily_acne_banner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Best Moisturizers for Oily, Acne-Prone Skin (2026)</h3>
+<div class="bc-meta">
+<span>Skincare Science</span>
+<div class="bc-dot"></div>
+<span>18 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">We screened 20 moisturizers against a strict no-fragrance, no-oil, non-comedogenic filter built for oily, acne-prone, blackhead-prone skin. Only 5 passed. Full ingredient breakdowns, scores, and the 15 we rejected.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- SPF Guide -->
+<a class="bc" data-category="skincare" data-date="2026-05-31" data-search="SPF sunscreen UVA UVB broad spectrum how much sunscreen reapplication indoors daily SPF mineral chemical SPF 50 PA rating water resistant photoaging skin cancer" data-title="The Evidence-Based SPF Guide for Face and Body" href="/blog/spf-guide">
+<div class="bc-img">
+<div class="bc-cat">Skincare Science</div>
+<img alt="The Evidence-Based SPF Guide for Face and Body" decoding="async" loading="eager" src="/assets/images/spf_guide_banner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">The Evidence-Based SPF Guide for Face and Body</h3>
+<div class="bc-meta">
+<span>Skincare Science</span>
+<div class="bc-dot"></div>
+<span>15 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">How much sunscreen you actually need, when to reapply, whether indoors counts, and what SPF numbers really mean. Everything backed by real research, no fear-based marketing.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Women's Fitness Myths -->
+<a class="bc" data-category="wellness" data-date="2026-05-24" data-search="fitness myths women lifting weights bulky cardio spot reduction metabolism starvation mode rest days fasted cardio scale weight sweating stretching" data-title="10 Women's Fitness Myths Debunked by Science" href="/blog/womens-fitness-myths">
+<div class="bc-img">
+<div class="bc-cat">Wellness</div>
+<img alt="10 Women's Fitness Myths Debunked by Science" decoding="async" loading="lazy" src="/assets/images/fitnessmythsbanner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">10 Women's Fitness Myths Debunked by Science</h3>
+<div class="bc-meta">
+<span>Evidence-Based Fitness</span>
+<div class="bc-dot"></div>
+<span>18 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Will lifting make you bulky? Is endless cardio the only way to lose fat? We ran 10 of the most common fitness myths through the actual research.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Garnier Vitamin C Sorbet Cream -->
+<a class="bc" data-category="skincare" data-date="2026-05-20" data-search="garnier vitamin c sorbet cream niacinamide ascorbyl glucoside brightening moisturiser budget skincare alcohol fragrance sensitive skin" data-title="Garnier Vitamin C Sorbet Cream Honest Ingredient Breakdown" href="/blog/garnier-vitamin-c-sorbet-cream">
+<div class="bc-img">
+<div class="bc-cat">Skincare</div>
+<img alt="Garnier Vitamin C Fresh and Bright Hydrating Sorbet Cream review" decoding="async" loading="lazy" src="/assets/images/garniervitcbanner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Garnier Vitamin C Sorbet Cream: Honest Ingredient Breakdown</h3>
+<div class="bc-meta">
+<span>Product Analysis</span>
+<div class="bc-dot"></div>
+<span>13 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">Budget brightening or just a good-smelling jar? We checked every ingredient against published science.</p>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Beauty of Joseon Relief Sun -->
+<a class="bc" data-category="skincare" data-date="2026-05-16" data-search="beauty of joseon relief sun rice probiotics spf50 sunscreen korean sunscreen niacinamide rice extract uv filters sensitive skin" data-title="Beauty of Joseon Relief Sun Rice Probiotics Honest Ingredient Breakdown" href="/blog/beauty-of-joseon-relief-sun">
+<div class="bc-img">
+<div class="bc-cat">Skincare</div>
+<img alt="Beauty of Joseon Relief Sun Rice + Probiotics review" decoding="async" loading="lazy" src="/assets/images/blogcardbeautyof.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Beauty of Joseon Relief Sun: Honest Ingredient Breakdown</h3>
+<div class="bc-meta">
+<span>Product Analysis</span>
+<div class="bc-dot"></div>
+<span>11 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
           A friendly science-backed review of the viral Rice + Probiotics SPF50+ PA++++ sunscreen, from UV filters to skin type fit.
         </p>
-        <span class="bc-rd">Read article →</span>
-      </div>
-    </a>
-
-    <!-- Featured -->
-    <a href="/blog/introduction" class="bc" data-category="all" data-date="2026-04-01" data-title="Introduction What We Stand For" data-search="introduction mission beauty science transparency skincare wellness">
-      <div class="bc-img">
-        <div class="bc-cat">Featured</div>
-        <img
-          src="/assets/images/introduction.png"
-          alt="Introduction to Stylishandhealthy"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h2 class="bc-title">Introduction: What We Stand For</h2>
-        <div class="bc-meta">
-          <span>Stylishandhealthy</span>
-          <div class="bc-dot"></div>
-          <span>5 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Featured -->
+<a class="bc" data-category="all" data-date="2026-04-01" data-search="introduction mission beauty science transparency skincare wellness" data-title="Introduction What We Stand For" href="/blog/introduction">
+<div class="bc-img">
+<div class="bc-cat">Featured</div>
+<img alt="Introduction to Stylishandhealthy" decoding="async" loading="lazy" src="/assets/images/introduction.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h2 class="bc-title">Introduction: What We Stand For</h2>
+<div class="bc-meta">
+<span>Stylishandhealthy</span>
+<div class="bc-dot"></div>
+<span>5 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
           Beauty backed by science. Transparency, honest recommendations,
           debunking bad products, and stopping misinformation in skincare,
           beauty, and wellness.
         </p>
-        <span class="bc-rd">Read article →</span>
-      </div>
-    </a>
-
-
-    <!-- Salicylic Acid -->
-    <a href="/blog/salicylic-acid-2" class="bc" data-category="skincare" data-date="2026-05-02" data-title="The Truth About Salicylic Acid 2%" data-search="salicylic acid bha acne blackheads oily skin exfoliation barrier the ordinary">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare</div>
-        <img
-          src="/assets/images/salycilictheordinary.png"
-          alt="The Truth About Salicylic Acid 2%"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">The Truth About Salicylic Acid 2%</h3>
-        <div class="bc-meta">
-          <span>Skincare Science</span>
-          <div class="bc-dot"></div>
-          <span>12 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Salicylic Acid -->
+<a class="bc" data-category="skincare" data-date="2026-05-02" data-search="salicylic acid bha acne blackheads oily skin exfoliation barrier the ordinary" data-title="The Truth About Salicylic Acid 2%" href="/blog/salicylic-acid-2">
+<div class="bc-img">
+<div class="bc-cat">Skincare</div>
+<img alt="The Truth About Salicylic Acid 2%" decoding="async" loading="lazy" src="/assets/images/salycilictheordinary.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">The Truth About Salicylic Acid 2%</h3>
+<div class="bc-meta">
+<span>Skincare Science</span>
+<div class="bc-dot"></div>
+<span>12 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
           What the research says, which formula to choose, and how to use
           salicylic acid without damaging your skin barrier.
         </p>
-        <span class="bc-rd">Read article →</span>
-      </div>
-    </a>
-
-    <!-- Eqqual Berry - NEW -->
-    <a href="/blog/eqqual-berry-serum" class="bc" data-category="skincare" data-date="2026-05-07" data-title="Eqqual Berry Serum Honest Ingredient Breakdown" data-search="eqqual berry serum niacinamide arbutin vitamin c brightening pigmentation ingredient breakdown">
-      <div class="bc-img">
-        <div class="bc-cat">Skincare</div>
-        <img
-          src="/assets/images/eqqual_banner.png"
-          alt="Eqqual Berry Vitamin Illuminating Serum review"
-          style="width:100%; height:100%; object-fit:cover;"
-        />
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Eqqual Berry Serum: Honest Ingredient Breakdown</h3>
-        <div class="bc-meta">
-          <span>Product Analysis</span>
-          <div class="bc-dot"></div>
-          <span>10 min read</span>
-        </div>
-        <p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Eqqual Berry - NEW -->
+<a class="bc" data-category="skincare" data-date="2026-05-07" data-search="eqqual berry serum niacinamide arbutin vitamin c brightening pigmentation ingredient breakdown" data-title="Eqqual Berry Serum Honest Ingredient Breakdown" href="/blog/eqqual-berry-serum">
+<div class="bc-img">
+<div class="bc-cat">Skincare</div>
+<img alt="Eqqual Berry Vitamin Illuminating Serum review" decoding="async" loading="lazy" src="/assets/images/eqqual_banner.png" style="width:100%; height:100%; object-fit:cover;"/>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Eqqual Berry Serum: Honest Ingredient Breakdown</h3>
+<div class="bc-meta">
+<span>Product Analysis</span>
+<div class="bc-dot"></div>
+<span>10 min read</span>
+</div>
+<p style="margin-top:14px;line-height:1.7;color:var(--brown-lt);font-size:.88rem;">
           We read the full INCI list, checked every claim against published
           science, and gave an honest verdict. Is it actually a vitamin C serum?
         </p>
-        <span class="bc-rd">Read article →</span>
-      </div>
-    </a>
-
-    <!-- Coming soon cards -->
-    <div class="bc" data-category="skincare" data-date="2026-01-01" data-title="Coming Soon" data-search="coming soon">
-      <div class="bc-img">
-        <div class="bc-cat">Coming Soon</div>
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Best Ingredients for Acne-Prone Skin</h3>
-        <div class="bc-meta">
-          <span>Skincare</span>
-          <div class="bc-dot"></div>
-          <span>Coming soon</span>
-        </div>
-        <span class="bc-rd">Coming soon</span>
-      </div>
-    </div>
-
-    <div class="bc" data-category="wellness" data-date="2026-01-01" data-title="Coming Soon" data-search="coming soon">
-      <div class="bc-img">
-        <div class="bc-cat">Coming Soon</div>
-      </div>
-      <div class="bc-body">
-        <h3 class="bc-title">Wellness Habits That Actually Help</h3>
-        <div class="bc-meta">
-          <span>Wellness</span>
-          <div class="bc-dot"></div>
-          <span>Coming soon</span>
-        </div>
-        <span class="bc-rd">Coming soon</span>
-      </div>
-    </div>
-
-  </div>
+<span class="bc-rd">Read article →</span>
+</div>
+</a>
+<!-- Coming soon cards -->
+<div class="bc" data-category="skincare" data-date="2026-01-01" data-search="coming soon" data-title="Coming Soon">
+<div class="bc-img">
+<div class="bc-cat">Coming Soon</div>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Best Ingredients for Acne-Prone Skin</h3>
+<div class="bc-meta">
+<span>Skincare</span>
+<div class="bc-dot"></div>
+<span>Coming soon</span>
+</div>
+<span class="bc-rd">Coming soon</span>
+</div>
+</div>
+<div class="bc" data-category="wellness" data-date="2026-01-01" data-search="coming soon" data-title="Coming Soon">
+<div class="bc-img">
+<div class="bc-cat">Coming Soon</div>
+</div>
+<div class="bc-body">
+<h3 class="bc-title">Wellness Habits That Actually Help</h3>
+<div class="bc-meta">
+<span>Wellness</span>
+<div class="bc-dot"></div>
+<span>Coming soon</span>
+</div>
+<span class="bc-rd">Coming soon</span>
+</div>
+</div>
+</div>
 </section>
-
 <section class="nw-strip">
-  <div
-    class="doodle"
-    style="width:100px;bottom:12%;right:6%;opacity:.3;transform:rotate(6deg)"
-  >
-    <img src="/assets/images/heart3.png" alt="" />
-  </div>
-
-  <div class="nw-strip-inner">
-    <div class="sl">Never miss a post</div>
-
-    <h2>
+<div class="doodle" style="width:100px;bottom:12%;right:6%;opacity:.3;transform:rotate(6deg)">
+<img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart3.png"/>
+</div>
+<div class="nw-strip-inner">
+<div class="sl">Never miss a post</div>
+<h2>
       Get new posts delivered to your <em>inbox.</em>
-    </h2>
-
-    <p>
+</h2>
+<p>
       Weekly skincare deepdives, wellness reads, and journal prompts.
       No spam, ever.
     </p>
-
-    <form class="nw-form" onsubmit="handleNwSub(event)">
-      <input type="email" placeholder="your@email.com" required />
-      <button type="submit" class="btn btn-wh" style="padding:11px 26px;font-size:.87rem">
+<form accept-charset="UTF-8" class="nw-form" onsubmit="handleNwSub(event)">
+<input aria-label="Email address" autocomplete="email" inputmode="email" placeholder="your@email.com" required="" type="email"/>
+<button class="btn btn-wh" style="padding:11px 26px;font-size:.87rem" type="submit">
         Subscribe free
       </button>
-    </form>
-
-    <p class="nw-note">No spam. Unsubscribe anytime.</p>
-  </div>
+</form>
+<p class="nw-note">No spam. Unsubscribe anytime.</p>
+</div>
 </section>
-
-<footer>
-  <div class="ft-top">
-
-    <div>
-      <div class="ft-logo">
-        <img src="/assets/images/logo_main.png" alt="S&H" />
-        <span>Stylishandhealthy<em>.</em></span>
-      </div>
-
-      <p class="ft-p">
+</main><footer>
+<div class="ft-top">
+<div>
+<div class="ft-logo">
+<img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/>
+<span>Stylishandhealthy<em>.</em></span>
+</div>
+<p class="ft-p">
         Hot girls read the research. A soft corner of the internet
         for beauty, wellness, and self-improvement.
       </p>
-
-      <div class="ft-socs">
-        <a href="https://www.pinterest.com/stylishandhealthy" class="ft-s" target="_blank" rel="noopener">P</a>
-        <a href="https://www.instagram.com/stylishandhealthie" class="ft-s" target="_blank" rel="noopener">I</a>
-        <a href="https://www.tiktok.com/@stylish.and.healthy" class="ft-s" target="_blank" rel="noopener">T</a>
-        <a href="mailto:contact@stylishandhealthy.com" class="ft-s">M</a>
-      </div>
-    </div>
-
-    <div class="ft-col">
-      <h4>Shop</h4>
-      <a href="/shop">All products</a>
-      <a href="/shop">Sticker Packs</a>
-      <a href="/shop">Digital Downloads</a>
-      <a href="/shop">Clothing</a>
-    </div>
-
-    <div class="ft-col">
-      <h4>Explore</h4>
-      <a href="/blog">Blog</a>
-      <a href="/skincare">Skincare Recs</a>
-      <a href="/subscribe">Subscribe</a>
-      <a href="/about">About</a>
-      <a href="/journal">Free Journal</a>
-    </div>
-
-    <div class="ft-col">
-      <h4>Info</h4>
-      <a href="/about">Our mission</a>
-      <a href="/terms">Terms of service</a>
-      <a href="/privacy">Privacy policy</a>
-      <a href="/affiliate">Affiliate disclosure</a>
-      <a href="/contact">Contact</a>
-    </div>
-
-  </div>
-
-  <div class="ft-bot">
-    <p>2026 Stylishandhealthy. All rights reserved.</p>
-    <span>Hot girls read the research.</span>
-  </div>
+<div class="ft-socs">
+<a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank">P</a>
+<a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank">I</a>
+<a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank">T</a>
+<a aria-label="Email" class="ft-s" href="mailto:contact@stylishandhealthy.com">M</a>
+</div>
+</div>
+<div class="ft-col">
+<h4>Shop</h4>
+<a href="/shop">All products</a>
+<a href="/shop">Sticker Packs</a>
+<a href="/shop">Digital Downloads</a>
+<a href="/shop">Clothing</a>
+</div>
+<div class="ft-col">
+<h4>Explore</h4>
+<a href="/blog">Blog</a>
+<a href="/skincare">Skincare Recs</a>
+<a href="/subscribe">Subscribe</a>
+<a href="/about">About</a>
+<a href="/journal">Free Journal</a>
+</div>
+<div class="ft-col">
+<h4>Info</h4>
+<a href="/about">Our mission</a>
+<a href="/terms">Terms of service</a>
+<a href="/privacy">Privacy policy</a>
+<a href="/affiliate">Affiliate disclosure</a>
+<a href="/contact">Contact</a>
+</div>
+</div>
+<div class="ft-bot">
+<p>2026 Stylishandhealthy. All rights reserved.</p>
+<span>Hot girls read the research.</span>
+</div>
 </footer>
-
-<script src="/assets/js/shared.js"></script>
-
+<script defer="defer" src="/assets/js/shared.js"></script>
 <script>
+
   const tabs = document.querySelectorAll(".bftab");
   const grid = document.querySelector(".blog-grid");
   const cards = Array.from(document.querySelectorAll(".blog-grid .bc"));
@@ -962,8 +847,9 @@
 
   tabs.forEach(tab =>
     tab.addEventListener("click", () => {
-      tabs.forEach(x => x.classList.remove("on"));
+      tabs.forEach(x => { x.classList.remove("on"); x.setAttribute("aria-pressed", "false"); });
       tab.classList.add("on");
+      tab.setAttribute("aria-pressed", "true");
       activeFilter = normalizeText(tab.textContent);
       applyFilters();
     })
@@ -982,7 +868,7 @@
 
   sortCards();
   applyFilters();
-</script>
 
+</script>
 </body>
 </html>

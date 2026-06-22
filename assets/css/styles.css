@@ -283,3 +283,376 @@ footer { background: var(--brown); padding: 68px 80px 38px; }
   .nw-strip { padding: 44px 20px; }
   .pin-strip-head, .pin-widget-wrap { width: calc(100% - 32px); }
 }
+
+
+/* ============================================
+   CROSS-DEVICE, ACCESSIBILITY & PERFORMANCE FIXES
+   ============================================ */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: clip;
+  scroll-padding-top: 84px;
+}
+
+body {
+  min-width: 0;
+  overflow-x: clip;
+  cursor: auto;
+}
+
+main,
+section,
+article,
+header,
+footer,
+nav,
+.grid,
+[class*="-grid"] {
+  min-width: 0;
+}
+
+img,
+picture,
+svg,
+video,
+canvas,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10000;
+  transform: translateY(-150%);
+  background: var(--green-dk);
+  color: var(--cream);
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(58,42,34,.25);
+  transition: transform .2s var(--ease);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 3px solid var(--pink-deep);
+  outline-offset: 3px;
+}
+
+:where(input, select, textarea):focus-visible {
+  outline-color: var(--green);
+}
+
+/* Do not hide the native cursor unless a precise pointing device exists. */
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: none; }
+  :where(a, button, input, textarea, select, .sc, .cat, .bc, .tc, .subc, .ap, .skc, .feat-pill, .inside-card, .spread, .post-card, .tab, .itab, .bftab) {
+    cursor: none;
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  #cdot { display: none !important; }
+  :where(.sc, .cat, .bc, .subc, .value-card, .ci-card, .skc, .spread):hover {
+    transform: none;
+  }
+}
+
+/* Comfortable touch targets. */
+:where(.btn, .npill, .tab, .itab, .bftab, .sc-btn, .sub-cta, .pin-follow, .nav-burger) {
+  min-height: 44px;
+}
+
+.ft-s {
+  width: 44px;
+  height: 44px;
+}
+
+:where(input, select, textarea) {
+  max-width: 100%;
+}
+
+/* Safe-area-aware navigation and footer spacing for notched devices. */
+nav {
+  padding-left: max(56px, env(safe-area-inset-left));
+  padding-right: max(56px, env(safe-area-inset-right));
+}
+
+footer {
+  padding-left: max(80px, env(safe-area-inset-left));
+  padding-right: max(80px, env(safe-area-inset-right));
+  padding-bottom: max(38px, env(safe-area-inset-bottom));
+}
+
+/* Accessible mobile menu. */
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  background: transparent;
+  border: 0;
+  border-radius: 10px;
+  padding: 8px;
+  z-index: 202;
+  color: var(--green-dk);
+}
+
+.nav-burger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform .28s var(--ease), opacity .2s;
+}
+
+.nav-burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+body.nav-open {
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* Long URLs and product names must never create horizontal scrolling. */
+:where(p, li, a, h1, h2, h3, h4, .legal-body, .sc-name, .bc-title) {
+  overflow-wrap: anywhere;
+}
+
+/* Keep broad layouts readable rather than stretching endlessly on ultrawide displays. */
+@media (min-width: 1600px) {
+  :where(.sec, .page-hero, .nw-strip, footer) > :not(.doodle):not(.page-hero-blob) {
+    width: min(100%, 1440px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-hero > .page-hero-blob,
+  .sec > .doodle,
+  .nw-strip > .doodle {
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    padding-left: max(32px, env(safe-area-inset-left));
+    padding-right: max(32px, env(safe-area-inset-right));
+  }
+
+  footer {
+    padding-left: max(48px, env(safe-area-inset-left));
+    padding-right: max(48px, env(safe-area-inset-right));
+  }
+}
+
+@media (max-width: 860px) {
+  html { scroll-padding-top: 72px; }
+
+  nav {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+
+  .nav-burger { display: flex; }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: rgba(247,241,232,.99);
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding:
+      max(92px, calc(env(safe-area-inset-top) + 72px))
+      max(24px, env(safe-area-inset-right))
+      max(36px, env(safe-area-inset-bottom))
+      max(24px, env(safe-area-inset-left));
+    z-index: 199;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity .28s var(--ease), transform .28s var(--ease), visibility 0s linear .28s;
+  }
+
+  nav ul.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+
+  nav ul li,
+  nav ul li a {
+    width: min(100%, 360px);
+  }
+
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 18px;
+    font-size: 1.05rem !important;
+    letter-spacing: .06em !important;
+    text-align: center;
+    border-radius: 999px;
+  }
+
+  nav ul li a:not(.npill):hover,
+  nav ul li a:not(.npill):focus-visible {
+    background: rgba(85,107,62,.07);
+  }
+
+  .npill {
+    min-height: 48px;
+    padding: 12px 30px !important;
+    font-size: .95rem !important;
+  }
+
+  /* Prevent iOS Safari from zooming when a form control receives focus. */
+  :where(input, select, textarea, .blog-search, .blog-sort) {
+    font-size: 16px !important;
+  }
+
+  footer {
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  .doodle {
+    max-width: 24vw;
+  }
+}
+
+@media (max-width: 560px) {
+  nav {
+    height: 62px;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .nav-logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .wordmark-bar {
+    height: 28px;
+  }
+
+  .wordmark-bar img {
+    height: 26px;
+  }
+
+  footer {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+
+  .ft-bot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .empty-state {
+    padding: 56px 18px;
+  }
+
+  .pin-widget-wrap {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 500px) {
+  nav ul {
+    gap: 10px;
+    padding-top: max(70px, calc(env(safe-area-inset-top) + 58px));
+  }
+
+  nav ul li a {
+    min-height: 42px;
+    padding-block: 7px;
+    font-size: .95rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    transition-delay: 0ms !important;
+  }
+
+  .rv {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .ticker-t {
+    animation: none !important;
+    white-space: normal;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :where(.btn, .tab, .itab, .bftab, input, select, textarea, .sc, .bc, .subc, .skc) {
+    border-width: 2px;
+  }
+}
