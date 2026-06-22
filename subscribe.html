@@ -4,44 +4,146 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
-<title>Subscribe — Weekly Skincare Science &amp; Wellness Tips</title>
-<meta content="Get weekly ingredient deepdives, routine guides, and exclusive downloads. Research-first, beautifully written. Start free — no card needed." name="description"/>
+<title>Memberships Coming Soon — Stylishandhealthy</title>
+<meta content="Stylishandhealthy memberships are being built and are not open for payment yet. See what is coming and use the free resources available now." name="description"/>
 <link href="/assets/images/logo_main.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet"/>
 <link href="/assets/css/styles.css" rel="stylesheet"/>
 <style>
-    .sub-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-    .subc { border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px; padding: 34px 30px; border: 1px solid rgba(85,107,62,.15); background: var(--cream); transition: border-color .25s, background .25s, transform .25s var(--ease); cursor: none; }
-    .subc:hover { border-color: rgba(85,107,62,.3); background: rgba(85,107,62,.03); transform: translateY(-4px); }
-    .subc.feat { background: var(--green-dk); border-color: var(--green-dk); }
-    .subc.feat:hover { background: var(--green); border-color: var(--green); }
-    .sub-badge { font-family: var(--body); font-size: .63rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; background: rgba(85,107,62,.1); color: var(--green-dk); display: inline-block; margin-bottom: 20px; }
-    .subc.feat .sub-badge { background: rgba(247,241,232,.15); color: var(--cream); }
-    .sub-name { font-family: var(--display); font-size: 1.45rem; font-weight: 400; color: var(--green-dk); margin-bottom: 5px; }
-    .subc.feat .sub-name { color: var(--cream); }
-    .sub-price { font-family: var(--display); font-size: 2.7rem; font-weight: 300; color: var(--green-dk); line-height: 1; margin-bottom: 3px; }
-    .subc.feat .sub-price { color: var(--pink-mid); }
-    .sub-period { font-size: .79rem; color: var(--brown-lt); margin-bottom: 22px; }
-    .subc.feat .sub-period { color: rgba(247,241,232,.5); }
-    .sub-perks { display: flex; flex-direction: column; gap: 10px; margin-bottom: 26px; }
-    .sub-perk { font-size: .87rem; color: var(--brown-lt); display: flex; align-items: center; gap: 9px; }
-    .subc.feat .sub-perk { color: rgba(247,241,232,.7); }
-    .sub-perk::before { content: '•'; color: var(--green); font-weight: 700; flex-shrink: 0; }
-    .subc.feat .sub-perk::before { color: var(--green-lt); }
-    .sub-cta { display:block; width: 100%; text-align:center; background: var(--green); color: var(--cream); font-family: var(--body); font-size: .87rem; font-weight: 600; padding: 13px; border-radius: 100px; border: 0; cursor: none; transition: background .2s; }
-    .sub-cta:hover { background: var(--green-dk); }
-    .subc.feat .sub-cta { background: var(--pink); color: var(--green-dk); }
-    .subc.feat:hover .sub-cta { background: var(--pink-mid); }
-    @media(max-width:1024px) { .sub-grid{grid-template-columns:1fr 1fr} }
-    @media(max-width:860px) { .sub-grid{grid-template-columns:1fr;max-width:440px} }
+    .launch-section {
+      background: var(--cream-warm);
+      padding: 88px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .launch-wrap {
+      width: min(100%, 1040px);
+      margin: 0 auto;
+    }
+    .launch-notice {
+      background: var(--green-dk);
+      color: var(--cream);
+      border-radius: 30px 22px 34px 24px / 24px 34px 22px 30px;
+      padding: clamp(34px, 6vw, 68px);
+      box-shadow: 0 24px 70px rgba(58,42,34,.16);
+      position: relative;
+      overflow: hidden;
+    }
+    .launch-notice::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -90px;
+      top: -100px;
+      border-radius: 50%;
+      background: rgba(247,241,232,.055);
+      pointer-events: none;
+    }
+    .launch-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 15px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(247,241,232,.18);
+      border-radius: 999px;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--pink-mid);
+    }
+    .launch-status::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--pink-mid);
+    }
+    .launch-notice h2 {
+      max-width: 760px;
+      font-family: var(--display);
+      font-size: clamp(2rem, 4.8vw, 4rem);
+      font-weight: 400;
+      line-height: 1.08;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .launch-notice h2 em { color: var(--pink-mid); font-style: italic; }
+    .launch-notice p {
+      max-width: 720px;
+      color: rgba(247,241,232,.72);
+      font-size: 1rem;
+      line-height: 1.8;
+      position: relative;
+      z-index: 1;
+    }
+    .launch-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .launch-actions .btn { min-height: 46px; }
+    .build-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .build-card {
+      background: var(--cream);
+      border: 1px solid rgba(58,42,34,.07);
+      border-radius: 22px;
+      padding: 26px 24px;
+    }
+    .build-num {
+      font-family: var(--display);
+      font-size: 1.7rem;
+      color: var(--pink-deep);
+      margin-bottom: 14px;
+    }
+    .build-card h3 {
+      font-family: var(--display);
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--green-dk);
+      margin-bottom: 8px;
+    }
+    .build-card p {
+      color: var(--brown-lt);
+      font-size: .88rem;
+      line-height: 1.7;
+    }
+    .launch-footnote {
+      margin-top: 22px;
+      color: var(--brown-lt);
+      font-size: .85rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+    @media(max-width:860px) {
+      .launch-section { padding: 64px 24px; }
+      .build-grid { grid-template-columns: 1fr; }
+    }
+    @media(max-width:560px) {
+      .launch-section { padding: 52px 20px; }
+      .launch-notice { padding: 32px 22px; border-radius: 24px; }
+      .launch-actions { flex-direction: column; }
+      .launch-actions .btn { width: 100%; justify-content: center; }
+    }
   </style>
 <link href="https://www.stylishandhealthy.com/subscribe" rel="canonical"/>
 <!-- SEO: Open Graph -->
 <meta content="website" property="og:type"/>
 <meta content="Subscribe — Weekly Skincare Science &amp; Wellness Tips" property="og:title"/>
-<meta content="Get weekly ingredient deepdives, routine guides, and exclusive downloads. Research-first, beautifully written. Start free — no card needed." property="og:description"/>
+<meta content="Stylishandhealthy memberships are being built and are not open for payment yet. See what is coming and use the free resources available now." property="og:description"/>
 <meta content="https://www.stylishandhealthy.com/subscribe" property="og:url"/>
 <meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
@@ -50,10 +152,10 @@
 <!-- SEO: Twitter/X Card -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Subscribe — Weekly Skincare Science &amp; Wellness Tips" name="twitter:title"/>
-<meta content="Get weekly ingredient deepdives, routine guides, and exclusive downloads. Research-first, beautifully written. Start free — no card needed." name="twitter:description"/>
+<meta content="Stylishandhealthy memberships are being built and are not open for payment yet. See what is coming and use the free resources available now." name="twitter:description"/>
 <meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" name="twitter:image"/>
 <!-- SEO: Pinterest -->
-<meta content="Get weekly ingredient deepdives, routine guides, and exclusive downloads. Research-first, beautifully written. Start free — no card needed." name="pinterest:description"/>
+<meta content="Stylishandhealthy memberships are being built and are not open for payment yet. See what is coming and use the free resources available now." name="pinterest:description"/>
 <meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" name="pinterest:media"/>
 <style data-device-fixes="true">
 
@@ -88,72 +190,39 @@
 <div class="page-hero">
 <div class="page-hero-blob"></div>
 <div class="doodle" style="width:120px;top:22%;right:8%;opacity:.25;transform:rotate(6deg)"><img alt="" aria-hidden="true" decoding="async" src="/assets/images/heart1.png"/></div>
-<div class="sl">Weekly skincare deepdive</div>
-<h1>Get the science <em>delivered.</em></h1>
-<p>Every week: one ingredient decoded, one routine tip, one product recommendation, and one habit worth trying. Research-first, beautifully written.</p>
+<div class="sl">Membership update</div>
+<h1>Subscriptions are <em>not open yet.</em></h1>
+<p>Deepdive and Full Access are still being built. No payments are being accepted until the research library, downloads, and member experience are genuinely ready.</p>
 </div>
-<section class="sec" style="background:var(--cream-warm);position:relative;overflow:hidden">
-<div class="doodle" style="width:100px;top:4%;right:5%;opacity:.35;transform:rotate(-10deg)"><img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart2.png"/></div>
-<div class="rv" style="margin-bottom:52px">
-<div class="sl">Choose your plan</div>
-<h2 class="sh">Simple, honest <em>pricing.</em></h2>
-<p class="sp" style="margin-top:12px">Start free, upgrade whenever it makes sense. Cancel anytime -- no pressure.</p>
-</div>
-<div class="sub-grid">
-<div class="subc rv d1">
-<div class="sub-badge">Free forever</div>
-<div class="sub-name">Starter</div>
-<div class="sub-price">€0</div>
-<div class="sub-period">/ forever free</div>
-<div class="sub-perks">
-<div class="sub-perk">Monthly skincare roundup</div>
-<div class="sub-perk">Free resources and downloads</div>
-<div class="sub-perk">Blog posts and recommendations</div>
-<div class="sub-perk">Community access</div>
-</div>
-<a class="sub-cta" href="#free-community">Join free</a>
-</div>
-<div class="subc feat rv d2">
-<div class="sub-badge">Most popular</div>
-<div class="sub-name">Deepdive</div>
-<div class="sub-price">€6</div>
-<div class="sub-period">/ month -- cancel anytime</div>
-<div class="sub-perks">
-<div class="sub-perk">Weekly ingredient deepdive</div>
-<div class="sub-perk">Full routine guides</div>
-<div class="sub-perk">Product database access</div>
-<div class="sub-perk">Exclusive PDF downloads</div>
-<div class="sub-perk">Reader Q and A answers</div>
-</div>
-<a class="sub-cta" href="https://buy.stripe.com/eVq8wQ74Necm8D03uXbjW01" rel="noopener noreferrer" target="_blank">Start for €6</a>
-</div>
-<div class="subc rv d3">
-<div class="sub-badge">Premium</div>
-<div class="sub-name">Full Access</div>
-<div class="sub-price">€12</div>
-<div class="sub-period">/ month -- cancel anytime</div>
-<div class="sub-perks">
-<div class="sub-perk">Everything in Deepdive</div>
-<div class="sub-perk">Personal routine review</div>
-<div class="sub-perk">Early shop access and discounts</div>
-<div class="sub-perk">Exclusive sticker drops</div>
-<div class="sub-perk">Monthly live Q and A session</div>
-</div>
-<a class="sub-cta" href="https://buy.stripe.com/6oU7sMexfecmaL86H9bjW02" rel="noopener noreferrer" target="_blank">Get full access</a>
+<section class="launch-section">
+<div class="launch-wrap">
+<div class="launch-notice rv">
+<div class="launch-status">Currently in development</div>
+<h2>Building it properly — <em>not launching it early.</em></h2>
+<p>I would rather release a membership that is genuinely useful than charge for a half-finished version. For now, all paid plans are closed. The blog, skincare recommendations, and free Wellness Planner remain available.</p>
+<div class="launch-actions">
+<a class="btn btn-wh" href="/blog">Read the blog</a>
+<a class="btn btn-o" href="/journal" style="border-color:rgba(247,241,232,.35);color:var(--cream)">Get the free planner</a>
 </div>
 </div>
-</section>
-<section class="nw-strip" id="free-community">
-<div class="doodle" style="width:110px;bottom:14%;right:7%;opacity:.3;transform:rotate(-6deg)"><img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart3.png"/></div>
-<div class="nw-strip-inner rv">
-<div class="sl">Not ready to subscribe?</div>
-<h2>Join the free community <em>first.</em></h2>
-<p>Drop your email for the free newsletter -- skincare tips, wellness reads, and exclusive downloads. No card needed.</p>
-<form accept-charset="UTF-8" class="nw-form" onsubmit="handleNwSub(event)">
-<input aria-label="Email address" autocomplete="email" inputmode="email" name="EMAIL" placeholder="your@email.com" required="" type="email"/>
-<button class="btn btn-wh" style="padding:11px 26px;font-size:.87rem" type="submit">Join free</button>
-</form>
-<p class="nw-note">No spam. Unsubscribe anytime.</p>
+<div class="build-grid" aria-label="Membership features in development">
+<div class="build-card rv d1">
+<div class="build-num">01</div>
+<h3>Weekly research deepdives</h3>
+<p>Clear, properly sourced breakdowns of ingredients, products, routines, and wellness claims.</p>
+</div>
+<div class="build-card rv d2">
+<div class="build-num">02</div>
+<h3>Practical printable resources</h3>
+<p>Trackers, planners, checklists, and guides designed to be useful rather than decorative filler.</p>
+</div>
+<div class="build-card rv d3">
+<div class="build-num">03</div>
+<h3>A stronger member library</h3>
+<p>Organised guides and exclusive resources that justify the price before anyone is asked to pay.</p>
+</div>
+</div>
+<p class="launch-footnote">When memberships are ready, this page will be updated first. There are currently no active paid subscription links.</p>
 </div>
 </section>
 </main><footer>
@@ -170,21 +239,5 @@
 <div class="ft-bot"><p>© 2026 Stylishandhealthy. All rights reserved.</p><span>Hot girls read the research.</span></div>
 </footer>
 <script defer="defer" src="/assets/js/shared.js"></script>
-<script>
-
-(function() {
-  if (new URLSearchParams(window.location.search).get('success') === '1') {
-    const banner = document.createElement('div');
-    banner.className = 'subscription-success-banner';
-    banner.setAttribute('role', 'status');
-    banner.setAttribute('aria-live', 'polite');
-    banner.style.cssText = 'position:fixed;top:max(80px,env(safe-area-inset-top));left:50%;transform:translateX(-50%);background:var(--green);color:var(--cream);font-family:var(--body);font-size:.92rem;font-weight:600;padding:14px 28px;border-radius:100px;z-index:9998;box-shadow:0 10px 30px rgba(85,107,62,.25);';
-    banner.textContent = '🎉 Welcome! Your subscription is active.';
-    document.body.appendChild(banner);
-    setTimeout(() => banner.remove(), 6000);
-  }
-})();
-
-</script>
 </body>
 </html>

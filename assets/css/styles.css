@@ -658,54 +658,48 @@ body.nav-open {
 }
 
 /* =========================================================
-   MOBILE NAVIGATION — COMPACT PHONE DROPDOWN
-   Replaces the previous full-screen menu with a small sheet.
+   MOBILE NAVIGATION — IN-PLACE DROPDOWN
+   Opens below the button without locking or moving the page.
    ========================================================= */
 
+:root { --mobile-menu-edge: 12px; }
+
 @media (max-width: 860px) {
-  body.nav-open {
-    overflow: auto !important;
-    touch-action: auto !important;
-  }
-
-  body.nav-open::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 190;
-    background: rgba(58, 42, 34, .30);
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-tap-highlight-color: transparent;
-  }
-
+  /* A transformed ancestor can make fixed children jump or position incorrectly. */
   nav {
-    isolation: isolate;
-    overflow: visible;
+    overflow: visible !important;
+    will-change: auto !important;
+    transform: none !important;
+  }
+
+  body.nav-open,
+  body.nav-open::before {
+    overflow: visible !important;
+    touch-action: auto !important;
+    content: none !important;
+    display: none !important;
   }
 
   nav .nav-burger {
     position: relative;
-    z-index: 204;
-    border: 1px solid rgba(85, 107, 62, .12);
+    z-index: 1002;
+    border: 1px solid rgba(85,107,62,.12);
     background: var(--cream-warm);
-    box-shadow: 0 6px 18px rgba(58, 42, 34, .06);
+    box-shadow: 0 6px 18px rgba(58,42,34,.06);
     -webkit-tap-highlight-color: transparent;
   }
 
-  nav .nav-burger:active {
-    transform: scale(.96);
-  }
+  nav .nav-burger:active { transform: scale(.96); }
 
   nav ul#primary-navigation {
     display: flex !important;
-    position: absolute !important;
-    inset: auto max(12px, env(safe-area-inset-right)) auto auto !important;
-    top: calc(100% + 10px) !important;
+    position: fixed !important;
+    inset: auto var(--mobile-menu-right, 12px) auto auto !important;
+    top: var(--mobile-menu-top, 76px) !important;
     width: min(330px, calc(100vw - 24px)) !important;
     min-height: 0 !important;
     height: auto !important;
-    max-height: calc(100dvh - 120px) !important;
+    max-height: min(520px, calc(100dvh - var(--mobile-menu-top, 76px) - 12px)) !important;
     overflow-y: auto !important;
     overscroll-behavior: contain;
     flex-direction: column !important;
@@ -714,22 +708,17 @@ body.nav-open {
     gap: 4px !important;
     padding: 10px !important;
     margin: 0 !important;
-    z-index: 203 !important;
-    border: 1px solid rgba(85, 107, 62, .14);
+    z-index: 1001 !important;
+    border: 1px solid rgba(85,107,62,.14);
     border-radius: 22px;
-    background: rgba(247, 241, 232, .99);
-    box-shadow:
-      0 24px 70px rgba(58, 42, 34, .24),
-      0 4px 14px rgba(58, 42, 34, .08);
+    background: rgba(247,241,232,.995);
+    box-shadow: 0 24px 70px rgba(58,42,34,.24), 0 4px 14px rgba(58,42,34,.08);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transform: translateY(-8px) scale(.98);
+    transform: translateY(-10px) scale(.98);
     transform-origin: top right;
-    transition:
-      opacity .18s ease,
-      transform .22s var(--ease),
-      visibility 0s linear .22s;
+    transition: opacity .16s ease, transform .2s var(--ease), visibility 0s linear .2s;
   }
 
   nav ul#primary-navigation.open {
@@ -745,9 +734,7 @@ body.nav-open {
     width: 100% !important;
   }
 
-  nav ul#primary-navigation li {
-    margin: 0 !important;
-  }
+  nav ul#primary-navigation li { margin: 0 !important; }
 
   nav ul#primary-navigation li a {
     display: flex !important;
@@ -769,7 +756,7 @@ body.nav-open {
   nav ul#primary-navigation li a:not(.npill):hover,
   nav ul#primary-navigation li a:not(.npill):focus-visible,
   nav ul#primary-navigation li a:not(.npill):active {
-    background: rgba(85, 107, 62, .075) !important;
+    background: rgba(85,107,62,.075) !important;
   }
 
   nav ul#primary-navigation .npill {
@@ -793,19 +780,14 @@ body.nav-open {
 }
 
 @media (max-width: 420px) {
+  :root { --mobile-menu-edge: 8px; }
   nav ul#primary-navigation {
-    right: max(8px, env(safe-area-inset-right)) !important;
     width: calc(100vw - 16px) !important;
     border-radius: 19px;
   }
 }
 
 @media (max-width: 860px) and (max-height: 500px) {
-  nav ul#primary-navigation {
-    max-height: calc(100dvh - 82px) !important;
-    top: calc(100% + 6px) !important;
-  }
-
   nav ul#primary-navigation li a {
     min-height: 42px !important;
     padding-block: 9px !important;
@@ -813,7 +795,5 @@ body.nav-open {
 }
 
 @media (prefers-reduced-motion: reduce) and (max-width: 860px) {
-  nav ul#primary-navigation {
-    transition: none !important;
-  }
+  nav ul#primary-navigation { transition: none !important; }
 }

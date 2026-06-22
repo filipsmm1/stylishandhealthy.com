@@ -32,7 +32,8 @@
     .proof-t { font-size: .79rem; color: var(--brown-lt); max-width: 210px; line-height: 1.5; }
     .hero-right { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; padding: 80px 80px 80px 0; }
     .hcards { position: relative; width: 350px; height: 400px; }
-    .hc { position: absolute; border-radius: 22px; padding: 28px; box-shadow: 0 26px 52px rgba(58,42,34,.15); }
+    .hc { position: absolute; border-radius: 22px; padding: 10px; box-shadow: 0 26px 52px rgba(58,42,34,.15); overflow: hidden; background: var(--cream); }
+    .hc img { width: 100%; height: 100%; object-fit: contain; display: block; border-radius: 15px; background: var(--cream); }
     .hc1 { width: 270px; height: 320px; background: var(--green-dk); top: 0; left: 0; transform: rotate(-5deg); animation: hcf1 9s ease-in-out infinite; display: flex; flex-direction: column; justify-content: flex-end; will-change: transform; }
     .hc2 { width: 252px; height: 288px; background: var(--pink); top: 42px; left: 66px; transform: rotate(3deg); animation: hcf2 11s ease-in-out infinite .8s; display: flex; flex-direction: column; justify-content: flex-end; will-change: transform; }
     .hc3 { width: 234px; height: 252px; background: var(--cream-warm); border: 1px solid rgba(58,42,34,.07); top: 84px; left: 34px; transform: rotate(-.5deg); animation: hcf3 10s ease-in-out infinite .4s; display: flex; flex-direction: column; justify-content: flex-end; will-change: transform; }
@@ -228,7 +229,7 @@
 <p class="hero-p">Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or "that girl" rule online. Research-backed, realistic, and never preachy.</p>
 <div class="hero-actions">
 <a class="btn btn-f" href="/shop">Explore the shop</a>
-<a class="btn btn-o" href="/subscribe">Weekly skincare deepdive</a>
+<a class="btn btn-o" href="/subscribe">Memberships coming soon</a>
 </div>
 <div class="hero-proof">
 <div class="pavs">
@@ -240,18 +241,15 @@
 </div>
 </div>
 <div class="hero-right">
-<div class="hcards">
+<div class="hcards" aria-label="Printable previews">
 <div class="hc hc1">
-<div class="hc-tag">Weekly deepdive</div>
-<div class="hc-name">Skincare Decoded</div>
+<img src="/assets/images/printable1.png" alt="Stylishandhealthy printable preview" decoding="async" />
 </div>
 <div class="hc hc2">
-<div class="hc-tag">Digital downloads</div>
-<div class="hc-name">Pretty Planners and Trackers</div>
+<img src="/assets/images/7dayreset.png" alt="7 Day Reset printable" decoding="async" />
 </div>
 <div class="hc hc3">
-<div class="hc-tag">Sticker shop</div>
-<div class="hc-name">Aesthetic Sticker Packs</div>
+<img src="/assets/images/7-day-soft-reset-tracker.png" alt="7 Day Soft Reset Tracker printable" decoding="async" />
 </div>
 </div>
 </div>
@@ -259,8 +257,8 @@
 <!-- TICKER -->
 <div class="ticker">
 <div class="ticker-t">
-<span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Aesthetic stickers</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
-<span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Aesthetic stickers</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
+<span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Free printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
+<span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Free printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
 </div>
 </div>
 <!-- BRAND AD -->
@@ -321,7 +319,7 @@
 <div class="sl">What we cover</div>
 <h2 class="sh">Everything that makes you <em>glow.</em></h2>
 </div>
-<a class="btn btn-o" href="/subscribe">Join for free</a>
+<a class="btn btn-o" href="/subscribe">See what's coming</a>
 </div>
 <div class="cats-grid">
 <div class="cat tall dark rv">
