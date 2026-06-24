@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#f7f1e8" name="theme-color"/>
 <meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
 <title>Skincare &amp; Wellness Blog - Stylishandhealthy</title>
 <meta content="Science-backed skincare tips, wellness habits, and self-growth reads. Research-first content that is actually useful, no trends, no filler." name="description"/>
@@ -427,7 +428,89 @@
   .bc-body { padding:18px 18px 22px; }
 }
 
-</style></head>
+</style>
+<style data-responsive-hardening="true">
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { overflow-x: clip; }
+  img, picture, svg, video, canvas { max-width: 100%; }
+  .sec, .blog-tools, .blog-filters, .blog-grid, .bc, .bc-body, .bc-img { min-width: 0; }
+  .bc-title, .bc-body p { overflow-wrap: anywhere; }
+  .blog-search, .blog-sort { min-height: 48px; }
+  .bc-img { aspect-ratio: 16 / 9; height: auto; }
+  .bc.feat .bc-img { aspect-ratio: 16 / 9; height: auto; }
+  .bc-img img { width: 100%; height: 100%; object-fit: cover; }
+
+  @media (min-width: 1400px) {
+    .blog-grid { grid-template-columns: 1.45fr 1fr 1fr; gap: 22px; }
+    .bc-body { padding: 22px 24px 26px; }
+  }
+
+  @media (max-width: 1100px) {
+    .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .blog-grid .bc.feat { grid-column: span 2; }
+  }
+
+  @media (max-width: 860px) {
+    .page-hero { padding-inline: 22px; }
+    .page-hero h1 { text-wrap: balance; }
+    .sec { padding-inline: 18px !important; }
+    .blog-tools { align-items: stretch; }
+    .blog-search, .blog-sort {
+      width: 100%;
+      flex: 1 1 100%;
+      font-size: 16px;
+    }
+    .blog-grid { grid-template-columns: 1fr; gap: 16px; }
+    .blog-grid .bc.feat { grid-column: auto; }
+    .bc-img, .bc.feat .bc-img { aspect-ratio: 16 / 9; height: auto; }
+    .bc-body { padding: 19px 20px 23px; }
+    .bc.feat .bc-title { font-size: 1.35rem; }
+  }
+
+  @media (max-width: 560px) {
+    .page-hero { padding-inline: 16px; }
+    .page-hero h1 { font-size: clamp(2.15rem, 11vw, 3rem); line-height: 1.05; }
+    .page-hero p { font-size: 0.98rem; }
+    .sec { padding-inline: 12px !important; }
+    .blog-tools { gap: 10px; }
+    .blog-filters {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 9px;
+      margin-bottom: 30px;
+    }
+    .bftab {
+      width: 100%;
+      min-height: 44px;
+      padding: 9px 10px;
+      cursor: pointer;
+    }
+    .bc { border-radius: 20px; }
+    .bc-body { padding: 17px 17px 21px; }
+    .bc-title, .bc.feat .bc-title { font-size: 1.16rem; }
+    .bc-meta { font-size: 0.71rem; }
+  }
+
+  @media (max-width: 360px) {
+    .blog-filters { grid-template-columns: 1fr; }
+    .bc-body { padding-inline: 15px; }
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    .bc, .bftab { cursor: pointer; }
+    .bc, .bftab, .blog-search, .blog-sort { -webkit-tap-highlight-color: rgba(85,107,62,.12); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
 <div class="wordmark-bar">
