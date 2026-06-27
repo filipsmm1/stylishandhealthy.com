@@ -40,6 +40,41 @@
         z-index: 2;
       }
 
+      .article-breadcrumbs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        flex-wrap: wrap;
+        margin: 0 auto 18px;
+        font-family: var(--body);
+        font-size: 0.78rem;
+        line-height: 1.4;
+        color: var(--brown-lt);
+      }
+
+      .article-breadcrumbs a {
+        color: var(--green-dk);
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 1px solid transparent;
+      }
+
+      .article-breadcrumbs a:hover,
+      .article-breadcrumbs a:focus {
+        color: var(--pink-deep);
+        border-bottom-color: currentColor;
+      }
+
+      .article-breadcrumbs .crumb-sep {
+        color: var(--pink-deep);
+        opacity: 0.75;
+      }
+
+      .article-breadcrumbs [aria-current="page"] {
+        color: var(--brown-lt);
+      }
+
       .article-eyebrow {
         font-family: var(--body);
         font-size: 0.72rem;
@@ -1192,6 +1227,13 @@
 </nav>
 <header class="article-hero">
 <div class="article-hero-inner">
+<nav aria-label="Breadcrumb" class="article-breadcrumbs">
+<a href="/">Home</a>
+<span aria-hidden="true" class="crumb-sep">/</span>
+<a href="/blog">Blog</a>
+<span aria-hidden="true" class="crumb-sep">/</span>
+<span aria-current="page">Hypochlorous Acid Face Spray</span>
+</nav>
 <div class="article-eyebrow">Skincare Science</div>
 <h1>Hypochlorous Acid Face Spray: <em>Worth the Hype?</em></h1>
 <div class="article-subtitle">The gentle acne-and-redness spray explained without the TikTok miracle claims.</div>
