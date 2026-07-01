@@ -4,551 +4,41 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
-<title>About Stylishandhealthy: Our Mission, Values &amp; Story</title>
-<meta content="Stylishandhealthy makes skincare and wellness feel pretty, practical, and research-led. Real science, honest recommendations, free printables, and no fake guru energy." name="description"/>
+<title>About Stylishandhealthy — Our Mission, Values &amp; Story</title>
+<meta content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Research-backed, realistic, and never preachy." name="description"/>
 <link href="/assets/images/logo_main.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet"/>
 <link href="/assets/css/styles.css" rel="stylesheet"/>
-
 <style>
-  :root {
-    --sh-cream: var(--cream, #F7F1E8);
-    --sh-cream-warm: var(--cream-warm, #FFF8F1);
-    --sh-pink: var(--pink, #F8D6DE);
-    --sh-pink-deep: var(--pink-deep, #D4798A);
-    --sh-green: var(--green-dk, #556B3E);
-    --sh-sage: var(--sage, #A8B99A);
-    --sh-brown: var(--brown, #3A2A22);
-    --sh-brown-lt: var(--brown-lt, #725F55);
-    --sh-line: rgba(58,42,34,.09);
-    --sh-shadow: 0 24px 70px rgba(85,107,62,.11);
-  }
-
-  html { scroll-behavior: smooth; }
-  body { background: var(--sh-cream); color: var(--sh-brown); }
-  .about-redesign { overflow: hidden; }
-  .about-redesign * { box-sizing: border-box; }
-  .about-container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
-  .about-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    font: 700 .72rem/1 var(--body, "DM Sans", sans-serif);
-    letter-spacing: .22em;
-    text-transform: uppercase;
-    color: var(--sh-pink-deep);
-    margin-bottom: 18px;
-  }
-  .about-eyebrow::after { content: "♡"; font-size: 1rem; letter-spacing: 0; color: var(--sh-pink-deep); }
-  .about-heading {
-    font-family: var(--display, "Playfair Display", serif);
-    font-weight: 400;
-    color: var(--sh-brown);
-    letter-spacing: -.045em;
-    line-height: .98;
-    margin: 0;
-  }
-  .about-heading em { color: var(--sh-pink-deep); font-style: italic; }
-  .about-copy { color: var(--sh-brown-lt); line-height: 1.78; font-size: .98rem; margin: 0; }
-  .about-copy + .about-copy { margin-top: 14px; }
-
-  /* Header refinement for this page */
-  .wordmark-bar { padding-block: 18px 10px; }
-  .wordmark-bar img { max-width: min(520px, 82vw); height: auto; }
-  nav .npill { white-space: nowrap; }
-
-  /* Hero */
-  .about-hero {
-    position: relative;
-    min-height: 640px;
-    display: flex;
-    align-items: center;
-    padding: 84px 0 92px;
-    border-bottom: 1px solid var(--sh-line);
-    background:
-      radial-gradient(circle at 92% 4%, rgba(248,214,222,.72) 0 120px, transparent 121px),
-      radial-gradient(circle at 4% 88%, rgba(168,185,154,.24) 0 120px, transparent 121px),
-      linear-gradient(180deg, rgba(255,255,255,.44), rgba(247,241,232,.88));
-  }
-  .about-hero::before {
-    content: "";
-    position: absolute;
-    left: -110px;
-    bottom: -135px;
-    width: 390px;
-    height: 260px;
-    border-radius: 50% 50% 45% 55%;
-    background: rgba(248,214,222,.58);
-    transform: rotate(18deg);
-  }
-  .about-hero::after {
-    content: "";
-    position: absolute;
-    right: -155px;
-    top: 78px;
-    width: 420px;
-    height: 330px;
-    border-radius: 46% 54% 62% 38%;
-    background: rgba(168,185,154,.19);
-    transform: rotate(-8deg);
-  }
-  .about-hero-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: .92fr 1.08fr;
-    gap: clamp(42px, 6vw, 92px);
-    align-items: center;
-  }
-  .about-hero h1 {
-    font-size: clamp(3.35rem, 7.2vw, 6.9rem);
-    max-width: 680px;
-  }
-  .about-hero p { max-width: 520px; margin-top: 24px; font-size: 1.03rem; }
-  .hero-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
-  .about-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-height: 48px;
-    padding: 0 25px;
-    border-radius: 999px;
-    border: 1px solid transparent;
-    background: var(--sh-pink-deep);
-    color: #fff;
-    font: 700 .88rem/1 var(--body, "DM Sans", sans-serif);
-    text-decoration: none;
-    box-shadow: 0 14px 35px rgba(212,121,138,.24);
-    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-  }
-  .about-btn:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(212,121,138,.3); background: #C96A7E; }
-  .about-btn.alt { background: rgba(255,255,255,.54); color: var(--sh-green); border-color: rgba(85,107,62,.18); box-shadow: none; }
-  .about-btn.alt:hover { background: rgba(168,185,154,.16); box-shadow: none; }
-
-  .hero-still-life {
-    position: relative;
-    min-height: 475px;
-    border-radius: 35% 65% 45% 55% / 52% 40% 60% 48%;
-    background:
-      radial-gradient(circle at 78% 22%, rgba(248,214,222,.82), transparent 24%),
-      linear-gradient(145deg, rgba(255,255,255,.9), rgba(247,241,232,.5));
-    border: 1px solid rgba(58,42,34,.07);
-    box-shadow: var(--sh-shadow);
-    overflow: hidden;
-  }
-  .hero-still-life::before {
-    content: "";
-    position: absolute;
-    inset: 8% 6% 8% 10%;
-    border-radius: 48% 52% 45% 55%;
-    background: rgba(255,255,255,.62);
-  }
-  .hero-sparkle, .hero-heart {
-    position: absolute;
-    color: var(--sh-pink-deep);
-    font-family: var(--display, "Playfair Display", serif);
-    opacity: .72;
-    z-index: 3;
-  }
-  .hero-sparkle { left: 9%; top: 23%; font-size: 1.9rem; }
-  .hero-heart { right: 11%; bottom: 18%; font-size: 2.1rem; transform: rotate(12deg); }
-  .book-stack {
-    position: absolute;
-    left: 18%;
-    top: 28%;
-    width: 48%;
-    z-index: 2;
-    transform: rotate(-2deg);
-  }
-  .book {
-    height: 56px;
-    display: flex;
-    align-items: center;
-    padding: 0 28px;
-    border-radius: 11px;
-    font: 600 .82rem/1 var(--body, "DM Sans", sans-serif);
-    letter-spacing: .09em;
-    text-transform: uppercase;
-    box-shadow: 0 18px 35px rgba(58,42,34,.08);
-  }
-  .book.one { background: #EFC6CE; color: var(--sh-brown); }
-  .book.two { margin-top: -5px; background: var(--sh-green); color: var(--sh-cream-warm); }
-  .mock-mug {
-    position: absolute;
-    width: 118px;
-    height: 94px;
-    left: 26%;
-    top: 9%;
-    border-radius: 28px 28px 42px 42px;
-    background: #F5E8D5;
-    border: 2px solid rgba(58,42,34,.12);
-    z-index: 3;
-    box-shadow: 0 16px 35px rgba(58,42,34,.11);
-  }
-  .mock-mug::before {
-    content: "";
-    position: absolute;
-    left: 14px;
-    right: 14px;
-    top: 11px;
-    height: 25px;
-    border-radius: 50%;
-    background: var(--sh-green);
-    box-shadow: inset 0 0 0 7px rgba(168,185,154,.26);
-  }
-  .mock-mug::after {
-    content: "";
-    position: absolute;
-    right: -31px;
-    top: 24px;
-    width: 42px;
-    height: 42px;
-    border: 9px solid #F5E8D5;
-    border-left: 0;
-    border-radius: 0 28px 28px 0;
-  }
-  .mock-bottle {
-    position: absolute;
-    right: 18%;
-    top: 20%;
-    width: 74px;
-    height: 160px;
-    border-radius: 24px 24px 18px 18px;
-    background: linear-gradient(180deg, #FCF4EA, #EAD9C8);
-    border: 1px solid rgba(58,42,34,.13);
-    z-index: 3;
-    box-shadow: 0 16px 35px rgba(58,42,34,.1);
-  }
-  .mock-bottle::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 24px;
-    width: 26px;
-    height: 36px;
-    border-radius: 10px 10px 4px 4px;
-    background: #F7E9DC;
-    border: 1px solid rgba(58,42,34,.12);
-  }
-  .mock-bottle span {
-    position: absolute;
-    inset: 64px 10px auto;
-    text-align: center;
-    font: 700 .58rem/1.25 var(--body, "DM Sans", sans-serif);
-    color: var(--sh-green);
-    letter-spacing: .1em;
-    text-transform: uppercase;
-  }
-  .mock-note {
-    position: absolute;
-    left: 29%;
-    bottom: 12%;
-    width: 278px;
-    min-height: 145px;
-    border-radius: 18px;
-    background: #FFFDF8;
-    border: 1px solid rgba(58,42,34,.08);
-    z-index: 4;
-    padding: 23px 24px;
-    box-shadow: 0 22px 50px rgba(58,42,34,.11);
-    transform: rotate(-2deg);
-  }
-  .mock-note strong { display: block; font-family: var(--display, "Playfair Display", serif); font-size: 1.35rem; font-weight: 400; margin-bottom: 9px; }
-  .mock-note ul { list-style: none; padding: 0; margin: 0; color: var(--sh-brown-lt); font-size: .82rem; line-height: 1.85; }
-  .mock-note li::before { content: "✓"; color: var(--sh-green); margin-right: 8px; }
-  .jade-roller {
-    position: absolute;
-    right: 13%;
-    bottom: 13%;
-    width: 142px;
-    height: 20px;
-    border-radius: 999px;
-    background: #C7D0B8;
-    z-index: 4;
-    transform: rotate(-42deg);
-    box-shadow: 0 10px 20px rgba(58,42,34,.11);
-  }
-  .jade-roller::before, .jade-roller::after {
-    content: "";
-    position: absolute;
-    top: -14px;
-    width: 50px;
-    height: 48px;
-    border-radius: 999px;
-    background: #A8B99A;
-    border: 4px solid #D3A052;
-  }
-  .jade-roller::before { left: -42px; }
-  .jade-roller::after { right: -42px; width: 44px; height: 44px; top: -12px; }
-
-  /* Mission */
-  .about-section { position: relative; padding: 92px 0; }
-  .mission-panel {
-    display: grid;
-    grid-template-columns: .92fr 1.08fr;
-    gap: clamp(36px, 6vw, 82px);
-    align-items: center;
-  }
-  .mission-copy-box h2 { font-size: clamp(2.3rem, 4vw, 4rem); max-width: 610px; }
-  .mission-copy-box .about-copy:first-of-type { margin-top: 24px; }
-  .trust-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .trust-tile {
-    min-height: 154px;
-    display: grid;
-    grid-template-columns: 72px 1fr;
-    gap: 20px;
-    align-items: center;
-    padding: 24px;
-    border-radius: 24px;
-    border: 1px solid var(--sh-line);
-    background: rgba(255,255,255,.45);
-    box-shadow: 0 14px 34px rgba(58,42,34,.045);
-  }
-  .trust-tile:nth-child(1), .trust-tile:nth-child(4) { background: rgba(168,185,154,.16); }
-  .trust-tile:nth-child(2) { background: rgba(248,214,222,.34); }
-  .trust-icon {
-    width: 72px;
-    height: 72px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--sh-green);
-    color: #fff;
-    font-size: 1.75rem;
-    box-shadow: 0 12px 25px rgba(85,107,62,.16);
-  }
-  .trust-tile:nth-child(2) .trust-icon { background: var(--sh-pink-deep); }
-  .trust-tile:nth-child(3) .trust-icon, .trust-tile:nth-child(4) .trust-icon { background: var(--sh-sage); color: var(--sh-green); }
-  .trust-tile h3 {
-    margin: 0 0 8px;
-    color: var(--sh-brown);
-    font: 500 1.22rem/1.15 var(--display, "Playfair Display", serif);
-  }
-  .trust-tile p { margin: 0; color: var(--sh-brown-lt); font-size: .84rem; line-height: 1.55; }
-
-  /* Values */
-  .values-section { padding: 26px 0 86px; }
-  .section-center { text-align: center; max-width: 760px; margin: 0 auto 44px; }
-  .section-center .about-heading { font-size: clamp(2.1rem, 4.2vw, 4.4rem); }
-  .values-grid-new {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
-  }
-  .value-card-new {
-    min-height: 205px;
-    text-align: center;
-    padding: 27px 19px 24px;
-    border-radius: 24px 18px 28px 20px / 20px 28px 18px 24px;
-    border: 1px solid var(--sh-line);
-    background: rgba(255,255,255,.44);
-    box-shadow: 0 12px 30px rgba(58,42,34,.035);
-    transition: transform .22s ease, box-shadow .22s ease;
-  }
-  .value-card-new:hover { transform: translateY(-5px); box-shadow: 0 20px 42px rgba(85,107,62,.09); }
-  .value-card-new .icon { display: block; min-height: 42px; color: var(--sh-green); font-size: 2.1rem; margin-bottom: 18px; }
-  .value-card-new:nth-child(even) .icon { color: var(--sh-pink-deep); }
-  .value-card-new h3 {
-    margin: 0 0 9px;
-    color: var(--sh-brown);
-    font: 500 1.08rem/1.12 var(--display, "Playfair Display", serif);
-  }
-  .value-card-new p { margin: 0; color: var(--sh-brown-lt); font-size: .78rem; line-height: 1.55; }
-
-  /* Find here */
-  .find-section { padding: 0 0 92px; }
-  .find-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  .find-card {
-    display: grid;
-    grid-template-columns: 42% 1fr;
-    align-items: stretch;
-    min-height: 178px;
-    border-radius: 24px;
-    overflow: hidden;
-    border: 1px solid var(--sh-line);
-    background: rgba(255,255,255,.5);
-    box-shadow: 0 16px 34px rgba(58,42,34,.045);
-  }
-  .find-visual {
-    position: relative;
-    background: linear-gradient(135deg, rgba(248,214,222,.68), rgba(255,248,241,.92));
-    overflow: hidden;
-  }
-  .find-visual::before {
-    content: "";
-    position: absolute;
-    inset: 24px;
-    border-radius: 28px;
-    border: 1px solid rgba(58,42,34,.07);
-    background: rgba(255,255,255,.36);
-  }
-  .visual-skincare::after {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 96px;
-    border-radius: 16px 16px 12px 12px;
-    left: 42px;
-    bottom: 34px;
-    background: #FFF9F2;
-    box-shadow: 42px -10px 0 -4px #EAD9C8, 78px 18px 0 -12px var(--sh-sage);
-    border: 1px solid rgba(58,42,34,.1);
-  }
-  .visual-wellness::after {
-    content: "";
-    position: absolute;
-    left: 36px;
-    top: 38px;
-    width: 98px;
-    height: 98px;
-    border-radius: 50%;
-    background: radial-gradient(circle at 34% 36%, #D4798A 0 7px, transparent 8px), radial-gradient(circle at 67% 45%, #556B3E 0 8px, transparent 9px), #EAE1C9;
-    border: 10px solid #FFF9F2;
-    box-shadow: 28px 24px 0 -6px rgba(168,185,154,.45);
-  }
-  .visual-printables::after {
-    content: "";
-    position: absolute;
-    left: 36px;
-    top: 30px;
-    width: 105px;
-    height: 125px;
-    border-radius: 11px;
-    background: repeating-linear-gradient(180deg, #FFFDF8 0 18px, #F3CDD5 19px 20px);
-    border: 1px solid rgba(58,42,34,.09);
-    box-shadow: 16px 16px 0 rgba(212,121,138,.16);
-    transform: rotate(-4deg);
-  }
-  .find-content { padding: 28px 24px; }
-  .find-content h3 { margin: 0 0 10px; font: 500 1.45rem/1.1 var(--display, "Playfair Display", serif); color: var(--sh-brown); }
-  .find-content p { margin: 0 0 18px; color: var(--sh-brown-lt); font-size: .84rem; line-height: 1.55; }
-  .find-content a { color: var(--sh-pink-deep); font: 700 .78rem/1 var(--body, "DM Sans", sans-serif); text-decoration: none; }
-  .find-content a:hover { text-decoration: underline; }
-
-  /* Newsletter */
-  .about-newsletter { padding: 0 0 84px; }
-  .newsletter-card {
-    position: relative;
-    display: grid;
-    grid-template-columns: 190px 1fr minmax(280px, 380px);
-    gap: 30px;
-    align-items: center;
-    padding: 35px 42px;
-    border-radius: 28px;
-    border: 1px solid rgba(212,121,138,.14);
-    background:
-      radial-gradient(circle at 92% 20%, rgba(255,255,255,.82), transparent 21%),
-      linear-gradient(135deg, rgba(248,214,222,.72), rgba(255,248,241,.74));
-    box-shadow: 0 20px 46px rgba(212,121,138,.08);
-  }
-  .newsletter-illo {
-    position: relative;
-    width: 150px;
-    height: 112px;
-  }
-  .newsletter-illo::before {
-    content: "";
-    position: absolute;
-    inset: 18px 10px 14px;
-    border: 2px solid rgba(85,107,62,.46);
-    border-radius: 14px;
-    background: rgba(255,255,255,.42);
-    transform: rotate(-7deg);
-  }
-  .newsletter-illo::after {
-    content: "♡";
-    position: absolute;
-    left: 62px;
-    top: 38px;
-    color: var(--sh-pink-deep);
-    font-size: 2rem;
-    transform: rotate(-7deg);
-  }
-  .newsletter-card h2 { font-size: clamp(2rem, 3.2vw, 3.55rem); line-height: 1.02; }
-  .newsletter-card p { margin-top: 12px; max-width: 640px; }
-  .nw-form { display: grid; gap: 12px; }
-  .nw-form input {
-    width: 100%;
-    min-height: 48px;
-    border: 1px solid rgba(58,42,34,.14);
-    border-radius: 999px;
-    background: rgba(255,255,255,.8);
-    padding: 0 22px;
-    color: var(--sh-brown);
-    font: 500 .88rem/1 var(--body, "DM Sans", sans-serif);
-    outline: none;
-  }
-  .nw-form input:focus { border-color: rgba(212,121,138,.55); box-shadow: 0 0 0 4px rgba(212,121,138,.12); }
-  .nw-form button { width: 100%; border: 0; cursor: pointer; }
-
-  /* Footer refresh */
-  .ft-logo span { word-break: normal; overflow-wrap: normal; }
-
-  @media (max-width: 1120px) {
-    .about-hero-grid, .mission-panel { grid-template-columns: 1fr; }
-    .about-hero { padding-top: 66px; }
-    .hero-still-life { max-width: 720px; width: 100%; justify-self: center; }
-    .values-grid-new { grid-template-columns: repeat(3, 1fr); }
-    .find-grid { grid-template-columns: 1fr; }
-    .find-card { max-width: 760px; width: 100%; margin-inline: auto; }
-    .newsletter-card { grid-template-columns: 130px 1fr; }
-    .newsletter-card form { grid-column: 2; }
-  }
-
-  @media (max-width: 760px) {
-    .about-container { width: min(100% - 28px, 1120px); }
-    .wordmark-bar { display: none; }
-    .about-hero { min-height: 0; padding: 48px 0 62px; }
-    .about-hero h1 { font-size: clamp(3rem, 16vw, 4.8rem); }
-    .hero-actions { align-items: stretch; }
-    .about-btn { width: 100%; }
-    .hero-still-life { min-height: 420px; border-radius: 30px; }
-    .book-stack { left: 11%; width: 66%; }
-    .mock-note { left: 12%; width: 245px; }
-    .mock-bottle { right: 9%; }
-    .jade-roller { right: 8%; }
-    .about-section { padding: 66px 0; }
-    .trust-grid { grid-template-columns: 1fr; }
-    .trust-tile { grid-template-columns: 60px 1fr; min-height: 0; padding: 22px; }
-    .trust-icon { width: 60px; height: 60px; font-size: 1.45rem; }
-    .values-section { padding-bottom: 64px; }
-    .values-grid-new { grid-template-columns: repeat(2, 1fr); }
-    .find-card { grid-template-columns: 1fr; }
-    .find-visual { min-height: 160px; }
-    .newsletter-card { grid-template-columns: 1fr; padding: 30px 22px; }
-    .newsletter-card form { grid-column: auto; }
-    .newsletter-illo { display: none; }
-  }
-
-  @media (max-width: 500px) {
-    .about-hero p, .about-copy { font-size: .94rem; }
-    .values-grid-new { grid-template-columns: 1fr; }
-    .value-card-new { min-height: 0; }
-    .hero-still-life { min-height: 375px; }
-    .mock-mug { left: 16%; transform: scale(.88); transform-origin: top left; }
-    .mock-bottle { transform: scale(.82); transform-origin: top right; }
-    .book { height: 50px; padding-inline: 20px; font-size: .68rem; }
-    .mock-note { bottom: 9%; transform: rotate(-2deg) scale(.88); transform-origin: left bottom; }
-  }
-</style>
-
+    .about-body { background: var(--cream); }
+    .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .mission-copy h2 { font-family: var(--display); font-size: clamp(1.8rem,3.2vw,3rem); font-weight: 400; color: var(--green-dk); margin-bottom: 20px; line-height: 1.15; }
+    .mission-copy h2 em { font-style: italic; color: var(--pink-deep); }
+    .mission-copy p { font-size: .96rem; color: var(--brown-lt); line-height: 1.8; margin-bottom: 16px; }
+    .mission-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+    .mst { background: var(--cream-warm); border: 1px solid rgba(58,42,34,.07); padding: 30px 24px; transition: background .2s; }
+    .mst:hover { background: var(--pink); }
+    .mst-n { font-family: var(--display); font-size: 3rem; font-weight: 300; color: var(--green-dk); line-height: 1; margin-bottom: 5px; }
+    .mst-l { font-size: .77rem; color: var(--brown-lt); letter-spacing: .05em; }
+    .values-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 52px; }
+    .value-card { background: var(--cream-warm); border-radius: 22px 16px 26px 18px / 18px 26px 16px 22px; padding: 32px 28px; border: 1px solid rgba(58,42,34,.07); transition: transform .2s var(--ease), box-shadow .2s; }
+    .value-card:hover { transform: translateY(-4px); box-shadow: 0 14px 36px rgba(85,107,62,.09); }
+    .value-icon { font-size: 2rem; margin-bottom: 16px; display: block; }
+    .value-title { font-family: var(--display); font-size: 1.2rem; font-weight: 400; color: var(--green-dk); margin-bottom: 8px; }
+    .value-title em { font-style: italic; color: var(--pink-deep); }
+    .value-desc { font-size: .85rem; color: var(--brown-lt); line-height: 1.7; }
+    @media(max-width:1024px) { .mission-grid{gap:44px} .values-grid{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:860px) { .mission-grid{grid-template-columns:1fr;gap:36px} .values-grid{grid-template-columns:repeat(2,1fr)} .mission-stats{grid-template-columns:1fr 1fr} }
+    @media(max-width:560px) { .values-grid{grid-template-columns:1fr} }
+  </style>
 <!-- SEO: Canonical -->
 <link href="https://www.stylishandhealthy.com/about" rel="canonical"/>
 <!-- SEO: Open Graph -->
 <meta content="website" property="og:type"/>
-<meta content="About Stylishandhealthy: Our Mission, Values &amp; Story" property="og:title"/>
-<meta content="Stylishandhealthy makes skincare and wellness feel pretty, practical, and research-led. Real science, honest recommendations, free printables, and no fake guru energy." property="og:description"/>
+<meta content="About Stylishandhealthy — Our Mission, Values &amp; Story" property="og:title"/>
+<meta content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Research-backed, realistic, and never preachy." property="og:description"/>
 <meta content="https://www.stylishandhealthy.com/about" property="og:url"/>
 <meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
@@ -556,249 +46,125 @@
 <meta content="Stylishandhealthy" property="og:site_name"/>
 <!-- SEO: Twitter/X Card -->
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="About Stylishandhealthy: Our Mission, Values &amp; Story" name="twitter:title"/>
-<meta content="Stylishandhealthy makes skincare and wellness feel pretty, practical, and research-led. Real science, honest recommendations, free printables, and no fake guru energy." name="twitter:description"/>
+<meta content="About Stylishandhealthy — Our Mission, Values &amp; Story" name="twitter:title"/>
+<meta content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Research-backed, realistic, and never preachy." name="twitter:description"/>
 <meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" name="twitter:image"/>
 <!-- SEO: Pinterest -->
-<meta content="Stylishandhealthy makes skincare and wellness feel pretty, practical, and research-led. Real science, honest recommendations, free printables, and no fake guru energy." name="pinterest:description"/>
+<meta content="Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or 'that girl' rule online. Research-backed, realistic, and never preachy." name="pinterest:description"/>
 <meta content="https://www.stylishandhealthy.com/assets/images/youtube_banner.png" name="pinterest:media"/>
-</head>
+<style data-device-fixes="true">
 
-<body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
+/* About page device fixes */
+.mission-grid > *, .values-grid > * { min-width:0; }
+@media(max-width:560px) {
+  .mission-stats { grid-template-columns:1fr; }
+  .mst, .value-card { padding:26px 20px; }
+}
+
+</style></head>
+<body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
-
 <div class="wordmark-bar">
-  <img alt="Stylishandhealthy." decoding="async" src="/assets/images/youtube_banner.png"/>
+<img alt="Stylishandhealthy." decoding="async" src="/assets/images/youtube_banner.png"/>
 </div>
-
 <nav aria-label="Primary navigation">
-  <a aria-label="Stylishandhealthy home" class="nav-logo" href="/"><img alt="S&amp;H" decoding="async" src="/assets/images/logo_main.png"/></a>
-  <ul id="primary-navigation">
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/shop">Shop</a></li>
-    <li><a href="/skincare">Skincare</a></li>
-    <li><a href="/subscribe">Subscribe</a></li>
-    <li><a aria-current="page" href="/about">About</a></li>
-    <li><a class="npill" href="/shop">Free Printables</a></li>
-  </ul>
-</nav>
-
-<main class="about-redesign" id="main-content">
-  <section class="about-hero" aria-labelledby="about-hero-title">
-    <div class="about-container about-hero-grid">
-      <div class="hero-copy">
-        <div class="about-eyebrow">Who we are</div>
-        <h1 class="about-heading" id="about-hero-title">Hot girls read the research.</h1>
-        <p class="about-copy">We believe pretty routines should be backed by real science. No skincare trends. No wellness myths. Just evidence, transparency, and what actually works.</p>
-        <div class="hero-actions">
-          <a class="about-btn" href="/blog">Explore the blog <span aria-hidden="true">→</span></a>
-          <a class="about-btn alt" href="/shop">Download free printables</a>
-        </div>
-      </div>
-
-      <div aria-label="Editorial illustration of research-led routines" class="hero-still-life" role="img">
-        <span aria-hidden="true" class="hero-sparkle">✧</span>
-        <span aria-hidden="true" class="hero-heart">♡</span>
-        <div class="mock-mug"></div>
-        <div class="book-stack">
-          <div class="book one">Evidence over hype</div>
-          <div class="book two">The beauty of consistency</div>
-        </div>
-        <div class="mock-bottle"><span>Skin science</span></div>
-        <div class="mock-note">
-          <strong>today:</strong>
-          <ul>
-            <li>hydrate</li>
-            <li>spf</li>
-            <li>movement</li>
-            <li>read the research</li>
-          </ul>
-        </div>
-        <div class="jade-roller"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-section" aria-labelledby="mission-title">
-    <div class="about-container mission-panel">
-      <div class="mission-copy-box rv">
-        <div class="about-eyebrow">Our mission</div>
-        <h2 class="about-heading" id="mission-title">Pretty, practical, research-led wellness.</h2>
-        <p class="about-copy">Stylishandhealthy was created for the girl who wants to look good and feel good without falling for trends, fear marketing, or fake wellness rules.</p>
-        <p class="about-copy">We dig into the studies, decode the noise, and turn confusing skincare and wellness advice into simple guidance you can actually use.</p>
-        <p class="about-copy">The goal is not perfection. The goal is routines that feel beautiful, sustainable, and grounded in what actually works.</p>
-      </div>
-
-      <div class="trust-grid rv d2" aria-label="Stylishandhealthy trust principles">
-        <article class="trust-tile">
-          <div aria-hidden="true" class="trust-icon">🔬</div>
-          <div>
-            <h3>Research backed</h3>
-            <p>We cite the science so you can feel confident, not confused.</p>
-          </div>
-        </article>
-        <article class="trust-tile">
-          <div aria-hidden="true" class="trust-icon">⌕</div>
-          <div>
-            <h3>Transparent recommendations</h3>
-            <p>We tell you what works, what does not, and why.</p>
-          </div>
-        </article>
-        <article class="trust-tile">
-          <div aria-hidden="true" class="trust-icon">♡</div>
-          <div>
-            <h3>Free resources</h3>
-            <p>Printable tools, guides, and checklists made for real life.</p>
-          </div>
-        </article>
-        <article class="trust-tile">
-          <div aria-hidden="true" class="trust-icon">✓</div>
-          <div>
-            <h3>No fake guru energy</h3>
-            <p>No gatekeeping. No scare tactics. No nonsense.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="values-section" aria-labelledby="values-title">
-    <div class="about-container">
-      <div class="section-center rv">
-        <div class="about-eyebrow">What we stand for</div>
-        <h2 class="about-heading" id="values-title">The values behind everything.</h2>
-      </div>
-
-      <div class="values-grid-new">
-        <article class="value-card-new rv d1">
-          <span aria-hidden="true" class="icon">📖</span>
-          <h3>Research first</h3>
-          <p>We start with evidence and build from facts, not trends.</p>
-        </article>
-        <article class="value-card-new rv d2">
-          <span aria-hidden="true" class="icon">🪞</span>
-          <h3>Beauty without pressure</h3>
-          <p>You are more than your routine. Balance matters.</p>
-        </article>
-        <article class="value-card-new rv d3">
-          <span aria-hidden="true" class="icon">🌿</span>
-          <h3>Soft discipline</h3>
-          <p>Consistency over perfection. Small steps, real change.</p>
-        </article>
-        <article class="value-card-new rv d1">
-          <span aria-hidden="true" class="icon">🛡️</span>
-          <h3>Trust matters</h3>
-          <p>Everything we share should feel honest, clear, and useful.</p>
-        </article>
-        <article class="value-card-new rv d2">
-          <span aria-hidden="true" class="icon">✍️</span>
-          <h3>Intentional design</h3>
-          <p>Good information should feel calm, pretty, and easy to use.</p>
-        </article>
-        <article class="value-card-new rv d3">
-          <span aria-hidden="true" class="icon">👥</span>
-          <h3>Community first</h3>
-          <p>We create for real people with real routines and real questions.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="find-section" aria-labelledby="find-title">
-    <div class="about-container">
-      <div class="section-center rv">
-        <div class="about-eyebrow">What you will find here</div>
-        <h2 class="about-heading" id="find-title">Pretty resources with actual substance.</h2>
-      </div>
-
-      <div class="find-grid">
-        <article class="find-card rv d1">
-          <div aria-hidden="true" class="find-visual visual-skincare"></div>
-          <div class="find-content">
-            <h3>Skincare</h3>
-            <p>Science-backed guides and ingredient breakdowns to help you understand your skin.</p>
-            <a href="/skincare">Explore skincare →</a>
-          </div>
-        </article>
-        <article class="find-card rv d2">
-          <div aria-hidden="true" class="find-visual visual-wellness"></div>
-          <div class="find-content">
-            <h3>Wellness</h3>
-            <p>Evidence-based habits for your body, mind, routines, and daily life.</p>
-            <a href="/blog">Read the blog →</a>
-          </div>
-        </article>
-        <article class="find-card rv d3">
-          <div aria-hidden="true" class="find-visual visual-printables"></div>
-          <div class="find-content">
-            <h3>Printables</h3>
-            <p>To do lists, trackers, brain dumps, and printable designs you can download separately.</p>
-            <a href="/shop">Get printables →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-newsletter" aria-labelledby="newsletter-title">
-    <div class="about-container">
-      <div class="newsletter-card rv">
-        <div aria-hidden="true" class="newsletter-illo"></div>
-        <div>
-          <div class="about-eyebrow">Join the community</div>
-          <h2 class="about-heading" id="newsletter-title">Hot girls read the research. Delivered to your inbox.</h2>
-          <p class="about-copy">Real science, honest advice, and free resources. No spam, ever.</p>
-        </div>
-        <form accept-charset="UTF-8" class="nw-form" onsubmit="handleNwSub(event)">
-          <input aria-label="Email address" autocomplete="email" inputmode="email" name="EMAIL" placeholder="Your email address" required="" type="email"/>
-          <button class="about-btn" type="submit">Sign me up ✨</button>
-        </form>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="ft-top">
-    <div>
-      <div class="ft-logo"><img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/><span>Stylishandhealthy<em>.</em></span></div>
-      <p class="ft-p">Look good. Feel good. Do not fall for nonsense.</p>
-      <div class="ft-socs">
-        <a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank">P</a>
-        <a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank">I</a>
-        <a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank">T</a>
-        <a aria-label="Email" class="ft-s" href="mailto:contact@stylishandhealthy.com">M</a>
-      </div>
-    </div>
-    <div class="ft-col">
-      <h4>Shop</h4>
-      <a href="/shop">Free printables</a>
-      <a href="/shop">To do lists</a>
-      <a href="/shop">Trackers</a>
-      <a href="/shop">Brain dumps</a>
-      <a href="/shop">Digital downloads</a>
-    </div>
-    <div class="ft-col">
-      <h4>Explore</h4>
-      <a href="/blog">Blog</a>
-      <a href="/skincare">Skincare</a>
-      <a href="/blog">Wellness</a>
-      <a href="/shop">Printables</a>
-      <a href="/shop">Free resources</a>
-    </div>
-    <div class="ft-col">
-      <h4>Info</h4>
-      <a href="/about">Our mission</a>
-      <a href="/subscribe">Subscribe</a>
-      <a href="/affiliate">Affiliate disclosure</a>
-      <a href="/privacy">Privacy policy</a>
-      <a href="/contact">Contact</a>
-    </div>
-  </div>
-  <div class="ft-bot"><p>© 2026 Stylishandhealthy. All rights reserved.</p><span>Hot girls read the research.</span></div>
+<a aria-label="Stylishandhealthy home" class="nav-logo" href="/"><img alt="S&amp;H" decoding="async" src="/assets/images/logo_main.png"/></a>
+<ul id="primary-navigation">
+<li><a href="/blog">Blog</a></li>
+<li><a href="/shop">Shop</a></li>
+<li><a href="/skincare">Skincare</a></li>
+<li><a href="/subscribe">Subscribe</a></li>
+<li><a href="/about">About</a></li>
+<li><a class="npill" href="/journal">Free Journal</a></li>
+</ul>
+</nav><main id="main-content">
+<div class="page-hero">
+<div class="page-hero-blob"></div>
+<div class="doodle" style="width:125px;top:18%;right:8%;opacity:.25;transform:rotate(10deg)"><img alt="" aria-hidden="true" decoding="async" src="/assets/images/heart1.png"/></div>
+<div class="sl">Who we are</div>
+<h1>Hot girls read <em>the research.</em></h1>
+<p>Stylishandhealthy is for the girl who loves pretty routines and feeling good, but doesn't want to fall for every skincare trend, wellness myth, or "that girl" rule online. Research-backed, realistic, and never preachy.</p>
+</div>
+<section class="sec about-body" style="position:relative;overflow:hidden">
+<div class="doodle" style="width:90px;top:5%;right:4%;opacity:.35;transform:rotate(-8deg)"><img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart2.png"/></div>
+<div class="mission-grid">
+<div class="mission-copy rv">
+<div class="sl">Our mission</div>
+<h2>Wellness that feels as <em>beautiful</em> as it should.</h2>
+<p>We started Stylishandhealthy because we were tired of wellness content that felt either clinical and overwhelming, or aesthetic and empty. The real, research-backed stuff was buried in dense scientific papers. The beautiful stuff was full of trends with no real substance.</p>
+<p>So we built the brand we wanted to follow -- one that actually decodes the science, makes it beautiful, and delivers it without any pressure or fake guru energy.</p>
+<p>No paid placements without disclosure. No trends for the sake of trends. Just real, gentle progress that feels good.</p>
+</div>
+<div class="mission-stats rv d2">
+<div class="mst"><div class="mst-n">500k+</div><div class="mst-l">Women reached monthly</div></div>
+<div class="mst"><div class="mst-n">50+</div><div class="mst-l">Free resources</div></div>
+<div class="mst"><div class="mst-n">100%</div><div class="mst-l">Research-backed</div></div>
+<div class="mst"><div class="mst-n">0</div><div class="mst-l">Fake guru energy</div></div>
+</div>
+</div>
+<div style="margin-top:80px">
+<div class="sl rv">What we stand for</div>
+<h2 class="sh rv d1">The values behind <em>everything.</em></h2>
+<div class="values-grid">
+<div class="value-card rv d1">
+<span class="value-icon">🔬</span>
+<div class="value-title">Research first, <em>trends never</em></div>
+<p class="value-desc">We decode ingredients, habits, and routines using actual science -- no hype, no filler, no trend-chasing.</p>
+</div>
+<div class="value-card rv d2">
+<span class="value-icon">🌿</span>
+<div class="value-title">Beauty <em>without pressure</em></div>
+<p class="value-desc">Progress without guilt. Routines that fit your real life, not an idealised version of it. You are not behind.</p>
+</div>
+<div class="value-card rv d3">
+<span class="value-icon">01</span>
+<div class="value-title">Soft discipline, <em>real results</em></div>
+<p class="value-desc">Small consistent habits compound into beautiful transformations. We build systems that feel enjoyable, not punishing.</p>
+</div>
+<div class="value-card rv d1">
+<span class="value-icon">💚</span>
+<div class="value-title">Trust as a <em>core asset</em></div>
+<p class="value-desc">Every affiliate link is disclosed. Every recommendation is genuine. We only recommend what we would use ourselves.</p>
+</div>
+<div class="value-card rv d2">
+<span class="value-icon">🎨</span>
+<div class="value-title">Intentional <em>design</em></div>
+<p class="value-desc">Good information deserves beautiful presentation. Everything we make is designed to feel like a treat to open, not a chore.</p>
+</div>
+<div class="value-card rv d3">
+<span class="value-icon">03</span>
+<div class="value-title">Community <em>first</em></div>
+<p class="value-desc">This is for real people with real lives. We build with our community, not for an imaginary perfect follower.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="nw-strip">
+<div class="doodle" style="width:110px;bottom:14%;right:7%;opacity:.3;transform:rotate(5deg)"><img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart3.png"/></div>
+<div class="nw-strip-inner rv">
+<div class="sl">Join the community</div>
+<h2>Hot girls read the research. Delivered to your <em>inbox.</em></h2>
+<p>Free skincare guides, wellness tips, and exclusive downloads. No spam, ever.</p>
+<form accept-charset="UTF-8" class="nw-form" onsubmit="handleNwSub(event)">
+<input aria-label="Email address" autocomplete="email" inputmode="email" name="EMAIL" placeholder="your@email.com" required="" type="email"/>
+<button class="btn btn-wh" style="padding:11px 26px;font-size:.87rem" type="submit">Join free</button>
+</form>
+<p class="nw-note">No spam. Unsubscribe anytime.</p>
+</div>
+</section>
+</main><footer>
+<div class="ft-top">
+<div>
+<div class="ft-logo"><img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/><span>Stylishandhealthy<em>.</em></span></div>
+<p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
+<div class="ft-socs"><a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank">P</a><a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank">I</a><a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank">T</a><a aria-label="Email" class="ft-s" href="mailto:contact@stylishandhealthy.com">M</a></div>
+</div>
+<div class="ft-col"><h4>Shop</h4><a href="/shop">All products</a><a href="/shop">Sticker Packs</a><a href="/shop">Digital Downloads</a><a href="/shop">Clothing</a></div>
+<div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/subscribe">Subscribe</a><a href="/about">About</a><a href="/journal">Free Journal</a></div>
+<div class="ft-col"><h4>Info</h4><a href="/about">Our mission</a><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/affiliate">Affiliate disclosure</a><a href="/contact">Contact</a></div>
+</div>
+<div class="ft-bot"><p>© 2026 Stylishandhealthy. All rights reserved.</p><span>Hot girls read the research.</span></div>
 </footer>
-
 <script defer="defer" src="/assets/js/shared.js"></script>
 </body>
 </html>
