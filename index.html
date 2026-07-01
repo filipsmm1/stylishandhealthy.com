@@ -18,9 +18,9 @@
     #hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(85,107,62,.065) .55px, transparent .55px); background-size: 22px 22px; pointer-events: none; }
     .hero-shape { position: absolute; right: -100px; top: -60px; width: 680px; height: 680px; border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; background: radial-gradient(circle at 40% 40%, var(--pink) 0%, var(--cream) 68%); opacity: .5; animation: hshape 14s ease-in-out infinite; will-change: transform; pointer-events: none; }
     @keyframes hshape { 0%,100%{transform:scale(1) translate3d(0,0,0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%} 50%{transform:scale(1.06) translate3d(0,-18px,0);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%} }
-    .hero-left { padding: 100px 68px 100px 80px; position: relative; z-index: 2; }
+    .hero-left { padding: 100px 68px 100px 80px; position: relative; z-index: 2; min-width: 0; }
     .eyebrow { font-family: var(--body); font-size: .71rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--green); display: inline-block; margin-bottom: 22px; padding: 6px 16px; border: 1px solid rgba(85,107,62,.2); border-radius: 100px; background: rgba(85,107,62,.05); }
-    .h1 { font-family: var(--display); font-size: clamp(3.2rem,5.8vw,5.8rem); font-weight: 400; line-height: 1.05; letter-spacing: -.02em; color: var(--green-dk); margin-bottom: 10px; }
+    .h1 { font-family: var(--display); font-size: clamp(2.5rem,4.75vw,4.85rem); font-weight: 400; line-height: 1.05; letter-spacing: -.035em; color: var(--green-dk); margin-bottom: 10px; white-space: nowrap; overflow-wrap: normal; word-break: keep-all; hyphens: none; }
     .h1 em { font-style: italic; color: var(--green); }
     .h1-sub { font-family: var(--hand); font-size: clamp(1.6rem,2.6vw,2.2rem); color: var(--pink-deep); margin-bottom: 26px; display: block; }
     .hero-p { font-size: 1rem; line-height: 1.8; color: var(--brown-lt); max-width: 470px; margin-bottom: 36px; }
@@ -114,7 +114,7 @@
     .pin-widget-wrap > a { display: block; width: 100% !important; max-width: 100% !important; }
 
     @media(max-width:1024px) {
-      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:88px 48px 80px}
+      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:88px 48px 80px} .h1{font-size:clamp(2.7rem,8.5vw,5rem);}
     }
     @media(max-width:860px) {
       #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:72px 24px 60px}
@@ -131,6 +131,7 @@
       .hero-actions{flex-direction:column;align-items:flex-start}
       .hero-actions .btn{width:100%;justify-content:center}
       .hero-left{padding:60px 20px 52px}
+      .h1{font-size:clamp(2.05rem,9.4vw,2.95rem);letter-spacing:-.045em;}
     }
   </style>
 <link href="https://www.stylishandhealthy.com/" rel="canonical"/>
