@@ -16,11 +16,11 @@
     .skc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 52px; }
     .skc-sticky { position: sticky; top: 96px; }
     .ing-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
-    .itab { font-family: var(--body); font-size: .74rem; font-weight: 600; padding: 7px 15px; border-radius: 100px; border: 1.5px solid rgba(85,107,62,.2); color: var(--green-dk); background: transparent; cursor: none; transition: background .2s, border-color .2s, color .2s; }
+    .itab { font-family: var(--body); font-size: .74rem; font-weight: 600; padding: 7px 15px; border-radius: 100px; border: 1.5px solid rgba(85,107,62,.2); color: var(--green-dk); background: transparent; cursor: pointer; transition: background .2s, border-color .2s, color .2s; }
     .itab.on, .itab:hover { background: var(--green); border-color: var(--green); color: var(--cream); }
     .trust-box { background: var(--cream-warm); border-radius: 22px 28px 18px 24px / 24px 18px 28px 22px; padding: 30px; border: 1px solid rgba(58,42,34,.07); }
     .skc-cards { display: flex; flex-direction: column; gap: 14px; }
-    .skc { background: var(--cream-warm); border-radius: 22px 16px 20px 18px / 18px 22px 16px 20px; padding: 24px; border: 1px solid rgba(58,42,34,.07); display: grid; grid-template-columns: 62px 1fr; gap: 18px; align-items: start; transition: transform .2s var(--ease), box-shadow .2s; cursor: none; }
+    .skc { background: var(--cream-warm); border-radius: 22px 16px 20px 18px / 18px 22px 16px 20px; padding: 24px; border: 1px solid rgba(58,42,34,.07); display: grid; grid-template-columns: 62px 1fr; gap: 18px; align-items: start; transition: transform .2s var(--ease), box-shadow .2s; cursor: pointer; }
     .skc:hover { transform: translateX(5px); box-shadow: 0 10px 30px rgba(85,107,62,.09); }
     .skc-num { width: 62px; height: 62px; border-radius: 14px; background: var(--pink); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 1.55rem; font-weight: 400; color: var(--green-dk); flex-shrink: 0; }
     .skc.feat .skc-num { background: var(--green); color: var(--cream); }
@@ -87,7 +87,6 @@
 <li><a href="/blog">Blog</a></li>
 <li><a href="/shop">Shop</a></li>
 <li><a href="/skincare">Skincare</a></li>
-<li><a href="/subscribe">Subscribe</a></li>
 <li><a href="/about">About</a></li>
 <li><a class="npill" href="/journal">Free Journal</a></li>
 </ul>
@@ -113,11 +112,11 @@
 <div class="trust-box">
 <div class="sl" style="margin-bottom:10px">Why trust us?</div>
 <p class="sp" style="font-size:.88rem;max-width:none;color:var(--brown-lt)">Every recommendation is based on ingredient research, dermatology literature, and real testing. Affiliate links are always disclosed. We never recommend what we would not use ourselves.</p>
-<a class="btn btn-f" href="/subscribe" style="margin-top:22px;display:inline-flex">Weekly deepdive</a>
+<a class="btn btn-f" href="/blog" style="margin-top:22px;display:inline-flex">Read the blog</a>
 </div>
 </div>
 <div class="skc-cards rv d1">
-<a class="skc feat" data-category="acne-prone" href="https://www.amazon.com/Ordinary-Salicylic-Solution-Acne-Fighting-Blemish-Prone/dp/B0DN6NWMKK?crid=15GB2YY5WYKL0&amp;dib=eyJ2IjoiMSJ9.vOX32uHzL8LcAibGDXFXr_pLuzUbKKs1-MSg2tP-bfd2-vYLlHCKZTFT4ABP48D7gIwhz7qnbwCWnvIZvl8F-C_EhJX5T1j0giuliVUVRTl2TThTP1tov8-NFEJ2V_31s9fCmPzg-goJNoQh9th5rIhWbpCrtQleqwnHth4mRZ9d5H2C9TkU85V_nhS7sl6syJnzVw-o3hOnlnb07uf4Xmxlj5gInBPn9uav38B0u8-wV1SMD5Z7SVeXLbBYYstPlcOAnBNPuGo3KSgM8btsX4YJD7jiizfygogAX19m46s.LzOUXAvTGsvr5xmDy8ljmJVD93o0jpoFys91Sq7gavQ&amp;dib_tag=se&amp;keywords=salicylic%2Bacid%2Bordinary&amp;qid=1777838075&amp;sprefix=salicylic%2Bacid%2Caps%2C276&amp;sr=8-1&amp;th=1&amp;linkCode=ll2&amp;tag=stylishandh0d-20&amp;linkId=1eadf96e9e174bd46a0ddd0f07b26633&amp;language=en_US&amp;ref_=as_li_ss_tl" rel="noopener noreferrer sponsored" style="display:grid;grid-template-columns:140px 1fr;gap:0;align-items:stretch;text-decoration:none;color:inherit;border-radius:22px;overflow:hidden;background:var(--cream-warm);border:1px solid rgba(58,42,34,.07);transition:transform .2s var(--ease),box-shadow .2s;cursor:none;" target="_blank">
+<a class="skc feat" data-category="acne-prone" href="https://www.amazon.com/Ordinary-Salicylic-Solution-Acne-Fighting-Blemish-Prone/dp/B0DN6NWMKK?crid=15GB2YY5WYKL0&amp;dib=eyJ2IjoiMSJ9.vOX32uHzL8LcAibGDXFXr_pLuzUbKKs1-MSg2tP-bfd2-vYLlHCKZTFT4ABP48D7gIwhz7qnbwCWnvIZvl8F-C_EhJX5T1j0giuliVUVRTl2TThTP1tov8-NFEJ2V_31s9fCmPzg-goJNoQh9th5rIhWbpCrtQleqwnHth4mRZ9d5H2C9TkU85V_nhS7sl6syJnzVw-o3hOnlnb07uf4Xmxlj5gInBPn9uav38B0u8-wV1SMD5Z7SVeXLbBYYstPlcOAnBNPuGo3KSgM8btsX4YJD7jiizfygogAX19m46s.LzOUXAvTGsvr5xmDy8ljmJVD93o0jpoFys91Sq7gavQ&amp;dib_tag=se&amp;keywords=salicylic%2Bacid%2Bordinary&amp;qid=1777838075&amp;sprefix=salicylic%2Bacid%2Caps%2C276&amp;sr=8-1&amp;th=1&amp;linkCode=ll2&amp;tag=stylishandh0d-20&amp;linkId=1eadf96e9e174bd46a0ddd0f07b26633&amp;language=en_US&amp;ref_=as_li_ss_tl" rel="noopener noreferrer sponsored" style="display:grid;grid-template-columns:140px 1fr;gap:0;align-items:stretch;text-decoration:none;color:inherit;border-radius:22px;overflow:hidden;background:var(--cream-warm);border:1px solid rgba(58,42,34,.07);transition:transform .2s var(--ease),box-shadow .2s;cursor:pointer;" target="_blank">
 <div style="background:var(--cream);display:flex;align-items:center;justify-content:center;padding:20px;border-right:1px solid rgba(58,42,34,.07);">
 <img alt="The Ordinary Salicylic Acid 2% Solution" decoding="async" loading="lazy" src="https://m.media-amazon.com/images/I/51V6a1-c3jL._SL1240_.jpg" style="width:100px;height:130px;object-fit:contain;display:block;"/>
 </div>
@@ -137,8 +136,8 @@
 <div>
 <div class="skc-ctag">Coming soon</div>
 <h3>More recommendations</h3>
-<p>More research-backed picks are being reviewed and written. Subscribe to be the first to read them.</p>
-<a class="skc-lnk" href="/subscribe" style="pointer-events:all;opacity:1">Get notified →</a>
+<p>More research-backed picks are being reviewed and written. Check back soon for the next product breakdown.</p>
+<a class="skc-lnk" href="/blog" style="pointer-events:all;opacity:1">Read the blog →</a>
 </div>
 </div>
 </div>
@@ -152,7 +151,7 @@
 <p>Every week: one ingredient decoded, one routine tip, one product recommendation. Research-first, beautifully written.</p>
 <form accept-charset="UTF-8" class="nw-form" onsubmit="handleNwSub(event)">
 <input aria-label="Email address" autocomplete="email" inputmode="email" name="EMAIL" placeholder="your@email.com" required="" type="email"/>
-<button class="btn btn-wh" style="padding:11px 26px;font-size:.87rem" type="submit">Subscribe free</button>
+<button class="btn btn-wh" style="padding:11px 26px;font-size:.87rem" type="submit">Join free</button>
 </form>
 <p class="nw-note">No spam. Unsubscribe anytime.</p>
 </div>
@@ -162,10 +161,10 @@
 <div>
 <div class="ft-logo"><img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/><span>Stylishandhealthy<em>.</em></span></div>
 <p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
-<div class="ft-socs"><a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank">P</a><a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank">I</a><a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank">T</a><a aria-label="Email" class="ft-s" href="mailto:contact@stylishandhealthy.com">M</a></div>
+<div class="ft-socs"><a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12.1 2C6.6 2 3 5.7 3 10.4c0 3.1 1.7 5 3.4 5 .6 0 1-.3 1.1-.9l.3-1.2c.1-.4.1-.6-.2-.9-.7-.8-1.1-1.8-1.1-3.2 0-3.4 2.5-6.4 6.6-6.4 3.6 0 5.6 2.2 5.6 5.2 0 3.8-1.7 7-4.2 7-1.4 0-2.4-1.1-2.1-2.5.4-1.6 1.1-3.3 1.1-4.5 0-1-.6-1.9-1.7-1.9-1.3 0-2.4 1.4-2.4 3.2 0 1.2.4 2 .4 2s-1.4 5.8-1.6 6.8c-.5 2.1-.1 4.7 0 5 .1.2.3.2.4.1.2-.2 2.5-3.1 3.3-5.9.2-.8.8-3 .8-3 .4.8 1.6 1.5 2.9 1.5 3.8 0 6.4-3.5 6.4-8.1C22 5.2 19 2 12.1 2Z"/></svg></a><a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 12 16.8a4.8 4.8 0 0 1 0-9.6Zm0 2A2.8 2.8 0 1 0 12 14.8a2.8 2.8 0 0 0 0-5.6Zm5-2.3a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17 6.9Z"/></svg></a><a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16.6 3c.4 2.4 1.8 3.8 4.1 4v3.2c-1.5.1-2.8-.4-4-1.2v6.1c0 4-2.5 6.9-6.4 6.9-3.4 0-6-2.4-6-5.7 0-3.6 2.8-5.9 6.6-5.7v3.3c-1.8-.3-3.2.7-3.2 2.3 0 1.4 1.1 2.4 2.5 2.4 1.7 0 2.7-1.1 2.7-3.5V3h3.7Z"/></svg></a><a aria-label="Contact Stylishandhealthy" class="ft-s" href="/contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9A2.5 2.5 0 0 1 19.5 19h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm0 2c-.2 0-.4.1-.5.2l8 5.3 8-5.3c-.1-.1-.3-.2-.5-.2h-15ZM20 9.4l-7.4 4.9a1 1 0 0 1-1.1 0L4 9.4v7.1c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V9.4Z"/></svg></a></div>
 </div>
-<div class="ft-col"><h4>Shop</h4><a href="/shop">All products</a><a href="/shop">Sticker Packs</a><a href="/shop">Digital Downloads</a><a href="/shop">Clothing</a></div>
-<div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/subscribe">Subscribe</a><a href="/about">About</a><a href="/journal">Free Journal</a></div>
+<div class="ft-col"><h4>Shop</h4><a href="/shop">All products</a><a href="/shop">Journals</a><a href="/shop">Trackers</a><a href="/shop">Printables</a><a href="/shop">To-do lists</a></div>
+<div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/about">About</a><a href="/journal">Free Journal</a></div>
 <div class="ft-col"><h4>Info</h4><a href="/about">Our mission</a><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/affiliate">Affiliate disclosure</a><a href="/contact">Contact</a></div>
 </div>
 <div class="ft-bot"><p>© 2026 Stylishandhealthy. All rights reserved.</p><span>Hot girls read the research.</span></div>
@@ -195,7 +194,7 @@
       empty = document.createElement('div');
       empty.id = 'skc-empty';
       empty.style.cssText = 'padding:40px 0;text-align:left;';
-      empty.innerHTML = '<p style="font-family:var(--display);font-size:1.3rem;font-weight:400;color:var(--green-dk);margin-bottom:8px">More picks <em style=\'font-style:italic;color:var(--pink-deep)\'>coming soon.</em></p><p style="font-size:.88rem;color:var(--brown-lt);line-height:1.7;max-width:380px">We\'re still reviewing and writing up recommendations for this category. Subscribe to be first to know.</p><a href="/subscribe" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:var(--body);font-size:.82rem;font-weight:600;color:var(--green);border-bottom:1px solid rgba(85,107,62,.22)">Get notified →</a>';
+      empty.innerHTML = '<p style="font-family:var(--display);font-size:1.3rem;font-weight:400;color:var(--green-dk);margin-bottom:8px">More picks <em style=\'font-style:italic;color:var(--pink-deep)\'>coming soon.</em></p><p style="font-size:.88rem;color:var(--brown-lt);line-height:1.7;max-width:380px">We are still reviewing and writing up recommendations for this category. Check the blog for the latest skincare guides.</p><a href="/blog" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:var(--body);font-size:.82rem;font-weight:600;color:var(--green);border-bottom:1px solid rgba(85,107,62,.22)">Read the blog →</a>';
       document.querySelector('.skc-cards').appendChild(empty);
     }
     empty.style.display = (visible === 0) ? 'block' : 'none';
