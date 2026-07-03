@@ -7,31 +7,10 @@
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const mobileNavQuery = window.matchMedia('(max-width: 860px)');
 
-// Custom cursor — precise pointing devices only.
+// Custom cursor removed so the native browser cursor stays visible everywhere.
 (function initCursor() {
   const cdot = document.getElementById('cdot');
-  const precisePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
-  if (!cdot || !precisePointer.matches) {
-    if (cdot) cdot.hidden = true;
-    return;
-  }
-
-  document.addEventListener('mousemove', event => {
-    cdot.style.left = `${event.clientX}px`;
-    cdot.style.top = `${event.clientY}px`;
-  }, { passive: true });
-
-  const interactiveSelector = [
-    'a', 'button', 'input', 'textarea', 'select', '.sc', '.cat', '.bc', '.tc',
-    '.subc', '.ap', '.skc', '.feat-pill', '.inside-card', '.spread', '.post-card'
-  ].join(',');
-
-  document.addEventListener('pointerover', event => {
-    if (event.target.closest(interactiveSelector)) document.body.classList.add('ch');
-  });
-  document.addEventListener('pointerout', event => {
-    if (event.target.closest(interactiveSelector)) document.body.classList.remove('ch');
-  });
+  if (cdot) cdot.hidden = true;
 })();
 
 // Reveal content safely. Reduced-motion users see everything immediately.
