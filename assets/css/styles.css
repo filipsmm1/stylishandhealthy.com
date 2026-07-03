@@ -806,3 +806,6 @@ a, button, .btn, .tab, .itab, .bftab, .sc-btn, .nav-burger, [role="button"] { cu
 input, textarea { cursor: text !important; }
 select { cursor: pointer !important; }
 .ft-s svg { width: 17px; height: 17px; display: block; fill: currentColor; }
+
+/* Top-nav pill removed while subscriptions are closed. */
+nav .npill { display: none !important; }
