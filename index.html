@@ -85,7 +85,7 @@
     #categories { background: var(--cream); position: relative; overflow: hidden; }
     .cats-hdr { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 52px; gap: 24px; flex-wrap: wrap; }
     .cats-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: auto auto; gap: 16px; }
-    .cat { background: var(--cream-warm); border-radius: 28px 20px 32px 18px / 18px 30px 20px 28px; padding: 34px 30px; transition: transform .25s var(--ease), box-shadow .25s; border: 1px solid rgba(58,42,34,.07); cursor: none; position: relative; overflow: hidden; }
+    .cat { background: var(--cream-warm); border-radius: 28px 20px 32px 18px / 18px 30px 20px 28px; padding: 34px 30px; transition: transform .25s var(--ease), box-shadow .25s; border: 1px solid rgba(58,42,34,.07); cursor: pointer; position: relative; overflow: hidden; }
     .cat:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(85,107,62,.1); }
     .cat.tall { grid-row: span 2; display: flex; flex-direction: column; justify-content: flex-end; min-height: 340px; }
     .cat.dark { background: var(--green); }
@@ -99,6 +99,22 @@
     .cat-arr { display: inline-flex; align-items: center; gap: 6px; font-family: var(--body); font-size: .79rem; font-weight: 600; color: var(--green); margin-top: 16px; transition: gap .18s var(--easeb); }
     .cat:hover .cat-arr { gap: 11px; }
     .cat::before { content: ''; position: absolute; width: 160px; height: 160px; background: rgba(255,255,255,.25); border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; top: -30px; right: -30px; pointer-events: none; }
+
+    .cat-science-img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 22px 16px 24px 18px / 18px 24px 16px 22px;
+      overflow: hidden;
+      margin-bottom: 22px;
+      border: 1px solid rgba(247,241,232,.18);
+      background: rgba(247,241,232,.08);
+    }
+    .cat-science-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
     .cat.dark::before { background: rgba(255,255,255,.06); }
     .cat.pink-bg::before { background: rgba(255,255,255,.3); }
 
@@ -108,8 +124,8 @@
     .pin-strip-head h2 { font-family: var(--display); font-size: 2rem; font-weight: 400; color: var(--green-dk); margin-bottom: 8px; }
     .pin-strip-head p { font-size: .9rem; color: var(--brown-lt); max-width: 420px; line-height: 1.6; }
     .pin-eyebrow { font-family: var(--body); font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 10px; }
-    .pin-follow { font-family: var(--body); font-size: .85rem; font-weight: 600; color: var(--green); text-decoration: none; white-space: nowrap; border: 1px solid rgba(85,107,62,.25); border-radius: 100px; padding: 10px 22px; transition: background .2s; }
-    .pin-follow:hover { background: rgba(85,107,62,.06); }
+    .pin-follow { font-family: var(--body); font-size: .85rem; font-weight: 700; color: var(--cream); background: var(--green-dk); text-decoration: none; white-space: nowrap; border: 1px solid var(--green-dk); border-radius: 100px; padding: 10px 22px; transition: background .2s, transform .18s var(--easeb), border-color .2s; }
+    .pin-follow:hover { background: var(--green); border-color: var(--green); transform: translateY(-2px); }
     .pin-widget-wrap { width: 100%; overflow: hidden; display: flex; justify-content: center; }
     .pin-widget-wrap > a { display: block; width: 100% !important; max-width: 100% !important; }
 
@@ -604,7 +620,6 @@
 <li><a href="/blog">Blog</a></li>
 <li><a href="/shop">Shop</a></li>
 <li><a href="/skincare">Skincare</a></li>
-<li><a href="/subscribe">Subscribe</a></li>
 <li><a href="/about">About</a></li>
 <li><a class="npill" href="/journal">Free Journal</a></li>
 </ul>
@@ -625,7 +640,7 @@
 <p class="hero-p"><strong>actual research and skincare advice that makes sense.</strong><br/>For the girl who wants to feel good without falling for every trend, myth, or wellness rule online.</p>
 <div class="hero-actions">
 <a class="btn btn-f" href="/blog">Explore the blog</a>
-<a class="btn btn-o" href="/subscribe">Weekly skincare deepdive</a>
+<a class="btn btn-o" href="/blog">Read the blog</a>
 </div>
 </div>
 <div class="hero-right">
@@ -725,10 +740,11 @@
 <div class="sl">What we cover</div>
 <h2 class="sh">Everything that makes you <em>glow.</em></h2>
 </div>
-<a class="btn btn-o" href="/subscribe">Join for free</a>
+<a class="btn btn-o" href="/blog">Explore the blog</a>
 </div>
 <div class="cats-grid">
 <div class="cat tall dark rv">
+<div class="cat-science-img"><img alt="Skincare science illustration" decoding="async" loading="lazy" src="/assets/images/skincare_science_square.png"/></div>
 <div class="cat-label">Deep dives</div>
 <div class="cat-title">Skincare Science</div>
 <div class="cat-desc">Ingredient breakdowns, routine guides, and the science behind serums, acids, and moisturisers, explained simply.</div>
@@ -821,26 +837,21 @@
 <span>Stylishandhealthy<em>.</em></span>
 </div>
 <p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
-<div class="ft-socs">
-<a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank">P</a>
-<a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank">I</a>
-<a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank">T</a>
-<a aria-label="Email" class="ft-s" href="mailto:contact@stylishandhealthy.com">M</a>
-</div>
+<div class="ft-socs"><a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12.1 2C6.6 2 3 5.7 3 10.4c0 3.1 1.7 5 3.4 5 .6 0 1-.3 1.1-.9l.3-1.2c.1-.4.1-.6-.2-.9-.7-.8-1.1-1.8-1.1-3.2 0-3.4 2.5-6.4 6.6-6.4 3.6 0 5.6 2.2 5.6 5.2 0 3.8-1.7 7-4.2 7-1.4 0-2.4-1.1-2.1-2.5.4-1.6 1.1-3.3 1.1-4.5 0-1-.6-1.9-1.7-1.9-1.3 0-2.4 1.4-2.4 3.2 0 1.2.4 2 .4 2s-1.4 5.8-1.6 6.8c-.5 2.1-.1 4.7 0 5 .1.2.3.2.4.1.2-.2 2.5-3.1 3.3-5.9.2-.8.8-3 .8-3 .4.8 1.6 1.5 2.9 1.5 3.8 0 6.4-3.5 6.4-8.1C22 5.2 19 2 12.1 2Z"/></svg></a><a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 12 16.8a4.8 4.8 0 0 1 0-9.6Zm0 2A2.8 2.8 0 1 0 12 14.8a2.8 2.8 0 0 0 0-5.6Zm5-2.3a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17 6.9Z"/></svg></a><a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16.6 3c.4 2.4 1.8 3.8 4.1 4v3.2c-1.5.1-2.8-.4-4-1.2v6.1c0 4-2.5 6.9-6.4 6.9-3.4 0-6-2.4-6-5.7 0-3.6 2.8-5.9 6.6-5.7v3.3c-1.8-.3-3.2.7-3.2 2.3 0 1.4 1.1 2.4 2.5 2.4 1.7 0 2.7-1.1 2.7-3.5V3h3.7Z"/></svg></a><a aria-label="Contact Stylishandhealthy" class="ft-s" href="/contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9A2.5 2.5 0 0 1 19.5 19h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm0 2c-.2 0-.4.1-.5.2l8 5.3 8-5.3c-.1-.1-.3-.2-.5-.2h-15ZM20 9.4l-7.4 4.9a1 1 0 0 1-1.1 0L4 9.4v7.1c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V9.4Z"/></svg></a></div>
 </div>
 <div class="ft-col">
 <h4>Shop</h4>
 <a href="/shop">All products</a>
+<a href="/shop">Journals</a>
+<a href="/shop">Trackers</a>
 <a href="/shop">Printables</a>
-<a href="/shop">Digital Downloads</a>
-<a href="/shop">Clothing</a>
-<a href="/shop">Accessories</a>
+<a href="/shop">To-do lists</a>
 </div>
 <div class="ft-col">
 <h4>Explore</h4>
 <a href="/blog">Blog</a>
 <a href="/skincare">Skincare Recs</a>
-<a href="/subscribe">Subscribe</a>
+
 <a href="/about">About</a>
 <a href="/journal">Free Journal</a>
 </div>
