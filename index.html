@@ -100,14 +100,30 @@
     .cat:hover .cat-arr { gap: 11px; }
     .cat::before { content: ''; position: absolute; width: 160px; height: 160px; background: rgba(255,255,255,.25); border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; top: -30px; right: -30px; pointer-events: none; }
 
+    .cat.tall.dark {
+      min-height: 430px;
+      padding: 34px 30px;
+      isolation: isolate;
+      background: var(--green-dk);
+    }
     .cat-science-img {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      aspect-ratio: 1 / 1;
-      border-radius: 22px 16px 24px 18px / 18px 24px 16px 22px;
+      height: 100%;
+      border-radius: inherit;
       overflow: hidden;
-      margin-bottom: 22px;
-      border: 1px solid rgba(247,241,232,.18);
-      background: rgba(247,241,232,.08);
+      margin: 0;
+      border: 0;
+      background: var(--green-dk);
+      z-index: 0;
+    }
+    .cat-science-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(28,37,24,.16) 0%, rgba(28,37,24,.34) 42%, rgba(28,37,24,.84) 100%);
+      pointer-events: none;
     }
     .cat-science-img img {
       width: 100%;
@@ -115,6 +131,11 @@
       object-fit: cover;
       display: block;
     }
+    .cat.tall.dark > :not(.cat-science-img) {
+      position: relative;
+      z-index: 2;
+    }
+    .cat.tall.dark::before { display: none; }
     .cat.dark::before { background: rgba(255,255,255,.06); }
     .cat.pink-bg::before { background: rgba(255,255,255,.3); }
 
@@ -126,6 +147,10 @@
     .pin-eyebrow { font-family: var(--body); font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 10px; }
     .pin-follow { font-family: var(--body); font-size: .85rem; font-weight: 700; color: var(--cream); background: var(--green-dk); text-decoration: none; white-space: nowrap; border: 1px solid var(--green-dk); border-radius: 100px; padding: 10px 22px; transition: background .2s, transform .18s var(--easeb), border-color .2s; }
     .pin-follow:hover { background: var(--green); border-color: var(--green); transform: translateY(-2px); }
+    .pin-follow,
+    .pin-follow:visited,
+    .pin-follow:hover,
+    .pin-follow:focus-visible { color: var(--cream) !important; }
     .pin-widget-wrap { width: 100%; overflow: hidden; display: flex; justify-content: center; }
     .pin-widget-wrap > a { display: block; width: 100% !important; max-width: 100% !important; }
 
@@ -135,7 +160,7 @@
     @media(max-width:860px) {
       #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:72px 24px 60px}
       #about{grid-template-columns:1fr;padding:80px 24px;gap:44px}
-      .cats-grid{grid-template-columns:1fr 1fr} .cat.tall{grid-row:span 1;min-height:auto}
+      .cats-grid{grid-template-columns:1fr 1fr} .cat.tall{grid-row:span 1;min-height:auto} .cat.tall.dark{min-height:380px}
       .journal-strip{padding:56px 24px 0}
       #about{padding:0 24px 72px}
       .js-inner,.about-inner{grid-template-columns:1fr;gap:32px}
@@ -143,7 +168,7 @@
       .pin-strip-head{flex-direction:column;align-items:flex-start;}
     }
     @media(max-width:560px) {
-      .cats-grid{grid-template-columns:1fr} .ast-grid{grid-template-columns:1fr 1fr}
+      .cats-grid{grid-template-columns:1fr} .cat.tall.dark{min-height:390px} .ast-grid{grid-template-columns:1fr 1fr}
       .hero-actions{flex-direction:column;align-items:flex-start}
       .hero-actions .btn{width:100%;justify-content:center}
       .hero-left{padding:60px 20px 52px}
@@ -621,7 +646,6 @@
 <li><a href="/shop">Shop</a></li>
 <li><a href="/skincare">Skincare</a></li>
 <li><a href="/about">About</a></li>
-<li><a class="npill" href="/journal">Free Journal</a></li>
 </ul>
 </nav><main id="main-content">
 <!-- HERO -->
@@ -660,8 +684,8 @@
 <!-- TICKER -->
 <div class="ticker">
 <div class="ticker-t">
-<span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Wellness printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
-<span class="ti">Research-backed skincare</span><span class="ti">Digital planners</span><span class="ti">Wellness printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Weekly deepdive</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
+<span class="ti">Research-backed skincare</span><span class="ti">Printable journals</span><span class="ti">Wellness printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Free research notes</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
+<span class="ti">Research-backed skincare</span><span class="ti">Printable journals</span><span class="ti">Wellness printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Free research notes</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
 </div>
 </div>
 <!-- BRAND AD -->
