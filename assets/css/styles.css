@@ -808,4 +808,11 @@ select { cursor: pointer !important; }
 .ft-s svg { width: 17px; height: 17px; display: block; fill: currentColor; }
 
 /* Top-nav pill removed while subscriptions are closed. */
-nav .npill { display: none !important; }
+
+
+/* Hide subscription links only. Keep the Free Journal nav pill visible. */
+nav a[href="/subscribe"],
+nav a[href="/subscribe.html"],
+nav a[href="subscribe.html"] {
+  display: none !important;
+}
