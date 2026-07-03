@@ -816,3 +816,21 @@ nav a[href="/subscribe.html"],
 nav a[href="subscribe.html"] {
   display: none !important;
 }
+
+
+/* V4 nav fix: remove subscription nav links but keep Free Journal visible. */
+nav a[href="/subscribe"],
+nav a[href="/subscribe.html"],
+nav a[href="subscribe.html"],
+nav a[href*="/subscribe"] {
+  display: none !important;
+}
+
+nav a.npill[href="/journal"],
+nav a.npill[href="/journal.html"],
+nav ul#primary-navigation a.npill[href="/journal"],
+nav ul#primary-navigation a[href="/journal"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
