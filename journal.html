@@ -33,7 +33,7 @@
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{font-family:var(--body);background:var(--cream);color:var(--brown);overflow-x:hidden;cursor:none}
+    body{font-family:var(--body);background:var(--cream);color:var(--brown);overflow-x:hidden;cursor:pointer}
     ::selection{background:var(--pink);color:var(--green-dk)}
     a{text-decoration:none;color:inherit}
     #cdot,#cring{position:fixed;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
@@ -82,7 +82,7 @@
     .form-input{width:100%;border:1.5px solid rgba(85,107,62,.15);background:var(--cream-warm);font-family:var(--body);font-size:.95rem;color:var(--brown);padding:13px 18px;border-radius:14px;outline:none;transition:border-color .2s,background .2s}
     .form-input:focus{border-color:var(--green);background:var(--cream)}
     .form-input::placeholder{color:var(--brown-lt)}
-    .form-submit{width:100%;background:var(--green);color:var(--cream);font-family:var(--body);font-size:1rem;font-weight:700;padding:15px;border-radius:14px;border:0;cursor:none;transition:background .2s,transform .15s var(--easeb);box-shadow:0 8px 26px rgba(85,107,62,.22)}
+    .form-submit{width:100%;background:var(--green);color:var(--cream);font-family:var(--body);font-size:1rem;font-weight:700;padding:15px;border-radius:14px;border:0;cursor:pointer;transition:background .2s,transform .15s var(--easeb);box-shadow:0 8px 26px rgba(85,107,62,.22)}
     .form-submit:hover{background:var(--green-dk);transform:translateY(-2px)}
     .form-note{font-size:.74rem;color:var(--brown-lt);text-align:center;margin-top:10px;display:flex;align-items:center;justify-content:center;gap:5px}
     .form-note::before{content:'•';color:var(--green);font-weight:700}
@@ -155,7 +155,7 @@
     .jfooter-logo span{font-family:var(--display);font-size:1.1rem;color:var(--cream)}
     .jfooter p{font-size:.78rem;color:rgba(247,241,232,.28)}
 
-    .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-size:.9rem;font-weight:600;border-radius:100px;transition:background .2s,transform .18s var(--easeb),box-shadow .2s;cursor:none;border:0}
+    .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-size:.9rem;font-weight:600;border-radius:100px;transition:background .2s,transform .18s var(--easeb),box-shadow .2s;cursor:pointer;border:0}
     .btn-f{background:var(--green);color:var(--cream);padding:14px 32px;box-shadow:0 8px 26px rgba(85,107,62,.22)}
     .btn-f:hover{background:var(--green-dk);transform:translateY(-2px)}
     .btn-wh{background:rgba(247,241,232,.95);color:var(--green-dk);padding:14px 36px;font-size:1rem;box-shadow:0 8px 26px rgba(58,42,34,.22)}
@@ -200,7 +200,7 @@ body { cursor: auto; overflow-x: clip; }
 .jh-left, .jh-right, .inside-section, .preview-section, .bottom-cta, .jfooter { min-width: 0; }
 .bc-form input, .form-input { min-width: 0; }
 .jfooter { flex-wrap: wrap; gap: 18px; }
-@media (hover:hover) and (pointer:fine) { body { cursor:none; } }
+@media (hover:hover) and (pointer:fine) { body { cursor:pointer; } }
 @media(max-width:1024px) and (min-width:861px) {
   .jh-left { padding-left: 48px; padding-right: 32px; }
   .jh-right { padding-right: 48px; padding-left: 24px; }
@@ -236,7 +236,6 @@ body { cursor: auto; overflow-x: clip; }
 <li><a href="/blog">Blog</a></li>
 <li><a href="/shop">Shop</a></li>
 <li><a href="/skincare">Skincare</a></li>
-<li><a href="/subscribe">Subscribe</a></li>
 <li><a href="/about">About</a></li>
 <li><a class="npill" href="/journal">Free Journal</a></li>
 </ul>
