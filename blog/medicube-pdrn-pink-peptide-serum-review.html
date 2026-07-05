@@ -1267,7 +1267,39 @@
     .review-score-card { grid-template-columns:1fr; text-align:center; padding:26px 20px; }
     .score-breakdown, .product-snapshot, .claim-grid { grid-template-columns:1fr; }
   }
-</style></head>
+</style>
+<style data-product-cutout-image="true">
+  .product-cutout {
+    width: min(100%, 520px);
+    margin: 34px auto 42px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 44%, rgba(248, 214, 222, 0.78), rgba(247, 241, 232, 0.45) 58%, transparent 76%);
+    border-radius: 28px;
+  }
+
+  .product-cutout img {
+    display: block;
+    width: min(100%, 380px);
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 560px) {
+    .product-cutout {
+      margin: 28px auto 34px;
+      padding: 18px 10px;
+      border-radius: 22px;
+    }
+
+    .product-cutout img {
+      width: min(100%, 310px);
+    }
+  }
+</style>
+</head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
 <div class="wordmark-bar">
@@ -1326,6 +1358,10 @@
 </div>
 </div>
 <div class="quick-answer" id="snippet-answer"><span class="box-label">Quick answer</span><p><strong>Medicube PDRN Pink Peptide Serum is worth considering as a hydrating, glow-focused peptide serum, not as a clinic-level regenerative treatment.</strong> The best-supported benefits are moisture, temporary plumping, and possible gradual brightening from niacinamide and the overall formula. Evidence that intact salmon-derived PDRN penetrates normal facial skin and drives major collagen repair is not established.</p></div>
+
+<figure class="product-cutout" aria-label="Medicube PDRN Pink Peptide Serum product image">
+<img alt="Medicube PDRN Pink Peptide Serum bottle with pink serum bubbles" decoding="async" height="664" loading="lazy" src="/assets/images/medicube_pdrn_pink_peptide_serum_product.png" width="475"/>
+</figure>
 <div class="toc"><h2>Table of Contents</h2><ol>
 <li><a href="#snapshot">Product snapshot and the two-formula problem</a></li>
 <li><a href="#pdrn">What PDRN is and what the research actually proves</a></li>
