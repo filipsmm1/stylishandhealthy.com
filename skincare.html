@@ -32,16 +32,30 @@
     @media(max-width:1024px) { .skc-grid{gap:40px} }
     @media(max-width:860px) { .skc-grid{grid-template-columns:1fr} .skc-sticky{position:static} }
     .skc-cards a.skc:hover { transform: translateX(5px); box-shadow: 0 10px 30px rgba(85,107,62,.09); }
+    .skc-product { grid-template-columns: 140px 1fr; gap: 0; align-items: stretch; padding: 0; overflow: hidden; cursor: default; }
+    .skc-product:hover { transform: translateX(5px); box-shadow: 0 10px 30px rgba(85,107,62,.09); }
+    .skc-product-media { background: var(--cream); display: flex; align-items: center; justify-content: center; padding: 20px; border-right: 1px solid rgba(58,42,34,.07); }
+    .skc-product-media img { width: 108px; height: 140px; object-fit: contain; display: block; }
+    .skc-product-body { padding: 24px; }
+    .skc-product-actions { display: flex; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+    .skc-product-actions .skc-lnk { margin-top: 0; }
+    .skc-shop-link { display: inline-flex; align-items: center; justify-content: center; font-family: var(--body); font-size: .77rem; font-weight: 700; color: var(--cream); background: var(--green); padding: 9px 15px; border-radius: 100px; transition: transform .15s var(--easeb), background .2s; }
+    .skc-shop-link:hover { transform: translateY(-1px); background: var(--green-dk); }
+    .skc-affiliate-note { margin-top: 10px; font-size: .7rem !important; color: var(--brown-lt); }
     @media(max-width:560px) {
-      .skc-cards a[style*="grid-template-columns:140px"] {
+      .skc-cards a[style*="grid-template-columns:140px"],
+      .skc-product {
         display: flex !important;
         flex-direction: column !important;
       }
-      .skc-cards a[style*="grid-template-columns:140px"] > div:first-child {
+      .skc-cards a[style*="grid-template-columns:140px"] > div:first-child,
+      .skc-product-media {
         border-right: none !important;
         border-bottom: 1px solid rgba(58,42,34,.07);
         padding: 20px;
       }
+      .skc-product-media img { width: 120px; height: 150px; }
+      .skc-product-body { padding: 22px 20px; }
     }
   </style>
 <!-- SEO: Canonical -->
@@ -131,6 +145,37 @@
 <span class="skc-lnk" style="margin-top:14px;">Shop on Amazon →</span>
 </div>
 </a>
+
+<div class="skc feat skc-product" data-category="sensitive dryskin anti-aging">
+<div class="skc-product-media">
+<img alt="Beauty of Joseon Relief Sun Rice + Probiotics SPF50+ PA++++" decoding="async" loading="lazy" src="/assets/images/beautyof1.png"/>
+</div>
+<div class="skc-product-body">
+<div class="skc-ctag">Sunscreen · Sensitive &amp; Dry Skin</div>
+<h3>Beauty of Joseon — Relief Sun Rice + Probiotics SPF50+ PA++++</h3>
+<p>A lightweight Korean sunscreen with modern UV filters and a moisturizing cream-like finish. A strong everyday option for normal, dry, and many sensitive skin types that dislike heavy or greasy sunscreen textures.</p>
+<div class="skc-product-actions">
+<a class="skc-shop-link" href="https://amzn.to/44KJPNL" rel="noopener noreferrer sponsored nofollow" target="_blank">Shop on Amazon →</a>
+<a class="skc-lnk" href="https://stylishandhealthy.com/blog/beauty-of-joseon-relief-sun">Read full review →</a>
+</div>
+<p class="skc-affiliate-note">Affiliate link — Stylishandhealthy may earn a commission at no extra cost to you.</p>
+</div>
+</div>
+<div class="skc feat skc-product" data-category="anti-aging acne-prone">
+<div class="skc-product-media">
+<img alt="The Ordinary Glycolic Acid 7% Exfoliating Toner" decoding="async" loading="lazy" src="/assets/images/glycolic_acid_7.png"/>
+</div>
+<div class="skc-product-body">
+<div class="skc-ctag">Exfoliant · Texture &amp; Dullness</div>
+<h3>The Ordinary — Glycolic Acid 7% Exfoliating Toner</h3>
+<p>A potent leave-on alpha-hydroxy-acid exfoliant for improving dullness, uneven texture, and the appearance of post-acne marks. Best introduced slowly and generally not ideal for highly sensitive or already-irritated skin.</p>
+<div class="skc-product-actions">
+<a class="skc-shop-link" href="https://amzn.to/4wiRMWm" rel="noopener noreferrer sponsored nofollow" target="_blank">Shop on Amazon →</a>
+<a class="skc-lnk" href="https://stylishandhealthy.com/blog/the-ordinary-glycolic-acid-7-review">Read full review →</a>
+</div>
+<p class="skc-affiliate-note">Affiliate link — Stylishandhealthy may earn a commission at no extra cost to you.</p>
+</div>
+</div>
 <div class="skc" data-category="all" style="opacity:.55;pointer-events:none;">
 <div class="skc-num">+</div>
 <div>
@@ -182,8 +227,8 @@
     let visible  = 0;
 
     cards.forEach(card => {
-      const cat  = (card.dataset.category || '').toLowerCase();
-      const show = (filter === 'all' || cat === filter);
+      const categories = (card.dataset.category || '').toLowerCase().split(/\s+/).filter(Boolean);
+      const show = (filter === 'all' || categories.includes(filter));
       card.style.display = show ? '' : 'none';
       if (show) visible++;
     });
