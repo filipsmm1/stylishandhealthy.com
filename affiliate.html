@@ -35,6 +35,151 @@
 .sec > div { width:min(100%,760px); }
 .sec a { overflow-wrap:anywhere; }
 
+/* Featured affiliate product */
+.affiliate-product-section {
+  background:var(--cream);
+  padding-top:0;
+}
+.affiliate-product-wrap {
+  width:min(100%,960px) !important;
+  margin:0 auto;
+}
+.affiliate-product-heading {
+  margin:0 0 22px;
+  text-align:center;
+}
+.affiliate-product-heading .eyebrow {
+  display:block;
+  margin-bottom:8px;
+  font-family:var(--sans, "DM Sans", sans-serif);
+  font-size:.76rem;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--brown-lt);
+}
+.affiliate-product-heading h2 {
+  margin:0;
+  font-family:var(--display, "Playfair Display", serif);
+  font-size:clamp(1.85rem,4vw,2.7rem);
+  font-weight:400;
+  color:var(--green-dk);
+}
+.affiliate-product-card {
+  display:grid;
+  grid-template-columns:minmax(220px,.85fr) minmax(0,1.15fr);
+  gap:clamp(24px,5vw,54px);
+  align-items:center;
+  padding:clamp(22px,4vw,42px);
+  border:1px solid rgba(85,107,62,.18);
+  border-radius:28px;
+  background:#fff;
+  box-shadow:0 18px 55px rgba(58,42,34,.08);
+}
+.affiliate-product-image-link {
+  display:block;
+  border-radius:22px;
+  overflow:hidden;
+  background:#f8f3ed;
+}
+.affiliate-product-image {
+  display:block;
+  width:100%;
+  aspect-ratio:1 / 1;
+  object-fit:cover;
+  transition:transform .3s ease;
+}
+.affiliate-product-image-link:hover .affiliate-product-image,
+.affiliate-product-image-link:focus-visible .affiliate-product-image {
+  transform:scale(1.025);
+}
+.affiliate-product-copy .product-label {
+  display:inline-flex;
+  margin-bottom:14px;
+  padding:7px 11px;
+  border-radius:999px;
+  background:rgba(168,185,154,.22);
+  font-family:var(--sans, "DM Sans", sans-serif);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--green-dk);
+}
+.affiliate-product-copy h3 {
+  margin:0 0 7px;
+  font-family:var(--display, "Playfair Display", serif);
+  font-size:clamp(1.55rem,3vw,2.2rem);
+  font-weight:500;
+  line-height:1.16;
+  color:var(--green-dk);
+}
+.affiliate-product-copy .brand {
+  margin:0 0 15px;
+  font-family:var(--sans, "DM Sans", sans-serif);
+  font-size:.9rem;
+  font-weight:600;
+  color:var(--brown-lt);
+}
+.affiliate-product-copy .description {
+  margin:0 0 21px;
+  font-size:.95rem;
+  line-height:1.75;
+  color:var(--brown-lt);
+}
+.affiliate-product-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:11px;
+}
+.affiliate-product-button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:11px 18px;
+  border:1px solid var(--green-dk);
+  border-radius:999px;
+  font-family:var(--sans, "DM Sans", sans-serif);
+  font-size:.86rem;
+  font-weight:600;
+  text-decoration:none;
+  transition:transform .2s ease,background .2s ease,color .2s ease;
+}
+.affiliate-product-button:hover,
+.affiliate-product-button:focus-visible {
+  transform:translateY(-2px);
+}
+.affiliate-product-button.primary {
+  background:var(--green-dk);
+  color:#fff;
+}
+.affiliate-product-button.secondary {
+  background:transparent;
+  color:var(--green-dk);
+}
+.affiliate-product-disclosure {
+  margin:17px 0 0;
+  font-size:.76rem;
+  line-height:1.6;
+  color:var(--brown-lt);
+}
+@media (max-width:720px) {
+  .affiliate-product-card {
+    grid-template-columns:1fr;
+  }
+  .affiliate-product-image-link {
+    width:min(100%,420px);
+    margin:0 auto;
+  }
+  .affiliate-product-actions {
+    flex-direction:column;
+  }
+  .affiliate-product-button {
+    width:100%;
+  }
+}
+
 </style></head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
@@ -57,6 +202,46 @@
 <p style="font-size:.94rem;color:var(--brown-lt);line-height:1.85;margin-bottom:14px">If you click an affiliate link and make a purchase, Stylishandhealthy may earn a small commission at no extra cost to you.</p>
 <p style="font-size:.94rem;color:var(--brown-lt);line-height:1.85;margin-bottom:14px">We aim to recommend products thoughtfully and clearly disclose affiliate relationships. Sponsored content and paid promotions will be identified when applicable.</p>
 <p style="font-size:.94rem;color:var(--brown-lt);line-height:1.85">Questions can be sent to contact@stylishandhealthy.com.</p>
+</div>
+</section>
+<section class="sec affiliate-product-section" aria-labelledby="featured-affiliate-product">
+<div class="affiliate-product-wrap rv">
+<div class="affiliate-product-heading">
+<span class="eyebrow">Featured affiliate recommendation</span>
+<h2 id="featured-affiliate-product">Shop products we reviewed.</h2>
+</div>
+<article class="affiliate-product-card">
+<a class="affiliate-product-image-link" href="https://amzn.to/44KJPNL" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View Beauty of Joseon Relief Sun on Amazon">
+<img class="affiliate-product-image" src="/assets/images/beautyof1.png" alt="Beauty of Joseon Relief Sun Rice and Probiotics SPF50+ PA++++ sunscreen" loading="lazy" decoding="async"/>
+</a>
+<div class="affiliate-product-copy">
+<span class="product-label">Daily sunscreen</span>
+<h3>Relief Sun: Rice + Probiotics SPF50+ PA++++</h3>
+<p class="brand">Beauty of Joseon</p>
+<p class="description">A hydrating, fragrance-free daily sunscreen with a moisturizer-like finish and modern UV filters. Read our full ingredient breakdown, limitations, and verdict before deciding whether it suits your skin.</p>
+<div class="affiliate-product-actions">
+<a class="affiliate-product-button primary" href="https://amzn.to/44KJPNL" target="_blank" rel="sponsored nofollow noopener noreferrer">Check price on Amazon</a>
+<a class="affiliate-product-button secondary" href="https://stylishandhealthy.com/blog/beauty-of-joseon-relief-sun">Read our full review</a>
+</div>
+<p class="affiliate-product-disclosure"><strong>Affiliate disclosure:</strong> The Amazon link is an affiliate link. Stylishandhealthy may earn a commission from qualifying purchases at no extra cost to you.</p>
+</div>
+</article>
+<article class="affiliate-product-card">
+<a class="affiliate-product-image-link" href="https://amzn.to/4wiRMWm" target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label="View The Ordinary Glycolic Acid 7% Exfoliating Toner on Amazon">
+<img class="affiliate-product-image" src="/assets/images/glycolic_acid_7.png" alt="The Ordinary Glycolic Acid 7% Exfoliating Toner" loading="lazy" decoding="async"/>
+</a>
+<div class="affiliate-product-copy">
+<span class="product-label">Exfoliating toner</span>
+<h3>Glycolic Acid 7% Exfoliating Toner</h3>
+<p class="brand">The Ordinary</p>
+<p class="description">A strong leave-on glycolic acid exfoliant designed to improve the look of texture, dullness, and uneven tone. Read our full evidence-based review, usage guidance, limitations, and safety notes before adding it to your routine.</p>
+<div class="affiliate-product-actions">
+<a class="affiliate-product-button primary" href="https://amzn.to/4wiRMWm" target="_blank" rel="sponsored nofollow noopener noreferrer">Check price on Amazon</a>
+<a class="affiliate-product-button secondary" href="https://stylishandhealthy.com/blog/the-ordinary-glycolic-acid-7-review">Read our full review</a>
+</div>
+<p class="affiliate-product-disclosure"><strong>Affiliate disclosure:</strong> The Amazon link is an affiliate link. Stylishandhealthy may earn a commission from qualifying purchases at no extra cost to you.</p>
+</div>
+</article>
 </div>
 </section>
 </main><footer><div class="ft-top"><div><div class="ft-logo"><img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/><span>Stylishandhealthy<em>.</em></span></div><p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p><div class="ft-socs"><a aria-label="Pinterest" class="ft-s" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12.1 2C6.6 2 3 5.7 3 10.4c0 3.1 1.7 5 3.4 5 .6 0 1-.3 1.1-.9l.3-1.2c.1-.4.1-.6-.2-.9-.7-.8-1.1-1.8-1.1-3.2 0-3.4 2.5-6.4 6.6-6.4 3.6 0 5.6 2.2 5.6 5.2 0 3.8-1.7 7-4.2 7-1.4 0-2.4-1.1-2.1-2.5.4-1.6 1.1-3.3 1.1-4.5 0-1-.6-1.9-1.7-1.9-1.3 0-2.4 1.4-2.4 3.2 0 1.2.4 2 .4 2s-1.4 5.8-1.6 6.8c-.5 2.1-.1 4.7 0 5 .1.2.3.2.4.1.2-.2 2.5-3.1 3.3-5.9.2-.8.8-3 .8-3 .4.8 1.6 1.5 2.9 1.5 3.8 0 6.4-3.5 6.4-8.1C22 5.2 19 2 12.1 2Z"/></svg></a><a aria-label="Instagram" class="ft-s" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm4.2 3.2A4.8 4.8 0 1 1 12 16.8a4.8 4.8 0 0 1 0-9.6Zm0 2A2.8 2.8 0 1 0 12 14.8a2.8 2.8 0 0 0 0-5.6Zm5-2.3a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17 6.9Z"/></svg></a><a aria-label="TikTok" class="ft-s" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M16.6 3c.4 2.4 1.8 3.8 4.1 4v3.2c-1.5.1-2.8-.4-4-1.2v6.1c0 4-2.5 6.9-6.4 6.9-3.4 0-6-2.4-6-5.7 0-3.6 2.8-5.9 6.6-5.7v3.3c-1.8-.3-3.2.7-3.2 2.3 0 1.4 1.1 2.4 2.5 2.4 1.7 0 2.7-1.1 2.7-3.5V3h3.7Z"/></svg></a><a aria-label="Contact Stylishandhealthy" class="ft-s" href="/contact"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4.5 5h15A2.5 2.5 0 0 1 22 7.5v9A2.5 2.5 0 0 1 19.5 19h-15A2.5 2.5 0 0 1 2 16.5v-9A2.5 2.5 0 0 1 4.5 5Zm0 2c-.2 0-.4.1-.5.2l8 5.3 8-5.3c-.1-.1-.3-.2-.5-.2h-15ZM20 9.4l-7.4 4.9a1 1 0 0 1-1.1 0L4 9.4v7.1c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V9.4Z"/></svg></a></div></div><div class="ft-col"><h4>Shop</h4><a href="/shop">All products</a><a href="/shop">Journals</a><a href="/shop">Trackers</a><a href="/shop">Printables</a><a href="/shop">To-do lists</a></div><div class="ft-col"><h4>Explore</h4><a href="/blog">Blog</a><a href="/skincare">Skincare Recs</a><a href="/about">About</a><a href="/journal">Free Journal</a></div><div class="ft-col"><h4>Info</h4><a href="/about">Our mission</a><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/affiliate">Affiliate disclosure</a><a href="/contact">Contact</a></div></div><div class="ft-bot"><p>© 2026 Stylishandhealthy. All rights reserved.</p><span>Hot girls read the research.</span></div></footer>
