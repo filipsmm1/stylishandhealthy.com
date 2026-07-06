@@ -1442,6 +1442,8 @@
 </div></section>
 <div class="author-box"><span class="box-label">How this article was researched</span><p>Stylish &amp; Healthy prioritized official regulators, laws, OECD guidelines, certification requirements, and peer-reviewed research. Legal compliance, private certification, and scientific test replacement were assessed separately.</p></div>
 <section class="references" id="references"><h2>References</h2>
+<details class="source-details">
+<summary>View all 25 references</summary>
 <p class="source-note">Every numbered citation in the article links to the source used. Official and primary sources were prioritized. Cited July 6, 2026.</p>
 <ol>
 <li id="ref-1"><strong>U.S. Food and Drug Administration.</strong> “Cruelty Free”/“Not Tested on Animals” [Internet]. FDA; 1995 Mar 14 [updated 2000 Feb 24; cited 2026 Jul 6]. Available from: <a href="https://www.fda.gov/cosmetics/cosmetics-labeling-claims/cruelty-freenot-tested-animals" rel="noopener noreferrer" target="_blank">https://www.fda.gov/cosmetics/cosmetics-labeling-claims/cruelty-freenot-tested-animals</a></li>
@@ -1469,7 +1471,9 @@
 <li id="ref-23"><strong>European Commission.</strong> Roadmap towards phasing out animal testing for chemical safety assessments [Internet]. Directorate-General for Internal Market, Industry, Entrepreneurship and SMEs; 2026 Jun 1 [cited 2026 Jul 6]. Available from: <a href="https://single-market-economy.ec.europa.eu/sectors/chemicals/reach/roadmap-towards-phasing-out-animal-testing_en" rel="noopener noreferrer" target="_blank">https://single-market-economy.ec.europa.eu/sectors/chemicals/reach/roadmap-towards-phasing-out-animal-testing_en</a></li>
 <li id="ref-24"><strong>Organisation for Economic Co-operation and Development.</strong> Test No. 492B: Reconstructed Human Cornea-like Epithelium (RHCE) Test Method for Eye Hazard Identification. <em>OECD Guidelines for the Testing of Chemicals, Section 4</em> [Internet]. Paris: OECD Publishing; 2024 Jun 25 [cited 2026 Jul 6]. doi:10.1787/0d603916-en. Available from: <a href="https://www.oecd.org/en/publications/test-no-492b-reconstructed-human-cornea-like-epithelium-rhce-test-method-for-eye-hazard-identification_0d603916-en.html" rel="noopener noreferrer" target="_blank">https://www.oecd.org/en/publications/test-no-492b-reconstructed-human-cornea-like-epithelium-rhce-test-method-for-eye-hazard-identification_0d603916-en.html</a></li>
 <li id="ref-25"><strong>European Parliament and Council of the European Union.</strong> Regulation (EC) No 1907/2006 of 18 December 2006 concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH), establishing a European Chemicals Agency [Internet]. <em>Official Journal of the European Union.</em> 2006 Dec 30;L396:1–849. Current consolidated version: 2026 May 11 [cited 2026 Jul 6]. Available from: <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006R1907" rel="noopener noreferrer" target="_blank">https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006R1907</a></li>
-</ol></section>
+</ol>
+</details>
+</section>
 <p class="disclaimer">Editorial note: This article does not claim that every uncertified company tests on animals or that every certified product is vegan, sustainable, hypoallergenic, or medically superior.</p>
 <p class="signature">Hot girls read the research.</p>
 </article>
@@ -1513,6 +1517,31 @@
 <span>Hot girls read the research.</span>
 </div>
 </footer>
+<script>
+  (function () {
+    const referenceDetails = document.querySelector('#references .source-details');
+    if (!referenceDetails) return;
+
+    function openReferencesForHash(hash) {
+      if (hash && hash.startsWith('#ref-')) {
+        referenceDetails.open = true;
+      }
+    }
+
+    openReferencesForHash(window.location.hash);
+
+    document.addEventListener('click', function (event) {
+      const citationLink = event.target.closest('a[href^="#ref-"]');
+      if (citationLink) {
+        referenceDetails.open = true;
+      }
+    });
+
+    window.addEventListener('hashchange', function () {
+      openReferencesForHash(window.location.hash);
+    });
+  })();
+</script>
 <script src="/assets/js/shared.js"></script>
 </body>
 </html>
