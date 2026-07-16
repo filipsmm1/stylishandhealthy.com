@@ -810,10 +810,17 @@
   .article-wrap, .article-card, .article-hero-inner, .references,
   .source-details, .comparison-scroll, .faq-item, .reason-card,
   .fit-card, .qp-card { min-width: 0; }
-  .article-card p, .article-card li, .article-card td,
-  .article-card th, .source-details li, .article-author-box p {
-    overflow-wrap: anywhere;
+  .article-card p, .article-card li, .source-details li,
+  .article-author-box p {
+    overflow-wrap: break-word;
     word-break: normal;
+    hyphens: none;
+  }
+  .article-card th,
+  .article-card td {
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
   .article-card sup { line-height: 0; }
   .article-card sup a { white-space: nowrap; }
@@ -1282,7 +1289,138 @@
   .score-method { margin-top:20px !important; padding-top:18px; border-top:1px solid rgba(247,241,232,.16); }
   @media(max-width:860px){ .score-grid{grid-template-columns:1fr 1fr;} }
   @media(max-width:480px){ .score-grid{grid-template-columns:1fr;} }
-</style></head>
+</style>
+<style data-neat-table-layout="true">
+  /* Keep prose and table text readable without splitting ordinary words. */
+  .article-card,
+  .article-card p,
+  .article-card li,
+  .article-card h1,
+  .article-card h2,
+  .article-card h3,
+  .article-card th,
+  .article-card td {
+    word-break: normal !important;
+    hyphens: none !important;
+  }
+
+  .article-card p,
+  .article-card li,
+  .article-card h1,
+  .article-card h2,
+  .article-card h3 {
+    overflow-wrap: normal !important;
+  }
+
+  .article-card th,
+  .article-card td {
+    overflow-wrap: normal !important;
+    white-space: normal;
+  }
+
+  .comparison-scroll {
+    border: 1px solid rgba(85, 107, 62, 0.12);
+    background: var(--cream);
+    box-shadow: 0 8px 24px rgba(85, 107, 62, 0.04);
+  }
+
+  .comparison-scroll table {
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+  }
+
+  .comparison-table th {
+    line-height: 1.35;
+    vertical-align: bottom;
+    white-space: nowrap;
+  }
+
+  .comparison-table td {
+    line-height: 1.58;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    border-right: 1px solid rgba(85, 107, 62, 0.08);
+  }
+
+  .comparison-table th:last-child,
+  .comparison-table td:last-child {
+    border-right: 0;
+  }
+
+  .study-table {
+    min-width: 960px !important;
+  }
+
+  .study-table th:nth-child(1),
+  .study-table td:nth-child(1) { width: 14%; }
+  .study-table th:nth-child(2),
+  .study-table td:nth-child(2) { width: 20%; }
+  .study-table th:nth-child(3),
+  .study-table td:nth-child(3) { width: 22%; }
+  .study-table th:nth-child(4),
+  .study-table td:nth-child(4) { width: 18%; }
+  .study-table th:nth-child(5),
+  .study-table td:nth-child(5) { width: 26%; }
+
+  .method-table {
+    min-width: 920px !important;
+  }
+
+  .method-table th:nth-child(1),
+  .method-table td:nth-child(1) { width: 17%; }
+  .method-table th:nth-child(2),
+  .method-table td:nth-child(2) { width: 22%; }
+  .method-table th:nth-child(3),
+  .method-table td:nth-child(3) { width: 18%; }
+  .method-table th:nth-child(4),
+  .method-table td:nth-child(4) { width: 20%; }
+  .method-table th:nth-child(5),
+  .method-table td:nth-child(5) { width: 23%; }
+
+  .study-table td:first-child,
+  .method-table td:first-child {
+    white-space: normal;
+  }
+
+  .references a,
+  .source-details a {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  @media (max-width: 760px) {
+    .comparison-scroll {
+      border-radius: 16px;
+      scrollbar-width: thin;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      padding: 12px 13px !important;
+    }
+
+    .comparison-table th {
+      font-size: 0.68rem;
+      letter-spacing: 0.08em;
+    }
+
+    .comparison-table td {
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .comparison-table th,
+    .comparison-table td {
+      padding: 11px 12px !important;
+    }
+  }
+</style>
+</head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
 <div class="wordmark-bar">
@@ -1373,7 +1511,7 @@
 <h2 id="studies">What Did the Human Studies Actually Find?</h2>
 <p>At least four human publications have reported hair-growth outcomes. Two were primarily designed to study unwanted-hair reduction. Two later pigmentation studies, one involving axillary skin and one involving external genital-area skin, reported hair reduction and related hair measurements as additional outcomes. All four were led by the same investigator or research group. The two primary hair reports used similar protocols and had overlapping recruitment periods, and the publications do not clearly establish whether those participant groups were completely separate. These reports should not be treated as independent replications.<sup><a href="#ref-1">[1]</a></sup><sup><a href="#ref-2">[2]</a></sup><sup><a href="#ref-3">[3]</a></sup><sup><a href="#ref-4">[4]</a></sup></p>
 <div class="comparison-scroll">
-<table class="comparison-table">
+<table class="comparison-table study-table">
 <thead><tr><th>Study</th><th>Design</th><th>What participants used</th><th>Result</th><th>Main limitations</th></tr></thead>
 <tbody>
 <tr>
@@ -1455,7 +1593,7 @@
 </div>
 <h2 id="comparison">Cyperus Oil vs Other Hair-Removal Methods</h2>
 <div class="comparison-scroll">
-<table class="comparison-table">
+<table class="comparison-table method-table">
 <thead><tr><th>Method</th><th>What it does</th><th>Evidence</th><th>Best fit</th><th>Main drawback</th></tr></thead>
 <tbody>
 <tr><td>Cyperus rotundus oil</td><td>May slow regrowth during repeated use</td><td>Small preliminary studies</td><td>People who understand the uncertainty and want an experimental adjunct</td><td>Unknown permanence, variable products, irritation risk</td></tr>
