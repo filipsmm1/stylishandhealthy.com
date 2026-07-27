@@ -682,7 +682,154 @@
       line-height: 1.55;
     }}@media (max-width: 480px) {.comparison-table th, .comparison-table td{
       padding: 11px 12px !important;
-    }}.article-card mark{ -webkit-box-decoration-break: clone; box-decoration-break: clone; }.reason-grid .reason-card h3{margin-top:0}.hero-banner img{aspect-ratio:16/9;object-fit:cover}.image-caption{font-size:.84rem;color:var(--brown-lt);padding:12px 16px 4px;line-height:1.55}.article-card strong{color:var(--green-dk)}.mark-checker{ margin: 42px 0; padding: 30px; border-radius: 26px; background: rgba(85,107,62,.07); border: 1px solid rgba(85,107,62,.18); }.mark-checker h2{ margin-top: 6px; }.checker-intro{ margin-bottom: 22px!important; }.checker-question{ font-family: var(--display); color: var(--green-dk)!important; font-size: 1.2rem!important; margin-bottom: 12px!important; }.checker-options{ display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }.checker-options button, .checker-reset{ border: 1px solid rgba(85,107,62,.22); border-radius: 999px; background: var(--cream); color: var(--green-dk); padding: 12px 16px; font: 700 .82rem/1.3 var(--body); cursor: pointer; }.checker-options button:hover, .checker-options button:focus-visible, .checker-reset:hover, .checker-reset:focus-visible{ background: var(--green-dk); color: var(--cream); outline: none; }.checker-color{ margin-top: 22px; }.checker-result{ margin-top: 24px; padding: 22px; border-radius: 20px; background: var(--cream); border: 1px solid rgba(85,107,62,.15); }.checker-result > strong{ display: block; font-family: var(--display); font-size: 1.35rem; margin-bottom: 8px; }.checker-result p{ margin-bottom: 12px!important; }.checker-reset{ margin-top: 14px; }.save-cta{ margin: 18px 0 42px; padding: 24px 26px; border-radius: 22px; background: var(--pink); border: 1px solid rgba(232,137,154,.2); }.save-cta p{ margin: 0!important; color: var(--green-dk)!important; }.comparison-table caption{ caption-side: bottom; text-align: left; padding: 12px 4px 0; color: var(--brown-lt); font-size: .8rem; line-height: 1.55; }.reason-card h4{ font-family: var(--display); font-size: 1.1rem; font-weight: 400; color: var(--green-dk); line-height: 1.3; margin: 0 0 6px; }@media(max-width:760px){.checker-options{grid-template-columns:1fr;}}.article-card sup a{ font-size:.74em; text-decoration:none; color:var(--pink-deep); font-weight:700; }@media(max-width:760px){.comparison-table{font-size:.84rem;}}</style>
+    }}.article-card mark{ -webkit-box-decoration-break: clone; box-decoration-break: clone; }.reason-grid .reason-card h3{margin-top:0}.hero-banner img{aspect-ratio:16/9;object-fit:cover}.image-caption{font-size:.84rem;color:var(--brown-lt);padding:12px 16px 4px;line-height:1.55}.article-card strong{color:var(--green-dk)}.mark-checker{ margin: 42px 0; padding: 30px; border-radius: 26px; background: rgba(85,107,62,.07); border: 1px solid rgba(85,107,62,.18); }.mark-checker h2{ margin-top: 6px; }.checker-intro{ margin-bottom: 22px!important; }.checker-question{ font-family: var(--display); color: var(--green-dk)!important; font-size: 1.2rem!important; margin-bottom: 12px!important; }.checker-options{ display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }.checker-options button, .checker-reset{ border: 1px solid rgba(85,107,62,.22); border-radius: 999px; background: var(--cream); color: var(--green-dk); padding: 12px 16px; font: 700 .82rem/1.3 var(--body); cursor: pointer; }.checker-options button:hover, .checker-options button:focus-visible, .checker-reset:hover, .checker-reset:focus-visible{ background: var(--green-dk); color: var(--cream); outline: none; }.checker-color{ margin-top: 22px; }.checker-result{ margin-top: 24px; padding: 22px; border-radius: 20px; background: var(--cream); border: 1px solid rgba(85,107,62,.15); }.checker-result > strong{ display: block; font-family: var(--display); font-size: 1.35rem; margin-bottom: 8px; }.checker-result p{ margin-bottom: 12px!important; }.checker-reset{ margin-top: 14px; }.save-cta{ margin: 18px 0 42px; padding: 24px 26px; border-radius: 22px; background: var(--pink); border: 1px solid rgba(232,137,154,.2); }.save-cta p{ margin: 0!important; color: var(--green-dk)!important; }.comparison-table caption{ caption-side: bottom; text-align: left; padding: 12px 4px 0; color: var(--brown-lt); font-size: .8rem; line-height: 1.55; }.reason-card h4{ font-family: var(--display); font-size: 1.1rem; font-weight: 400; color: var(--green-dk); line-height: 1.3; margin: 0 0 6px; }@media(max-width:760px){.checker-options{grid-template-columns:1fr;}}.article-card sup a{ font-size:.74em; text-decoration:none; color:var(--pink-deep); font-weight:700; }@media(max-width:760px){.comparison-table{font-size:.84rem;}}
+/* === Article layout and citation repair === */
+.article-card p,
+.article-card li,
+.article-card h1,
+.article-card h2,
+.article-card h3,
+.article-card h4,
+.article-author-box p {
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}
+
+.article-card sup.citation-group {
+  display: inline-block;
+  position: relative;
+  top: -0.35em;
+  margin-left: 0.16em;
+  font-size: 0.72em;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.article-card sup.citation-group a,
+.article-card sup.citation-group a:visited {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--pink-deep);
+  text-decoration: none;
+}
+
+.article-card sup.citation-group a:hover,
+.article-card sup.citation-group a:focus-visible {
+  color: var(--green-dk);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.image-wide {
+  overflow: hidden;
+}
+
+.image-caption {
+  display: block;
+  margin: 0 !important;
+  padding: 12px 16px 4px !important;
+  text-align: center;
+  line-height: 1.55 !important;
+}
+
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  margin: 28px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 16px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+}
+
+.table-scroll:focus-visible {
+  outline: 2px solid var(--pink-deep);
+  outline-offset: 4px;
+}
+
+.table-scroll .comparison-table {
+  width: 100%;
+  min-width: 680px;
+  margin: 0;
+}
+
+.references ol {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  counter-reset: source-number 0 !important;
+}
+
+.references li {
+  display: block !important;
+  position: relative !important;
+  margin: 0 0 14px !important;
+  padding: 0 0 0 2.15rem !important;
+  counter-increment: source-number !important;
+  color: rgba(247, 241, 232, 0.82);
+  line-height: 1.72;
+  scroll-margin-top: 100px;
+  overflow-wrap: anywhere !important;
+}
+
+.references li::before {
+  content: counter(source-number) "." !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 1.7rem !important;
+  color: var(--cream) !important;
+  font-weight: 700 !important;
+  text-align: right !important;
+}
+
+.references li::marker {
+  content: "" !important;
+}
+
+.references li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.references strong {
+  color: var(--cream) !important;
+}
+
+@media (max-width: 760px) {
+  .article-card sup.citation-group {
+    font-size: 0.7em;
+  }
+
+  .table-scroll {
+    margin: 24px 0;
+    border-radius: 14px;
+  }
+
+  .table-scroll .comparison-table {
+    min-width: 640px;
+  }
+
+  .references li {
+    padding-left: 1.95rem !important;
+  }
+}
+
+@media print {
+  .table-scroll {
+    overflow: visible;
+  }
+
+  .table-scroll .comparison-table {
+    min-width: 0;
+  }
+}
+
+</style>
 
 </head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
@@ -722,12 +869,12 @@
 </figure>
 <div class="quick-answer" id="snippet-answer">
 <span class="box-label">Quick answer</span>
-<p><strong>Start with texture, then look at color.</strong> A flat brown, gray or darker mark is usually post-inflammatory hyperpigmentation, or PIH. A flat red, pink or purple mark is usually post-inflammatory erythema, or PIE, although mixed red-brown marks are common. An indented area may be an atrophic acne scar. A raised, firm area may be a hypertrophic scar or keloid. PIH and PIE mainly change color, while true scars change the structure or contour of the skin.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-2">2</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-6">6</a></sup><sup><a href="#ref-10">10</a></sup></p>
+<p><strong>Start with texture, then look at color.</strong> A flat brown, gray or darker mark is usually post-inflammatory hyperpigmentation, or PIH. A flat red, pink or purple mark is usually post-inflammatory erythema, or PIE, although mixed red-brown marks are common. An indented area may be an atrophic acne scar. A raised, firm area may be a hypertrophic scar or keloid. PIH and PIE mainly change color, while true scars change the structure or contour of the skin.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></p>
 <p><strong>Important:</strong> this is an identification aid, not a diagnosis. A changing, bleeding, painful, ulcerated or unexplained mark needs medical assessment.</p>
 </div>
 <div class="science-box terminology-note">
 <span class="box-label">Terminology note</span>
-<p>This guide uses PIH for melanin-heavy brown, gray or darker post-acne marks and PIE for flat red, pink, purple or dusky vascular-looking marks. Some dermatology resources use broader wording for post-acne discoloration, and some experts prefer terms such as acne-induced macular erythema and acne-induced macular hyperpigmentation.<sup><a href="#ref-5">5</a></sup><sup><a href="#ref-8">8</a></sup></p>
+<p>This guide uses PIH for melanin-heavy brown, gray or darker post-acne marks and PIE for flat red, pink, purple or dusky vascular-looking marks. Some dermatology resources use broader wording for post-acne discoloration, and some experts prefer terms such as acne-induced macular erythema and acne-induced macular hyperpigmentation.<sup class="citation-group">[<a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></p>
 </div>
 <section aria-labelledby="mark-checker-title" class="mark-checker" id="mark-checker">
 <span class="box-label">Interactive identification aid</span>
@@ -769,8 +916,8 @@
 <section id="not-every-mark-is-a-scar">
 <h2>Acne marks vs acne scars: not every post-acne mark is a scar</h2>
 <p>You finally get a breakout to calm down, but something is still there. It might be brown. It might be red. It might look deeper in side lighting. Most people call all of these leftovers acne scars, but that label is often wrong.</p><p>If you are comparing <strong>acne scars vs dark spots</strong>, or trying to work out <strong>how to tell if an acne scar or dark spot</strong> is left behind, check texture first. Flat color usually points toward a post-acne mark. A dip, pit or raised area points toward structural scarring.</p>
-<p><strong>Post acne marks</strong> fall into two broad groups. The first group changes color but leaves the skin flat. This includes PIH and PIE. The second group changes texture because deeper inflammation altered collagen and wound healing. This includes indented and raised acne scars.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-3">3</a></sup></p>
-<p>The distinction matters because a dark-spot serum can help pigment, but it cannot lift a deep indentation. A vascular laser may reduce selected vascular redness, but it is not designed to replace lost tissue. Scar procedures are chosen by scar shape, depth, location, skin type and pigment risk, not just by the color sitting on top.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-7">7</a></sup><sup><a href="#ref-9">9</a></sup></p>
+<p><strong>Post acne marks</strong> fall into two broad groups. The first group changes color but leaves the skin flat. This includes PIH and PIE. The second group changes texture because deeper inflammation altered collagen and wound healing. This includes indented and raised acne scars.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>]</sup></p>
+<p>The distinction matters because a dark-spot serum can help pigment, but it cannot lift a deep indentation. A vascular laser may reduce selected vascular redness, but it is not designed to replace lost tissue. Scar procedures are chosen by scar shape, depth, location, skin type and pigment risk, not just by the color sitting on top.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-7" role="doc-noteref" aria-label="Reference 7">7</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p>
 <div class="article-internal-links"><p>For a full guide to fading flat brown marks safely, start with our <a href="/blog/how-to-fade-post-acne-dark-spots">post-acne dark spots pillar guide</a>. This article focuses on identifying the type of mark before you decide what to use.</p></div>
 </section>
 <figure class="image-wide">
@@ -779,44 +926,44 @@
 </figure><div class="save-cta"><span class="box-label">Save this rule</span><p><strong>Texture first. Color second.</strong> Check whether the mark is flat, indented or raised before buying another acne-scar or dark-spot product.</p></div>
 <section id="pih">
 <h2>What is PIH?</h2>
-<p><strong>Post-inflammatory hyperpigmentation</strong> is a flat area of increased pigment left after inflammation or injury. After acne, it usually appears where a papule, pustule, nodule or picked spot used to be. The color may be tan, brown, dark brown, gray-brown or nearly black, depending on skin tone and how deeply pigment sits in the skin.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-4">4</a></sup></p>
-<p>Inflammation can stimulate melanocytes to produce and distribute more melanin. If inflammation disrupts the lower epidermis, pigment can also fall into the dermis and be taken up by macrophages. Superficial epidermal PIH often looks brown. Deeper dermal pigment can look gray, blue-gray or darker and tends to fade more slowly.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-4">4</a></sup></p>
-<div class="science-box"><span class="box-label">PIH clues</span><p>The mark is flat, darker than the surrounding skin and sits where inflammation occurred. Brown or gray color points toward pigment, but lighting, pigment depth and skin tone can change how obvious it looks.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-4">4</a></sup><sup><a href="#ref-5">5</a></sup></p></div>
+<p><strong>Post-inflammatory hyperpigmentation</strong> is a flat area of increased pigment left after inflammation or injury. After acne, it usually appears where a papule, pustule, nodule or picked spot used to be. The color may be tan, brown, dark brown, gray-brown or nearly black, depending on skin tone and how deeply pigment sits in the skin.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-4" role="doc-noteref" aria-label="Reference 4">4</a>]</sup></p>
+<p>Inflammation can stimulate melanocytes to produce and distribute more melanin. If inflammation disrupts the lower epidermis, pigment can also fall into the dermis and be taken up by macrophages. Superficial epidermal PIH often looks brown. Deeper dermal pigment can look gray, blue-gray or darker and tends to fade more slowly.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-4" role="doc-noteref" aria-label="Reference 4">4</a>]</sup></p>
+<div class="science-box"><span class="box-label">PIH clues</span><p>The mark is flat, darker than the surrounding skin and sits where inflammation occurred. Brown or gray color points toward pigment, but lighting, pigment depth and skin tone can change how obvious it looks.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-4" role="doc-noteref" aria-label="Reference 4">4</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>]</sup></p></div>
 <h3>Who is more likely to develop PIH?</h3>
-<p>PIH can happen in every skin tone, but it is more common, more noticeable and often longer-lasting in medium to deep skin tones. That is not because darker skin is unhealthy. Inflammation is more likely to produce a clinically visible and persistent pigment alteration, so even a small breakout or an irritating product can leave a mark.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-5">5</a></sup></p>
+<p>PIH can happen in every skin tone, but it is more common, more noticeable and often longer-lasting in medium to deep skin tones. That is not because darker skin is unhealthy. Inflammation is more likely to produce a clinically visible and persistent pigment alteration, so even a small breakout or an irritating product can leave a mark.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>]</sup></p>
 </section>
 <section id="pie">
 <h2>What is PIE?</h2>
-<p><strong>Post-inflammatory erythema</strong> is persistent flat redness, pinkness or violaceous color that can remain as an inflammatory acne lesion resolves. It is primarily associated with vascular change rather than excess melanin, although one lesion can contain both vascular redness and pigment. Terminology is not completely standardized. Some medical literature uses post-acne erythema or acne-induced macular erythema for the same type of persistent flat redness.<sup><a href="#ref-6">6</a></sup><sup><a href="#ref-7">7</a></sup><sup><a href="#ref-8">8</a></sup></p>
-<p>PIE is usually easier to see in lighter skin tones, where red blood vessels contrast more clearly with the surrounding skin. In deeper skin tones, redness may look brown-purple, dusky or muted and may be mistaken for pigment rather than bright red. PIE can still occur in any skin tone, and it can exist at the same time as PIH.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-8">8</a></sup></p>
-<div class="science-box"><span class="box-label">PIE clues</span><p>Vascular redness may briefly lighten with gentle pressure, while pigment usually does not. This can be a clue, but it cannot diagnose PIE or rule out another cause of redness.<sup><a href="#ref-6">6</a></sup><sup><a href="#ref-7">7</a></sup></p></div>
+<p><strong>Post-inflammatory erythema</strong> is persistent flat redness, pinkness or violaceous color that can remain as an inflammatory acne lesion resolves. It is primarily associated with vascular change rather than excess melanin, although one lesion can contain both vascular redness and pigment. Terminology is not completely standardized. Some medical literature uses post-acne erythema or acne-induced macular erythema for the same type of persistent flat redness.<sup class="citation-group">[<a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-7" role="doc-noteref" aria-label="Reference 7">7</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></p>
+<p>PIE is usually easier to see in lighter skin tones, where red blood vessels contrast more clearly with the surrounding skin. In deeper skin tones, redness may look brown-purple, dusky or muted and may be mistaken for pigment rather than bright red. PIE can still occur in any skin tone, and it can exist at the same time as PIH.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></p>
+<div class="science-box"><span class="box-label">PIE clues</span><p>Vascular redness may briefly lighten with gentle pressure, while pigment usually does not. This can be a clue, but it cannot diagnose PIE or rule out another cause of redness.<sup class="citation-group">[<a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-7" role="doc-noteref" aria-label="Reference 7">7</a>]</sup></p></div>
 <h3>Is PIE the same as a red acne scar?</h3>
-<p>Usually, no. People often search for red acne scars when they actually have flat post-inflammatory erythema. If the surface is smooth and there is no dip or raised tissue, the main visible change is color. A true scar can also remain red while it heals, so texture still comes first.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-6">6</a></sup></p>
+<p>Usually, no. People often search for red acne scars when they actually have flat post-inflammatory erythema. If the surface is smooth and there is no dip or raised tissue, the main visible change is color. A true scar can also remain red while it heals, so texture still comes first.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>]</sup></p>
 </section>
 <section id="true-scars">
 <h2>How to identify true acne scars</h2>
-<p>True acne scars alter the surface or contour of the skin. Look in indirect side lighting, then run a clean fingertip gently across the area. If you can see or feel a dip, pit, rolling depression or raised firm area, you are dealing with structural scarring rather than only PIH or PIE.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p>
+<p>True acne scars alter the surface or contour of the skin. Look in indirect side lighting, then run a clean fingertip gently across the area. If you can see or feel a dip, pit, rolling depression or raised firm area, you are dealing with structural scarring rather than only PIH or PIE.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p>
 <h3>Atrophic acne scars: indented texture</h3>
-<p>Atrophic scars form when inflammation and wound healing lead to a net loss of collagen and tissue. Among people who have acne scars, reviews estimate that roughly 80 to 90 percent of those scars are atrophic rather than raised.<sup><a href="#ref-9">9</a></sup></p>
+<p>Atrophic scars form when inflammation and wound healing lead to a net loss of collagen and tissue. Among people who have acne scars, reviews estimate that roughly 80 to 90 percent of those scars are atrophic rather than raised.<sup class="citation-group">[<a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p>
 <div class="reason-grid">
-<div class="reason-card"><span class="reason-label">Ice pick</span><h4 class="reason-title">Narrow and deep</h4><p>Small openings that extend deeply into the skin. They can look like enlarged pores, but they are usually sharper and deeper.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p></div>
-<div class="reason-card"><span class="reason-label">Boxcar</span><h4 class="reason-title">Wider with clearer edges</h4><p>Round or oval depressions with more defined borders. They may be shallow or deep.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p></div>
-<div class="reason-card"><span class="reason-label">Rolling</span><h4 class="reason-title">Broad and wave-like</h4><p>Shallow depressions with sloping edges, often caused by fibrous bands pulling the skin downward.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p></div>
-<div class="reason-card good"><span class="reason-label">Key feature</span><h4 class="reason-title">The skin is lower</h4><p>Color can sit over the scar, but the defining sign is a visible or palpable indentation.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p></div>
+<div class="reason-card"><span class="reason-label">Ice pick</span><h4 class="reason-title">Narrow and deep</h4><p>Small openings that extend deeply into the skin. They can look like enlarged pores, but they are usually sharper and deeper.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p></div>
+<div class="reason-card"><span class="reason-label">Boxcar</span><h4 class="reason-title">Wider with clearer edges</h4><p>Round or oval depressions with more defined borders. They may be shallow or deep.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p></div>
+<div class="reason-card"><span class="reason-label">Rolling</span><h4 class="reason-title">Broad and wave-like</h4><p>Shallow depressions with sloping edges, often caused by fibrous bands pulling the skin downward.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p></div>
+<div class="reason-card good"><span class="reason-label">Key feature</span><h4 class="reason-title">The skin is lower</h4><p>Color can sit over the scar, but the defining sign is a visible or palpable indentation.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p></div>
 </div>
 <h3>Raised acne scars: hypertrophic scars and keloids</h3>
-<p>Hypertrophic scars form when healing produces excessive scar tissue and generally remain within the borders of the original lesion. Keloids are related raised scars that extend beyond the original wound. Keloidal acne scars are particularly associated with areas such as the jawline, chest, shoulders and upper back. A dermatologist should distinguish a hypertrophic scar from a keloid because behavior, recurrence risk and treatment can differ. Keloids can return after treatment, which is one reason care is often multimodal.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-10">10</a></sup></p>
-<div class="warning-box"><span class="box-label">Do not treat raised scars aggressively at home</span><p>Strong peels, home needling and repeated picking can worsen inflammation, pigment or scarring. A dermatologist can distinguish hypertrophic scars from keloids and choose treatments such as silicone, corticosteroid injections, vascular lasers or other scar-directed options.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-10">10</a></sup></p></div>
+<p>Hypertrophic scars form when healing produces excessive scar tissue and generally remain within the borders of the original lesion. Keloids are related raised scars that extend beyond the original wound. Keloidal acne scars are particularly associated with areas such as the jawline, chest, shoulders and upper back. A dermatologist should distinguish a hypertrophic scar from a keloid because behavior, recurrence risk and treatment can differ. Keloids can return after treatment, which is one reason care is often multimodal.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></p>
+<div class="warning-box"><span class="box-label">Do not treat raised scars aggressively at home</span><p>Strong peels, home needling and repeated picking can worsen inflammation, pigment or scarring. A dermatologist can distinguish hypertrophic scars from keloids and choose treatments such as silicone, corticosteroid injections, vascular lasers or other scar-directed options.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></p></div>
 </section>
 <section id="self-check">
 <h2>A simple way to identify your post-acne mark</h2>
 <p>This check can help you describe a mark more clearly, but it cannot diagnose a skin condition. Do not scrape the area, press hard or use your fingernails.</p>
 <ol class="numbered-steps">
-<li><strong>Check whether the surface is flat.</strong> Use clean hands and soft side lighting. Flat usually points toward PIH or PIE. Indented or raised points toward a scar.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-2">2</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-6">6</a></sup><sup><a href="#ref-9">9</a></sup><sup><a href="#ref-10">10</a></sup></li>
-<li><strong>Check the dominant color.</strong> Brown, gray or darker suggests PIH. Red, pink or purple suggests PIE.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-5">5</a></sup><sup><a href="#ref-6">6</a></sup><sup><a href="#ref-8">8</a></sup></li>
-<li><strong>Look from more than one angle.</strong> Atrophic scars can disappear in direct front lighting and become obvious when light hits from the side.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></li>
-<li><strong>Do not force one label.</strong> The same spot can have redness, pigment and textural scarring at once.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-5">5</a></sup><sup><a href="#ref-6">6</a></sup><sup><a href="#ref-8">8</a></sup></li>
-<li><strong>Get help when the answer changes treatment.</strong> A dermatologist is especially useful for raised scars, deep indentations or marks that do not match a healed acne lesion.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-10">10</a></sup></li>
+<li><strong>Check whether the surface is flat.</strong> Use clean hands and soft side lighting. Flat usually points toward PIH or PIE. Indented or raised points toward a scar.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></li>
+<li><strong>Check the dominant color.</strong> Brown, gray or darker suggests PIH. Red, pink or purple suggests PIE.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></li>
+<li><strong>Look from more than one angle.</strong> Atrophic scars can disappear in direct front lighting and become obvious when light hits from the side.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></li>
+<li><strong>Do not force one label.</strong> The same spot can have redness, pigment and textural scarring at once.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></li>
+<li><strong>Get help when the answer changes treatment.</strong> A dermatologist is especially useful for raised scars, deep indentations or marks that do not match a healed acne lesion.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></li>
 </ol>
 <div class="warning-box differential-warning"><span class="box-label">What this cannot diagnose</span><p>This is an identification aid, not a diagnosis. Do not assume that every persistent red, brown, purple, indented or raised lesion is an acne mark. Seek medical assessment for a changing pigmented lesion, unexplained bleeding, ulceration, significant pain, spreading redness, a new firm growth, or a mark that did not appear where acne previously healed.</p></div></section>
 <figure class="image-wide">
@@ -825,9 +972,9 @@
 </figure>
 <section id="skin-tone">
 <h2>How skin tone changes what PIH and PIE look like</h2>
-<p>Skin tone changes visibility, not the underlying categories. PIE is often easier to recognize in fair skin because redness contrasts strongly with the surrounding skin. PIH is often more prominent in medium and deep skin tones because inflammation can trigger a stronger pigment response.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-5">5</a></sup><sup><a href="#ref-8">8</a></sup></p>
-<p>There is an important catch. Redness can be under-recognized in deeper skin tones, especially when educational examples only show bright pink marks. PIE may appear brown-purple, dusky or simply darker. PIH in lighter skin can still be obvious and persistent. Some public resources use PIH more broadly for flat post-acne discoloration, including pink or red marks, while this guide separates melanin-heavy pigment from primarily vascular erythema for practical treatment discussions.<sup><a href="#ref-5">5</a></sup><sup><a href="#ref-8">8</a></sup></p>
-<table class="comparison-table"><caption>Practical comparison based on dermatology reviews and clinical guidance.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-2">2</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-5">5</a></sup><sup><a href="#ref-6">6</a></sup><sup><a href="#ref-8">8</a></sup><sup><a href="#ref-10">10</a></sup></caption>
+<p>Skin tone changes visibility, not the underlying categories. PIE is often easier to recognize in fair skin because redness contrasts strongly with the surrounding skin. PIH is often more prominent in medium and deep skin tones because inflammation can trigger a stronger pigment response.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></p>
+<p>There is an important catch. Redness can be under-recognized in deeper skin tones, especially when educational examples only show bright pink marks. PIE may appear brown-purple, dusky or simply darker. PIH in lighter skin can still be obvious and persistent. Some public resources use PIH more broadly for flat post-acne discoloration, including pink or red marks, while this guide separates melanin-heavy pigment from primarily vascular erythema for practical treatment discussions.<sup class="citation-group">[<a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></p>
+<div class="table-scroll" role="region" aria-label="PIH, PIE and acne scar comparison table" tabindex="0"><table class="comparison-table"><caption>Practical comparison based on dermatology reviews and clinical guidance.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></caption>
 <thead><tr><th>Feature</th><th>PIH</th><th>PIE</th><th>True scar</th></tr></thead>
 <tbody>
 <tr><td>Texture</td><td>Flat</td><td>Flat</td><td>Indented or raised</td></tr>
@@ -836,63 +983,63 @@
 <tr><td>Often more visible in</td><td>Medium to deep skin tones</td><td>Lighter skin tones</td><td>Every skin tone</td></tr>
 <tr><td>Can fade without a procedure</td><td>Often, but slowly. Epidermal PIH generally responds better than deeper dermal PIH.</td><td>Often, but slowly</td><td>May soften or remodel, but usually does not fully disappear without scar-directed treatment</td></tr>
 </tbody>
-</table>
+</table></div>
 </section>
 <section id="treatment">
 <h2>Why PIH, PIE and acne scars need different treatment plans</h2>
-<p>There is overlap in prevention because every plan should reduce active acne, irritation and picking. After that, the treatment target changes.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-2">2</a></sup><sup><a href="#ref-12">12</a></sup></p>
+<p>There is overlap in prevention because every plan should reduce active acne, irritation and picking. After that, the treatment target changes.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-12" role="doc-noteref" aria-label="Reference 12">12</a>]</sup></p>
 <h3>For PIH: target pigment and prevent darkening</h3>
-<p>Daily broad-spectrum sunscreen, acne control and a tolerable pigment-focused active are the foundation. Evidence-supported options can include azelaic acid, topical retinoids, hydroquinone where appropriate, and selected chemical exfoliants. Hydroquinone access and rules vary by country. Chemical peels and lasers can worsen PIH when the method, strength, settings or aftercare are unsuitable, especially in pigment-prone skin. The exact choice depends on skin sensitivity, local regulations and whether active acne is still present. People who are pregnant or planning pregnancy should discuss acne treatment with a clinician, and topical retinoids are generally avoided during pregnancy.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-5">5</a></sup><sup><a href="#ref-11">11</a></sup><sup><a href="#ref-12">12</a></sup></p>
+<p>Daily broad-spectrum sunscreen, acne control and a tolerable pigment-focused active are the foundation. Evidence-supported options can include azelaic acid, topical retinoids, hydroquinone where appropriate, and selected chemical exfoliants. Hydroquinone access and rules vary by country. Chemical peels and lasers can worsen PIH when the method, strength, settings or aftercare are unsuitable, especially in pigment-prone skin. The exact choice depends on skin sensitivity, local regulations and whether active acne is still present. People who are pregnant or planning pregnancy should discuss acne treatment with a clinician, and topical retinoids are generally avoided during pregnancy.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-11" role="doc-noteref" aria-label="Reference 11">11</a>, <a href="#ref-12" role="doc-noteref" aria-label="Reference 12">12</a>]</sup></p>
 <div class="article-internal-links"><p>Read the complete routine in <a href="/blog/how-to-fade-post-acne-dark-spots">How to Fade Post-Acne Dark Spots Without Damaging Your Skin</a>. For a sunscreen example, see our <a href="/blog/beauty-of-joseon-relief-sun">Beauty of Joseon Relief Sun review</a>.</p></div>
 <h3>For PIE: reduce irritation and target vascular redness</h3>
-<p>PIE often improves gradually as healing continues. A gentle routine, sun protection and control of new acne reduce repeated inflammation. Professional treatments with vascular lasers or light devices have the most direct rationale, although the evidence base is smaller and more variable than many social posts suggest. A 2022 systematic review found promising results across vascular lasers, light devices and several topical approaches, but study quality and treatment protocols varied.<sup><a href="#ref-7">7</a></sup></p>
-<p>Azelaic acid may be useful when persistent redness exists alongside active acne or PIH. In a 2024 randomized, double-blind trial, 72 participants were enrolled and 60 completed 12 weeks of twice-daily 15% azelaic acid gel or vehicle. PIE outcomes showed clearer between-group benefit. PIH improved on some measures, including melanin content at week 12, but the main PIH lesion score improved from baseline in both groups. The result is promising, but the short, single study does not establish azelaic acid as a guaranteed treatment for every red or brown post-acne mark.<sup><a href="#ref-11">11</a></sup></p>
+<p>PIE often improves gradually as healing continues. A gentle routine, sun protection and control of new acne reduce repeated inflammation. Professional treatments with vascular lasers or light devices have the most direct rationale, although the evidence base is smaller and more variable than many social posts suggest. A 2022 systematic review found promising results across vascular lasers, light devices and several topical approaches, but study quality and treatment protocols varied.<sup class="citation-group">[<a href="#ref-7" role="doc-noteref" aria-label="Reference 7">7</a>]</sup></p>
+<p>Azelaic acid may be useful when persistent redness exists alongside active acne or PIH. In a 2024 randomized, double-blind trial, 72 participants were enrolled and 60 completed 12 weeks of twice-daily 15% azelaic acid gel or vehicle. PIE outcomes showed clearer between-group benefit. PIH improved on some measures, including melanin content at week 12, but the main PIH lesion score improved from baseline in both groups. The result is promising, but the short, single study does not establish azelaic acid as a guaranteed treatment for every red or brown post-acne mark.<sup class="citation-group">[<a href="#ref-11" role="doc-noteref" aria-label="Reference 11">11</a>]</sup></p>
 <h3>For atrophic scars: remodel or release the scar</h3>
-<p>Topical skincare can improve hydration and color, but it cannot fully rebuild a deep ice-pick scar or release a tethered rolling scar. Topical retinoids may gradually improve overall skin quality and discoloration, but they are not a pitted-scar removal treatment. Dermatologists may combine microneedling, fractional laser, subcision, TCA CROSS, fillers or surgical techniques. The best method depends on scar type, depth, skin tone, downtime and risk of post-inflammatory pigment change.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p><div class="warning-box"><span class="box-label">Do not DIY scar procedures</span><p>Do not attempt TCA CROSS, deep peels, subcision or aggressive microneedling at home. These are scar procedures, not normal skincare steps, and they can worsen pigment or scarring when performed incorrectly.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p></div>
+<p>Topical skincare can improve hydration and color, but it cannot fully rebuild a deep ice-pick scar or release a tethered rolling scar. Topical retinoids may gradually improve overall skin quality and discoloration, but they are not a pitted-scar removal treatment. Dermatologists may combine microneedling, fractional laser, subcision, TCA CROSS, fillers or surgical techniques. The best method depends on scar type, depth, skin tone, downtime and risk of post-inflammatory pigment change.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p><div class="warning-box"><span class="box-label">Do not DIY scar procedures</span><p>Do not attempt TCA CROSS, deep peels, subcision or aggressive microneedling at home. These are scar procedures, not normal skincare steps, and they can worsen pigment or scarring when performed incorrectly.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p></div>
 <h3>For hypertrophic scars and keloids: calm excess scar growth</h3>
-<p>Raised scars need a different plan from indented scars. Options may include silicone, corticosteroid injections, cryotherapy, vascular laser or surgery in selected cases. Keloids can recur, so care is often multimodal and should be supervised rather than approached as a one-time cosmetic removal.<sup><a href="#ref-10">10</a></sup></p>
+<p>Raised scars need a different plan from indented scars. Options may include silicone, corticosteroid injections, cryotherapy, vascular laser or surgery in selected cases. Keloids can recur, so care is often multimodal and should be supervised rather than approached as a one-time cosmetic removal.<sup class="citation-group">[<a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></p>
 </section>
 <section id="prevention">
 <h2>How to prevent new post-acne marks</h2>
 <p>The fastest mark to fade is the one that never forms. Prevention is less exciting than a viral serum, but it matters more.</p>
 <ul class="checklist">
-<li><strong>Treat active acne early.</strong> Deeper and longer-lasting inflammation raises the risk of pigment changes and scars.<sup><a href="#ref-8">8</a></sup><sup><a href="#ref-12">12</a></sup></li>
-<li><strong>Do not pick.</strong> Picking adds tissue injury and prolongs inflammation.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-2">2</a></sup><sup><a href="#ref-8">8</a></sup></li>
-<li><strong>Use sunscreen consistently.</strong> Ultraviolet and visible light can worsen pigment and make healing marks more noticeable.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-5">5</a></sup></li>
-<li><strong>Do not stack every active.</strong> Irritation can create more redness and PIH, especially in skin that pigments easily.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-5">5</a></sup></li>
-<li><strong>Escalate care when acne is scarring.</strong> Painful nodules, cysts or new indentations are reasons to see a dermatologist rather than waiting months.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-8">8</a></sup><sup><a href="#ref-12">12</a></sup></li>
+<li><strong>Treat active acne early.</strong> Deeper and longer-lasting inflammation raises the risk of pigment changes and scars.<sup class="citation-group">[<a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>, <a href="#ref-12" role="doc-noteref" aria-label="Reference 12">12</a>]</sup></li>
+<li><strong>Do not pick.</strong> Picking adds tissue injury and prolongs inflammation.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>]</sup></li>
+<li><strong>Use sunscreen consistently.</strong> Ultraviolet and visible light can worsen pigment and make healing marks more noticeable.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>]</sup></li>
+<li><strong>Do not stack every active.</strong> Irritation can create more redness and PIH, especially in skin that pigments easily.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>]</sup></li>
+<li><strong>Escalate care when acne is scarring.</strong> Painful nodules, cysts or new indentations are reasons to see a dermatologist rather than waiting months.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-8" role="doc-noteref" aria-label="Reference 8">8</a>, <a href="#ref-12" role="doc-noteref" aria-label="Reference 12">12</a>]</sup></li>
 </ul>
-<div class="article-internal-links"><p>If clogged pores and inflammatory breakouts are still creating new marks, read <a href="/blog/salicylic-acid-2">The Truth About Salicylic Acid 2%</a>. Evidence-based acne treatment remains the priority.<sup><a href="#ref-12">12</a></sup> Our <a href="/blog/hypochlorous-acid-face-spray">hypochlorous acid face spray guide</a> explains where HOCl may fit as a gentle support step and what the evidence does not prove.</p></div>
+<div class="article-internal-links"><p>If clogged pores and inflammatory breakouts are still creating new marks, read <a href="/blog/salicylic-acid-2">The Truth About Salicylic Acid 2%</a>. Evidence-based acne treatment remains the priority.<sup class="citation-group">[<a href="#ref-12" role="doc-noteref" aria-label="Reference 12">12</a>]</sup> Our <a href="/blog/hypochlorous-acid-face-spray">hypochlorous acid face spray guide</a> explains where HOCl may fit as a gentle support step and what the evidence does not prove.</p></div>
 <div class="pull-quote"><p>Flat color changes can fade. Structural scars need structural treatment.</p><span>The simplest PIH vs PIE rule</span></div>
 </section>
 <section class="faq-section" id="faq">
 <h2>Frequently asked questions</h2>
 <div class="faq-list">
-<div class="faq-item"><h3>How can I tell PIH from PIE?</h3><p>Both are flat. PIH is usually brown, gray or darker than your skin. PIE is usually red, pink, purple or dusky. Mixed red-brown marks are common.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-6">6</a></sup></p></div>
-<div class="faq-item"><h3>Are dark spots acne scars?</h3><p>Flat dark spots are usually PIH, not true scars. A true scar changes texture by creating an indentation or raised area.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-2">2</a></sup></p></div>
-<div class="faq-item"><h3>Does PIE blanch when pressed?</h3><p>Vascular redness may briefly lighten with gentle pressure, while pigment usually does not. This can be a clue, but it cannot diagnose PIE or rule out another cause of redness.<sup><a href="#ref-6">6</a></sup><sup><a href="#ref-7">7</a></sup></p></div>
-<div class="faq-item"><h3>Can PIH and PIE happen together?</h3><p>Yes. One healed pimple can leave both vascular redness and extra pigment. A textural scar can also have PIH or PIE over it.<sup><a href="#ref-5">5</a></sup><sup><a href="#ref-6">6</a></sup></p></div>
-<div class="faq-item"><h3>Do acne scars fade on their own?</h3><p>Redness and pigment over a scar may fade. Structural scars may soften or remodel over time, but they usually do not fully disappear without scar-directed treatment. Procedures can improve scars, but complete removal is not guaranteed.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-3">3</a></sup><sup><a href="#ref-10">10</a></sup></p></div>
-<div class="faq-item"><h3>Can skincare remove pitted acne scars?</h3><p>No topical product can fully lift a deep pitted scar. Skincare may improve color, hydration and overall appearance, while procedures target the scar structure.<sup><a href="#ref-3">3</a></sup><sup><a href="#ref-9">9</a></sup></p></div>
-<div class="faq-item"><h3>Which acne marks take longest to fade?</h3><p>Dermal gray-brown PIH and persistent vascular erythema can be slow. Textural scars are least likely to resolve fully without scar-directed treatment.<sup><a href="#ref-2">2</a></sup><sup><a href="#ref-4">4</a></sup><sup><a href="#ref-7">7</a></sup></p></div>
-<div class="faq-item"><h3>When should I see a dermatologist?</h3><p>Seek professional care for painful cystic acne, new indentations, raised scars, keloids, sudden unexplained discoloration or marks that are not improving despite a consistent gentle routine.<sup><a href="#ref-1">1</a></sup><sup><a href="#ref-10">10</a></sup><sup><a href="#ref-12">12</a></sup></p></div>
+<div class="faq-item"><h3>How can I tell PIH from PIE?</h3><p>Both are flat. PIH is usually brown, gray or darker than your skin. PIE is usually red, pink, purple or dusky. Mixed red-brown marks are common.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>]</sup></p></div>
+<div class="faq-item"><h3>Are dark spots acne scars?</h3><p>Flat dark spots are usually PIH, not true scars. A true scar changes texture by creating an indentation or raised area.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>]</sup></p></div>
+<div class="faq-item"><h3>Does PIE blanch when pressed?</h3><p>Vascular redness may briefly lighten with gentle pressure, while pigment usually does not. This can be a clue, but it cannot diagnose PIE or rule out another cause of redness.<sup class="citation-group">[<a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>, <a href="#ref-7" role="doc-noteref" aria-label="Reference 7">7</a>]</sup></p></div>
+<div class="faq-item"><h3>Can PIH and PIE happen together?</h3><p>Yes. One healed pimple can leave both vascular redness and extra pigment. A textural scar can also have PIH or PIE over it.<sup class="citation-group">[<a href="#ref-5" role="doc-noteref" aria-label="Reference 5">5</a>, <a href="#ref-6" role="doc-noteref" aria-label="Reference 6">6</a>]</sup></p></div>
+<div class="faq-item"><h3>Do acne scars fade on their own?</h3><p>Redness and pigment over a scar may fade. Structural scars may soften or remodel over time, but they usually do not fully disappear without scar-directed treatment. Procedures can improve scars, but complete removal is not guaranteed.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>]</sup></p></div>
+<div class="faq-item"><h3>Can skincare remove pitted acne scars?</h3><p>No topical product can fully lift a deep pitted scar. Skincare may improve color, hydration and overall appearance, while procedures target the scar structure.<sup class="citation-group">[<a href="#ref-3" role="doc-noteref" aria-label="Reference 3">3</a>, <a href="#ref-9" role="doc-noteref" aria-label="Reference 9">9</a>]</sup></p></div>
+<div class="faq-item"><h3>Which acne marks take longest to fade?</h3><p>Dermal gray-brown PIH and persistent vascular erythema can be slow. Textural scars are least likely to resolve fully without scar-directed treatment.<sup class="citation-group">[<a href="#ref-2" role="doc-noteref" aria-label="Reference 2">2</a>, <a href="#ref-4" role="doc-noteref" aria-label="Reference 4">4</a>, <a href="#ref-7" role="doc-noteref" aria-label="Reference 7">7</a>]</sup></p></div>
+<div class="faq-item"><h3>When should I see a dermatologist?</h3><p>Seek professional care for painful cystic acne, new indentations, raised scars, keloids, sudden unexplained discoloration or marks that are not improving despite a consistent gentle routine.<sup class="citation-group">[<a href="#ref-1" role="doc-noteref" aria-label="Reference 1">1</a>, <a href="#ref-10" role="doc-noteref" aria-label="Reference 10">10</a>, <a href="#ref-12" role="doc-noteref" aria-label="Reference 12">12</a>]</sup></p></div>
 </div>
 </section>
 <section class="references" id="references">
 <h2>Sources</h2>
 <ol>
-<li id="ref-1"><strong>DermNet.</strong> Acne Scarring. <a href="https://dermnetnz.org/topics/acne-scarring" rel="noopener noreferrer" target="_blank">DermNet</a>. Accessed July 27, 2026.</li>
-<li id="ref-2"><strong>DermNet.</strong> Postinflammatory hyperpigmentation. <a href="https://dermnetnz.org/topics/postinflammatory-hyperpigmentation" rel="noopener noreferrer" target="_blank">DermNet</a>. Accessed July 27, 2026.</li>
-<li id="ref-3"><strong>Fabbrocini G, Annunziata MC, D'Arco V, et al.</strong> Acne scars: pathogenesis, classification and treatment. <em>Dermatol Res Pract.</em> 2010;2010:893080. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2958495/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1155/2010/893080" rel="noopener noreferrer" target="_blank">doi:10.1155/2010/893080</a>. PMCID: PMC2958495.</li>
-<li id="ref-4"><strong>Silpa-Archa N, Kohli I, Chaowattanapanit S, Lim HW, Hamzavi I.</strong> Postinflammatory hyperpigmentation: A comprehensive overview: Epidemiology, pathogenesis, clinical presentation, and noninvasive assessment technique. <em>J Am Acad Dermatol.</em> 2017;77(4):591-605. <a href="https://pubmed.ncbi.nlm.nih.gov/28917451/" rel="noopener noreferrer" target="_blank">PubMed</a>. <a href="https://doi.org/10.1016/j.jaad.2017.01.035" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jaad.2017.01.035</a>. PMID: 28917451.</li>
-<li id="ref-5"><strong>Elbuluk N, Grimes P, Chien A, et al.</strong> The Pathogenesis and Management of Acne-Induced Post-inflammatory Hyperpigmentation. <em>Am J Clin Dermatol.</em> 2021;22(6):829-836. <a href="https://pubmed.ncbi.nlm.nih.gov/34468934/" rel="noopener noreferrer" target="_blank">PubMed</a>. <a href="https://doi.org/10.1007/s40257-021-00633-4" rel="noopener noreferrer" target="_blank">doi:10.1007/s40257-021-00633-4</a>. PMID: 34468934.</li>
-<li id="ref-6"><strong>Bae-Harboe YSC, Graber EM.</strong> Easy as PIE: Postinflammatory Erythema. <em>J Clin Aesthet Dermatol.</em> 2013;6(9):46-47. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3780804/" rel="noopener noreferrer" target="_blank">Full text</a>. PMCID: PMC3780804.</li>
-<li id="ref-7"><strong>Kalantari Y, Dadkhahfar S, Etesami I.</strong> Post-acne erythema treatment: a systematic review of the literature. <em>J Cosmet Dermatol.</em> 2022;21(4):1379-1392. <a href="https://pubmed.ncbi.nlm.nih.gov/35076997/" rel="noopener noreferrer" target="_blank">PubMed</a>. <a href="https://doi.org/10.1111/jocd.14804" rel="noopener noreferrer" target="_blank">doi:10.1111/jocd.14804</a>. PMID: 35076997.</li>
-<li id="ref-8"><strong>Layton A, Alexis A, Baldwin H, et al.</strong> Identifying gaps and providing recommendations to address shortcomings in the investigation of acne sequelae by the Personalising Acne: Consensus of Experts panel. <em>JAAD Int.</em> 2021;5:41-48. Modified Delphi expert consensus. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8593750/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1016/j.jdin.2021.06.006" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jdin.2021.06.006</a>. PMID: 34816133. PMCID: PMC8593750.</li>
-<li id="ref-9"><strong>Kravvas G, Al-Niaimi F.</strong> A systematic review of treatments for acne scarring. Part 1: Non-energy-based techniques. <em>Scars Burn Heal.</em> 2017;3:2059513117695312. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5965325/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1177/2059513117695312" rel="noopener noreferrer" target="_blank">doi:10.1177/2059513117695312</a>. PMCID: PMC5965325.</li>
-<li id="ref-10"><strong>Limandjaja GC, Niessen FB, Scheper RJ, Gibbs S.</strong> Hypertrophic scars and keloids: overview of the evidence and practical guide for differentiating between these abnormal scars. <em>Exp Dermatol.</em> 2021;30(1):146-161. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7818137/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1111/exd.14121" rel="noopener noreferrer" target="_blank">doi:10.1111/exd.14121</a>. PMCID: PMC7818137.</li>
-<li id="ref-11"><strong>Shucheng H, Zhou X, Du D, et al.</strong> Effects of 15% Azelaic Acid Gel in the Management of Post-Inflammatory Erythema and Post-Inflammatory Hyperpigmentation in Acne Vulgaris. <em>Dermatol Ther (Heidelb).</em> 2024;14(5):1293-1314. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11116308/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1007/s13555-024-01176-2" rel="noopener noreferrer" target="_blank">doi:10.1007/s13555-024-01176-2</a>. PMCID: PMC11116308.</li>
-<li id="ref-12"><strong>Reynolds RV, Yeung H, Cheng CE, et al.</strong> Guidelines of care for the management of acne vulgaris. <em>J Am Acad Dermatol.</em> 2024;90(5):1006.e1-1006.e30. <a href="https://www.aad.org/member/clinical-quality/guidelines/acne" rel="noopener noreferrer" target="_blank">Current AAD guideline page</a>. <a href="https://doi.org/10.1016/j.jaad.2023.12.017" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jaad.2023.12.017</a>. PMID: 38300170.</li>
+<li id="ref-1" value="1"><strong>DermNet.</strong> Acne Scarring. <a href="https://dermnetnz.org/topics/acne-scarring" rel="noopener noreferrer" target="_blank">DermNet</a>. Accessed July 27, 2026.</li>
+<li id="ref-2" value="2"><strong>DermNet.</strong> Postinflammatory hyperpigmentation. <a href="https://dermnetnz.org/topics/postinflammatory-hyperpigmentation" rel="noopener noreferrer" target="_blank">DermNet</a>. Accessed July 27, 2026.</li>
+<li id="ref-3" value="3"><strong>Fabbrocini G, Annunziata MC, D'Arco V, et al.</strong> Acne scars: pathogenesis, classification and treatment. <em>Dermatol Res Pract.</em> 2010;2010:893080. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2958495/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1155/2010/893080" rel="noopener noreferrer" target="_blank">doi:10.1155/2010/893080</a>. PMCID: PMC2958495.</li>
+<li id="ref-4" value="4"><strong>Silpa-Archa N, Kohli I, Chaowattanapanit S, Lim HW, Hamzavi I.</strong> Postinflammatory hyperpigmentation: A comprehensive overview: Epidemiology, pathogenesis, clinical presentation, and noninvasive assessment technique. <em>J Am Acad Dermatol.</em> 2017;77(4):591-605. <a href="https://pubmed.ncbi.nlm.nih.gov/28917451/" rel="noopener noreferrer" target="_blank">PubMed</a>. <a href="https://doi.org/10.1016/j.jaad.2017.01.035" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jaad.2017.01.035</a>. PMID: 28917451.</li>
+<li id="ref-5" value="5"><strong>Elbuluk N, Grimes P, Chien A, et al.</strong> The Pathogenesis and Management of Acne-Induced Post-inflammatory Hyperpigmentation. <em>Am J Clin Dermatol.</em> 2021;22(6):829-836. <a href="https://pubmed.ncbi.nlm.nih.gov/34468934/" rel="noopener noreferrer" target="_blank">PubMed</a>. <a href="https://doi.org/10.1007/s40257-021-00633-4" rel="noopener noreferrer" target="_blank">doi:10.1007/s40257-021-00633-4</a>. PMID: 34468934.</li>
+<li id="ref-6" value="6"><strong>Bae-Harboe YSC, Graber EM.</strong> Easy as PIE: Postinflammatory Erythema. <em>J Clin Aesthet Dermatol.</em> 2013;6(9):46-47. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3780804/" rel="noopener noreferrer" target="_blank">Full text</a>. PMCID: PMC3780804.</li>
+<li id="ref-7" value="7"><strong>Kalantari Y, Dadkhahfar S, Etesami I.</strong> Post-acne erythema treatment: a systematic review of the literature. <em>J Cosmet Dermatol.</em> 2022;21(4):1379-1392. <a href="https://pubmed.ncbi.nlm.nih.gov/35076997/" rel="noopener noreferrer" target="_blank">PubMed</a>. <a href="https://doi.org/10.1111/jocd.14804" rel="noopener noreferrer" target="_blank">doi:10.1111/jocd.14804</a>. PMID: 35076997.</li>
+<li id="ref-8" value="8"><strong>Layton A, Alexis A, Baldwin H, et al.</strong> Identifying gaps and providing recommendations to address shortcomings in the investigation of acne sequelae by the Personalising Acne: Consensus of Experts panel. <em>JAAD Int.</em> 2021;5:41-48. Modified Delphi expert consensus. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8593750/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1016/j.jdin.2021.06.006" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jdin.2021.06.006</a>. PMID: 34816133. PMCID: PMC8593750.</li>
+<li id="ref-9" value="9"><strong>Kravvas G, Al-Niaimi F.</strong> A systematic review of treatments for acne scarring. Part 1: Non-energy-based techniques. <em>Scars Burn Heal.</em> 2017;3:2059513117695312. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5965325/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1177/2059513117695312" rel="noopener noreferrer" target="_blank">doi:10.1177/2059513117695312</a>. PMCID: PMC5965325.</li>
+<li id="ref-10" value="10"><strong>Limandjaja GC, Niessen FB, Scheper RJ, Gibbs S.</strong> Hypertrophic scars and keloids: overview of the evidence and practical guide for differentiating between these abnormal scars. <em>Exp Dermatol.</em> 2021;30(1):146-161. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7818137/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1111/exd.14121" rel="noopener noreferrer" target="_blank">doi:10.1111/exd.14121</a>. PMCID: PMC7818137.</li>
+<li id="ref-11" value="11"><strong>Shucheng H, Zhou X, Du D, et al.</strong> Effects of 15% Azelaic Acid Gel in the Management of Post-Inflammatory Erythema and Post-Inflammatory Hyperpigmentation in Acne Vulgaris. <em>Dermatol Ther (Heidelb).</em> 2024;14(5):1293-1314. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11116308/" rel="noopener noreferrer" target="_blank">Full text</a>. <a href="https://doi.org/10.1007/s13555-024-01176-2" rel="noopener noreferrer" target="_blank">doi:10.1007/s13555-024-01176-2</a>. PMCID: PMC11116308.</li>
+<li id="ref-12" value="12"><strong>Reynolds RV, Yeung H, Cheng CE, et al.</strong> Guidelines of care for the management of acne vulgaris. <em>J Am Acad Dermatol.</em> 2024;90(5):1006.e1-1006.e30. <a href="https://www.aad.org/member/clinical-quality/guidelines/acne" rel="noopener noreferrer" target="_blank">Current AAD guideline page</a>. <a href="https://doi.org/10.1016/j.jaad.2023.12.017" rel="noopener noreferrer" target="_blank">doi:10.1016/j.jaad.2023.12.017</a>. PMID: 38300170.</li>
 </ol>
 </section>
 <p class="disclaimer"><strong>Medical disclaimer:</strong> This article is for general education and does not replace diagnosis or treatment from a qualified clinician. Seek medical advice for severe acne, painful nodules, new scars, raised scars, keloids, unexplained discoloration or a significant skincare reaction.</p>
