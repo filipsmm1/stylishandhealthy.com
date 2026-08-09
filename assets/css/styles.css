@@ -959,3 +959,22 @@ nav ul#primary-navigation a[href="/journal"] {
     min-width: 0;
   }
 }
+/* Contextual article links added as part of the site-wide SEO structure. */
+.seo-context-links {
+  margin: 34px 0;
+  padding: 22px 24px;
+  border: 1px solid rgba(85, 107, 62, 0.18);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.seo-context-links p {
+  margin: 0;
+}
+
+.seo-context-links a {
+  color: var(--green-dk);
+  font-weight: 600;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
