@@ -11,9 +11,19 @@ EXCLUDE_DIRS = {
     ".git", ".github", "node_modules", "assets", "images", "img",
     "css", "js", "fonts"
 }
+EXCLUDE_FILES = {
+    # Compatibility redirect; the canonical article lives at /blog/introduction.
+    "introduction.html",
+}
 
 def git_lastmod(path: Path) -> str:
     try:
+        status = subprocess.check_output(
+            ["git", "status", "--porcelain", "--", str(path)],
+            text=True
+        ).strip()
+        if status:
+            return datetime.now(timezone.utc).date().isoformat()
         out = subprocess.check_output(
             ["git", "log", "-1", "--format=%cI", "--", str(path)],
             text=True
@@ -28,7 +38,9 @@ def should_skip(path: Path) -> bool:
         return True
     name = path.name.lower()
     return (
-        name.startswith("404")
+        path.as_posix() in EXCLUDE_FILES
+        or name in EXCLUDE_FILES
+        or name.startswith("404")
         or name in {"sitemap.xml", "robots.txt"}
         or "draft" in parts
         or "backup" in parts
