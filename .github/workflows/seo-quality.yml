@@ -27,5 +27,5 @@ jobs:
       - name: Validate canonicals, schema, links, redirects, and sitemap
         run: python .github/scripts/validate_seo.py
 
-      - name: Verify 100 quick answers against published article FAQs
+      - name: Verify 600 quick answers against published articles
         run: python .github/scripts/generate_quick_answers.py --check

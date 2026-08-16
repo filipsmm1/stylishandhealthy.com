@@ -7,7 +7,7 @@
 <meta content="#f7f1e8" name="theme-color"/>
 <meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
 <title>Quick Answers: Search Our Skincare &amp; Wellness Guides</title>
-<meta content="Search 100 short, clear skincare and wellness answers, each linked to a full research-backed Stylishandhealthy guide." name="description"/>
+<meta content="Search 600 short, clear skincare and wellness answers, each linked to a full research-backed Stylishandhealthy guide." name="description"/>
 <link href="/assets/images/logo_main.png" rel="icon" type="image/png"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -16,12 +16,12 @@
 <link href="https://stylishandhealthy.com/answers" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Quick Answers: Search Our Skincare &amp; Wellness Guides" property="og:title"/>
-<meta content="Search 100 short answers, then open the full Stylishandhealthy guide behind each one." property="og:description"/>
+<meta content="Search 600 short answers, then open the full Stylishandhealthy guide behind each one." property="og:description"/>
 <meta content="https://stylishandhealthy.com/answers" property="og:url"/>
 <meta content="https://stylishandhealthy.com/assets/images/youtube_banner.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Quick Answers: Search Our Skincare &amp; Wellness Guides" name="twitter:title"/>
-<meta content="Search 100 short answers, then open the full Stylishandhealthy guide behind each one." name="twitter:description"/>
+<meta content="Search 600 short answers, then open the full Stylishandhealthy guide behind each one." name="twitter:description"/>
 <meta content="https://stylishandhealthy.com/assets/images/youtube_banner.png" name="twitter:image"/>
 <script type="application/ld+json">
 {
@@ -29,7 +29,7 @@
   "@type": "WebPage",
   "name": "Stylishandhealthy Quick Answers",
   "url": "https://stylishandhealthy.com/answers",
-  "description": "Search 100 short, clear skincare and wellness answers linked to full research-backed guides.",
+  "description": "Search 600 short, clear skincare and wellness answers linked to full research-backed guides.",
   "isPartOf": {
     "@type": "WebSite",
     "name": "Stylishandhealthy",
@@ -270,6 +270,17 @@
     text-transform: uppercase;
   }
   .answer-card { max-width: 850px; }
+  .answer-results-count { margin-top: 8px; }
+  .answer-results-grid { display: grid; gap: 20px; margin-top: 30px; }
+  .answer-result-card {
+    max-width: none;
+    padding: 28px;
+    border: 1px solid rgba(76,104,83,.15);
+    border-radius: 22px;
+    background: rgba(255,255,255,.62);
+  }
+  .answer-result-card .answer-question { font-size: clamp(1.25rem, 2.4vw, 1.75rem); }
+  .answer-result-card .answer-copy { font-size: 1rem; }
   .answer-topic {
     display: inline-flex;
     margin-bottom: 18px;
@@ -403,6 +414,7 @@
     .example-prompts { justify-content: flex-start; }
     .answers-main { width: min(100% - 24px, 1120px); margin-top: -62px; }
     .answer-panel { border-radius: 24px; padding: 26px 20px; }
+    .answer-result-card { padding: 22px 18px; }
     .popular-grid,
     .related-grid { grid-template-columns: 1fr; }
     .answer-source { align-items: stretch; flex-direction: column; }
@@ -433,7 +445,7 @@
 <main id="main-content">
   <section class="answers-hero" aria-labelledby="answers-title">
     <div class="answers-hero-inner">
-      <div class="answers-kicker">100 evidence-linked answers</div>
+      <div class="answers-kicker">600 evidence-linked answers</div>
       <h1 id="answers-title">Search anything you <em>want to know.</em></h1>
       <p class="answers-hero-copy">Get a clear answer in seconds. Every answer comes from one of our full research-backed guides, so you can keep reading when you want the details.</p>
       <div class="answers-form-wrap">
@@ -466,7 +478,7 @@
       <div>
         <div class="sl">Short answer, full context</div>
         <h2 id="how-it-works-title">Fast does not mean <em>made up.</em></h2>
-        <p>This search does not generate new medical claims. It finds the closest match among 100 answers already covered in our long-form articles and links you straight to the full guide.</p>
+        <p>This search does not generate new medical claims. It finds matching answers among 600 questions already covered in our long-form articles and links you straight to the full guide.</p>
       </div>
       <div class="answer-steps">
         <div class="answer-step">
