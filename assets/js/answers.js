@@ -75,7 +75,7 @@
 
   const tokenSimilarity = (queryToken, targetToken) => {
     if (queryToken === targetToken) return 1;
-    if (queryToken.length >= 4 && (targetToken.startsWith(queryToken) || queryToken.startsWith(targetToken))) return .88;
+    if (queryToken.length >= 4 && targetToken.length >= 4 && (targetToken.startsWith(queryToken) || queryToken.startsWith(targetToken))) return .88;
     if (queryToken.length < 4 || targetToken.length < 4) return 0;
     const distance = editDistance(queryToken, targetToken);
     const similarity = 1 - distance / Math.max(queryToken.length, targetToken.length);
@@ -126,9 +126,29 @@
   };
 
   const findMatches = query => searchableEntries
-    .map(record => ({ entry: record.entry, score: scoreEntry(record, query) }))
+    .map(record => ({ entry: record.entry, score: scoreEntry(record, query), record }))
     .filter(item => item.score > 0)
     .sort((left, right) => right.score - left.score || left.entry.question.localeCompare(right.entry.question));
+
+  const isBroadQuery = rawQuery => {
+    const normalizedQuery = normalize(rawQuery);
+    const words = normalizedQuery.split(' ').filter(Boolean);
+    const questionIntent = /^(can|could|do|does|how|is|are|should|what|when|where|which|who|why|will|would)\b/.test(normalizedQuery);
+    return !questionIntent && tokenize(normalizedQuery).length <= 2 && words.length <= 3;
+  };
+
+  const isCompleteBroadMatch = (record, rawQuery) => tokenize(rawQuery).every(queryToken =>
+    record.corpusTokens.includes(queryToken)
+  );
+
+  const questionCoverage = (record, rawQuery) => {
+    const queryTokens = tokenize(rawQuery);
+    if (!queryTokens.length) return 0;
+    const matched = queryTokens.filter(queryToken =>
+      record.questionTokens.some(targetToken => tokenSimilarity(queryToken, targetToken) >= .68)
+    ).length;
+    return matched / queryTokens.length;
+  };
 
   const clearElement = element => {
     while (element.firstChild) element.removeChild(element.firstChild);
@@ -176,7 +196,7 @@
     clearElement(result);
     const heading = element('h2', 'answer-state-heading', 'What are you curious about?');
     heading.id = 'answer-state-title';
-    const copy = element('p', 'answer-state-copy', 'Ask in your own words, or start with one of these popular questions. We will find the closest answer among 100 topics already covered on the blog.');
+    const copy = element('p', 'answer-state-copy', 'Ask in your own words, or start with one of these popular questions. Search a broad topic to see every relevant answer, or ask a full question for one precise match among 600 evidence-linked answers.');
     const grid = element('div', 'popular-grid');
     const used = new Set();
 
@@ -200,39 +220,49 @@
     result.append(heading, copy, link);
   };
 
-  const renderAnswer = (best, related, { focusResult = true } = {}) => {
-    clearElement(result);
-    const card = element('div', 'answer-card');
-    const topic = element('span', 'answer-topic', best.topic);
-    const heading = element('h2', 'answer-question', best.question);
-    heading.id = 'answer-state-title';
-    const copy = element('p', 'answer-copy', best.answer);
+  const buildAnswerCard = (entry, { primary = false } = {}) => {
+    const card = element('article', primary ? 'answer-card' : 'answer-card answer-result-card');
+    const topic = element('span', 'answer-topic', entry.topic);
+    const heading = element('h2', 'answer-question', entry.question);
+    if (primary) heading.id = 'answer-state-title';
+    const copy = element('p', 'answer-copy', entry.answer);
 
     const source = element('div', 'answer-source');
     const sourceCopy = element('div', 'answer-source-copy');
     sourceCopy.append(
       element('small', '', 'Full answer and context'),
-      element('strong', '', best.article)
+      element('strong', '', entry.article)
     );
     const sourceLink = element('a', 'answer-source-link', 'Read the full guide →');
-    sourceLink.href = best.url;
+    sourceLink.href = entry.url;
     source.append(sourceCopy, sourceLink);
     card.append(topic, heading, copy, source);
-    result.appendChild(card);
+    return card;
+  };
 
-    if (related.length) {
-      const relatedWrap = element('div', 'related-wrap');
-      relatedWrap.appendChild(element('h3', '', 'Related questions'));
-      const relatedGrid = element('div', 'related-grid');
-      related.forEach(entry => relatedGrid.appendChild(questionButton(entry, 'related-question')));
-      relatedWrap.appendChild(relatedGrid);
-      result.appendChild(relatedWrap);
-    }
+  const focusAnswerPanel = () => {
+    panel.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' });
+  };
+
+  const renderAnswer = (best, { focusResult = true } = {}) => {
+    clearElement(result);
+    result.appendChild(buildAnswerCard(best, { primary: true }));
 
     result.appendChild(element('p', 'answer-note', 'This is a short educational summary. Open the linked guide for sources, limitations, safety details, and the complete explanation.'));
-    if (focusResult) {
-      panel.scrollIntoView({ behavior: reducedMotion.matches ? 'auto' : 'smooth', block: 'start' });
-    }
+    if (focusResult) focusAnswerPanel();
+  };
+
+  const renderBroadResults = (query, matches, { focusResult = true } = {}) => {
+    clearElement(result);
+    const heading = element('h2', 'answer-state-heading', `All answers about “${query}”`);
+    heading.id = 'answer-state-title';
+    const countLabel = `${matches.length} relevant ${matches.length === 1 ? 'answer' : 'answers'} found`;
+    const count = element('p', 'answer-state-copy answer-results-count', countLabel);
+    const grid = element('div', 'answer-results-grid');
+    matches.forEach(({ entry }) => grid.appendChild(buildAnswerCard(entry)));
+    result.append(heading, count, grid);
+    result.appendChild(element('p', 'answer-note', 'Each short answer is grounded in the linked full guide. Open a guide for sources, limitations, safety details, and complete context.'));
+    if (focusResult) focusAnswerPanel();
   };
 
   function showAnswer(rawQuery, { focusResult = true } = {}) {
@@ -248,18 +278,28 @@
     }
 
     const matches = findMatches(query);
-    const best = matches[0];
-    if (!best || best.score < 48) {
+    if (!matches.length || matches[0].score < 48) {
       renderNoMatch(query);
       return;
     }
 
-    const related = matches
-      .slice(1)
-      .filter(item => item.score >= 38 && item.entry.url !== best.entry.url)
-      .slice(0, 3)
-      .map(item => item.entry);
-    renderAnswer(best.entry, related, { focusResult });
+    if (isBroadQuery(query)) {
+      const broadMatches = matches.filter(item => item.score >= 48 && isCompleteBroadMatch(item.record, query));
+      renderBroadResults(query, broadMatches, { focusResult });
+      return;
+    }
+
+    const specificMatches = matches
+      .map(item => ({ ...item, questionCoverage: questionCoverage(item.record, query) }))
+      .filter(item => item.questionCoverage >= .5)
+      .sort((left, right) => right.questionCoverage - left.questionCoverage || right.score - left.score);
+    const best = specificMatches[0];
+    if (!best) {
+      renderNoMatch(query);
+      return;
+    }
+
+    renderAnswer(best.entry, { focusResult });
   }
 
   const renderSuggestions = query => {
@@ -327,7 +367,7 @@
     if (!event.target.closest('.answers-form-wrap')) hideSuggestions();
   });
 
-  if (entries.length !== 100) {
+  if (entries.length !== 600) {
     clearElement(result);
     result.appendChild(element('p', 'answer-state-copy', 'Quick Answers are being updated. Please browse the full blog for now.'));
     return;
