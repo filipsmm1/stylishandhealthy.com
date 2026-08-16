@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="/assets/js/consent.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#f7f1e8" name="theme-color"/>
+<meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
+<title>Quick Answers: Search Our Skincare &amp; Wellness Guides</title>
+<meta content="Search 100 short, clear skincare and wellness answers, each linked to a full research-backed Stylishandhealthy guide." name="description"/>
+<link href="/assets/images/logo_main.png" rel="icon" type="image/png"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="/assets/css/styles.css" rel="stylesheet"/>
+<link href="https://stylishandhealthy.com/answers" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Quick Answers: Search Our Skincare &amp; Wellness Guides" property="og:title"/>
+<meta content="Search 100 short answers, then open the full Stylishandhealthy guide behind each one." property="og:description"/>
+<meta content="https://stylishandhealthy.com/answers" property="og:url"/>
+<meta content="https://stylishandhealthy.com/assets/images/youtube_banner.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Quick Answers: Search Our Skincare &amp; Wellness Guides" name="twitter:title"/>
+<meta content="Search 100 short answers, then open the full Stylishandhealthy guide behind each one." name="twitter:description"/>
+<meta content="https://stylishandhealthy.com/assets/images/youtube_banner.png" name="twitter:image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Stylishandhealthy Quick Answers",
+  "url": "https://stylishandhealthy.com/answers",
+  "description": "Search 100 short, clear skincare and wellness answers linked to full research-backed guides.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Stylishandhealthy",
+    "url": "https://stylishandhealthy.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://stylishandhealthy.com/answers?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+}
+</script>
+<style>
+  .answers-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 96px 24px 136px;
+    background:
+      radial-gradient(circle at 12% 18%, rgba(248,214,222,.5), transparent 30%),
+      radial-gradient(circle at 88% 4%, rgba(220,236,240,.55), transparent 28%),
+      var(--green-dk);
+    color: var(--cream);
+  }
+  .answers-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: .35;
+    background-image: radial-gradient(rgba(247,241,232,.16) .65px, transparent .65px);
+    background-size: 23px 23px;
+    pointer-events: none;
+  }
+  .answers-hero-inner {
+    position: relative;
+    z-index: 1;
+    width: min(920px, 100%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .answers-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 22px;
+    color: var(--pink-mid);
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .answers-kicker::before,
+  .answers-kicker::after {
+    content: '';
+    width: 26px;
+    height: 1px;
+    background: currentColor;
+  }
+  .answers-hero h1 {
+    max-width: 760px;
+    margin: 0 auto;
+    font-family: var(--display);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 400;
+    line-height: .98;
+    letter-spacing: -.045em;
+  }
+  .answers-hero h1 em {
+    color: var(--pink-mid);
+    font-weight: 400;
+  }
+  .answers-hero-copy {
+    max-width: 630px;
+    margin: 24px auto 34px;
+    color: rgba(247,241,232,.76);
+    font-size: clamp(.98rem, 2vw, 1.12rem);
+    line-height: 1.75;
+  }
+  .answers-form-wrap {
+    position: relative;
+    width: min(780px, 100%);
+    margin: 0 auto;
+    text-align: left;
+  }
+  .answers-label {
+    display: block;
+    margin: 0 0 9px 18px;
+    color: rgba(247,241,232,.82);
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .answers-form {
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    border: 1px solid rgba(247,241,232,.3);
+    border-radius: 999px;
+    background: var(--cream);
+    box-shadow: 0 24px 70px rgba(25,36,18,.32);
+  }
+  .answers-form input {
+    min-width: 0;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--brown);
+    font: 500 1rem/1.4 var(--body);
+    padding: 13px 16px 13px 20px;
+    cursor: text;
+  }
+  .answers-form input::placeholder { color: rgba(58,42,34,.48); }
+  .answers-form button {
+    flex: 0 0 auto;
+    border: 0;
+    border-radius: 999px;
+    padding: 13px 24px;
+    background: var(--pink-deep);
+    color: #321f1c;
+    font: 600 .86rem/1 var(--body);
+    letter-spacing: .03em;
+    transition: transform .18s var(--easeb), background .2s;
+  }
+  .answers-form button:hover { background: var(--pink-mid); transform: translateY(-1px); }
+  .answer-suggestions {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 9px);
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border: 1px solid rgba(85,107,62,.14);
+    border-radius: 20px;
+    background: var(--cream);
+    box-shadow: 0 22px 60px rgba(28,36,22,.2);
+  }
+  .answer-suggestions[hidden] { display: none; }
+  .answer-suggestion {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 0;
+    border-bottom: 1px solid rgba(85,107,62,.09);
+    padding: 14px 18px;
+    background: transparent;
+    color: var(--brown);
+    font: 500 .9rem/1.35 var(--body);
+    text-align: left;
+  }
+  .answer-suggestion:last-child { border-bottom: 0; }
+  .answer-suggestion:hover,
+  .answer-suggestion:focus-visible { background: rgba(248,214,222,.42); }
+  .answer-suggestion span:last-child {
+    flex: 0 0 auto;
+    color: var(--green);
+    font-size: .68rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .example-prompts {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  .example-prompts button {
+    border: 1px solid rgba(247,241,232,.25);
+    border-radius: 999px;
+    padding: 8px 13px;
+    background: rgba(247,241,232,.08);
+    color: rgba(247,241,232,.82);
+    font: 500 .76rem/1.2 var(--body);
+  }
+  .example-prompts button:hover { border-color: var(--pink-mid); color: var(--cream); }
+  .answers-main {
+    position: relative;
+    z-index: 2;
+    width: min(1120px, calc(100% - 40px));
+    margin: -78px auto 0;
+  }
+  .answer-panel {
+    min-height: 280px;
+    border: 1px solid rgba(58,42,34,.07);
+    border-radius: 30px 22px 34px 24px / 24px 34px 22px 30px;
+    padding: clamp(28px, 5vw, 58px);
+    background: var(--cream);
+    box-shadow: 0 22px 70px rgba(62,78,47,.12);
+  }
+  .answer-state-heading {
+    margin-bottom: 12px;
+    color: var(--green-dk);
+    font-family: var(--display);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 400;
+    line-height: 1.08;
+  }
+  .answer-state-copy { max-width: 660px; color: var(--brown-lt); line-height: 1.75; }
+  .popular-grid,
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .popular-question,
+  .related-question {
+    display: flex;
+    min-height: 112px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid rgba(85,107,62,.12);
+    border-radius: 18px;
+    padding: 18px;
+    background: var(--cream-warm);
+    color: var(--green-dk);
+    text-align: left;
+    transition: transform .2s var(--ease), border-color .2s, box-shadow .2s;
+  }
+  .popular-question:hover,
+  .related-question:hover {
+    transform: translateY(-3px);
+    border-color: rgba(85,107,62,.3);
+    box-shadow: 0 12px 30px rgba(85,107,62,.09);
+  }
+  .popular-question strong,
+  .related-question strong { font: 500 .93rem/1.45 var(--body); }
+  .popular-question span,
+  .related-question span {
+    color: var(--pink-deep);
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .answer-card { max-width: 850px; }
+  .answer-topic {
+    display: inline-flex;
+    margin-bottom: 18px;
+    border-radius: 999px;
+    padding: 7px 12px;
+    background: var(--pink);
+    color: var(--green-dk);
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+  }
+  .answer-question {
+    color: var(--green-dk);
+    font-family: var(--display);
+    font-size: clamp(2rem, 4.7vw, 3.75rem);
+    font-weight: 400;
+    line-height: 1.06;
+    letter-spacing: -.025em;
+  }
+  .answer-copy {
+    margin-top: 24px;
+    color: var(--brown);
+    font-size: clamp(1.05rem, 2vw, 1.28rem);
+    line-height: 1.72;
+  }
+  .answer-source {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    margin-top: 34px;
+    border-top: 1px solid rgba(85,107,62,.13);
+    padding-top: 24px;
+  }
+  .answer-source-copy small {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--brown-lt);
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .answer-source-copy strong { color: var(--green-dk); font: 500 .9rem/1.45 var(--body); }
+  .answer-source-link {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    padding: 12px 19px;
+    background: var(--green);
+    color: var(--cream);
+    font-size: .82rem;
+    font-weight: 600;
+  }
+  .answer-source-link:hover { background: var(--green-dk); }
+  .related-wrap { margin-top: 42px; }
+  .related-wrap h3 {
+    color: var(--green-dk);
+    font-family: var(--display);
+    font-size: 1.45rem;
+    font-weight: 400;
+  }
+  .answer-note {
+    margin-top: 20px;
+    color: var(--brown-lt);
+    font-size: .78rem;
+    line-height: 1.6;
+  }
+  .answers-info {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(30px, 7vw, 90px);
+    padding: 104px 0;
+    align-items: start;
+  }
+  .answers-info h2 {
+    color: var(--green-dk);
+    font-family: var(--display);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-weight: 400;
+    line-height: 1.08;
+  }
+  .answers-info h2 em { color: var(--pink-deep); }
+  .answers-info > div > p { margin-top: 18px; color: var(--brown-lt); line-height: 1.75; }
+  .answer-steps { display: grid; gap: 14px; }
+  .answer-step {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 16px;
+    border: 1px solid rgba(85,107,62,.1);
+    border-radius: 18px;
+    padding: 18px;
+    background: rgba(237,228,213,.58);
+  }
+  .answer-step span {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--pink);
+    color: var(--green-dk);
+    font-family: var(--display);
+    font-size: 1.1rem;
+  }
+  .answer-step h3 { color: var(--green-dk); font-size: .96rem; font-weight: 600; }
+  .answer-step p { margin-top: 5px; color: var(--brown-lt); font-size: .86rem; line-height: 1.6; }
+  .answer-disclaimer {
+    margin-bottom: 96px;
+    border-left: 3px solid var(--pink-deep);
+    padding: 16px 20px;
+    background: rgba(248,214,222,.26);
+    color: var(--brown-lt);
+    font-size: .82rem;
+    line-height: 1.65;
+  }
+  .answer-disclaimer strong { color: var(--brown); }
+  @media (max-width: 860px) {
+    .answers-hero { padding-top: 76px; }
+    .popular-grid,
+    .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .answers-info { grid-template-columns: 1fr; padding: 82px 0; }
+  }
+  @media (max-width: 620px) {
+    .answers-hero { padding: 66px 18px 118px; }
+    .answers-form { border-radius: 24px; flex-direction: column; }
+    .answers-form input { width: 100%; padding: 14px 13px; }
+    .answers-form button { width: 100%; padding: 15px; }
+    .example-prompts { justify-content: flex-start; }
+    .answers-main { width: min(100% - 24px, 1120px); margin-top: -62px; }
+    .answer-panel { border-radius: 24px; padding: 26px 20px; }
+    .popular-grid,
+    .related-grid { grid-template-columns: 1fr; }
+    .answer-source { align-items: stretch; flex-direction: column; }
+    .answer-source-link { justify-content: center; width: 100%; }
+    .answer-disclaimer { margin-bottom: 72px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div id="cdot"></div>
+<div class="wordmark-bar">
+  <img alt="Stylishandhealthy." decoding="async" src="/assets/images/youtube_banner.png"/>
+</div>
+<nav aria-label="Primary navigation">
+  <a aria-label="Stylishandhealthy home" class="nav-logo" href="/">
+    <img alt="S&amp;H" decoding="async" src="/assets/images/logo_main.png"/>
+  </a>
+  <ul id="primary-navigation">
+    <li><a href="/blog">Blog</a></li>
+    <li><a class="active" href="/answers">Quick Answers</a></li>
+    <li><a href="/shop">Shop</a></li>
+    <li><a href="/skincare">Skincare</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a class="npill" href="/journal">Free Journal</a></li>
+  </ul>
+</nav>
+<main id="main-content">
+  <section class="answers-hero" aria-labelledby="answers-title">
+    <div class="answers-hero-inner">
+      <div class="answers-kicker">100 evidence-linked answers</div>
+      <h1 id="answers-title">Search anything you <em>want to know.</em></h1>
+      <p class="answers-hero-copy">Get a clear answer in seconds. Every answer comes from one of our full research-backed guides, so you can keep reading when you want the details.</p>
+      <div class="answers-form-wrap">
+        <label class="answers-label" for="answerSearch">Ask a skincare or wellness question</label>
+        <form class="answers-form" id="answerForm" role="search">
+          <input aria-autocomplete="list" aria-controls="answerSuggestions" aria-expanded="false" autocomplete="off" id="answerSearch" name="q" placeholder="Can salicylic acid treat acne?" spellcheck="true" type="search"/>
+          <button type="submit">Get my answer</button>
+        </form>
+        <div class="answer-suggestions" id="answerSuggestions" role="listbox" hidden></div>
+      </div>
+      <div class="example-prompts" aria-label="Example questions">
+        <button data-question="Can salicylic acid treat acne?" type="button">Salicylic acid for acne?</button>
+        <button data-question="Why does my sunscreen pill?" type="button">Why does sunscreen pill?</button>
+        <button data-question="Can you tan at UV index 2?" type="button">Can you tan at UV 2?</button>
+        <button data-question="Is beef tallow good for skin?" type="button">Is beef tallow good for skin?</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="answers-main">
+    <section aria-live="polite" aria-labelledby="answer-state-title" class="answer-panel" id="answerPanel">
+      <div id="answerResult"></div>
+      <noscript>
+        <h2 class="answer-state-heading" id="answer-state-title">JavaScript is needed for instant answers.</h2>
+        <p class="answer-state-copy">You can still browse every full guide on our <a href="/blog"><u>blog page</u></a>.</p>
+      </noscript>
+    </section>
+
+    <section class="answers-info" aria-labelledby="how-it-works-title">
+      <div>
+        <div class="sl">Short answer, full context</div>
+        <h2 id="how-it-works-title">Fast does not mean <em>made up.</em></h2>
+        <p>This search does not generate new medical claims. It finds the closest match among 100 answers already covered in our long-form articles and links you straight to the full guide.</p>
+      </div>
+      <div class="answer-steps">
+        <div class="answer-step">
+          <span>1</span>
+          <div><h3>Ask naturally</h3><p>Type a full question, a product name, or a few words. Small spelling mistakes are okay.</p></div>
+        </div>
+        <div class="answer-step">
+          <span>2</span>
+          <div><h3>Get the quick version</h3><p>We show the strongest matching answer in one short, readable explanation.</p></div>
+        </div>
+        <div class="answer-step">
+          <span>3</span>
+          <div><h3>Open the evidence</h3><p>Each result links to the longer article with context, sources, safety notes, and practical guidance.</p></div>
+        </div>
+      </div>
+    </section>
+    <p class="answer-disclaimer"><strong>Important:</strong> These answers are educational and cannot diagnose a condition or replace care from a qualified clinician. Read the linked guide for the full context, especially for pregnancy, prescription treatments, severe symptoms, or persistent skin problems.</p>
+  </div>
+</main>
+<footer>
+  <div class="ft-top">
+    <div>
+      <div class="ft-logo">
+        <img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/>
+        <span>Stylishandhealthy<em>.</em></span>
+      </div>
+      <p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Explore</h4>
+      <a href="/answers">Quick Answers</a>
+      <a href="/blog">Blog</a>
+      <a href="/skincare">Skincare Recs</a>
+      <a href="/about">About</a>
+    </div>
+    <div class="ft-col">
+      <h4>Shop</h4>
+      <a href="/shop">All products</a>
+      <a href="/journal">Free Journal</a>
+      <a href="/shop">Printables</a>
+    </div>
+    <div class="ft-col">
+      <h4>Info</h4>
+      <a href="/terms">Terms of service</a>
+      <a href="/privacy">Privacy policy</a>
+      <a href="/affiliate">Affiliate disclosure</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <p>© 2026 Stylishandhealthy. All rights reserved.</p>
+    <span>Hot girls read the research.</span>
+  </div>
+</footer>
+<script defer src="/assets/js/shared.js"></script>
+<script defer src="/assets/js/answers-data.js"></script>
+<script defer src="/assets/js/answers.js"></script>
+</body>
+</html>

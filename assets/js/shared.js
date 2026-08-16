@@ -40,6 +40,22 @@ const mobileNavQuery = window.matchMedia('(max-width: 860px)');
   const menu = nav?.querySelector('ul');
   if (!nav || !menu) return;
 
+  // Make the evidence-linked answer finder available from every canonical page.
+  let answersLink = menu.querySelector('a[href="/answers"]');
+  if (!answersLink) {
+    const item = document.createElement('li');
+    answersLink = document.createElement('a');
+    answersLink.href = '/answers';
+    answersLink.textContent = 'Quick Answers';
+    item.appendChild(answersLink);
+    const journalItem = menu.querySelector('a[href="/journal"]')?.closest('li');
+    menu.insertBefore(item, journalItem || null);
+  }
+  if (window.location.pathname.replace(/\/+$/, '') === '/answers') {
+    answersLink.classList.add('active');
+    answersLink.setAttribute('aria-current', 'page');
+  }
+
   nav.setAttribute('aria-label', nav.getAttribute('aria-label') || 'Primary navigation');
   if (!menu.id) menu.id = 'primary-navigation';
 
