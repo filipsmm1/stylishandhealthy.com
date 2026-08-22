@@ -1824,7 +1824,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
   {
     "id": "qa-183",
     "question": "Can topical PDRN replace retinol?",
-    "answer": "Not yet. One 28-day split-face study compared a specific 0.1% PDRN-850K eye cream with 0.1% retinol, while the retinoid class—especially tretinoin—has a broader human evidence base.",
+    "answer": "Not yet. One 28-day split-face study compared a specific 0.1% PDRN-850K eye cream with 0.1% retinol, while the retinoid class, especially tretinoin, has a broader human evidence base.",
     "topic": "Skin care",
     "article": "Does Topical PDRN Actually Work? Serum vs Injections",
     "url": "/blog/does-topical-pdrn-work-serum-vs-injections",

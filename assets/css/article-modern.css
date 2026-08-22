@@ -1,35 +1,20 @@
 /* Modern editorial layer used by the low-UV and topical-PDRN evidence guides. */
 .article-page {
-  --article-accent: #486b57;
-  --article-accent-strong: #294b3a;
-  --article-accent-soft: #eaf2ec;
-  --article-accent-glow: rgba(72, 107, 87, 0.16);
-  --article-warm: #d77f62;
-  --article-warm-soft: #fff0e9;
-  --article-ink: #213029;
-  --article-copy: #526159;
-  --article-muted: #77827c;
-  --article-line: rgba(33, 48, 41, 0.11);
-  --article-surface: #fffdfa;
-  --article-canvas: #f3f5f1;
-  --article-shadow: 0 24px 70px rgba(32, 56, 43, 0.09);
+  --article-accent: var(--pink-deep);
+  --article-accent-strong: var(--green-dk);
+  --article-accent-soft: var(--pink);
+  --article-accent-glow: rgba(232, 137, 154, 0.22);
+  --article-warm: var(--green);
+  --article-warm-soft: #edf2e8;
+  --article-ink: var(--brown);
+  --article-copy: var(--brown-lt);
+  --article-muted: #806d65;
+  --article-line: rgba(58, 42, 34, 0.12);
+  --article-surface: #fffdf9;
+  --article-canvas: var(--cream);
+  --article-shadow: 0 24px 70px rgba(58, 42, 34, 0.1);
   background: var(--article-canvas);
   color: var(--article-ink);
-}
-
-.article-page--pdrn {
-  --article-accent: #98536d;
-  --article-accent-strong: #653047;
-  --article-accent-soft: #f9eaf0;
-  --article-accent-glow: rgba(152, 83, 109, 0.16);
-  --article-warm: #806d9c;
-  --article-warm-soft: #f2edf8;
-  --article-ink: #322830;
-  --article-copy: #62545d;
-  --article-muted: #887983;
-  --article-line: rgba(65, 42, 56, 0.11);
-  --article-canvas: #f7f3f5;
-  --article-shadow: 0 24px 70px rgba(86, 50, 67, 0.09);
 }
 
 .article-page .reading-progress {
@@ -267,7 +252,8 @@
 .article-page .article-card > .table-scroll,
 .article-page .article-card > .reason-grid,
 .article-page .article-card > .faq-section,
-.article-page .article-card > .references {
+.article-page .article-card > .references,
+.article-page .article-card > .article-recommendations {
   max-width: 900px;
 }
 
@@ -1058,6 +1044,143 @@
   stroke-width: 2;
 }
 
+.article-page .article-recommendations {
+  margin-top: 68px;
+  padding-top: 38px;
+  border-top: 1px solid var(--article-line);
+}
+
+.article-page .article-recommendations-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 10px;
+  color: var(--article-accent-strong);
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.article-page .article-recommendations-kicker::before {
+  content: "";
+  width: 26px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--article-accent);
+}
+
+.article-page .article-recommendations h2 {
+  margin: 0 0 8px;
+  padding: 0;
+  color: var(--article-ink);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  line-height: 1.12;
+}
+
+.article-page .article-recommendations-intro {
+  margin: 0 0 24px;
+  color: var(--article-muted);
+  font-size: 0.92rem;
+}
+
+.article-page .article-recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.article-page .article-recommendation-card,
+.article-page .article-card .article-recommendation-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--article-line);
+  border-radius: 18px;
+  background: #fff;
+  color: var(--article-ink);
+  box-shadow: 0 12px 30px rgba(58, 42, 34, 0.07);
+  text-decoration: none;
+  transform: translateY(0);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.article-page .article-recommendation-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--article-accent-soft);
+  transition: transform 320ms var(--ease);
+}
+
+.article-page .article-recommendation-copy {
+  display: flex;
+  min-height: 150px;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17px 17px 18px;
+}
+
+.article-page .article-recommendation-category {
+  margin-bottom: 8px;
+  color: var(--article-accent-strong);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.article-page .article-recommendation-title {
+  color: var(--article-ink);
+  font-family: var(--display);
+  font-size: 1.08rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.article-page .article-recommendation-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 17px;
+  color: var(--article-accent-strong);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.article-page .article-recommendation-cta::after {
+  content: "→";
+  color: var(--article-accent);
+  font-size: 1rem;
+  transition: transform 180ms ease;
+}
+
+.article-page .article-recommendation-card:hover,
+.article-page .article-recommendation-card:focus-visible {
+  border-color: color-mix(in srgb, var(--article-accent) 42%, transparent);
+  color: var(--article-ink);
+  box-shadow: 0 17px 40px var(--article-accent-glow);
+  text-decoration: none;
+  transform: translateY(-4px);
+}
+
+.article-page .article-recommendation-card:hover img,
+.article-page .article-recommendation-card:focus-visible img {
+  transform: scale(1.035);
+}
+
+.article-page .article-recommendation-card:hover .article-recommendation-cta::after,
+.article-page .article-recommendation-card:focus-visible .article-recommendation-cta::after {
+  transform: translateX(3px);
+}
+
 .article-page :focus-visible {
   outline: 3px solid color-mix(in srgb, var(--article-accent) 32%, transparent);
   outline-offset: 3px;
@@ -1094,6 +1217,14 @@
 }
 
 @media (max-width: 760px) {
+  .article-page .article-recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-page .article-recommendation-copy {
+    min-height: 140px;
+  }
+
   .article-page .article-card .comparison-table,
   .article-page .comparison-scroll .comparison-table,
   .article-page .table-scroll .comparison-table {
