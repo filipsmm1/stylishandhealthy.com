@@ -25,6 +25,8 @@
 .hero-banner{margin:0 0 38px}
 .hero-banner img{display:block;width:100%;height:auto;border-radius:24px}
 .image-caption{font-size:.78rem;line-height:1.5;margin-top:10px;color:var(--brown-lt);text-align:center}
+.article-figure{margin:34px 0 40px}
+.article-figure img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid rgba(85,107,62,.1)}
 .quick-answer,.science-box,.warning-box,.routine-box{border-radius:24px;padding:28px;margin:32px 0}
 .quick-answer{background:var(--pink);border:1px solid rgba(232,137,154,.2)}
 .science-box{background:var(--cream);border:1px solid rgba(85,107,62,.16)}
