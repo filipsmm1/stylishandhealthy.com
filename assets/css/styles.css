@@ -1,3 +1,5 @@
+@import url('/assets/css/article-editorial.css?v=20260905b');
+
 /* ============================================
    STYLISHANDHEALTHY — SHARED STYLES
    ============================================ */
@@ -978,3 +980,4 @@ nav ul#primary-navigation a[href="/journal"] {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+
