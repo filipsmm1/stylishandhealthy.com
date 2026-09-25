@@ -1,6 +1,6 @@
 # Affiliate link handoff — September 25, 2026
 
-Three finished buying guides, nine products. Shopping buttons currently link to official brand pages. Replace the href on the matching `data-affiliate-product` anchor in each article with your affiliate URL; keep `rel="sponsored nofollow noopener"`. Source links should stay as citations, not affiliate links. No fabricated affiliate IDs or prices are used.
+Three finished buying guides, nine products. Eight shopping buttons now use the Amazon Associates links supplied by the owner. Sebamed remains an editorial recommendation without a shopping button because no affiliate link was supplied. Official brand links remain as source citations. All shopping links retain `rel="sponsored nofollow noopener"`.
 
 ## 3 Best Gentle Cleansers for Dry, Sensitive Skin
 
@@ -47,3 +47,15 @@ Each prompt requested a 16:9 editorial still life, exact reference packaging and
 ## Editorial checks
 
 Research-based recommendations, not personal testing. No numerical ratings, invented user reviews, medical cure claims, fixed prices, or fake discounts. Match regional formulas and full product names when selecting affiliate listings.
+
+## Published Amazon links
+
+- `cerave`: https://amzn.to/4jnWyhY
+- `jelly`: https://amzn.to/4ylS1l0
+- `vanicream`: https://amzn.to/4hhUHZi
+- `bioderma`: https://amzn.to/4hmuI2Z
+- `garnierpink`: https://amzn.to/4yYnZn8
+- `garnierblue`: https://amzn.to/4yYtthx
+- `hydration`: https://amzn.to/4AxF6xx
+- `ordinary`: https://amzn.to/4yYn4Dk
+- `sebamed`: no shopping link, as requested.

@@ -4644,7 +4644,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
   {
     "id": "qa-465",
     "question": "What should I know about your next step?",
-    "answer": "Choose the product that matches your routine and texture preference, then use its shopping button to check the current listing.",
+    "answer": "Choose the product that matches your routine and texture preference, then use the available Amazon shopping buttons to check current listings.",
     "topic": "Skin care",
     "article": "3 Best Gentle Cleansers for Dry, Sensitive Skin | Stylish & Healthy",
     "url": "/blog/best-gentle-cleansers-dry-sensitive-skin",
