@@ -43,6 +43,16 @@ window.SH_QUICK_ANSWERS = Object.freeze([
   },
   {
     "id": "qa-005",
+    "question": "Is Rice + Niacinamide a new sunscreen?",
+    "answer": "No. Beauty of Joseon says it renamed the original Rice + Probiotics Relief Sun without changing that formula.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "Is Rice + Niacinamide a new sunscreen?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-006",
     "question": "Is Beauty of Joseon Relief Sun fragrance-free?",
     "answer": "Yes. Beauty of Joseon labels Relief Sun fragrance-free, and the current official ingredient list does not list parfum, fragrance or conventional fragrant essential oils.",
     "topic": "Sun care",
@@ -52,7 +62,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-006",
+    "id": "qa-007",
     "question": "Is beef tallow good for your skin?",
     "answer": "Beef tallow may work as a heavy occlusive moisturizer for some very dry, non-acne-prone skin, but it is not proven to repair the skin barrier better than standard moisturizers or treat acne, eczema, psoriasis, or seborrheic dermatitis.",
     "topic": "Skin care",
@@ -62,7 +72,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-007",
+    "id": "qa-008",
     "question": "Does a cleanser need to foam to work?",
     "answer": "No. Foam is a sensory feature, not a reliable measure of how well a cleanser suits your face.",
     "topic": "Skin care",
@@ -72,7 +82,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-008",
+    "id": "qa-009",
     "question": "Which one is best for waterproof mascara?",
     "answer": "The Garnier All-in-1 Waterproof blue-cap version is the targeted pick in this shortlist.",
     "topic": "Skin care",
@@ -82,7 +92,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-009",
+    "id": "qa-010",
     "question": "What is the best moisturizer for oily, acne-prone skin?",
     "answer": "La Roche-Posay Toleriane Sensitive Fluid is our most balanced overall pick.",
     "topic": "Acne",
@@ -92,7 +102,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-010",
+    "id": "qa-011",
     "question": "Does niacinamide-free mean irritation-free?",
     "answer": "No. Any finished formula can disagree with an individual.",
     "topic": "Skin care",
@@ -102,7 +112,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-011",
+    "id": "qa-012",
     "question": "Does the Biodance collagen mask really work?",
     "answer": "It can work well for temporary hydration, softness, plumping and glow.",
     "topic": "Product reviews",
@@ -112,7 +122,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-012",
+    "id": "qa-013",
     "question": "Can hair products cause forehead acne?",
     "answer": "Yes. Oily or residue-forming hair products can contribute to acne when they repeatedly contact the forehead, temples, neck or back.",
     "topic": "Hair & body",
@@ -122,7 +132,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-013",
+    "id": "qa-014",
     "question": "Can sunscreen replace moisturizer?",
     "answer": "Yes, for some people. A sunscreen can be moisturizing enough on its own if the full labeled amount feels comfortable without tightness, flaking or irritation.",
     "topic": "Sun care",
@@ -132,7 +142,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-014",
+    "id": "qa-015",
     "question": "Does Cyperus rotundus oil permanently remove hair?",
     "answer": "No. The 2014 pilot included only two months of follow-up after treatment ended.",
     "topic": "Hair & body",
@@ -142,7 +152,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-015",
+    "id": "qa-016",
     "question": "How long does it take to heal a damaged skin barrier?",
     "answer": "Mild irritation often improves within a few days to a week of simplifying your routine.",
     "topic": "Skin care",
@@ -152,7 +162,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-016",
+    "id": "qa-017",
     "question": "Can I use an ice roller every day?",
     "answer": "There is no established evidence-based daily regimen. Follow the tool instructions, keep the temperature comfortable, stop before pain or numbness and clean it after use.",
     "topic": "Skin care",
@@ -162,7 +172,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-017",
+    "id": "qa-018",
     "question": "How often should I use an LED face mask?",
     "answer": "Follow the tested schedule for your exact device. Many home masks are used several times per week, but session length and dose vary too much for one universal rule.",
     "topic": "Skin care",
@@ -172,7 +182,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-018",
+    "id": "qa-019",
     "question": "Do neck creams really work?",
     "answer": "They may improve dryness, surface smoothness, fine lines and mild uneven tone.",
     "topic": "Skin care",
@@ -182,7 +192,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-019",
+    "id": "qa-020",
     "question": "Does Qure help acne?",
     "answer": "No good human trial shows that shower filters reduce acne lesions.",
     "topic": "Hair & body",
@@ -192,7 +202,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-020",
+    "id": "qa-021",
     "question": "Do I need sunscreen when the UV Index is 0?",
     "answer": "For most people doing ordinary short outdoor activities, public-health guidance treats UV 0 as minimal risk and does not require special protection.",
     "topic": "Sun care",
@@ -202,7 +212,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-021",
+    "id": "qa-022",
     "question": "When is it fine to leave it on?",
     "answer": "If the label says no rinse, your face feels comfortable, and you only needed a light cleanse, you can leave it on and apply moisturizer.",
     "topic": "Skin care",
@@ -212,7 +222,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-022",
+    "id": "qa-023",
+    "question": "Can IPL work on dark blonde hair?",
+    "answer": "Possibly. Philips lists naturally dark blonde hair as suitable for some Lumea devices when skin tone is also within the device's approved range.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "Can IPL work on dark blonde hair?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-024",
     "question": "Does topical PDRN actually work?",
     "answer": "There is now early human evidence for at least one specifically engineered topical PDRN-850K eye cream, but that does not prove every PDRN serum works.",
     "topic": "Skin care",
@@ -222,7 +242,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-023",
+    "id": "qa-025",
     "question": "What should I know about brand Claims vs. the Science?",
     "answer": "The official page positions this serum around 40% acerola water, 4% niacinamide, 2% arbutin, 5 ceramides, 8 forms of hyaluronic acid, \"13 types of peptides,\" and the ability to improve melasma and dark spots in one week.",
     "topic": "Product reviews",
@@ -232,7 +252,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-024",
+    "id": "qa-026",
     "question": "What is fibermaxxing?",
     "answer": "Fibermaxxing is a social media term for intentionally increasing dietary fiber, sometimes to very high daily amounts.",
     "topic": "Wellness",
@@ -242,7 +262,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-025",
+    "id": "qa-027",
     "question": "How to choose a sunscreen that has a better chance of working?",
     "answer": "Choose broad-spectrum SPF 30 or higher. The American Academy of Dermatology also recommends water resistance, especially when sweating or swimming.",
     "topic": "Sun care",
@@ -252,7 +272,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-026",
+    "id": "qa-028",
     "question": "Is fungal acne really fungus?",
     "answer": "The popular term fungal acne usually refers to Malassezia folliculitis.",
     "topic": "Acne",
@@ -262,7 +282,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-027",
+    "id": "qa-029",
+    "question": "Is Garnier Hyaluron Sorbet fragrance-free?",
+    "answer": "No. Garnier UK's ingredient list includes parfum/fragrance.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "Is Garnier Hyaluron Sorbet fragrance-free?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-030",
     "question": "Is it a moisturizer or an exfoliating serum?",
     "answer": "It is a leave-on facial moisturizer. Do not substitute it for a separately labeled exfoliant solely because salicylic acid appears in the name.",
     "topic": "Acne",
@@ -272,7 +302,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-028",
+    "id": "qa-031",
     "question": "Is Garnier Vitamin C Sorbet Cream a moisturiser?",
     "answer": "Yes. Garnier Vitamin C Fresh and Bright Hydrating Sorbet Cream is a lightweight daily facial moisturiser.",
     "topic": "Product reviews",
@@ -282,7 +312,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-029",
+    "id": "qa-032",
     "question": "Is EGF the same as a peptide?",
     "answer": "EGF is a protein made from a chain of amino acids, so it belongs to the broad peptide and protein family.",
     "topic": "Skin care",
@@ -292,7 +322,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-030",
+    "id": "qa-033",
     "question": "What is the fastest way to fade post-acne dark spots?",
     "answer": "Control active acne, use broad-spectrum sunscreen consistently, and choose one evidence-supported treatment such as azelaic acid or a retinoid.",
     "topic": "Acne",
@@ -302,7 +332,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-031",
+    "id": "qa-034",
     "question": "Can you use HOCl with retinoids?",
     "answer": "Yes, most people can use hypochlorous acid spray in the same routine as retinoids if their skin tolerates it.",
     "topic": "Skin care",
@@ -312,7 +342,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-032",
+    "id": "qa-035",
     "question": "Can you spray hypochlorous acid over sunscreen?",
     "answer": "You can apply a fine mist without rubbing, but direct studies have not established that every hypochlorous-acid spray leaves every sunscreen film unchanged.",
     "topic": "Sun care",
@@ -322,7 +352,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-033",
+    "id": "qa-036",
     "question": "What should I know about the simplest routine order?",
     "answer": "You do not need to set a 20-minute timer because of HOCl. Wait until the skin is comfortably dry.",
     "topic": "Skin care",
@@ -332,7 +362,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-034",
+    "id": "qa-037",
     "question": "Is using HOCl with vitamin C dangerous?",
     "answer": "There is no good evidence that normal use of two correctly formulated skincare products creates a dangerous reaction on the face.",
     "topic": "Skin care",
@@ -342,7 +372,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-035",
+    "id": "qa-038",
     "question": "What should I know about calling Out Bad Products?",
     "answer": "One of the biggest problems online is influencers promoting products that are genuinely bad for you.",
     "topic": "Skin care",
@@ -352,7 +382,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-036",
+    "id": "qa-039",
     "question": "Is PDRN really salmon sperm?",
     "answer": "Medical and research PDRN is often purified from salmon or trout sperm DNA.",
     "topic": "Product reviews",
@@ -362,7 +392,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-037",
+    "id": "qa-040",
     "question": "Do I need the matching shampoo and conditioner?",
     "answer": "No. A matching range is not proof that all three products are necessary.",
     "topic": "Product reviews",
@@ -372,7 +402,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-038",
+    "id": "qa-041",
     "question": "Can skin really be oily and dehydrated at the same time?",
     "answer": "Yes. Sebum production and water content in the outer skin layer are separate variables.",
     "topic": "Skin care",
@@ -382,7 +412,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-039",
+    "id": "qa-042",
     "question": "What should I know about in this comparison?",
     "answer": "Polydeoxyribonucleotide, or PDRN, describes mixtures of DNA fragments.",
     "topic": "Skin care",
@@ -392,7 +422,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-040",
+    "id": "qa-043",
     "question": "How can I tell PIH from PIE?",
     "answer": "Both are flat. PIH is usually brown, gray or darker than your skin.",
     "topic": "Acne",
@@ -402,7 +432,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-041",
+    "id": "qa-044",
     "question": "Can I use toner before Reedle Shot?",
     "answer": "VT’s updated FAQ places Reedle Shot after cleansing and toning, while the Reedle Shot 100 page describes applying it to a clean, bare face.",
     "topic": "Skin care",
@@ -412,7 +442,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-042",
+    "id": "qa-045",
     "question": "Can salicylic acid treat acne?",
     "answer": "Yes. Salicylic acid can help mild clogged-pore acne, especially blackheads and whiteheads, because it loosens dead skin cells inside pores.",
     "topic": "Acne",
@@ -422,7 +452,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-043",
+    "id": "qa-046",
     "question": "Is salicylic acid or benzoyl peroxide better for blackheads?",
     "answer": "Salicylic acid is usually the more logical choice for blackheads and whiteheads because it exfoliates inside oily follicles and helps reduce the material that forms comedones.",
     "topic": "Acne",
@@ -432,7 +462,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-044",
+    "id": "qa-047",
     "question": "How do I know if my skin barrier is damaged or if I have acne?",
     "answer": "Burning, stinging, tightness, flaking, and sudden product sensitivity point toward barrier damage.",
     "topic": "Acne",
@@ -442,7 +472,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-045",
+    "id": "qa-048",
     "question": "Does hair growth oil really make hair grow faster?",
     "answer": "Most oils have not been shown to accelerate the normal rate of follicle growth.",
     "topic": "Hair & body",
@@ -452,7 +482,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-046",
+    "id": "qa-049",
     "question": "What About Indoors?",
     "answer": "Indoors is not automatically UV-free, and the answer depends almost entirely on your window situation.",
     "topic": "Sun care",
@@ -462,7 +492,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-047",
+    "id": "qa-050",
     "question": "Should sunscreen or bug spray go first?",
     "answer": "Apply sunscreen first. When possible, allow it to set for at least 15 minutes, then apply insect repellent to exposed skin and the outside of clothing as directed.",
     "topic": "Sun care",
@@ -472,7 +502,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-048",
+    "id": "qa-051",
     "question": "Can I use The Ordinary Glycolic Acid 7% every day?",
     "answer": "Technically yes, the brand allows once-daily evening use. But most people do better starting around 1 to 2 times weekly and building up slowly.",
     "topic": "Product reviews",
@@ -482,7 +512,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-049",
+    "id": "qa-052",
     "question": "Does cruelty-free mean no animal testing ever?",
     "answer": "No. Historical data may exist.",
     "topic": "Skin care",
@@ -492,7 +522,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-050",
+    "id": "qa-053",
     "question": "What UV Index can you tan in?",
     "answer": "Tanning may be possible at several UV levels, including UV 2, 3, 4 and 5, depending on accumulated exposure and individual response.",
     "topic": "Sun care",
@@ -502,7 +532,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-051",
+    "id": "qa-054",
     "question": "Why does acne keep coming back in the same spot?",
     "answer": "It can happen because the same small area remains acne-prone. Ongoing microcomedo formation, sebum, inflammation, hormones, friction, occlusion or repeated product contact may keep triggering new lesions in the same zone, but this does not prove.",
     "topic": "Acne",
@@ -512,7 +542,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-052",
+    "id": "qa-055",
     "question": "Why can an HA serum make skin feel tight?",
     "answer": "High molecular weight HA is a film former. That surface film can make skin feel smooth and temporarily plump, but some formulas dry down with a tacky or slightly contracted sensation.",
     "topic": "Skin care",
@@ -522,7 +552,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-053",
+    "id": "qa-056",
     "question": "Why can a moisturizer feel too greasy?",
     "answer": "The texture may be richer than your skin needs, you may be using more than needed, or several products may be leaving overlapping films.",
     "topic": "Skin care",
@@ -532,7 +562,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-054",
+    "id": "qa-057",
     "question": "Why does my moisturizer burn?",
     "answer": "Moisturizer usually burns because the skin barrier is damaged, the formula contains an irritating ingredient, or the skin is reacting to an allergen.",
     "topic": "Skin care",
@@ -542,7 +572,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-055",
+    "id": "qa-058",
     "question": "Why does my sunscreen pill?",
     "answer": "Pilling happens when product on the skin surface is mechanically gathered into flakes or rolls.",
     "topic": "Sun care",
@@ -552,7 +582,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-056",
+    "id": "qa-059",
     "question": "Can niacinamide cause skin purging?",
     "answer": "There is no good clinical evidence that niacinamide creates a predictable purge.",
     "topic": "Skin care",
@@ -562,7 +592,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-057",
+    "id": "qa-060",
     "question": "Why does sunscreen burn my eyes?",
     "answer": "Sunscreen can sting when the finished formula reaches the ocular surface.",
     "topic": "Sun care",
@@ -572,7 +602,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-058",
+    "id": "qa-061",
     "question": "What should I know about in this article?",
     "answer": "The hormonal reality makes this essentially impossible through normal training.",
     "topic": "Wellness",
@@ -582,7 +612,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-059",
+    "id": "qa-062",
     "question": "How long should acne treatment take to work?",
     "answer": "Some change may appear within several weeks, but most guidelines use a 12-week review point.",
     "topic": "Acne",
@@ -592,7 +622,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-060",
+    "id": "qa-063",
     "question": "What does Capsule 100 mean?",
     "answer": "Anua does not clearly explain what the number 100 means. It does not mean that the serum contains 100% PDRN.",
     "topic": "Product reviews",
@@ -602,7 +632,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-061",
+    "id": "qa-064",
     "question": "Why is the EMG Problem: Why \"High Burn\" Not High Growth?",
     "answer": "Most of the glute activation conversation is built on surface electromyography, or EMG.",
     "topic": "Skin care",
@@ -612,7 +642,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-062",
+    "id": "qa-065",
     "question": "How long does azelaic acid take to fade acne marks?",
     "answer": "Acne may start improving within about four weeks. In small studies, some red and brown mark measurements changed after about 8 to 16 weeks.",
     "topic": "Skin care",
@@ -622,7 +652,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-063",
+    "id": "qa-066",
+    "question": "Does Aqua-Fresh have a higher SPF?",
+    "answer": "No. The two European products compared here are both labeled SPF50+ PA++++.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "Does Aqua-Fresh have a higher SPF?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-067",
     "question": "Does Beauty of Joseon Relief Sun contain alcohol?",
     "answer": "The current official ingredient list includes t-Butyl Alcohol and Behenyl Alcohol.",
     "topic": "Sun care",
@@ -632,7 +672,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-064",
+    "id": "qa-068",
     "question": "Does beef tallow mimic human sebum?",
     "answer": "No. Beef tallow is mostly triglyceride-based fat, while human sebum contains triglycerides/free fatty acids plus large wax ester and squalene fractions and human-specific fatty acids such as sapienic acid.",
     "topic": "Skin care",
@@ -642,7 +682,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-065",
+    "id": "qa-069",
     "question": "Should I buy all three?",
     "answer": "No. Pick one texture to try.",
     "topic": "Skin care",
@@ -652,7 +692,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-066",
+    "id": "qa-070",
     "question": "Is the pink-cap Garnier the same as the blue-cap version?",
     "answer": "No. The blue-cap product is a bi-phase formula designed for waterproof makeup.",
     "topic": "Skin care",
@@ -662,7 +702,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-067",
+    "id": "qa-071",
     "question": "Should oily, acne-prone skin use moisturizer?",
     "answer": "Yes. Oily skin can still become dehydrated or irritated, especially when using benzoyl peroxide, salicylic acid, retinoids, or isotretinoin.",
     "topic": "Acne",
@@ -672,7 +712,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-068",
+    "id": "qa-072",
     "question": "Are all The Ordinary moisturizers the same?",
     "answer": "No. This recommendation is specifically Natural Moisturizing Factors + Beta Glucan.",
     "topic": "Skin care",
@@ -682,7 +722,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-069",
+    "id": "qa-073",
     "question": "Does the 243 Da collagen penetrate the skin?",
     "answer": "Biodance reports a 243 Da collagen-derived material, but small molecular size alone does not prove clinically meaningful dermal delivery or new collagen production in people using the finished mask.",
     "topic": "Product reviews",
@@ -692,7 +732,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-070",
+    "id": "qa-074",
     "question": "How do I know if my hair products are causing acne?",
     "answer": "Look for bumps concentrated where hair or product touches the skin, a flare after starting a new product, and improvement during a 4 to 6 week single-variable product trial.",
     "topic": "Hair & body",
@@ -702,7 +742,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-071",
+    "id": "qa-075",
     "question": "Can oily skin skip moisturizer and use sunscreen?",
     "answer": "Often, yes. Oily skin may find a moisturizing lotion or cream sunscreen sufficient in the morning, but oiliness does not rule out dehydration.",
     "topic": "Sun care",
@@ -712,7 +752,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-072",
+    "id": "qa-076",
     "question": "Is Cyperus rotundus oil as effective as laser hair removal?",
     "answer": "One small open-label pilot study found no statistically significant difference between the oil and Alexandrite laser for axillary hair.",
     "topic": "Hair & body",
@@ -722,7 +762,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-073",
+    "id": "qa-077",
     "question": "Can a damaged skin barrier heal itself?",
     "answer": "Yes, in most cases. The skin barrier is designed to repair itself once the irritating triggers are removed and it is given consistent, gentle care.",
     "topic": "Skin care",
@@ -732,7 +772,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-074",
+    "id": "qa-078",
     "question": "Does ice close or shrink pores?",
     "answer": "No. Cold may make skin look temporarily tighter, but pores do not open and close like doors.",
     "topic": "Skin care",
@@ -742,7 +782,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-075",
+    "id": "qa-079",
     "question": "Should I use LED before or after skincare?",
     "answer": "Clean, dry skin before the session is the simplest default. Apply moisturiser and other routine products afterward unless your device instructions say differently.",
     "topic": "Skin care",
@@ -752,7 +792,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-076",
+    "id": "qa-080",
     "question": "Can I use face moisturizer on my neck?",
     "answer": "Yes. A face moisturizer can work well on the neck when it is comfortable, non-irritating and contains useful ingredients.",
     "topic": "Skin care",
@@ -762,7 +802,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-077",
+    "id": "qa-081",
     "question": "Can Qure cure eczema?",
     "answer": "No. Water changes may affect comfort, but the largest trial of whole-home softening found no meaningful additional benefit in children with moderate-to-severe established eczema.",
     "topic": "Hair & body",
@@ -772,7 +812,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-078",
+    "id": "qa-082",
     "question": "Do I need sunscreen at UV Index 1?",
     "answer": "Usually not for a short, routine trip outside. Consider protection if you will be outdoors for a long time, especially around snow or other reflective surfaces, or if your skin-care goal requires stricter pigmentation control.",
     "topic": "Sun care",
@@ -782,7 +822,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-079",
+    "id": "qa-083",
     "question": "When should you rinse or cleanse again?",
     "answer": "Rinse if your skin stings, feels tight, or looks red after use. The problem may be the finished formula, repeated rubbing, or an already irritated skin barrier.",
     "topic": "Skin care",
@@ -792,7 +832,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-080",
+    "id": "qa-084",
+    "question": "Will IPL remove grey or white hairs?",
+    "answer": "Usually no. They lack enough pigment for standard IPL to target effectively.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "Will IPL remove grey or white hairs?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-085",
     "question": "Is PDRN serum the same as PDRN injections?",
     "answer": "No. A cosmetic serum stays on top of intact skin, whereas injections deliberately place a procedure product below the surface barrier.",
     "topic": "Skin care",
@@ -802,7 +852,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-081",
+    "id": "qa-086",
     "question": "What should I know about key Ingredients, Honestly Assessed?",
     "answer": "The full INCI list has 59 ingredients. Concentrations are only disclosed for a handful: acerola fruit water at 40%, niacinamide at 4%, arbutin at 2%, panthenol at 0.294%, tocopherol at 0.2%, and 3-O-ethyl ascorbic acid at 0.001%.",
     "topic": "Product reviews",
@@ -812,7 +862,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-082",
+    "id": "qa-087",
     "question": "How much fiber should adults eat each day?",
     "answer": "A practical target for many adults is about 25 to 38 grams per day, or roughly 14 grams for every 1,000 calories.",
     "topic": "Wellness",
@@ -822,7 +872,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-083",
+    "id": "qa-088",
     "question": "What should I know about favor a texture you will apply generously?",
     "answer": "Light fluids, gels, and thin lotions often feel better on oily or humid skin.",
     "topic": "Sun care",
@@ -832,7 +882,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-084",
+    "id": "qa-089",
     "question": "Does fungal acne always itch?",
     "answer": "No. Itch is common and useful as a clinical clue, but it is not universal.",
     "topic": "Acne",
@@ -842,7 +892,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-085",
+    "id": "qa-090",
+    "question": "Is it a 4% hyaluronic acid serum?",
+    "answer": "No. It is a moisturizer, and the 4% claim describes a combined niacinamide-and-hyaluronic-acid complex without individual percentages.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "Is it a 4% hyaluronic acid serum?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-091",
     "question": "Should I buy the biggest jar first?",
     "answer": "Compare the delivered price per milliliter, but consider a smaller first purchase if available.",
     "topic": "Acne",
@@ -852,7 +912,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-086",
+    "id": "qa-092",
     "question": "Is Garnier Vitamin C Sorbet Cream good?",
     "answer": "It is a good-value option for many normal, combination, and oily skin types that tolerate fragrance, but it is less suitable for very dry, reactive, or fragrance-sensitive skin.",
     "topic": "Product reviews",
@@ -862,7 +922,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-087",
+    "id": "qa-093",
     "question": "Do growth factor serums actually work?",
     "answer": "The most useful overview is a 2023 systematic review of topical growth-factor preparations for facial rejuvenation.",
     "topic": "Skin care",
@@ -872,7 +932,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-088",
+    "id": "qa-094",
     "question": "Are brown acne marks scars?",
     "answer": "Flat brown or gray marks are usually post-inflammatory hyperpigmentation rather than textural scars.",
     "topic": "Acne",
@@ -882,7 +942,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-089",
+    "id": "qa-095",
     "question": "Can you use HOCl with benzoyl peroxide?",
     "answer": "You can use both, but they do not need to be layered at the exact same time.",
     "topic": "Skin care",
@@ -892,7 +952,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-090",
+    "id": "qa-096",
     "question": "Does hypochlorous acid deactivate sunscreen?",
     "answer": "There is no direct evidence that a normal facial hypochlorous-acid mist universally deactivates sunscreen.",
     "topic": "Sun care",
@@ -902,7 +962,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-091",
+    "id": "qa-097",
     "question": "What about tretinoin?",
     "answer": "The same order is reasonable, but prescription directions win. Tretinoin has much stronger clinical evidence than cosmetic HOCl spray and can be more irritating.",
     "topic": "Skin care",
@@ -912,7 +972,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-092",
+    "id": "qa-098",
     "question": "What should I know about the easiest hypochlorous acid and vitamin C routine?",
     "answer": "Morning: gentle cleanse or rinse, vitamin C serum, moisturizer if needed, then broad-spectrum sunscreen.",
     "topic": "Skin care",
@@ -922,7 +982,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-093",
+    "id": "qa-099",
     "question": "Why This Matters?",
     "answer": "Women deserve better than being treated like easy customers. You deserve clear answers, honest recommendations, and a place where your trust is respected.",
     "topic": "Skin care",
@@ -932,7 +992,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-094",
+    "id": "qa-100",
     "question": "Does Medicube PDRN serum penetrate deeply?",
     "answer": "Medicube does not publicly provide finished-product penetration data, and we found no published study demonstrating meaningful PDRN delivery from this exact serum.",
     "topic": "Product reviews",
@@ -942,7 +1002,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-095",
+    "id": "qa-101",
     "question": "Can I apply it over minoxidil?",
     "answer": "We did not find a controlled compatibility study of that exact combination.",
     "topic": "Product reviews",
@@ -952,7 +1012,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-096",
+    "id": "qa-102",
     "question": "Does dehydration make the skin produce more oil?",
     "answer": "Not as a reliable rule. Harsh cleansing and overuse of active ingredients can cause tightness, irritation, and flaking while skin remains oily, but that is not the same as proving a compensatory surge in sebum production.",
     "topic": "Skin care",
@@ -962,7 +1022,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-097",
+    "id": "qa-103",
     "question": "What are exosomes?",
     "answer": "Exosomes are a subset of extracellular vesicles released by cells.",
     "topic": "Skin care",
@@ -972,7 +1032,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-098",
+    "id": "qa-104",
     "question": "Are dark spots acne scars?",
     "answer": "Flat dark spots are usually PIH, not true scars. A true scar changes texture by creating an indentation or raised area.",
     "topic": "Acne",
@@ -982,7 +1042,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-099",
+    "id": "qa-105",
     "question": "How long should I wait after Reedle Shot before applying another product?",
     "answer": "VT says to let Reedle Shot absorb and then continue the routine. No evidence was identified that a fixed waiting period prevents irritation.",
     "topic": "Skin care",
@@ -992,7 +1052,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-100",
+    "id": "qa-106",
     "question": "Can you use salicylic acid 2% every day?",
     "answer": "Some products allow daily use, but many people tolerate salicylic acid better when starting two to four nights per week and increasing only if the skin barrier stays comfortable.",
     "topic": "Acne",
@@ -1002,7 +1062,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-101",
+    "id": "qa-107",
     "question": "Which is better for red, inflamed pimples?",
     "answer": "Benzoyl peroxide usually has the stronger case for red papules and pustules because it reduces Cutibacterium acnes and is strongly recommended in acne guidelines.",
     "topic": "Acne",
@@ -1012,7 +1072,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-102",
+    "id": "qa-108",
     "question": "Can a damaged skin barrier cause breakouts?",
     "answer": "A damaged barrier can trigger inflammation and acne-like bumps, but true acne usually also involves follicular plugging, sebum, Cutibacterium acnes activity, and inflammation.",
     "topic": "Acne",
@@ -1022,7 +1082,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-103",
+    "id": "qa-109",
     "question": "What is the best oil for slow hair growth?",
     "answer": "The best choice depends on the cause. Rosemary oil has the strongest human evidence among popular cosmetic oils for androgenetic alopecia.",
     "topic": "Hair & body",
@@ -1032,7 +1092,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-104",
+    "id": "qa-110",
     "question": "How Much to Actually Apply?",
     "answer": "This is the part almost everyone gets wrong. And it matters more than which SPF number you choose.",
     "topic": "Sun care",
@@ -1042,7 +1102,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-105",
+    "id": "qa-111",
     "question": "Do you put bug spray or sunscreen on first?",
     "answer": "Sunscreen goes on first and bug spray goes on second. Use separate products and follow both labels.",
     "topic": "Sun care",
@@ -1052,7 +1112,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-106",
+    "id": "qa-112",
     "question": "Does it help acne?",
     "answer": "It can help mild comedonal acne and surface congestion. The Abels et al.",
     "topic": "Product reviews",
@@ -1062,7 +1122,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-107",
+    "id": "qa-113",
     "question": "Is cruelty-free the same as vegan?",
     "answer": "No. Vegan scope depends on the standard and may include ingredients, processing, manufacturing, or testing.",
     "topic": "Skin care",
@@ -1072,7 +1132,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-108",
+    "id": "qa-114",
     "question": "Can you tan in UV 2?",
     "answer": "At UV Index 1-2, tanning may be biologically possible with sufficient cumulative exposure, but the UV Index alone cannot predict whether or when an individual will visibly tan.",
     "topic": "Sun care",
@@ -1082,7 +1142,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-109",
+    "id": "qa-115",
     "question": "Is it always the exact same pore?",
     "answer": "Not necessarily. Visible inflammation can extend beyond the follicular opening, and a nearby new lesion can look like the same spot returned.",
     "topic": "Acne",
@@ -1092,7 +1152,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-110",
+    "id": "qa-116",
     "question": "Why is a watery serum not a complete moisturizer?",
     "answer": "A thin HA serum may provide humectancy without much emollient or occlusive support.",
     "topic": "Skin care",
@@ -1102,7 +1162,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-111",
+    "id": "qa-117",
     "question": "What should you change first?",
     "answer": "If your skin is comfortable without a separate morning moisturizer, your sunscreen may provide enough moisture.",
     "topic": "Skin care",
@@ -1112,7 +1172,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-112",
+    "id": "qa-118",
     "question": "Should I stop using a moisturizer if it burns?",
     "answer": "Yes, at least temporarily. Rinse it off gently and stop using it while you figure out whether the problem is the product, your barrier, or a routine conflict.",
     "topic": "Skin care",
@@ -1122,7 +1182,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-113",
+    "id": "qa-119",
     "question": "Does sunscreen pilling mean it is not working?",
     "answer": "There is no validated percentage loss. But if sunscreen is visibly being removed or redistributed, the film is less predictable—and sunscreen efficacy depends on amount and uniformity.",
     "topic": "Sun care",
@@ -1132,7 +1192,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-114",
+    "id": "qa-120",
     "question": "Why can a niacinamide product burn or turn skin red?",
     "answer": "A serum is a mixture, not a single ingredient test. Solvents, preservatives, fragrance, botanical extracts, acids, and other actives can all change tolerability.",
     "topic": "Skin care",
@@ -1142,7 +1202,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-115",
+    "id": "qa-121",
     "question": "Can octocrylene make sunscreen sting the eyes?",
     "answer": "Octocrylene may contribute to eye discomfort. A 2026 in vitro study found that it activated TRPV1-linked calcium signaling, while octinoxate did not in the same model.",
     "topic": "Sun care",
@@ -1152,7 +1212,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-116",
+    "id": "qa-122",
     "question": "Why is myth #2: Cardio the only way to lose fat?",
     "answer": "Cardio burns more calories per session than lifting, which is true and useful.",
     "topic": "Wellness",
@@ -1162,7 +1222,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-117",
+    "id": "qa-123",
     "question": "Should acne treatment be used only on pimples?",
     "answer": "Most preventive topical treatments work better when applied in a thin layer across the whole acne-prone area, not only on visible spots.",
     "topic": "Acne",
@@ -1172,7 +1232,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-118",
+    "id": "qa-124",
     "question": "Can someone with a fish allergy use Anua PDRN Serum?",
     "answer": "Caution is reasonable. Recognised fish allergens are proteins, especially parvalbumins, rather than DNA.",
     "topic": "Product reviews",
@@ -1182,7 +1242,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-119",
+    "id": "qa-125",
     "question": "What the Acute Evidence Actually Shows?",
     "answer": "There is real evidence that brief glute-focused warm-ups can produce immediate changes: a modest improvement in countermovement jump power, changes in EMG patterns, and alterations in short-term motor output.",
     "topic": "Skin care",
@@ -1192,7 +1252,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-120",
+    "id": "qa-126",
     "question": "Is azelaic acid better for PIH or PIE?",
     "answer": "The evidence is stronger for brown or gray post-inflammatory hyperpigmentation, called PIH.",
     "topic": "Skin care",
@@ -1202,7 +1262,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-121",
+    "id": "qa-127",
+    "question": "Which one should oily skin try first?",
+    "answer": "Aqua-Fresh is the lighter, sheerer option according to the brand; individual finish and tolerance can still vary.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "Which one should oily skin try first?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-128",
     "question": "What UV filters does Beauty of Joseon Relief Sun use?",
     "answer": "It uses Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Triazone, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol and Diethylhexyl Butamido Triazone.",
     "topic": "Sun care",
@@ -1212,7 +1282,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-122",
+    "id": "qa-129",
     "question": "Can beef tallow cause acne?",
     "answer": "There is not enough direct human evidence to say beef tallow causes acne in everyone, but it is a heavy lipid-rich balm and is not a good default for oily or acne-prone facial skin.",
     "topic": "Skin care",
@@ -1222,7 +1292,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-123",
+    "id": "qa-130",
     "question": "Will a hydrating cleanser replace moisturizer?",
     "answer": "It is still a rinse-off cleanser. If you need a moisturizing step after washing, do not expect the cleanser to replace it.",
     "topic": "Skin care",
@@ -1232,7 +1302,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-124",
+    "id": "qa-131",
     "question": "Can I use micellar water instead of a face wash?",
     "answer": "It can be enough for a light cleanse if it removes what you need and feels comfortable.",
     "topic": "Skin care",
@@ -1242,7 +1312,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-125",
+    "id": "qa-132",
     "question": "Is gel or cream better for oily skin?",
     "answer": "Gel is usually more comfortable for very oily skin. A gel-cream or light lotion can be better when oily skin is dehydrated, sensitive, or peeling from acne treatment.",
     "topic": "Acne",
@@ -1252,7 +1322,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-126",
+    "id": "qa-133",
     "question": "Which one should I try first?",
     "answer": "Choose Hydration Station for a gel-cream feel, The Ordinary for an oil-free gel, or Sebamed for a simple clear gel.",
     "topic": "Skin care",
@@ -1262,7 +1332,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-127",
+    "id": "qa-134",
     "question": "Can the Biodance mask shrink pores?",
     "answer": "It may temporarily make pores look less noticeable by hydrating and smoothing the surface.",
     "topic": "Product reviews",
@@ -1272,7 +1342,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-128",
+    "id": "qa-135",
     "question": "How long does hair product acne take to clear?",
     "answer": "The American Academy of Dermatology says clearing can take about 4 to 6 weeks after the acne-causing product stops contacting the skin.",
     "topic": "Hair & body",
@@ -1282,7 +1352,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-129",
+    "id": "qa-136",
     "question": "Should moisturizer go before or after sunscreen?",
     "answer": "If you use both, apply moisturizer first and sunscreen as the final skincare step.",
     "topic": "Sun care",
@@ -1292,7 +1362,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-130",
+    "id": "qa-137",
     "question": "Can it work on white or blonde hair?",
     "answer": "The 2014 pilot reported a statistically significant white-hair result favoring the oil over Alexandrite laser.",
     "topic": "Hair & body",
@@ -1302,7 +1372,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-131",
+    "id": "qa-138",
     "question": "Is it bad to moisturize a damaged skin barrier too much?",
     "answer": "Over-layering multiple repair products at once can itself become an irritant.",
     "topic": "Skin care",
@@ -1312,7 +1382,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-132",
+    "id": "qa-139",
     "question": "Can cooling skincare help acne?",
     "answer": "Ordinary ice rollers, chilled masks and cosmetic cooling products have not been shown to prevent or treat acne.",
     "topic": "Skin care",
@@ -1322,7 +1392,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-133",
+    "id": "qa-140",
     "question": "How long before red light therapy works?",
     "answer": "Judge it over weeks, not days. Eight to twelve weeks of consistent use is a reasonable period for comparing photos and deciding whether the result matters to you.",
     "topic": "Skin care",
@@ -1332,7 +1402,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-134",
+    "id": "qa-141",
     "question": "Can neck cream tighten sagging skin?",
     "answer": "A topical may make crepey skin look smoother, but it is unlikely to meaningfully correct deep laxity, platysmal bands or submental fullness.",
     "topic": "Skin care",
@@ -1342,7 +1412,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-135",
+    "id": "qa-142",
     "question": "Does Qure soften hard water?",
     "answer": "Not proven. Qure says its FOF layer limits scale, but no public calcium, magnesium or total-hardness results were identified.",
     "topic": "Hair & body",
@@ -1352,7 +1422,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-136",
+    "id": "qa-143",
     "question": "Do I need sunscreen at UV Index 2?",
     "answer": "UV 2 is still in the low category, but it is the top of that category.",
     "topic": "Sun care",
@@ -1362,7 +1432,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-137",
+    "id": "qa-144",
     "question": "What should I know about quick questions?",
     "answer": "For a light cleanse, yes, if it removes what you need and your skin feels comfortable.",
     "topic": "Skin care",
@@ -1372,7 +1442,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-138",
+    "id": "qa-145",
+    "question": "Is electrolysis better for white facial hair?",
+    "answer": "Electrolysis does not depend on hair color and is the established option for permanent removal, but it requires multiple treatments from a qualified professional.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "Is electrolysis better for white facial hair?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-146",
     "question": "Is PDRN the same as polynucleotide or PN?",
     "answer": "The terms overlap in marketing and some papers but are not always chemically or clinically interchangeable.",
     "topic": "Skin care",
@@ -1382,7 +1462,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-139",
+    "id": "qa-147",
     "question": "What should I know about overall Formula Quality?",
     "answer": "This is a competent formula with marketing that, in our view, overemphasizes the vitamin C angle.",
     "topic": "Product reviews",
@@ -1392,7 +1472,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-140",
+    "id": "qa-148",
     "question": "Can too much fiber cause bloating?",
     "answer": "Yes. A rapid increase, especially from highly fermentable fibers, can cause gas, bloating, cramps, loose stools, or constipation.",
     "topic": "Wellness",
@@ -1402,7 +1482,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-141",
+    "id": "qa-149",
     "question": "Why is look for non-comedogenic labeling if acne also present?",
     "answer": "Non-comedogenic does not mean Malassezia-proof, but it is a more relevant signal for acne-prone skin than a home-made fungal blacklist.",
     "topic": "Sun care",
@@ -1412,7 +1492,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-142",
+    "id": "qa-150",
     "question": "Can fungal acne have whiteheads?",
     "answer": "Malassezia folliculitis can have small pustules that appear white-tipped, but true comedones are not typical.",
     "topic": "Acne",
@@ -1422,7 +1502,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-143",
+    "id": "qa-151",
+    "question": "Can it replace sunscreen?",
+    "answer": "No. The UK listing does not state SPF protection; use a separate sunscreen in the morning.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "Can it replace sunscreen?",
+    "sourceKind": "faq"
+  },
+  {
+    "id": "qa-152",
     "question": "Can I use it with a vitamin C serum?",
     "answer": "There is no need to add a vitamin C serum to make this moisturizer work.",
     "topic": "Acne",
@@ -1432,7 +1522,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-144",
+    "id": "qa-153",
     "question": "Does Garnier Vitamin C Sorbet Cream contain fragrance and alcohol?",
     "answer": "Yes. The official UK ingredient list includes Alcohol Denat., parfum, and declared fragrance components including limonene, linalool, and citral.",
     "topic": "Product reviews",
@@ -1442,7 +1532,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-145",
+    "id": "qa-154",
     "question": "What did controlled product studies find?",
     "answer": "A small randomized, double-blind, split-face trial followed 20 people for three months and compared two human-derived growth-factor formulations.",
     "topic": "Skin care",
@@ -1452,7 +1542,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-146",
+    "id": "qa-155",
     "question": "Can salicylic acid remove dark spots?",
     "answer": "Salicylic acid may help indirectly by treating acne and reducing new lesions.",
     "topic": "Acne",
@@ -1462,7 +1552,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-147",
+    "id": "qa-156",
     "question": "Can you use HOCl with vitamin C?",
     "answer": "Separate HOCl from pure L-ascorbic acid vitamin C when possible. HOCl is an oxidizer, and pure vitamin C is oxidation-sensitive, so using them at different times may help preserve the vitamin C formula.",
     "topic": "Skin care",
@@ -1472,7 +1562,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-148",
+    "id": "qa-157",
     "question": "Should hypochlorous acid go before or after sunscreen?",
     "answer": "The most evidence-aligned routine is hypochlorous acid on clean skin, let it dry, then apply moisturizer if needed and sunscreen last.",
     "topic": "Sun care",
@@ -1482,7 +1572,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-149",
+    "id": "qa-158",
     "question": "Can HOCl deactivate retinol?",
     "answer": "HOCl is reactive and can oxidize biological material. That fact often becomes an internet claim that it must destroy every antioxidant or active placed nearby.",
     "topic": "Skin care",
@@ -1492,7 +1582,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-150",
+    "id": "qa-159",
     "question": "What should I know about option 2: Use both in one routine?",
     "answer": "This order reduces direct dilution and mixing, but it does not guarantee zero chemical interaction.",
     "topic": "Skin care",
@@ -1502,7 +1592,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-151",
+    "id": "qa-160",
     "question": "Will Medicube PDRN serum stimulate collagen?",
     "answer": "Some supporting ingredients have evidence related to fine lines, but major collagen rebuilding has not been shown for this exact serum.",
     "topic": "Product reviews",
@@ -1512,7 +1602,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-152",
+    "id": "qa-161",
     "question": "Will four weeks be enough to judge hair regrowth?",
     "answer": "Do not treat the brand's four-week thickness claim as a universal regrowth timeline.",
     "topic": "Product reviews",
@@ -1522,7 +1612,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-153",
+    "id": "qa-162",
     "question": "What is the best moisturizer for oily but dehydrated skin?",
     "answer": "Start with a lightweight lotion or gel-cream containing a proven humectant such as glycerin plus emollients.",
     "topic": "Skin care",
@@ -1532,7 +1622,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-154",
+    "id": "qa-163",
     "question": "What does the PDRN evidence show?",
     "answer": "A 2026 systematic review of randomized trials included seven studies and 183 participants across skin rejuvenation, scar prevention, and wound healing.",
     "topic": "Skin care",
@@ -1542,7 +1632,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-155",
+    "id": "qa-164",
     "question": "Does PIE blanch when pressed?",
     "answer": "Vascular redness may briefly lighten with gentle pressure, while pigment usually does not.",
     "topic": "Acne",
@@ -1552,7 +1642,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-156",
+    "id": "qa-165",
     "question": "Can I use Reedle Shot every day?",
     "answer": "VT markets Reedle Shot 100 for daily use, 300 for every three days and 700 for every seven days.",
     "topic": "Skin care",
@@ -1562,7 +1652,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-157",
+    "id": "qa-166",
     "question": "Is salicylic acid better for blackheads or inflamed acne?",
     "answer": "Salicylic acid is especially useful for blackheads, whiteheads, and clogged pores.",
     "topic": "Acne",
@@ -1572,7 +1662,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-158",
+    "id": "qa-167",
     "question": "Can salicylic acid and benzoyl peroxide be used together?",
     "answer": "Yes, but using both at once is not automatically better. A cautious routine may use one in the morning and the other at night, or alternate days.",
     "topic": "Acne",
@@ -1582,7 +1672,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-159",
+    "id": "qa-168",
     "question": "Should I repair my skin barrier before treating acne?",
     "answer": "If your skin burns, flakes, or reacts to bland products, a barrier-first approach is usually smarter before adding more acne actives.",
     "topic": "Acne",
@@ -1592,7 +1682,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-160",
+    "id": "qa-169",
     "question": "Is rosemary oil better than castor oil for hair growth?",
     "answer": "Rosemary oil has more direct human evidence for hair density. Castor oil is better supported as a heavy conditioning and shine-enhancing oil than as a clinically proven regrowth treatment.",
     "topic": "Hair & body",
@@ -1602,7 +1692,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-161",
+    "id": "qa-170",
     "question": "When to Reapply?",
     "answer": "The \"every two hours\" rule is a practical safety guideline, not a chemical expiration timer.",
     "topic": "Sun care",
@@ -1612,7 +1702,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-162",
+    "id": "qa-171",
     "question": "How long after sunscreen can I apply bug spray?",
     "answer": "When possible, wait at least 15 minutes after applying sunscreen before applying insect repellent.",
     "topic": "Sun care",
@@ -1622,7 +1712,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-163",
+    "id": "qa-172",
     "question": "Does it fade dark spots?",
     "answer": "Yes, slowly and partially. Glycolic acid helps via increased epidermal turnover.",
     "topic": "Product reviews",
@@ -1632,7 +1722,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-164",
+    "id": "qa-173",
     "question": "Are all EU cosmetics cruelty-free?",
     "answer": "EU law bans testing for cosmetic purposes, but some multi-use ingredients may still be tested under other chemical laws.",
     "topic": "Skin care",
@@ -1642,7 +1732,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-165",
+    "id": "qa-174",
     "question": "Can you tan in UV 3?",
     "answer": "It is possible, depending on dose and individual response. UV 3 is also the level where public-health guidance recommends sun protection.",
     "topic": "Sun care",
@@ -1652,7 +1742,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-166",
+    "id": "qa-175",
     "question": "Is a flat red or brown mark active acne?",
     "answer": "It is often a leftover mark after inflammation, but color alone is not enough to diagnose it.",
     "topic": "Acne",
@@ -1662,7 +1752,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-167",
+    "id": "qa-176",
     "question": "What should I know about your skin barrier was already irritated?",
     "answer": "Over-cleansing, retinoids, exfoliating acids, benzoyl peroxide, cold weather, low humidity, sunburn, shaving, eczema, and contact dermatitis can all leave skin feeling tight.",
     "topic": "Skin care",
@@ -1672,7 +1762,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-168",
+    "id": "qa-177",
     "question": "Can a damaged skin barrier make every moisturizer burn?",
     "answer": "Yes. When the barrier is disrupted, ingredients that normally sit comfortably on top of the skin can reach more reactive layers and trigger stinging.",
     "topic": "Skin care",
@@ -1682,7 +1772,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-169",
+    "id": "qa-178",
     "question": "Should I use less sunscreen to stop pilling?",
     "answer": "No. Lower application amount lowers protection.",
     "topic": "Sun care",
@@ -1692,7 +1782,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-170",
+    "id": "qa-179",
     "question": "Why is your barrier already stressed?",
     "answer": "Recently irritated skin allows products to feel much harsher. Retinoids, exfoliating acids, benzoyl peroxide, over-cleansing, shaving, sunburn, eczema, and cold dry weather can all contribute to a damaged surface.",
     "topic": "Skin care",
@@ -1702,7 +1792,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-171",
+    "id": "qa-180",
     "question": "Is mineral sunscreen always better for sensitive eyes?",
     "answer": "No universal rule has been proven. Direct comparative human evidence that mineral sunscreens sting less is limited.",
     "topic": "Sun care",
@@ -1712,7 +1802,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-172",
+    "id": "qa-181",
     "question": "What should I know about myth #3: You can spot-reduce fat?",
     "answer": "Fat loss is systemic. When your body mobilises fat for fuel, it draws from stores across the whole body, not preferentially from the area you're working.",
     "topic": "Wellness",
@@ -1722,7 +1812,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-173",
+    "id": "qa-182",
     "question": "Can benzoyl peroxide and a retinoid be used together?",
     "answer": "Yes. This is a common evidence-based combination for inflammatory acne, including fixed-dose products.",
     "topic": "Acne",
@@ -1732,7 +1822,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-174",
+    "id": "qa-183",
     "question": "Will Anua PDRN Serum remove wrinkles?",
     "answer": "It may temporarily soften dehydration lines by holding more water in the outer skin.",
     "topic": "Product reviews",
@@ -1742,7 +1832,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-175",
+    "id": "qa-184",
     "question": "What Actually Builds Glutes Long-Term?",
     "answer": "This is the part that matters most for most women, and it is also the part that activation culture tends to understate.",
     "topic": "Skin care",
@@ -1752,7 +1842,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-176",
+    "id": "qa-185",
     "question": "Can azelaic acid remove pitted or raised scars?",
     "answer": "No. It may fade flat discoloration over a scar, but it cannot lift an indentation or remove raised scar tissue.",
     "topic": "Skin care",
@@ -1762,7 +1852,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-177",
+    "id": "qa-186",
+    "question": "Did Beauty of Joseon change the original Relief Sun formula?",
+    "answer": "Beauty of Joseon says it renamed Relief Sun: Rice + Probiotics to Relief Sun: Rice + Niacinamide and that the formula, ingredients and size stayed the same.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "Did Beauty of Joseon change the original Relief Sun formula?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-187",
     "question": "Does Beauty of Joseon Relief Sun contain niacinamide?",
     "answer": "Yes. Niacinamide is the eighth ingredient in the current official ingredient list.",
     "topic": "Sun care",
@@ -1772,7 +1872,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-178",
+    "id": "qa-188",
     "question": "Who should avoid beef tallow skincare?",
     "answer": "People with acne-prone, oily, seborrheic dermatitis-prone, reactive, inflamed, infected, or medically diseased skin should avoid using beef tallow as a default skincare product.",
     "topic": "Skin care",
@@ -1782,7 +1882,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-179",
+    "id": "qa-189",
     "question": "What should I know about ceraVe Hydrating Facial Cleanser?",
     "answer": "A sensible starting point if your face feels tight after foaming washes.",
     "topic": "Skin care",
@@ -1792,7 +1892,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-180",
+    "id": "qa-190",
     "question": "What should I know about bioderma Sensibio H2O?",
     "answer": "Sensibio H2O is the focused pick if you want a micellar water specifically positioned for sensitive skin.",
     "topic": "Skin care",
@@ -1802,7 +1902,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-181",
+    "id": "qa-191",
     "question": "What moisturizer should I use with tretinoin or adapalene?",
     "answer": "A fragrance-free lotion with barrier-support ingredients may be more useful than a clear gel.",
     "topic": "Acne",
@@ -1812,7 +1912,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-182",
+    "id": "qa-192",
     "question": "What should I know about geek & Gorgeous Hydration Station?",
     "answer": "Hydration Station is the first pick if you want lightness with a little more cushioning than a clear gel.",
     "topic": "Skin care",
@@ -1822,7 +1922,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-183",
+    "id": "qa-193",
     "question": "Is the Biodance mask good for sensitive skin?",
     "answer": "Many users may tolerate it, but sensitive-skin suitability is not guaranteed.",
     "topic": "Product reviews",
@@ -1832,7 +1932,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-184",
+    "id": "qa-194",
     "question": "Does coconut oil cause forehead acne?",
     "answer": "A heavy coconut-oil product may be worth testing if it repeatedly reaches acne-prone facial skin.",
     "topic": "Hair & body",
@@ -1842,7 +1942,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-185",
+    "id": "qa-195",
     "question": "Is moisturizer with SPF the same as sunscreen?",
     "answer": "For sun protection, a product carrying an SPF claim should be treated as sunscreen and used according to its sunscreen directions.",
     "topic": "Sun care",
@@ -1852,7 +1952,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-186",
+    "id": "qa-196",
     "question": "Can I use it for facial hair or PCOS hirsutism?",
     "answer": "Evidence is too limited for a confident recommendation. One older study included women with hirsutism, with chin hair included in the assessment, but it was not a dedicated facial-hair trial.",
     "topic": "Hair & body",
@@ -1862,7 +1962,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-187",
+    "id": "qa-197",
     "question": "What ingredients should I avoid with a damaged skin barrier?",
     "answer": "Avoid retinoids, exfoliating acids, benzoyl peroxide, fragrance, alcohol-based toners, and physical scrubs until the barrier has recovered.",
     "topic": "Skin care",
@@ -1872,7 +1972,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-188",
+    "id": "qa-198",
     "question": "Is cooling skincare good for rosacea?",
     "answer": "Some people find gentle cooling soothing, while others flush with temperature changes.",
     "topic": "Skin care",
@@ -1882,7 +1982,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-189",
+    "id": "qa-199",
     "question": "Can red light make pigmentation worse?",
     "answer": "It is possible, especially if a device creates heat or you have melasma or pigment-reactive skin.",
     "topic": "Skin care",
@@ -1892,7 +1992,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-190",
+    "id": "qa-200",
     "question": "Which ingredients have the best evidence?",
     "answer": "Daily broad-spectrum sunscreen has strong evidence for reducing further photoaging, although the major randomized anti-aging trial assessed hand skin rather than neck skin.",
     "topic": "Skin care",
@@ -1902,7 +2002,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-191",
+    "id": "qa-201",
     "question": "Is Qure NSF certified?",
     "answer": "As of July 9, 2026, Qure was not listed by brand in NSF's public NSF/ANSI 177 directory.",
     "topic": "Hair & body",
@@ -1912,7 +2012,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-192",
+    "id": "qa-202",
     "question": "Can you still get sunburned below UV 3?",
     "answer": "It is unlikely under ordinary low-UV conditions, but ARPANSA notes that sunburn is theoretically possible below UV 3 after sufficiently long exposure.",
     "topic": "Sun care",
@@ -1922,7 +2022,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-193",
+    "id": "qa-203",
     "question": "What should I know about continue reading?",
     "answer": "Medical note: This article is educational. Seek professional care for persistent, painful, or worsening skin symptoms.",
     "topic": "Skin care",
@@ -1932,7 +2032,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-194",
+    "id": "qa-204",
+    "question": "Why does IPL need hair pigment?",
+    "answer": "IPL sends a pulse of broad-spectrum light into the skin. Pigment in the hair absorbs part of that light and converts it to heat that can disrupt the follicle's ability to produce hair.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "Why does IPL need hair pigment?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-205",
     "question": "Can PDRN penetrate the skin?",
     "answer": "A 2026 study detected signal from one medium-length PDRN system in viable epidermal regions using multiple models.",
     "topic": "Skin care",
@@ -1942,7 +2052,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-195",
+    "id": "qa-206",
     "question": "What should I know about transparency Concerns?",
     "answer": "These are not reasons to avoid the product. They are things worth knowing when reading the marketing.",
     "topic": "Product reviews",
@@ -1952,7 +2062,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-196",
+    "id": "qa-207",
     "question": "Does fiber help with constipation?",
     "answer": "Fiber can improve chronic constipation, especially soluble gel-forming fibers such as psyllium.",
     "topic": "Wellness",
@@ -1962,7 +2072,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-197",
+    "id": "qa-208",
     "question": "Why is choose fragrance-free if your skin reactive?",
     "answer": "Fragrance can complicate the picture by causing irritant or allergic reactions.",
     "topic": "Sun care",
@@ -1972,7 +2082,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-198",
+    "id": "qa-209",
     "question": "Can you have fungal acne and closed comedones at the same time?",
     "answer": "Yes. Malassezia folliculitis and acne vulgaris can coexist.",
     "topic": "Acne",
@@ -1982,7 +2092,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-199",
+    "id": "qa-210",
+    "question": "What should I know about in this review?",
+    "answer": "The decision is about the finished moisturizer, not whether a headline percentage sounds high.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "What should I know about in this review?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-211",
     "question": "What if it pills under sunscreen?",
     "answer": "We have not wear-tested that combination. Try a smaller moisturizer amount and allow it to settle before sunscreen, without reducing the sunscreen amount.",
     "topic": "Acne",
@@ -1992,7 +2112,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-200",
+    "id": "qa-212",
     "question": "Are all regional Garnier Vitamin C Sorbet Cream formulas the same?",
     "answer": "No. The current UK and India product pages describe different active blends and publish different ingredient lists.",
     "topic": "Product reviews",
@@ -2002,7 +2122,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-201",
+    "id": "qa-213",
     "question": "What should I know about the delivery problem matters as much as the ingredient?",
     "answer": "Skin is designed to keep large materials out. A frequently used rule of thumb is that molecules above roughly 500 daltons have difficulty crossing an intact stratum corneum.",
     "topic": "Skin care",
@@ -2012,7 +2132,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-202",
+    "id": "qa-214",
     "question": "Is azelaic acid good for acne marks?",
     "answer": "Yes. Azelaic acid has direct clinical evidence for acne-related PIH and can also treat active acne.",
     "topic": "Acne",
@@ -2022,7 +2142,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-203",
+    "id": "qa-215",
     "question": "Does hypochlorous acid spray cure acne?",
     "answer": "No. It may help reduce surface microbes and irritation, but it is not a proven stand-alone acne treatment and should not replace evidence-based acne treatments such as benzoyl peroxide, topical retinoids, azelaic acid, or prescription care when needed.",
     "topic": "Skin care",
@@ -2032,7 +2152,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-204",
+    "id": "qa-216",
     "question": "Can you spray hypochlorous acid over makeup?",
     "answer": "A product labeled for facial use may be used as a light surface mist over makeup if its directions allow it.",
     "topic": "Sun care",
@@ -2042,7 +2162,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-205",
+    "id": "qa-217",
     "question": "When should you separate them?",
     "answer": "Use HOCl in the morning and retinol at night if you prefer fewer layers or cannot tell which product is causing a reaction.",
     "topic": "Skin care",
@@ -2052,7 +2172,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-206",
+    "id": "qa-218",
     "question": "What not to do?",
     "answer": "There is no evidence-based universal number. \"Wait until completely dry\" is a practical minimum, not a proven compatibility threshold.",
     "topic": "Skin care",
@@ -2062,7 +2182,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-207",
+    "id": "qa-219",
     "question": "Is Medicube PDRN serum good for acne-prone skin?",
     "answer": "It may suit some people, but it is not an acne treatment. Very clog-prone users should patch test.",
     "topic": "Product reviews",
@@ -2072,7 +2192,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-208",
+    "id": "qa-220",
     "question": "Is it the same as Medicube Pink Peptide Serum?",
     "answer": "No. The facial serum has a different formula and use.",
     "topic": "Product reviews",
@@ -2082,7 +2202,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-209",
+    "id": "qa-221",
     "question": "Is hyaluronic acid enough to repair dehydrated skin?",
     "answer": "Usually not by itself. Hyaluronic acid can help hydration, but supporting the skin barrier depends on the complete formula, including humectants, emollients, and sometimes occlusives.",
     "topic": "Skin care",
@@ -2092,7 +2212,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-210",
+    "id": "qa-222",
     "question": "What does the exosome evidence show?",
     "answer": "Recent systematic reviews report promising short-term improvements in hydration, elasticity, wrinkles, pigmentation, and texture.",
     "topic": "Skin care",
@@ -2102,7 +2222,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-211",
+    "id": "qa-223",
     "question": "Can PIH and PIE happen together?",
     "answer": "Yes. One healed pimple can leave both vascular redness and extra pigment.",
     "topic": "Acne",
@@ -2112,7 +2232,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-212",
+    "id": "qa-224",
     "question": "Can I use Reedle Shot with retinol or retinal?",
     "answer": "VT recommends alternating nights during introduction. No direct clinical trial identified in the sources reviewed tested commercial Reedle Shot layered with a separate retinol or retinal product.",
     "topic": "Skin care",
@@ -2122,7 +2242,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-213",
+    "id": "qa-225",
     "question": "What Is Salicylic Acid?",
     "answer": "Salicylic acid is a beta-hydroxy acid, also called a BHA. It is oil-soluble, which means it can move into oily areas of the pore more easily than water-soluble acids.",
     "topic": "Acne",
@@ -2132,7 +2252,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-214",
+    "id": "qa-226",
     "question": "Is 10% benzoyl peroxide better than 2.5%?",
     "answer": "Not necessarily. In a classic trial, 2.5% benzoyl peroxide was as effective as 5% and 10% for inflammatory lesions.",
     "topic": "Acne",
@@ -2142,7 +2262,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-215",
+    "id": "qa-227",
     "question": "What acne signs are not typical of simple barrier damage?",
     "answer": "Comedones, blackheads, closed whiteheads, deep painful cyst-like lesions, and predictable recurrence in sebaceous zones are stronger acne clues than barrier damage clues.",
     "topic": "Acne",
@@ -2152,7 +2272,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-216",
+    "id": "qa-228",
     "question": "Can coconut oil regrow hair?",
     "answer": "Coconut oil is not well supported as a follicle-stimulating regrowth treatment.",
     "topic": "Hair & body",
@@ -2162,7 +2282,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-217",
+    "id": "qa-229",
     "question": "What should I know about understanding SPF Labels?",
     "answer": "Sunscreen labels have a lot of numbers and claims on them. Here is what actually matters and what the terms mean.",
     "topic": "Sun care",
@@ -2172,7 +2292,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-218",
+    "id": "qa-230",
     "question": "Can you put bug spray over sunscreen?",
     "answer": "Yes. Public-health guidance recommends applying insect repellent after sunscreen.",
     "topic": "Sun care",
@@ -2182,7 +2302,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-219",
+    "id": "qa-231",
     "question": "Can I use it on my underarms or bikini line?",
     "answer": "The Ordinary has explicitly stated it does not recommend this product on underarms or inner thighs because those areas are more sensitive and more occluded.",
     "topic": "Product reviews",
@@ -2192,7 +2312,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-220",
+    "id": "qa-232",
     "question": "Does selling in mainland China always mean animal testing?",
     "answer": "No. Dossier requirements depend on product category and conditions.",
     "topic": "Skin care",
@@ -2202,7 +2322,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-221",
+    "id": "qa-233",
     "question": "Is UV 4 good for tanning?",
     "answer": "Tanning may occur at UV 4, depending on dose and individual response.",
     "topic": "Sun care",
@@ -2212,7 +2332,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-222",
+    "id": "qa-234",
     "question": "Does irritation mean acne treatment is working?",
     "answer": "No. Burning and harsh peeling are not required for results.",
     "topic": "Acne",
@@ -2222,7 +2342,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-223",
+    "id": "qa-235",
     "question": "Why is another ingredient the problem?",
     "answer": "HA serums are not bottles of pure hyaluronic acid. They also contain solvents, preservatives, texture agents, botanical extracts, fragrance, and sometimes exfoliating or brightening ingredients.",
     "topic": "Skin care",
@@ -2232,7 +2352,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-224",
+    "id": "qa-236",
     "question": "Why does moisturizer burn after retinol or tretinoin?",
     "answer": "Retinoids can dry and irritate the outer skin layer, especially when started too often or used with other actives.",
     "topic": "Skin care",
@@ -2242,7 +2362,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-225",
+    "id": "qa-237",
     "question": "Do silicones cause sunscreen pilling?",
     "answer": "Not reliably. No direct pilling study has identified dimethicone or silicones as a universal culprit.",
     "topic": "Sun care",
@@ -2252,7 +2372,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-226",
+    "id": "qa-238",
     "question": "What should I know about a high-strength serum adds exposure without proven extra benefit?",
     "answer": "Most of the better-known facial studies used roughly 2% to 5% niacinamide.",
     "topic": "Skin care",
@@ -2262,7 +2382,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-227",
+    "id": "qa-239",
     "question": "Why does sunscreen sting only when I sweat?",
     "answer": "Sweating can redistribute or wash off sunscreen films. If a product stings only during exercise or heat, migration toward the eye is a plausible contributor, but that pattern does not prove the cause.",
     "topic": "Sun care",
@@ -2272,7 +2392,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-228",
+    "id": "qa-240",
     "question": "What should I know about myth #4: A slow metabolism means you can't lose weight?",
     "answer": "Metabolic adaptation is real — when you lose weight or restrict calories, your resting metabolic rate does drop somewhat.",
     "topic": "Wellness",
@@ -2282,7 +2402,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-229",
+    "id": "qa-241",
     "question": "Can antibiotics treat acne on their own?",
     "answer": "They should generally not be used alone. Guidelines recommend combining topical or oral antibiotics with benzoyl peroxide or another non-antibiotic topical treatment and limiting how long antibiotics are used.",
     "topic": "Acne",
@@ -2292,7 +2412,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-230",
+    "id": "qa-242",
     "question": "Can Anua PDRN Serum be used with retinol?",
     "answer": "Yes. It can be used as a hydrating layer in a retinoid routine.",
     "topic": "Product reviews",
@@ -2302,7 +2422,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-231",
+    "id": "qa-243",
     "question": "What should I know about hip Thrust vs Squat: The Hypertrophy Research?",
     "answer": "The hip thrust versus squat debate is the clearest window into how activation logic plays out, or fails to play out, in practice.",
     "topic": "Skin care",
@@ -2312,7 +2432,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-232",
+    "id": "qa-244",
     "question": "Can I use azelaic acid every day?",
     "answer": "Many azelaic acid products are made for daily use, and some prescription labels direct twice-daily use.",
     "topic": "Skin care",
@@ -2322,7 +2442,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-233",
+    "id": "qa-245",
+    "question": "Which feels better on oily or dry skin?",
+    "answer": "For oily or combination skin , Aqua-Fresh is the more sensible first sample.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "Which feels better on oily or dry skin?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-246",
     "question": "Is Beauty of Joseon Relief Sun a mineral sunscreen?",
     "answer": "No. It does not list zinc oxide or titanium dioxide.",
     "topic": "Sun care",
@@ -2332,7 +2462,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-234",
+    "id": "qa-247",
     "question": "Why “barrier repair” is overstated?",
     "answer": "Skin barrier repair is more specific than “putting fat on skin.” The outer skin barrier depends heavily on organized lipids, especially ceramides, cholesterol, and free fatty acids.",
     "topic": "Skin care",
@@ -2342,7 +2472,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-235",
+    "id": "qa-248",
     "question": "What should I know about geek & Gorgeous Jelly Joker?",
     "answer": "Jelly Joker suits someone who wants a gel-style wash without a bubbly finish.",
     "topic": "Skin care",
@@ -2352,7 +2482,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-236",
+    "id": "qa-249",
     "question": "What should I know about garnier SkinActive Micellar Cleansing Water All-in-1?",
     "answer": "The pink-cap All-in-1 is the easy everyday option for light makeup and a quick cleanse.",
     "topic": "Skin care",
@@ -2362,7 +2492,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-237",
+    "id": "qa-250",
     "question": "Is oil-free the same as non-comedogenic?",
     "answer": "No. Oil-free describes part of the formula, while non-comedogenic means the product is formulated or tested with the aim of not clogging pores.",
     "topic": "Acne",
@@ -2372,7 +2502,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-238",
+    "id": "qa-251",
     "question": "What should I know about the Ordinary Natural Moisturizing Factors + Beta Glucan?",
     "answer": "The Beta Glucan version is an oil-free gel with humectants, amino acids and beta-glucan.",
     "topic": "Skin care",
@@ -2382,7 +2512,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-239",
+    "id": "qa-252",
     "question": "How long should I leave it on?",
     "answer": "Follow the product instructions. First-time or sensitive users should consider a shorter daytime use before sleeping in it overnight.",
     "topic": "Product reviews",
@@ -2392,7 +2522,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-240",
+    "id": "qa-253",
     "question": "Do silicones in hair products clog pores?",
     "answer": "An ingredient ending in cone is not enough to predict acne. Finished-product behavior, concentration, exposure and individual susceptibility matter more than a one-ingredient blacklist.",
     "topic": "Hair & body",
@@ -2402,7 +2532,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-241",
+    "id": "qa-254",
     "question": "Can I mix moisturizer with sunscreen?",
     "answer": "Layer them instead of mixing them in your hand. The mixed combination has not been tested as the labeled sunscreen, and mixing can make it harder to apply a known, even amount.",
     "topic": "Sun care",
@@ -2412,7 +2542,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-242",
+    "id": "qa-255",
     "question": "Should Cyperus rotundus essential oil be used undiluted?",
     "answer": "The 2012 and 2014 protocols used study-prepared essential oil without a reported carrier dilution.",
     "topic": "Hair & body",
@@ -2422,7 +2552,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-243",
+    "id": "qa-256",
     "question": "What should I know about 9 Signs Your Routine Went Too Far?",
     "answer": "There is no validated \"9 signs of damaged skin barrier\" diagnostic score in dermatology.",
     "topic": "Skin care",
@@ -2432,7 +2562,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-244",
+    "id": "qa-257",
     "question": "Should skincare be stored in the refrigerator?",
     "answer": "Only when the label recommends it or when you prefer the sensation and the formula remains stable.",
     "topic": "Skin care",
@@ -2442,7 +2572,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-245",
+    "id": "qa-258",
     "question": "Does red light therapy build collagen?",
     "answer": "Some human studies and laboratory work suggest collagen-related effects, but the amount of visible improvement from a home mask varies.",
     "topic": "Skin care",
@@ -2452,7 +2582,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-246",
+    "id": "qa-259",
     "question": "How long does neck cream take to work?",
     "answer": "Hydration and surface smoothness may improve within hours or days.",
     "topic": "Skin care",
@@ -2462,7 +2592,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-247",
+    "id": "qa-260",
     "question": "Does Qure remove chloramine?",
     "answer": "Public product information did not verify chloramine reduction. Free-chlorine results should not be assumed to apply to chloramine.",
     "topic": "Hair & body",
@@ -2472,7 +2602,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-248",
+    "id": "qa-261",
     "question": "Do I need sunscreen indoors at UV 0 to 2?",
     "answer": "Not automatically. Window glass usually blocks much of UVB but can transmit some UVA.",
     "topic": "Sun care",
@@ -2482,7 +2612,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-249",
+    "id": "qa-262",
+    "question": "Is dark blonde hair an exception?",
+    "answer": "Yes, potentially. Philips specifically lists naturally dark blonde hair as a color its Lumea devices can work on.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "Is dark blonde hair an exception?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-263",
     "question": "Can topical PDRN replace retinol?",
     "answer": "Not yet. One 28-day split-face study compared a specific 0.1% PDRN-850K eye cream with 0.1% retinol, while the retinoid class, especially tretinoin, has a broader human evidence base.",
     "topic": "Skin care",
@@ -2492,7 +2632,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-250",
+    "id": "qa-264",
     "question": "What should I know about layering and Routine Tips?",
     "answer": "Because this serum is gentler than a classic low-pH vitamin C formula, it layers well with most other products.",
     "topic": "Product reviews",
@@ -2502,7 +2642,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-251",
+    "id": "qa-265",
     "question": "Is fibermaxxing good for weight loss?",
     "answer": "Fiber may support fullness and produce modest weight changes, but it is not a stand-alone weight-loss treatment.",
     "topic": "Wellness",
@@ -2512,7 +2652,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-252",
+    "id": "qa-266",
     "question": "Do mineral sunscreens prevent fungal acne?",
     "answer": "No sunscreen filter type has been proven to prevent Malassezia folliculitis.",
     "topic": "Sun care",
@@ -2522,7 +2662,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-253",
+    "id": "qa-267",
     "question": "Are fungal acne safe ingredient checkers scientifically proven?",
     "answer": "In our literature search, last checked August 9, 2026, we did not identify a clinically validated universal ingredient-checker system.",
     "topic": "Acne",
@@ -2532,17 +2672,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-254",
-    "question": "What should I know about in this review?",
-    "answer": "The useful question is whether a matte moisturizer suits your routine.",
-    "topic": "Acne",
-    "article": "Garnier Salicylic Sorbet Cream Review: Ingredients & Verdict",
-    "url": "/blog/garnier-salicylic-sorbet-cream-review",
-    "sourceQuestion": "What should I know about in this review?",
+    "id": "qa-268",
+    "question": "Is there really 4% hyaluronic acid in the jar?",
+    "answer": "No separate 4% hyaluronic-acid concentration is disclosed. Garnier presents the headline as 4% [Niacinamide + Hyaluronic acid] .",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "Is there really 4% hyaluronic acid in the jar?",
     "sourceKind": "section"
   },
   {
-    "id": "qa-255",
+    "id": "qa-269",
     "question": "Garnier Vitamin C Sorbet Cream Review: Is It Good?",
     "answer": "It is good for the right user rather than universally good. The formula delivers lightweight hydration and a matte-leaning finish at a low price, but it prioritizes fast absorption and fragrance over a richer, fragrance-free barrier-support profile.",
     "topic": "Product reviews",
@@ -2552,7 +2692,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-256",
+    "id": "qa-270",
     "question": "Why are growth factors fragile?",
     "answer": "A growth-factor serum must survive manufacturing, heat, pH changes, contact with other ingredients, shipping, storage, and repeated opening.",
     "topic": "Skin care",
@@ -2562,7 +2702,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-257",
+    "id": "qa-271",
     "question": "Does niacinamide fade post-acne marks?",
     "answer": "Niacinamide may support gradual brightening and barrier function, but evidence for niacinamide alone in acne-induced PIH is limited compared with the volume of marketing claims.",
     "topic": "Acne",
@@ -2572,7 +2712,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-258",
+    "id": "qa-272",
     "question": "Can I use HOCl every day?",
     "answer": "Most low-concentration hypochlorous acid face sprays can be used daily if tolerated.",
     "topic": "Skin care",
@@ -2582,7 +2722,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-259",
+    "id": "qa-273",
     "question": "How should I use hypochlorous acid after a workout?",
     "answer": "If possible, cleanse or rinse first, apply the labeled facial spray, let it dry, then reapply sunscreen before returning outdoors.",
     "topic": "Sun care",
@@ -2592,7 +2732,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-260",
+    "id": "qa-274",
     "question": "What should I know about a low-irritation start?",
     "answer": "Use it before. Spray after cleansing, let the skin dry, then apply retinol and moisturizer.",
     "topic": "Skin care",
@@ -2602,7 +2742,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-261",
+    "id": "qa-275",
     "question": "What about vitamin C derivatives?",
     "answer": "Vitamin C derivatives are designed to change properties such as stability, solubility, penetration, or tolerability.",
     "topic": "Skin care",
@@ -2612,7 +2752,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-262",
+    "id": "qa-276",
     "question": "Is Medicube PDRN serum suitable for sensitive skin?",
     "answer": "Both current formulas list fragrance, so fragrance-free products are a safer first choice for highly reactive or fragrance-allergic skin.",
     "topic": "Product reviews",
@@ -2622,7 +2762,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-263",
+    "id": "qa-277",
     "question": "Should I stop salicylic acid or retinoids?",
     "answer": "Not automatically. Retinoids and salicylic acid may be treating real acne.",
     "topic": "Skin care",
@@ -2632,7 +2772,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-264",
+    "id": "qa-278",
     "question": "Why topical claims are difficult?",
     "answer": "Healthy stratum corneum is designed to limit penetration. Large DNA fragments and extracellular vesicles face formulation and delivery challenges.",
     "topic": "Skin care",
@@ -2642,7 +2782,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-265",
+    "id": "qa-279",
     "question": "Do acne scars fade on their own?",
     "answer": "Redness and pigment over a scar may fade. Structural scars may soften or remodel over time, but they usually do not fully disappear without scar-directed treatment.",
     "topic": "Acne",
@@ -2652,7 +2792,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-266",
+    "id": "qa-280",
     "question": "Can I use Reedle Shot with tretinoin or adapalene?",
     "answer": "Do not casually add it to a prescription-retinoid routine. Retinoids can already cause dryness and irritation, and no direct combination study was identified.",
     "topic": "Skin care",
@@ -2662,7 +2802,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-267",
+    "id": "qa-281",
     "question": "What should I know about the Ordinary 2% Products Compared?",
     "answer": "The Ordinary offers more than one 2% salicylic acid product, and they are not interchangeable.",
     "topic": "Acne",
@@ -2672,7 +2812,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-268",
+    "id": "qa-282",
     "question": "How long do these acne treatments take to work?",
     "answer": "Allow at least 6 to 8 weeks before judging early improvement. Complete clearing can take 3 to 4 months.",
     "topic": "Acne",
@@ -2682,7 +2822,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-269",
+    "id": "qa-283",
     "question": "How often should I use hair growth oil?",
     "answer": "Frequency depends on the product and scalp. A conservative starting point is once weekly, using a small amount and washing it out thoroughly.",
     "topic": "Hair & body",
@@ -2692,7 +2832,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-270",
+    "id": "qa-284",
     "question": "What should I know about the Short Version?",
     "answer": "The most evidence-backed sunscreen routine is not complicated. It is broad-spectrum SPF 30 or higher that you will actually use, applied generously to all exposed skin, with reapplication based on outdoor time, sweating, swimming, and towel drying.",
     "topic": "Sun care",
@@ -2702,7 +2842,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-271",
+    "id": "qa-285",
     "question": "Can you put sunscreen over bug spray?",
     "answer": "During prolonged sun exposure, sunscreen can be reapplied over an earlier repellent layer.",
     "topic": "Sun care",
@@ -2712,7 +2852,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-272",
+    "id": "qa-286",
     "question": "Can I use it with retinol?",
     "answer": "Not in the same routine. The official contraindication list includes retinoids, and the brand guidance recommends alternating them on different evenings and letting your skin adjust to each one before combining.",
     "topic": "Product reviews",
@@ -2722,7 +2862,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-273",
+    "id": "qa-287",
     "question": "Is Leaping Bunny stronger than a self-declared logo?",
     "answer": "Based on public requirements, it includes a fixed cutoff date, supplier monitoring, supply-chain examination, and independent auditing.",
     "topic": "Skin care",
@@ -2732,7 +2872,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-274",
+    "id": "qa-288",
     "question": "Can you tan in UV 5?",
     "answer": "It is possible, depending on dose and individual response. UV injury can also occur, and there is no universal safe number of minutes.",
     "topic": "Sun care",
@@ -2742,7 +2882,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-275",
+    "id": "qa-289",
     "question": "Do hydrocolloid patches prevent acne from returning?",
     "answer": "A hydrocolloid patch can protect a suitable superficial lesion and may support healing, but standard patches are not established treatment for preventing future microcomedones or recurring acne.",
     "topic": "Acne",
@@ -2752,7 +2892,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-276",
+    "id": "qa-290",
     "question": "Why are you applying more than the formula needs?",
     "answer": "Several layers of a polymer-rich serum can create a heavy film, increase tackiness, and encourage pilling under moisturizer or sunscreen.",
     "topic": "Skin care",
@@ -2762,7 +2902,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-277",
+    "id": "qa-291",
     "question": "Why does moisturizer burn around my nose or mouth?",
     "answer": "Those areas are easily irritated by wiping, runny noses, toothpaste, acne treatments, saliva, weather, and over-cleansing.",
     "topic": "Skin care",
@@ -2772,7 +2912,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-278",
+    "id": "qa-292",
     "question": "Why does sunscreen pill over moisturizer?",
     "answer": "The moisturizer changes the surface the sunscreen has to spread over.",
     "topic": "Sun care",
@@ -2782,7 +2922,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-279",
+    "id": "qa-293",
     "question": "Why are niacin and niacinamide being confused?",
     "answer": "Niacin, or nicotinic acid, is well known for causing flushing. Niacinamide is a related but different molecule and is not expected to produce the same classic flush under normal cosmetic use.",
     "topic": "Skin care",
@@ -2792,7 +2932,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-280",
+    "id": "qa-294",
     "question": "What should I do if sunscreen gets in my eyes?",
     "answer": "Start rinsing immediately with plenty of room-temperature running water.",
     "topic": "Sun care",
@@ -2802,7 +2942,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-281",
+    "id": "qa-295",
     "question": "Why is myth #5: Meal timing crucial for fat loss?",
     "answer": "Total calories and food quality matter far more than when you eat them.",
     "topic": "Wellness",
@@ -2812,7 +2952,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-282",
+    "id": "qa-296",
     "question": "Is salicylic acid enough for acne?",
     "answer": "Salicylic acid can be a useful over-the-counter option or add-on, especially when retinoids are not tolerated.",
     "topic": "Acne",
@@ -2822,7 +2962,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-283",
+    "id": "qa-297",
     "question": "Is Anua PDRN Serum good for acne-prone skin?",
     "answer": "It may be suitable because it is lightweight and fragrance-free, but no cosmetic can guarantee zero breakouts.",
     "topic": "Product reviews",
@@ -2832,7 +2972,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-284",
+    "id": "qa-298",
     "question": "What This Means for Women Specifically?",
     "answer": "The common narrative is that women in particular have underactive glutes, often framed around hip anatomy, movement patterns, or sedentary lifestyles.",
     "topic": "Skin care",
@@ -2842,7 +2982,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-285",
+    "id": "qa-299",
     "question": "Should azelaic acid be used in the morning or at night?",
     "answer": "Either can work. Twice-daily prescription directions use morning and evening.",
     "topic": "Skin care",
@@ -2852,7 +2992,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-286",
+    "id": "qa-300",
+    "question": "What do rice, niacinamide and B5 actually tell you?",
+    "answer": "The original INCI lists niacinamide relatively early, alongside rice extract and fermented botanical ingredients.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "What do rice, niacinamide and B5 actually tell you?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-301",
     "question": "What Is in Beauty of Joseon Relief Sun?",
     "answer": "Beauty of Joseon Relief Sun uses four organic UV filters, contains niacinamide, and is officially labeled fragrance-free.",
     "topic": "Sun care",
@@ -2862,7 +3012,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-287",
+    "id": "qa-302",
     "question": "What should I know about acne, oily skin, and seborrheic dermatitis?",
     "answer": "Beef tallow is a poor default choice for acne-prone or oily facial skin.",
     "topic": "Skin care",
@@ -2872,7 +3022,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-288",
+    "id": "qa-303",
     "question": "What should I know about vanicream Gentle Facial Cleanser?",
     "answer": "Vanicream is the lathering option in this shortlist. Its soap-free formula contains glycerin and omits fragrance, essential oils and botanical extracts.",
     "topic": "Skin care",
@@ -2882,7 +3032,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-289",
+    "id": "qa-304",
     "question": "What should I know about garnier SkinActive Micellar Cleansing Water All-in-1 Waterproof?",
     "answer": "This is the purposeful choice for waterproof mascara and long-wear makeup.",
     "topic": "Skin care",
@@ -2892,7 +3042,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-290",
+    "id": "qa-305",
     "question": "What should I know about best Moisturizers for Oily, Acne-Prone Skin Compared?",
     "answer": "Prices, ingredient lists, packaging, and regional availability can change.",
     "topic": "Acne",
@@ -2902,7 +3052,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-291",
+    "id": "qa-306",
     "question": "What should I know about sebamed Clear Face Care Gel?",
     "answer": "Sebamed offers a relatively short ingredient list built around water-binding ingredients, including glycerin, panthenol and sodium hyaluronate, plus allantoin and aloe.",
     "topic": "Skin care",
@@ -2912,7 +3062,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-292",
+    "id": "qa-307",
     "question": "Is the Biodance mask worth buying?",
     "answer": "It may fit someone who wants an occasional hydration and glow mask.",
     "topic": "Product reviews",
@@ -2922,7 +3072,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-293",
+    "id": "qa-308",
     "question": "Can shampoo and conditioner cause forehead acne?",
     "answer": "They may be worth considering if runoff or residue repeatedly reaches the skin.",
     "topic": "Hair & body",
@@ -2932,7 +3082,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-294",
+    "id": "qa-309",
     "question": "How do I know sunscreen alone is not moisturizing enough?",
     "answer": "Tightness, roughness, flaking, persistent stinging or makeup catching on dry patches suggest that your skin may benefit from a separate moisturizer or a more emollient sunscreen.",
     "topic": "Sun care",
@@ -2942,7 +3092,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-295",
+    "id": "qa-310",
     "question": "How quickly could results appear?",
     "answer": "The main hair-growth trials lasted six months. There is no strong evidence that a few days or weeks of use will produce a meaningful change.",
     "topic": "Hair & body",
@@ -2952,7 +3102,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-296",
+    "id": "qa-311",
     "question": "What Damages the Barrier?",
     "answer": "Most barrier damage from skincare is cumulative. It is rarely one single product.",
     "topic": "Skin care",
@@ -2962,7 +3112,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-297",
+    "id": "qa-312",
     "question": "How long should I cool my face?",
     "answer": "There is no standardized temperature or duration for cosmetic facial cooling.",
     "topic": "Skin care",
@@ -2972,7 +3122,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-298",
+    "id": "qa-313",
     "question": "Are cheap LED masks useless?",
     "answer": "Price does not prove effectiveness, but very cheap devices often provide less technical information and less exact-device testing.",
     "topic": "Skin care",
@@ -2982,7 +3132,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-299",
+    "id": "qa-314",
     "question": "Why is the formula can work. The category has not proved it superior?",
     "answer": "A small randomized neck-specific trial found improvement in both the active and vehicle groups.",
     "topic": "Skin care",
@@ -2992,7 +3142,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-300",
+    "id": "qa-315",
     "question": "Can a shower filter stop hair loss?",
     "answer": "No credible evidence shows that shower filters regrow hair or treat common hair-loss disorders.",
     "topic": "Hair & body",
@@ -3002,7 +3152,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-301",
+    "id": "qa-316",
     "question": "Does snow make a low UV Index dangerous?",
     "answer": "Snow can reflect UV and increase exposure to the face and eyes. Canadian guidance specifically recommends sunscreen and protective clothing during more than an hour outside on bright, snow-covered days even in the low 0 to 2 range.",
     "topic": "Sun care",
@@ -3012,7 +3162,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-302",
+    "id": "qa-317",
+    "question": "What can remove light blonde, grey or white hair?",
+    "answer": "Electrolysis treats individual follicles with an electric current rather than depending on hair color.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "What can remove light blonde, grey or white hair?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-318",
     "question": "Is plant-derived PDRN vegan and equally effective?",
     "answer": "Plant-derived DNA can avoid animal sourcing, but source claims need documentation.",
     "topic": "Skin care",
@@ -3022,7 +3182,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-303",
+    "id": "qa-319",
     "question": "Who should be careful with a high-fiber diet?",
     "answer": "People with bowel strictures, obstruction risk, difficulty swallowing, active digestive symptoms, or certain forms of IBS or IBD should get individualized advice before sharply increasing fiber or using supplements.",
     "topic": "Wellness",
@@ -3032,7 +3192,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-304",
+    "id": "qa-320",
     "question": "What about esters, oils, and fatty acids?",
     "answer": "These ingredients are often flagged because Malassezia is lipid-dependent.",
     "topic": "Sun care",
@@ -3042,7 +3202,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-305",
+    "id": "qa-321",
     "question": "Why are three viral “fungal acne” rules too simple?",
     "answer": "The internet often reduces the diagnosis to a checklist. Dermatology evidence is messier—and more useful.",
     "topic": "Acne",
@@ -3052,7 +3212,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-306",
+    "id": "qa-322",
+    "question": "What else is in the UK formula?",
+    "answer": "Garnier lists water, glycerin, niacinamide and Alcohol Denat. as the first four ingredients.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "What else is in the UK formula?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-323",
     "question": "Is this a 4% salicylic acid cream?",
     "answer": "No: the European 4% claim describes a combined blend of niacinamide, salicylic acid and centella.",
     "topic": "Acne",
@@ -3062,7 +3232,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-307",
+    "id": "qa-324",
     "question": "What should I know about garnier Vitamin C Sorbet Cream Ingredients & INCI?",
     "answer": "The full official UK INCI list is: Aqua, Glycerin, Niacinamide, Alcohol Denat., Cetearyl Isononanoate, Sodium Carbomer, Citrus Limon Fruit Extract, Sodium Hydroxide, Silica, Silica Silylate, Ascorbyl Glucoside, Caprylyl Glycol, Trisodium.",
     "topic": "Product reviews",
@@ -3072,7 +3242,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-308",
+    "id": "qa-325",
     "question": "Are growth factor serums safe?",
     "answer": "The 2023 systematic review found a low rate of reported adverse events across the included topical studies.",
     "topic": "Skin care",
@@ -3082,7 +3252,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-309",
+    "id": "qa-326",
     "question": "Can dark spots get worse before they get better?",
     "answer": "Marks can darken after ultraviolet or visible-light exposure and after new irritation.",
     "topic": "Acne",
@@ -3092,7 +3262,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-310",
+    "id": "qa-327",
     "question": "Is HOCl good after workouts?",
     "answer": "It can be useful after sweating because it works as a gentle antimicrobial mist, but it should not replace cleansing when your skin is oily, sweaty, or covered with sunscreen or makeup.",
     "topic": "Skin care",
@@ -3102,7 +3272,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-311",
+    "id": "qa-328",
     "question": "Can I make hypochlorous acid face spray from household bleach?",
     "answer": "No. Use only a finished product specifically labeled for use on human skin.",
     "topic": "Sun care",
@@ -3112,7 +3282,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-312",
+    "id": "qa-329",
     "question": "What should I know about build the cluster?",
     "answer": "Medical note: This guide is educational. Ask your prescriber about tretinoin, adapalene, pregnancy, severe acne, eczema, rosacea, or persistent irritation.",
     "topic": "Skin care",
@@ -3122,7 +3292,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-313",
+    "id": "qa-330",
     "question": "Does vitamin C still work if you use it in the morning?",
     "answer": "Yes. Topical vitamin C is commonly used in morning routines under sunscreen because it can add antioxidant support.",
     "topic": "Skin care",
@@ -3132,7 +3302,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-314",
+    "id": "qa-331",
     "question": "Can I use Medicube PDRN serum with retinol or vitamin C?",
     "answer": "There is no obvious ingredient conflict with retinoids, vitamin C, exfoliating acids, or benzoyl peroxide.",
     "topic": "Product reviews",
@@ -3142,7 +3312,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-315",
+    "id": "qa-332",
     "question": "Does Medicube Scalp Serum actually grow hair?",
     "answer": "The public claims reviewed do not establish that it regrows hair or treats pattern hair loss.",
     "topic": "Product reviews",
@@ -3152,7 +3322,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-316",
+    "id": "qa-333",
     "question": "How long does a damaged skin barrier take to recover?",
     "answer": "There is no universal timeline. Mild irritation may improve within days after the trigger is removed, while more significant dermatitis can take longer and may need treatment.",
     "topic": "Skin care",
@@ -3162,7 +3332,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-317",
+    "id": "qa-334",
     "question": "Which one should you choose?",
     "answer": "Cosmetic serums and injected biological products are not the same risk category.",
     "topic": "Skin care",
@@ -3172,7 +3342,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-318",
+    "id": "qa-335",
     "question": "Can skincare remove pitted acne scars?",
     "answer": "No topical product can fully lift a deep pitted scar. Skincare may improve color, hydration and overall appearance, while procedures target the scar structure.",
     "topic": "Acne",
@@ -3182,7 +3352,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-319",
+    "id": "qa-336",
     "question": "Can I use Reedle Shot with vitamin C?",
     "answer": "VT suggests vitamin C in the morning and Reedle Shot in the evening after adjustment.",
     "topic": "Skin care",
@@ -3192,7 +3362,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-320",
+    "id": "qa-337",
     "question": "What the Research Actually Says?",
     "answer": "Salicylic acid is supported for acne, but the evidence is not as strong or extensive as the evidence for ingredients such as topical retinoids and benzoyl peroxide.",
     "topic": "Acne",
@@ -3202,7 +3372,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-321",
+    "id": "qa-338",
     "question": "Can sensitive skin use either ingredient?",
     "answer": "Sensitive skin may tolerate a short-contact cleanser or a low-strength leave-on used only a few times per week.",
     "topic": "Acne",
@@ -3212,7 +3382,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-322",
+    "id": "qa-339",
     "question": "What should I know about the lipid matrix matters?",
     "answer": "The intercellular lipid matrix is central to barrier function. A useful shorthand is that stratum corneum lipids are dominated by ceramides, cholesterol, and free fatty acids.",
     "topic": "Acne",
@@ -3222,7 +3392,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-323",
+    "id": "qa-340",
     "question": "Why is your hair growing, but the ends keep breaking?",
     "answer": "If you can see new growth near the roots while your overall length barely changes, the problem may be length retention .",
     "topic": "Hair & body",
@@ -3232,7 +3402,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-324",
+    "id": "qa-341",
     "question": "Does DEET make sunscreen less effective?",
     "answer": "Limited evidence indicates that DEET applied over sunscreen can reduce measured SPF.",
     "topic": "Sun care",
@@ -3242,7 +3412,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-325",
+    "id": "qa-342",
     "question": "Do I really need sunscreen with this?",
     "answer": "Yes. This is one of the most important parts of any AHA routine.",
     "topic": "Product reviews",
@@ -3252,7 +3422,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-326",
+    "id": "qa-343",
     "question": "Can a certified brand have a non-certified parent company?",
     "answer": "Yes. Approval may apply only to the listed brand or product range.",
     "topic": "Skin care",
@@ -3262,7 +3432,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-327",
+    "id": "qa-344",
     "question": "Can you tan in UV 6 or 7?",
     "answer": "It is possible, depending on dose and individual response. UV is high, and these levels should not be tanning targets.",
     "topic": "Sun care",
@@ -3272,7 +3442,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-328",
+    "id": "qa-345",
     "question": "How long should I try a routine before changing it?",
     "answer": "NICE says acne improvement may take 6 to 8 weeks, and many first-line courses are reviewed at 12 weeks.",
     "topic": "Acne",
@@ -3282,7 +3452,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-329",
+    "id": "qa-346",
     "question": "Does hyaluronic acid pull water from your skin in dry air?",
     "answer": "This claim is repeated far more confidently than it has been tested.",
     "topic": "Skin care",
@@ -3292,7 +3462,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-330",
+    "id": "qa-347",
     "question": "Is it an allergy if my moisturizer burns?",
     "answer": "Not always. Immediate burning is often irritant-based.",
     "topic": "Skin care",
@@ -3302,7 +3472,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-331",
+    "id": "qa-348",
     "question": "Is mineral sunscreen more likely to pill?",
     "answer": "It can happen with high-powder formulas, but there is not strong controlled evidence that mineral sunscreen as a class pills more than organic-filter sunscreen.",
     "topic": "Sun care",
@@ -3312,7 +3482,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-332",
+    "id": "qa-349",
     "question": "Why is irritant or allergic contact dermatitis possible?",
     "answer": "Irritant contact dermatitis can appear soon after exposure and often feels burning, stinging, dry, or painful.",
     "topic": "Skin care",
@@ -3322,7 +3492,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-333",
+    "id": "qa-350",
     "question": "Can sunscreen permanently damage my eyes?",
     "answer": "Accidental sunscreen exposure is generally expected to cause irritation rather than severe toxicity, but persistent pain, vision changes or significant redness after thorough rinsing need medical assessment because ocular chemical exposures can.",
     "topic": "Sun care",
@@ -3332,7 +3502,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-334",
+    "id": "qa-351",
     "question": "What should I know about myth #6: You should train every day, or rest for a whole week?",
     "answer": "Muscles don't grow during training — they grow during recovery. The stimulus happens in the gym; the adaptation happens when you rest.",
     "topic": "Wellness",
@@ -3342,7 +3512,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-335",
+    "id": "qa-352",
     "question": "When should acne be treated by a dermatologist?",
     "answer": "Seek professional care for painful nodules, new or worsening scars, widespread acne, major emotional distress, possible hormonal or endocrine symptoms, pregnancy-related treatment questions, or acne that is not improving after consistent correct treatment.",
     "topic": "Acne",
@@ -3352,7 +3522,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-336",
+    "id": "qa-353",
     "question": "Is Anua PDRN Serum better than a normal hyaluronic acid serum?",
     "answer": "It is more complex, but no public head-to-head trial proves better long-term results.",
     "topic": "Product reviews",
@@ -3362,7 +3532,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-337",
+    "id": "qa-354",
     "question": "When Glute Activation Actually Helps?",
     "answer": "None of this means activation exercises have no place. They do.",
     "topic": "Skin care",
@@ -3372,7 +3542,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-338",
+    "id": "qa-355",
     "question": "Can it be combined with salicylic acid or glycolic acid?",
     "answer": "Yes, but using several strong leave-on products together can increase burning, dryness and peeling.",
     "topic": "Skin care",
@@ -3382,7 +3552,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-339",
+    "id": "qa-356",
+    "question": "Are they equally protective?",
+    "answer": "They carry the same SPF50+ PA++++ labels in the versions examined.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "Are they equally protective?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-357",
     "question": "What should I know about beauty of Joseon Relief Sun Official Ingredients?",
     "answer": "The current official Beauty of Joseon ingredient list is reproduced below so you can check the complete formula rather than only selected hero ingredients.",
     "topic": "Sun care",
@@ -3392,7 +3572,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-340",
+    "id": "qa-358",
     "question": "What should I know about safety and product quality?",
     "answer": "Purified tallow has some historical cosmetic safety support. A 1990 Cosmetic Ingredient Review report concluded that tallow and related tallow glycerides were safe as used in cosmetics at the time, and the report did not find the main constituents.",
     "topic": "Skin care",
@@ -3402,7 +3582,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-341",
+    "id": "qa-359",
     "question": "How to choose the right cleanser?",
     "answer": "Start with the makeup you wear. A gentle daily wash and a waterproof makeup remover have different jobs.",
     "topic": "Skin care",
@@ -3412,7 +3592,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-342",
+    "id": "qa-360",
     "question": "Pink cap or blue cap: which should you buy?",
     "answer": "For ordinary makeup, start with a single-phase micellar water such as Sensibio H2O or Garnier pink cap.",
     "topic": "Skin care",
@@ -3422,7 +3602,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-343",
+    "id": "qa-361",
     "question": "What should I know about choose by Your Actual Skin Situation?",
     "answer": "Start with Sebamed Clear Face Care Gel or The Ordinary NMF + Beta Glucan.",
     "topic": "Acne",
@@ -3432,7 +3612,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-344",
+    "id": "qa-362",
     "question": "Which texture makes sense for your skin?",
     "answer": "Oily T-zone, cheeks that need softness: start with the gel-cream option, Hydration Station.",
     "topic": "Skin care",
@@ -3442,7 +3622,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-345",
+    "id": "qa-363",
     "question": "What should I know about a credible hydration formula with overconfident collagen claims?",
     "answer": "The formula has a credible hydration-focused design, but Stylish & Healthy did not conduct a hands-on wear test or independently measure the finished product.",
     "topic": "Product reviews",
@@ -3452,7 +3632,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-346",
+    "id": "qa-364",
     "question": "Is itchy hairline acne really acne?",
     "answer": "Not always. Strong itching, burning, redness or scaling can suggest contact dermatitis.",
     "topic": "Hair & body",
@@ -3462,7 +3642,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-347",
+    "id": "qa-365",
     "question": "Do I need moisturizer under a moisturizing sunscreen in winter?",
     "answer": "You may. Cold, wind and low humidity can increase dryness, so a routine that works in summer may need a separate moisturizer in winter.",
     "topic": "Sun care",
@@ -3472,7 +3652,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-348",
+    "id": "qa-366",
     "question": "What should I know about promising signal, low certainty?",
     "answer": "The human data are worth taking seriously, but the overall evidence base is limited and comes from one investigator or research group.",
     "topic": "Hair & body",
@@ -3482,7 +3662,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-349",
+    "id": "qa-367",
     "question": "What should I know about barrier Damage vs. Purging vs. Allergy?",
     "answer": "This is where social media gets messy. Not every breakout after a new active is purging.",
     "topic": "Skin care",
@@ -3492,7 +3672,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-350",
+    "id": "qa-368",
     "question": "Do cooling eye patches reduce bags?",
     "answer": "They may temporarily reduce the appearance of mild morning puffiness, although direct consumer trials are limited.",
     "topic": "Skin care",
@@ -3502,7 +3682,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-351",
+    "id": "qa-369",
     "question": "What Can a Neck Cream Realistically Change?",
     "answer": "Topicals can affect the epidermis and parts of the dermis, but they cannot meaningfully reposition muscle, remove substantial fat or restore skeletal support.",
     "topic": "Skin care",
@@ -3512,7 +3692,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-352",
+    "id": "qa-370",
     "question": "What should I know about qure Shower Filter?",
     "answer": "Qure is designed and manufacturer-reported to reduce free chlorine.",
     "topic": "Hair & body",
@@ -3522,7 +3702,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-353",
+    "id": "qa-371",
     "question": "Does retinol mean I always need sunscreen at UV 0?",
     "answer": "Retinol use does not change the weather app number. Follow the product label and your clinician's advice, especially if your skin is irritated or you use prescription retinoids; avoid using sunscreen as permission for intentional exposure.",
     "topic": "Sun care",
@@ -3532,7 +3712,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-354",
+    "id": "qa-372",
+    "question": "What should I know about temporary methods?",
+    "answer": "Shaving, trimming, waxing, threading and depilatory creams can all manage visible hair without requiring follicle pigment.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "What should I know about temporary methods?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-373",
     "question": "Can I microneedle a PDRN serum into my skin?",
     "answer": "Do not microneedle an ordinary cosmetic serum into the skin. The FDA says authorized microneedling devices are not approved to deliver cosmetics or topical medications, and it has not reviewed the safety or effectiveness of combining the devices.",
     "topic": "Skin care",
@@ -3542,7 +3732,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-355",
+    "id": "qa-374",
     "question": "What should I know about strong evidence for adequate fiber, limited evidence for “maxxing”?",
     "answer": "Dietary fiber itself has a large evidence base. Extreme intake targets do not.",
     "topic": "Wellness",
@@ -3552,7 +3742,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-356",
+    "id": "qa-375",
     "question": "What should I know about a practical 14-day sunscreen test?",
     "answer": "Fourteen days cannot prove the diagnosis, but it prevents the common mistake of changing five products at once.",
     "topic": "Sun care",
@@ -3562,7 +3752,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-357",
+    "id": "qa-376",
     "question": "What are closed comedones?",
     "answer": "Closed comedones are plugged follicles in acne vulgaris. The opening is not visibly open to the surface the way a blackhead is, so they appear as small skin-coloured or pale bumps.",
     "topic": "Acne",
@@ -3572,7 +3762,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-358",
+    "id": "qa-377",
+    "question": "How strong are the hydration and oil-control claims?",
+    "answer": "Those footnotes are more informative than an unsupported promise, but the public page is not a full trial report.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "How strong are the hydration and oil-control claims?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-378",
     "question": "Which ingredients matter for the buying decision?",
     "answer": "The European list puts water, glycerin and niacinamide first, followed by Alcohol Denat.",
     "topic": "Acne",
@@ -3582,7 +3782,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-359",
+    "id": "qa-379",
     "question": "What should I know about ingredients Worth Knowing About?",
     "answer": "These are not necessarily reasons to avoid the product, but they are worth understanding, particularly if your skin is reactive.",
     "topic": "Product reviews",
@@ -3592,7 +3792,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-360",
+    "id": "qa-380",
     "question": "Should you microneedle growth factor serum into the skin?",
     "answer": "Not at home. Creating channels changes exposure, sterility needs, and risk.",
     "topic": "Skin care",
@@ -3602,7 +3802,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-361",
+    "id": "qa-381",
     "question": "Can I use azelaic acid with salicylic acid?",
     "answer": "Yes, but introduce them one at a time. Using them on separate days or reducing the frequency of one product may lower the risk of dryness and irritation.",
     "topic": "Acne",
@@ -3612,7 +3812,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-362",
+    "id": "qa-382",
     "question": "Can I spray hypochlorous acid over makeup?",
     "answer": "You can, but it probably works better on clean skin. Makeup, sunscreen, and oil can reduce contact with the skin surface and may make the spray less useful.",
     "topic": "Skin care",
@@ -3622,7 +3822,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-363",
+    "id": "qa-383",
     "question": "How long should hypochlorous acid dry before sunscreen?",
     "answer": "No study establishes one universal number of minutes. Wait until the skin is dry enough that sunscreen can spread evenly without mixing into visible droplets.",
     "topic": "Sun care",
@@ -3632,7 +3832,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-364",
+    "id": "qa-384",
     "question": "What should I know about frequently asked questions?",
     "answer": "HOCl reacts rapidly with ascorbate in laboratory solutions, so direct wet mixing may reduce activity.",
     "topic": "Skin care",
@@ -3642,7 +3842,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-365",
+    "id": "qa-385",
     "question": "Can I use Medicube PDRN serum after microneedling?",
     "answer": "No. Do not treat a consumer cosmetic as a sterile post-procedure product.",
     "topic": "Product reviews",
@@ -3652,7 +3852,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-366",
+    "id": "qa-386",
     "question": "What is in Medicube Rosemary PDRN Scalp Serum?",
     "answer": "Ulta's published list starts with water and Alcohol Denat., then includes caffeine, hydrolyzed sponge, menthol and fragrance.",
     "topic": "Product reviews",
@@ -3662,7 +3862,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-367",
+    "id": "qa-387",
     "question": "Can I use petrolatum on oily or acne-prone skin?",
     "answer": "Petrolatum is an effective occlusive, but a full-face layer may feel too heavy for some oily complexions.",
     "topic": "Skin care",
@@ -3672,7 +3872,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-368",
+    "id": "qa-388",
     "question": "What should I know about our verdict?",
     "answer": "PDRN wins for topical skincare by a small margin, mainly because it is easier to define and now has limited formula-specific topical evidence.",
     "topic": "Skin care",
@@ -3682,7 +3882,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-369",
+    "id": "qa-389",
     "question": "Which acne marks take longest to fade?",
     "answer": "Dermal gray-brown PIH and persistent vascular erythema can be slow.",
     "topic": "Acne",
@@ -3692,7 +3892,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-370",
+    "id": "qa-390",
     "question": "Can I use Reedle Shot with salicylic, glycolic or lactic acid?",
     "answer": "The cautious starting approach is a different night. No direct commercial Reedle Shot combination trial was identified for these pairings.",
     "topic": "Skin care",
@@ -3702,7 +3902,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-371",
+    "id": "qa-391",
     "question": "What should I know about older but meaningful direct evidence?",
     "answer": "Older placebo-controlled studies helped establish that 2% leave-on salicylic acid can reduce acne lesions.",
     "topic": "Acne",
@@ -3712,7 +3912,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-372",
+    "id": "qa-392",
     "question": "Does benzoyl peroxide cause antibiotic resistance?",
     "answer": "No bacterial resistance to benzoyl peroxide has been demonstrated.",
     "topic": "Acne",
@@ -3722,7 +3922,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-373",
+    "id": "qa-393",
     "question": "What should I know about tEWL: the barrier measurement people talk about?",
     "answer": "Transepidermal water loss, usually shortened to TEWL, measures the passive movement of water vapor from inside the body through the epidermis into the surrounding air.",
     "topic": "Acne",
@@ -3732,7 +3932,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-374",
+    "id": "qa-394",
     "question": "Why are you shedding more than usual?",
     "answer": "Telogen effluvium occurs when more follicles than usual shift into the resting and shedding phase.",
     "topic": "Hair & body",
@@ -3742,7 +3942,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-375",
+    "id": "qa-395",
     "question": "Can kids use sunscreen and insect repellent together?",
     "answer": "Yes, with age-appropriate products and adult application. Do not apply repellent to children's hands, eyes, mouth, cuts or irritated skin, and avoid combination sunscreen-repellent products.",
     "topic": "Sun care",
@@ -3752,7 +3952,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-376",
+    "id": "qa-396",
     "question": "Is it good for sensitive skin?",
     "answer": "Usually not as a first choice. Sensitive, rosacea-prone, peeling, or compromised skin is exactly where glycolic acid is most likely to sting and backfire.",
     "topic": "Product reviews",
@@ -3762,7 +3962,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-377",
+    "id": "qa-397",
     "question": "What does cruelty-free actually mean?",
     "answer": "In beauty marketing, cruelty-free usually describes a policy against new animal testing for cosmetics or their ingredients.",
     "topic": "Skin care",
@@ -3772,7 +3972,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-378",
+    "id": "qa-398",
     "question": "Can you tan in UV 8, 9 or 10?",
     "answer": "It is possible, depending on dose and individual response. UV is very high, and deliberately seeking it to tan increases potential harm.",
     "topic": "Sun care",
@@ -3782,7 +3982,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-379",
+    "id": "qa-399",
     "question": "When should I see a dermatologist?",
     "answer": "Get help for deep painful nodules, scarring, sudden severe acne, repeated painful lumps, acne that does not improve after consistent treatment or possible non-acne conditions.",
     "topic": "Acne",
@@ -3792,7 +3992,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-380",
+    "id": "qa-400",
     "question": "How to use hyaluronic acid without the tight feeling?",
     "answer": "For one week, keep the rest of your routine stable. Use half as much HA serum and always follow it with moisturizer.",
     "topic": "Skin care",
@@ -3802,7 +4002,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-381",
+    "id": "qa-401",
     "question": "What is the safest type of moisturizer for burning skin?",
     "answer": "A bland, fragrance-free cream or ointment with barrier-supporting ingredients is usually safest.",
     "topic": "Skin care",
@@ -3812,7 +4012,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-382",
+    "id": "qa-402",
     "question": "How long should I wait between moisturizer and sunscreen?",
     "answer": "No universal pilling wait time has been validated. Let the previous layer stop feeling wet or mobile.",
     "topic": "Sun care",
@@ -3822,7 +4022,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-383",
+    "id": "qa-403",
     "question": "What do bumps after niacinamide mean?",
     "answer": "They do not automatically mean purging, allergy, or pore clogging.",
     "topic": "Skin care",
@@ -3832,7 +4032,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-384",
+    "id": "qa-404",
     "question": "How can I stop sunscreen from running into my eyes?",
     "answer": "Use a formula that you tolerate, never spray sunscreen directly onto the face, follow the product directions before activity, keep sunscreen-coated hands away from the eyes, and use sunglasses or a hat as additional sun protection.",
     "topic": "Sun care",
@@ -3842,7 +4042,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-385",
+    "id": "qa-405",
     "question": "What should I know about myth #7: Fasted cardio burns more fat overall?",
     "answer": "The first half of this claim is true. Exercising fasted does increase fat oxidation during the session — research puts the difference at roughly 20–25% more fat burned as fuel during low-intensity fasted exercise compared to the same session after eating.",
     "topic": "Wellness",
@@ -3852,7 +4052,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-386",
+    "id": "qa-406",
     "question": "Can acne scars be prevented?",
     "answer": "Risk can be reduced by controlling inflammatory acne early, avoiding picking and escalating treatment when nodules or scars appear.",
     "topic": "Acne",
@@ -3862,7 +4062,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-387",
+    "id": "qa-407",
     "question": "What should I know about stylish & Healthy Rating?",
     "answer": "A strong hydrator with an overhyped hero ingredient. The formula is elegant, fragrance-free and easy to layer.",
     "topic": "Product reviews",
@@ -3872,7 +4072,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-388",
+    "id": "qa-408",
     "question": "What should I know about four Myths, Four Facts?",
     "answer": "Glute activation exercises are not useless. They are overrated.",
     "topic": "Skin care",
@@ -3882,7 +4082,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-389",
+    "id": "qa-409",
     "question": "Is tingling normal?",
     "answer": "Brief mild tingling can happen. Stop using the product and seek medical advice for persistent burning, severe redness, swelling, hives, breathing difficulty, blistering or a significant itchy rash.",
     "topic": "Skin care",
@@ -3892,7 +4092,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-390",
+    "id": "qa-410",
+    "question": "What should I know about our buying verdict?",
+    "answer": "Start with original Relief Sun when a dewy, moisturizing feel is what makes you apply enough sunscreen every morning.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "What should I know about our buying verdict?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-411",
     "question": "What should I know about full INCI List?",
     "answer": "Aqua, Dibutyl Adipate, Propanediol, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Polymethylsilsesquioxane, Ethylhexyl Triazone, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol (Nano), Niacinamide, Coco-Caprylate/Caprate, Caprylyl Methicone.",
     "topic": "Sun care",
@@ -3902,7 +4112,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-391",
+    "id": "qa-412",
     "question": "How to try beef tallow with lower risk?",
     "answer": "If you still want to try it, the lowest-risk version is not a raw DIY jar.",
     "topic": "Skin care",
@@ -3912,7 +4122,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-392",
+    "id": "qa-413",
     "question": "What should I know about a gentler wash in four steps?",
     "answer": "The American Academy of Dermatology recommends a gentle, non-abrasive cleanser and discourages scrubbing.",
     "topic": "Skin care",
@@ -3922,7 +4132,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-393",
+    "id": "qa-414",
     "question": "How to remove makeup with less rubbing?",
     "answer": "Gentle handling matters alongside the formula. Dermatology guidance advises avoiding abrasive cleansing and scrubbing.",
     "topic": "Skin care",
@@ -3932,7 +4142,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-394",
+    "id": "qa-415",
     "question": "What should I know about oily and sensitive skin?",
     "answer": "La Roche-Posay Toleriane Sensitive Fluid and Purito Oat In Calming Gel Cream have fragrance-free formulas built around hydration and soothing support.",
     "topic": "Acne",
@@ -3942,7 +4152,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-395",
+    "id": "qa-416",
     "question": "How to check a niacinamide-free purchase?",
     "answer": "Ingredient lists and packaging change. The three lists linked below did not include niacinamide when checked on September 25, 2026.",
     "topic": "Skin care",
@@ -3952,7 +4162,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-396",
+    "id": "qa-417",
     "question": "Ingredient Analysis: What Is Doing the Work?",
     "answer": "The formula is built like a hydration treatment. The most important ingredients for the immediate effect are not collagen.",
     "topic": "Product reviews",
@@ -3962,7 +4172,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-397",
+    "id": "qa-418",
     "question": "What should I do first if hair products seem to be causing acne?",
     "answer": "Stop the most plausible leave-on exposure, keep hair products off facial skin, wash residue from pillowcases and headwear, and keep the rest of your routine stable for 4 to 6 weeks.",
     "topic": "Hair & body",
@@ -3972,7 +4182,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-398",
+    "id": "qa-419",
     "question": "Can a hydrating serum replace moisturizer under sunscreen?",
     "answer": "Sometimes on comfortable oily skin, but a serum and moisturizer are not automatically equivalent.",
     "topic": "Sun care",
@@ -3982,7 +4192,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-399",
+    "id": "qa-420",
     "question": "What Did the Human Studies Actually Find?",
     "answer": "At least four human publications have reported hair-growth outcomes.",
     "topic": "Hair & body",
@@ -3992,7 +4202,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-400",
+    "id": "qa-421",
     "question": "What should I know about the 7-Day Barrier Reset?",
     "answer": "This is a conservative, dermatologist-style reset. It is not magic, and it is not a cure for every rash.",
     "topic": "Skin care",
@@ -4002,7 +4212,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-401",
+    "id": "qa-422",
     "question": "Can I cool my skin after a cosmetic procedure?",
     "answer": "Sometimes, but follow the clinician's aftercare instructions. Cooling can reduce discomfort after certain procedures, while excessive pressure, contaminated tools or extreme cold may be inappropriate for freshly treated skin.",
     "topic": "Skin care",
@@ -4012,7 +4222,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-402",
+    "id": "qa-423",
     "question": "How Does Red-Light Therapy Work?",
     "answer": "The scientific name most often used is photobiomodulation. Photo means light.",
     "topic": "Skin care",
@@ -4022,7 +4232,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-403",
+    "id": "qa-424",
     "question": "Which Ingredients Are Worth Looking For?",
     "answer": "Retinoids can cause redness, burning, itching, dryness and flaking. [15] There is no universally validated starting schedule.",
     "topic": "Skin care",
@@ -4032,7 +4242,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-404",
+    "id": "qa-425",
     "question": "Why is a shower filter not the same as a water softener?",
     "answer": "Hard water contains dissolved calcium and magnesium. The US Geological Survey classifies 121 to 180 mg/L as CaCO 3 as hard and anything above 180 mg/L as very hard.",
     "topic": "Hair & body",
@@ -4042,7 +4252,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-405",
+    "id": "qa-426",
     "question": "Should people with melasma wear sunscreen at low UV?",
     "answer": "Many people managing melasma or post-inflammatory pigmentation choose consistent broad-spectrum protection because their goal is stricter than avoiding sunburn alone.",
     "topic": "Sun care",
@@ -4052,7 +4262,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-406",
+    "id": "qa-427",
+    "question": "What should I know about three mistakes that waste time or raise risk?",
+    "answer": "Buying IPL for clearly white or grey hair. Increasing sessions does not create melanin in a colorless hair.",
+    "topic": "Hair & body",
+    "article": "Does IPL Work on Blonde, Grey or White Hair?",
+    "url": "/blog/does-ipl-work-on-blonde-grey-white-hair",
+    "sourceQuestion": "What should I know about three mistakes that waste time or raise risk?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-428",
     "question": "Is topical PDRN safe during pregnancy or with fish allergy?",
     "answer": "Pregnancy-specific and allergy data for many cosmetic formulas are limited.",
     "topic": "Skin care",
@@ -4062,7 +4282,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-407",
+    "id": "qa-429",
     "question": "Why is fiber More Complicated Than Soluble Versus Insoluble?",
     "answer": "Dietary fiber includes carbohydrates that are not fully digested and absorbed in the small intestine.",
     "topic": "Wellness",
@@ -4072,7 +4292,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-408",
+    "id": "qa-430",
     "question": "Can you tell them apart by appearance?",
     "answer": "Dermatology sources repeatedly describe Malassezia folliculitis as monomorphic : many small papules/pustules at a similar stage.",
     "topic": "Acne",
@@ -4082,7 +4302,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-409",
+    "id": "qa-431",
+    "question": "Who is Garnier Hyaluron Sorbet best for?",
+    "answer": "Consider it if you want a light daily moisturizer, dislike greasy residue and already tolerate fragranced skincare.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "Who is Garnier Hyaluron Sorbet best for?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-432",
     "question": "What should I know about uK, Europe and India: check your exact jar?",
     "answer": "Garnier India's page describes a 4.5% salicylic acid, niacinamide and vitamin C combination, a 48-hour hydration claim and different pack sizes.",
     "topic": "Acne",
@@ -4092,7 +4322,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-410",
+    "id": "qa-433",
     "question": "Who Is This Best For?",
     "answer": "Normal and combination skin looking for a lightweight daily moisturiser with brightening actives at a budget price.",
     "topic": "Product reviews",
@@ -4102,7 +4332,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-411",
+    "id": "qa-434",
     "question": "How to use a growth factor serum?",
     "answer": "There is no category-wide rule saying they cannot share a routine, but finished formulas differ.",
     "topic": "Skin care",
@@ -4112,7 +4342,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-412",
+    "id": "qa-435",
     "question": "How long do acne dark spots last?",
     "answer": "Some superficial marks fade within 6 to 12 months after the cause is controlled.",
     "topic": "Acne",
@@ -4122,7 +4352,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-413",
+    "id": "qa-436",
     "question": "Is HOCl safe around eyes?",
     "answer": "Only use products specifically labeled for eyelid or eye-area use.",
     "topic": "Skin care",
@@ -4132,7 +4362,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-414",
+    "id": "qa-437",
     "question": "Can hypochlorous acid replace cleansing after sweating?",
     "answer": "No. Misting does not remove sweat, sunscreen, sebum or makeup.",
     "topic": "Sun care",
@@ -4142,7 +4372,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-415",
+    "id": "qa-438",
     "question": "Is Medicube PDRN serum worth the hype?",
     "answer": "Partly. It appears to be a promising hydration-focused serum based on its formula.",
     "topic": "Product reviews",
@@ -4152,7 +4382,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-416",
+    "id": "qa-439",
     "question": "How much PDRN and rosemary is that?",
     "answer": "Taking the displayed units literally, 100 ppb equals 0.00001% , while 0.2 ppb equals 0.00000002% .",
     "topic": "Product reviews",
@@ -4162,7 +4392,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-417",
+    "id": "qa-440",
     "question": "Can I use Reedle Shot with niacinamide, hyaluronic acid, peptides or PDRN?",
     "answer": "A familiar hydrating formula is generally easier to troubleshoot than a strong acid or retinoid.",
     "topic": "Skin care",
@@ -4172,7 +4402,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-418",
+    "id": "qa-441",
     "question": "What should I know about more recent controlled trials?",
     "answer": "Newer studies using supramolecular salicylic acid systems have shown promising results compared with acne treatments such as adapalene and benzoyl peroxide combinations.",
     "topic": "Acne",
@@ -4182,7 +4412,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-419",
+    "id": "qa-442",
     "question": "What should I use during pregnancy?",
     "answer": "The American Academy of Dermatology says limited benzoyl peroxide and limited-time salicylic acid use are generally considered acceptable during pregnancy, but discuss use with an obstetric clinician or dermatologist.",
     "topic": "Acne",
@@ -4192,7 +4422,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-420",
+    "id": "qa-443",
     "question": "Why is filaggrin, natural moisturizing factors, and why eczema-prone skin different?",
     "answer": "Filaggrin is a structural protein involved in epidermal differentiation and the formation of natural moisturizing factors.",
     "topic": "Acne",
@@ -4202,7 +4432,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-421",
+    "id": "qa-444",
     "question": "Why are your follicles producing finer, shorter hairs?",
     "answer": "A widening part, receding hairline, or gradually thinner ponytail can point to androgenetic alopecia.",
     "topic": "Hair & body",
@@ -4212,7 +4442,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-422",
+    "id": "qa-445",
     "question": "Should sunscreen and insect repellent combination products be used?",
     "answer": "Separate products are generally preferred because sunscreen usually needs more frequent and more liberal application than insect repellent.",
     "topic": "Sun care",
@@ -4222,7 +4452,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-423",
+    "id": "qa-446",
     "question": "Is The Ordinary Glycolic Acid 7% Strong?",
     "answer": "Yes—7% glycolic acid at about pH 3.6 is a meaningful at-home exfoliant, especially for beginners, sensitive skin, or anyone using other active ingredients.",
     "topic": "Product reviews",
@@ -4232,7 +4462,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-424",
+    "id": "qa-447",
     "question": "What is a fixed cutoff date?",
     "answer": "It is a date used by a certification programme to prevent new animal testing after that point.",
     "topic": "Skin care",
@@ -4242,7 +4472,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-425",
+    "id": "qa-448",
     "question": "Does sunscreen prevent tanning?",
     "answer": "It can reduce tanning by reducing UV exposure, but real-world application does not block all UV.",
     "topic": "Sun care",
@@ -4252,7 +4482,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-426",
+    "id": "qa-449",
     "question": "Why acne can return in one area?",
     "answer": "A useful prevention-focused explanation is microcomedo formation.",
     "topic": "Acne",
@@ -4262,7 +4492,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-427",
+    "id": "qa-450",
     "question": "How to choose a better HA product?",
     "answer": "Slightly damp skin is a practical choice, especially if the serum feels tight on dry skin.",
     "topic": "Skin care",
@@ -4272,7 +4502,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-428",
+    "id": "qa-451",
     "question": "What should I know about the Skin Barrier Explanation, Without the Jargon?",
     "answer": "The top layer of your skin is called the stratum corneum. It works a bit like a brick wall.",
     "topic": "Skin care",
@@ -4282,7 +4512,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-429",
+    "id": "qa-452",
     "question": "Can I put makeup over sunscreen if it pills?",
     "answer": "You can, and one study surprisingly found foundation reduced visible sunscreen pilling in most affected cases.",
     "topic": "Sun care",
@@ -4292,7 +4522,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-430",
+    "id": "qa-453",
     "question": "How to find out whether the product is responsible?",
     "answer": "If the same product recreates the reaction, stop using it. That result tells you the finished product is a poor fit.",
     "topic": "Skin care",
@@ -4302,7 +4532,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-431",
+    "id": "qa-454",
     "question": "Are tear-free or non-sting sunscreen claims guaranteed?",
     "answer": "No. Some sunscreens are specifically tested for ocular tolerability, and a 2019 study showed that one facial sunscreen performed well in cell-based, TRPV1 and controlled human testing.",
     "topic": "Sun care",
@@ -4312,7 +4542,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-432",
+    "id": "qa-455",
     "question": "Why is myth #8: The scale the best way to track progress?",
     "answer": "The scale measures total body weight — fat, muscle, water, gut contents, and glycogen all together.",
     "topic": "Wellness",
@@ -4322,7 +4552,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-433",
+    "id": "qa-456",
     "question": "Why acne happens?",
     "answer": "Acne is not proof that your face is dirty, and it is not one single problem with one miracle fix.",
     "topic": "Acne",
@@ -4332,7 +4562,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-434",
+    "id": "qa-457",
     "question": "What is actually doing the work?",
     "answer": "The first ingredients are water, butylene glycol, propanediol, glycerin and hydrolyzed hyaluronic acid.",
     "topic": "Product reviews",
@@ -4342,7 +4572,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-435",
+    "id": "qa-458",
     "question": "What should I know about the practical takeaway?",
     "answer": "The best glute programme for most women is one that consistently gets harder over time: heavier loads, more reps, more sets, or more range.",
     "topic": "Skin care",
@@ -4352,7 +4582,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-436",
+    "id": "qa-459",
     "question": "What UV Filters Are in Beauty of Joseon Relief Sun?",
     "answer": "The formula uses four UV filters: Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Triazone, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol, and Diethylhexyl Butamido Triazone.",
     "topic": "Sun care",
@@ -4362,7 +4592,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-437",
+    "id": "qa-460",
     "question": "Is beef tallow good for eczema?",
     "answer": "It may reduce dryness for some people, but it is not a proven eczema treatment.",
     "topic": "Skin care",
@@ -4372,7 +4602,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-438",
+    "id": "qa-461",
     "question": "What should I know about oily but dehydrated skin?",
     "answer": "The INKEY List Omega Water Cream or The Ordinary NMF + Beta Glucan is the better fit when skin feels tight but still becomes shiny.",
     "topic": "Acne",
@@ -4382,7 +4612,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-439",
+    "id": "qa-462",
     "question": "Does oily skin still need moisturizer?",
     "answer": "The American Academy of Dermatology recommends moisturizing even when skin is oily.",
     "topic": "Skin care",
@@ -4392,7 +4622,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-440",
+    "id": "qa-463",
     "question": "What should I know about the Big Claims, Fact-Checked?",
     "answer": "The 500 Dalton rule is a common skin-penetration guideline. Molecules above about 500 Da generally have trouble crossing intact skin by passive diffusion.",
     "topic": "Product reviews",
@@ -4402,7 +4632,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-441",
+    "id": "qa-464",
     "question": "What should I know about your forehead may be reacting to where the product lands, not one scary ingredient?",
     "answer": "Hair-product acne is real. Comedogenic ingredient lists are much less reliable than social media makes them sound.",
     "topic": "Hair & body",
@@ -4412,7 +4642,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-442",
+    "id": "qa-465",
     "question": "Why is sPF testing measures UV protection, not whether your skin moisturized enough?",
     "answer": "A sunscreen may contain glycerin, emollients, silicones or oils and feel like a moisturizer.",
     "topic": "Sun care",
@@ -4422,7 +4652,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-443",
+    "id": "qa-466",
     "question": "Is Cyperus Oil Really as Effective as Laser Hair Removal?",
     "answer": "The viral claim comes from the 2014 study. Participants were randomized to Cyperus oil, saline, or Alexandrite laser.",
     "topic": "Hair & body",
@@ -4432,7 +4662,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-444",
+    "id": "qa-467",
     "question": "What should I know about go boring immediately?",
     "answer": "Use lukewarm water or a very gentle cleanser. Apply a bland moisturizer while the skin is slightly damp.",
     "topic": "Skin care",
@@ -4442,7 +4672,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-445",
+    "id": "qa-468",
     "question": "What should I know about useful for the moment, not a skin transformation?",
     "answer": "Most positive findings come from short-term cooling during medical procedures or after facial surgery.",
     "topic": "Skin care",
@@ -4452,7 +4682,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-446",
+    "id": "qa-469",
     "question": "Do LED face masks work?",
     "answer": "They can, but results are usually modest. Red and near-infrared light may slightly improve fine lines, texture, redness, and firmness with consistent use.",
     "topic": "Skin care",
@@ -4462,7 +4692,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-447",
+    "id": "qa-470",
     "question": "What should I know about neck Cream vs Regular Moisturizer?",
     "answer": "The most useful buying rule is to compare the complete formulation, texture, irritation risk, packaging and stability, product-specific clinical testing, manufacturer transparency and cost per use.",
     "topic": "Skin care",
@@ -4472,7 +4702,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-448",
+    "id": "qa-471",
     "question": "Why is free chlorine not chloramine?",
     "answer": "Some water systems disinfect with free chlorine. Others use chloramine, which combines chlorine with ammonia and stays active for longer in water pipes. [6]",
     "topic": "Hair & body",
@@ -4482,7 +4712,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-449",
+    "id": "qa-472",
     "question": "Why is the forecast an intensity signal, not a personal permission slip?",
     "answer": "The daily UV number in a weather app is usually the forecast peak around solar noon.",
     "topic": "Sun care",
@@ -4492,7 +4722,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-450",
+    "id": "qa-473",
     "question": "What should I know about delivery route matters more than the ingredient name on the front?",
     "answer": "“PDRN” describes a family of DNA-fragment materials, not one standardized cosmetic result.",
     "topic": "Skin care",
@@ -4502,7 +4732,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-451",
+    "id": "qa-474",
     "question": "What Does the Research Actually Support?",
     "answer": "This is one of the clearest practical benefits. A 2022 systematic review included 16 randomized controlled trials and 1,251 adults with chronic constipation.",
     "topic": "Wellness",
@@ -4512,7 +4742,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-452",
+    "id": "qa-475",
     "question": "Are comedones present?",
     "answer": "This is a key textbook distinction. True comedones argue for acne.",
     "topic": "Acne",
@@ -4522,7 +4752,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-453",
+    "id": "qa-476",
+    "question": "How should you try it?",
+    "answer": "Garnier directs users to apply it on clean skin after serum. Start with the rest of your routine unchanged so you can tell whether the cream itself suits you.",
+    "topic": "Product reviews",
+    "article": "Garnier Hyaluron Sorbet Cream Review: Ingredients & Verdict",
+    "url": "/blog/garnier-hyaluron-sorbet-cream-review",
+    "sourceQuestion": "How should you try it?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-477",
     "question": "What do the hydration and blemish claims establish?",
     "answer": "The UK listing supplies these study notes. 1 That is more useful than an unsupported promise, but the public summary is not a full clinical report.",
     "topic": "Acne",
@@ -4532,7 +4772,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-454",
+    "id": "qa-478",
     "question": "How to Use It Properly?",
     "answer": "Apply it after water-based serums and before sunscreen in the morning.",
     "topic": "Product reviews",
@@ -4542,7 +4782,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-455",
+    "id": "qa-479",
     "question": "How to choose a growth factor serum?",
     "answer": "A growth-factor serum makes the most sense for someone who already uses sunscreen, has a stable routine, wants a gentle anti-aging add-on, understands that results are likely subtle, and can verify that the specific formula was tested.",
     "topic": "Skin care",
@@ -4552,7 +4792,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-456",
+    "id": "qa-480",
     "question": "What should I know about pIH vs PIE vs acne scars: check the color and texture?",
     "answer": "Some marks contain more than one component. A spot can be both red and brown, or a scar can have pigment over it.",
     "topic": "Acne",
@@ -4562,7 +4802,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-457",
+    "id": "qa-481",
     "question": "Does HOCl replace benzoyl peroxide?",
     "answer": "Usually no. Benzoyl peroxide has much stronger acne evidence.",
     "topic": "Skin care",
@@ -4572,7 +4812,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-458",
+    "id": "qa-482",
     "question": "Why is nobody has directly tested the exact routine TikTok debating?",
     "answer": "The available literature answers neighboring questions. It shows that HOCl activity depends on concentration, pH, stability and what organic material it meets.",
     "topic": "Sun care",
@@ -4582,7 +4822,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-459",
+    "id": "qa-483",
     "question": "What should I know about s&H formula and evidence score?",
     "answer": "On paper, a solid hydration-focused peptide serum, but the topical PDRN claim is ahead of the evidence.",
     "topic": "Product reviews",
@@ -4592,7 +4832,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-460",
+    "id": "qa-484",
     "question": "Why is cooling a feeling, not a regrowth test?",
     "answer": "A tingling or fresh sensation can make a product seem active. It is not a reliable way to measure hair growth.",
     "topic": "Product reviews",
@@ -4602,7 +4842,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-461",
+    "id": "qa-485",
     "question": "Why it happens?",
     "answer": "The most straightforward explanation is often this: your skin naturally runs oily or acne-prone, while your routine or environment is making the surface more irritated and less comfortable.",
     "topic": "Skin care",
@@ -4612,7 +4852,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-462",
+    "id": "qa-486",
     "question": "What did the breakout leave behind?",
     "answer": "Choose the closest description. This gives you a reading direction, not a diagnosis.",
     "topic": "Acne",
@@ -4622,7 +4862,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-463",
+    "id": "qa-487",
     "question": "Does Reedle Shot cause purging?",
     "answer": "No direct study identified in the sources reviewed established a predictable Reedle Shot purging phase.",
     "topic": "Skin care",
@@ -4632,7 +4872,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-464",
+    "id": "qa-488",
     "question": "Where salicylic acid shines?",
     "answer": "Salicylic acid is most useful for mild comedonal acne: blackheads, whiteheads, visible congestion, and clogged pores.",
     "topic": "Acne",
@@ -4642,7 +4882,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-465",
+    "id": "qa-489",
     "question": "What this guide covers?",
     "answer": "The internet often presents this as a contest with one winner. Acne does not work that way.",
     "topic": "Acne",
@@ -4652,7 +4892,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-466",
+    "id": "qa-490",
     "question": "What should I know about skin pH and the acid mantle?",
     "answer": "Healthy skin surface pH is acidic, often around the high 4s to mid 5s, although values vary by site and method.",
     "topic": "Acne",
@@ -4662,7 +4902,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-467",
+    "id": "qa-491",
     "question": "Why are tight styles injuring the hairline?",
     "answer": "Braids, ponytails, buns, locs, extensions, and weaves can create traction alopecia when they repeatedly pull on the same follicles.",
     "topic": "Hair & body",
@@ -4672,7 +4912,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-468",
+    "id": "qa-492",
     "question": "How long should you wait between sunscreen and bug spray?",
     "answer": "When possible, wait at least 15 minutes after sunscreen before applying insect repellent.",
     "topic": "Sun care",
@@ -4682,7 +4922,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-469",
+    "id": "qa-493",
     "question": "What should I know about ingredient Breakdown?",
     "answer": "The hero ingredient is straightforward: 7% glycolic acid in a formula with a pH of approximately 3.6, as stated on the official product page.",
     "topic": "Product reviews",
@@ -4692,7 +4932,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-470",
+    "id": "qa-494",
     "question": "Why are cruelty-free, vegan, and “not tested on animals” not the same claim?",
     "answer": "A generic vegan claim does not by itself prove independent cruelty-free verification.",
     "topic": "Skin care",
@@ -4702,7 +4942,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-471",
+    "id": "qa-495",
     "question": "Can you tan when it is cloudy?",
     "answer": "Tanning is possible because clouds may reduce UV but do not eliminate it.",
     "topic": "Sun care",
@@ -4712,7 +4952,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-472",
+    "id": "qa-496",
     "question": "What should I know about the same trigger keeps touching the same skin?",
     "answer": "Friction, pressure, and occlusion can keep one area active. Helmets, chin straps, tight gear, and some hair products can repeatedly affect the same skin.",
     "topic": "Acne",
@@ -4722,7 +4962,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-473",
+    "id": "qa-497",
     "question": "What should I know about burning Moisturizer Decision Tree?",
     "answer": "Use this as a practical sorting tool, not a diagnosis. The pattern matters: timing, redness, itching, swelling, and whether the same product burns every time.",
     "topic": "Skin care",
@@ -4732,7 +4972,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-474",
+    "id": "qa-498",
     "question": "Why does sunscreen pill after serum?",
     "answer": "If the sunscreen is smooth on clean skin but pills after a serum, the specific layer combination is a likely trigger.",
     "topic": "Sun care",
@@ -4742,7 +4982,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-475",
+    "id": "qa-499",
     "question": "Why is eye sting a formulation problem, not a one-ingredient morality test?",
     "answer": "The research is much more nuanced than “chemical sunscreen bad, mineral sunscreen good.”",
     "topic": "Sun care",
@@ -4752,7 +4992,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-476",
+    "id": "qa-500",
     "question": "What should I know about myth #9: More sweat means more fat burned?",
     "answer": "Sweating is your body's cooling mechanism. It is water loss, not fat loss.",
     "topic": "Wellness",
@@ -4762,7 +5002,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-477",
+    "id": "qa-501",
     "question": "How to identify the type of breakout?",
     "answer": "Do not choose treatment by ingredient popularity alone. First look at the lesion pattern, severity, location, scarring risk and your life stage.",
     "topic": "Acne",
@@ -4772,7 +5012,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-478",
+    "id": "qa-502",
     "question": "What does the PDRN evidence really say?",
     "answer": "PDRN is made from DNA fragments. Medical research has explored pharmaceutical PDRN for wound healing and tissue repair.",
     "topic": "Product reviews",
@@ -4782,7 +5022,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-479",
+    "id": "qa-503",
     "question": "How azelaic acid may fade brown and red marks?",
     "answer": "When a pimple becomes inflamed, the skin may produce extra pigment while healing.",
     "topic": "Skin care",
@@ -4792,7 +5032,17 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-480",
+    "id": "qa-504",
+    "question": "What should I know about sources and method?",
+    "answer": "Sources checked October 10, 2026. Manufacturer descriptions are identified as such; practical conclusions are editorial interpretation.",
+    "topic": "Sun care",
+    "article": "Relief Sun vs Aqua-Fresh: Which Beauty of Joseon SPF?",
+    "url": "/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh",
+    "sourceQuestion": "What should I know about sources and method?",
+    "sourceKind": "section"
+  },
+  {
+    "id": "qa-505",
     "question": "What should I know about rice, Ferments and Other Supporting Ingredients?",
     "answer": "Outside the filter system, Relief Sun is structured more like a lightweight moisturizing cream than a dry-touch sports sunscreen.",
     "topic": "Sun care",
@@ -4802,7 +5052,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-481",
+    "id": "qa-506",
     "question": "Is homemade beef tallow safe for skincare?",
     "answer": "It is riskier than a tested cosmetic product because quality, oxidation, storage, and contamination control are harder to verify.",
     "topic": "Skin care",
@@ -4812,7 +5062,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-482",
+    "id": "qa-507",
     "question": "What should I know about your next step?",
     "answer": "Choose the product that matches your routine and texture preference, then use the available Amazon shopping buttons to check current listings.",
     "topic": "Skin care",
@@ -4822,7 +5072,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-483",
+    "id": "qa-508",
     "question": "What should I know about using acne medication?",
     "answer": "CeraVe PM offers more barrier lipids than the gel picks and is more useful when adapalene, tretinoin, benzoyl peroxide, or salicylic acid causes flaking.",
     "topic": "Acne",
@@ -4832,7 +5082,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-484",
+    "id": "qa-509",
     "question": "What should I know about claim 2: It shrinks pores?",
     "answer": "Biodance reports immediate pore-area changes and longer pore-volume results from brand-reported testing. [2] The problem is not that a temporary effect is impossible.",
     "topic": "Product reviews",
@@ -4842,7 +5092,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-485",
+    "id": "qa-510",
     "question": "How can hair products cause forehead acne?",
     "answer": "Hair products do not stay neatly on the hair. They may move onto the forehead during application, run down the face in the shower, transfer from hair while you sleep, or build up on pillowcases and headwear.",
     "topic": "Hair & body",
@@ -4852,7 +5102,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-486",
+    "id": "qa-511",
     "question": "What should I know about jump to your answer?",
     "answer": "A moisturizer is designed to improve how the outer skin layer holds and handles water.",
     "topic": "Sun care",
@@ -4862,7 +5112,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-487",
+    "id": "qa-512",
     "question": "How Might It Slow Hair Growth?",
     "answer": "The exact mechanism in human hair follicles is not established. The clinical papers propose antiandrogenic activity, but this was not directly demonstrated in treated human follicles.",
     "topic": "Hair & body",
@@ -4872,7 +5122,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-488",
+    "id": "qa-513",
     "question": "What should I know about stop testing new products?",
     "answer": "This is not the week to try a viral serum. Keep the routine identical so you can tell whether your skin is calming down.",
     "topic": "Skin care",
@@ -4882,7 +5132,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-489",
+    "id": "qa-514",
     "question": "What Cold Actually Does to Skin?",
     "answer": "Skin blood flow responds quickly to temperature. With local physical cooling, superficial vessels generally constrict.",
     "topic": "Skin care",
@@ -4892,7 +5142,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-490",
+    "id": "qa-515",
     "question": "Why the results are hard to compare?",
     "answer": "Think gradual and modest. The American Academy of Dermatology says studies suggest red-light devices can produce subtle to noticeable changes in fine lines, roughness, discoloration, redness, and loose-looking skin, while also stressing that devices.",
     "topic": "Skin care",
@@ -4902,7 +5152,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-491",
+    "id": "qa-516",
     "question": "What should I know about a Simple Neck-Care Routine?",
     "answer": "Do not stack every active at once. Combining several potentially irritating products can increase redness, dryness or dermatitis, especially in susceptible skin.",
     "topic": "Skin care",
@@ -4912,7 +5162,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-492",
+    "id": "qa-517",
     "question": "Can shower filters help acne or eczema?",
     "answer": "No robust peer-reviewed human trial was identified showing that a shower filter reduces acne lesion counts or validated acne-severity scores.",
     "topic": "Hair & body",
@@ -4922,7 +5172,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-493",
+    "id": "qa-518",
     "question": "What Does UV Index 0, 1 or 2 Mean?",
     "answer": "WHO and Environment and Climate Change Canada group UV 0 to 2 in the low band.",
     "topic": "Sun care",
@@ -4932,7 +5182,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-494",
+    "id": "qa-519",
     "question": "What Is PDRN?",
     "answer": "Polydeoxyribonucleotide , shortened to PDRN, generally refers to purified mixtures of DNA fragments.",
     "topic": "Skin care",
@@ -4942,7 +5192,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-495",
+    "id": "qa-520",
     "question": "What should I know about lower LDL cholesterol?",
     "answer": "Viscous soluble fibers can trap bile acids in the digestive tract.",
     "topic": "Wellness",
@@ -4952,7 +5202,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-496",
+    "id": "qa-521",
     "question": "Is it itchy?",
     "answer": "Itch increases suspicion for Malassezia folliculitis, but the popular claim that it is always itchy is wrong.",
     "topic": "Acne",
@@ -4962,7 +5212,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-497",
+    "id": "qa-522",
     "question": "What should I know about garnier Salicylic Sorbet versus Vitamin C Sorbet?",
     "answer": "Choose around your main goal. The Salicylic version is the more directly matte- and blemish-positioned purchase.",
     "topic": "Acne",
@@ -4972,7 +5222,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-498",
+    "id": "qa-523",
     "question": "What should I know about final Verdict?",
     "answer": "The Garnier Vitamin C Sorbet Cream delivers genuinely useful actives at a price that is difficult to match.",
     "topic": "Product reviews",
@@ -4982,7 +5232,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-499",
+    "id": "qa-524",
     "question": "What should I know about growth factors vs peptides, exosomes, and PDRN?",
     "answer": "Peptides are usually smaller and easier to formulate, but the category is broad and every sequence has a different job.",
     "topic": "Skin care",
@@ -4992,7 +5242,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-500",
+    "id": "qa-525",
     "question": "Why do dark spots after pimples take so long to fade?",
     "answer": "Fading speed depends on pigment depth, the severity and duration of inflammation, skin tone, light exposure and continued irritation.",
     "topic": "Acne",
@@ -5002,7 +5252,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-501",
+    "id": "qa-526",
     "question": "Was hypochlorous acid added to the WHO Essential Medicines List for wound care?",
     "answer": "No. WHO did not recommend listing HOCl for topical antisepsis or wound care because the evidence for benefit was inconclusive.",
     "topic": "Skin care",
@@ -5012,7 +5262,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-502",
+    "id": "qa-527",
     "question": "What should I know about jump to your situation?",
     "answer": "Hypochlorous acid, shortened to HOCl, is a reactive chlorine species that immune cells can produce as part of the body's antimicrobial defense.",
     "topic": "Sun care",
@@ -5022,7 +5272,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-503",
+    "id": "qa-528",
     "question": "What does “1% PDRN” mean?",
     "answer": "OLIVE YOUNG lists the salmon serum as containing 1% salmon PDRN, equivalent to 10,000 ppm. [2] That tells us what is marketed.",
     "topic": "Product reviews",
@@ -5032,7 +5282,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-504",
+    "id": "qa-529",
     "question": "Does the rosemary-versus-minoxidil study apply?",
     "answer": "A frequently cited 2015 trial compared a rosemary-oil preparation with 2% minoxidil in 100 people over six months.",
     "topic": "Product reviews",
@@ -5042,7 +5292,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-505",
+    "id": "qa-530",
     "question": "What should I know about cleansing too aggressively?",
     "answer": "Cleansers are not all equally mild. Surfactants, pH, the rest of the formula, contact time, and how often you wash all matter.",
     "topic": "Skin care",
@@ -5052,7 +5302,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-506",
+    "id": "qa-531",
     "question": "What is PIH?",
     "answer": "Post-inflammatory hyperpigmentation is a flat area of increased pigment left after inflammation or injury.",
     "topic": "Acne",
@@ -5062,7 +5312,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-507",
+    "id": "qa-532",
     "question": "Is Reedle Shot the same as professional microneedling or a proven acne-scar treatment?",
     "answer": "No. Professional microneedling is a clinician-performed procedure using tiny needles.",
     "topic": "Skin care",
@@ -5072,7 +5322,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-508",
+    "id": "qa-533",
     "question": "What should I know about safety: What You Actually Need to Know?",
     "answer": "The most common side effects of salicylic acid are dryness, peeling, redness, tightness, and temporary stinging.",
     "topic": "Acne",
@@ -5082,7 +5332,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-509",
+    "id": "qa-534",
     "question": "How salicylic acid works?",
     "answer": "Salicylic acid is a beta hydroxy acid that dissolves in oil. That matters because acne begins inside the pilosebaceous follicle, where sebum and shed cells can collect into a microscopic plug.",
     "topic": "Acne",
@@ -5092,7 +5342,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-510",
+    "id": "qa-535",
     "question": "Why is the microbiome part of the barrier story?",
     "answer": "Skin is colonized by microbes such as Staphylococcus epidermidis and Cutibacterium acnes.",
     "topic": "Acne",
@@ -5102,7 +5352,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-511",
+    "id": "qa-536",
     "question": "Do hair growth oils actually work?",
     "answer": "It depends on the claim. A well-formulated oil can plausibly reduce friction, soften brittle strands, help protect hair during washing, or improve the appearance of dryness.",
     "topic": "Hair & body",
@@ -5112,7 +5362,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-512",
+    "id": "qa-537",
     "question": "How to reapply sunscreen and bug spray during a real outdoor day?",
     "answer": "Sunscreen and insect repellent do not run on the same clock. During prolonged sun exposure, CDC guidance allows sunscreen to be reapplied over an earlier repellent layer.",
     "topic": "Sun care",
@@ -5122,7 +5372,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-513",
+    "id": "qa-538",
     "question": "What should I know about the Science Behind Glycolic Acid?",
     "answer": "Alpha hydroxy acids are water-soluble exfoliating acids that work primarily on the surface of the skin.",
     "topic": "Product reviews",
@@ -5132,7 +5382,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-514",
+    "id": "qa-539",
     "question": "Why the supply chain makes the label difficult to verify?",
     "answer": "The brand name on the bottle may not belong to the company that made the ingredients, manufactured the formula, completed the safety work, or handled regulatory submissions.",
     "topic": "Skin care",
@@ -5142,7 +5392,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-515",
+    "id": "qa-540",
     "question": "Can you tan through a window?",
     "answer": "Some UVA can pass through certain glass, while most UVB is blocked.",
     "topic": "Sun care",
@@ -5152,7 +5402,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-516",
+    "id": "qa-541",
     "question": "What should I know about hormones can keep a region sensitive?",
     "answer": "Jawline and lower-face acne can be hormonally influenced, especially in adult women, but not every jawline breakout is hormonal.",
     "topic": "Acne",
@@ -5162,7 +5412,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-517",
+    "id": "qa-542",
     "question": "What should I know about ingredients That Commonly Burn, Sting, or Irritate?",
     "answer": "No ingredient is bad for every person. Concentration, formula, skin condition, and frequency matter.",
     "topic": "Skin care",
@@ -5172,7 +5422,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-518",
+    "id": "qa-543",
     "question": "Can hyaluronic acid, niacinamide or vitamin C cause sunscreen pilling?",
     "answer": "They can be part of a particular finished formula or routine that pills, but none has been established as a universal pilling culprit in direct controlled pilling research.",
     "topic": "Sun care",
@@ -5182,7 +5432,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-519",
+    "id": "qa-544",
     "question": "Why does sunscreen burn my eyes? 7 evidence-informed causes?",
     "answer": "These are contributors, not seven universal causes that apply to every sunscreen.",
     "topic": "Sun care",
@@ -5192,7 +5442,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-520",
+    "id": "qa-545",
     "question": "What should I know about myth #10: You must static stretch before every workout?",
     "answer": "The evidence against pre-exercise static stretching as an injury prevention tool is consistent and has been for years.",
     "topic": "Wellness",
@@ -5202,7 +5452,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-521",
+    "id": "qa-546",
     "question": "Which acne treatments actually work?",
     "answer": "The strongest modern guidelines agree on the broad hierarchy. Topical retinoids and benzoyl peroxide are foundational.",
     "topic": "Acne",
@@ -5212,7 +5462,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-522",
+    "id": "qa-547",
     "question": "What about topical PDRN studies?",
     "answer": "A small study published online in December 2025 tested a special low-molecular-weight PDRN cream made from peony.",
     "topic": "Product reviews",
@@ -5222,7 +5472,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-523",
+    "id": "qa-548",
     "question": "What should I know about red or pink marks?",
     "answer": "Red or pink post-acne marks are usually linked more closely to lingering inflammation and visible blood vessels than to extra pigment.",
     "topic": "Skin care",
@@ -5232,7 +5482,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-524",
+    "id": "qa-549",
     "question": "Is It Good for Sensitive or Acne-Prone Skin?",
     "answer": "The fragrance-free design and moisturizer-like base make Relief Sun a reasonable option for many people with sensitive or acne-prone skin.",
     "topic": "Sun care",
@@ -5242,7 +5492,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-525",
+    "id": "qa-550",
     "question": "Who should avoid beef tallow?",
     "answer": "People with acne-prone, oily, seborrheic dermatitis-prone, reactive, inflamed, infected, or medically diseased skin should avoid making it their default moisturizer.",
     "topic": "Skin care",
@@ -5252,7 +5502,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-526",
+    "id": "qa-551",
     "question": "What should I know about under sunscreen or makeup?",
     "answer": "Geek & Gorgeous Hydration Station has the lightest layering profile in this list, although pilling still depends on the full routine.",
     "topic": "Acne",
@@ -5262,7 +5512,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-527",
+    "id": "qa-552",
     "question": "What should I know about claim 3: Hydration lasts 150 hours?",
     "answer": "Biodance reports measurable hydration effects after 150 hours in brand-reported testing.",
     "topic": "Product reviews",
@@ -5272,7 +5522,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-528",
+    "id": "qa-553",
     "question": "What causes closed comedones?",
     "answer": "A comedone begins when keratin and sebum accumulate inside a follicle.",
     "topic": "Hair & body",
@@ -5282,7 +5532,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-529",
+    "id": "qa-554",
     "question": "What Has the Research Actually Tested?",
     "answer": "There is no universal clinical trial that can sort everyone into “needs moisturizer” or “does not.” The useful evidence comes from separate questions about barrier care, layering, coverage and sunscreen amount.",
     "topic": "Sun care",
@@ -5292,7 +5542,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-530",
+    "id": "qa-555",
     "question": "Does It Permanently Stop Hair Growth?",
     "answer": "No published trial demonstrates permanent hair removal. The evidence supports reduced growth during treatment and, in one small pilot, through a two-month post-treatment observation period.",
     "topic": "Hair & body",
@@ -5302,7 +5552,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-531",
+    "id": "qa-556",
     "question": "What should I know about use moisturizer like treatment?",
     "answer": "Look for a formula with humectants, emollients, and occlusives. If small areas are cracked or painfully dry, a thin layer of petrolatum on top can help reduce water loss.",
     "topic": "Skin care",
@@ -5312,7 +5562,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-532",
+    "id": "qa-557",
     "question": "What should I know about menthol Feels Cold, but It Does Not Behave Like an Ice Roller?",
     "answer": "Menthol activates TRPM8 receptors on sensory nerves, creating a cooling sensation.",
     "topic": "Skin care",
@@ -5322,7 +5572,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-533",
+    "id": "qa-558",
     "question": "What About Red Light, Blue Light, and Acne?",
     "answer": "Blue light can activate porphyrins made by Cutibacterium acnes , a bacterium involved in acne.",
     "topic": "Skin care",
@@ -5332,7 +5582,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-534",
+    "id": "qa-559",
     "question": "When Is a Neck Cream Worth the Money?",
     "answer": "The complete formula, tolerability and evidence matter more than the neck label.",
     "topic": "Skin care",
@@ -5342,7 +5592,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-535",
+    "id": "qa-560",
     "question": "What should I know about eczema?",
     "answer": "The eczema evidence is more complicated. Studies have found an association between hard water and childhood eczema, but the overall certainty is low because much of the evidence is observational. [7]",
     "topic": "Hair & body",
@@ -5352,7 +5602,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-536",
+    "id": "qa-561",
     "question": "Do You Need Sunscreen at Each Low UV Level?",
     "answer": "At UV 0, the potential for erythema-weighted harm is minimal. Most people do not need to apply sunscreen just to walk to a shop, commute briefly or spend a short period outside.",
     "topic": "Sun care",
@@ -5362,7 +5612,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-537",
+    "id": "qa-562",
     "question": "What should I know about pDRN vs PN vs “Salmon DNA”?",
     "answer": "A 2025 comparison review emphasized molecular and clinical differences between PN and PDRN.",
     "topic": "Skin care",
@@ -5372,7 +5622,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-538",
+    "id": "qa-563",
     "question": "What should I know about improved blood sugar control?",
     "answer": "Soluble fiber can slow the rate at which food leaves the stomach and reduce how quickly glucose reaches the bloodstream.",
     "topic": "Wellness",
@@ -5382,7 +5632,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-539",
+    "id": "qa-564",
     "question": "Where are the bumps?",
     "answer": "Malassezia folliculitis classically affects the upper trunk—especially chest and back—and may involve shoulders, posterior arms, forehead/hairline, chin and neck.",
     "topic": "Acne",
@@ -5392,7 +5642,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-540",
+    "id": "qa-565",
     "question": "How should you use Garnier Salicylic Sorbet Cream?",
     "answer": "Follow the instructions on your own jar. Garnier's European directions place it on cleansed skin after serum.",
     "topic": "Acne",
@@ -5402,7 +5652,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-541",
+    "id": "qa-566",
     "question": "What actually helps fade post-acne dark spots?",
     "answer": "A 2022 systematic review found that retinoids, hydroxy acids and broad-spectrum sunscreen were supported by the greatest number of higher-quality studies.",
     "topic": "Acne",
@@ -5412,7 +5662,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-542",
+    "id": "qa-567",
     "question": "How HOCl works on skin?",
     "answer": "HOCl works mainly through oxidation. It reacts with sulfur- and nitrogen-containing groups in microbial enzymes, proteins, membranes, and other structures.",
     "topic": "Skin care",
@@ -5422,7 +5672,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-543",
+    "id": "qa-568",
     "question": "What should I know about known Versus Not Directly Tested?",
     "answer": "“Deactivate” is too confident. HOCl is chemically reactive, but the real-world effect would depend on the exact HOCl concentration, pH, sunscreen filters, film formers, other ingredients, dose, droplet size and contact time.",
     "topic": "Sun care",
@@ -5432,7 +5682,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-544",
+    "id": "qa-569",
     "question": "What should I know about a product-page problem?",
     "answer": "When checked on July 4, 2026, Medicube’s U.S. page said the product was formulated without fragrance, EDTA derivatives, and acrylates.",
     "topic": "Product reviews",
@@ -5442,7 +5692,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-545",
+    "id": "qa-570",
     "question": "What about PDRN, EGF and the spicules?",
     "answer": "Medicube highlights PDRN, EGF, caffeine and an ultra-fine spicule application concept.",
     "topic": "Product reviews",
@@ -5452,7 +5702,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-546",
+    "id": "qa-571",
     "question": "What should I know about too many active ingredients?",
     "answer": "Retinoids, benzoyl peroxide, salicylic acid, and azelaic acid can all earn a place in an acne routine.",
     "topic": "Skin care",
@@ -5462,7 +5712,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-547",
+    "id": "qa-572",
     "question": "Who is more likely to develop PIH?",
     "answer": "PIH can happen in every skin tone, but it is more common, more noticeable and often longer-lasting in medium to deep skin tones.",
     "topic": "Acne",
@@ -5472,7 +5722,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-548",
+    "id": "qa-573",
     "question": "How does Reedle Shot work?",
     "answer": "VT describes Reedle Shot as a first‑step skin booster containing Cica Reedle, a silica‑based spicule technology.",
     "topic": "Skin care",
@@ -5482,7 +5732,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-549",
+    "id": "qa-574",
     "question": "What should I know about rare but real: allergic reactions?",
     "answer": "True allergic reactions to salicylic acid appear to be uncommon, but they can happen.",
     "topic": "Acne",
@@ -5492,7 +5742,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-550",
+    "id": "qa-575",
     "question": "How benzoyl peroxide works?",
     "answer": "Benzoyl peroxide breaks down in the skin and acts as an oxidizing antimicrobial.",
     "topic": "Acne",
@@ -5502,7 +5752,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-551",
+    "id": "qa-576",
     "question": "What damaged skin barrier means?",
     "answer": "A damaged barrier means the stratum corneum is not performing its protective and water-retaining role well.",
     "topic": "Acne",
@@ -5512,7 +5762,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-552",
+    "id": "qa-577",
     "question": "What should I know about the best hair oils for slow growth, ranked by evidence?",
     "answer": "Rosemary oil has the best-known direct human study among common plant oils.",
     "topic": "Hair & body",
@@ -5522,7 +5772,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-553",
+    "id": "qa-578",
     "question": "Why are if you outside for less than two hours?",
     "answer": "U.S. water-resistant sunscreen labels specify either 40 or 80 minutes of protection while swimming or sweating.",
     "topic": "Sun care",
@@ -5532,7 +5782,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-554",
+    "id": "qa-579",
     "question": "Hype Claims: True, Partly True, or Overstated?",
     "answer": "Accelerated skin cell turnover from an exfoliating acid can bring pre-existing clogged pores to the surface faster.",
     "topic": "Product reviews",
@@ -5542,7 +5792,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-555",
+    "id": "qa-580",
     "question": "What should I know about historical data and parent companies?",
     "answer": "Many long-used ingredients have old animal-test data. The more useful question is whether the company creates, funds, or accepts new testing that conflicts with its policy.",
     "topic": "Skin care",
@@ -5552,7 +5802,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-556",
+    "id": "qa-581",
     "question": "What is tanmaxxing?",
     "answer": "It is a social-media trend that uses high UV periods and other tactics to pursue a darker tan.",
     "topic": "Sun care",
@@ -5562,7 +5812,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "faq"
   },
   {
-    "id": "qa-557",
+    "id": "qa-582",
     "question": "What should I know about treatment stops too early?",
     "answer": "This can happen: the bump improves, so the treatment stops. But the invisible acne process may still be active around it.",
     "topic": "Acne",
@@ -5572,7 +5822,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-558",
+    "id": "qa-583",
     "question": "What to Do Tonight If Your Moisturizer Burns?",
     "answer": "Do not panic, but do not keep layering either. Your goal is to remove the trigger and stop adding more variables.",
     "topic": "Skin care",
@@ -5582,7 +5832,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-559",
+    "id": "qa-584",
     "question": "What should I know about most pilling advice sounds more certain than the science is?",
     "answer": "The direct research is new and surprisingly specific. It does not validate most ingredient blacklists.",
     "topic": "Sun care",
@@ -5592,7 +5842,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-560",
+    "id": "qa-585",
     "question": "What should I know about the sunscreen physically migrates into your tear film?",
     "answer": "A product sitting on intact facial skin is very different from the same formula reaching the ocular surface.",
     "topic": "Sun care",
@@ -5602,7 +5852,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-561",
+    "id": "qa-586",
     "question": "What should I know about the Bottom Line?",
     "answer": "Nine of the ten verdicts here are solidly supported by research. The one genuinely nuanced one is fasted cardio — the short-term effect is real, the long-term advantage is not.",
     "topic": "Wellness",
@@ -5612,7 +5862,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-562",
+    "id": "qa-587",
     "question": "What should I know about topical retinoids?",
     "answer": "Retinoids are the anchor for comedonal acne because they suppress microcomedones, the precursor to visible clogged pores.",
     "topic": "Acne",
@@ -5622,7 +5872,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-563",
+    "id": "qa-588",
     "question": "Does the capsule technology matter?",
     "answer": "Ulta reports a separate capsule-versus-control comparison in which the capsule version produced modestly higher absorption measurements after 30 minutes.",
     "topic": "Product reviews",
@@ -5632,7 +5882,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-564",
+    "id": "qa-589",
     "question": "Why azelaic acid can also help acne?",
     "answer": "Treating active acne matters because every new inflamed pimple can leave another mark.",
     "topic": "Skin care",
@@ -5642,7 +5892,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-565",
+    "id": "qa-590",
     "question": "Who Is Beauty of Joseon Relief Sun Best For?",
     "answer": "Normal, dry, dehydrated, and balanced combination skin that wants a creamy, comfortable daily sunscreen.",
     "topic": "Sun care",
@@ -5652,7 +5902,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-566",
+    "id": "qa-591",
     "question": "What should I know about lowest-cost starting point?",
     "answer": "The Ordinary NMF + Beta Glucan gives a strong hydration-focused formula at one of the lowest prices in the shortlist.",
     "topic": "Acne",
@@ -5662,7 +5912,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-567",
+    "id": "qa-592",
     "question": "What should I know about claim 4: The mask turning clear proves absorption?",
     "answer": "The clear-mask effect is visually convincing, but it is not a penetration test.",
     "topic": "Product reviews",
@@ -5672,7 +5922,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-568",
+    "id": "qa-593",
     "question": "What should I know about friction and heat can keep residue against the skin?",
     "answer": "Bangs, tight headwear, headbands and helmets can press product-coated hair against the forehead.",
     "topic": "Hair & body",
@@ -5682,7 +5932,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-569",
+    "id": "qa-594",
     "question": "Who Can Try Sunscreen Alone?",
     "answer": "Oiliness answers “how much sebum is on my skin?” It does not answer “is my barrier comfortable and hydrated?” If your face is shiny but also tight, flaky or stingy, read the oily-but-dehydrated skin guide before automatically removing moisturizer.",
     "topic": "Sun care",
@@ -5692,7 +5942,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-570",
+    "id": "qa-595",
     "question": "What About Facial Hair or PCOS-Related Hirsutism?",
     "answer": "The 2012 study included women described as having hirsutism, which is more relevant than an underarm-only cosmetic study.",
     "topic": "Hair & body",
@@ -5702,7 +5952,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-571",
+    "id": "qa-596",
     "question": "What should I know about check the direction?",
     "answer": "Improvement matters more than perfection. Less stinging, less tightness, and better comfort with moisturizer are good signs.",
     "topic": "Skin care",
@@ -5712,7 +5962,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-572",
+    "id": "qa-597",
     "question": "What should I know about cryo Sticks, Ice Rollers, Mists, Masks and Eye Patches?",
     "answer": "These tools are simple heat exchangers. Metal and glass conduct heat well, so a chilled tool can cool the skin faster than your hands.",
     "topic": "Skin care",
@@ -5722,7 +5972,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-573",
+    "id": "qa-598",
     "question": "How to Use an LED Face Mask Properly?",
     "answer": "Red light does not automatically “cancel out” normal skincare. The bigger issue is comfort and photosensitivity.",
     "topic": "Skin care",
@@ -5732,7 +5982,7 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-574",
+    "id": "qa-599",
     "question": "What do the testing and NSF claims actually mean?",
     "answer": "Qure says the filter is third-party tested to meet NSF water-filtration standards.",
     "topic": "Hair & body",
@@ -5742,263 +5992,13 @@ window.SH_QUICK_ANSWERS = Object.freeze([
     "sourceKind": "section"
   },
   {
-    "id": "qa-575",
+    "id": "qa-600",
     "question": "What should I know about uV Index 1: usually no for a short outing?",
     "answer": "At UV 1, ordinary brief exposure remains low risk. Think about protection when “outside” means hours rather than minutes, especially in a reflective environment or if a clinician has told you to be stricter.",
     "topic": "Sun care",
     "article": "Do You Need Sunscreen at UV Index 0, 1 or 2?",
     "url": "/blog/do-you-need-sunscreen-uv-index-0-1-2",
     "sourceQuestion": "What should I know about uV Index 1: usually no for a short outing?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-576",
-    "question": "What Does the Evidence Say About PDRN or PN Injections?",
-    "answer": "The best concise answer is promising but not settled . In the 2025 systematic review, several injection studies reported improvements in wrinkles, texture or elasticity, and adverse effects were generally mild and transient.",
-    "topic": "Skin care",
-    "article": "Does Topical PDRN Actually Work? Serum vs Injections",
-    "url": "/blog/does-topical-pdrn-work-serum-vs-injections",
-    "sourceQuestion": "What Does the Evidence Say About PDRN or PN Injections?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-577",
-    "question": "What should I know about modest support for weight management?",
-    "answer": "Fiber-rich foods can be filling because they add volume, hold water, and often take longer to eat.",
-    "topic": "Wellness",
-    "article": "Fibermaxxing: Benefits, Side Effects and How Much Fiber You Need",
-    "url": "/blog/fibermaxxing-benefits-side-effects",
-    "sourceQuestion": "What should I know about modest support for weight management?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-578",
-    "question": "How dermatologists diagnose Malassezia folliculitis?",
-    "answer": "A clinician can suspect the condition from the lesion pattern, distribution, itch and history—especially when an acne-like eruption does not respond to standard acne therapy.",
-    "topic": "Acne",
-    "article": "Fungal Acne vs Closed Comedones: How to Tell the Difference",
-    "url": "/blog/fungal-acne-vs-closed-comedones",
-    "sourceQuestion": "How dermatologists diagnose Malassezia folliculitis?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-579",
-    "question": "Who should buy it, and who should skip it?",
-    "answer": "Consider it if: you have oily or combination skin, prefer a matte-focused daily moisturizer, comfortably tolerate fragranced products and understand that its individual salicylic percentage is undisclosed.",
-    "topic": "Acne",
-    "article": "Garnier Salicylic Sorbet Cream Review: Ingredients & Verdict",
-    "url": "/blog/garnier-salicylic-sorbet-cream-review",
-    "sourceQuestion": "Who should buy it, and who should skip it?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-580",
-    "question": "What should I know about daily sunscreen?",
-    "answer": "Effective dark-spot treatment starts with photoprotection. Use a broad-spectrum, water-resistant SPF 30 or higher and reapply according to the label, especially after swimming or sweating and during extended outdoor exposure.",
-    "topic": "Acne",
-    "article": "How to Fade Post-Acne Dark Spots Without Damaging Your Skin",
-    "url": "/blog/how-to-fade-post-acne-dark-spots",
-    "sourceQuestion": "What should I know about daily sunscreen?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-581",
-    "question": "What does the evidence actually support?",
-    "answer": "The evidence is not “fake,” but it is thinner than the marketing.",
-    "topic": "Skin care",
-    "article": "Hypochlorous Acid Face Spray: Does It Actually Work?",
-    "url": "/blog/hypochlorous-acid-face-spray",
-    "sourceQuestion": "What does the evidence actually support?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-582",
-    "question": "What about water-resistant sunscreen?",
-    "answer": "Water-resistant does not mean waterproof. In the United States, the label must state whether tested protection is retained after 40 or 80 minutes of swimming or sweating, and directions still require reapplication after that activity, immediately.",
-    "topic": "Sun care",
-    "article": "Can You Spray Hypochlorous Acid Over Sunscreen or Makeup?",
-    "url": "/blog/hypochlorous-acid-over-sunscreen-makeup",
-    "sourceQuestion": "What about water-resistant sunscreen?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-583",
-    "question": "Does topical PDRN really work?",
-    "answer": "PDRN stands for polydeoxyribonucleotide. In plain English, it is a mixture of DNA fragments, often purified from salmon or trout sperm DNA for medical and research use.",
-    "topic": "Product reviews",
-    "article": "Medicube PDRN Pink Peptide Serum Review: Evidence & Ingredients",
-    "url": "/blog/medicube-pdrn-pink-peptide-serum-review",
-    "sourceQuestion": "Does topical PDRN really work?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-584",
-    "question": "How do you use the Medicube scalp serum?",
-    "answer": "Ulta's directions say to lightly towel-dry after shampooing, part the hair, apply to the scalp and massage gently.",
-    "topic": "Product reviews",
-    "article": "Medicube Rosemary PDRN Scalp Serum Review: Does It Work?",
-    "url": "/blog/medicube-rosemary-pdrn-scalp-serum-review",
-    "sourceQuestion": "How do you use the Medicube scalp serum?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-585",
-    "question": "What should I know about cold or dry weather?",
-    "answer": "Cold weather and low humidity can make already-dry or dermatitis-prone skin less comfortable.",
-    "topic": "Skin care",
-    "article": "Oily but Dehydrated Skin: Causes, Signs and What to Use",
-    "url": "/blog/oily-but-dehydrated-skin",
-    "sourceQuestion": "What should I know about cold or dry weather?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-586",
-    "question": "What is PIE?",
-    "answer": "Post-inflammatory erythema is persistent flat redness, pinkness or violaceous color that can remain as an inflammatory acne lesion resolves.",
-    "topic": "Acne",
-    "article": "PIH vs PIE vs Acne Scars: Brown, Red, Pitted or Raised?",
-    "url": "/blog/pih-vs-pie-vs-acne-scars",
-    "sourceQuestion": "What is PIE?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-587",
-    "question": "What the evidence proves and what it does not?",
-    "answer": "Experimental preparations created temporary pathways and increased delivery of specific molecules in laboratory or animal models.",
-    "topic": "Skin care",
-    "article": "Can You Use Reedle Shot With Retinol, Vitamin C or Acids?",
-    "url": "/blog/reedle-shot-with-retinol-acids-vitamin-c",
-    "sourceQuestion": "What the evidence proves and what it does not?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-588",
-    "question": "What should I know about systemic absorption?",
-    "answer": "Serious toxicity from facial salicylic acid use is rare. The risk profile changes when salicylic acid is applied over large body areas, under occlusion, on broken or diseased skin, or in high-strength preparations.",
-    "topic": "Acne",
-    "article": "The Truth About Salicylic Acid 2% | Science-Backed Skincare Guide",
-    "url": "/blog/salicylic-acid-2",
-    "sourceQuestion": "What should I know about systemic absorption?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-589",
-    "question": "What the research actually shows?",
-    "answer": "The evidence is not equally deep for the two ingredients. The 2024 American Academy of Dermatology guideline strongly recommends benzoyl peroxide, including its use in combination regimens.",
-    "topic": "Acne",
-    "article": "Salicylic Acid vs Benzoyl Peroxide: Which Is Better for Your Acne?",
-    "url": "/blog/salicylic-acid-vs-benzoyl-peroxide",
-    "sourceQuestion": "What the research actually shows?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-590",
-    "question": "What should I know about common causes of barrier damage?",
-    "answer": "The classic signs are burning, stinging, tightness, roughness, flaking, redness, sensitivity, and sudden intolerance to products that used to be fine.",
-    "topic": "Acne",
-    "article": "Is My Skin Barrier Damaged, or Do I Just Have Acne?",
-    "url": "/blog/skin-barrier-damaged-or-acne",
-    "sourceQuestion": "What should I know about common causes of barrier damage?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-591",
-    "question": "What should I know about coconut oil: best supported for breakage and length retention?",
-    "answer": "Coconut oil’s strongest evidence is not regrowth—it is hair-shaft protection.",
-    "topic": "Hair & body",
-    "article": "Slow Hair Growth? What Hair Growth Oils Actually Do",
-    "url": "/blog/slow-growth-hair-growth-oil",
-    "sourceQuestion": "What should I know about coconut oil: best supported for breakage and length retention?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-592",
-    "question": "What should I know about dEET, picaridin, IR3535 and PMD with sunscreen?",
-    "answer": "EPA-registered skin-applied repellents can contain DEET, picaridin, IR3535, oil of lemon eucalyptus, PMD or 2-undecanone.",
-    "topic": "Sun care",
-    "article": "Sunscreen or Bug Spray First? Correct Order + Wait Time",
-    "url": "/blog/sunscreen-or-bug-spray-first",
-    "sourceQuestion": "What should I know about dEET, picaridin, IR3535 and PMD with sunscreen?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-593",
-    "question": "Who Should and Should Not Use It?",
-    "answer": "Normal, combination, and oily skin dealing with dullness, rough texture, mild congestion, and post-acne marks.",
-    "topic": "Product reviews",
-    "article": "Is The Ordinary Glycolic Acid 7% Strong? Review & Safe Use",
-    "url": "/blog/the-ordinary-glycolic-acid-7-review",
-    "sourceQuestion": "Who Should and Should Not Use It?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-594",
-    "question": "What should I know about leaping Bunny, PETA, and self-declared logos?",
-    "answer": "A bunny image can be designed by the brand itself. Check the programme name and search the certifier’s official directory.",
-    "topic": "Skin care",
-    "article": "What Does Cruelty-Free Mean? Labels, Laws & Animal Testing",
-    "url": "/blog/what-cruelty-free-means",
-    "sourceQuestion": "What should I know about leaping Bunny, PETA, and self-declared logos?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-595",
-    "question": "Is there a safe way to tan?",
-    "answer": "There is no damage-free UV tan. Self-tanner and spray tanning create color without intentional UV exposure.",
-    "topic": "Sun care",
-    "article": "Can You Tan at UV Index 1-5? What Each Level Means",
-    "url": "/blog/what-uv-index-can-you-tan-in",
-    "sourceQuestion": "Is there a safe way to tan?",
-    "sourceKind": "faq"
-  },
-  {
-    "id": "qa-596",
-    "question": "What is not proven?",
-    "answer": "The main strategy is simple: treat the zone before the next bump becomes visible.",
-    "topic": "Acne",
-    "article": "Why Your Acne Keeps Returning in the Same Spot",
-    "url": "/blog/why-acne-keeps-returning-same-spot",
-    "sourceQuestion": "What is not proven?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-597",
-    "question": "What should I know about daily Barrier Repair Routine Checklist?",
-    "answer": "Use this when your moisturizer burns and your routine needs a reset.",
-    "topic": "Skin care",
-    "article": "Why Does My Moisturizer Burn? 7 Causes + What to Do",
-    "url": "/blog/why-does-my-moisturizer-burn",
-    "sourceQuestion": "What should I know about daily Barrier Repair Routine Checklist?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-598",
-    "question": "What the first direct sunscreen-pilling study actually found?",
-    "answer": "Lua and colleagues tested 528 women aged 20–49 in Guangzhou, China.",
-    "topic": "Sun care",
-    "article": "Why Does My Sunscreen Pill? 8 Reasons + How to Stop It",
-    "url": "/blog/why-does-my-sunscreen-pill",
-    "sourceQuestion": "What the first direct sunscreen-pilling study actually found?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-599",
-    "question": "What should I know about a UV filter activates ocular sensory pathways?",
-    "answer": "The strongest recent evidence is unusually specific. Zhang and colleagues tested octocrylene and ethylhexyl methoxycinnamate, or octinoxate .",
-    "topic": "Sun care",
-    "article": "Why Does Sunscreen Burn My Eyes? 7 Causes + How to Stop It",
-    "url": "/blog/why-does-sunscreen-burn-my-eyes",
-    "sourceQuestion": "What should I know about a UV filter activates ocular sensory pathways?",
-    "sourceKind": "section"
-  },
-  {
-    "id": "qa-600",
-    "question": "What should I know about benzoyl peroxide?",
-    "answer": "Benzoyl peroxide is one of the most dependable treatments for inflammatory acne.",
-    "topic": "Acne",
-    "article": "Acne Treatment Guide: What Works for Major Acne Types",
-    "url": "/blog/acne-treatment-guide",
-    "sourceQuestion": "What should I know about benzoyl peroxide?",
     "sourceKind": "section"
   }
 ]);
