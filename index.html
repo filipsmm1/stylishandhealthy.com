@@ -9,174 +9,12 @@
 <meta content="d52c5a761a8aff55499412bf4194b9c0" name="p:domain_verify"/>
 <title>Stylishandhealthy - Hot Girls Read the Research</title>
 <meta content="Stylishandhealthy. Hot girls read the research. Actual research and skincare advice that makes sense, with realistic wellness habits and free printables you can download separately and print whenever you need them." name="description"/>
-<link href="/assets/images/logo_main.png" rel="icon" type="image/png"/>
+<link href="/assets/images/logo-64.png" rel="icon" type="image/png"/>
+<link href="/assets/images/logo-180.png" rel="apple-touch-icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Dancing+Script:wght@400;500;600;700&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;family=Instrument+Sans:wght@400..600&amp;display=swap" rel="stylesheet"/>
 <link href="/assets/css/styles.css" rel="stylesheet"/>
-<style>
-    /* ---- HERO ---- */
-    #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; background: var(--cream); position: relative; overflow: hidden; }
-    #hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(85,107,62,.065) .55px, transparent .55px); background-size: 22px 22px; pointer-events: none; }
-    .hero-shape { position: absolute; right: -100px; top: -60px; width: 680px; height: 680px; border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; background: radial-gradient(circle at 40% 40%, var(--pink) 0%, var(--cream) 68%); opacity: .5; animation: hshape 14s ease-in-out infinite; will-change: transform; pointer-events: none; }
-    @keyframes hshape { 0%,100%{transform:scale(1) translate3d(0,0,0);border-radius:60% 40% 70% 30% / 50% 60% 40% 70%} 50%{transform:scale(1.06) translate3d(0,-18px,0);border-radius:40% 60% 30% 70% / 60% 40% 70% 30%} }
-    .hero-left { padding: 100px 68px 100px 80px; position: relative; z-index: 2; min-width: 0; }
-    .eyebrow { font-family: var(--body); font-size: .71rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--green); display: inline-block; margin-bottom: 22px; padding: 6px 16px; border: 1px solid rgba(85,107,62,.2); border-radius: 100px; background: rgba(85,107,62,.05); }
-    .h1 { font-family: var(--display); font-size: clamp(2.5rem,4.75vw,4.85rem); font-weight: 400; line-height: 1.05; letter-spacing: -.035em; color: var(--green-dk); margin-bottom: 10px; white-space: nowrap; overflow-wrap: normal; word-break: keep-all; hyphens: none; }
-    .h1 em { font-style: italic; color: var(--green); }
-    .h1-sub { font-family: var(--hand); font-size: clamp(1.6rem,2.6vw,2.2rem); color: var(--pink-deep); margin-bottom: 26px; display: block; }
-    .hero-p { font-size: 1rem; line-height: 1.8; color: var(--brown-lt); max-width: 470px; margin-bottom: 36px; }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-    .hero-proof { display: flex; align-items: center; gap: 14px; margin-top: 34px; }
-    .pavs { display: flex; }
-    .pav { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--cream); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: .9rem; font-style: italic; color: var(--cream); margin-left: -8px; }
-    .pav:first-child { margin-left: 0; }
-    .pa1{background:var(--green)}.pa2{background:var(--pink-deep)}.pa3{background:var(--brown-lt)}
-    .proof-t { font-size: .79rem; color: var(--brown-lt); max-width: 210px; line-height: 1.5; }
-    .hero-right { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; padding: 80px 80px 80px 0; }
-    .hcards { position: relative; width: min(100%, 440px); aspect-ratio: 1 / 1; }
-    .hc { position: absolute; border-radius: 26px; overflow: hidden; box-shadow: 0 24px 50px rgba(58,42,34,.18); background: rgba(247,241,232,.98); border: 1px solid rgba(58,42,34,.06); }
-    .hc img { width: 100%; height: 100%; object-fit: contain; display: block; }
-    .hc1 { width: 74%; height: 82%; top: 2%; left: 0; transform: rotate(-6deg); animation: hcf1 9s ease-in-out infinite; will-change: transform; }
-    .hc2 { width: 74%; height: 82%; top: 10%; right: 0; transform: rotate(4deg); animation: hcf2 11s ease-in-out infinite .8s; will-change: transform; }
-    .hc3 { width: 74%; height: 82%; left: 13%; bottom: 4%; transform: rotate(-1deg); animation: hcf3 10s ease-in-out infinite .4s; will-change: transform; }
-    @keyframes hcf1 { 0%,100%{transform:rotate(-6deg) translate3d(0,0,0)} 50%{transform:rotate(-6deg) translate3d(0,-12px,0)} }
-    @keyframes hcf2 { 0%,100%{transform:rotate(4deg) translate3d(0,0,0)} 50%{transform:rotate(4deg) translate3d(0,-8px,0)} }
-    @keyframes hcf3 { 0%,100%{transform:rotate(-1deg) translate3d(0,0,0)} 50%{transform:rotate(-1deg) translate3d(0,-14px,0)} }
-
-    /* ---- AD SECTION ---- */
-    #brand-ad { padding: 0; width: 100%; background: var(--cream); line-height: 0; font-size: 0; }
-    #brand-ad iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: none; background: transparent; }
-
-    /* ---- JOURNAL STRIP + ABOUT - unified dark green block ---- */
-    .journal-strip { background: var(--green-dk); padding: 72px 80px 0; position: relative; overflow: hidden; }
-    .journal-strip::before { content: ''; position: absolute; right: -60px; top: -60px; width: 300px; height: 300px; border-radius: 50%; background: rgba(247,241,232,.04); pointer-events: none; }
-    .js-inner, .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-    .js-left h3 { font-family: var(--display); font-size: 2.2rem; font-weight: 400; color: var(--cream); margin-bottom: 8px; }
-    .js-left h3 em { font-style: italic; color: var(--pink-mid); }
-    .js-left p { font-size: .95rem; color: rgba(247,241,232,.58); max-width: 480px; line-height: 1.7; }
-    .js-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(247,241,232,.1); border: 1px solid rgba(247,241,232,.2); border-radius: 100px; padding: 7px 18px; margin-bottom: 16px; }
-    .js-badge span { font-family: var(--hand); font-size: .9rem; color: var(--pink-mid); }
-    .js-slideshow { margin-top: 28px; width: 100%; max-width: 560px; margin-inline: auto; position: relative; }
-    .js-slides { position: relative; width: 100%; aspect-ratio: 1 / 1; border-radius: 24px; overflow: hidden; box-shadow: 0 16px 44px rgba(58,42,34,.32); background: linear-gradient(180deg, rgba(247,241,232,.98), rgba(237,228,213,.98)); }
-    .js-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: clamp(12px, 2.6vw, 24px); opacity: 0; transition: opacity .45s ease; will-change: opacity; }
-    .js-slide.active { opacity: 1; }
-    .js-dots { display: flex; gap: 8px; justify-content: center; align-items: center; margin-top: 14px; }
-    .js-dot { position: relative; width: 22px; height: 22px; border: 0; background: transparent; border-radius: 50%; padding: 0; cursor: pointer; }
-    .js-dot::before { content: ''; position: absolute; top: 50%; left: 50%; width: 7px; height: 7px; border-radius: 50%; transform: translate(-50%, -50%); background: rgba(247,241,232,.36); transition: background .22s ease, transform .22s ease, box-shadow .22s ease; }
-    .js-dot.active::before { background: var(--pink-mid); box-shadow: 0 0 0 4px rgba(243,175,192,.18); transform: translate(-50%, -50%) scale(1.05); }
-    .js-cta { margin-top: 24px; }
-    #about { background: var(--green-dk); padding: 0 80px 96px; position: relative; overflow: hidden; }
-    .ast-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-    .ast { background: rgba(247,241,232,.04); border: 1px solid rgba(247,241,232,.07); padding: 34px 26px; transition: background .2s; }
-    .ast:hover { background: rgba(247,241,232,.07); }
-    .ast-n { font-family: var(--display); font-size: 3rem; font-weight: 300; color: var(--pink); line-height: 1; margin-bottom: 5px; }
-    .ast-l { font-size: .77rem; color: rgba(247,241,232,.45); letter-spacing: .05em; }
-    .about-copy .sl { color: var(--green-lt); }
-    .about-copy .sl::before { background: var(--green-lt); }
-    .about-copy .sh { color: var(--cream); }
-    .about-copy .sh em { color: var(--pink-mid); }
-    .about-copy p { color: rgba(247,241,232,.6); margin-bottom: 18px; font-size: .96rem; line-height: 1.8; }
-    .aps { display: flex; flex-direction: column; gap: 1px; margin-top: 30px; }
-    .ap { display: flex; align-items: flex-start; gap: 16px; padding: 17px; border: 1px solid rgba(247,241,232,.07); transition: background .2s; }
-    .ap:hover { background: rgba(247,241,232,.05); }
-    .ap-t { font-family: var(--display); font-size: 1.08rem; font-weight: 400; color: var(--cream); margin-bottom: 2px; }
-    .ap-s { font-size: .84rem; color: rgba(247,241,232,.48); line-height: 1.6; }
-
-    /* ---- CATEGORIES ---- */
-    #categories { background: var(--cream); position: relative; overflow: hidden; }
-    .cats-hdr { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 52px; gap: 24px; flex-wrap: wrap; }
-    .cats-grid { display: grid; grid-template-columns: repeat(3,1fr); grid-template-rows: auto auto; gap: 16px; }
-    .cat { background: var(--cream-warm); border-radius: 28px 20px 32px 18px / 18px 30px 20px 28px; padding: 34px 30px; transition: transform .25s var(--ease), box-shadow .25s; border: 1px solid rgba(58,42,34,.07); cursor: pointer; position: relative; overflow: hidden; }
-    .cat:hover { transform: translateY(-5px); box-shadow: 0 18px 44px rgba(85,107,62,.1); }
-    .cat.tall { grid-row: span 2; display: flex; flex-direction: column; justify-content: flex-end; min-height: 340px; }
-    .cat.dark { background: var(--green); }
-    .cat.dark .cat-label,.cat.dark .cat-title,.cat.dark .cat-desc,.cat.dark .cat-arr { color: var(--cream); }
-    .cat.dark .cat-label { color: var(--green-lt); }
-    .cat.pink-bg { background: var(--pink); }
-    .cat-label { font-family: var(--body); font-size: .67rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--green-lt); margin-bottom: 9px; display: block; }
-    .cat-title { font-family: var(--display); font-size: 1.5rem; font-weight: 400; color: var(--green-dk); margin-bottom: 9px; line-height: 1.2; }
-    .cat.tall .cat-title { font-size: 2.1rem; }
-    .cat-desc { font-size: .85rem; color: var(--brown-lt); line-height: 1.65; }
-    .cat-arr { display: inline-flex; align-items: center; gap: 6px; font-family: var(--body); font-size: .79rem; font-weight: 600; color: var(--green); margin-top: 16px; transition: gap .18s var(--easeb); }
-    .cat:hover .cat-arr { gap: 11px; }
-    .cat::before { content: ''; position: absolute; width: 160px; height: 160px; background: rgba(255,255,255,.25); border-radius: 60% 40% 70% 30% / 50% 60% 40% 70%; top: -30px; right: -30px; pointer-events: none; }
-
-    .cat.tall.dark {
-      min-height: 430px;
-      padding: 34px 30px;
-      isolation: isolate;
-      background: var(--green-dk);
-    }
-    .cat-science-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: inherit;
-      overflow: hidden;
-      margin: 0;
-      border: 0;
-      background: var(--green-dk);
-      z-index: 0;
-    }
-    .cat-science-img::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(28,37,24,.16) 0%, rgba(28,37,24,.34) 42%, rgba(28,37,24,.84) 100%);
-      pointer-events: none;
-    }
-    .cat-science-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .cat.tall.dark > :not(.cat-science-img) {
-      position: relative;
-      z-index: 2;
-    }
-    .cat.tall.dark::before { display: none; }
-    .cat.dark::before { background: rgba(255,255,255,.06); }
-    .cat.pink-bg::before { background: rgba(255,255,255,.3); }
-
-    /* ---- PINTEREST ---- */
-    .pinterest-strip { background: var(--cream-warm); padding: 72px 80px; position: relative; overflow: hidden; }
-    .pin-strip-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 36px; gap: 24px; flex-wrap: wrap; }
-    .pin-strip-head h2 { font-family: var(--display); font-size: 2rem; font-weight: 400; color: var(--green-dk); margin-bottom: 8px; }
-    .pin-strip-head p { font-size: .9rem; color: var(--brown-lt); max-width: 420px; line-height: 1.6; }
-    .pin-eyebrow { font-family: var(--body); font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--green); display: block; margin-bottom: 10px; }
-    .pin-follow { font-family: var(--body); font-size: .85rem; font-weight: 700; color: var(--cream); background: var(--green-dk); text-decoration: none; white-space: nowrap; border: 1px solid var(--green-dk); border-radius: 100px; padding: 10px 22px; transition: background .2s, transform .18s var(--easeb), border-color .2s; }
-    .pin-follow:hover { background: var(--green); border-color: var(--green); transform: translateY(-2px); }
-    .pin-follow,
-    .pin-follow:visited,
-    .pin-follow:hover,
-    .pin-follow:focus-visible { color: var(--cream) !important; }
-    .pin-widget-wrap { width: 100%; overflow: hidden; display: flex; justify-content: center; }
-    .pin-widget-wrap > a { display: block; width: 100% !important; max-width: 100% !important; }
-
-    @media(max-width:1024px) {
-      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:88px 48px 80px} .h1{font-size:clamp(2.7rem,8.5vw,5rem);}
-    }
-    @media(max-width:860px) {
-      #hero{grid-template-columns:1fr} .hero-right{display:none} .hero-left{padding:72px 24px 60px}
-      #about{grid-template-columns:1fr;padding:80px 24px;gap:44px}
-      .cats-grid{grid-template-columns:1fr 1fr} .cat.tall{grid-row:span 1;min-height:auto} .cat.tall.dark{min-height:380px}
-      .journal-strip{padding:56px 24px 0}
-      #about{padding:0 24px 72px}
-      .js-inner,.about-inner{grid-template-columns:1fr;gap:32px}
-      .pinterest-strip{padding:52px 0}
-      .pin-strip-head{flex-direction:column;align-items:flex-start;}
-    }
-    @media(max-width:560px) {
-      .cats-grid{grid-template-columns:1fr} .cat.tall.dark{min-height:390px} .ast-grid{grid-template-columns:1fr 1fr}
-      .hero-actions{flex-direction:column;align-items:flex-start}
-      .hero-actions .btn{width:100%;justify-content:center}
-      .hero-left{padding:60px 20px 52px}
-      .h1{font-size:clamp(2.05rem,9.4vw,2.95rem);letter-spacing:-.045em;}
-    }
-  </style>
 <link href="https://stylishandhealthy.com/" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="Stylishandhealthy - Hot Girls Read the Research" property="og:title"/>
@@ -206,453 +44,16 @@
   }
 }
 </script>
-<style data-device-fixes="true">
-
-/* Homepage device fixes */
-#hero { min-height: calc(100svh - 96px); }
-.post-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-.post-card { min-width: 0; }
-.js-slideshow { max-width: 560px; margin-inline: auto; }
-.js-dot {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  border: 0;
-  background: transparent;
-  border-radius: 50%;
-  padding: 0;
-}
-.js-dot::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(247,241,232,.36);
-  transition: background .22s ease, transform .22s ease, box-shadow .22s ease;
-}
-.js-dot.active::before { background: var(--pink-mid); box-shadow: 0 0 0 4px rgba(243,175,192,.18); transform: translate(-50%, -50%) scale(1.05); }
-@media(max-width:1024px) {
-  .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-}
-@media(max-width:860px) {
-  #hero { min-height: auto; }
-  .journal-strip, #about { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
-  .post-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-}
-@media(max-width:560px) {
-  .post-grid { grid-template-columns: 1fr !important; }
-  .hero-proof { align-items: flex-start; }
-  .proof-t { max-width: none; }
-  .journal-strip, #about { padding-left: max(20px, env(safe-area-inset-left)); padding-right: max(20px, env(safe-area-inset-right)); }
-  .ast-grid { grid-template-columns: 1fr; }
-}
-
-</style>
-<style data-home-polish="true">
-/* ---- homepage polish: hero copy, transparent printable stack, refined free printables block ---- */
-
-#hero {
-  min-height: min(900px, calc(100svh - 72px));
-}
-
-.hero-left {
-  max-width: 720px;
-}
-
-.hero-left .eyebrow {
-  color: var(--green);
-  background: rgba(85,107,62,.055);
-  border-color: rgba(85,107,62,.16);
-}
-
-.hero-left .h1 {
-  font-size: clamp(3rem, 5.2vw, 5.45rem);
-  line-height: .98;
-  margin-bottom: 28px;
-}
-
-.hero-left .h1 em {
-  color: var(--pink-deep);
-  font-weight: 400;
-}
-
-.hero-left .hero-p {
-  max-width: 540px;
-  font-size: 1.04rem;
-  line-height: 1.85;
-  margin-bottom: 32px;
-  color: rgba(58,42,34,.78);
-}
-
-.hero-left .h1-sub {
-  display: block;
-  font-family: var(--display);
-  font-style: italic;
-  font-size: clamp(1.7rem, 3vw, 2.55rem);
-  line-height: 1.08;
-  color: var(--pink-deep);
-  margin: -12px 0 26px;
-}
-
-.hero-left .hero-p strong {
-  color: var(--green-dk);
-  font-weight: 600;
-}
-
-.hero-proof,
-.pavs,
-.proof-t {
-  display: none !important;
-}
-
-/* Transparent hero printable stack */
-.hcards {
-  width: min(100%, 520px);
-  aspect-ratio: 1 / 1.04;
-}
-
-.hc {
-  background: transparent !important;
-  border: 0 !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  overflow: visible !important;
-  animation: none !important;
-}
-
-.hc img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  border-radius: 18px;
-  filter: drop-shadow(0 24px 34px rgba(58,42,34,.18));
-}
-
-.hc1 {
-  width: 73%;
-  height: 84%;
-  top: 3%;
-  left: 1%;
-  z-index: 1;
-  opacity: .42;
-  transform: rotate(-6deg) !important;
-}
-
-.hc2 {
-  width: 73%;
-  height: 84%;
-  top: 9%;
-  right: -1%;
-  z-index: 2;
-  opacity: .56;
-  transform: rotate(4deg) !important;
-}
-
-.hc3 {
-  width: 78%;
-  height: 88%;
-  left: 12%;
-  bottom: 0;
-  z-index: 3;
-  opacity: 1;
-  transform: rotate(-1deg) !important;
-}
-
-/* Printables section */
-.journal-strip {
-  background:
-    radial-gradient(circle at 10% 0%, rgba(248,214,222,.34), transparent 34%),
-    radial-gradient(circle at 100% 20%, rgba(168,185,154,.18), transparent 28%),
-    var(--cream);
-  padding: 86px 80px;
-  position: relative;
-  overflow: hidden;
-}
-
-.journal-strip::before {
-  content: "";
-  position: absolute;
-  inset: auto -120px -180px auto;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: rgba(248,214,222,.26);
-  pointer-events: none;
-}
-
-.printables-panel {
-  position: relative;
-  z-index: 1;
-  max-width: 1180px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(290px, .85fr) minmax(0, 1.15fr);
-  gap: 44px;
-  align-items: center;
-  padding: clamp(28px, 4vw, 48px);
-  border: 1px solid rgba(58,42,34,.075);
-  border-radius: 34px;
-  background: linear-gradient(135deg, rgba(247,241,232,.98), rgba(248,214,222,.35));
-  box-shadow: 0 26px 70px rgba(58,42,34,.08);
-}
-
-.printables-preview-wrap {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 0;
-  padding: clamp(18px, 2.2vw, 26px);
-  border-radius: 28px;
-  border: 1px solid rgba(85,107,62,.09);
-  background: rgba(255,255,255,.34);
-}
-
-.printables-preview-kicker,
-.printables-kicker {
-  font-family: var(--body);
-  font-size: .68rem;
-  font-weight: 700;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--pink-deep);
-}
-
-.printables-preview-kicker {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.printables-preview-wrap .js-slideshow {
-  margin: 0 auto;
-  max-width: 420px;
-  width: 100%;
-}
-
-.printables-preview-wrap .js-slides {
-  aspect-ratio: 4 / 5;
-  border-radius: 26px;
-  background: rgba(247,241,232,.62);
-  border: 1px solid rgba(58,42,34,.055);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.42);
-  overflow: hidden;
-}
-
-.printables-preview-wrap .js-slide {
-  padding: clamp(8px, 2vw, 16px);
-  object-fit: contain;
-}
-
-.journal-strip .js-dots {
-  margin-top: 16px;
-}
-
-.journal-strip .js-dot::before {
-  background: rgba(85,107,62,.26);
-}
-
-.journal-strip .js-dot.active::before {
-  background: var(--pink-deep);
-  box-shadow: 0 0 0 4px rgba(212,121,138,.14);
-}
-
-.printables-copy {
-  min-width: 0;
-}
-
-.printables-title {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: clamp(2.05rem, 3.5vw, 3rem);
-  line-height: 1.05;
-  letter-spacing: -.015em;
-  color: var(--green-dk);
-  margin: 12px 0 8px;
-}
-
-.printables-tagline {
-  font-family: var(--display);
-  font-style: italic;
-  font-size: clamp(1.05rem, 1.5vw, 1.28rem);
-  color: rgba(58,42,34,.76);
-  margin: 0 0 16px;
-}
-
-.printables-body {
-  max-width: 620px;
-  font-size: .98rem;
-  line-height: 1.78;
-  color: rgba(58,42,34,.72);
-  margin: 0 0 22px;
-}
-
-.printables-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 28px;
-  padding: 14px 28px;
-  font-size: .92rem;
-}
-
-.printable-stats {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  margin: 0 0 24px;
-}
-
-.printable-stat {
-  min-height: 146px;
-  padding: 22px 14px 20px;
-  border-radius: 22px;
-  border: 1px dashed rgba(212,121,138,.34);
-  background: rgba(247,241,232,.66);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.printable-stat-value {
-  min-height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--display);
-  font-size: clamp(1.9rem, 3vw, 2.65rem);
-  line-height: 1;
-  color: var(--green-dk);
-}
-
-.printable-stat-divider {
-  margin: 10px 0 8px;
-  color: var(--green);
-  font-size: 1.05rem;
-  line-height: 1;
-}
-
-.printable-stat-label {
-  font-size: .84rem;
-  line-height: 1.35;
-  color: rgba(58,42,34,.78);
-}
-
-.printable-items {
-  display: grid;
-  gap: 12px;
-}
-
-.printable-item {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 14px;
-  align-items: start;
-  padding: 16px;
-  border-radius: 20px;
-  border: 1px solid rgba(58,42,34,.065);
-  background: rgba(255,255,255,.34);
-}
-
-.printable-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(248,214,222,.68);
-  color: var(--pink-deep);
-  font-family: var(--display);
-  font-size: 1.12rem;
-}
-
-.printable-item h3 {
-  font-family: var(--display);
-  font-size: 1.12rem;
-  font-weight: 400;
-  color: var(--green-dk);
-  margin: 0 0 4px;
-}
-
-.printable-item p {
-  font-size: .86rem;
-  line-height: 1.62;
-  color: rgba(58,42,34,.66);
-  margin: 0;
-}
-
-@media(max-width:1024px) {
-  .printables-panel {
-    grid-template-columns: 1fr;
-  }
-
-  .printables-preview-wrap {
-    max-width: 560px;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-@media(max-width:860px) {
-  .journal-strip {
-    padding: 64px 24px;
-  }
-
-  .printable-stats {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media(max-width:560px) {
-  .hero-left .h1 {
-    font-size: clamp(2.5rem, 14vw, 3.35rem);
-  }
-
-  .journal-strip {
-    padding: 52px 18px;
-  }
-
-  .printables-panel {
-    padding: 22px;
-    border-radius: 28px;
-  }
-
-  .printable-stats {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .printable-stat {
-    min-height: 124px;
-    padding: 18px 10px;
-  }
-
-  .printable-item {
-    grid-template-columns: 40px 1fr;
-    padding: 14px;
-  }
-
-  .printable-icon {
-    width: 40px;
-    height: 40px;
-  }
-}
-</style>
+<link href="/assets/css/reader.css?v=20261121" rel="stylesheet"/>
 </head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <div id="cdot"></div>
 <div class="wordmark-bar">
-<img alt="Stylishandhealthy." decoding="async" src="/assets/images/youtube_banner.png"/>
+<img width="112" height="28" alt="Stylishandhealthy." decoding="async" src="/assets/images/wordmark.webp"/>
 </div>
 <nav aria-label="Primary navigation">
 <a aria-label="Stylishandhealthy home" class="nav-logo" href="/">
-<img alt="S&amp;H" decoding="async" src="/assets/images/logo_main.png"/>
+<img width="42" height="42" alt="S&amp;H" decoding="async" src="/assets/images/logo-mark.webp"/>
 </a>
 <ul id="primary-navigation">
 <li><a href="/blog">Blog</a></li>
@@ -661,217 +62,81 @@
 <li><a href="/about">About</a></li>
 <li><a class="npill" href="/journal">Free Journal</a></li>
 </ul>
-</nav><main id="main-content">
-<!-- HERO -->
-<section id="hero">
-<div class="hero-shape"></div>
-<div class="doodle" style="width:130px;top:18%;right:8%;transform:rotate(12deg)">
-<img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart1.png"/>
-</div>
-<div class="doodle" style="width:80px;bottom:22%;left:6%;transform:rotate(-8deg);opacity:.35">
-<img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart2.png"/>
-</div>
-<div class="hero-left">
-<div class="eyebrow">skincare, wellness, and routines without the nonsense</div>
-<h1 class="h1">Stylishandhealthy</h1>
-<span class="h1-sub">Hot girls read the research.</span>
-<p class="hero-p"><strong>actual research and skincare advice that makes sense.</strong><br/>For the girl who wants to feel good without falling for every trend, myth, or wellness rule online.</p>
-<div class="hero-actions">
-<a class="btn btn-f" href="/blog">Explore the blog</a>
-<a class="btn btn-o" href="/blog">Read the blog</a>
-</div>
-</div>
-<div class="hero-right">
-<div aria-label="Printable previews" class="hcards">
-<div class="hc hc1">
-<img alt="Daily barrier repair routine checklist printable" decoding="async" loading="lazy" src="/assets/images/daily_barrier_repair_routine_checklist.png"/>
-</div>
-<div class="hc hc2">
-<img alt="7 Day Reset printable" decoding="async" loading="lazy" src="/assets/images/7dayreset.png"/>
-</div>
-<div class="hc hc3">
-<img alt="7-Day Soft Reset Tracker printable" decoding="async" loading="lazy" src="/assets/images/7-day-soft-reset-tracker.png"/>
-</div>
-</div>
-</div>
+</nav><main id="main-content" class="home">
+<section class="home-intro">
+<p class="home-kicker">Skincare and wellness, checked against the research</p>
+<h1 class="home-title">Hot girls read the research.</h1>
+<p class="home-lede">Plain-English guides to acne, sunscreen, irritated skin and the products everyone is talking about. Every claim links to the study or guideline behind it, and we say so when the evidence is thin.</p>
+<form action="/blog" class="home-search" method="get" role="search">
+<label class="visually-hidden" for="homeSearch">Search the guides</label>
+<input autocomplete="off" id="homeSearch" name="q" placeholder="Search 63 guides: retinol, fungal acne, SPF…" type="search"/>
+<button type="submit">Search</button>
+</form>
 </section>
-<!-- TICKER -->
-<div class="ticker">
-<div class="ticker-t">
-<span class="ti">Research-backed skincare</span><span class="ti">Printable journals</span><span class="ti">Wellness printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Free research notes</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
-<span class="ti">Research-backed skincare</span><span class="ti">Printable journals</span><span class="ti">Wellness printables</span><span class="ti">Wellness habits</span><span class="ti">Soft discipline</span><span class="ti">Free research notes</span><span class="ti">Hot girls read the research</span><span class="ti">Look good, feel good</span>
+
+<section aria-labelledby="latest-title" class="home-latest">
+<div class="home-section-head">
+<h2 id="latest-title">Latest</h2>
+<a href="/blog">All 63 articles →</a>
 </div>
-</div>
-<!-- BRAND AD -->
-<section aria-label="About Stylish and Healthy" id="brand-ad">
-<iframe allowtransparency="true" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" src="/assets/video/brand_ad.html" title="Stylish and Healthy Brand Story"></iframe>
-</section>
-<!-- JOURNAL STRIP / WELLNESS PLANNER -->
-<div class="journal-strip">
-<div class="printables-panel">
-<div class="printables-preview-wrap">
-<div class="printables-preview-kicker">Free printable preview</div>
-<div class="js-slideshow" id="jsSlideshow">
-<div class="js-slides">
-<img alt="Daily barrier repair routine checklist printable" class="js-slide active" decoding="async" loading="lazy" src="/assets/images/daily_barrier_repair_routine_checklist.png"/>
-<img alt="7 Day Reset printable" class="js-slide" decoding="async" loading="lazy" src="/assets/images/7dayreset.png"/>
-<img alt="7-Day Soft Reset Tracker printable" class="js-slide" decoding="async" loading="lazy" src="/assets/images/7-day-soft-reset-tracker.png"/>
-</div>
-<div class="js-dots">
-<button aria-label="Show printable image 1" aria-pressed="true" class="js-dot active" type="button"></button>
-<button aria-label="Show printable image 2" aria-pressed="false" class="js-dot" type="button"></button>
-<button aria-label="Show printable image 3" aria-pressed="false" class="js-dot" type="button"></button>
-</div>
-</div>
-</div>
-<div class="printables-copy">
-<div class="printables-kicker">free printables to download</div>
-<h2 class="printables-title">Free wellness printables</h2>
-<p class="printables-tagline">Download each page separately and print what you need.</p>
-<p class="printables-body">Free printable pages for planning, tracking, brain dumps, to-do lists, and quick routine resets. Pick the page you want, download it separately, and print it now.</p>
-<a class="btn btn-f printables-btn" href="/shop">Download and print now →</a>
-<div aria-label="Printable details" class="printable-stats">
-<div class="printable-stat">
-<div class="printable-stat-value">3</div>
-<div class="printable-stat-divider">☙</div>
-<div class="printable-stat-label">Printable designs</div>
-</div>
-<div class="printable-stat">
-<div class="printable-stat-value">✓</div>
-<div class="printable-stat-divider">☙</div>
-<div class="printable-stat-label">Printer-friendly format</div>
-</div>
-</div>
-<div class="printable-items">
-<article class="printable-item">
-<span class="printable-icon">♡</span>
-<div>
-<h3>Free printables for you</h3>
-<p>Pick the page you need, download it separately, and print it whenever you want.</p>
-</div>
-</article>
-<article class="printable-item">
-<span class="printable-icon">✓</span>
-<div>
-<h3>To-do lists and trackers</h3>
-<p>Simple pages for habits, routines, resets, goals, and daily planning.</p>
-</div>
-</article>
-<article class="printable-item">
-<span class="printable-icon">✎</span>
-<div>
-<h3>Brain dumps</h3>
-<p>Clear your head, organize your thoughts, and start fresh on paper.</p>
-</div>
-</article>
-</div>
-</div>
-</div>
-</div>
-<!-- CATEGORIES -->
-<section class="sec" id="categories">
-<div class="doodle" style="width:85px;top:8%;right:10%;transform:rotate(-15deg);opacity:.4">
-<img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart2.png"/>
-</div>
-<div class="cats-hdr rv">
-<div>
-<div class="sl">What we cover</div>
-<h2 class="sh">Everything that makes you <em>glow.</em></h2>
-</div>
-<a class="btn btn-o" href="/blog">Explore the blog</a>
-</div>
-<div class="cats-grid">
-<div class="cat tall dark rv">
-<div class="cat-science-img"><img alt="Skincare science illustration" decoding="async" loading="lazy" src="/assets/images/skincare_science_square.png"/></div>
-<div class="cat-label">Deep dives</div>
-<div class="cat-title">Skincare Science</div>
-<div class="cat-desc">Ingredient breakdowns, routine guides, and the science behind serums, acids, and moisturisers, explained simply.</div>
-<a class="cat-arr" href="/skincare">Read</a>
-</div>
-<div class="cat rv d1">
-<div class="cat-label">Wellness</div>
-<div class="cat-title">Habits and Health</div>
-<div class="cat-desc">Sleep, hydration, movement, and mindset, proven by science, brought to you simply.</div>
-<a class="cat-arr" href="/blog">Explore</a>
-</div>
-<div class="cat rv d2">
-<div class="cat-label">Self-growth</div>
-<div class="cat-title">Journaling and Mindset</div>
-<div class="cat-desc">Prompts, frameworks, and reflections to help you think clearly and grow with intention.</div>
-<a class="cat-arr" href="/blog">Read</a>
-</div>
-<div class="cat pink-bg rv d1">
-<div class="cat-label">Organisation</div>
-<div class="cat-title">Systems and Planning</div>
-<div class="cat-desc">Digital planners, habit trackers, and routine builders that make life feel calm and structured.</div>
-<a class="cat-arr" href="/shop">Explore</a>
-</div>
-<div class="cat rv d2">
-<div class="cat-label">Aesthetic</div>
-<div class="cat-title">Lifestyle and Routines</div>
-<div class="cat-desc">Morning rituals, self-care routines, and building a life you genuinely love.</div>
-<a class="cat-arr" href="/blog">Read</a>
-</div>
-</div>
-</section>
-<!-- SOCIAL POSTS -->
-<section class="sec" id="posts" style="background:var(--cream-warm)">
-<div class="sl rv">Latest posts</div>
-<h2 class="sh rv d2">A few things we are sharing <em>right now.</em></h2>
-<p class="sp rv d3">Follow along for beauty, wellness, product finds, and soft self-improvement content.</p>
-<div class="post-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px">
-<a class="post-card rv" href="https://www.instagram.com/stylishandhealthie" rel="noopener noreferrer" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block" target="_blank">
-<div class="sl" style="margin-bottom:16px">Instagram</div>
-<h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Outfit, skincare, and routine inspiration</h3>
-<p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">@stylishandhealthie</p>
+<div class="home-latest-grid">
+<a class="home-lead" href="/blog/is-beauty-of-joseon-relief-sun-water-resistant">
+<img alt="Is Relief Sun Water Resistant? illustration" decoding="async" fetchpriority="high" height="675" src="/assets/images/relief-sun-water-resistant-banner.webp" width="1200"/>
+<p class="home-lead-meta">October 24, 2026 · 6 min read</p>
+<h3>Is Beauty of Joseon Relief Sun Water Resistant? What to Use for Swimming</h3>
+<p class="home-lead-dek">The brand’s swimming advice, what SPF50+ does not mean, and how to choose a beach sunscreen.</p>
 </a>
-<a class="post-card rv d2" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block" target="_blank">
-<div class="sl" style="margin-bottom:16px">Pinterest</div>
-<h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Boards for routines, beauty, and lifestyle</h3>
-<p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">stylishandhealthy</p>
-</a>
-<a class="post-card rv d3" href="https://www.tiktok.com/@stylish.and.healthy" rel="noopener noreferrer" style="background:var(--cream);border:1px solid rgba(58,42,34,.07);border-radius:24px;padding:26px;display:block" target="_blank">
-<div class="sl" style="margin-bottom:16px">TikTok</div>
-<h3 style="font-family:var(--display);font-size:1.35rem;font-weight:400;color:var(--green-dk);margin-bottom:10px">Quick tips, product finds, and daily motivation</h3>
-<p style="font-size:.9rem;color:var(--brown-lt);line-height:1.7">@stylish.and.healthy</p>
-</a>
+<ol class="home-list">
+<li><a href="/blog/can-you-use-azelaic-acid-with-retinol"><span class="home-list-date">October 24, 2026</span><span class="home-list-title">Can You Use Azelaic Acid With Retinol? A Routine That Respects Your Skin</span></a></li>
+<li><a href="/blog/garnier-vitamin-c-vs-hyaluron-sorbet-cream"><span class="home-list-date">October 24, 2026</span><span class="home-list-title">Garnier Vitamin C vs Hyaluron Sorbet Cream: Which One Should You Choose?</span></a></li>
+<li><a href="/blog/beauty-of-joseon-relief-sun-vs-aqua-fresh"><span class="home-list-date">October 10, 2026</span><span class="home-list-title">Beauty of Joseon Relief Sun vs Aqua-Fresh: Which Sunscreen Should You Choose?</span></a></li>
+<li><a href="/blog/garnier-hyaluron-sorbet-cream-review"><span class="home-list-date">October 10, 2026</span><span class="home-list-title">Garnier Hyaluron Sorbet Cream Review: Who Is It Actually For?</span></a></li>
+<li><a href="/blog/does-ipl-work-on-blonde-grey-white-hair"><span class="home-list-date">October 10, 2026</span><span class="home-list-title">Does IPL Work on Blonde, Grey or White Hair? What Actually Works Instead</span></a></li>
+<li><a href="/blog/garnier-salicylic-sorbet-cream-review"><span class="home-list-date">September 27, 2026</span><span class="home-list-title">Garnier Salicylic Sorbet Cream Review: Is It Good for Oily, Acne-Prone Skin?</span></a></li>
+</ol>
 </div>
 </section>
-<!-- PINTEREST STRIP -->
-<section aria-labelledby="pinterest-title" class="pinterest-strip">
-<div class="pin-strip-head">
+
+<section aria-labelledby="topics-title" class="home-topics">
+<div class="home-topics-copy">
+<h2 id="topics-title">Start with what is bothering you</h2>
+<p>Most people arrive with one problem, not an interest in skincare. Pick yours and read the guides in order.</p>
+<a class="home-answers-link" href="/answers">Or ask a quick question →</a>
+</div>
+<ul class="home-topic-list">
+<li><a href="/blog?q=acne"><span>Acne and breakouts</span><span class="home-topic-n">21 guides</span></a></li>
+<li><a href="/blog?q=sunscreen"><span>Sunscreen and UV</span><span class="home-topic-n">15 guides</span></a></li>
+<li><a href="/blog?q=barrier"><span>Irritation and a damaged barrier</span><span class="home-topic-n">10 guides</span></a></li>
+<li><a href="/blog?q=dark+spot"><span>Dark spots and marks</span><span class="home-topic-n">4 guides</span></a></li>
+<li><a href="/blog?q=review"><span>Product reviews</span><span class="home-topic-n">11 guides</span></a></li>
+<li><a href="/blog?topic=hair-care"><span>Hair and scalp</span><span class="home-topic-n">4 guides</span></a></li>
+</ul>
+</section>
+
+<section aria-labelledby="printables-title" class="home-printables">
+<img alt="7-Day Soft Reset Tracker printable" decoding="async" height="1491" loading="lazy" src="/assets/images/7-day-soft-reset-tracker.webp" width="1055"/>
 <div>
-<span class="pin-eyebrow">Pinterest</span>
-<h2 id="pinterest-title">Follow Stylishandhealthy on Pinterest.</h2>
-<p>Fresh skincare, wellness, journaling, and self-growth inspiration, saved weekly.</p>
-</div>
-<a class="pin-follow" href="https://www.pinterest.com/stylishandhealthy" rel="noopener noreferrer" target="_blank">Follow on Pinterest →</a>
-</div>
-<div class="pin-widget-wrap" style="min-height:440px">
-<a data-pin-board-width="1100" data-pin-do="embedUser" data-pin-scale-height="400" data-pin-scale-width="115" href="https://www.pinterest.com/stylishandhealthy/"></a>
+<h2 id="printables-title">Free printables</h2>
+<p>A 20-page journal, habit trackers, a brain-dump sheet and to-do lists. No account needed for the printables; the journal asks for an email.</p>
+<p class="home-printables-links"><a class="btn btn-f" href="/shop">Browse printables</a> <a class="btn btn-o" href="/journal">Get the journal</a></p>
 </div>
 </section>
-<!-- NEWSLETTER -->
+
 <section class="nw-strip" id="newsletter">
-<div class="doodle" style="width:120px;bottom:15%;right:8%;opacity:.3;transform:rotate(5deg)">
-<img alt="" aria-hidden="true" decoding="async" loading="lazy" src="/assets/images/heart3.png"/>
-</div>
-<div class="nw-strip-inner rv">
-<div class="sl">Join the community</div>
-<h2>Hot girls read the research. Delivered to your <em>inbox.</em></h2>
-<p>Free skincare guides, wellness tips, and exclusive downloads. No spam, ever.</p>
+<div class="nw-strip-inner">
+<h2>New guides in your inbox</h2>
+<p>One email when something new is published. No spam, unsubscribe any time.</p>
 <form accept-charset="UTF-8" class="nw-form" onsubmit="handleNwSub(event)">
 <input aria-label="Email address" autocomplete="email" inputmode="email" name="EMAIL" placeholder="your@email.com" required="" type="email"/>
-<button class="btn btn-wh" style="padding:11px 26px;font-size:.87rem" type="submit">Join free</button>
+<button class="btn btn-wh" type="submit">Subscribe</button>
 </form>
-<p class="nw-note">No spam. Unsubscribe anytime.</p>
 </div>
 </section>
 </main><footer>
 <div class="ft-top">
 <div>
 <div class="ft-logo">
-<img alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo_main.png"/>
+<img width="42" height="42" alt="S&amp;H" decoding="async" loading="lazy" src="/assets/images/logo-mark.webp"/>
 <span>Stylishandhealthy<em>.</em></span>
 </div>
 <p class="ft-p">Look good. Feel good. Don't fall for nonsense.</p>
@@ -880,10 +145,10 @@
 <div class="ft-col">
 <h4>Shop</h4>
 <a href="/shop">All products</a>
-<a href="/shop">Journals</a>
-<a href="/shop">Trackers</a>
-<a href="/shop">Printables</a>
-<a href="/shop">To-do lists</a>
+<a href="/shop?type=journals">Journals</a>
+<a href="/shop?type=trackers">Trackers</a>
+<a href="/shop?type=printables">Printables</a>
+<a href="/shop?type=to-do-lists">To-do lists</a>
 </div>
 <div class="ft-col">
 <h4>Explore</h4>
@@ -908,49 +173,5 @@
 </div>
 </footer>
 <script defer="defer" src="/assets/js/shared.js"></script>
-<script async="" defer="" src="https://assets.pinterest.com/js/pinit.js"></script>
-<script>
-
-(function initPlannerSlideshow() {
-  const slides = Array.from(document.querySelectorAll('.js-slide'));
-  const dots = Array.from(document.querySelectorAll('.js-dot'));
-  if (!slides.length || dots.length !== slides.length) return;
-
-  let current = 0;
-  let timer = null;
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-  function goTo(index) {
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    dots[current].setAttribute('aria-pressed', 'false');
-    current = (index + slides.length) % slides.length;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-    dots[current].setAttribute('aria-pressed', 'true');
-  }
-
-  function stop() {
-    if (timer) window.clearInterval(timer);
-    timer = null;
-  }
-
-  function start() {
-    stop();
-    if (reducedMotion.matches || document.hidden) return;
-    timer = window.setInterval(() => goTo(current + 1), 5000);
-  }
-
-  dots.forEach((dot, index) => {
-    dot.setAttribute('aria-pressed', String(index === 0));
-    dot.addEventListener('click', () => { goTo(index); start(); });
-  });
-
-  document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
-  reducedMotion.addEventListener?.('change', start);
-  start();
-})();
-
-</script>
 </body>
 </html>
