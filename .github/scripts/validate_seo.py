@@ -64,7 +64,10 @@ def main() -> int:
     errors: list[str] = []
     html_files = [
         path for path in sorted(ROOT.rglob("*.html"))
-        if ".git" not in path.parts and not path.relative_to(ROOT).as_posix().startswith("assets/")
+        if ".git" not in path.parts
+        and not path.relative_to(ROOT).as_posix().startswith("assets/")
+        # GitHub Pages serves 404.html for missing URLs; it is noindex and has no canonical.
+        and not path.name.startswith("404")
     ]
 
     for path in html_files:

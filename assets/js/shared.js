@@ -209,9 +209,10 @@ function handleNwSub(event) {
 
   fetch(MC_NEWSLETTER_URL, { method: 'POST', mode: 'no-cors', body })
     .then(() => {
-      button.textContent = "You're in!";
-      button.style.background = 'var(--green-lt)';
-      setFormMessage(form, 'Subscription submitted successfully.');
+      // Mailchimp does not tell the page whether it worked (no-cors), and it
+      // sends a confirmation email first, so ask the reader to check for it.
+      button.textContent = 'Almost done';
+      setFormMessage(form, 'Thanks! If a confirmation email arrives, tap the link in it to finish signing up.');
       form.reset();
     })
     .catch(() => {
@@ -222,7 +223,6 @@ function handleNwSub(event) {
       form.removeAttribute('aria-busy');
       window.setTimeout(() => {
         button.textContent = originalText;
-        button.style.background = '';
         button.disabled = false;
       }, 3500);
     });
