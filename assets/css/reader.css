@@ -284,7 +284,7 @@ html body .blog-grid .bc:first-child .bc-title { font-size: clamp(1.8rem, 3vw, 2
 /* ==========================================================================
    ARTICLES
    ========================================================================== */
-html body.article-page:not(.growth-factor-article):not(.x) {
+html body.article-page:not(.x):not(.y) {
   --editorial-ink: var(--ink);
   --editorial-muted: var(--ink-3);
   --editorial-line: var(--rule);
@@ -293,52 +293,52 @@ html body.article-page:not(.growth-factor-article):not(.x) {
 }
 
 /* Header */
-html body.article-page:not(.growth-factor-article):not(.x) .article-hero h1 {
+html body.article-page:not(.x):not(.y) .article-hero h1 {
   font-family: var(--display) !important;
   font-weight: 500 !important;
   letter-spacing: -.02em !important;
   line-height: 1.06 !important;
   color: var(--ink) !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-hero h1 em { color: inherit !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-subtitle {
+html body.article-page:not(.x):not(.y) .article-hero h1 em { color: inherit !important; }
+html body.article-page:not(.x):not(.y) .article-subtitle {
   font-family: var(--prose) !important;
   font-style: normal !important;
   font-size: 1.3rem !important;
   line-height: 1.45 !important;
   color: var(--ink-2) !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-eyebrow,
-html body.article-page:not(.growth-factor-article):not(.x) .article-breadcrumbs,
-html body.article-page:not(.growth-factor-article):not(.x) .article-meta { font-family: var(--body) !important; color: var(--ink-3) !important; letter-spacing: .02em !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-eyebrow { color: var(--green) !important; font-weight: 600 !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-author-box,
-html body.article-page:not(.growth-factor-article):not(.x) .article-author-box p { font-family: var(--body) !important; font-size: .9rem !important; line-height: 1.55 !important; color: var(--ink-2) !important; }
+html body.article-page:not(.x):not(.y) .article-eyebrow,
+html body.article-page:not(.x):not(.y) .article-breadcrumbs,
+html body.article-page:not(.x):not(.y) .article-meta { font-family: var(--body) !important; color: var(--ink-3) !important; letter-spacing: .02em !important; }
+html body.article-page:not(.x):not(.y) .article-eyebrow { color: var(--green) !important; font-weight: 600 !important; }
+html body.article-page:not(.x):not(.y) .article-author-box,
+html body.article-page:not(.x):not(.y) .article-author-box p { font-family: var(--body) !important; font-size: .9rem !important; line-height: 1.55 !important; color: var(--ink-2) !important; }
 
 /* Body copy: a serif at a comfortable size and line length */
-html body.article-page:not(.growth-factor-article):not(.x) .article-card,
-html body.article-page:not(.growth-factor-article):not(.x) .article-hero-inner { max-width: 740px !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card h2 { max-width: none !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card p,
-html body.article-page:not(.growth-factor-article):not(.x) .article-card li {
+html body.article-page:not(.x):not(.y) .article-card,
+html body.article-page:not(.x):not(.y) .article-hero-inner { max-width: 740px !important; }
+html body.article-page:not(.x):not(.y) .article-card h2 { max-width: none !important; }
+html body.article-page:not(.x):not(.y) .article-card p,
+html body.article-page:not(.x):not(.y) .article-card li {
   font-family: var(--prose) !important;
   font-size: 1.22rem !important;
   line-height: 1.62 !important;
   color: var(--ink) !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card p { margin-bottom: 1.15em !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card li { margin-bottom: .45em !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card strong { font-weight: 600; color: var(--ink); }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card a {
+html body.article-page:not(.x):not(.y) .article-card p { margin-bottom: 1.15em !important; }
+html body.article-page:not(.x):not(.y) .article-card li { margin-bottom: .45em !important; }
+html body.article-page:not(.x):not(.y) .article-card strong { font-weight: 600; color: var(--ink); }
+html body.article-page:not(.x):not(.y) .article-card a {
   color: var(--green-dk) !important;
   text-decoration: underline !important;
   text-decoration-color: rgba(75,97,54,.45) !important;
   text-decoration-thickness: 1px !important;
   text-underline-offset: 3px !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card a:hover { text-decoration-color: currentColor !important; }
+html body.article-page:not(.x):not(.y) .article-card a:hover { text-decoration-color: currentColor !important; }
 
-html body.article-page:not(.growth-factor-article):not(.x) .article-card h2 {
+html body.article-page:not(.x):not(.y) .article-card h2 {
   font-family: var(--display) !important;
   font-weight: 500 !important;
   font-size: clamp(1.75rem, 3vw, 2.15rem) !important;
@@ -349,9 +349,9 @@ html body.article-page:not(.growth-factor-article):not(.x) .article-card h2 {
   padding-top: 0 !important;
   margin: 2.2em 0 .55em !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card h2::before,
-html body.article-page:not(.growth-factor-article):not(.x) .article-card h2::after { display: none !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card h3 {
+html body.article-page:not(.x):not(.y) .article-card h2::before,
+html body.article-page:not(.x):not(.y) .article-card h2::after { display: none !important; }
+html body.article-page:not(.x):not(.y) .article-card h3 {
   font-family: var(--body) !important;
   font-weight: 600 !important;
   font-size: 1.15rem !important;
@@ -362,63 +362,63 @@ html body.article-page:not(.growth-factor-article):not(.x) .article-card h3 {
 }
 
 /* Small UI text inside articles stays in the sans */
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.box-label, .verdict-label, .image-caption, figcaption, th, td, .mobile-cell-label, .meta-dot),
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(table, .toc, .references, .disclaimer, .faq summary) * {
+html body.article-page:not(.x):not(.y) .article-card :is(.box-label, .verdict-label, .image-caption, figcaption, th, td, .mobile-cell-label, .meta-dot),
+html body.article-page:not(.x):not(.y) .article-card :is(table, .toc, .references, .disclaimer, .faq summary) * {
   font-family: var(--body) !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(td, th, .toc li, .references li) { font-size: .95rem !important; line-height: 1.5 !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card .image-caption,
-html body.article-page:not(.growth-factor-article):not(.x) .article-card figcaption { font-size: .86rem !important; color: var(--ink-3) !important; }
+html body.article-page:not(.x):not(.y) .article-card :is(td, th, .toc li, .references li) { font-size: .95rem !important; line-height: 1.5 !important; }
+html body.article-page:not(.x):not(.y) .article-card .image-caption,
+html body.article-page:not(.x):not(.y) .article-card figcaption { font-size: .86rem !important; color: var(--ink-3) !important; }
 
 /* Boxes: one quiet style instead of tinted cards with coloured left bars */
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.quick-answer, .answer-box, .warning-box, .science-box, .routine-box, .article-internal-links, .related-links, .toc, .verdict, .rating-panel) {
+html body.article-page:not(.x):not(.y) .article-card :is(.quick-answer, .answer-box, .warning-box, .science-box, .routine-box, .article-internal-links, .related-links, .toc, .verdict, .rating-panel) {
   border-radius: var(--radius) !important;
   border: 1px solid var(--rule) !important;
   border-left-width: 1px !important;
   background: var(--paper-2) !important;
   box-shadow: none !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.quick-answer, .answer-box) { background: #fff !important; border-color: var(--ink-3) !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card .warning-box { background: #fdf3f1 !important; border-color: #e3b9b0 !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.quick-answer, .answer-box, .warning-box, .science-box, .routine-box, .article-internal-links, .related-links) p,
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.quick-answer, .answer-box, .warning-box, .science-box, .routine-box, .article-internal-links, .related-links) li {
+html body.article-page:not(.x):not(.y) .article-card :is(.quick-answer, .answer-box) { background: #fff !important; border-color: var(--ink-3) !important; }
+html body.article-page:not(.x):not(.y) .article-card .warning-box { background: #fdf3f1 !important; border-color: #e3b9b0 !important; }
+html body.article-page:not(.x):not(.y) .article-card :is(.quick-answer, .answer-box, .warning-box, .science-box, .routine-box, .article-internal-links, .related-links) p,
+html body.article-page:not(.x):not(.y) .article-card :is(.quick-answer, .answer-box, .warning-box, .science-box, .routine-box, .article-internal-links, .related-links) li {
   font-size: 1.1rem !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card .box-label { color: var(--green) !important; letter-spacing: .06em !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.quick-answer, .answer-box)::after,
-html body.article-page:not(.growth-factor-article):not(.x) .article-card :is(.quick-answer, .answer-box)::before { display: none !important; }
+html body.article-page:not(.x):not(.y) .article-card .box-label { color: var(--green) !important; letter-spacing: .06em !important; }
+html body.article-page:not(.x):not(.y) .article-card :is(.quick-answer, .answer-box)::after,
+html body.article-page:not(.x):not(.y) .article-card :is(.quick-answer, .answer-box)::before { display: none !important; }
 
 /* Contents box */
-html body.article-page:not(.growth-factor-article):not(.x) .article-card .toc { padding: 20px 24px !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card .toc h2 {
+html body.article-page:not(.x):not(.y) .article-card .toc { padding: 20px 24px !important; }
+html body.article-page:not(.x):not(.y) .article-card .toc h2 {
   margin: 0 0 10px !important;
   font: 600 .8rem/1.4 var(--body) !important;
   letter-spacing: .06em !important;
   text-transform: uppercase;
   color: var(--ink-3) !important;
 }
-html body.article-page:not(.growth-factor-article):not(.x) .toc a { color: var(--ink) !important; text-decoration: none !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .toc a:hover { text-decoration: underline !important; }
+html body.article-page:not(.x):not(.y) .toc a { color: var(--ink) !important; text-decoration: none !important; }
+html body.article-page:not(.x):not(.y) .toc a:hover { text-decoration: underline !important; }
 
 /* Tables */
-html body.article-page:not(.growth-factor-article):not(.x) .article-card table { border-radius: var(--radius); }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card th { background: var(--paper-2) !important; color: var(--ink) !important; }
+html body.article-page:not(.x):not(.y) .article-card table { border-radius: var(--radius); }
+html body.article-page:not(.x):not(.y) .article-card th { background: var(--paper-2) !important; color: var(--ink) !important; }
 
 /* Images */
-html body.article-page:not(.growth-factor-article):not(.x) .article-card img,
-html body.article-page:not(.growth-factor-article):not(.x) .hero-banner img,
-html body.article-page:not(.growth-factor-article):not(.x) .image-wide img { border-radius: var(--radius) !important; box-shadow: none !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .hero-banner { box-shadow: none !important; border-radius: var(--radius) !important; }
+html body.article-page:not(.x):not(.y) .article-card img,
+html body.article-page:not(.x):not(.y) .hero-banner img,
+html body.article-page:not(.x):not(.y) .image-wide img { border-radius: var(--radius) !important; box-shadow: none !important; }
+html body.article-page:not(.x):not(.y) .hero-banner { box-shadow: none !important; border-radius: var(--radius) !important; }
 
 /* References + footnote markers */
-html body.article-page:not(.growth-factor-article):not(.x) .references li { color: var(--ink-2) !important; }
-html body.article-page:not(.growth-factor-article):not(.x) .article-card sup a,
-html body.article-page:not(.growth-factor-article):not(.x) .article-card a.cite { text-decoration: none !important; font-family: var(--body) !important; font-size: .72em !important; }
+html body.article-page:not(.x):not(.y) .references li { color: var(--ink-2) !important; }
+html body.article-page:not(.x):not(.y) .article-card sup a,
+html body.article-page:not(.x):not(.y) .article-card a.cite { text-decoration: none !important; font-family: var(--body) !important; font-size: .72em !important; }
 
 @media (max-width: 640px) {
-  html body.article-page:not(.growth-factor-article):not(.x) .article-card p,
-  html body.article-page:not(.growth-factor-article):not(.x) .article-card li { font-size: 1.12rem !important; line-height: 1.6 !important; }
-  html body.article-page:not(.growth-factor-article):not(.x) .article-subtitle { font-size: 1.12rem !important; }
+  html body.article-page:not(.x):not(.y) .article-card p,
+  html body.article-page:not(.x):not(.y) .article-card li { font-size: 1.12rem !important; line-height: 1.6 !important; }
+  html body.article-page:not(.x):not(.y) .article-subtitle { font-size: 1.12rem !important; }
 }
 
 /* ==========================================================================
@@ -590,3 +590,131 @@ html body .answers-form { border-radius: var(--radius) !important; box-shadow: n
 html body .answers-form button { border-radius: 2px !important; }
 html body .contact-note { background: var(--paper-2) !important; }
 html body .value-card, html body .ci-card, html body .popular-question { border: 1px solid var(--rule) !important; }
+
+/* ==========================================================================
+   POLISH PASS 2 (2026-11-23)
+   ========================================================================== */
+
+/* Buttons that live inside article text keep button colours
+   (the article link colour was making "Shop on Amazon" text invisible) */
+html body.article-page:not(.x):not(.y) .article-card :is(.buy-button, .btn, .sc-btn, a[class*="button"], a[class*="-cta"]) {
+  background: var(--green-dk) !important;
+  color: var(--paper) !important;
+  text-decoration: none !important;
+  border-radius: var(--radius) !important;
+  font-family: var(--body) !important;
+  font-weight: 600 !important;
+  font-size: .95rem !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px !important;
+  line-height: 1.3 !important;
+  box-shadow: none !important;
+}
+html body.article-page:not(.x):not(.y) .article-card :is(.buy-button, .btn, .sc-btn, a[class*="button"], a[class*="-cta"]):hover { background: var(--green) !important; }
+
+/* Subtitles that start lower-case */
+html body.article-page:not(.x):not(.y) .article-subtitle::first-letter { text-transform: uppercase; }
+
+/* Section kickers inside articles: small labels, not shouting headings */
+html body.article-page:not(.x):not(.y) .article-card .section-kicker {
+  font: 600 .8rem/1.4 var(--body) !important;
+  letter-spacing: .06em !important;
+  text-transform: uppercase;
+  color: var(--green) !important;
+  margin: 2.6em 0 -1.2em !important;
+}
+
+/* Second colour on italic words: off everywhere, not only in h1-h3 */
+html body :is(h1, h2, h3, h4, h5, [class*="title"], [class*="-sh"], [class*="name"], [class*="head"]) em { color: inherit !important; }
+
+/* Things that fade in on scroll: always visible */
+html body :is(.inside-card, .spread, .feat-pill, .value-card, .mission-stats, .post-card) { opacity: 1 !important; transform: none !important; }
+
+/* Filter buttons: one swipeable row on phones instead of a lopsided grid */
+@media (max-width: 720px) {
+  html body :is(.blog-filters, .shop-tabs, .ing-tabs) {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 6px !important;
+    grid-template-columns: none !important;
+    padding-bottom: 8px;
+    margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px;
+    scrollbar-width: none;
+  }
+  html body :is(.blog-filters, .shop-tabs, .ing-tabs)::-webkit-scrollbar { display: none; }
+  html body :is(.blog-filters, .shop-tabs, .ing-tabs) > button { flex: 0 0 auto !important; width: auto !important; white-space: nowrap; }
+  html body .blog-tools { display: flex !important; flex-direction: column; }
+}
+
+/* Footer: four columns, cookie link sits with the copyright line */
+html body .ft-top { grid-template-columns: 1.6fr 1fr 1fr 1fr; }
+html body .ft-bot { gap: 10px 24px; }
+html body .cookie-settings--inline {
+  position: static !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: rgba(251,248,242,.6) !important;
+  font: .82rem var(--body) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+html body .cookie-settings--inline:hover { color: #fff !important; }
+@media (max-width: 860px) { html body .ft-top { grid-template-columns: 1fr 1fr; gap: 32px 24px; } html body .ft-top > div:first-child { grid-column: 1 / -1; } }
+
+/* About page: drop the giant one-word tiles and heart icons */
+html body .mission-stats, html body .value-icon { display: none !important; }
+html body .mission-grid { grid-template-columns: minmax(0, 1fr) !important; max-width: 720px; }
+html body .value-card { background: transparent !important; border: 0 !important; border-top: 1px solid var(--rule) !important; padding: 20px 0 !important; }
+html body .value-title { font-family: var(--display) !important; font-weight: 500 !important; color: var(--ink) !important; }
+html body .value-desc { color: var(--ink-2) !important; font-size: 1rem !important; }
+
+/* Quick Answers: same paper header as every other page */
+html body .answers-hero {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  border-bottom: 1px solid var(--rule);
+}
+html body .answers-hero::before, html body .answers-hero::after { display: none !important; }
+html body .answers-hero :is(h1, h2, p, label, .answers-label) { color: var(--ink) !important; text-align: left; }
+html body .answers-hero p { color: var(--ink-2) !important; }
+html body .answers-kicker { color: var(--green) !important; justify-content: flex-start !important; }
+html body .answers-kicker::before, html body .answers-kicker::after { display: none !important; }
+html body .answers-hero-inner, html body .answers-hero-copy { text-align: left !important; margin-left: auto; margin-right: auto; max-width: 760px; }
+html body .answers-hero h1 { font-weight: 500 !important; }
+html body .answers-form { border: 1px solid var(--ink-3) !important; background: #fff !important; }
+html body .answers-form button { background: var(--green-dk) !important; color: var(--paper) !important; }
+html body .example-prompts { justify-content: flex-start !important; }
+html body .example-prompts :is(a, button) { background: transparent !important; border: 1px solid var(--rule) !important; color: var(--ink-2) !important; border-radius: var(--radius) !important; }
+html body .answers-main, html body .answer-panel { box-shadow: none !important; }
+html body .popular-question span:last-child, html body .popular-question small { color: var(--green) !important; }
+
+/* Journal page leftovers */
+html body .bottom-cta :is(.bc-sub, p em, em) { color: inherit !important; }
+html body .feat-pill-check { background: var(--green-dk) !important; }
+html body .spread { border-radius: var(--radius) !important; overflow: hidden; }
+html body .spread-pill { border-radius: 2px !important; }
+
+/* Journal: "What's inside" on paper with readable text, calmer final CTA */
+html body .inside-section { background: var(--paper-2) !important; border-top: 1px solid var(--rule); }
+html body .inside-section::before, html body .inside-section::after { display: none !important; }
+html body .inside-sl { color: var(--green) !important; }
+html body .inside-sl::before { background: var(--green) !important; }
+html body .inside-sh { color: var(--ink) !important; font-weight: 500 !important; }
+html body .inside-sub { color: var(--ink-2) !important; }
+html body .inside-card { background: var(--paper) !important; border: 1px solid var(--rule) !important; border-radius: var(--radius) !important; }
+html body .inside-num { color: var(--green) !important; opacity: 1 !important; font-size: 1rem !important; font-family: var(--body) !important; font-weight: 600 !important; }
+html body .inside-title { color: var(--ink) !important; }
+html body .inside-title em { font-style: normal !important; }
+html body .inside-desc { color: var(--ink-2) !important; }
+html body .bc-hand { font-family: var(--prose) !important; font-style: italic; color: rgba(251,248,242,.8) !important; }
+html body .bc-form { border-radius: var(--radius) !important; }
+html body .bc-form input { color: var(--paper) !important; }
+html body .bc-form input::placeholder { color: rgba(251,248,242,.6) !important; }
+html body .bc-form button { border-radius: 2px !important; }
+html body .bc-note { color: rgba(251,248,242,.65) !important; }
