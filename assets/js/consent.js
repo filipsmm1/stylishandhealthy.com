@@ -97,9 +97,18 @@
     settings.textContent = 'Cookie settings';
     settings.hidden = true;
 
+    // Sit in the footer as a plain link when there is one, instead of a
+    // floating pill that covers content on phones.
+    const footerSlot = document.querySelector('footer .ft-bot');
+    const inline = Boolean(footerSlot);
+    if (inline) {
+      settings.className = 'cookie-settings cookie-settings--inline';
+      settings.hidden = false;
+    }
+
     function showBanner() {
       banner.hidden = false;
-      settings.hidden = true;
+      if (!inline) settings.hidden = true;
       const firstButton = banner.querySelector('[data-cookie-choice]');
       if (firstButton) firstButton.focus({ preventScroll: true });
     }
@@ -109,7 +118,7 @@
       updateConsent(choice);
       banner.hidden = true;
       settings.hidden = false;
-      settings.focus({ preventScroll: true });
+      if (!inline) settings.focus({ preventScroll: true });
     }
 
     banner.addEventListener('click', function (event) {
@@ -119,7 +128,8 @@
     settings.addEventListener('click', showBanner);
 
     document.body.appendChild(banner);
-    document.body.appendChild(settings);
+    if (inline) footerSlot.appendChild(settings);
+    else document.body.appendChild(settings);
 
     if (readChoice()) settings.hidden = false;
     else showBanner();
